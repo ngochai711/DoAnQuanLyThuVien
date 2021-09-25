@@ -12,9 +12,28 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fMain : Form
     {
+        int panelWidth;
+        bool hidden;
         public fMain()
         {
             InitializeComponent();
+            panelWidth = SlidingPanel.Width;
+            hidden = false;
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            if (!hidden)
+            {
+                SlidingPanel.Width = 41;
+                hidden = true;
+            }
+            else
+            {
+                SlidingPanel.Width = 304;
+                hidden = false;
+            }
+                
         }
     }
 }
