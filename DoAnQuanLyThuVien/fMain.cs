@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAnQuanLyThuVien
 {
-    public partial class fBookManager : Form
+    public partial class fMain : Form
     {
-        public fBookManager()
+        public fMain()
         {
             InitializeComponent();
         }

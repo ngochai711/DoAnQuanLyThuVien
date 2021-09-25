@@ -1,7 +1,7 @@
 ﻿
 namespace DoAnQuanLyThuVien
 {
-    partial class fBookManager
+    partial class fMain
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,15 @@ namespace DoAnQuanLyThuVien
         {
             this.SuspendLayout();
             // 
-            // fBookManager
+            // fMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "fBookManager";
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fBookManager";
+            this.Text = "Quản Lý Thư Viện";
             this.ResumeLayout(false);
 
         }

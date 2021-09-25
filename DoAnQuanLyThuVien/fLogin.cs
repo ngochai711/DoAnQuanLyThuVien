@@ -34,7 +34,7 @@ namespace DoAnQuanLyThuVien
         {
             string userName = txbUserName.Text;
             string passWord = txbPassWord.Text;
-            fBookManager f = new fBookManager();
+            fMain f = new fMain();
             this.Hide();
             f.ShowDialog();
             this.Show();
