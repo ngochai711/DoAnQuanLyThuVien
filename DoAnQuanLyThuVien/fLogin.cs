@@ -16,5 +16,28 @@ namespace DoAnQuanLyThuVien
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Bạn muốn thoát khỏi chương trình không ?","Thông báo",MessageBoxButtons.OKCancel)!=System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string userName = txbUserName.Text;
+            string passWord = txbPassWord.Text;
+            fBookManager f = new fBookManager();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }
