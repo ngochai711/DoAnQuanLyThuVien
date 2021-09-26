@@ -36,8 +36,8 @@ namespace DoAnQuanLyThuVien
             this.btnShow = new System.Windows.Forms.Button();
             this.btnAssist = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.lbTeamName = new System.Windows.Forms.Label();
             this.SlidingPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SlidingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,8 @@ namespace DoAnQuanLyThuVien
             this.btnBookManagement.TabIndex = 0;
             this.btnBookManagement.Text = "Quản Lý Sách";
             this.btnBookManagement.UseVisualStyleBackColor = false;
+            this.btnBookManagement.MouseLeave += new System.EventHandler(this.btnBookManagement_MouseLeave);
+            this.btnBookManagement.MouseHover += new System.EventHandler(this.btnBookManagement_MouseHover);
             // 
             // bntAcountInfo
             // 
@@ -126,33 +128,33 @@ namespace DoAnQuanLyThuVien
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // lbTeamName
-            // 
-            this.lbTeamName.AutoSize = true;
-            this.lbTeamName.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTeamName.Location = new System.Drawing.Point(56, 0);
-            this.lbTeamName.Name = "lbTeamName";
-            this.lbTeamName.Size = new System.Drawing.Size(247, 56);
-            this.lbTeamName.TabIndex = 10;
-            this.lbTeamName.Text = "AppName";
-            // 
             // SlidingPanel
             // 
             this.SlidingPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.SlidingPanel.BackColor = System.Drawing.Color.White;
-            this.SlidingPanel.Controls.Add(this.lbTeamName);
+            this.SlidingPanel.Controls.Add(this.label1);
             this.SlidingPanel.Controls.Add(this.btnExit);
             this.SlidingPanel.Controls.Add(this.btnAssist);
             this.SlidingPanel.Controls.Add(this.btnShow);
             this.SlidingPanel.Controls.Add(this.btnL_card_show);
             this.SlidingPanel.Controls.Add(this.bntAcountInfo);
             this.SlidingPanel.Controls.Add(this.btnBookManagement);
-            this.SlidingPanel.Location = new System.Drawing.Point(1, 1);
+            this.SlidingPanel.Location = new System.Drawing.Point(0, 2);
             this.SlidingPanel.Name = "SlidingPanel";
             this.SlidingPanel.Size = new System.Drawing.Size(318, 674);
             this.SlidingPanel.TabIndex = 0;
             this.SlidingPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.SlidingPanel_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(56, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 46);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "AppName";
             // 
             // fMain
             // 
@@ -164,6 +166,7 @@ namespace DoAnQuanLyThuVien
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thư Viện";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fMain_Load);
             this.SlidingPanel.ResumeLayout(false);
             this.SlidingPanel.PerformLayout();
@@ -179,7 +182,7 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.Button btnAssist;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lbTeamName;
         private System.Windows.Forms.Panel SlidingPanel;
+        private System.Windows.Forms.Label label1;
     }
 }
