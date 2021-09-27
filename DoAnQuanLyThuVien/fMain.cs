@@ -12,15 +12,16 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fMain : Form
     {
-        int oldPanelWidth,oldPanelHeight;
+        int oldPanelWidth, oldPanelHeight;
 
         bool hidden;
         public fMain()
         {
             InitializeComponent();
-            oldPanelWidth = SlidingPanel.Width;
+            oldPanelWidth = 235;
             oldPanelHeight = SlidingPanel.Height;
-            hidden = false;
+            SlidingPanel.Width = btnShow.Width;
+            hidden = true;
 
         }
 
@@ -54,30 +55,32 @@ namespace DoAnQuanLyThuVien
 
         }
 
-       
+
         private void btnShow_Click(object sender, EventArgs e)
         {
-            if(SlidingPanel.Width > btnShow.Width)
+            if (SlidingPanel.Height != oldPanelHeight)
             {
-                oldPanelWidth = SlidingPanel.Width;
                 oldPanelHeight = SlidingPanel.Height;
             }
-            
+            if (SlidingPanel.Width > oldPanelWidth)
+            {
+                oldPanelWidth = SlidingPanel.Width;
+            }
+
+
             if (!hidden)
             {
                 SlidingPanel.Width = btnShow.Width;
-                SlidingPanel.Height = btnShow.Height;
+               
                 hidden = true;
             }
             else
             {
-               
-              
                 SlidingPanel.Width = oldPanelWidth;
                 SlidingPanel.Height = oldPanelHeight;
                 hidden = false;
             }
-                
+
         }
     }
 }
