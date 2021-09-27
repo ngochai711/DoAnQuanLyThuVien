@@ -13,15 +13,14 @@ namespace DoAnQuanLyThuVien
     public partial class fMain : Form
     {
         int oldPanelWidth,oldPanelHeight;
-        
+
         bool hidden;
         public fMain()
         {
             InitializeComponent();
             oldPanelWidth = SlidingPanel.Width;
             oldPanelHeight = SlidingPanel.Height;
-            SlidingPanel.Width = btnShow.Width;
-            hidden = true;
+            hidden = false;
 
         }
 
@@ -55,36 +54,24 @@ namespace DoAnQuanLyThuVien
 
         }
 
-        private void btnBookManagement_MouseHover(object sender, EventArgs e)
-        {
-            if (SlidingPanel.Width == btnShow.Width)
-                extralabel1.Visible = true;
-        }
-
-        private void btnBookManagement_MouseLeave(object sender, EventArgs e)
-        {
-            extralabel1.Visible = false ;
-        }
-
         private void btnShow_Click(object sender, EventArgs e)
         {
-            if (SlidingPanel.Height != oldPanelHeight)
-            {
-                oldPanelHeight = SlidingPanel.Height;
-            }
-            if (SlidingPanel.Width > oldPanelWidth)
+            if(SlidingPanel.Width > btnShow.Width)
             {
                 oldPanelWidth = SlidingPanel.Width;
+                oldPanelHeight = SlidingPanel.Height;
             }
-        
             
             if (!hidden)
             {
                 SlidingPanel.Width = btnShow.Width;
+                SlidingPanel.Height = btnShow.Height;
                 hidden = true;
             }
             else
-            {   
+            {
+               
+              
                 SlidingPanel.Width = oldPanelWidth;
                 SlidingPanel.Height = oldPanelHeight;
                 hidden = false;
