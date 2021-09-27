@@ -54,8 +54,6 @@ namespace DoAnQuanLyThuVien
             this.btnBookManagement.TabIndex = 0;
             this.btnBookManagement.Text = "Quản Lý Sách";
             this.btnBookManagement.UseVisualStyleBackColor = false;
-            this.btnBookManagement.MouseLeave += new System.EventHandler(this.btnBookManagement_MouseLeave);
-            this.btnBookManagement.MouseHover += new System.EventHandler(this.btnBookManagement_MouseHover);
             // 
             // bntAcountInfo
             // 

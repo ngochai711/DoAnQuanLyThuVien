@@ -55,17 +55,7 @@ namespace DoAnQuanLyThuVien
 
         }
 
-        private void btnBookManagement_MouseHover(object sender, EventArgs e)
-        {
-            if (SlidingPanel.Width == btnShow.Width)
-                extralabel1.Visible = true;
-        }
-
-        private void btnBookManagement_MouseLeave(object sender, EventArgs e)
-        {
-            extralabel1.Visible = false ;
-        }
-
+       
         private void btnShow_Click(object sender, EventArgs e)
         {
             if (SlidingPanel.Height != oldPanelHeight)
