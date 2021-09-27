@@ -36,7 +36,6 @@ namespace DoAnQuanLyThuVien
             this.btnShow = new System.Windows.Forms.Button();
             this.btnAssist = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.lbTeamName = new System.Windows.Forms.Label();
             this.SlidingPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSearchBook = new System.Windows.Forms.Button();
@@ -62,6 +61,8 @@ namespace DoAnQuanLyThuVien
             this.btnBookManagement.TabIndex = 0;
             this.btnBookManagement.Text = "Quản Lý Sách";
             this.btnBookManagement.UseVisualStyleBackColor = false;
+            this.btnBookManagement.MouseLeave += new System.EventHandler(this.btnBookManagement_MouseLeave);
+            this.btnBookManagement.MouseHover += new System.EventHandler(this.btnBookManagement_MouseHover);
             // 
             // bntAcountInfo
             // 
@@ -155,7 +156,7 @@ namespace DoAnQuanLyThuVien
             this.SlidingPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.SlidingPanel.BackColor = System.Drawing.Color.White;
-            this.SlidingPanel.Controls.Add(this.lbTeamName);
+            this.SlidingPanel.Controls.Add(this.label1);
             this.SlidingPanel.Controls.Add(this.btnExit);
             this.SlidingPanel.Controls.Add(this.btnAssist);
             this.SlidingPanel.Controls.Add(this.btnShow);
@@ -223,6 +224,7 @@ namespace DoAnQuanLyThuVien
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thư Viện";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fMain_Load);
             this.SlidingPanel.ResumeLayout(false);
             this.SlidingPanel.PerformLayout();
@@ -241,7 +243,6 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.Button btnAssist;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lbTeamName;
         private System.Windows.Forms.Panel SlidingPanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSearchBook;
