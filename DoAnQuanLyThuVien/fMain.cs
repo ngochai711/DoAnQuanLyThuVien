@@ -32,12 +32,13 @@ namespace DoAnQuanLyThuVien
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
 
         private void btnAssist_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("           Các thành viên nhóm phát triển:\n                  Nguyễn Hoàng Ngọc Hải\n                             Lê Hoàng Quý\n                              Lâm Tấn Phát\n                      Trần Huyền Anh Thy\n                Phiên bản ứng dụng 1.4.21\nLiên hệ đường dây nóng: 0912345678\nHoặc qua gmail: phattrienpm@gmail.com", "Hỗ trợ");
+            
         }
 
         private void btnL_card_show_Click(object sender, EventArgs e)

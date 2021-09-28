@@ -32,18 +32,18 @@ namespace DoAnQuanLyThuVien
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.txbPassWord = new System.Windows.Forms.TextBox();
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txbPassWord = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txbPassWord);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.txbPassWord);
             this.panel1.Controls.Add(this.txbUserName);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -72,17 +72,6 @@ namespace DoAnQuanLyThuVien
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // txbPassWord
-            // 
-            this.txbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassWord.Location = new System.Drawing.Point(182, 114);
-            this.txbPassWord.Multiline = true;
-            this.txbPassWord.Name = "txbPassWord";
-            this.txbPassWord.PasswordChar = '*';
-            this.txbPassWord.Size = new System.Drawing.Size(302, 28);
-            this.txbPassWord.TabIndex = 2;
-            this.txbPassWord.UseSystemPasswordChar = true;
             // 
             // txbUserName
             // 
@@ -113,6 +102,16 @@ namespace DoAnQuanLyThuVien
             this.label1.TabIndex = 4;
             this.label1.Text = "Tên đăng nhập:";
             // 
+            // txbPassWord
+            // 
+            this.txbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPassWord.Location = new System.Drawing.Point(182, 117);
+            this.txbPassWord.Multiline = true;
+            this.txbPassWord.Name = "txbPassWord";
+            this.txbPassWord.PasswordChar = '*';
+            this.txbPassWord.Size = new System.Drawing.Size(302, 28);
+            this.txbPassWord.TabIndex = 2;
+            // 
             // fLogin
             // 
             this.AcceptButton = this.btnLogin;
@@ -134,12 +133,12 @@ namespace DoAnQuanLyThuVien
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txbPassWord;
         private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox txbPassWord;
     }
 }
 
