@@ -29,8 +29,6 @@ namespace DoAnQuanLyThuVien
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pbImage = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbBookNum = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,30 +39,12 @@ namespace DoAnQuanLyThuVien
             this.txbBookName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pbImage);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 147);
-            this.panel1.TabIndex = 0;
-            // 
-            // pbImage
-            // 
-            this.pbImage.Location = new System.Drawing.Point(15, 3);
-            this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(149, 141);
-            this.pbImage.TabIndex = 0;
-            this.pbImage.TabStop = false;
-            this.pbImage.Click += new System.EventHandler(this.pbImage_Click);
-            // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Controls.Add(this.txbBookNum);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txbBookType);
@@ -73,9 +53,9 @@ namespace DoAnQuanLyThuVien
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txbBookName);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(185, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(502, 147);
+            this.panel2.Size = new System.Drawing.Size(687, 147);
             this.panel2.TabIndex = 1;
             // 
             // txbBookNum
@@ -85,6 +65,7 @@ namespace DoAnQuanLyThuVien
             this.txbBookNum.Location = new System.Drawing.Point(359, 22);
             this.txbBookNum.Multiline = true;
             this.txbBookNum.Name = "txbBookNum";
+            this.txbBookNum.ReadOnly = true;
             this.txbBookNum.Size = new System.Drawing.Size(33, 16);
             this.txbBookNum.TabIndex = 7;
             // 
@@ -104,6 +85,7 @@ namespace DoAnQuanLyThuVien
             this.txbBookType.Location = new System.Drawing.Point(97, 104);
             this.txbBookType.Multiline = true;
             this.txbBookType.Name = "txbBookType";
+            this.txbBookType.ReadOnly = true;
             this.txbBookType.Size = new System.Drawing.Size(164, 16);
             this.txbBookType.TabIndex = 5;
             // 
@@ -142,6 +124,7 @@ namespace DoAnQuanLyThuVien
             this.txbBookName.Location = new System.Drawing.Point(97, 22);
             this.txbBookName.Multiline = true;
             this.txbBookName.Name = "txbBookName";
+            this.txbBookName.ReadOnly = true;
             this.txbBookName.Size = new System.Drawing.Size(164, 16);
             this.txbBookName.TabIndex = 1;
             // 
@@ -168,11 +151,8 @@ namespace DoAnQuanLyThuVien
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "ucListBook";
             this.Size = new System.Drawing.Size(687, 150);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -180,9 +160,6 @@ namespace DoAnQuanLyThuVien
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txbBookNum;

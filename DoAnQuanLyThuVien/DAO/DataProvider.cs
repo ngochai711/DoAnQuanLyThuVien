@@ -28,7 +28,7 @@ namespace DoAnQuanLyThuVien.DAO
         }
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=.\\sqlexpress;Initial Catalog=QLSACH;Integrated Security=True";
+        private string connectionSTR = "Data Source=.\\sqlexpress;Initial Catalog=LIBRARY_DATABASE;Integrated Security=True";
 
         
 
