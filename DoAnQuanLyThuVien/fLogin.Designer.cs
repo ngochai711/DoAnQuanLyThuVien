@@ -30,12 +30,12 @@ namespace DoAnQuanLyThuVien
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txbPassWord = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txbPassWord = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,16 +48,29 @@ namespace DoAnQuanLyThuVien
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(548, 254);
+            this.panel1.Size = new System.Drawing.Size(731, 313);
             this.panel1.TabIndex = 0;
+            // 
+            // txbPassWord
+            // 
+            this.txbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPassWord.Location = new System.Drawing.Point(243, 144);
+            this.txbPassWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPassWord.Multiline = true;
+            this.txbPassWord.Name = "txbPassWord";
+            this.txbPassWord.PasswordChar = '*';
+            this.txbPassWord.Size = new System.Drawing.Size(401, 34);
+            this.txbPassWord.TabIndex = 2;
             // 
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(384, 175);
+            this.btnExit.Location = new System.Drawing.Point(512, 215);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(87, 44);
+            this.btnExit.Size = new System.Drawing.Size(116, 54);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -65,9 +78,10 @@ namespace DoAnQuanLyThuVien
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(235, 175);
+            this.btnLogin.Location = new System.Drawing.Point(313, 215);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(87, 44);
+            this.btnLogin.Size = new System.Drawing.Size(116, 54);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -76,19 +90,21 @@ namespace DoAnQuanLyThuVien
             // txbUserName
             // 
             this.txbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbUserName.Location = new System.Drawing.Point(182, 58);
+            this.txbUserName.Location = new System.Drawing.Point(243, 71);
+            this.txbUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbUserName.Multiline = true;
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(302, 28);
+            this.txbUserName.Size = new System.Drawing.Size(401, 34);
             this.txbUserName.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(69, 117);
+            this.label2.Location = new System.Drawing.Point(92, 144);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
+            this.label2.Size = new System.Drawing.Size(133, 31);
             this.label2.TabIndex = 5;
             this.label2.Text = "Mật khẩu:";
             // 
@@ -96,34 +112,27 @@ namespace DoAnQuanLyThuVien
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 58);
+            this.label1.Location = new System.Drawing.Point(17, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 25);
+            this.label1.Size = new System.Drawing.Size(203, 31);
             this.label1.TabIndex = 4;
             this.label1.Text = "Tên đăng nhập:";
-            // 
-            // txbPassWord
-            // 
-            this.txbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassWord.Location = new System.Drawing.Point(182, 117);
-            this.txbPassWord.Multiline = true;
-            this.txbPassWord.Name = "txbPassWord";
-            this.txbPassWord.PasswordChar = '*';
-            this.txbPassWord.Size = new System.Drawing.Size(302, 28);
-            this.txbPassWord.TabIndex = 2;
             // 
             // fLogin
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(549, 255);
+            this.ClientSize = new System.Drawing.Size(732, 314);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
+            this.Load += new System.EventHandler(this.fLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

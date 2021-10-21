@@ -75,9 +75,9 @@ namespace DoAnQuanLyThuVien
 
         private void btnExit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            fMain f = new fMain();
+          
             this.Hide();
-            f.Show();
+          
         }
 
         private void btnPDF_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

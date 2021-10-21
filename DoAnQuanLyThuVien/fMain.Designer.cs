@@ -45,12 +45,14 @@ namespace DoAnQuanLyThuVien
             this.musicList = new System.Windows.Forms.ListView();
             this.button4 = new System.Windows.Forms.Button();
             this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SlidingPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -171,6 +173,7 @@ namespace DoAnQuanLyThuVien
             this.btnBookManagement.TabIndex = 2;
             this.btnBookManagement.Text = "Quản Lý Sách";
             this.btnBookManagement.UseVisualStyleBackColor = false;
+            this.btnBookManagement.Click += new System.EventHandler(this.btnBookManagement_Click);
             // 
             // btnAcountInfo
             // 
@@ -276,9 +279,9 @@ namespace DoAnQuanLyThuVien
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.musicList);
-            this.panel3.Location = new System.Drawing.Point(1149, 366);
+            this.panel3.Location = new System.Drawing.Point(1129, 366);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 368);
+            this.panel3.Size = new System.Drawing.Size(270, 368);
             this.panel3.TabIndex = 13;
             // 
             // panel4
@@ -291,7 +294,7 @@ namespace DoAnQuanLyThuVien
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, -9);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(250, 50);
+            this.panel4.Size = new System.Drawing.Size(270, 50);
             this.panel4.TabIndex = 13;
             // 
             // btnPlay
@@ -360,13 +363,13 @@ namespace DoAnQuanLyThuVien
             // 
             // musicList
             // 
-            this.musicList.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.musicList.BackColor = System.Drawing.SystemColors.Menu;
             this.musicList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.musicList.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.musicList.HideSelection = false;
             this.musicList.Location = new System.Drawing.Point(0, 41);
             this.musicList.Name = "musicList";
-            this.musicList.Size = new System.Drawing.Size(250, 327);
+            this.musicList.Size = new System.Drawing.Size(270, 327);
             this.musicList.TabIndex = 23;
             this.musicList.UseCompatibleStateImageBehavior = false;
             this.musicList.View = System.Windows.Forms.View.List;
@@ -380,7 +383,7 @@ namespace DoAnQuanLyThuVien
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(1120, 704);
+            this.button4.Location = new System.Drawing.Point(3, 344);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(23, 19);
@@ -391,11 +394,21 @@ namespace DoAnQuanLyThuVien
             // windowsMediaPlayer
             // 
             this.windowsMediaPlayer.Enabled = true;
-            this.windowsMediaPlayer.Location = new System.Drawing.Point(759, 197);
+            this.windowsMediaPlayer.Location = new System.Drawing.Point(1170, 134);
             this.windowsMediaPlayer.Name = "windowsMediaPlayer";
             this.windowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("windowsMediaPlayer.OcxState")));
             this.windowsMediaPlayer.Size = new System.Drawing.Size(162, 111);
             this.windowsMediaPlayer.TabIndex = 23;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.button4);
+            this.panel5.Location = new System.Drawing.Point(1103, 366);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(296, 368);
+            this.panel5.TabIndex = 24;
             // 
             // fMain
             // 
@@ -406,10 +419,10 @@ namespace DoAnQuanLyThuVien
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1399, 734);
             this.Controls.Add(this.windowsMediaPlayer);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.SlidingPanel);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fMain";
@@ -423,6 +436,7 @@ namespace DoAnQuanLyThuVien
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -451,5 +465,6 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListView musicList;
         private AxWMPLib.AxWindowsMediaPlayer windowsMediaPlayer;
+        private System.Windows.Forms.Panel panel5;
     }
 }

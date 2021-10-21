@@ -1,4 +1,6 @@
-﻿using System;
+﻿using WMPLib;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using WMPLib;
 namespace DoAnQuanLyThuVien
 {
     public partial class fMain : Form
@@ -84,7 +85,7 @@ namespace DoAnQuanLyThuVien
         // minimize, maximize, close button
         private void button3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -232,9 +233,18 @@ namespace DoAnQuanLyThuVien
         {
 
         }
+
+        private void btnBookManagement_Click(object sender, EventArgs e)
+        {
+            fBookManage f = new fBookManage();
+            f.Show();
+        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
+           
+            
         }
 
         private void btnAssist_Click(object sender, EventArgs e)
