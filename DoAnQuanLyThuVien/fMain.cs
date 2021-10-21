@@ -13,22 +13,43 @@ namespace DoAnQuanLyThuVien
     public partial class fMain : Form
     {
         int oldPanelWidth, oldPanelHeight;
+        string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement;
+
+
 
         bool hidden;
         public fMain()
         {
             InitializeComponent();
-            oldPanelWidth = 235;
-            oldPanelHeight = SlidingPanel.Height;
-            SlidingPanel.Width = btnShow.Width;
-            hidden = true;
+            pre_loading();
 
         }
-
+        
         private void fMain_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void pre_loading()
+        {
+            // menu data
+            oldPanelWidth = 235;
+            oldPanelHeight = SlidingPanel.Height;
+            SlidingPanel.Width = btnShow.Width;
+            //button data
+            oldbtnExit = btnExit.Text;
+            oldbtnAssist = btnAssist.Text;
+            oldbtnBookManagement = btnBookManagement.Text;
+            oldbtnL_card_show = btnL_card_show.Text;
+            oldbtnAcountInfo = btnAcountInfo.Text;
+            btnAssist.Text = "";
+            btnExit.Text = "";
+            btnBookManagement.Text = "";
+            btnL_card_show.Text = "";
+            btnAcountInfo.Text = "";
+            hidden = true;
+        }
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -51,6 +72,10 @@ namespace DoAnQuanLyThuVien
 
         }
 
+        private void btnAcountInfo_Click(object sender, EventArgs e)
+        {
+
+        }
         private void SlidingPanel_Paint(object sender, PaintEventArgs e)
         {
 
@@ -72,13 +97,22 @@ namespace DoAnQuanLyThuVien
             if (!hidden)
             {
                 SlidingPanel.Width = btnShow.Width;
-               
                 hidden = true;
+                btnAssist.Text = "";
+                btnExit.Text = "";
+                btnAcountInfo.Text = "";
+                btnBookManagement.Text = "";
+                btnL_card_show.Text = "";
             }
             else
             {
                 SlidingPanel.Width = oldPanelWidth;
                 SlidingPanel.Height = oldPanelHeight;
+                btnAssist.Text = oldbtnAssist;
+                btnExit.Text = oldbtnExit;
+                btnAcountInfo.Text = oldbtnAcountInfo;
+                btnBookManagement.Text = oldbtnBookManagement;
+                btnL_card_show.Text = oldbtnL_card_show;
                 hidden = false;
             }
 
