@@ -31,7 +31,6 @@ namespace DoAnQuanLyThuVien
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.flpListBook = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucListBook1 = new DoAnQuanLyThuVien.ucListBook();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnExit = new DoAnQuanLyThuVien.DAO.RoundedButton();
             this.btnInfoBook = new DoAnQuanLyThuVien.DAO.RoundedButton();
@@ -39,56 +38,63 @@ namespace DoAnQuanLyThuVien
             this.btnEditBook = new DoAnQuanLyThuVien.DAO.RoundedButton();
             this.btnDeleteBook = new DoAnQuanLyThuVien.DAO.RoundedButton();
             this.btnAddBook = new DoAnQuanLyThuVien.DAO.RoundedButton();
+            this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
+            this.roundedButton1 = new DoAnQuanLyThuVien.DAO.RoundedButton();
             this.panel1.SuspendLayout();
             this.flpListBook.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.roundedButton1);
+            this.panel1.Controls.Add(this.btnSearchBook);
+            this.panel1.Controls.Add(this.searchControl1);
             this.panel1.Controls.Add(this.flpListBook);
-            this.panel1.Location = new System.Drawing.Point(204, 1);
+            this.panel1.Controls.Add(this.btnAddBook);
+            this.panel1.Controls.Add(this.btnEditBook);
+            this.panel1.Controls.Add(this.btnDeleteBook);
+            this.panel1.Location = new System.Drawing.Point(174, 8);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(713, 606);
+            this.panel1.Size = new System.Drawing.Size(863, 685);
             this.panel1.TabIndex = 2;
             // 
             // flpListBook
             // 
             this.flpListBook.AutoScroll = true;
-            this.flpListBook.Controls.Add(this.ucListBook1);
-            this.flpListBook.Location = new System.Drawing.Point(0, 0);
+            this.flpListBook.Location = new System.Drawing.Point(5, 138);
+            this.flpListBook.Margin = new System.Windows.Forms.Padding(4);
             this.flpListBook.Name = "flpListBook";
-            this.flpListBook.Size = new System.Drawing.Size(713, 606);
+            this.flpListBook.Size = new System.Drawing.Size(926, 675);
             this.flpListBook.TabIndex = 3;
             // 
             // ucListBook1
             // 
-            this.ucListBook1.Location = new System.Drawing.Point(3, 3);
-            this.ucListBook1.Name = "ucListBook1";
-            this.ucListBook1.Size = new System.Drawing.Size(707, 150);
-            this.ucListBook1.TabIndex = 0;
+       
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel2.Controls.Add(this.btnExit);
             this.panel2.Controls.Add(this.btnInfoBook);
-            this.panel2.Controls.Add(this.btnSearchBook);
-            this.panel2.Controls.Add(this.btnEditBook);
-            this.panel2.Controls.Add(this.btnDeleteBook);
-            this.panel2.Controls.Add(this.btnAddBook);
-            this.panel2.Location = new System.Drawing.Point(2, 4);
+            this.panel2.Controls.Add(this.btnExit);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Location = new System.Drawing.Point(3, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(202, 603);
+            this.panel2.Size = new System.Drawing.Size(1211, 748);
             this.panel2.TabIndex = 3;
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(3, 508);
+            this.btnExit.Location = new System.Drawing.Point(1103, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(196, 95);
+            this.btnExit.Size = new System.Drawing.Size(104, 59);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -97,9 +103,10 @@ namespace DoAnQuanLyThuVien
             // btnInfoBook
             // 
             this.btnInfoBook.BackColor = System.Drawing.Color.White;
-            this.btnInfoBook.Location = new System.Drawing.Point(3, 407);
+            this.btnInfoBook.Location = new System.Drawing.Point(1045, 160);
+            this.btnInfoBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnInfoBook.Name = "btnInfoBook";
-            this.btnInfoBook.Size = new System.Drawing.Size(196, 95);
+            this.btnInfoBook.Size = new System.Drawing.Size(162, 59);
             this.btnInfoBook.TabIndex = 9;
             this.btnInfoBook.Text = "Thông tin chi tiết";
             this.btnInfoBook.UseVisualStyleBackColor = false;
@@ -107,9 +114,10 @@ namespace DoAnQuanLyThuVien
             // btnSearchBook
             // 
             this.btnSearchBook.BackColor = System.Drawing.Color.White;
-            this.btnSearchBook.Location = new System.Drawing.Point(3, 306);
+            this.btnSearchBook.Location = new System.Drawing.Point(656, 59);
+            this.btnSearchBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchBook.Name = "btnSearchBook";
-            this.btnSearchBook.Size = new System.Drawing.Size(196, 95);
+            this.btnSearchBook.Size = new System.Drawing.Size(127, 36);
             this.btnSearchBook.TabIndex = 8;
             this.btnSearchBook.Text = "Tìm kiếm sách";
             this.btnSearchBook.UseVisualStyleBackColor = false;
@@ -117,9 +125,10 @@ namespace DoAnQuanLyThuVien
             // btnEditBook
             // 
             this.btnEditBook.BackColor = System.Drawing.Color.White;
-            this.btnEditBook.Location = new System.Drawing.Point(3, 205);
+            this.btnEditBook.Location = new System.Drawing.Point(340, 4);
+            this.btnEditBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditBook.Name = "btnEditBook";
-            this.btnEditBook.Size = new System.Drawing.Size(196, 95);
+            this.btnEditBook.Size = new System.Drawing.Size(162, 59);
             this.btnEditBook.TabIndex = 7;
             this.btnEditBook.Text = "Sửa thông tin sách";
             this.btnEditBook.UseVisualStyleBackColor = false;
@@ -127,9 +136,10 @@ namespace DoAnQuanLyThuVien
             // btnDeleteBook
             // 
             this.btnDeleteBook.BackColor = System.Drawing.Color.White;
-            this.btnDeleteBook.Location = new System.Drawing.Point(3, 104);
+            this.btnDeleteBook.Location = new System.Drawing.Point(170, 4);
+            this.btnDeleteBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteBook.Name = "btnDeleteBook";
-            this.btnDeleteBook.Size = new System.Drawing.Size(196, 95);
+            this.btnDeleteBook.Size = new System.Drawing.Size(162, 59);
             this.btnDeleteBook.TabIndex = 1;
             this.btnDeleteBook.Text = "Xóa sách";
             this.btnDeleteBook.UseVisualStyleBackColor = false;
@@ -137,27 +147,50 @@ namespace DoAnQuanLyThuVien
             // btnAddBook
             // 
             this.btnAddBook.BackColor = System.Drawing.Color.White;
-            this.btnAddBook.Location = new System.Drawing.Point(3, 3);
+            this.btnAddBook.Location = new System.Drawing.Point(0, 0);
+            this.btnAddBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddBook.Name = "btnAddBook";
-            this.btnAddBook.Size = new System.Drawing.Size(196, 95);
+            this.btnAddBook.Size = new System.Drawing.Size(162, 59);
             this.btnAddBook.TabIndex = 1;
             this.btnAddBook.Text = "Thêm sách";
             this.btnAddBook.UseVisualStyleBackColor = false;
             // 
+            // searchControl1
+            // 
+            this.searchControl1.Location = new System.Drawing.Point(152, 70);
+            this.searchControl1.Name = "searchControl1";
+            this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.searchControl1.Size = new System.Drawing.Size(477, 22);
+            this.searchControl1.TabIndex = 4;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BackColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(10, 67);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(135, 28);
+            this.roundedButton1.TabIndex = 9;
+            this.roundedButton1.Text = "Tìm kiếm sách";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            // 
             // fBookManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(920, 612);
+            this.ClientSize = new System.Drawing.Size(1227, 753);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fBookManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý sách";
             this.panel1.ResumeLayout(false);
             this.flpListBook.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -172,6 +205,8 @@ namespace DoAnQuanLyThuVien
         private DAO.RoundedButton btnEditBook;
         private DAO.RoundedButton btnDeleteBook;
         private System.Windows.Forms.FlowLayoutPanel flpListBook;
-        private ucListBook ucListBook1;
+        
+        private DAO.RoundedButton roundedButton1;
+        private DevExpress.XtraEditors.SearchControl searchControl1;
     }
 }

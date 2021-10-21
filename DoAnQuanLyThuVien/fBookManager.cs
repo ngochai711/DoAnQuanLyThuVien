@@ -30,16 +30,9 @@ namespace DoAnQuanLyThuVien
 
         void LoadInfoBook()
         {
-            ucListBook[] listBooks = new ucListBook[10];
-
-            for(int i = 1; i < listBooks.Length; i++)
-            {
-                listBooks[i] = new ucListBook();
-                if (flpListBook.Controls.Count < 0)
-                    flpListBook.Controls.Clear();
-                else
-                    flpListBook.Controls.Add(listBooks[i]);
-            }
+           
         }
+
+        
     }
 }
