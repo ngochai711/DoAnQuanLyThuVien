@@ -37,6 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
+    <Reference Include="AlphaBlendTextBox, Version=1.0.1270.35793, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AlphaBlendTextBox.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -98,6 +102,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ListBook.edmx</DependentUpon>
     </Compile>
+    <Compile Include="fAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAdd.designer.cs">
+      <DependentUpon>fAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="fBookManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +156,9 @@
     <Compile Include="DTO\STAFF_INFO.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fAdd.resx">
+      <DependentUpon>fAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fBookManage.resx">
       <DependentUpon>fBookManage.cs</DependentUpon>
     </EmbeddedResource>

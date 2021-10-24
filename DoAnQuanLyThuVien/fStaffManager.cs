@@ -28,6 +28,7 @@ namespace DoAnQuanLyThuVien
 
         private void DataLoad()
         {
+            DTB.STAFF_INFO.DefaultIfEmpty();
             dtgStaffList.DataSource = DTB.STAFF_INFO.ToList();
         }
 
@@ -36,13 +37,11 @@ namespace DoAnQuanLyThuVien
 
         }
 
-        private void AddStaff()
-        {
-            DTB.STAFF_INFO.Add(new STAFF_INFO() { ID = "12345", NAME = "Naruto", ADDRESS = "" });
-        }
-
         private void DeleteStaff()
         {
+            if (MessageBox.Show("Bạn có chắc chắn xóa?", "Cảnh báo!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+                return;
+
             string ID = dtgStaffList.SelectedCells[0].OwningRow.Cells["ID"].Value.ToString();
 
             STAFF_INFO person = DTB.STAFF_INFO.Find(ID);
@@ -51,19 +50,17 @@ namespace DoAnQuanLyThuVien
             DTB.SaveChanges();
         }
 
-        private void EditStaff()
-        {
-
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AddStaff();
+            fAdd f = new fAdd();
+
+            f.Show();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            DataLoad();
+            STAFF_DATABASE dtb = new STAFF_DATABASE();
+            dtgStaffList.DataSource = dtb.STAFF_INFO.ToList();
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -74,6 +71,16 @@ namespace DoAnQuanLyThuVien
         private void btnReturn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            DTB.SaveChanges();
+        }
+
+        private void txbSearch_StyleChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
