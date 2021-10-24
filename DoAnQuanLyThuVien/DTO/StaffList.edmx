@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LIBRARY_DATABASEModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="STAFF_ACCOUNT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="USERNAME" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="STAFF_INFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="PIN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="SEX" Type="nvarchar" MaxLength="4" />
+          <Property Name="BIRTHDATE" Type="smalldatetime" />
+          <Property Name="AGE" Type="tinyint" />
+          <Property Name="ADDRESS" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="PHONE_NUMBER" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+          <Property Name="POSITION" Type="bit" />
+        </EntityType>
+        <Association Name="FK__STAFF_ACCOUN__ID__276EDEB3">
+          <End Role="STAFF_INFO" Type="Self.STAFF_INFO" Multiplicity="1" />
+          <End Role="STAFF_ACCOUNT" Type="Self.STAFF_ACCOUNT" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="STAFF_INFO">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="STAFF_ACCOUNT">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LIBRARY_DATABASEModel1StoreContainer">
+          <EntitySet Name="STAFF_ACCOUNT" EntityType="Self.STAFF_ACCOUNT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="STAFF_INFO" EntityType="Self.STAFF_INFO" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__STAFF_ACCOUN__ID__276EDEB3" Association="Self.FK__STAFF_ACCOUN__ID__276EDEB3">
+            <End Role="STAFF_INFO" EntitySet="STAFF_INFO" />
+            <End Role="STAFF_ACCOUNT" EntitySet="STAFF_ACCOUNT" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LIBRARY_DATABASEModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="STAFF_ACCOUNT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="USERNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="STAFF_INFO" Relationship="Self.FK__STAFF_ACCOUN__ID__276EDEB3" FromRole="STAFF_ACCOUNT" ToRole="STAFF_INFO" />
+        </EntityType>
+        <EntityType Name="STAFF_INFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="PIN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SEX" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="BIRTHDATE" Type="DateTime" Precision="0" />
+          <Property Name="AGE" Type="Byte" />
+          <Property Name="ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="POSITION" Type="Boolean" />
+          <NavigationProperty Name="STAFF_ACCOUNT" Relationship="Self.FK__STAFF_ACCOUN__ID__276EDEB3" FromRole="STAFF_INFO" ToRole="STAFF_ACCOUNT" />
+        </EntityType>
+        <Association Name="FK__STAFF_ACCOUN__ID__276EDEB3">
+          <End Role="STAFF_INFO" Type="Self.STAFF_INFO" Multiplicity="1" />
+          <End Role="STAFF_ACCOUNT" Type="Self.STAFF_ACCOUNT" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="STAFF_INFO">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="STAFF_ACCOUNT">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LIBRARY_DATABASEEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="STAFF_ACCOUNT" EntityType="Self.STAFF_ACCOUNT" />
+          <EntitySet Name="STAFF_INFO" EntityType="Self.STAFF_INFO" />
+          <AssociationSet Name="FK__STAFF_ACCOUN__ID__276EDEB3" Association="Self.FK__STAFF_ACCOUN__ID__276EDEB3">
+            <End Role="STAFF_INFO" EntitySet="STAFF_INFO" />
+            <End Role="STAFF_ACCOUNT" EntitySet="STAFF_ACCOUNT" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LIBRARY_DATABASEModel1StoreContainer" CdmEntityContainer="LIBRARY_DATABASEEntities">
+          <EntitySetMapping Name="STAFF_ACCOUNT">
+            <EntityTypeMapping TypeName="LIBRARY_DATABASEModel1.STAFF_ACCOUNT">
+              <MappingFragment StoreEntitySet="STAFF_ACCOUNT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="STAFF_INFO">
+            <EntityTypeMapping TypeName="LIBRARY_DATABASEModel1.STAFF_INFO">
+              <MappingFragment StoreEntitySet="STAFF_INFO">
+                <ScalarProperty Name="PIN" ColumnName="PIN" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="SEX" ColumnName="SEX" />
+                <ScalarProperty Name="BIRTHDATE" ColumnName="BIRTHDATE" />
+                <ScalarProperty Name="AGE" ColumnName="AGE" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

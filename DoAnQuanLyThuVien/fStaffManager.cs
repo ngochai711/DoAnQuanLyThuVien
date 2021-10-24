@@ -17,5 +17,10 @@ namespace DoAnQuanLyThuVien
         {
             InitializeComponent();
         }
+
+        private void DataLoad()
+        {
+            dtgStaffList.DataSource = 
+        }
     }
 }
