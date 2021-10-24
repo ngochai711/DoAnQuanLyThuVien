@@ -17,6 +17,7 @@ namespace DoAnQuanLyThuVien
         public fStaffManager()
         {
             InitializeComponent();
+            AddBinding();
         }
 
         STAFF_DATABASE DTB = new STAFF_DATABASE();
@@ -28,13 +29,18 @@ namespace DoAnQuanLyThuVien
 
         private void DataLoad()
         {
-            DTB.STAFF_INFO.DefaultIfEmpty();
             dtgStaffList.DataSource = DTB.STAFF_INFO.ToList();
         }
 
         private void AddBinding()
         {
-
+            txbNAME.DataBindings.Add(new Binding("Text", dtgStaffList.DataSource, "NAME"));
+            txbID.DataBindings.Add(new Binding("Text", dtgStaffList.DataSource, "ID"));
+            txbAGE.DataBindings.Add(new Binding("Text", dtgStaffList.DataSource, "AGE"));
+            txbBIRTHDATE.DataBindings.Add(new Binding("Text", dtgStaffList.DataSource, "BIRTHDATE"));
+            txbADDRESS.DataBindings.Add(new Binding("Text", dtgStaffList.DataSource, "ADDRESS"));
+            txbPHONE_NUMBER.DataBindings.Add(new Binding("Text", dtgStaffList.DataSource, "PHONE_NUMBER"));
+            txbEMAIL.DataBindings.Add(new Binding("Text", dtgStaffList.DataSource, "EMAIL"));
         }
 
         private void DeleteStaff()
@@ -89,11 +95,6 @@ namespace DoAnQuanLyThuVien
                             select dtb;
                 dtgStaffList.DataSource = result.ToList();
             }
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
