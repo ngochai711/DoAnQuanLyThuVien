@@ -72,12 +72,12 @@ namespace DoAnQuanLyThuVien
 
             //set WMP data
 
-            FolderBrowserDialog fld = new FolderBrowserDialog();
-            fld.SelectedPath = @"C:\Users\USER\Music\mp3";
-            tsbClearPlaylist_Click();
+            //FolderBrowserDialog fld = new FolderBrowserDialog();
+            //fld.SelectedPath = @"C:\Users\USER\Music\mp3";
+            //tsbClearPlaylist_Click();
 
-            CreatePlayLis(fld, "*.mp3");
-            windowsMediaPlayer.Visible = false;
+            //CreatePlayLis(fld, "*.mp3");
+            //windowsMediaPlayer.Visible = false;
 
         }
 

@@ -1,7 +1,7 @@
 ﻿
 namespace DoAnQuanLyThuVien
 {
-    partial class Form1
+    partial class fStaffManager
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,9 @@ namespace DoAnQuanLyThuVien
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            this.Text = "fStaffManager";
         }
 
         #endregion
