@@ -78,9 +78,22 @@ namespace DoAnQuanLyThuVien
             DTB.SaveChanges();
         }
 
-        private void txbSearch_StyleChanged(object sender, EventArgs e)
+        private void txbSearch_TextChanged(object sender, EventArgs e)
         {
+            TextBox search = sender as TextBox;
 
+            using(STAFF_DATABASE stfin4 = new STAFF_DATABASE())
+            {
+                var result = from dtb in stfin4.STAFF_INFO
+                             where (dtb.NAME.Contains(search.Text))
+                            select dtb;
+                dtgStaffList.DataSource = result.ToList();
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

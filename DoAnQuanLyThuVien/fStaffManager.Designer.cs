@@ -70,6 +70,7 @@ namespace DoAnQuanLyThuVien
             this.btnSearch.Size = new System.Drawing.Size(60, 30);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Tìm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txbSearch
             // 
@@ -79,7 +80,7 @@ namespace DoAnQuanLyThuVien
             this.txbSearch.Size = new System.Drawing.Size(422, 30);
             this.txbSearch.TabIndex = 1;
             this.txbSearch.Text = "Nhập họ tên...";
-            this.txbSearch.StyleChanged += new System.EventHandler(this.txbSearch_StyleChanged);
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // dtgStaffList
             // 
@@ -218,6 +219,11 @@ namespace DoAnQuanLyThuVien
             this.pnlButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
+        }
+
+        private void TxbSearch_TextChanged(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
