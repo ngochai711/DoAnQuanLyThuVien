@@ -13,9 +13,9 @@ namespace DoAnQuanLyThuVien.DTO
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LIBRARY_DATABASEEntities : DbContext
+    public partial class STAFF_DATABASE : DbContext
     {
-        public LIBRARY_DATABASEEntities()
+        public STAFF_DATABASE()
             : base("name=LIBRARY_DATABASEEntities")
         {
         }

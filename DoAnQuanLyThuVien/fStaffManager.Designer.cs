@@ -29,29 +29,18 @@ namespace DoAnQuanLyThuVien
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.pnlDataList = new System.Windows.Forms.Panel();
+            this.dtgStaffList = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pnlInfo = new System.Windows.Forms.Panel();
             this.pnlButtons = new System.Windows.Forms.Panel();
-            this.dtgStaffList = new System.Windows.Forms.DataGridView();
-            this.bOOKSMANAGEMENTBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lIBRARYDATABASEEntitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fBookManageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lIBRARYDATABASEEntitiesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bOOKSMANAGEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.databaseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.changeTrackerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.configurationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lIBRARYDATABASEEntitiesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.pnlDataList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgStaffList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bOOKSMANAGEMENTBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBRARYDATABASEEntitiesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fBookManageBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBRARYDATABASEEntitiesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBRARYDATABASEEntitiesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.pnlButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlDataList
@@ -62,6 +51,26 @@ namespace DoAnQuanLyThuVien
             this.pnlDataList.Size = new System.Drawing.Size(498, 508);
             this.pnlDataList.TabIndex = 0;
             // 
+            // dtgStaffList
+            // 
+            this.AutoScroll = true;
+            this.dtgStaffList.AllowDrop = true;
+            this.dtgStaffList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+            this.dtgStaffList.Location = new System.Drawing.Point(4, 4);
+            this.dtgStaffList.MainView = this.gridView1;
+            this.dtgStaffList.Margin = new System.Windows.Forms.Padding(4);
+            this.dtgStaffList.Name = "dtgStaffList";
+            this.dtgStaffList.Size = new System.Drawing.Size(490, 500);
+            this.dtgStaffList.TabIndex = 0;
+            this.dtgStaffList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.DetailHeight = 437;
+            this.gridView1.GridControl = this.dtgStaffList;
+            this.gridView1.Name = "gridView1";
+            // 
             // pnlInfo
             // 
             this.pnlInfo.Location = new System.Drawing.Point(516, 0);
@@ -71,39 +80,20 @@ namespace DoAnQuanLyThuVien
             // 
             // pnlButtons
             // 
+            this.pnlButtons.Controls.Add(this.simpleButton1);
             this.pnlButtons.Location = new System.Drawing.Point(12, 0);
             this.pnlButtons.Name = "pnlButtons";
-            this.pnlButtons.Size = new System.Drawing.Size(498, 130);
+            this.pnlButtons.Size = new System.Drawing.Size(498, 111);
             this.pnlButtons.TabIndex = 1;
             // 
-            // dtgStaffList
+            // simpleButton1
             // 
-            this.dtgStaffList.AutoGenerateColumns = false;
-            this.dtgStaffList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgStaffList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.bOOKSMANAGEMENTDataGridViewTextBoxColumn,
-            this.databaseDataGridViewTextBoxColumn,
-            this.changeTrackerDataGridViewTextBoxColumn,
-            this.configurationDataGridViewTextBoxColumn});
-            this.dtgStaffList.DataSource = this.lIBRARYDATABASEEntitiesBindingSource1;
-            this.dtgStaffList.Location = new System.Drawing.Point(4, 40);
-            this.dtgStaffList.Name = "dtgStaffList";
-            this.dtgStaffList.RowHeadersWidth = 51;
-            this.dtgStaffList.RowTemplate.Height = 24;
-            this.dtgStaffList.Size = new System.Drawing.Size(491, 465);
-            this.dtgStaffList.TabIndex = 0;
-            // 
-            // bOOKSMANAGEMENTBindingSource
-            // 
-            this.bOOKSMANAGEMENTBindingSource.DataSource = typeof(DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT);
-            // 
-            // lIBRARYDATABASEEntitiesBindingSource
-            // 
-            this.lIBRARYDATABASEEntitiesBindingSource.DataSource = typeof(DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities);
-            // 
-            // fBookManageBindingSource
-            // 
-            this.fBookManageBindingSource.DataSource = typeof(DoAnQuanLyThuVien.fBookManage);
+            this.simpleButton1.Location = new System.Drawing.Point(369, 4);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton1.TabIndex = 1;
+            this.simpleButton1.Text = "simpleButton1";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -121,49 +111,6 @@ namespace DoAnQuanLyThuVien
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // lIBRARYDATABASEEntitiesBindingSource1
-            // 
-            this.lIBRARYDATABASEEntitiesBindingSource1.DataSource = typeof(DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities);
-            // 
-            // bOOKSMANAGEMENTDataGridViewTextBoxColumn
-            // 
-            this.bOOKSMANAGEMENTDataGridViewTextBoxColumn.DataPropertyName = "BOOKS_MANAGEMENT";
-            this.bOOKSMANAGEMENTDataGridViewTextBoxColumn.HeaderText = "BOOKS_MANAGEMENT";
-            this.bOOKSMANAGEMENTDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.bOOKSMANAGEMENTDataGridViewTextBoxColumn.Name = "bOOKSMANAGEMENTDataGridViewTextBoxColumn";
-            this.bOOKSMANAGEMENTDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // databaseDataGridViewTextBoxColumn
-            // 
-            this.databaseDataGridViewTextBoxColumn.DataPropertyName = "Database";
-            this.databaseDataGridViewTextBoxColumn.HeaderText = "Database";
-            this.databaseDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.databaseDataGridViewTextBoxColumn.Name = "databaseDataGridViewTextBoxColumn";
-            this.databaseDataGridViewTextBoxColumn.ReadOnly = true;
-            this.databaseDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // changeTrackerDataGridViewTextBoxColumn
-            // 
-            this.changeTrackerDataGridViewTextBoxColumn.DataPropertyName = "ChangeTracker";
-            this.changeTrackerDataGridViewTextBoxColumn.HeaderText = "ChangeTracker";
-            this.changeTrackerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.changeTrackerDataGridViewTextBoxColumn.Name = "changeTrackerDataGridViewTextBoxColumn";
-            this.changeTrackerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.changeTrackerDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // configurationDataGridViewTextBoxColumn
-            // 
-            this.configurationDataGridViewTextBoxColumn.DataPropertyName = "Configuration";
-            this.configurationDataGridViewTextBoxColumn.HeaderText = "Configuration";
-            this.configurationDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.configurationDataGridViewTextBoxColumn.Name = "configurationDataGridViewTextBoxColumn";
-            this.configurationDataGridViewTextBoxColumn.ReadOnly = true;
-            this.configurationDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // lIBRARYDATABASEEntitiesBindingSource2
-            // 
-            this.lIBRARYDATABASEEntitiesBindingSource2.DataSource = typeof(DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities);
-            // 
             // fStaffManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -174,13 +121,11 @@ namespace DoAnQuanLyThuVien
             this.Controls.Add(this.pnlDataList);
             this.Name = "fStaffManager";
             this.Text = "Quản lý nhân sự";
+            this.Load += new System.EventHandler(this.fStaffManager_Load);
             this.pnlDataList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgStaffList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bOOKSMANAGEMENTBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBRARYDATABASEEntitiesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fBookManageBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBRARYDATABASEEntitiesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBRARYDATABASEEntitiesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.pnlButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -188,19 +133,12 @@ namespace DoAnQuanLyThuVien
         #endregion
 
         private System.Windows.Forms.Panel pnlDataList;
-        private System.Windows.Forms.DataGridView dtgStaffList;
         private System.Windows.Forms.Panel pnlInfo;
         private System.Windows.Forms.Panel pnlButtons;
-        private System.Windows.Forms.BindingSource fBookManageBindingSource;
-        private System.Windows.Forms.BindingSource bOOKSMANAGEMENTBindingSource;
-        private System.Windows.Forms.BindingSource lIBRARYDATABASEEntitiesBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bOOKSMANAGEMENTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn databaseDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn changeTrackerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn configurationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource lIBRARYDATABASEEntitiesBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.BindingSource lIBRARYDATABASEEntitiesBindingSource2;
+        private DevExpress.XtraGrid.GridControl dtgStaffList;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

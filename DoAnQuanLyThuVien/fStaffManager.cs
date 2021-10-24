@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnQuanLyThuVien.DTO;
 
 namespace DoAnQuanLyThuVien
 {
@@ -18,9 +19,30 @@ namespace DoAnQuanLyThuVien
             InitializeComponent();
         }
 
+        private void fStaffManager_Load(object sender, EventArgs e)
+        {
+            DataLoad();
+        }
+
         private void DataLoad()
         {
-            dtgStaffList.DataSource = 
+            STAFF_DATABASE DTB = new STAFF_DATABASE();
+            dtgStaffList.DataSource = DTB.STAFF_INFO.ToList();
+        }
+
+        private void AddStaff()
+        {
+
+        }
+
+        private void DeleteStaff()
+        {
+
+        }
+
+        private void EditStaff()
+        {
+
         }
     }
 }
