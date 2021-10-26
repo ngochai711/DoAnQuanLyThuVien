@@ -16,12 +16,12 @@ namespace DoAnQuanLyThuVien
     public partial class fMain : Form
     {
 
-        
+
 
         int oldPanelWidth, oldPanelHeight;
         string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement;
-        int oldListWidth, oldListHeight;
-        bool max_ed = false;
+        //int oldListWidth, oldListHeight;
+        bool max_ed = true;
         bool Wmpstatus;
 
         bool hidden;
@@ -32,18 +32,14 @@ namespace DoAnQuanLyThuVien
 
         }
 
-        private void fMain_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void pre_loading()
         {
-            oldListHeight = musicList.Height;
-            oldListWidth = musicList.Width;
+            //oldListHeight = musicList.Height;
+            //oldListWidth = musicList.Width;
 
             // menu data
-            oldPanelWidth = 270;
+            oldPanelWidth = 290;
             oldPanelHeight = SlidingPanel.Height;
             SlidingPanel.Width = btnShow.Width;
 
@@ -59,26 +55,31 @@ namespace DoAnQuanLyThuVien
             btnL_card_show.Text = "";
             btnAcountInfo.Text = "";
             hidden = true;
+
             //set button colour
-            SlidingPanel.BackColor = Color.FromArgb(70, 255, 255, 255);
+            /*.BackColor = Color.FromArgb(0, 208, 241, 247);
+            SlidingPanel.BackColor = Color.FromArgb(70, 62, 0, 255);
             //lbTeamName.BackColor = Color.FromArgb(30, 249, 249, 249);
-            btnShow.BackColor = Color.FromArgb(30, 208, 241, 247);
-            btnBookManagement.BackColor = Color.FromArgb(30, 208, 241, 247);
-            btnAcountInfo.BackColor = Color.FromArgb(30, 208, 241, 247);
-            btnL_card_show.BackColor = Color.FromArgb(30, 208, 241, 247);
-            btnExit.BackColor = Color.FromArgb(30, 208, 241, 247);
-            btnAssist.BackColor = Color.FromArgb(30, 208, 241, 247);
-            panel4.BackColor = Color.FromArgb(30, 208, 241, 247);
+            /*
+            btnBookManagement.BackColor = Color.FromArgb(0, 208, 241, 247);
+            btnAcountInfo.BackColor = Color.FromArgb(0, 208, 241, 247);
+            btnL_card_show.BackColor = Color.FromArgb(0, 208, 241, 247);
+            btnExit.BackColor = Color.FromArgb(0, 208, 241, 247);
+            btnAssist.BackColor = Color.FromArgb(0, 208, 241, 247);
+            panel4.BackColor = Color.FromArgb(0, 208, 241, 247);*/
 
             //set WMP data
 
             FolderBrowserDialog fld = new FolderBrowserDialog();
-            fld.SelectedPath = @"C:\Users\USER\Music\mp3";
+            //doi ten duong truyen
+            fld.SelectedPath = @"F:\Project\DoAnQuanLyThuVien\DoAnQuanLyThuVien\song";
+           
             tsbClearPlaylist_Click();
 
             CreatePlayLis(fld, "*.mp3");
             windowsMediaPlayer.Visible = false;
-
+            //panel5.Location = new Point(1314, 797);
+            //panel5.Location.Y = 714;
         }
 
         #region form's control
@@ -108,49 +109,74 @@ namespace DoAnQuanLyThuVien
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private bool mouseDown;
+        private Point lastLocation;
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
         #endregion
 
         #region mp3 button and function
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            windowsMediaPlayer.Ctlcontrols.play();
-            btnPlay.BackColor = Color.LightGray;
-            btnPause.BackColor = Color.Transparent;
+
+            //btnPlay.BackColor = Color.LightGray;
+            //btnPlay.Show();
+            // btnPause.Hide();
+            if (windowsMediaPlayer.status == "Stop" || windowsMediaPlayer.status == "Paused" || windowsMediaPlayer.status == "Ready")
+            {
+                btnPlay.ImageIndex = 1;
+                windowsMediaPlayer.Ctlcontrols.play();
+            }
+            else 
+            {
+                btnPlay.ImageIndex = 0;
+                windowsMediaPlayer.Ctlcontrols.pause();
+
+            }
+            // btnPause.BackColor = Color.Transparent;
         }
 
-        private void btnPause_Click(object sender, EventArgs e)
-        {
-            windowsMediaPlayer.Ctlcontrols.pause();
-            btnPause.BackColor = Color.LightGray;
-            btnPlay.BackColor = Color.Transparent;
-        }
-       /* private void tsbClearPlaylist_Click()
-        {
-            for (int i = 0; i < windowsMediaPlayer.currentPlaylist.count;)
-            {
-                IWMPMedia med = windowsMediaPlayer.currentPlaylist.get_Item(i);
-                windowsMediaPlayer.currentPlaylist.removeItem(med);
-            }
-            musicList.Items.Clear();
-        }*/
+       
+        /* private void tsbClearPlaylist_Click()
+         {
+             for (int i = 0; i < windowsMediaPlayer.currentPlaylist.count;)
+             {
+                 IWMPMedia med = windowsMediaPlayer.currentPlaylist.get_Item(i);
+                 windowsMediaPlayer.currentPlaylist.removeItem(med);
+             }
+             musicList.Items.Clear();
+         }*/
 
         private void CreatePlayLis(FolderBrowserDialog folder, string extendsion)
-
         {
             string myPlaylist = "Sample";
             WMPLib.IWMPPlaylist pl;
             WMPLib.IWMPPlaylistArray plItems;
-            /*int i = windowsMediaPlayer.playlistCollection.getAll().count;
-            while (i-- > 0)
-            {
-                IWMPPlaylistArray plCollection = windowsMediaPlayer.playlistCollection.getByName(myPlaylist);
-
-                IWMPPlaylist pll = plCollection.Item(0);
-                windowsMediaPlayer.playlistCollection.remove(pll);
-            }*/
-            
+     
             plItems = windowsMediaPlayer.playlistCollection.getByName(myPlaylist);
+            plItems.Item(0).clear();
             if (plItems.count == 0)
                 pl = windowsMediaPlayer.playlistCollection.newPlaylist(myPlaylist);
             else
@@ -160,14 +186,18 @@ namespace DoAnQuanLyThuVien
             FileInfo[] files = dir.GetFiles(extendsion, SearchOption.AllDirectories);
 
             foreach (FileInfo file in files)
-             {
-                 string musicFile01 = file.FullName;
-                 string mName = file.Name;
-                 ListViewItem item = new ListViewItem(mName);
-                 musicList.Items.Add(item);
-                 WMPLib.IWMPMedia m1 = windowsMediaPlayer.newMedia(musicFile01);
-                 pl.appendItem(m1);
-             }
+            {
+                
+                
+                //builder.Append(", ");
+                string musicFile01 = file.FullName;
+
+               // string mName = Path.GetFileNameWithoutExtension(file.Name);
+                //ListViewItem item = new ListViewItem(mName);
+                //musicList.Items.Add(item);
+                WMPLib.IWMPMedia m1 = windowsMediaPlayer.newMedia(musicFile01);
+                pl.appendItem(m1);
+            }
 
             windowsMediaPlayer.currentPlaylist = pl;
             windowsMediaPlayer.Ctlcontrols.stop();
@@ -188,20 +218,20 @@ namespace DoAnQuanLyThuVien
         {
             if (Wmpstatus == false)
             {
-                musicList.Width = 0;
-                musicList.Height = 0;
+                //musicList.Width = 0;
+                //musicList.Height = 0;
                 Wmpstatus = true;
             }
             else
             {
-                musicList.Width = oldListWidth;
-                musicList.Height = oldListHeight;
+                //musicList.Width = oldListWidth;
+                //.Height = oldListHeight;
                 Wmpstatus = false;
             }
 
         }
 
-        private void musicList_DoubleClick(object sender, EventArgs e)
+        /*private void musicList_DoubleClick(object sender, EventArgs e)
         {
             
             
@@ -214,16 +244,16 @@ namespace DoAnQuanLyThuVien
             catch (Exception)
             {
             }
-        }
+        }*/
 
         private void tsbClearPlaylist_Click()
         {
-            for (int i = 0; i < windowsMediaPlayer.currentPlaylist.count; )
+            for (int i = 0; i < windowsMediaPlayer.currentPlaylist.count;)
             {
                 IWMPMedia med = windowsMediaPlayer.currentPlaylist.get_Item(i);
                 windowsMediaPlayer.currentPlaylist.removeItem(med);
             }
-            musicList.Items.Clear();
+            //musicList.Items.Clear();
         }
 
         #endregion
@@ -243,8 +273,13 @@ namespace DoAnQuanLyThuVien
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
-           
-            
+
+
+        }
+
+        private void windowsMediaPlayer_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
+        {
+            label1.Text = Path.GetFileNameWithoutExtension(windowsMediaPlayer.currentMedia.name);
         }
 
         private void btnAssist_Click(object sender, EventArgs e)
