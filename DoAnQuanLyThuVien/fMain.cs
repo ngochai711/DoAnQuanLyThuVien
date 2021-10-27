@@ -294,7 +294,8 @@ namespace DoAnQuanLyThuVien
 
         private void btnAcountInfo_Click(object sender, EventArgs e)
         {
-
+            fAccountManager f = new fAccountManager();
+            f.Show();
         }
         private void SlidingPanel_Paint(object sender, PaintEventArgs e)
         {

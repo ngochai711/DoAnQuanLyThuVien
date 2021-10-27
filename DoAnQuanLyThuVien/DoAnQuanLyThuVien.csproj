@@ -119,9 +119,18 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAccountManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAccountManager.Designer.cs">
+      <DependentUpon>fAccountManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mp3Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAccountManager.resx">
+      <DependentUpon>fAccountManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fBookManage.resx">
       <DependentUpon>fBookManage.cs</DependentUpon>
     </EmbeddedResource>
