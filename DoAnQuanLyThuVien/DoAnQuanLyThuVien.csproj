@@ -98,6 +98,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ListBook.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DTO\STAFF_ACCOUNT.cs">
+      <DependentUpon>ListBook.tt</DependentUpon>
+    </Compile>
     <Compile Include="fBookManage.cs">
       <SubType>Form</SubType>
     </Compile>

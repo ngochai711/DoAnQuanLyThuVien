@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="LIBRARY_DATABASEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="LIBRARY_DATABASEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BOOKS_MANAGEMENT">
           <Key>
             <PropertyRef Name="SERIAL_NUMBER" />
@@ -19,11 +19,28 @@
           <Property Name="YEAROFPUB" Type="int" />
           <Property Name="NOTE" Type="nvarchar" MaxLength="1000" />
         </EntityType>
+        <EntityType Name="STAFF_ACCOUNT">
+          <Key>
+            <PropertyRef Name="USERNAME" />
+          </Key>
+          <Property Name="USERNAME" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="1000" />
+          <Property Name="LAST_NAME" Type="nvarchar" MaxLength="100" />
+          <Property Name="FIRST_NAME" Type="nvarchar" MaxLength="100" />
+          <Property Name="GENDER" Type="nvarchar" MaxLength="4" />
+          <Property Name="BIRTHDATE" Type="smalldatetime" />
+          <Property Name="AGE" Type="tinyint" />
+          <Property Name="ADDRESS" Type="nvarchar" MaxLength="100" />
+          <Property Name="PHONE_NUMBER" Type="char" MaxLength="11" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+          <Property Name="TYPE" Type="bit" />
+          <Property Name="NOTE" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
         <EntityContainer Name="LIBRARY_DATABASEModelStoreContainer">
           <EntitySet Name="BOOKS_MANAGEMENT" EntityType="Self.BOOKS_MANAGEMENT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="STAFF_ACCOUNT" EntityType="Self.STAFF_ACCOUNT" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="LIBRARY_DATABASEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -43,7 +60,25 @@
         </EntityType>
         <EntityContainer Name="LIBRARY_DATABASEEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BOOKS_MANAGEMENT" EntityType="Self.BOOKS_MANAGEMENT" />
+          <EntitySet Name="STAFF_ACCOUNT" EntityType="LIBRARY_DATABASEModel.STAFF_ACCOUNT" />
         </EntityContainer>
+        <EntityType Name="STAFF_ACCOUNT">
+          <Key>
+            <PropertyRef Name="USERNAME" />
+          </Key>
+          <Property Name="USERNAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FIRST_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="GENDER" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="BIRTHDATE" Type="DateTime" Precision="0" />
+          <Property Name="AGE" Type="Byte" />
+          <Property Name="ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE" Type="Boolean" />
+          <Property Name="NOTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -62,6 +97,24 @@
                 <ScalarProperty Name="REMAIN" ColumnName="REMAIN" />
                 <ScalarProperty Name="YEAROFPUB" ColumnName="YEAROFPUB" />
                 <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="STAFF_ACCOUNT">
+            <EntityTypeMapping TypeName="LIBRARY_DATABASEModel.STAFF_ACCOUNT">
+              <MappingFragment StoreEntitySet="STAFF_ACCOUNT">
+                <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="AGE" ColumnName="AGE" />
+                <ScalarProperty Name="BIRTHDATE" ColumnName="BIRTHDATE" />
+                <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+                <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

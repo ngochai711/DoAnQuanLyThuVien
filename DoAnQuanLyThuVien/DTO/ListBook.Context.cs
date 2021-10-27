@@ -26,5 +26,6 @@ namespace DoAnQuanLyThuVien.DTO
         }
     
         public virtual DbSet<BOOKS_MANAGEMENT> BOOKS_MANAGEMENT { get; set; }
+        public virtual DbSet<STAFF_ACCOUNT> STAFF_ACCOUNT { get; set; }
     }
 }
