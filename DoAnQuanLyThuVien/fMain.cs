@@ -72,7 +72,7 @@ namespace DoAnQuanLyThuVien
 
             FolderBrowserDialog fld = new FolderBrowserDialog();
             //doi ten duong truyen
-            fld.SelectedPath = @"F:\Project\DoAnQuanLyThuVien\DoAnQuanLyThuVien\song";
+            fld.SelectedPath = @"E:\Group Projects\Project - Library Manager\DoAnQuanLyThuVien\song";
            
             tsbClearPlaylist_Click();
 
