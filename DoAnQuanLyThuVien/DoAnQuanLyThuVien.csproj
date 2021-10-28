@@ -101,6 +101,12 @@
     <Compile Include="DTO\STAFF_ACCOUNT.cs">
       <DependentUpon>ListBook.tt</DependentUpon>
     </Compile>
+    <Compile Include="faddinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faddinfo.designer.cs">
+      <DependentUpon>faddinfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="fBookManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <EmbeddedResource Include="fAccountManager.resx">
       <DependentUpon>fAccountManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="faddinfo.resx">
+      <DependentUpon>faddinfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fBookManage.resx">
       <DependentUpon>fBookManage.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +168,7 @@
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.STAFF_ACCOUNT1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

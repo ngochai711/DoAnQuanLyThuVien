@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DoAnQuanLyThuVien.DTO;
+using DevExpress.XtraGrid.Views.Base;
 
 namespace DoAnQuanLyThuVien
 {
@@ -26,12 +27,54 @@ namespace DoAnQuanLyThuVien
         private void LoadData()
         {
             db = new LIBRARY_DATABASEEntities();
-            db.STAFF_ACCOUNT.Load();
-            gcv_StaffAcc.DataSource = db.STAFF_ACCOUNT.Local;
+            sTAFFACCOUNTBindingSource.DataSource = db.STAFF_ACCOUNT.ToList();
         }
         #endregion
 
         #region events
+        private void fAccountManager_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+            if (db.SaveChanges() == 1)
+            {
+                MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật thất bại!", "Thông báo", MessageBoxButtons.OK);
+            };
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn xóa thông tin này?", "Thông báo", MessageBoxButtons.YesNoCancel) == DialogResult.Yes)
+            {
+                STAFF_ACCOUNT item = sTAFFACCOUNTBindingSource.Current as STAFF_ACCOUNT;
+                db.Entry<STAFF_ACCOUNT>(item).State = System.Data.Entity.EntityState.Deleted;
+                db.SaveChanges();
+                sTAFFACCOUNTBindingSource.RemoveCurrent();
+            }    
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            faddinfo f = new faddinfo();
+            f.ShowDialog();
+        }
+
+        private void btn_Return_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         #endregion
     }
 }

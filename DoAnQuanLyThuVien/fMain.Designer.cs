@@ -157,7 +157,7 @@ namespace DoAnQuanLyThuVien
             this.btnBookManagement.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBookManagement.FlatAppearance.BorderSize = 0;
             this.btnBookManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBookManagement.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookManagement.ForeColor = System.Drawing.Color.White;
             this.btnBookManagement.Image = ((System.Drawing.Image)(resources.GetObject("btnBookManagement.Image")));
             this.btnBookManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,7 +177,7 @@ namespace DoAnQuanLyThuVien
             this.btnAcountInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAcountInfo.FlatAppearance.BorderSize = 0;
             this.btnAcountInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcountInfo.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcountInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcountInfo.ForeColor = System.Drawing.Color.White;
             this.btnAcountInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnAcountInfo.Image")));
             this.btnAcountInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,7 +197,7 @@ namespace DoAnQuanLyThuVien
             this.btnL_card_show.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnL_card_show.FlatAppearance.BorderSize = 0;
             this.btnL_card_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnL_card_show.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnL_card_show.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnL_card_show.ForeColor = System.Drawing.Color.White;
             this.btnL_card_show.Image = ((System.Drawing.Image)(resources.GetObject("btnL_card_show.Image")));
             this.btnL_card_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,7 +218,7 @@ namespace DoAnQuanLyThuVien
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,7 +239,7 @@ namespace DoAnQuanLyThuVien
             this.btnAssist.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAssist.FlatAppearance.BorderSize = 0;
             this.btnAssist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAssist.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAssist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAssist.ForeColor = System.Drawing.Color.White;
             this.btnAssist.Image = ((System.Drawing.Image)(resources.GetObject("btnAssist.Image")));
             this.btnAssist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -318,10 +318,10 @@ namespace DoAnQuanLyThuVien
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(58, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 24);
+            this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 20;
             this.label1.Text = "label1";
             // 
@@ -340,7 +340,7 @@ namespace DoAnQuanLyThuVien
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thư Viện";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);

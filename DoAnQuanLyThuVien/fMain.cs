@@ -272,9 +272,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-
+            this.Dispose();
         }
 
         private void windowsMediaPlayer_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
