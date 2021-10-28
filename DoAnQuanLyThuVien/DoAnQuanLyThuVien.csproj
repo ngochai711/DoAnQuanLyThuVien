@@ -98,12 +98,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ListBook.edmx</DependentUpon>
     </Compile>
-    <Compile Include="fBookManage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fBookManage.Designer.cs">
-      <DependentUpon>fBookManage.cs</DependentUpon>
-    </Compile>
     <Compile Include="fBookManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,9 +119,6 @@
     <Compile Include="Mp3Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fBookManage.resx">
-      <DependentUpon>fBookManage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fBookManager.resx">
       <DependentUpon>fBookManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +147,7 @@
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -168,18 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DTO\ListBook.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ListBook.edmx</DependentUpon>
-      <LastGenOutput>ListBook.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DTO\ListBook.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ListBook.edmx</DependentUpon>
-      <LastGenOutput>ListBook.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -205,6 +185,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="song\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DTO\ListBook.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ListBook.edmx</DependentUpon>
+      <LastGenOutput>ListBook.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DTO\ListBook.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ListBook.edmx</DependentUpon>
+      <LastGenOutput>ListBook.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
