@@ -30,6 +30,7 @@ namespace DoAnQuanLyThuVien
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAccountManager));
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tab_StaffAccount = new DevExpress.XtraTab.XtraTabPage();
             this.pnl_Buttons = new System.Windows.Forms.Panel();
@@ -164,46 +165,60 @@ namespace DoAnQuanLyThuVien
             // 
             // btn_Edit
             // 
+            this.btn_Edit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Edit.ImageOptions.Image")));
+            this.btn_Edit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btn_Edit.Location = new System.Drawing.Point(311, 3);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(90, 100);
-            this.btn_Edit.TabIndex = 4;
+            this.btn_Edit.TabIndex = 3;
             this.btn_Edit.Text = "Cập nhật";
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // btn_Delete
             // 
+            this.btn_Delete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.ImageOptions.Image")));
+            this.btn_Delete.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btn_Delete.Location = new System.Drawing.Point(216, 3);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(90, 100);
-            this.btn_Delete.TabIndex = 3;
+            this.btn_Delete.TabIndex = 2;
             this.btn_Delete.Text = "Xóa";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_Add
             // 
+            this.btn_Add.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Add.ImageOptions.Image")));
+            this.btn_Add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btn_Add.Location = new System.Drawing.Point(121, 3);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(90, 100);
-            this.btn_Add.TabIndex = 2;
+            this.btn_Add.TabIndex = 1;
             this.btn_Add.Text = "Thêm";
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_Return
             // 
+            this.btn_Return.Appearance.Options.UseImage = true;
+            this.btn_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Return.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_Return.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Return.ImageOptions.Image")));
+            this.btn_Return.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btn_Return.Location = new System.Drawing.Point(3, 3);
             this.btn_Return.Name = "btn_Return";
+            this.btn_Return.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.btn_Return.Size = new System.Drawing.Size(90, 100);
-            this.btn_Return.TabIndex = 1;
+            this.btn_Return.TabIndex = 11;
             this.btn_Return.Text = "Quay lại";
             this.btn_Return.Click += new System.EventHandler(this.btn_Return_Click);
             // 
             // btn_Refresh
             // 
+            this.btn_Refresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.ImageOptions.Image")));
+            this.btn_Refresh.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btn_Refresh.Location = new System.Drawing.Point(427, 3);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(90, 100);
-            this.btn_Refresh.TabIndex = 0;
+            this.btn_Refresh.TabIndex = 4;
             this.btn_Refresh.Text = "Làm mới";
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
@@ -246,7 +261,7 @@ namespace DoAnQuanLyThuVien
             this.USERNAMETextEdit.Name = "USERNAMETextEdit";
             this.USERNAMETextEdit.Size = new System.Drawing.Size(327, 22);
             this.USERNAMETextEdit.StyleController = this.dataLayoutControl1;
-            this.USERNAMETextEdit.TabIndex = 4;
+            this.USERNAMETextEdit.TabIndex = 1;
             // 
             // sTAFFACCOUNTBindingSource
             // 
@@ -271,7 +286,7 @@ namespace DoAnQuanLyThuVien
             this.LAST_NAMETextEdit.Name = "LAST_NAMETextEdit";
             this.LAST_NAMETextEdit.Size = new System.Drawing.Size(343, 22);
             this.LAST_NAMETextEdit.StyleController = this.dataLayoutControl1;
-            this.LAST_NAMETextEdit.TabIndex = 6;
+            this.LAST_NAMETextEdit.TabIndex = 2;
             // 
             // FIRST_NAMETextEdit
             // 
@@ -280,7 +295,7 @@ namespace DoAnQuanLyThuVien
             this.FIRST_NAMETextEdit.Name = "FIRST_NAMETextEdit";
             this.FIRST_NAMETextEdit.Size = new System.Drawing.Size(343, 22);
             this.FIRST_NAMETextEdit.StyleController = this.dataLayoutControl1;
-            this.FIRST_NAMETextEdit.TabIndex = 7;
+            this.FIRST_NAMETextEdit.TabIndex = 3;
             // 
             // GENDERTextEdit
             // 
@@ -289,7 +304,7 @@ namespace DoAnQuanLyThuVien
             this.GENDERTextEdit.Name = "GENDERTextEdit";
             this.GENDERTextEdit.Size = new System.Drawing.Size(343, 22);
             this.GENDERTextEdit.StyleController = this.dataLayoutControl1;
-            this.GENDERTextEdit.TabIndex = 8;
+            this.GENDERTextEdit.TabIndex = 4;
             // 
             // BIRTHDATEDateEdit
             // 
@@ -304,7 +319,7 @@ namespace DoAnQuanLyThuVien
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.BIRTHDATEDateEdit.Size = new System.Drawing.Size(120, 22);
             this.BIRTHDATEDateEdit.StyleController = this.dataLayoutControl1;
-            this.BIRTHDATEDateEdit.TabIndex = 9;
+            this.BIRTHDATEDateEdit.TabIndex = 5;
             // 
             // AGETextEdit
             // 
@@ -320,7 +335,7 @@ namespace DoAnQuanLyThuVien
             this.AGETextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.AGETextEdit.Size = new System.Drawing.Size(120, 22);
             this.AGETextEdit.StyleController = this.dataLayoutControl1;
-            this.AGETextEdit.TabIndex = 10;
+            this.AGETextEdit.TabIndex = 6;
             // 
             // ADDRESSTextEdit
             // 
@@ -329,7 +344,7 @@ namespace DoAnQuanLyThuVien
             this.ADDRESSTextEdit.Name = "ADDRESSTextEdit";
             this.ADDRESSTextEdit.Size = new System.Drawing.Size(343, 22);
             this.ADDRESSTextEdit.StyleController = this.dataLayoutControl1;
-            this.ADDRESSTextEdit.TabIndex = 11;
+            this.ADDRESSTextEdit.TabIndex = 7;
             // 
             // PHONE_NUMBERTextEdit
             // 
@@ -338,7 +353,7 @@ namespace DoAnQuanLyThuVien
             this.PHONE_NUMBERTextEdit.Name = "PHONE_NUMBERTextEdit";
             this.PHONE_NUMBERTextEdit.Size = new System.Drawing.Size(343, 22);
             this.PHONE_NUMBERTextEdit.StyleController = this.dataLayoutControl1;
-            this.PHONE_NUMBERTextEdit.TabIndex = 12;
+            this.PHONE_NUMBERTextEdit.TabIndex = 8;
             // 
             // EMAILTextEdit
             // 
@@ -347,7 +362,7 @@ namespace DoAnQuanLyThuVien
             this.EMAILTextEdit.Name = "EMAILTextEdit";
             this.EMAILTextEdit.Size = new System.Drawing.Size(343, 22);
             this.EMAILTextEdit.StyleController = this.dataLayoutControl1;
-            this.EMAILTextEdit.TabIndex = 13;
+            this.EMAILTextEdit.TabIndex = 9;
             // 
             // NOTETextEdit
             // 
@@ -356,7 +371,7 @@ namespace DoAnQuanLyThuVien
             this.NOTETextEdit.Name = "NOTETextEdit";
             this.NOTETextEdit.Size = new System.Drawing.Size(466, 144);
             this.NOTETextEdit.StyleController = this.dataLayoutControl1;
-            this.NOTETextEdit.TabIndex = 15;
+            this.NOTETextEdit.TabIndex = 10;
             // 
             // pictureEdit1
             // 
@@ -579,10 +594,13 @@ namespace DoAnQuanLyThuVien
             this.colEMAIL,
             this.colTYPE,
             this.colNOTE});
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             this.gridView1.GridControl = this.gcv_StaffAcc;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsCustomization.AllowMergedGrouping = DevExpress.Utils.DefaultBoolean.False;
             this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsNavigation.AutoFocusNewRow = true;
+            this.gridView1.OptionsNavigation.UseTabKey = false;
             this.gridView1.OptionsView.ColumnAutoWidth = false;
             // 
             // colUSERNAME
@@ -738,7 +756,6 @@ namespace DoAnQuanLyThuVien
             this.colTYPE.FieldName = "TYPE";
             this.colTYPE.MinWidth = 25;
             this.colTYPE.Name = "colTYPE";
-            this.colTYPE.OptionsColumn.AllowFocus = false;
             this.colTYPE.Visible = true;
             this.colTYPE.VisibleIndex = 1;
             this.colTYPE.Width = 66;
@@ -765,6 +782,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btn_Return;
             this.ClientSize = new System.Drawing.Size(1040, 656);
             this.Controls.Add(this.xtraTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
