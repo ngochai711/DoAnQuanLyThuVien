@@ -23,6 +23,9 @@ namespace DoAnQuanLyThuVien
 
         public int Add()
         {
+            if (txtUserName.Text == "")
+                return 0;
+
             LIBRARY_DATABASEEntities db = new LIBRARY_DATABASEEntities();
 
             string usname = txtUserName.Text;
@@ -31,7 +34,7 @@ namespace DoAnQuanLyThuVien
             string FName = txtFirstName.Text;
             string gt = txtGender.Text;
             DateTime ngaysinh = dtpkBirthDate.Value;
-            System.Byte tuoi = Convert.ToByte(txtAge.Text);
+            System.Byte tuoi = Convert.ToByte(DateTime.Now.Year - ngaysinh.Year);
             string diachi = txtAddress.Text;
             string sdt = txtPhoneNumber.Text;
             string mail = txtEmail.Text;
@@ -71,8 +74,6 @@ namespace DoAnQuanLyThuVien
             else
             {
                 DialogResult OK = MessageBox.Show("Thêm Tài khoản thất bại, hãy điền đầy đủ thông tin.", "Thông báo", MessageBoxButtons.OK);
-                if (OK == DialogResult.OK)
-                    this.Close();
             }
             //Load Account
         }
