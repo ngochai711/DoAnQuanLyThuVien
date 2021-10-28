@@ -273,10 +273,9 @@ namespace DoAnQuanLyThuVien
             // txtPassWord
             // 
             this.txtPassWord.Location = new System.Drawing.Point(37, 103);
-            this.txtPassWord.Multiline = true;
             this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.PasswordChar = '*';
-            this.txtPassWord.Size = new System.Drawing.Size(300, 30);
+            this.txtPassWord.PasswordChar = '-';
+            this.txtPassWord.Size = new System.Drawing.Size(300, 23);
             this.txtPassWord.TabIndex = 2;
             this.txtPassWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassWord.UseSystemPasswordChar = true;
