@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DoAnQuanLyThuVien.DTO;
+using DevExpress.Skins;
+using DevExpress.XtraBars.Helpers;
+using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Views.Grid;
 
 namespace DoAnQuanLyThuVien
 {
@@ -19,6 +23,8 @@ namespace DoAnQuanLyThuVien
         {
             InitializeComponent();
         }
+
+
 
         LIBRARY_DATABASEEntities db;
 
@@ -37,7 +43,9 @@ namespace DoAnQuanLyThuVien
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (XtraMessageBox.Show("Bạn có muốn xóa sách này hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
                 bOOKSMANAGEMENTBindingSource.RemoveCurrent();
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -84,5 +92,6 @@ namespace DoAnQuanLyThuVien
         {
             dalcLibBook.Hide();
         }
+
     }
 }

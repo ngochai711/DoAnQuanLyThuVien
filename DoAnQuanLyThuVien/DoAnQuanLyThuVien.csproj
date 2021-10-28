@@ -104,6 +104,12 @@
     <Compile Include="fBookManage.Designer.cs">
       <DependentUpon>fBookManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="fBookManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBookManager.Designer.cs">
+      <DependentUpon>fBookManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fBookManage.resx">
       <DependentUpon>fBookManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBookManager.resx">
+      <DependentUpon>fBookManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>

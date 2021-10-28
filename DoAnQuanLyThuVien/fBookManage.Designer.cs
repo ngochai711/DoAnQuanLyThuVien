@@ -656,6 +656,8 @@ namespace DoAnQuanLyThuVien
             // 
             // fBookManage
             // 
+            this.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 656);
