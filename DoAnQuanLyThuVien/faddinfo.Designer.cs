@@ -197,6 +197,8 @@ namespace DoAnQuanLyThuVien
             // 
             // txtGender
             // 
+            this.txtGender.AccessibleDescription = "false";
+            this.txtGender.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.txtGender.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGender.FormattingEnabled = true;
             this.txtGender.ItemHeight = 22;
@@ -405,7 +407,6 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox txtGender;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtpkBirthDate;
         private System.Windows.Forms.Label label7;
@@ -419,6 +420,7 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Button Them;
         private System.Windows.Forms.Button Huy;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public System.Windows.Forms.ComboBox txtGender;
     }
 }
 

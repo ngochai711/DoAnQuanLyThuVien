@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-//using BLABLA.DAO;
 using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.Utils.CommonDialogs;
 using System.Data.Entity;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using DoAnQuanLyThuVien.DTO;
 using DevExpress.XtraGrid.Views.Base;
 
@@ -21,15 +21,48 @@ namespace DoAnQuanLyThuVien
             InitializeComponent();
         }
 
-        void Add()
+        public int Add()
         {
-            
+            LIBRARY_DATABASEEntities db = new LIBRARY_DATABASEEntities();
+
+            string usname = txtUserName.Text;
+            string pass = txtPassWord.Text;
+            string LName = txtLastName.Text;
+            string FName = txtFirstName.Text;
+            string gt = txtGender.Text;
+            DateTime ngaysinh = dtpkBirthDate.Value;
+            System.Byte tuoi = Convert.ToByte(txtAge.Text);
+            string diachi = txtAddress.Text;
+            string sdt = txtPhoneNumber.Text;
+            string mail = txtEmail.Text;
+            bool type = Convert.ToBoolean(nudType.Value);
+            string luuy = txtNote.Text;
+
+            //STAFF_ACCOUNT obj = new STAFF_ACCOUNT(usname, pass, LName, FName, gt, ngaysinh, tuoi, diachi, sdt, mail, type, luuy);
+
+            STAFF_ACCOUNT obj = new STAFF_ACCOUNT();
+
+            obj.USERNAME = usname;
+            obj.PASSWORD = pass;
+            obj.LAST_NAME = LName;
+            obj.FIRST_NAME = FName;
+            obj.GENDER = gt;
+            obj.BIRTHDATE = ngaysinh;
+            obj.AGE = tuoi;
+            obj.ADDRESS = diachi;
+            obj.PHONE_NUMBER = sdt;
+            obj.EMAIL = mail;
+            obj.TYPE = type;
+            obj.NOTE = luuy;
+
+            db.STAFF_ACCOUNT.Add(obj);
+            return db.SaveChanges();
         }
 
-        void AddAccount(string name, string LName, string FName, string gt, string ngaysinh, int tuoi, string diachi, string sdt, string mail, int type, string luuy)
+        void AddAccount(/*string name, string LName, string FName, string gt, string ngaysinh, int tuoi, string diachi, string sdt, string mail, int type, string luuy*/)
         {
             //if (AccountDAO.Instance.InsertAccount(name, LName, FName, gt, ngaysinh, tuoi, diachi, sdt, mail, type, luuy))
-            if (true)
+            if (Add() == 1)
             {
                 DialogResult OK = MessageBox.Show("Thêm Tài khoản thành công.", "Thông báo", MessageBoxButtons.OK);
                 if (OK == DialogResult.OK)
@@ -58,6 +91,7 @@ namespace DoAnQuanLyThuVien
             //int type = (int)ChucVu.Value;
             //string luuy = NOTE.Text;
             //AddAccount(name, LName, FName, gt, ngaysinh, tuoi, diachi, sdt, mail, type, luuy);
+            AddAccount();
         }
 
         private void Huy_Click(object sender, EventArgs e)

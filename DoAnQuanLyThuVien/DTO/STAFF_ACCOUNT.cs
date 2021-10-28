@@ -14,6 +14,8 @@ namespace DoAnQuanLyThuVien.DTO
     
     public partial class STAFF_ACCOUNT
     {
+        //public STAFF_ACCOUNT(string usname, string pass, string lastname, string firstname, string, string, int, string, string, string, int, string)
+
         public string USERNAME { get; set; }
         public string PASSWORD { get; set; }
         public string LAST_NAME { get; set; }

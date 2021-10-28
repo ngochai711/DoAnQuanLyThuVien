@@ -50,7 +50,7 @@ namespace DoAnQuanLyThuVien
             }
             else
             {
-                MessageBox.Show("Cập nhật thất bại!", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Không có nội dung cần cập nhật!", "Thông báo", MessageBoxButtons.OK);
             };
         }
 
