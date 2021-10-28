@@ -56,7 +56,7 @@ namespace DoAnQuanLyThuVien
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muốn xóa thông tin này?", "Thông báo", MessageBoxButtons.YesNoCancel) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc muốn xóa thông tin này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 STAFF_ACCOUNT item = sTAFFACCOUNTBindingSource.Current as STAFF_ACCOUNT;
                 db.Entry<STAFF_ACCOUNT>(item).State = System.Data.Entity.EntityState.Deleted;

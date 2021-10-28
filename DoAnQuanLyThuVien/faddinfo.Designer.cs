@@ -87,9 +87,11 @@ namespace DoAnQuanLyThuVien
             this.txtPassWord.Location = new System.Drawing.Point(40, 385);
             this.txtPassWord.Multiline = true;
             this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.PasswordChar = '*';
             this.txtPassWord.Size = new System.Drawing.Size(280, 30);
             this.txtPassWord.TabIndex = 2;
             this.txtPassWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // txtLastName
             // 

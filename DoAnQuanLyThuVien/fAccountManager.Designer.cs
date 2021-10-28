@@ -313,7 +313,8 @@ namespace DoAnQuanLyThuVien
             this.AGETextEdit.Name = "AGETextEdit";
             this.AGETextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.AGETextEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.AGETextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.AGETextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.AGETextEdit.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.AGETextEdit.Properties.Mask.EditMask = "N0";
             this.AGETextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.AGETextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
@@ -555,6 +556,7 @@ namespace DoAnQuanLyThuVien
             this.gcv_StaffAcc.Location = new System.Drawing.Point(0, 0);
             this.gcv_StaffAcc.MainView = this.gridView1;
             this.gcv_StaffAcc.Name = "gcv_StaffAcc";
+            this.gcv_StaffAcc.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gcv_StaffAcc.Size = new System.Drawing.Size(520, 502);
             this.gcv_StaffAcc.TabIndex = 0;
             this.gcv_StaffAcc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -562,6 +564,8 @@ namespace DoAnQuanLyThuVien
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.FocusedRow.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.gridView1.Appearance.FocusedRow.Options.UseBackColor = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colUSERNAME,
             this.colPASSWORD,
@@ -577,13 +581,21 @@ namespace DoAnQuanLyThuVien
             this.colNOTE});
             this.gridView1.GridControl = this.gcv_StaffAcc;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsCustomization.AllowMergedGrouping = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsView.ColumnAutoWidth = false;
             // 
             // colUSERNAME
             // 
+            this.colUSERNAME.AppearanceHeader.Options.UseTextOptions = true;
+            this.colUSERNAME.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colUSERNAME.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colUSERNAME.Caption = "Tên Đăng Nhập";
+            this.colUSERNAME.CustomizationCaption = "middle";
             this.colUSERNAME.FieldName = "USERNAME";
             this.colUSERNAME.MinWidth = 25;
             this.colUSERNAME.Name = "colUSERNAME";
+            this.colUSERNAME.OptionsColumn.AllowFocus = false;
             this.colUSERNAME.Visible = true;
             this.colUSERNAME.VisibleIndex = 0;
             this.colUSERNAME.Width = 120;
@@ -602,96 +614,145 @@ namespace DoAnQuanLyThuVien
             this.colLAST_NAME.FieldName = "LAST_NAME";
             this.colLAST_NAME.MinWidth = 25;
             this.colLAST_NAME.Name = "colLAST_NAME";
+            this.colLAST_NAME.OptionsColumn.AllowFocus = false;
             this.colLAST_NAME.Visible = true;
             this.colLAST_NAME.VisibleIndex = 2;
-            this.colLAST_NAME.Width = 112;
+            this.colLAST_NAME.Width = 130;
             // 
             // colFIRST_NAME
             // 
+            this.colFIRST_NAME.AppearanceCell.Options.UseTextOptions = true;
+            this.colFIRST_NAME.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colFIRST_NAME.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colFIRST_NAME.AppearanceHeader.Options.UseTextOptions = true;
+            this.colFIRST_NAME.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colFIRST_NAME.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colFIRST_NAME.Caption = "Tên";
             this.colFIRST_NAME.FieldName = "FIRST_NAME";
             this.colFIRST_NAME.MinWidth = 25;
             this.colFIRST_NAME.Name = "colFIRST_NAME";
+            this.colFIRST_NAME.OptionsColumn.AllowFocus = false;
             this.colFIRST_NAME.Visible = true;
             this.colFIRST_NAME.VisibleIndex = 3;
-            this.colFIRST_NAME.Width = 48;
+            this.colFIRST_NAME.Width = 50;
             // 
             // colGENDER
             // 
+            this.colGENDER.AppearanceCell.Options.UseTextOptions = true;
+            this.colGENDER.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colGENDER.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colGENDER.AppearanceHeader.Options.UseTextOptions = true;
+            this.colGENDER.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colGENDER.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colGENDER.Caption = "Giới Tính";
             this.colGENDER.FieldName = "GENDER";
             this.colGENDER.MinWidth = 25;
             this.colGENDER.Name = "colGENDER";
+            this.colGENDER.OptionsColumn.AllowFocus = false;
             this.colGENDER.Visible = true;
             this.colGENDER.VisibleIndex = 4;
-            this.colGENDER.Width = 76;
+            this.colGENDER.Width = 61;
             // 
             // colBIRTHDATE
             // 
+            this.colBIRTHDATE.AppearanceCell.Options.UseTextOptions = true;
+            this.colBIRTHDATE.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colBIRTHDATE.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colBIRTHDATE.AppearanceHeader.Options.UseTextOptions = true;
+            this.colBIRTHDATE.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colBIRTHDATE.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colBIRTHDATE.Caption = "Ngày Sinh";
             this.colBIRTHDATE.FieldName = "BIRTHDATE";
             this.colBIRTHDATE.MinWidth = 25;
             this.colBIRTHDATE.Name = "colBIRTHDATE";
+            this.colBIRTHDATE.OptionsColumn.AllowFocus = false;
             this.colBIRTHDATE.Visible = true;
             this.colBIRTHDATE.VisibleIndex = 5;
-            this.colBIRTHDATE.Width = 82;
+            this.colBIRTHDATE.Width = 80;
             // 
             // colAGE
             // 
+            this.colAGE.AppearanceCell.Options.UseTextOptions = true;
+            this.colAGE.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colAGE.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colAGE.AppearanceHeader.Options.UseTextOptions = true;
+            this.colAGE.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colAGE.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colAGE.Caption = "Tuổi";
             this.colAGE.FieldName = "AGE";
             this.colAGE.MinWidth = 25;
             this.colAGE.Name = "colAGE";
+            this.colAGE.OptionsColumn.AllowFocus = false;
             this.colAGE.Visible = true;
             this.colAGE.VisibleIndex = 6;
-            this.colAGE.Width = 52;
+            this.colAGE.Width = 40;
             // 
             // colADDRESS
             // 
+            this.colADDRESS.AppearanceHeader.Options.UseTextOptions = true;
+            this.colADDRESS.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colADDRESS.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colADDRESS.Caption = "Địa Chỉ";
             this.colADDRESS.FieldName = "ADDRESS";
             this.colADDRESS.MinWidth = 25;
             this.colADDRESS.Name = "colADDRESS";
+            this.colADDRESS.OptionsColumn.AllowFocus = false;
             this.colADDRESS.Visible = true;
             this.colADDRESS.VisibleIndex = 7;
-            this.colADDRESS.Width = 68;
+            this.colADDRESS.Width = 60;
             // 
             // colPHONE_NUMBER
             // 
+            this.colPHONE_NUMBER.AppearanceHeader.Options.UseTextOptions = true;
+            this.colPHONE_NUMBER.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colPHONE_NUMBER.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colPHONE_NUMBER.Caption = "SĐT";
             this.colPHONE_NUMBER.FieldName = "PHONE_NUMBER";
             this.colPHONE_NUMBER.MinWidth = 25;
             this.colPHONE_NUMBER.Name = "colPHONE_NUMBER";
+            this.colPHONE_NUMBER.OptionsColumn.AllowFocus = false;
             this.colPHONE_NUMBER.Visible = true;
             this.colPHONE_NUMBER.VisibleIndex = 8;
-            this.colPHONE_NUMBER.Width = 51;
+            this.colPHONE_NUMBER.Width = 60;
             // 
             // colEMAIL
             // 
+            this.colEMAIL.AppearanceHeader.Options.UseTextOptions = true;
+            this.colEMAIL.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colEMAIL.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colEMAIL.Caption = "Email";
             this.colEMAIL.FieldName = "EMAIL";
             this.colEMAIL.MinWidth = 25;
             this.colEMAIL.Name = "colEMAIL";
+            this.colEMAIL.OptionsColumn.AllowFocus = false;
             this.colEMAIL.Visible = true;
             this.colEMAIL.VisibleIndex = 9;
-            this.colEMAIL.Width = 57;
+            this.colEMAIL.Width = 60;
             // 
             // colTYPE
             // 
+            this.colTYPE.AppearanceHeader.Options.UseTextOptions = true;
+            this.colTYPE.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colTYPE.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colTYPE.Caption = "Quản Lý";
             this.colTYPE.FieldName = "TYPE";
             this.colTYPE.MinWidth = 25;
             this.colTYPE.Name = "colTYPE";
+            this.colTYPE.OptionsColumn.AllowFocus = false;
             this.colTYPE.Visible = true;
             this.colTYPE.VisibleIndex = 1;
-            this.colTYPE.Width = 80;
+            this.colTYPE.Width = 66;
             // 
             // colNOTE
             // 
+            this.colNOTE.AppearanceHeader.Options.UseTextOptions = true;
+            this.colNOTE.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colNOTE.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.colNOTE.Caption = "Ghi Chú";
             this.colNOTE.FieldName = "NOTE";
             this.colNOTE.MinWidth = 25;
             this.colNOTE.Name = "colNOTE";
+            this.colNOTE.OptionsColumn.AllowFocus = false;
             this.colNOTE.Width = 25;
             // 
             // tab_Guess
@@ -706,6 +767,7 @@ namespace DoAnQuanLyThuVien
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 656);
             this.Controls.Add(this.xtraTabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fAccountManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý tài khoản";
