@@ -266,7 +266,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnBookManagement_Click(object sender, EventArgs e)
         {
-            fBookManage f = new fBookManage();
+            fBookManager f = new fBookManager();
             f.Show();
         }
 
