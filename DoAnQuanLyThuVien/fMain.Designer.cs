@@ -38,15 +38,18 @@ namespace DoAnQuanLyThuVien
             this.btnAssist = new System.Windows.Forms.Button();
             this.SlidingPanel = new System.Windows.Forms.Panel();
             this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.btnPlay = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SlidingPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -129,19 +132,20 @@ namespace DoAnQuanLyThuVien
             this.lbTeamName.BackColor = System.Drawing.Color.Transparent;
             this.lbTeamName.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTeamName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbTeamName.Location = new System.Drawing.Point(93, 20);
+            this.lbTeamName.Location = new System.Drawing.Point(80, 11);
             this.lbTeamName.Name = "lbTeamName";
-            this.lbTeamName.Size = new System.Drawing.Size(233, 37);
+            this.lbTeamName.Size = new System.Drawing.Size(321, 37);
             this.lbTeamName.TabIndex = 11;
-            this.lbTeamName.Text = "La Vie En Rosé";
+            this.lbTeamName.Text = "Library Management";
             // 
             // btnShow
             // 
-            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.btnShow.BackColor = System.Drawing.Color.White;
             this.btnShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnShow.ForeColor = System.Drawing.Color.Black;
-            this.btnShow.Image = ((System.Drawing.Image)(resources.GetObject("btnShow.Image")));
+            this.btnShow.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnShow.ImageIndex = 5;
+            this.btnShow.ImageList = this.imageList2;
             this.btnShow.Location = new System.Drawing.Point(0, 0);
             this.btnShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnShow.Name = "btnShow";
@@ -152,15 +156,16 @@ namespace DoAnQuanLyThuVien
             // 
             // btnBookManagement
             // 
-            this.btnBookManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.btnBookManagement.BackColor = System.Drawing.Color.White;
             this.btnBookManagement.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBookManagement.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBookManagement.FlatAppearance.BorderSize = 0;
             this.btnBookManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookManagement.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookManagement.ForeColor = System.Drawing.Color.White;
-            this.btnBookManagement.Image = ((System.Drawing.Image)(resources.GetObject("btnBookManagement.Image")));
+            this.btnBookManagement.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBookManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBookManagement.ImageKey = "book_30px.png";
+            this.btnBookManagement.ImageList = this.imageList2;
             this.btnBookManagement.Location = new System.Drawing.Point(0, 70);
             this.btnBookManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBookManagement.Name = "btnBookManagement";
@@ -173,14 +178,15 @@ namespace DoAnQuanLyThuVien
             // 
             // btnAcountInfo
             // 
-            this.btnAcountInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.btnAcountInfo.BackColor = System.Drawing.Color.White;
             this.btnAcountInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAcountInfo.FlatAppearance.BorderSize = 0;
             this.btnAcountInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcountInfo.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcountInfo.ForeColor = System.Drawing.Color.White;
-            this.btnAcountInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnAcountInfo.Image")));
+            this.btnAcountInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAcountInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAcountInfo.ImageIndex = 0;
+            this.btnAcountInfo.ImageList = this.imageList2;
             this.btnAcountInfo.Location = new System.Drawing.Point(0, 143);
             this.btnAcountInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAcountInfo.Name = "btnAcountInfo";
@@ -193,14 +199,15 @@ namespace DoAnQuanLyThuVien
             // 
             // btnL_card_show
             // 
-            this.btnL_card_show.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.btnL_card_show.BackColor = System.Drawing.Color.White;
             this.btnL_card_show.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnL_card_show.FlatAppearance.BorderSize = 0;
             this.btnL_card_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnL_card_show.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnL_card_show.ForeColor = System.Drawing.Color.White;
-            this.btnL_card_show.Image = ((System.Drawing.Image)(resources.GetObject("btnL_card_show.Image")));
+            this.btnL_card_show.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnL_card_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnL_card_show.ImageKey = "book_26px.png";
+            this.btnL_card_show.ImageList = this.imageList2;
             this.btnL_card_show.Location = new System.Drawing.Point(0, 216);
             this.btnL_card_show.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnL_card_show.Name = "btnL_card_show";
@@ -213,15 +220,16 @@ namespace DoAnQuanLyThuVien
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.ImageIndex = 3;
+            this.btnExit.ImageList = this.imageList2;
             this.btnExit.Location = new System.Drawing.Point(0, 664);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
@@ -234,15 +242,16 @@ namespace DoAnQuanLyThuVien
             // 
             // btnAssist
             // 
-            this.btnAssist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.btnAssist.BackColor = System.Drawing.Color.White;
             this.btnAssist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAssist.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAssist.FlatAppearance.BorderSize = 0;
             this.btnAssist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAssist.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAssist.ForeColor = System.Drawing.Color.White;
-            this.btnAssist.Image = ((System.Drawing.Image)(resources.GetObject("btnAssist.Image")));
+            this.btnAssist.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAssist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAssist.ImageIndex = 4;
+            this.btnAssist.ImageList = this.imageList2;
             this.btnAssist.Location = new System.Drawing.Point(0, 594);
             this.btnAssist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAssist.Name = "btnAssist";
@@ -255,7 +264,7 @@ namespace DoAnQuanLyThuVien
             // 
             // SlidingPanel
             // 
-            this.SlidingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.SlidingPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SlidingPanel.Controls.Add(this.btnAssist);
             this.SlidingPanel.Controls.Add(this.btnExit);
             this.SlidingPanel.Controls.Add(this.btnL_card_show);
@@ -280,30 +289,6 @@ namespace DoAnQuanLyThuVien
             this.windowsMediaPlayer.TabIndex = 23;
             this.windowsMediaPlayer.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.windowsMediaPlayer_CurrentItemChange);
             // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "pause_50px.png");
-            this.imageList2.Images.SetKeyName(1, "play_50px.png");
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.BackColor = System.Drawing.Color.Transparent;
-            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPlay.FlatAppearance.BorderSize = 0;
-            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlay.ForeColor = System.Drawing.Color.Black;
-            this.btnPlay.ImageIndex = 1;
-            this.btnPlay.ImageList = this.imageList2;
-            this.btnPlay.Location = new System.Drawing.Point(3, 7);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(40, 40);
-            this.btnPlay.TabIndex = 19;
-            this.btnPlay.UseVisualStyleBackColor = false;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -324,6 +309,47 @@ namespace DoAnQuanLyThuVien
             this.label1.Size = new System.Drawing.Size(45, 24);
             this.label1.TabIndex = 20;
             this.label1.Text = "label1";
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPlay.FlatAppearance.BorderSize = 0;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.ForeColor = System.Drawing.Color.Black;
+            this.btnPlay.ImageKey = "play_30px.png";
+            this.btnPlay.ImageList = this.imageList1;
+            this.btnPlay.Location = new System.Drawing.Point(3, 7);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(40, 40);
+            this.btnPlay.TabIndex = 19;
+            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "pause_30px.png");
+            this.imageList1.Images.SetKeyName(1, "play_30px.png");
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "account_32px.png");
+            this.imageList2.Images.SetKeyName(1, "book_26px.png");
+            this.imageList2.Images.SetKeyName(2, "book_30px.png");
+            this.imageList2.Images.SetKeyName(3, "exit_24px.png");
+            this.imageList2.Images.SetKeyName(4, "help_32px.png");
+            this.imageList2.Images.SetKeyName(5, "icons8_menu_30px.png");
+            // 
+            // imageCollection1
+            // 
+            this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
+            this.imageCollection1.Images.SetKeyName(0, "pause_30px.png");
+            this.imageCollection1.Images.SetKeyName(1, "play_30px.png");
             // 
             // fMain
             // 
@@ -352,6 +378,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -372,9 +399,11 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private AxWMPLib.AxWindowsMediaPlayer windowsMediaPlayer;
-        private System.Windows.Forms.ImageList imageList2;
-        private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.ImageList imageList1;
+        private DevExpress.Utils.ImageCollection imageCollection1;
     }
 }

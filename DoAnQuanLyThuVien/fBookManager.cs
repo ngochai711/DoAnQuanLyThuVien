@@ -25,6 +25,8 @@ namespace DoAnQuanLyThuVien
 
         private void fBookManager_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'lIBRARY_DATABASEDataSet.EBOOKS_MANAGEMENT' table. You can move, or remove it, as needed.
+            this.eBOOKS_MANAGEMENTTableAdapter.Fill(this.lIBRARY_DATABASEDataSet.EBOOKS_MANAGEMENT);
             db = new LIBRARY_DATABASEEntities();
             db.BOOKS_MANAGEMENT.Load();
             bOOKSMANAGEMENTBindingSource.DataSource = db.BOOKS_MANAGEMENT.Local;

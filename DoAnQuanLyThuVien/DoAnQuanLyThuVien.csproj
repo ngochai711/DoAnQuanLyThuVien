@@ -116,6 +116,11 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="LIBRARY_DATABASEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBRARY_DATABASEDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Mp3Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -144,6 +149,17 @@
     </EntityDeploy>
     <None Include="DTO\ListBook.edmx.diagram">
       <DependentUpon>ListBook.edmx</DependentUpon>
+    </None>
+    <None Include="LIBRARY_DATABASEDataSet.xsc">
+      <DependentUpon>LIBRARY_DATABASEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LIBRARY_DATABASEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBRARY_DATABASEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBRARY_DATABASEDataSet.xss">
+      <DependentUpon>LIBRARY_DATABASEDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT.datasource" />
@@ -184,6 +200,8 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="EBOOK\" />
+    <Folder Include="EBOOK_IMAGES\" />
     <Folder Include="song\" />
   </ItemGroup>
   <ItemGroup>

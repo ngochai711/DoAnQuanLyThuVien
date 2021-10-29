@@ -77,6 +77,44 @@ namespace DoAnQuanLyThuVien
             this.ItemForREMAIN = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.eBOOKSMANAGEMENTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lIBRARY_DATABASEDataSet = new DoAnQuanLyThuVien.LIBRARY_DATABASEDataSet();
+            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.eBOOKS_MANAGEMENTTableAdapter = new DoAnQuanLyThuVien.LIBRARY_DATABASEDataSetTableAdapters.EBOOKS_MANAGEMENTTableAdapter();
+            this.CATEGORYTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.LANGUAGETextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.TITLETextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.AUTHORTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.PUBLISHERTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.YEAROFPUBTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.BOOK_URLTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForBOOK_URL = new DevExpress.XtraLayout.LayoutControlItem();
+            this.IMAGESPictureEdit = new DevExpress.XtraEditors.PictureEdit();
+            this.ItemForIMAGES = new DevExpress.XtraLayout.LayoutControlItem();
+            this.NOTETextEdit = new DevExpress.XtraEditors.MemoEdit();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.pcListBook)).BeginInit();
             this.pcListBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcLibBook)).BeginInit();
@@ -116,6 +154,42 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.ItemForYEAROFPUB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForREMAIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
+            this.dataLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
+            this.layoutControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eBOOKSMANAGEMENTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBRARY_DATABASEDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CATEGORYTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LANGUAGETextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TITLETextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AUTHORTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PUBLISHERTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YEAROFPUBTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOOK_URLTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForBOOK_URL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IMAGESPictureEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForIMAGES)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NOTETextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
             this.SuspendLayout();
             // 
             // pcListBook
@@ -600,9 +674,383 @@ namespace DoAnQuanLyThuVien
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.dataLayoutControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1034, 621);
             this.xtraTabPage2.Text = "Tài liệu điện tử";
+            // 
+            // dataLayoutControl1
+            // 
+            this.dataLayoutControl1.Controls.Add(this.layoutControl2);
+            this.dataLayoutControl1.Controls.Add(this.CATEGORYTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.LANGUAGETextEdit);
+            this.dataLayoutControl1.Controls.Add(this.TITLETextEdit);
+            this.dataLayoutControl1.Controls.Add(this.AUTHORTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.PUBLISHERTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.YEAROFPUBTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.BOOK_URLTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.IMAGESPictureEdit);
+            this.dataLayoutControl1.Controls.Add(this.NOTETextEdit);
+            this.dataLayoutControl1.DataSource = this.eBOOKSMANAGEMENTBindingSource;
+            this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.dataLayoutControl1.Name = "dataLayoutControl1";
+            this.dataLayoutControl1.Root = this.layoutControlGroup4;
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1034, 621);
+            this.dataLayoutControl1.TabIndex = 1;
+            this.dataLayoutControl1.Text = "dataLayoutControl1";
+            // 
+            // layoutControl2
+            // 
+            this.layoutControl2.Controls.Add(this.gridControl2);
+            this.layoutControl2.Controls.Add(this.simpleButton1);
+            this.layoutControl2.Controls.Add(this.simpleButton2);
+            this.layoutControl2.Controls.Add(this.simpleButton3);
+            this.layoutControl2.Controls.Add(this.simpleButton4);
+            this.layoutControl2.Location = new System.Drawing.Point(12, 187);
+            this.layoutControl2.Name = "layoutControl2";
+            this.layoutControl2.Root = this.layoutControlGroup3;
+            this.layoutControl2.Size = new System.Drawing.Size(1010, 422);
+            this.layoutControl2.TabIndex = 12;
+            this.layoutControl2.Text = "layoutControl1";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(12, 12);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(236, 27);
+            this.simpleButton1.StyleController = this.layoutControl2;
+            this.simpleButton1.TabIndex = 6;
+            this.simpleButton1.Text = "Thêm";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(252, 12);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(245, 27);
+            this.simpleButton2.StyleController = this.layoutControl2;
+            this.simpleButton2.TabIndex = 5;
+            this.simpleButton2.Text = "Xóa";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(501, 12);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(253, 27);
+            this.simpleButton3.StyleController = this.layoutControl2;
+            this.simpleButton3.TabIndex = 6;
+            this.simpleButton3.Text = "Sửa";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(758, 12);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(240, 27);
+            this.simpleButton4.StyleController = this.layoutControl2;
+            this.simpleButton4.TabIndex = 6;
+            this.simpleButton4.Text = "Hủy";
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup3.GroupBordersVisible = false;
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem8,
+            this.layoutControlItem9,
+            this.layoutControlItem10,
+            this.layoutControlItem11,
+            this.layoutControlItem18});
+            this.layoutControlGroup3.Name = "Root";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(1010, 422);
+            this.layoutControlGroup3.TextVisible = false;
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.simpleButton2;
+            this.layoutControlItem8.Location = new System.Drawing.Point(240, 0);
+            this.layoutControlItem8.Name = "layoutControlItem3";
+            this.layoutControlItem8.Size = new System.Drawing.Size(249, 31);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextVisible = false;
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.simpleButton1;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem9.Name = "layoutControlItem4";
+            this.layoutControlItem9.Size = new System.Drawing.Size(240, 31);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem9.TextVisible = false;
+            // 
+            // layoutControlItem10
+            // 
+            this.layoutControlItem10.Control = this.simpleButton4;
+            this.layoutControlItem10.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem10.CustomizationFormText = "layoutControlItem4";
+            this.layoutControlItem10.Location = new System.Drawing.Point(746, 0);
+            this.layoutControlItem10.Name = "layoutControlItem6";
+            this.layoutControlItem10.Size = new System.Drawing.Size(244, 31);
+            this.layoutControlItem10.Text = "layoutControlItem4";
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem10.TextVisible = false;
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.Control = this.simpleButton3;
+            this.layoutControlItem11.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem11.CustomizationFormText = "layoutControlItem4";
+            this.layoutControlItem11.Location = new System.Drawing.Point(489, 0);
+            this.layoutControlItem11.Name = "layoutControlItem5";
+            this.layoutControlItem11.Size = new System.Drawing.Size(257, 31);
+            this.layoutControlItem11.Text = "layoutControlItem4";
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem11.TextVisible = false;
+            // 
+            // eBOOKSMANAGEMENTBindingSource
+            // 
+            this.eBOOKSMANAGEMENTBindingSource.DataMember = "EBOOKS_MANAGEMENT";
+            this.eBOOKSMANAGEMENTBindingSource.DataSource = this.lIBRARY_DATABASEDataSet;
+            // 
+            // lIBRARY_DATABASEDataSet
+            // 
+            this.lIBRARY_DATABASEDataSet.DataSetName = "LIBRARY_DATABASEDataSet";
+            this.lIBRARY_DATABASEDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup4.GroupBordersVisible = false;
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup5,
+            this.layoutControlItem20});
+            this.layoutControlGroup4.Name = "Root";
+            this.layoutControlGroup4.Size = new System.Drawing.Size(1034, 621);
+            this.layoutControlGroup4.TextVisible = false;
+            // 
+            // layoutControlGroup5
+            // 
+            this.layoutControlGroup5.AllowDrawBackground = false;
+            this.layoutControlGroup5.GroupBordersVisible = false;
+            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem7,
+            this.layoutControlItem15,
+            this.ItemForBOOK_URL,
+            this.layoutControlItem13,
+            this.layoutControlItem14,
+            this.layoutControlItem12,
+            this.layoutControlItem16,
+            this.layoutControlItem17,
+            this.ItemForIMAGES});
+            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup5.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup5.Size = new System.Drawing.Size(1014, 175);
+            // 
+            // layoutControlItem20
+            // 
+            this.layoutControlItem20.Control = this.layoutControl2;
+            this.layoutControlItem20.Location = new System.Drawing.Point(0, 175);
+            this.layoutControlItem20.Name = "layoutControlItem1";
+            this.layoutControlItem20.Size = new System.Drawing.Size(1014, 426);
+            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem20.TextVisible = false;
+            // 
+            // eBOOKS_MANAGEMENTTableAdapter
+            // 
+            this.eBOOKS_MANAGEMENTTableAdapter.ClearBeforeFill = true;
+            // 
+            // CATEGORYTextEdit
+            // 
+            this.CATEGORYTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "CATEGORY", true));
+            this.CATEGORYTextEdit.Location = new System.Drawing.Point(209, 38);
+            this.CATEGORYTextEdit.Name = "CATEGORYTextEdit";
+            this.CATEGORYTextEdit.Size = new System.Drawing.Size(384, 22);
+            this.CATEGORYTextEdit.StyleController = this.dataLayoutControl1;
+            this.CATEGORYTextEdit.TabIndex = 13;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.CATEGORYTextEdit;
+            this.layoutControlItem7.Location = new System.Drawing.Point(126, 26);
+            this.layoutControlItem7.Name = "ItemForCATEGORY";
+            this.layoutControlItem7.Size = new System.Drawing.Size(459, 26);
+            this.layoutControlItem7.Text = "CATEGORY";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(68, 16);
+            // 
+            // LANGUAGETextEdit
+            // 
+            this.LANGUAGETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "LANGUAGE", true));
+            this.LANGUAGETextEdit.Location = new System.Drawing.Point(668, 38);
+            this.LANGUAGETextEdit.Name = "LANGUAGETextEdit";
+            this.LANGUAGETextEdit.Size = new System.Drawing.Size(354, 22);
+            this.LANGUAGETextEdit.StyleController = this.dataLayoutControl1;
+            this.LANGUAGETextEdit.TabIndex = 14;
+            // 
+            // layoutControlItem12
+            // 
+            this.layoutControlItem12.Control = this.LANGUAGETextEdit;
+            this.layoutControlItem12.Location = new System.Drawing.Point(585, 26);
+            this.layoutControlItem12.Name = "ItemForLANGUAGE";
+            this.layoutControlItem12.Size = new System.Drawing.Size(429, 26);
+            this.layoutControlItem12.Text = "LANGUAGE";
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(68, 16);
+            // 
+            // TITLETextEdit
+            // 
+            this.TITLETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "TITLE", true));
+            this.TITLETextEdit.Location = new System.Drawing.Point(209, 12);
+            this.TITLETextEdit.Name = "TITLETextEdit";
+            this.TITLETextEdit.Size = new System.Drawing.Size(384, 22);
+            this.TITLETextEdit.StyleController = this.dataLayoutControl1;
+            this.TITLETextEdit.TabIndex = 15;
+            // 
+            // layoutControlItem13
+            // 
+            this.layoutControlItem13.Control = this.TITLETextEdit;
+            this.layoutControlItem13.Location = new System.Drawing.Point(126, 0);
+            this.layoutControlItem13.Name = "ItemForTITLE";
+            this.layoutControlItem13.Size = new System.Drawing.Size(459, 26);
+            this.layoutControlItem13.Text = "TITLE";
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(68, 16);
+            // 
+            // AUTHORTextEdit
+            // 
+            this.AUTHORTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "AUTHOR", true));
+            this.AUTHORTextEdit.Location = new System.Drawing.Point(668, 12);
+            this.AUTHORTextEdit.Name = "AUTHORTextEdit";
+            this.AUTHORTextEdit.Size = new System.Drawing.Size(354, 22);
+            this.AUTHORTextEdit.StyleController = this.dataLayoutControl1;
+            this.AUTHORTextEdit.TabIndex = 16;
+            // 
+            // layoutControlItem14
+            // 
+            this.layoutControlItem14.Control = this.AUTHORTextEdit;
+            this.layoutControlItem14.Location = new System.Drawing.Point(585, 0);
+            this.layoutControlItem14.Name = "ItemForAUTHOR";
+            this.layoutControlItem14.Size = new System.Drawing.Size(429, 26);
+            this.layoutControlItem14.Text = "AUTHOR";
+            this.layoutControlItem14.TextSize = new System.Drawing.Size(68, 16);
+            // 
+            // PUBLISHERTextEdit
+            // 
+            this.PUBLISHERTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "PUBLISHER", true));
+            this.PUBLISHERTextEdit.Location = new System.Drawing.Point(209, 64);
+            this.PUBLISHERTextEdit.Name = "PUBLISHERTextEdit";
+            this.PUBLISHERTextEdit.Size = new System.Drawing.Size(384, 22);
+            this.PUBLISHERTextEdit.StyleController = this.dataLayoutControl1;
+            this.PUBLISHERTextEdit.TabIndex = 17;
+            // 
+            // layoutControlItem15
+            // 
+            this.layoutControlItem15.Control = this.PUBLISHERTextEdit;
+            this.layoutControlItem15.Location = new System.Drawing.Point(126, 52);
+            this.layoutControlItem15.Name = "ItemForPUBLISHER";
+            this.layoutControlItem15.Size = new System.Drawing.Size(459, 26);
+            this.layoutControlItem15.Text = "PUBLISHER";
+            this.layoutControlItem15.TextSize = new System.Drawing.Size(68, 16);
+            // 
+            // YEAROFPUBTextEdit
+            // 
+            this.YEAROFPUBTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "YEAROFPUB", true));
+            this.YEAROFPUBTextEdit.Location = new System.Drawing.Point(668, 64);
+            this.YEAROFPUBTextEdit.Name = "YEAROFPUBTextEdit";
+            this.YEAROFPUBTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.YEAROFPUBTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.YEAROFPUBTextEdit.Properties.Mask.EditMask = "N0";
+            this.YEAROFPUBTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.YEAROFPUBTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.YEAROFPUBTextEdit.Size = new System.Drawing.Size(354, 22);
+            this.YEAROFPUBTextEdit.StyleController = this.dataLayoutControl1;
+            this.YEAROFPUBTextEdit.TabIndex = 18;
+            // 
+            // layoutControlItem16
+            // 
+            this.layoutControlItem16.Control = this.YEAROFPUBTextEdit;
+            this.layoutControlItem16.Location = new System.Drawing.Point(585, 52);
+            this.layoutControlItem16.Name = "ItemForYEAROFPUB";
+            this.layoutControlItem16.Size = new System.Drawing.Size(429, 26);
+            this.layoutControlItem16.Text = "YEAROFPUB";
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(68, 16);
+            // 
+            // layoutControlItem17
+            // 
+            this.layoutControlItem17.Control = this.NOTETextEdit;
+            this.layoutControlItem17.Location = new System.Drawing.Point(126, 104);
+            this.layoutControlItem17.Name = "ItemForNOTE";
+            this.layoutControlItem17.Size = new System.Drawing.Size(888, 71);
+            this.layoutControlItem17.Text = "NOTE";
+            this.layoutControlItem17.TextSize = new System.Drawing.Size(68, 16);
+            // 
+            // BOOK_URLTextEdit
+            // 
+            this.BOOK_URLTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "BOOK_URL", true));
+            this.BOOK_URLTextEdit.Location = new System.Drawing.Point(209, 90);
+            this.BOOK_URLTextEdit.Name = "BOOK_URLTextEdit";
+            this.BOOK_URLTextEdit.Size = new System.Drawing.Size(813, 22);
+            this.BOOK_URLTextEdit.StyleController = this.dataLayoutControl1;
+            this.BOOK_URLTextEdit.TabIndex = 20;
+            // 
+            // ItemForBOOK_URL
+            // 
+            this.ItemForBOOK_URL.Control = this.BOOK_URLTextEdit;
+            this.ItemForBOOK_URL.Location = new System.Drawing.Point(126, 78);
+            this.ItemForBOOK_URL.Name = "ItemForBOOK_URL";
+            this.ItemForBOOK_URL.Size = new System.Drawing.Size(888, 26);
+            this.ItemForBOOK_URL.Text = "BOOK_URL";
+            this.ItemForBOOK_URL.TextSize = new System.Drawing.Size(68, 16);
+            // 
+            // IMAGESPictureEdit
+            // 
+            this.IMAGESPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "IMAGES", true));
+            this.IMAGESPictureEdit.Location = new System.Drawing.Point(12, 12);
+            this.IMAGESPictureEdit.Name = "IMAGESPictureEdit";
+            this.IMAGESPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.IMAGESPictureEdit.Size = new System.Drawing.Size(122, 171);
+            this.IMAGESPictureEdit.StyleController = this.dataLayoutControl1;
+            this.IMAGESPictureEdit.TabIndex = 21;
+            // 
+            // ItemForIMAGES
+            // 
+            this.ItemForIMAGES.Control = this.IMAGESPictureEdit;
+            this.ItemForIMAGES.Location = new System.Drawing.Point(0, 0);
+            this.ItemForIMAGES.Name = "ItemForIMAGES";
+            this.ItemForIMAGES.Size = new System.Drawing.Size(126, 175);
+            this.ItemForIMAGES.StartNewLine = true;
+            this.ItemForIMAGES.Text = "IMAGES";
+            this.ItemForIMAGES.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForIMAGES.TextVisible = false;
+            // 
+            // NOTETextEdit
+            // 
+            this.NOTETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "NOTE", true));
+            this.NOTETextEdit.Location = new System.Drawing.Point(209, 116);
+            this.NOTETextEdit.Name = "NOTETextEdit";
+            this.NOTETextEdit.Size = new System.Drawing.Size(813, 67);
+            this.NOTETextEdit.StyleController = this.dataLayoutControl1;
+            this.NOTETextEdit.TabIndex = 19;
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.Location = new System.Drawing.Point(12, 43);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(986, 367);
+            this.gridControl2.TabIndex = 7;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // gridView2
+            // 
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
+            // 
+            // layoutControlItem18
+            // 
+            this.layoutControlItem18.Control = this.gridControl2;
+            this.layoutControlItem18.Location = new System.Drawing.Point(0, 31);
+            this.layoutControlItem18.Name = "layoutControlItem18";
+            this.layoutControlItem18.Size = new System.Drawing.Size(990, 371);
+            this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem18.TextVisible = false;
             // 
             // fBookManager
             // 
@@ -653,6 +1101,42 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.ItemForYEAROFPUB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForREMAIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
+            this.dataLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
+            this.layoutControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eBOOKSMANAGEMENTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBRARY_DATABASEDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CATEGORYTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LANGUAGETextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TITLETextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AUTHORTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PUBLISHERTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YEAROFPUBTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOOK_URLTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForBOOK_URL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IMAGESPictureEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForIMAGES)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NOTETextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -706,5 +1190,43 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraEditors.MemoEdit teNote;
+        private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
+        private DevExpress.XtraLayout.LayoutControl layoutControl2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
+        private LIBRARY_DATABASEDataSet lIBRARY_DATABASEDataSet;
+        private System.Windows.Forms.BindingSource eBOOKSMANAGEMENTBindingSource;
+        private LIBRARY_DATABASEDataSetTableAdapters.EBOOKS_MANAGEMENTTableAdapter eBOOKS_MANAGEMENTTableAdapter;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
+        private DevExpress.XtraEditors.TextEdit CATEGORYTextEdit;
+        private DevExpress.XtraEditors.TextEdit LANGUAGETextEdit;
+        private DevExpress.XtraEditors.TextEdit TITLETextEdit;
+        private DevExpress.XtraEditors.TextEdit AUTHORTextEdit;
+        private DevExpress.XtraEditors.TextEdit PUBLISHERTextEdit;
+        private DevExpress.XtraEditors.TextEdit YEAROFPUBTextEdit;
+        private DevExpress.XtraEditors.TextEdit BOOK_URLTextEdit;
+        private DevExpress.XtraEditors.PictureEdit IMAGESPictureEdit;
+        private DevExpress.XtraEditors.MemoEdit NOTETextEdit;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForBOOK_URL;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForIMAGES;
     }
 }
