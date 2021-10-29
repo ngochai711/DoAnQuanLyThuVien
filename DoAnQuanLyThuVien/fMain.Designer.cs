@@ -294,7 +294,7 @@ namespace DoAnQuanLyThuVien
             this.btnPlay.FlatAppearance.BorderSize = 0;
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.ForeColor = System.Drawing.Color.Black;
-            this.btnPlay.ImageIndex = 0;
+            this.btnPlay.ImageIndex = 1;
             this.btnPlay.ImageList = this.imageList2;
             this.btnPlay.Location = new System.Drawing.Point(3, 7);
             this.btnPlay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -146,12 +146,12 @@ namespace DoAnQuanLyThuVien
             // btnPause.Hide();
             if (windowsMediaPlayer.status == "Stop" || windowsMediaPlayer.status == "Paused" || windowsMediaPlayer.status == "Ready")
             {
-                btnPlay.ImageIndex = 1;
+                btnPlay.ImageIndex = 0;
                 windowsMediaPlayer.Ctlcontrols.play();
             }
             else 
             {
-                btnPlay.ImageIndex = 0;
+                btnPlay.ImageIndex = 1;
                 windowsMediaPlayer.Ctlcontrols.pause();
 
             }
