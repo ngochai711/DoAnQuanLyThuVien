@@ -68,8 +68,17 @@ namespace DoAnQuanLyThuVien
             if (Add() == 1)
             {
                 DialogResult OK = MessageBox.Show("Thêm Tài khoản thành công.", "Thông báo", MessageBoxButtons.OK);
-                if (OK == DialogResult.OK)
-                    this.Close(); 
+                txtUserName.Clear();
+                txtPassWord.Clear();
+                txtLastName.Clear();
+                txtFirstName.Clear();
+                txtGender.ResetText();
+                dtpkBirthDate.ResetText();
+                txtAddress.Clear() ;
+                txtPhoneNumber.Clear();
+                txtEmail.Clear();
+                nudType.ResetText();
+                txtNote.Clear();
             }
             else
             {
