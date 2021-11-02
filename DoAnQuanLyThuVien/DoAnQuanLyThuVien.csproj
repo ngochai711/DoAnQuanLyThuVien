@@ -76,12 +76,21 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookList.Designer.cs">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DTO\BOOKS_MANAGEMENT.cs">
       <DependentUpon>ListBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\EBOOKS_MANAGEMENT.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="DTO\ListBook.Context.cs">
       <AutoGen>True</AutoGen>
@@ -97,6 +106,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ListBook.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="fBookManager.cs">
       <SubType>Form</SubType>
@@ -116,14 +140,12 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="LIBRARY_DATABASEDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LIBRARY_DATABASEDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Mp3Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BookList.resx">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fBookManager.resx">
       <DependentUpon>fBookManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,19 +172,16 @@
     <None Include="DTO\ListBook.edmx.diagram">
       <DependentUpon>ListBook.edmx</DependentUpon>
     </None>
-    <None Include="LIBRARY_DATABASEDataSet.xsc">
-      <DependentUpon>LIBRARY_DATABASEDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LIBRARY_DATABASEDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LIBRARY_DATABASEDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LIBRARY_DATABASEDataSet.xss">
-      <DependentUpon>LIBRARY_DATABASEDataSet.xsd</DependentUpon>
+    <EntityDeploy Include="DTO\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DTO\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.EBOOKS_MANAGEMENT.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -214,6 +233,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ListBook.edmx</DependentUpon>
       <LastGenOutput>ListBook.cs</LastGenOutput>
+    </Content>
+    <Content Include="DTO\Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DTO\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
