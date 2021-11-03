@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="LIBRARY_DATABASEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="LIBRARY_DATABASEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BOOKS_MANAGEMENT">
           <Key>
             <PropertyRef Name="SERIAL_NUMBER" />
@@ -18,12 +18,12 @@
           <Property Name="REMAIN" Type="int" Nullable="false" />
           <Property Name="YEAROFPUB" Type="int" />
           <Property Name="NOTE" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BOOKIMAGE" Type="image" />
         </EntityType>
         <EntityContainer Name="LIBRARY_DATABASEModelStoreContainer">
           <EntitySet Name="BOOKS_MANAGEMENT" EntityType="Self.BOOKS_MANAGEMENT" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="LIBRARY_DATABASEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -40,6 +40,7 @@
           <Property Name="REMAIN" Type="Int32" Nullable="false" />
           <Property Name="YEAROFPUB" Type="Int32" />
           <Property Name="NOTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="BOOKIMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityContainer Name="LIBRARY_DATABASEEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BOOKS_MANAGEMENT" EntityType="Self.BOOKS_MANAGEMENT" />
@@ -53,6 +54,7 @@
           <EntitySetMapping Name="BOOKS_MANAGEMENT">
             <EntityTypeMapping TypeName="LIBRARY_DATABASEModel.BOOKS_MANAGEMENT">
               <MappingFragment StoreEntitySet="BOOKS_MANAGEMENT">
+                <ScalarProperty Name="BOOKIMAGE" ColumnName="BOOKIMAGE" />
                 <ScalarProperty Name="SERIAL_NUMBER" ColumnName="SERIAL_NUMBER" />
                 <ScalarProperty Name="CATEGORY" ColumnName="CATEGORY" />
                 <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />

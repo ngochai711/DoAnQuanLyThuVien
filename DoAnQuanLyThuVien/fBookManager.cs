@@ -38,31 +38,20 @@ namespace DoAnQuanLyThuVien
             gridView2.OptionsBehavior.Editable = false;
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            if (XtraMessageBox.Show("Bạn có muốn xóa sách này hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                bOOKSMANAGEMENTBindingSource.RemoveCurrent();
-        }
+        #region PDF
         private void simpleButton1f_Click(object sender, EventArgs e)
         {
             if (XtraMessageBox.Show("Bạn có muốn xóa sách này hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 eBOOKSMANAGEMENTBindingSource.RemoveCurrent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            bOOKSMANAGEMENTBindingSource.AddNew();
-        }
+        
         private void btnAddf_Click(object sender, EventArgs e)
         {
             eBOOKSMANAGEMENTBindingSource.AddNew();
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            db.SaveChanges();
-            XtraMessageBox.Show("Bạn đã cập nhật thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+
         private void btnEditf_Click(object sender, EventArgs e)
         {
             db3.SaveChanges();
@@ -70,27 +59,7 @@ namespace DoAnQuanLyThuVien
         }
 
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            var changed = db.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
-            foreach (var obj in changed)
-            {
-                switch (obj.State)
-                {
-                    case EntityState.Modified:
-                        obj.CurrentValues.SetValues(obj.OriginalValues);
-                        obj.State = EntityState.Unchanged;
-                        break;
-                    case EntityState.Added:
-                        obj.State = EntityState.Detached;
-                        break;
-                    case EntityState.Deleted:
-                        obj.State = EntityState.Unchanged;
-                        break;
-                }
-            }
-            bOOKSMANAGEMENTBindingSource.ResetBindings(false);
-        }
+
         private void btnCancelf_Click(object sender, EventArgs e)
         {
             var changed = db3.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
@@ -126,5 +95,67 @@ namespace DoAnQuanLyThuVien
                 IMAGESPictureEdit.EditValue = img;               
             }
         }
+
+        #endregion
+
+        #region LibBook
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+            bOOKSMANAGEMENTBindingSource.AddNew();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (XtraMessageBox.Show("Bạn có muốn xóa sách này hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                bOOKSMANAGEMENTBindingSource.RemoveCurrent();
+            db.SaveChanges();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            db.SaveChanges();
+            XtraMessageBox.Show("Bạn đã cập nhật thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+ 
+
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+            var changed = db.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
+            foreach (var obj in changed)
+            {
+                switch (obj.State)
+                {
+                    case EntityState.Modified:
+                        obj.CurrentValues.SetValues(obj.OriginalValues);
+                        obj.State = EntityState.Unchanged;
+                        break;
+                    case EntityState.Added:
+                        obj.State = EntityState.Detached;
+                        break;
+                    case EntityState.Deleted:
+                        obj.State = EntityState.Unchanged;
+                        break;
+                }
+            }
+            bOOKSMANAGEMENTBindingSource.ResetBindings(false);
+        }
+
+        private void BOOKIMAGEPictureEdit_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog o = new OpenFileDialog();
+            if (o.ShowDialog() == DialogResult.OK)
+            {
+                byte[] img = null;
+                FileStream fs = new FileStream(o.FileName, FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fs);
+                img = br.ReadBytes((int)fs.Length);
+                gridView1.SetFocusedRowCellValue("IMAGES", img);
+                peImage.EditValue = img;
+            }
+        }
+
+        #endregion
+
+
     }
 }

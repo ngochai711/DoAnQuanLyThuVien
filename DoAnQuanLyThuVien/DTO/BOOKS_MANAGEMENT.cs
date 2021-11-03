@@ -23,5 +23,6 @@ namespace DoAnQuanLyThuVien.DTO
         public int REMAIN { get; set; }
         public Nullable<int> YEAROFPUB { get; set; }
         public string NOTE { get; set; }
+        public byte[] BOOKIMAGE { get; set; }
     }
 }
