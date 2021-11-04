@@ -32,6 +32,7 @@ namespace DoAnQuanLyThuVien
             db = new LIBRARY_DATABASEEntities();
             db.BOOKS_MANAGEMENT.Load();
             bOOKSMANAGEMENTBindingSource.DataSource = db.BOOKS_MANAGEMENT.Local;
+
             db3 = new LIBRARY_DATABASEEntities3();
             db3.EBOOKS_MANAGEMENT.Load();
             eBOOKSMANAGEMENTBindingSource.DataSource = db3.EBOOKS_MANAGEMENT.Local;
@@ -85,17 +86,24 @@ namespace DoAnQuanLyThuVien
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
-            if(o.ShowDialog() == DialogResult.OK)
+            if (o.ShowDialog() == DialogResult.OK)
+            {
+                BOOK_URLTextEdit.Text = o.FileName;
+            }
+        }
+        private void BOOKIMAGEPictureEditf_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog o = new OpenFileDialog();
+            if (o.ShowDialog() == DialogResult.OK)
             {
                 byte[] img = null;
                 FileStream fs = new FileStream(o.FileName, FileMode.Open, FileAccess.Read);
                 BinaryReader br = new BinaryReader(fs);
                 img = br.ReadBytes((int)fs.Length);
                 gridView2.SetFocusedRowCellValue("IMAGES", img);
-                IMAGESPictureEdit.EditValue = img;               
+                IMAGESPictureEdit.EditValue = img;
             }
         }
-
         #endregion
 
         #region LibBook

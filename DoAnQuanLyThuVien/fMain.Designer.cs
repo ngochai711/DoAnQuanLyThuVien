@@ -37,14 +37,14 @@ namespace DoAnQuanLyThuVien
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAssist = new System.Windows.Forms.Button();
             this.SlidingPanel = new System.Windows.Forms.Panel();
+            this.btnL_card_show = new System.Windows.Forms.Button();
+            this.btnBookBorrowing = new System.Windows.Forms.Button();
             this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPlay = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnL_card_show = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SlidingPanel.SuspendLayout();
@@ -133,11 +133,11 @@ namespace DoAnQuanLyThuVien
             this.lbTeamName.BackColor = System.Drawing.Color.Transparent;
             this.lbTeamName.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTeamName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbTeamName.Location = new System.Drawing.Point(80, 11);
+            this.lbTeamName.Location = new System.Drawing.Point(135, 11);
             this.lbTeamName.Name = "lbTeamName";
-            this.lbTeamName.Size = new System.Drawing.Size(321, 37);
+            this.lbTeamName.Size = new System.Drawing.Size(128, 37);
             this.lbTeamName.TabIndex = 11;
-            this.lbTeamName.Text = "Library Management";
+            this.lbTeamName.Text = "Library";
             // 
             // btnShow
             // 
@@ -145,7 +145,8 @@ namespace DoAnQuanLyThuVien
             this.btnShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnShow.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnShow.Image = ((System.Drawing.Image)(resources.GetObject("btnShow.Image")));
+            this.btnShow.ImageKey = "icons8_menu_30px.png";
+            this.btnShow.ImageList = this.imageList2;
             this.btnShow.Location = new System.Drawing.Point(0, 0);
             this.btnShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnShow.Name = "btnShow";
@@ -163,7 +164,8 @@ namespace DoAnQuanLyThuVien
             this.imageList2.Images.SetKeyName(2, "book_60px.png");
             this.imageList2.Images.SetKeyName(3, "exit_48px.png");
             this.imageList2.Images.SetKeyName(4, "help_64px.png");
-            this.imageList2.Images.SetKeyName(5, "menu_60px.png");
+            this.imageList2.Images.SetKeyName(5, "borrow_book_64px.png");
+            this.imageList2.Images.SetKeyName(6, "icons8_menu_30px.png");
             // 
             // btnBookManagement
             // 
@@ -256,7 +258,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.SlidingPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SlidingPanel.Controls.Add(this.btnL_card_show);
-            this.SlidingPanel.Controls.Add(this.button4);
+            this.SlidingPanel.Controls.Add(this.btnBookBorrowing);
             this.SlidingPanel.Controls.Add(this.btnAssist);
             this.SlidingPanel.Controls.Add(this.btnExit);
             this.SlidingPanel.Controls.Add(this.btnAcountInfo);
@@ -269,6 +271,47 @@ namespace DoAnQuanLyThuVien
             this.SlidingPanel.Size = new System.Drawing.Size(364, 734);
             this.SlidingPanel.TabIndex = 11;
             this.SlidingPanel.MouseHover += new System.EventHandler(this.btnShow_Click);
+            // 
+            // btnL_card_show
+            // 
+            this.btnL_card_show.BackColor = System.Drawing.Color.White;
+            this.btnL_card_show.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnL_card_show.FlatAppearance.BorderSize = 0;
+            this.btnL_card_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnL_card_show.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnL_card_show.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnL_card_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnL_card_show.ImageKey = "book_52px.png";
+            this.btnL_card_show.ImageList = this.imageList2;
+            this.btnL_card_show.Location = new System.Drawing.Point(0, 289);
+            this.btnL_card_show.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnL_card_show.Name = "btnL_card_show";
+            this.btnL_card_show.Padding = new System.Windows.Forms.Padding(10);
+            this.btnL_card_show.Size = new System.Drawing.Size(364, 73);
+            this.btnL_card_show.TabIndex = 8;
+            this.btnL_card_show.Text = "Mượn Trả Sách";
+            this.btnL_card_show.UseVisualStyleBackColor = false;
+            // 
+            // btnBookBorrowing
+            // 
+            this.btnBookBorrowing.BackColor = System.Drawing.Color.White;
+            this.btnBookBorrowing.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBookBorrowing.FlatAppearance.BorderSize = 0;
+            this.btnBookBorrowing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookBorrowing.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookBorrowing.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBookBorrowing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBookBorrowing.ImageKey = "borrow_book_64px.png";
+            this.btnBookBorrowing.ImageList = this.imageList2;
+            this.btnBookBorrowing.Location = new System.Drawing.Point(0, 216);
+            this.btnBookBorrowing.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBookBorrowing.Name = "btnBookBorrowing";
+            this.btnBookBorrowing.Padding = new System.Windows.Forms.Padding(10);
+            this.btnBookBorrowing.Size = new System.Drawing.Size(364, 73);
+            this.btnBookBorrowing.TabIndex = 7;
+            this.btnBookBorrowing.Text = "Mượn Sách";
+            this.btnBookBorrowing.UseVisualStyleBackColor = false;
+            this.btnBookBorrowing.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // windowsMediaPlayer
             // 
@@ -294,10 +337,10 @@ namespace DoAnQuanLyThuVien
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Open Sans SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(58, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 24);
+            this.label1.Size = new System.Drawing.Size(61, 24);
             this.label1.TabIndex = 20;
             this.label1.Text = "label1";
             // 
@@ -322,55 +365,16 @@ namespace DoAnQuanLyThuVien
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "pause_100px.png");
-            this.imageList1.Images.SetKeyName(1, "play_60px.png");
+            this.imageList1.Images.SetKeyName(0, "pause_64px.png");
+            this.imageList1.Images.SetKeyName(1, "pause_100px.png");
+            this.imageList1.Images.SetKeyName(2, "pause_100px.png");
+            this.imageList1.Images.SetKeyName(3, "play_60px.png");
             // 
             // imageCollection1
             // 
             this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
             this.imageCollection1.Images.SetKeyName(0, "pause_30px.png");
             this.imageCollection1.Images.SetKeyName(1, "play_30px.png");
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.ImageKey = "account_64px.png";
-            this.button4.ImageList = this.imageList2;
-            this.button4.Location = new System.Drawing.Point(0, 216);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(10);
-            this.button4.Size = new System.Drawing.Size(364, 73);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Mượn Sách";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
-            // 
-            // btnL_card_show
-            // 
-            this.btnL_card_show.BackColor = System.Drawing.Color.White;
-            this.btnL_card_show.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnL_card_show.FlatAppearance.BorderSize = 0;
-            this.btnL_card_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnL_card_show.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnL_card_show.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnL_card_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnL_card_show.ImageKey = "book_52px.png";
-            this.btnL_card_show.ImageList = this.imageList2;
-            this.btnL_card_show.Location = new System.Drawing.Point(0, 289);
-            this.btnL_card_show.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnL_card_show.Name = "btnL_card_show";
-            this.btnL_card_show.Padding = new System.Windows.Forms.Padding(10);
-            this.btnL_card_show.Size = new System.Drawing.Size(364, 73);
-            this.btnL_card_show.TabIndex = 8;
-            this.btnL_card_show.Text = "Mượn Trả Sách";
-            this.btnL_card_show.UseVisualStyleBackColor = false;
             // 
             // fMain
             // 
@@ -384,6 +388,7 @@ namespace DoAnQuanLyThuVien
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.SlidingPanel);
             this.Controls.Add(this.panel5);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fMain";
@@ -426,6 +431,6 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.ImageList imageList1;
         private DevExpress.Utils.ImageCollection imageCollection1;
         private System.Windows.Forms.Button btnL_card_show;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnBookBorrowing;
     }
 }

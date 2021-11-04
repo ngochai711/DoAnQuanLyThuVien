@@ -19,7 +19,7 @@ namespace DoAnQuanLyThuVien
 
 
         int oldPanelWidth, oldPanelHeight;
-        string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement;
+        string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement, oldbtnBookBorrowing;
         //int oldListWidth, oldListHeight;
         bool max_ed = true;
         bool Wmpstatus;
@@ -49,6 +49,7 @@ namespace DoAnQuanLyThuVien
             oldbtnBookManagement = btnBookManagement.Text;
             oldbtnL_card_show = btnL_card_show.Text;
             oldbtnAcountInfo = btnAcountInfo.Text;
+            oldbtnBookBorrowing = btnBookBorrowing.Text;
             btnAssist.Text = "";
             btnExit.Text = "";
             btnBookManagement.Text = "";
@@ -329,6 +330,7 @@ namespace DoAnQuanLyThuVien
                 btnAcountInfo.Text = "";
                 btnBookManagement.Text = "";
                 btnL_card_show.Text = "";
+                btnBookBorrowing.Text = "";
             }
             else
             {
@@ -339,6 +341,7 @@ namespace DoAnQuanLyThuVien
                 btnAcountInfo.Text = oldbtnAcountInfo;
                 btnBookManagement.Text = oldbtnBookManagement;
                 btnL_card_show.Text = oldbtnL_card_show;
+                btnBookBorrowing.Text = oldbtnBookBorrowing;
                 hidden = false;
             }
 
