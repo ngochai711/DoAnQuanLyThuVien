@@ -55,6 +55,7 @@ namespace DoAnQuanLyThuVien
             btnBookManagement.Text = "";
             btnL_card_show.Text = "";
             btnAcountInfo.Text = "";
+            btnBookBorrowing.Text = "";
             hidden = true;
 
             //set button colour
@@ -274,8 +275,6 @@ namespace DoAnQuanLyThuVien
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
-
-
         }
 
         private void windowsMediaPlayer_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)

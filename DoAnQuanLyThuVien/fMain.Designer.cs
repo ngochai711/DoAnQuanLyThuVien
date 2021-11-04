@@ -45,12 +45,14 @@ namespace DoAnQuanLyThuVien
             this.btnPlay = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SlidingPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -316,7 +318,7 @@ namespace DoAnQuanLyThuVien
             // windowsMediaPlayer
             // 
             this.windowsMediaPlayer.Enabled = true;
-            this.windowsMediaPlayer.Location = new System.Drawing.Point(1191, 399);
+            this.windowsMediaPlayer.Location = new System.Drawing.Point(30, 168);
             this.windowsMediaPlayer.Name = "windowsMediaPlayer";
             this.windowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("windowsMediaPlayer.OcxState")));
             this.windowsMediaPlayer.Size = new System.Drawing.Size(223, 117);
@@ -325,13 +327,13 @@ namespace DoAnQuanLyThuVien
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.btnPlay);
-            this.panel5.Location = new System.Drawing.Point(1109, 676);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 676);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(296, 58);
+            this.panel5.Size = new System.Drawing.Size(316, 58);
             this.panel5.TabIndex = 24;
             // 
             // label1
@@ -376,6 +378,17 @@ namespace DoAnQuanLyThuVien
             this.imageCollection1.Images.SetKeyName(0, "pause_30px.png");
             this.imageCollection1.Images.SetKeyName(1, "play_30px.png");
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.windowsMediaPlayer);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1110, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(316, 734);
+            this.panel3.TabIndex = 25;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -384,16 +397,16 @@ namespace DoAnQuanLyThuVien
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1426, 734);
-            this.Controls.Add(this.windowsMediaPlayer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.SlidingPanel);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Thư Viện";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
@@ -405,6 +418,7 @@ namespace DoAnQuanLyThuVien
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -432,5 +446,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.Utils.ImageCollection imageCollection1;
         private System.Windows.Forms.Button btnL_card_show;
         private System.Windows.Forms.Button btnBookBorrowing;
+        private System.Windows.Forms.Panel panel3;
     }
 }

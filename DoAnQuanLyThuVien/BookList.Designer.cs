@@ -61,6 +61,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForPUBLISHER = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForYEAROFPUB = new DevExpress.XtraLayout.LayoutControlItem();
             this.colTITLE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnRead = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eBOOKSMANAGEMENTBindingSource)).BeginInit();
@@ -392,11 +393,21 @@ namespace DoAnQuanLyThuVien
             this.colTITLE.VisibleIndex = 0;
             this.colTITLE.Width = 94;
             // 
+            // btnRead
+            // 
+            this.btnRead.Location = new System.Drawing.Point(647, 353);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(94, 29);
+            this.btnRead.TabIndex = 2;
+            this.btnRead.Text = "Đọc sách";
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
+            // 
             // BookList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(987, 540);
+            this.Controls.Add(this.btnRead);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "BookList";
@@ -460,5 +471,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraGrid.Columns.GridColumn colNOTE;
         private DevExpress.XtraGrid.Columns.GridColumn colBOOK_URL;
         private DevExpress.XtraGrid.Columns.GridColumn colIMAGES;
+        private DevExpress.XtraEditors.SimpleButton btnRead;
     }
 }
