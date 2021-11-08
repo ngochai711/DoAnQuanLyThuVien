@@ -12,7 +12,7 @@
           <Property Name="SERIAL_NUMBER" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CATEGORY" Type="nvarchar" MaxLength="30" />
           <Property Name="LANGUAGE" Type="nvarchar" MaxLength="20" />
-          <Property Name="TITLE" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TITLE" Type="nvarchar" MaxLength="100" />
           <Property Name="AUTHOR" Type="nvarchar" MaxLength="50" />
           <Property Name="PUBLISHER" Type="nvarchar" MaxLength="50" />
           <Property Name="REMAIN" Type="int" Nullable="false" />
@@ -34,7 +34,7 @@
           <Property Name="SERIAL_NUMBER" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CATEGORY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="LANGUAGE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="TITLE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TITLE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="AUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PUBLISHER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="REMAIN" Type="Int32" Nullable="false" />

@@ -88,6 +88,7 @@ namespace DoAnQuanLyThuVien
             OpenFileDialog o = new OpenFileDialog();
             if (o.ShowDialog() == DialogResult.OK)
             {
+                gridView2.SetFocusedRowCellValue("BOOK_URL", o.FileName);
                 BOOK_URLTextEdit.Text = o.FileName;
             }
         }
