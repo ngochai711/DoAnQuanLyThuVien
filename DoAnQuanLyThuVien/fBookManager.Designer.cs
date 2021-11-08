@@ -128,6 +128,8 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.pcListBook)).BeginInit();
             this.pcListBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcLibBook)).BeginInit();
@@ -206,6 +208,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             this.SuspendLayout();
             // 
             // pcListBook
@@ -765,6 +768,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControl2
             // 
+            this.layoutControl2.Controls.Add(this.simpleButton3);
             this.layoutControl2.Controls.Add(this.gridControl2);
             this.layoutControl2.Controls.Add(this.simpleButton1);
             this.layoutControl2.Controls.Add(this.simpleButton2);
@@ -917,7 +921,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton2.Location = new System.Drawing.Point(260, 12);
             this.simpleButton2.Margin = new System.Windows.Forms.Padding(10);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(235, 27);
+            this.simpleButton2.Size = new System.Drawing.Size(231, 27);
             this.simpleButton2.StyleController = this.layoutControl2;
             this.simpleButton2.TabIndex = 5;
             this.simpleButton2.Text = "Xóa";
@@ -925,10 +929,10 @@ namespace DoAnQuanLyThuVien
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(499, 12);
+            this.simpleButton4.Location = new System.Drawing.Point(751, 12);
             this.simpleButton4.Margin = new System.Windows.Forms.Padding(10);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(499, 27);
+            this.simpleButton4.Size = new System.Drawing.Size(247, 27);
             this.simpleButton4.StyleController = this.layoutControl2;
             this.simpleButton4.TabIndex = 6;
             this.simpleButton4.Text = "Hủy";
@@ -942,7 +946,8 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem8,
             this.layoutControlItem9,
             this.layoutControlItem10,
-            this.layoutControlItem7});
+            this.layoutControlItem7,
+            this.layoutControlItem11});
             this.layoutControlGroup3.Name = "Root";
             this.layoutControlGroup3.Size = new System.Drawing.Size(1010, 390);
             this.layoutControlGroup3.TextVisible = false;
@@ -952,7 +957,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem8.Control = this.simpleButton2;
             this.layoutControlItem8.Location = new System.Drawing.Point(248, 0);
             this.layoutControlItem8.Name = "layoutControlItem3";
-            this.layoutControlItem8.Size = new System.Drawing.Size(239, 31);
+            this.layoutControlItem8.Size = new System.Drawing.Size(235, 31);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
@@ -970,9 +975,9 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem10.Control = this.simpleButton4;
             this.layoutControlItem10.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem10.CustomizationFormText = "layoutControlItem4";
-            this.layoutControlItem10.Location = new System.Drawing.Point(487, 0);
+            this.layoutControlItem10.Location = new System.Drawing.Point(739, 0);
             this.layoutControlItem10.Name = "layoutControlItem6";
-            this.layoutControlItem10.Size = new System.Drawing.Size(503, 31);
+            this.layoutControlItem10.Size = new System.Drawing.Size(251, 31);
             this.layoutControlItem10.Text = "layoutControlItem4";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
@@ -1244,6 +1249,26 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem20.TextVisible = false;
             // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(495, 12);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(10);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(252, 27);
+            this.simpleButton3.StyleController = this.layoutControl2;
+            this.simpleButton3.TabIndex = 8;
+            this.simpleButton3.Text = "Cập nhật";
+            this.simpleButton3.Click += new System.EventHandler(this.btnEditf_Click);
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.Control = this.simpleButton3;
+            this.layoutControlItem11.Location = new System.Drawing.Point(483, 0);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(256, 31);
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem11.TextVisible = false;
+            // 
             // fBookManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -1333,6 +1358,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1437,5 +1463,7 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlItem ItemForBOOKIMAGE;
         private DevExpress.XtraEditors.MemoEdit teNote;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
     }
 }
