@@ -143,14 +143,17 @@
     <Compile Include="Mp3Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XtraForm1.cs">
+    <Compile Include="fLendBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XtraForm1.Designer.cs">
-      <DependentUpon>XtraForm1.cs</DependentUpon>
+    <Compile Include="fLendBook.Designer.cs">
+      <DependentUpon>fLendBook.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BookList.resx">
       <DependentUpon>BookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLendBook.resx">
+      <DependentUpon>fLendBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fBookManager.resx">
       <DependentUpon>fBookManager.cs</DependentUpon>

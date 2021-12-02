@@ -29,9 +29,17 @@ namespace DoAnQuanLyThuVien
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // XtraForm1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "XtraForm1";
+            this.ClientSize = new System.Drawing.Size(926, 471);
+            this.Name = "XtraForm1";
+            this.Text = "Mượn sách";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
