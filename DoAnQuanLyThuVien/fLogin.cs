@@ -37,7 +37,13 @@ namespace DoAnQuanLyThuVien
             fMain f = new fMain();
             this.Hide();
             f.ShowDialog();
-            this.Show();
+            this.Show();//note nha
+           
+        }
+
+        private void fLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
