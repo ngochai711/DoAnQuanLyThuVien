@@ -22,7 +22,7 @@ namespace DoAnQuanLyThuVien
         string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement, oldbtnBookBorrowing;
         //int oldListWidth, oldListHeight;
         bool max_ed = true;
-        bool Wmpstatus;
+
 
         bool hidden;
         public fMain()
@@ -35,8 +35,7 @@ namespace DoAnQuanLyThuVien
 
         private void pre_loading()
         {
-            //oldListHeight = musicList.Height;
-            //oldListWidth = musicList.Width;
+
 
             // menu data
             oldPanelWidth = 290;
@@ -58,30 +57,17 @@ namespace DoAnQuanLyThuVien
             btnBookBorrowing.Text = "";
             hidden = true;
 
-            //set button colour
-            /*.BackColor = Color.FromArgb(0, 208, 241, 247);
-            SlidingPanel.BackColor = Color.FromArgb(70, 62, 0, 255);
-            //lbTeamName.BackColor = Color.FromArgb(30, 249, 249, 249);
-            /*
-            btnBookManagement.BackColor = Color.FromArgb(0, 208, 241, 247);
-            btnAcountInfo.BackColor = Color.FromArgb(0, 208, 241, 247);
-            btnL_card_show.BackColor = Color.FromArgb(0, 208, 241, 247);
-            btnExit.BackColor = Color.FromArgb(0, 208, 241, 247);
-            btnAssist.BackColor = Color.FromArgb(0, 208, 241, 247);
-            panel4.BackColor = Color.FromArgb(0, 208, 241, 247);*/
-
             //set WMP data
 
             FolderBrowserDialog fld = new FolderBrowserDialog();
             //doi ten duong truyen
-            fld.SelectedPath = @"..\\..\\song";
-           
+            fld.SelectedPath = @"..\..\song";
+
             tsbClearPlaylist_Click();
 
             CreatePlayLis(fld, "*.mp3");
             windowsMediaPlayer.Visible = false;
-            //panel5.Location = new Point(1314, 797);
-            //panel5.Location.Y = 714;
+
         }
 
         #region form's control
@@ -143,42 +129,38 @@ namespace DoAnQuanLyThuVien
         private void btnPlay_Click(object sender, EventArgs e)
         {
 
-            //btnPlay.BackColor = Color.LightGray;
-            //btnPlay.Show();
-            // btnPause.Hide();
             if (windowsMediaPlayer.status == "Stop" || windowsMediaPlayer.status == "Paused" || windowsMediaPlayer.status == "Ready")
             {
                 btnPlay.ImageIndex = 0;
                 windowsMediaPlayer.Ctlcontrols.play();
             }
-            else 
+            else
             {
                 btnPlay.ImageIndex = 1;
                 windowsMediaPlayer.Ctlcontrols.pause();
 
             }
-            // btnPause.BackColor = Color.Transparent;
+
         }
 
-       
-        /* private void tsbClearPlaylist_Click()
-         {
-             for (int i = 0; i < windowsMediaPlayer.currentPlaylist.count;)
-             {
-                 IWMPMedia med = windowsMediaPlayer.currentPlaylist.get_Item(i);
-                 windowsMediaPlayer.currentPlaylist.removeItem(med);
-             }
-             musicList.Items.Clear();
-         }*/
 
         private void CreatePlayLis(FolderBrowserDialog folder, string extendsion)
         {
-            string myPlaylist = "Sample";
+            string myPlaylist = "Sample1";
             WMPLib.IWMPPlaylist pl;
             WMPLib.IWMPPlaylistArray plItems;
-     
+
             plItems = windowsMediaPlayer.playlistCollection.getByName(myPlaylist);
-            plItems.Item(0).clear();
+            try
+            {
+                plItems.Item(0).clear();
+
+            }
+            catch (Exception)
+            {
+
+            }
+
             if (plItems.count == 0)
                 pl = windowsMediaPlayer.playlistCollection.newPlaylist(myPlaylist);
             else
@@ -189,14 +171,7 @@ namespace DoAnQuanLyThuVien
 
             foreach (FileInfo file in files)
             {
-                
-                
-                //builder.Append(", ");
                 string musicFile01 = file.FullName;
-
-               // string mName = Path.GetFileNameWithoutExtension(file.Name);
-                //ListViewItem item = new ListViewItem(mName);
-                //musicList.Items.Add(item);
                 WMPLib.IWMPMedia m1 = windowsMediaPlayer.newMedia(musicFile01);
                 pl.appendItem(m1);
             }
@@ -206,48 +181,6 @@ namespace DoAnQuanLyThuVien
 
         }
 
-        private void btnPrevious_Click(object sender, EventArgs e)
-        {
-            windowsMediaPlayer.Ctlcontrols.previous();
-        }
-
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            windowsMediaPlayer.Ctlcontrols.next();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (Wmpstatus == false)
-            {
-                //musicList.Width = 0;
-                //musicList.Height = 0;
-                Wmpstatus = true;
-            }
-            else
-            {
-                //musicList.Width = oldListWidth;
-                //.Height = oldListHeight;
-                Wmpstatus = false;
-            }
-
-        }
-
-        /*private void musicList_DoubleClick(object sender, EventArgs e)
-        {
-            
-            
-            try
-            {
-                IWMPMedia med = windowsMediaPlayer.currentPlaylist.get_Item(musicList.SelectedIndices[0]);
-                ListViewItem sel = musicList.SelectedItems[0];
-                windowsMediaPlayer.Ctlcontrols.playItem(med);
-            }
-            catch (Exception)
-            {
-            }
-        }*/
-
         private void tsbClearPlaylist_Click()
         {
             for (int i = 0; i < windowsMediaPlayer.currentPlaylist.count;)
@@ -255,7 +188,6 @@ namespace DoAnQuanLyThuVien
                 IWMPMedia med = windowsMediaPlayer.currentPlaylist.get_Item(i);
                 windowsMediaPlayer.currentPlaylist.removeItem(med);
             }
-            //musicList.Items.Clear();
         }
 
         #endregion
@@ -268,8 +200,14 @@ namespace DoAnQuanLyThuVien
 
         private void btnBookManagement_Click(object sender, EventArgs e)
         {
+
+            if (this.Name != "fMain")
+            {
+                this.Close();
+            }
+
             fBookManager f = new fBookManager();
-            f.Show();
+            f.ShowDialog();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -282,10 +220,16 @@ namespace DoAnQuanLyThuVien
             label1.Text = Path.GetFileNameWithoutExtension(windowsMediaPlayer.currentMedia.name);
         }
 
+       
+
         private void button4_Click_1(object sender, EventArgs e)
         {
+            if (this.Name != "fMain")
+            {
+                this.Close();
+            }
             BookList f = new BookList();
-            f.Show();
+            f.ShowDialog();
         }
 
         private void btnAssist_Click(object sender, EventArgs e)
@@ -293,13 +237,13 @@ namespace DoAnQuanLyThuVien
             MessageBox.Show("           Các thành viên nhóm phát triển:\n                  Nguyễn Hoàng Ngọc Hải\n                             Lê Hoàng Quý\n                              Lâm Tấn Phát\n                      Trần Huyền Anh Thy\n                Phiên bản ứng dụng 1.4.21\nLiên hệ đường dây nóng: 0912345678\nHoặc qua gmail: phattrienpm@gmail.com", "Hỗ trợ");
 
         }
-        
+
 
         private void btnAcountInfo_Click(object sender, EventArgs e)
         {
 
         }
-      
+
 
 
         private void btnShow_Click(object sender, EventArgs e)
@@ -339,6 +283,32 @@ namespace DoAnQuanLyThuVien
             }
 
         }
-        #endregion
+
+        private void ActiveChildForm(string name)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    frm.Activate();
+                    break;
+                }
+            }
+        }
+
+        private bool CheckExitsForm(string name)
+        {
+            bool check = false;
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    check = true;
+                    break;
+                }
+            }
+            return check;
+            #endregion
+        }
     }
 }

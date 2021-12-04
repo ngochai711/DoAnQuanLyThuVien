@@ -140,15 +140,8 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mp3Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XtraForm1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="XtraForm1.Designer.cs">
-      <DependentUpon>XtraForm1.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="BookList.resx">
       <DependentUpon>BookList.cs</DependentUpon>
     </EmbeddedResource>

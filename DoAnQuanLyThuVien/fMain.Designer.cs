@@ -25,6 +25,7 @@ namespace DoAnQuanLyThuVien
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -34,6 +35,8 @@ namespace DoAnQuanLyThuVien
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.btnExit = new System.Windows.Forms.Button();
             this.SlidingPanel = new System.Windows.Forms.Panel();
+            this.separatorControl7 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnAssist = new System.Windows.Forms.Button();
             this.separatorControl5 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnL_card_show = new System.Windows.Forms.Button();
@@ -51,11 +54,12 @@ namespace DoAnQuanLyThuVien
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl7 = new DevExpress.XtraEditors.SeparatorControl();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SlidingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
@@ -65,22 +69,37 @@ namespace DoAnQuanLyThuVien
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Location = new System.Drawing.Point(980, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(893, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(89, 37);
+            this.panel2.Size = new System.Drawing.Size(176, 40);
             this.panel2.TabIndex = 12;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(2, 0);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(45, 40);
+            this.button4.TabIndex = 18;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -91,10 +110,10 @@ namespace DoAnQuanLyThuVien
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(2, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(47, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 37);
+            this.button1.Size = new System.Drawing.Size(45, 40);
             this.button1.TabIndex = 17;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -108,10 +127,10 @@ namespace DoAnQuanLyThuVien
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(31, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(92, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(29, 37);
+            this.button2.Size = new System.Drawing.Size(45, 40);
             this.button2.TabIndex = 16;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -125,10 +144,10 @@ namespace DoAnQuanLyThuVien
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(60, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(137, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(29, 37);
+            this.button3.Size = new System.Drawing.Size(39, 40);
             this.button3.TabIndex = 15;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -139,9 +158,9 @@ namespace DoAnQuanLyThuVien
             this.panel1.Controls.Add(this.btnShow);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(273, 57);
+            this.panel1.Size = new System.Drawing.Size(273, 61);
             this.panel1.TabIndex = 2;
             // 
             // lbTeamName
@@ -159,14 +178,14 @@ namespace DoAnQuanLyThuVien
             // 
             // btnShow
             // 
-            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.btnShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnShow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShow.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnShow.ImageKey = "icons8_menu_30px.png";
             this.btnShow.ImageList = this.imageList2;
             this.btnShow.Location = new System.Drawing.Point(0, 0);
-            this.btnShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShow.Margin = new System.Windows.Forms.Padding(2);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(56, 58);
             this.btnShow.TabIndex = 2;
@@ -187,20 +206,20 @@ namespace DoAnQuanLyThuVien
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.ImageKey = "exit_48px.png";
             this.btnExit.ImageList = this.imageList2;
             this.btnExit.Location = new System.Drawing.Point(0, 539);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnExit.Padding = new System.Windows.Forms.Padding(8);
             this.btnExit.Size = new System.Drawing.Size(273, 57);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Thoát";
@@ -209,7 +228,7 @@ namespace DoAnQuanLyThuVien
             // 
             // SlidingPanel
             // 
-            this.SlidingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.SlidingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.SlidingPanel.Controls.Add(this.separatorControl7);
             this.SlidingPanel.Controls.Add(this.separatorControl6);
             this.SlidingPanel.Controls.Add(this.btnAssist);
@@ -225,30 +244,51 @@ namespace DoAnQuanLyThuVien
             this.SlidingPanel.Controls.Add(this.btnExit);
             this.SlidingPanel.Controls.Add(this.panel1);
             this.SlidingPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SlidingPanel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SlidingPanel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SlidingPanel.Location = new System.Drawing.Point(0, 0);
-            this.SlidingPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SlidingPanel.Margin = new System.Windows.Forms.Padding(2);
             this.SlidingPanel.Name = "SlidingPanel";
             this.SlidingPanel.Size = new System.Drawing.Size(273, 596);
             this.SlidingPanel.TabIndex = 11;
             this.SlidingPanel.MouseHover += new System.EventHandler(this.btnShow_Click);
             // 
+            // separatorControl7
+            // 
+            this.separatorControl7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.separatorControl7.LineColor = System.Drawing.Color.Black;
+            this.separatorControl7.Location = new System.Drawing.Point(0, 389);
+            this.separatorControl7.Name = "separatorControl7";
+            this.separatorControl7.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
+            this.separatorControl7.Size = new System.Drawing.Size(273, 23);
+            this.separatorControl7.TabIndex = 29;
+            // 
+            // separatorControl6
+            // 
+            this.separatorControl6.BackColor = System.Drawing.Color.Transparent;
+            this.separatorControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.separatorControl6.LineColor = System.Drawing.Color.Black;
+            this.separatorControl6.Location = new System.Drawing.Point(0, 436);
+            this.separatorControl6.Name = "separatorControl6";
+            this.separatorControl6.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
+            this.separatorControl6.Size = new System.Drawing.Size(273, 23);
+            this.separatorControl6.TabIndex = 28;
+            // 
             // btnAssist
             // 
-            this.btnAssist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.btnAssist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.btnAssist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAssist.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAssist.FlatAppearance.BorderSize = 0;
             this.btnAssist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAssist.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAssist.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAssist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAssist.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAssist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAssist.ImageKey = "help_64px.png";
             this.btnAssist.ImageList = this.imageList2;
             this.btnAssist.Location = new System.Drawing.Point(0, 459);
-            this.btnAssist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAssist.Margin = new System.Windows.Forms.Padding(2);
             this.btnAssist.Name = "btnAssist";
-            this.btnAssist.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnAssist.Padding = new System.Windows.Forms.Padding(8);
             this.btnAssist.Size = new System.Drawing.Size(273, 57);
             this.btnAssist.TabIndex = 27;
             this.btnAssist.Text = "Hỗ Trợ";
@@ -267,19 +307,19 @@ namespace DoAnQuanLyThuVien
             // 
             // btnL_card_show
             // 
-            this.btnL_card_show.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.btnL_card_show.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.btnL_card_show.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnL_card_show.FlatAppearance.BorderSize = 0;
             this.btnL_card_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnL_card_show.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnL_card_show.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnL_card_show.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnL_card_show.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnL_card_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnL_card_show.ImageKey = "book_52px.png";
             this.btnL_card_show.ImageList = this.imageList2;
-            this.btnL_card_show.Location = new System.Drawing.Point(0, 326);
-            this.btnL_card_show.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnL_card_show.Location = new System.Drawing.Point(0, 330);
+            this.btnL_card_show.Margin = new System.Windows.Forms.Padding(2);
             this.btnL_card_show.Name = "btnL_card_show";
-            this.btnL_card_show.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnL_card_show.Padding = new System.Windows.Forms.Padding(8);
             this.btnL_card_show.Size = new System.Drawing.Size(273, 59);
             this.btnL_card_show.TabIndex = 16;
             this.btnL_card_show.Text = "Mượn Trả Sách";
@@ -290,7 +330,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.separatorControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.separatorControl4.LineColor = System.Drawing.Color.Black;
-            this.separatorControl4.Location = new System.Drawing.Point(0, 303);
+            this.separatorControl4.Location = new System.Drawing.Point(0, 307);
             this.separatorControl4.Name = "separatorControl4";
             this.separatorControl4.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
             this.separatorControl4.Size = new System.Drawing.Size(273, 23);
@@ -298,19 +338,19 @@ namespace DoAnQuanLyThuVien
             // 
             // btnBookBorrowing
             // 
-            this.btnBookBorrowing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.btnBookBorrowing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.btnBookBorrowing.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBookBorrowing.FlatAppearance.BorderSize = 0;
             this.btnBookBorrowing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBookBorrowing.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookBorrowing.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBookBorrowing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookBorrowing.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBookBorrowing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBookBorrowing.ImageKey = "borrow_book_64px.png";
             this.btnBookBorrowing.ImageList = this.imageList2;
-            this.btnBookBorrowing.Location = new System.Drawing.Point(0, 244);
-            this.btnBookBorrowing.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookBorrowing.Location = new System.Drawing.Point(0, 248);
+            this.btnBookBorrowing.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookBorrowing.Name = "btnBookBorrowing";
-            this.btnBookBorrowing.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnBookBorrowing.Padding = new System.Windows.Forms.Padding(8);
             this.btnBookBorrowing.Size = new System.Drawing.Size(273, 59);
             this.btnBookBorrowing.TabIndex = 14;
             this.btnBookBorrowing.Text = "Mượn Sách";
@@ -321,7 +361,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.separatorControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.separatorControl3.LineColor = System.Drawing.Color.Black;
-            this.separatorControl3.Location = new System.Drawing.Point(0, 221);
+            this.separatorControl3.Location = new System.Drawing.Point(0, 225);
             this.separatorControl3.Name = "separatorControl3";
             this.separatorControl3.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
             this.separatorControl3.Size = new System.Drawing.Size(273, 23);
@@ -329,19 +369,19 @@ namespace DoAnQuanLyThuVien
             // 
             // btnAcountInfo
             // 
-            this.btnAcountInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.btnAcountInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.btnAcountInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAcountInfo.FlatAppearance.BorderSize = 0;
             this.btnAcountInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcountInfo.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcountInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAcountInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcountInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAcountInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcountInfo.ImageKey = "account_64px.png";
             this.btnAcountInfo.ImageList = this.imageList2;
-            this.btnAcountInfo.Location = new System.Drawing.Point(0, 162);
-            this.btnAcountInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAcountInfo.Location = new System.Drawing.Point(0, 166);
+            this.btnAcountInfo.Margin = new System.Windows.Forms.Padding(2);
             this.btnAcountInfo.Name = "btnAcountInfo";
-            this.btnAcountInfo.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnAcountInfo.Padding = new System.Windows.Forms.Padding(8);
             this.btnAcountInfo.Size = new System.Drawing.Size(273, 59);
             this.btnAcountInfo.TabIndex = 12;
             this.btnAcountInfo.Text = "Thông Tin Tài Khoản";
@@ -352,7 +392,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.separatorControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.separatorControl2.LineColor = System.Drawing.Color.Black;
-            this.separatorControl2.Location = new System.Drawing.Point(0, 139);
+            this.separatorControl2.Location = new System.Drawing.Point(0, 143);
             this.separatorControl2.Name = "separatorControl2";
             this.separatorControl2.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
             this.separatorControl2.Size = new System.Drawing.Size(273, 23);
@@ -360,20 +400,20 @@ namespace DoAnQuanLyThuVien
             // 
             // btnBookManagement
             // 
-            this.btnBookManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.btnBookManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.btnBookManagement.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBookManagement.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBookManagement.FlatAppearance.BorderSize = 0;
             this.btnBookManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBookManagement.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookManagement.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBookManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookManagement.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBookManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBookManagement.ImageKey = "book_60px.png";
             this.btnBookManagement.ImageList = this.imageList2;
-            this.btnBookManagement.Location = new System.Drawing.Point(0, 80);
-            this.btnBookManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookManagement.Location = new System.Drawing.Point(0, 84);
+            this.btnBookManagement.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookManagement.Name = "btnBookManagement";
-            this.btnBookManagement.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnBookManagement.Padding = new System.Windows.Forms.Padding(8);
             this.btnBookManagement.Size = new System.Drawing.Size(273, 59);
             this.btnBookManagement.TabIndex = 10;
             this.btnBookManagement.Text = "Quản Lý Sách";
@@ -384,7 +424,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.separatorControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.separatorControl1.LineColor = System.Drawing.Color.Black;
-            this.separatorControl1.Location = new System.Drawing.Point(0, 57);
+            this.separatorControl1.Location = new System.Drawing.Point(0, 61);
             this.separatorControl1.Name = "separatorControl1";
             this.separatorControl1.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
             this.separatorControl1.Size = new System.Drawing.Size(273, 23);
@@ -393,11 +433,11 @@ namespace DoAnQuanLyThuVien
             // windowsMediaPlayer
             // 
             this.windowsMediaPlayer.Enabled = true;
-            this.windowsMediaPlayer.Location = new System.Drawing.Point(30, 168);
-            this.windowsMediaPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.windowsMediaPlayer.Location = new System.Drawing.Point(67, 458);
+            this.windowsMediaPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.windowsMediaPlayer.Name = "windowsMediaPlayer";
             this.windowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("windowsMediaPlayer.OcxState")));
-            this.windowsMediaPlayer.Size = new System.Drawing.Size(223, 117);
+            this.windowsMediaPlayer.Size = new System.Drawing.Size(157, 58);
             this.windowsMediaPlayer.TabIndex = 23;
             this.windowsMediaPlayer.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.windowsMediaPlayer_CurrentItemChange);
             // 
@@ -408,19 +448,19 @@ namespace DoAnQuanLyThuVien
             this.panel5.Controls.Add(this.btnPlay);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 549);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(237, 47);
+            this.panel5.Size = new System.Drawing.Size(235, 47);
             this.panel5.TabIndex = 24;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(44, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 20;
             this.label1.Text = "label1";
             // 
@@ -434,7 +474,7 @@ namespace DoAnQuanLyThuVien
             this.btnPlay.ImageIndex = 1;
             this.btnPlay.ImageList = this.imageList1;
             this.btnPlay.Location = new System.Drawing.Point(2, 6);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(30, 32);
             this.btnPlay.TabIndex = 19;
@@ -453,46 +493,32 @@ namespace DoAnQuanLyThuVien
             // imageCollection1
             // 
             this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
-            this.imageCollection1.Images.SetKeyName(0, "pause_30px.png");
-            this.imageCollection1.Images.SetKeyName(1, "play_30px.png");
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.windowsMediaPlayer);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(833, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(835, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(237, 596);
+            this.panel3.Size = new System.Drawing.Size(235, 596);
             this.panel3.TabIndex = 25;
             // 
-            // separatorControl6
+            // panel4
             // 
-            this.separatorControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.separatorControl6.LineColor = System.Drawing.Color.Black;
-            this.separatorControl6.Location = new System.Drawing.Point(0, 436);
-            this.separatorControl6.Name = "separatorControl6";
-            this.separatorControl6.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
-            this.separatorControl6.Size = new System.Drawing.Size(273, 23);
-            this.separatorControl6.TabIndex = 28;
-            // 
-            // separatorControl7
-            // 
-            this.separatorControl7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.separatorControl7.LineColor = System.Drawing.Color.Black;
-            this.separatorControl7.Location = new System.Drawing.Point(0, 385);
-            this.separatorControl7.Name = "separatorControl7";
-            this.separatorControl7.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
-            this.separatorControl7.Size = new System.Drawing.Size(273, 23);
-            this.separatorControl7.TabIndex = 29;
+            this.panel4.Location = new System.Drawing.Point(58, 54);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(105, 79);
+            this.panel4.TabIndex = 25;
             // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.SeaGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1070, 596);
@@ -512,6 +538,8 @@ namespace DoAnQuanLyThuVien
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.SlidingPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
@@ -522,8 +550,6 @@ namespace DoAnQuanLyThuVien
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -559,5 +585,7 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraEditors.SeparatorControl separatorControl5;
         private DevExpress.XtraEditors.SeparatorControl separatorControl6;
         private DevExpress.XtraEditors.SeparatorControl separatorControl7;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel4;
     }
 }
