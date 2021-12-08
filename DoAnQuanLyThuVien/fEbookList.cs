@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace DoAnQuanLyThuVien
 {
-    public partial class BookList : DevExpress.XtraEditors.XtraForm
+    public partial class fEbookList : DevExpress.XtraEditors.XtraForm
     {
-        public BookList()
+        public fEbookList()
         {
             InitializeComponent();
         }

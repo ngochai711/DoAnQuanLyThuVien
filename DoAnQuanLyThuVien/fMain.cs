@@ -228,7 +228,7 @@ namespace DoAnQuanLyThuVien
             {
                 this.Close();
             }
-            BookList f = new BookList();
+            fEbookList f = new fEbookList();
             f.ShowDialog();
         }
 
