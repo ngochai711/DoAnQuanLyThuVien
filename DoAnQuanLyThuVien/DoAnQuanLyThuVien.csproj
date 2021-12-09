@@ -117,10 +117,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\Model.Designer.cs">
+    <Compile Include="DTO\ListEbook.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model.edmx</DependentUpon>
+      <DependentUpon>ListEbook.edmx</DependentUpon>
     </Compile>
     <Compile Include="fBookList.cs">
       <SubType>Form</SubType>
@@ -152,6 +152,12 @@
     <Compile Include="fReader.Designer.cs">
       <DependentUpon>fReader.cs</DependentUpon>
     </Compile>
+    <Compile Include="fReaderBorrowedBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderBorrowedBook.Designer.cs">
+      <DependentUpon>fReaderBorrowedBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="fLendBook.cs">
@@ -181,6 +187,9 @@
     <EmbeddedResource Include="fReader.resx">
       <DependentUpon>fReader.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fReaderBorrowedBook.resx">
+      <DependentUpon>fReaderBorrowedBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -198,17 +207,20 @@
     <None Include="DTO\ListBook.edmx.diagram">
       <DependentUpon>ListBook.edmx</DependentUpon>
     </None>
-    <EntityDeploy Include="DTO\Model.edmx">
+    <EntityDeploy Include="DTO\ListEbook.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+      <LastGenOutput>ListEbook.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DTO\Model.edmx.diagram">
-      <DependentUpon>Model.edmx</DependentUpon>
+    <None Include="DTO\ListEbook.edmx.diagram">
+      <DependentUpon>ListEbook.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.EBOOKS_MANAGEMENT.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities4.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.REQUEST_FORM.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.REQUEST_INFO.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -262,12 +274,12 @@
     </Content>
     <Content Include="DTO\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
+      <DependentUpon>ListEbook.edmx</DependentUpon>
       <LastGenOutput>Model.Context.cs</LastGenOutput>
     </Content>
     <Content Include="DTO\Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
+      <DependentUpon>ListEbook.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
   </ItemGroup>
