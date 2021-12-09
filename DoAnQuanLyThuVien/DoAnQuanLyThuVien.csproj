@@ -122,6 +122,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DTO\RequestDT.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequestDT.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\RequestDT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequestDT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\RequestDT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequestDT.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\REQUEST_FORM.cs">
+      <DependentUpon>RequestDT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\REQUEST_INFO.cs">
+      <DependentUpon>RequestDT.tt</DependentUpon>
+    </Compile>
     <Compile Include="fBookManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +208,13 @@
     <None Include="DTO\Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="DTO\RequestDT.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RequestDT.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DTO\RequestDT.edmx.diagram">
+      <DependentUpon>RequestDT.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.EBOOKS_MANAGEMENT.datasource" />
@@ -251,6 +279,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+    <Content Include="DTO\RequestDT.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RequestDT.edmx</DependentUpon>
+      <LastGenOutput>RequestDT.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DTO\RequestDT.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RequestDT.edmx</DependentUpon>
+      <LastGenOutput>RequestDT.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
