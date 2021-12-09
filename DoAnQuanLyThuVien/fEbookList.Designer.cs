@@ -44,7 +44,6 @@ namespace DoAnQuanLyThuVien
             this.colNOTE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBOOK_URL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIMAGES = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.btnRead = new DevExpress.XtraEditors.SimpleButton();
             this.TITLETextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -88,8 +87,11 @@ namespace DoAnQuanLyThuVien
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.gridControl1);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Location = new System.Drawing.Point(12, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(608, 520);
@@ -212,16 +214,9 @@ namespace DoAnQuanLyThuVien
             this.colIMAGES.Name = "colIMAGES";
             this.colIMAGES.Width = 81;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(618, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(317, 330);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
             // dataLayoutControl1
             // 
+            this.dataLayoutControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dataLayoutControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(191)))), ((int)(((byte)(180)))));
             this.dataLayoutControl1.Controls.Add(this.btnRead);
             this.dataLayoutControl1.Controls.Add(this.TITLETextEdit);
@@ -231,7 +226,7 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl1.Controls.Add(this.PUBLISHERTextEdit);
             this.dataLayoutControl1.Controls.Add(this.YEAROFPUBTextEdit);
             this.dataLayoutControl1.DataSource = this.eBOOKSMANAGEMENTBindingSource;
-            this.dataLayoutControl1.Location = new System.Drawing.Point(618, 4);
+            this.dataLayoutControl1.Location = new System.Drawing.Point(647, 0);
             this.dataLayoutControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.Root;
@@ -435,9 +430,7 @@ namespace DoAnQuanLyThuVien
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 531);
             this.Controls.Add(this.dataLayoutControl1);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
-            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fEbookList";
@@ -471,7 +464,6 @@ namespace DoAnQuanLyThuVien
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.BindingSource eBOOKSMANAGEMENTBindingSource;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
         private DevExpress.XtraEditors.TextEdit TITLETextEdit;

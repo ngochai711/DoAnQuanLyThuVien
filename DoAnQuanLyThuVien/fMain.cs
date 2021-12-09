@@ -190,6 +190,11 @@ namespace DoAnQuanLyThuVien
             }
         }
 
+        private void windowsMediaPlayer_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
+        {
+            label1.Text = Path.GetFileNameWithoutExtension(windowsMediaPlayer.currentMedia.name);
+        }
+
         #endregion
 
         #region application's function button
@@ -215,10 +220,7 @@ namespace DoAnQuanLyThuVien
             this.Hide();
         }
 
-        private void windowsMediaPlayer_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
-        {
-            label1.Text = Path.GetFileNameWithoutExtension(windowsMediaPlayer.currentMedia.name);
-        }
+        
 
        
 
