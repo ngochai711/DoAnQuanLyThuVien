@@ -12,26 +12,21 @@ namespace DoAnQuanLyThuVien.DTO
     using System;
     using System.Collections.Generic;
     
-    public partial class BOOKS_MANAGEMENT
+    public partial class REQUEST_INFO
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public BOOKS_MANAGEMENT()
+        public REQUEST_INFO()
         {
-            this.REQUEST_INFO = new HashSet<REQUEST_INFO>();
+            this.REQUEST_FORM = new HashSet<REQUEST_FORM>();
         }
     
-        public int SERIAL_NUMBER { get; set; }
-        public string CATEGORY { get; set; }
-        public string LANGUAGE { get; set; }
-        public string TITLE { get; set; }
-        public string AUTHOR { get; set; }
-        public string PUBLISHER { get; set; }
-        public int REMAIN { get; set; }
-        public Nullable<int> YEAROFPUB { get; set; }
-        public string NOTE { get; set; }
-        public byte[] BOOKIMAGE { get; set; }
+        public int REQUEST_ID { get; set; }
+        public Nullable<int> BOOKS_ID { get; set; }
+        public Nullable<System.DateTime> RETURN_DATE { get; set; }
+        public Nullable<int> NUMBER { get; set; }
     
+        public virtual BOOKS_MANAGEMENT BOOKS_MANAGEMENT { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<REQUEST_INFO> REQUEST_INFO { get; set; }
+        public virtual ICollection<REQUEST_FORM> REQUEST_FORM { get; set; }
     }
 }

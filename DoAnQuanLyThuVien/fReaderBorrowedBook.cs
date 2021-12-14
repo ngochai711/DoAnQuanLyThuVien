@@ -1,7 +1,9 @@
-﻿using System;
+﻿using DoAnQuanLyThuVien.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,14 @@ namespace DoAnQuanLyThuVien
         public fReaderBorrowedBook()
         {
             InitializeComponent();
+        }
+        LIBRARY_DATABASEEntities6 db4;
+        private void fReaderBorrowedBook_Load(object sender, EventArgs e)
+        {
+            db4 = new LIBRARY_DATABASEEntities6();
+            //db4.REQUEST_INFO.Load();
+            rEQUESTFORMBindingSource.DataSource = db4.REQUEST_FORM.ToList();
+            gridView1.OptionsBehavior.Editable = false;
         }
     }
 }

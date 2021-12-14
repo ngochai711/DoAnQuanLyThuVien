@@ -76,6 +76,27 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\CheckOut.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheckOut.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CheckOut.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheckOut.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CheckOut.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheckOut.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\REQUEST_FORM.cs">
+      <DependentUpon>CheckOut.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\REQUEST_INFO.cs">
+      <DependentUpon>CheckOut.tt</DependentUpon>
+    </Compile>
     <Compile Include="fEbookList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,7 +108,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DTO\BOOKS_MANAGEMENT.cs">
-      <DependentUpon>ListBook.tt</DependentUpon>
+      <DependentUpon>CheckOut.tt</DependentUpon>
     </Compile>
     <Compile Include="DTO\EBOOKS_MANAGEMENT.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -204,6 +225,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ListBook.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="DTO\CheckOut.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CheckOut.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DTO\CheckOut.edmx.diagram">
+      <DependentUpon>CheckOut.edmx</DependentUpon>
+    </None>
     <None Include="DTO\ListBook.edmx.diagram">
       <DependentUpon>ListBook.edmx</DependentUpon>
     </None>
@@ -262,6 +290,16 @@
     <Folder Include="song\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DTO\CheckOut.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CheckOut.edmx</DependentUpon>
+      <LastGenOutput>CheckOut.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DTO\CheckOut.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CheckOut.edmx</DependentUpon>
+      <LastGenOutput>CheckOut.cs</LastGenOutput>
+    </Content>
     <Content Include="DTO\ListBook.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ListBook.edmx</DependentUpon>

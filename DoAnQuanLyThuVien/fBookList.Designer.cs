@@ -47,28 +47,28 @@ namespace DoAnQuanLyThuVien
             this.colBOOKIMAGE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.CATEGORYTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.LANGUAGETextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.TITLETextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.AUTHORTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.PUBLISHERTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.REMAINTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.YEAROFPUBTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.BOOKIMAGEPictureEdit = new DevExpress.XtraEditors.PictureEdit();
+            this.NOTETextEdit = new DevExpress.XtraEditors.MemoEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.CATEGORYTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForCATEGORY = new DevExpress.XtraLayout.LayoutControlItem();
-            this.LANGUAGETextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForLANGUAGE = new DevExpress.XtraLayout.LayoutControlItem();
-            this.TITLETextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForTITLE = new DevExpress.XtraLayout.LayoutControlItem();
-            this.AUTHORTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForAUTHOR = new DevExpress.XtraLayout.LayoutControlItem();
-            this.PUBLISHERTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForPUBLISHER = new DevExpress.XtraLayout.LayoutControlItem();
-            this.REMAINTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForREMAIN = new DevExpress.XtraLayout.LayoutControlItem();
-            this.YEAROFPUBTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForYEAROFPUB = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNOTE = new DevExpress.XtraLayout.LayoutControlItem();
-            this.BOOKIMAGEPictureEdit = new DevExpress.XtraEditors.PictureEdit();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.NOTETextEdit = new DevExpress.XtraEditors.MemoEdit();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForTITLE = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForCATEGORY = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForPUBLISHER = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForREMAIN = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNOTE = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForYEAROFPUB = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForLANGUAGE = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForAUTHOR = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.pcLibBookGrid)).BeginInit();
             this.pcLibBookGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtlcLibBook)).BeginInit();
@@ -80,28 +80,28 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridView11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CATEGORYTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LANGUAGETextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TITLETextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AUTHORTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PUBLISHERTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.REMAINTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YEAROFPUBTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOOKIMAGEPictureEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NOTETextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CATEGORYTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCATEGORY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LANGUAGETextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForLANGUAGE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TITLETextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTITLE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AUTHORTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAUTHOR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PUBLISHERTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPUBLISHER)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.REMAINTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForREMAIN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.YEAROFPUBTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForYEAROFPUB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNOTE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOOKIMAGEPictureEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NOTETextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTITLE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCATEGORY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPUBLISHER)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForREMAIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNOTE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForYEAROFPUB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForLANGUAGE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAUTHOR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // pcLibBookGrid
@@ -298,6 +298,99 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
+            // CATEGORYTextEdit
+            // 
+            this.CATEGORYTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "CATEGORY", true));
+            this.CATEGORYTextEdit.Location = new System.Drawing.Point(197, 69);
+            this.CATEGORYTextEdit.Name = "CATEGORYTextEdit";
+            this.CATEGORYTextEdit.Size = new System.Drawing.Size(300, 20);
+            this.CATEGORYTextEdit.StyleController = this.dtlcLibBook;
+            this.CATEGORYTextEdit.TabIndex = 15;
+            // 
+            // LANGUAGETextEdit
+            // 
+            this.LANGUAGETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "LANGUAGE", true));
+            this.LANGUAGETextEdit.Location = new System.Drawing.Point(563, 69);
+            this.LANGUAGETextEdit.Name = "LANGUAGETextEdit";
+            this.LANGUAGETextEdit.Size = new System.Drawing.Size(309, 20);
+            this.LANGUAGETextEdit.StyleController = this.dtlcLibBook;
+            this.LANGUAGETextEdit.TabIndex = 16;
+            // 
+            // TITLETextEdit
+            // 
+            this.TITLETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "TITLE", true));
+            this.TITLETextEdit.Location = new System.Drawing.Point(197, 45);
+            this.TITLETextEdit.Name = "TITLETextEdit";
+            this.TITLETextEdit.Size = new System.Drawing.Size(300, 20);
+            this.TITLETextEdit.StyleController = this.dtlcLibBook;
+            this.TITLETextEdit.TabIndex = 17;
+            // 
+            // AUTHORTextEdit
+            // 
+            this.AUTHORTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "AUTHOR", true));
+            this.AUTHORTextEdit.Location = new System.Drawing.Point(563, 45);
+            this.AUTHORTextEdit.Name = "AUTHORTextEdit";
+            this.AUTHORTextEdit.Size = new System.Drawing.Size(309, 20);
+            this.AUTHORTextEdit.StyleController = this.dtlcLibBook;
+            this.AUTHORTextEdit.TabIndex = 18;
+            // 
+            // PUBLISHERTextEdit
+            // 
+            this.PUBLISHERTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "PUBLISHER", true));
+            this.PUBLISHERTextEdit.Location = new System.Drawing.Point(197, 93);
+            this.PUBLISHERTextEdit.Name = "PUBLISHERTextEdit";
+            this.PUBLISHERTextEdit.Size = new System.Drawing.Size(300, 20);
+            this.PUBLISHERTextEdit.StyleController = this.dtlcLibBook;
+            this.PUBLISHERTextEdit.TabIndex = 19;
+            // 
+            // REMAINTextEdit
+            // 
+            this.REMAINTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "REMAIN", true));
+            this.REMAINTextEdit.Location = new System.Drawing.Point(197, 117);
+            this.REMAINTextEdit.Name = "REMAINTextEdit";
+            this.REMAINTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.REMAINTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.REMAINTextEdit.Properties.Mask.EditMask = "N0";
+            this.REMAINTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.REMAINTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.REMAINTextEdit.Size = new System.Drawing.Size(675, 20);
+            this.REMAINTextEdit.StyleController = this.dtlcLibBook;
+            this.REMAINTextEdit.TabIndex = 20;
+            // 
+            // YEAROFPUBTextEdit
+            // 
+            this.YEAROFPUBTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "YEAROFPUB", true));
+            this.YEAROFPUBTextEdit.Location = new System.Drawing.Point(563, 93);
+            this.YEAROFPUBTextEdit.Name = "YEAROFPUBTextEdit";
+            this.YEAROFPUBTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.YEAROFPUBTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.YEAROFPUBTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.YEAROFPUBTextEdit.Properties.Mask.EditMask = "N0";
+            this.YEAROFPUBTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.YEAROFPUBTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.YEAROFPUBTextEdit.Size = new System.Drawing.Size(309, 20);
+            this.YEAROFPUBTextEdit.StyleController = this.dtlcLibBook;
+            this.YEAROFPUBTextEdit.TabIndex = 21;
+            // 
+            // BOOKIMAGEPictureEdit
+            // 
+            this.BOOKIMAGEPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "BOOKIMAGE", true));
+            this.BOOKIMAGEPictureEdit.Location = new System.Drawing.Point(12, 12);
+            this.BOOKIMAGEPictureEdit.Name = "BOOKIMAGEPictureEdit";
+            this.BOOKIMAGEPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.BOOKIMAGEPictureEdit.Size = new System.Drawing.Size(107, 165);
+            this.BOOKIMAGEPictureEdit.StyleController = this.dtlcLibBook;
+            this.BOOKIMAGEPictureEdit.TabIndex = 23;
+            // 
+            // NOTETextEdit
+            // 
+            this.NOTETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "NOTE", true));
+            this.NOTETextEdit.Location = new System.Drawing.Point(197, 141);
+            this.NOTETextEdit.Name = "NOTETextEdit";
+            this.NOTETextEdit.Size = new System.Drawing.Size(675, 24);
+            this.NOTETextEdit.StyleController = this.dtlcLibBook;
+            this.NOTETextEdit.TabIndex = 22;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -320,171 +413,6 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
             this.layoutControlGroup1.Size = new System.Drawing.Size(876, 169);
             // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.layoutControl1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 169);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(876, 371);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
-            // 
-            // CATEGORYTextEdit
-            // 
-            this.CATEGORYTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "CATEGORY", true));
-            this.CATEGORYTextEdit.Location = new System.Drawing.Point(197, 69);
-            this.CATEGORYTextEdit.Name = "CATEGORYTextEdit";
-            this.CATEGORYTextEdit.Size = new System.Drawing.Size(300, 20);
-            this.CATEGORYTextEdit.StyleController = this.dtlcLibBook;
-            this.CATEGORYTextEdit.TabIndex = 15;
-            // 
-            // ItemForCATEGORY
-            // 
-            this.ItemForCATEGORY.Control = this.CATEGORYTextEdit;
-            this.ItemForCATEGORY.Location = new System.Drawing.Point(0, 24);
-            this.ItemForCATEGORY.Name = "ItemForCATEGORY";
-            this.ItemForCATEGORY.Size = new System.Drawing.Size(366, 24);
-            this.ItemForCATEGORY.Text = "CATEGORY";
-            this.ItemForCATEGORY.TextSize = new System.Drawing.Size(59, 13);
-            // 
-            // LANGUAGETextEdit
-            // 
-            this.LANGUAGETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "LANGUAGE", true));
-            this.LANGUAGETextEdit.Location = new System.Drawing.Point(563, 69);
-            this.LANGUAGETextEdit.Name = "LANGUAGETextEdit";
-            this.LANGUAGETextEdit.Size = new System.Drawing.Size(309, 20);
-            this.LANGUAGETextEdit.StyleController = this.dtlcLibBook;
-            this.LANGUAGETextEdit.TabIndex = 16;
-            // 
-            // ItemForLANGUAGE
-            // 
-            this.ItemForLANGUAGE.Control = this.LANGUAGETextEdit;
-            this.ItemForLANGUAGE.Location = new System.Drawing.Point(366, 24);
-            this.ItemForLANGUAGE.Name = "ItemForLANGUAGE";
-            this.ItemForLANGUAGE.Size = new System.Drawing.Size(375, 24);
-            this.ItemForLANGUAGE.Text = "LANGUAGE";
-            this.ItemForLANGUAGE.TextSize = new System.Drawing.Size(59, 13);
-            // 
-            // TITLETextEdit
-            // 
-            this.TITLETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "TITLE", true));
-            this.TITLETextEdit.Location = new System.Drawing.Point(197, 45);
-            this.TITLETextEdit.Name = "TITLETextEdit";
-            this.TITLETextEdit.Size = new System.Drawing.Size(300, 20);
-            this.TITLETextEdit.StyleController = this.dtlcLibBook;
-            this.TITLETextEdit.TabIndex = 17;
-            // 
-            // ItemForTITLE
-            // 
-            this.ItemForTITLE.Control = this.TITLETextEdit;
-            this.ItemForTITLE.Location = new System.Drawing.Point(0, 0);
-            this.ItemForTITLE.Name = "ItemForTITLE";
-            this.ItemForTITLE.Size = new System.Drawing.Size(366, 24);
-            this.ItemForTITLE.Text = "TITLE";
-            this.ItemForTITLE.TextSize = new System.Drawing.Size(59, 13);
-            // 
-            // AUTHORTextEdit
-            // 
-            this.AUTHORTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "AUTHOR", true));
-            this.AUTHORTextEdit.Location = new System.Drawing.Point(563, 45);
-            this.AUTHORTextEdit.Name = "AUTHORTextEdit";
-            this.AUTHORTextEdit.Size = new System.Drawing.Size(309, 20);
-            this.AUTHORTextEdit.StyleController = this.dtlcLibBook;
-            this.AUTHORTextEdit.TabIndex = 18;
-            // 
-            // ItemForAUTHOR
-            // 
-            this.ItemForAUTHOR.Control = this.AUTHORTextEdit;
-            this.ItemForAUTHOR.Location = new System.Drawing.Point(366, 0);
-            this.ItemForAUTHOR.Name = "ItemForAUTHOR";
-            this.ItemForAUTHOR.Size = new System.Drawing.Size(375, 24);
-            this.ItemForAUTHOR.Text = "AUTHOR";
-            this.ItemForAUTHOR.TextSize = new System.Drawing.Size(59, 13);
-            // 
-            // PUBLISHERTextEdit
-            // 
-            this.PUBLISHERTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "PUBLISHER", true));
-            this.PUBLISHERTextEdit.Location = new System.Drawing.Point(197, 93);
-            this.PUBLISHERTextEdit.Name = "PUBLISHERTextEdit";
-            this.PUBLISHERTextEdit.Size = new System.Drawing.Size(300, 20);
-            this.PUBLISHERTextEdit.StyleController = this.dtlcLibBook;
-            this.PUBLISHERTextEdit.TabIndex = 19;
-            // 
-            // ItemForPUBLISHER
-            // 
-            this.ItemForPUBLISHER.Control = this.PUBLISHERTextEdit;
-            this.ItemForPUBLISHER.Location = new System.Drawing.Point(0, 48);
-            this.ItemForPUBLISHER.Name = "ItemForPUBLISHER";
-            this.ItemForPUBLISHER.Size = new System.Drawing.Size(366, 24);
-            this.ItemForPUBLISHER.Text = "PUBLISHER";
-            this.ItemForPUBLISHER.TextSize = new System.Drawing.Size(59, 13);
-            // 
-            // REMAINTextEdit
-            // 
-            this.REMAINTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "REMAIN", true));
-            this.REMAINTextEdit.Location = new System.Drawing.Point(197, 117);
-            this.REMAINTextEdit.Name = "REMAINTextEdit";
-            this.REMAINTextEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.REMAINTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.REMAINTextEdit.Properties.Mask.EditMask = "N0";
-            this.REMAINTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.REMAINTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.REMAINTextEdit.Size = new System.Drawing.Size(675, 20);
-            this.REMAINTextEdit.StyleController = this.dtlcLibBook;
-            this.REMAINTextEdit.TabIndex = 20;
-            // 
-            // ItemForREMAIN
-            // 
-            this.ItemForREMAIN.Control = this.REMAINTextEdit;
-            this.ItemForREMAIN.Location = new System.Drawing.Point(0, 72);
-            this.ItemForREMAIN.Name = "ItemForREMAIN";
-            this.ItemForREMAIN.Size = new System.Drawing.Size(741, 24);
-            this.ItemForREMAIN.Text = "REMAIN";
-            this.ItemForREMAIN.TextSize = new System.Drawing.Size(59, 13);
-            // 
-            // YEAROFPUBTextEdit
-            // 
-            this.YEAROFPUBTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "YEAROFPUB", true));
-            this.YEAROFPUBTextEdit.Location = new System.Drawing.Point(563, 93);
-            this.YEAROFPUBTextEdit.Name = "YEAROFPUBTextEdit";
-            this.YEAROFPUBTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.YEAROFPUBTextEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.YEAROFPUBTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.YEAROFPUBTextEdit.Properties.Mask.EditMask = "N0";
-            this.YEAROFPUBTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.YEAROFPUBTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.YEAROFPUBTextEdit.Size = new System.Drawing.Size(309, 20);
-            this.YEAROFPUBTextEdit.StyleController = this.dtlcLibBook;
-            this.YEAROFPUBTextEdit.TabIndex = 21;
-            // 
-            // ItemForYEAROFPUB
-            // 
-            this.ItemForYEAROFPUB.Control = this.YEAROFPUBTextEdit;
-            this.ItemForYEAROFPUB.Location = new System.Drawing.Point(366, 48);
-            this.ItemForYEAROFPUB.Name = "ItemForYEAROFPUB";
-            this.ItemForYEAROFPUB.Size = new System.Drawing.Size(375, 24);
-            this.ItemForYEAROFPUB.Text = "YEAROFPUB";
-            this.ItemForYEAROFPUB.TextSize = new System.Drawing.Size(59, 13);
-            // 
-            // ItemForNOTE
-            // 
-            this.ItemForNOTE.Control = this.NOTETextEdit;
-            this.ItemForNOTE.Location = new System.Drawing.Point(0, 96);
-            this.ItemForNOTE.Name = "ItemForNOTE";
-            this.ItemForNOTE.Size = new System.Drawing.Size(741, 28);
-            this.ItemForNOTE.Text = "NOTE";
-            this.ItemForNOTE.TextSize = new System.Drawing.Size(59, 13);
-            // 
-            // BOOKIMAGEPictureEdit
-            // 
-            this.BOOKIMAGEPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "BOOKIMAGE", true));
-            this.BOOKIMAGEPictureEdit.Location = new System.Drawing.Point(12, 12);
-            this.BOOKIMAGEPictureEdit.Name = "BOOKIMAGEPictureEdit";
-            this.BOOKIMAGEPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.BOOKIMAGEPictureEdit.Size = new System.Drawing.Size(107, 165);
-            this.BOOKIMAGEPictureEdit.StyleController = this.dtlcLibBook;
-            this.BOOKIMAGEPictureEdit.TabIndex = 23;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.BOOKIMAGEPictureEdit;
@@ -495,15 +423,6 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem3.Text = "BOOKIMAGE";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
-            // 
-            // NOTETextEdit
-            // 
-            this.NOTETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "NOTE", true));
-            this.NOTETextEdit.Location = new System.Drawing.Point(197, 141);
-            this.NOTETextEdit.Name = "NOTETextEdit";
-            this.NOTETextEdit.Size = new System.Drawing.Size(675, 24);
-            this.NOTETextEdit.StyleController = this.dtlcLibBook;
-            this.NOTETextEdit.TabIndex = 22;
             // 
             // layoutControlGroup3
             // 
@@ -520,6 +439,87 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Size = new System.Drawing.Size(765, 169);
             this.layoutControlGroup3.Text = "Thông tin sách";
+            // 
+            // ItemForTITLE
+            // 
+            this.ItemForTITLE.Control = this.TITLETextEdit;
+            this.ItemForTITLE.Location = new System.Drawing.Point(0, 0);
+            this.ItemForTITLE.Name = "ItemForTITLE";
+            this.ItemForTITLE.Size = new System.Drawing.Size(366, 24);
+            this.ItemForTITLE.Text = "TITLE";
+            this.ItemForTITLE.TextSize = new System.Drawing.Size(59, 13);
+            // 
+            // ItemForCATEGORY
+            // 
+            this.ItemForCATEGORY.Control = this.CATEGORYTextEdit;
+            this.ItemForCATEGORY.Location = new System.Drawing.Point(0, 24);
+            this.ItemForCATEGORY.Name = "ItemForCATEGORY";
+            this.ItemForCATEGORY.Size = new System.Drawing.Size(366, 24);
+            this.ItemForCATEGORY.Text = "CATEGORY";
+            this.ItemForCATEGORY.TextSize = new System.Drawing.Size(59, 13);
+            // 
+            // ItemForPUBLISHER
+            // 
+            this.ItemForPUBLISHER.Control = this.PUBLISHERTextEdit;
+            this.ItemForPUBLISHER.Location = new System.Drawing.Point(0, 48);
+            this.ItemForPUBLISHER.Name = "ItemForPUBLISHER";
+            this.ItemForPUBLISHER.Size = new System.Drawing.Size(366, 24);
+            this.ItemForPUBLISHER.Text = "PUBLISHER";
+            this.ItemForPUBLISHER.TextSize = new System.Drawing.Size(59, 13);
+            // 
+            // ItemForREMAIN
+            // 
+            this.ItemForREMAIN.Control = this.REMAINTextEdit;
+            this.ItemForREMAIN.Location = new System.Drawing.Point(0, 72);
+            this.ItemForREMAIN.Name = "ItemForREMAIN";
+            this.ItemForREMAIN.Size = new System.Drawing.Size(741, 24);
+            this.ItemForREMAIN.Text = "REMAIN";
+            this.ItemForREMAIN.TextSize = new System.Drawing.Size(59, 13);
+            // 
+            // ItemForNOTE
+            // 
+            this.ItemForNOTE.Control = this.NOTETextEdit;
+            this.ItemForNOTE.Location = new System.Drawing.Point(0, 96);
+            this.ItemForNOTE.Name = "ItemForNOTE";
+            this.ItemForNOTE.Size = new System.Drawing.Size(741, 28);
+            this.ItemForNOTE.Text = "NOTE";
+            this.ItemForNOTE.TextSize = new System.Drawing.Size(59, 13);
+            // 
+            // ItemForYEAROFPUB
+            // 
+            this.ItemForYEAROFPUB.Control = this.YEAROFPUBTextEdit;
+            this.ItemForYEAROFPUB.Location = new System.Drawing.Point(366, 48);
+            this.ItemForYEAROFPUB.Name = "ItemForYEAROFPUB";
+            this.ItemForYEAROFPUB.Size = new System.Drawing.Size(375, 24);
+            this.ItemForYEAROFPUB.Text = "YEAROFPUB";
+            this.ItemForYEAROFPUB.TextSize = new System.Drawing.Size(59, 13);
+            // 
+            // ItemForLANGUAGE
+            // 
+            this.ItemForLANGUAGE.Control = this.LANGUAGETextEdit;
+            this.ItemForLANGUAGE.Location = new System.Drawing.Point(366, 24);
+            this.ItemForLANGUAGE.Name = "ItemForLANGUAGE";
+            this.ItemForLANGUAGE.Size = new System.Drawing.Size(375, 24);
+            this.ItemForLANGUAGE.Text = "LANGUAGE";
+            this.ItemForLANGUAGE.TextSize = new System.Drawing.Size(59, 13);
+            // 
+            // ItemForAUTHOR
+            // 
+            this.ItemForAUTHOR.Control = this.AUTHORTextEdit;
+            this.ItemForAUTHOR.Location = new System.Drawing.Point(366, 0);
+            this.ItemForAUTHOR.Name = "ItemForAUTHOR";
+            this.ItemForAUTHOR.Size = new System.Drawing.Size(375, 24);
+            this.ItemForAUTHOR.Text = "AUTHOR";
+            this.ItemForAUTHOR.TextSize = new System.Drawing.Size(59, 13);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.layoutControl1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 169);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(876, 371);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
             // 
             // fBookList
             // 
@@ -541,28 +541,28 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridView11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CATEGORYTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LANGUAGETextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TITLETextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AUTHORTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PUBLISHERTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.REMAINTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YEAROFPUBTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOOKIMAGEPictureEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NOTETextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CATEGORYTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCATEGORY)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LANGUAGETextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForLANGUAGE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TITLETextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTITLE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AUTHORTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAUTHOR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PUBLISHERTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPUBLISHER)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.REMAINTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForREMAIN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.YEAROFPUBTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForYEAROFPUB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNOTE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOOKIMAGEPictureEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NOTETextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTITLE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCATEGORY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPUBLISHER)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForREMAIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNOTE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForYEAROFPUB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForLANGUAGE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAUTHOR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fReader));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnAccountInfo = new System.Windows.Forms.Button();
             this.btnSupport = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -39,18 +40,17 @@
             this.btnBookSearching = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panelChildForm = new System.Windows.Forms.Panel();
-            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPlay = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
+            this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,6 +69,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(211, 681);
             this.panel1.TabIndex = 0;
+            // 
+            // separatorControl1
+            // 
+            this.separatorControl1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.separatorControl1.LineColor = System.Drawing.Color.Black;
+            this.separatorControl1.Location = new System.Drawing.Point(3, 603);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(205, 21);
+            this.separatorControl1.TabIndex = 4;
             // 
             // btnAccountInfo
             // 
@@ -110,6 +119,7 @@
             this.btnUserLendingCard.TabIndex = 2;
             this.btnUserLendingCard.Text = "Phiếu mượn";
             this.btnUserLendingCard.UseVisualStyleBackColor = true;
+            this.btnUserLendingCard.Click += new System.EventHandler(this.btnUserLendingCard_Click);
             // 
             // btnEbookReading
             // 
@@ -152,47 +162,9 @@
             this.panel3.Size = new System.Drawing.Size(925, 106);
             this.panel3.TabIndex = 2;
             // 
-            // panelChildForm
-            // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(238)))), ((int)(((byte)(220)))));
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(211, 0);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(925, 575);
-            this.panelChildForm.TabIndex = 3;
-            // 
-            // separatorControl1
-            // 
-            this.separatorControl1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.separatorControl1.LineColor = System.Drawing.Color.Black;
-            this.separatorControl1.Location = new System.Drawing.Point(3, 603);
-            this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(205, 21);
-            this.separatorControl1.TabIndex = 4;
-            // 
-            // windowsMediaPlayer
-            // 
-            this.windowsMediaPlayer.Enabled = true;
-            this.windowsMediaPlayer.Location = new System.Drawing.Point(520, 44);
-            this.windowsMediaPlayer.Margin = new System.Windows.Forms.Padding(2);
-            this.windowsMediaPlayer.Name = "windowsMediaPlayer";
-            this.windowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("windowsMediaPlayer.OcxState")));
-            this.windowsMediaPlayer.Size = new System.Drawing.Size(157, 58);
-            this.windowsMediaPlayer.TabIndex = 24;
-            this.windowsMediaPlayer.Visible = false;
-            this.windowsMediaPlayer.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.windowsMediaPlayer_CurrentItemChange);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "pause_64px.png");
-            this.imageList1.Images.SetKeyName(1, "pause_100px.png");
-            this.imageList1.Images.SetKeyName(2, "pause_100px.png");
-            this.imageList1.Images.SetKeyName(3, "play_60px.png");
-            // 
             // panel5
             // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.btnPlay);
@@ -230,6 +202,36 @@
             this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click_1);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "pause_64px.png");
+            this.imageList1.Images.SetKeyName(1, "pause_100px.png");
+            this.imageList1.Images.SetKeyName(2, "pause_100px.png");
+            this.imageList1.Images.SetKeyName(3, "play_60px.png");
+            // 
+            // windowsMediaPlayer
+            // 
+            this.windowsMediaPlayer.Enabled = true;
+            this.windowsMediaPlayer.Location = new System.Drawing.Point(520, 44);
+            this.windowsMediaPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.windowsMediaPlayer.Name = "windowsMediaPlayer";
+            this.windowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("windowsMediaPlayer.OcxState")));
+            this.windowsMediaPlayer.Size = new System.Drawing.Size(157, 58);
+            this.windowsMediaPlayer.TabIndex = 24;
+            this.windowsMediaPlayer.Visible = false;
+            this.windowsMediaPlayer.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.windowsMediaPlayer_CurrentItemChange);
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(238)))), ((int)(((byte)(220)))));
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(211, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(925, 575);
+            this.panelChildForm.TabIndex = 3;
+            // 
             // fReader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,11 +246,11 @@
             this.Name = "fReader";
             this.Text = "fReader";
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
             this.ResumeLayout(false);
 
         }

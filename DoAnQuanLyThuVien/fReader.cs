@@ -143,6 +143,13 @@ namespace DoAnQuanLyThuVien
         {
             label1.Text = Path.GetFileNameWithoutExtension(windowsMediaPlayer.currentMedia.name);
         }
+
+        private void btnUserLendingCard_Click(object sender, EventArgs e)
+        {
+            fReaderBorrowedBook _readerBorrowedBook = new fReaderBorrowedBook();
+            _readerBorrowedBook.FormBorderStyle = FormBorderStyle.None;
+            openChildForm(_readerBorrowedBook);
+        }
     }
 
 
