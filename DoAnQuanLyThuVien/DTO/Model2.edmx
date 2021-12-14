@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="LIBRARY_DATABASEModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="LIBRARY_DATABASEModel3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="REQUEST_FORM">
           <Key>
             <PropertyRef Name="ID" />
@@ -49,7 +49,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="LIBRARY_DATABASEModel2StoreContainer">
+        <EntityContainer Name="LIBRARY_DATABASEModel3StoreContainer">
           <EntitySet Name="REQUEST_FORM" EntityType="Self.REQUEST_FORM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="REQUEST_INFO" EntityType="Self.REQUEST_INFO" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__REQUEST_F__REQUE__31EC6D26" Association="Self.FK__REQUEST_F__REQUE__31EC6D26">
@@ -65,7 +65,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="LIBRARY_DATABASEModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="LIBRARY_DATABASEModel3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="REQUEST_FORM">
           <Key>
             <PropertyRef Name="ID" />
@@ -114,7 +114,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="LIBRARY_DATABASEEntities6" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="LIBRARY_DATABASEEntities5" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="REQUEST_FORM" EntityType="Self.REQUEST_FORM" />
           <EntitySet Name="REQUEST_INFO" EntityType="Self.REQUEST_INFO" />
           <AssociationSet Name="FK__REQUEST_F__REQUE__31EC6D26" Association="Self.FK__REQUEST_F__REQUE__31EC6D26">
@@ -131,9 +131,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="LIBRARY_DATABASEModel2StoreContainer" CdmEntityContainer="LIBRARY_DATABASEEntities6">
+        <EntityContainerMapping StorageEntityContainer="LIBRARY_DATABASEModel3StoreContainer" CdmEntityContainer="LIBRARY_DATABASEEntities5">
           <EntitySetMapping Name="REQUEST_FORM">
-            <EntityTypeMapping TypeName="LIBRARY_DATABASEModel2.REQUEST_FORM">
+            <EntityTypeMapping TypeName="LIBRARY_DATABASEModel3.REQUEST_FORM">
               <MappingFragment StoreEntitySet="REQUEST_FORM">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="REQUEST_ID" ColumnName="REQUEST_ID" />
@@ -144,7 +144,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="REQUEST_INFO">
-            <EntityTypeMapping TypeName="LIBRARY_DATABASEModel2.REQUEST_INFO">
+            <EntityTypeMapping TypeName="LIBRARY_DATABASEModel3.REQUEST_INFO">
               <MappingFragment StoreEntitySet="REQUEST_INFO">
                 <ScalarProperty Name="REQUEST_ID" ColumnName="REQUEST_ID" />
                 <ScalarProperty Name="BOOKS_ID" ColumnName="BOOKS_ID" />

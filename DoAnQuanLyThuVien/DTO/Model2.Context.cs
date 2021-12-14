@@ -13,10 +13,10 @@ namespace DoAnQuanLyThuVien.DTO
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LIBRARY_DATABASEEntities6 : DbContext
+    public partial class LIBRARY_DATABASEEntities5 : DbContext
     {
-        public LIBRARY_DATABASEEntities6()
-            : base("name=LIBRARY_DATABASEEntities6")
+        public LIBRARY_DATABASEEntities5()
+            : base("name=LIBRARY_DATABASEEntities5")
         {
         }
     

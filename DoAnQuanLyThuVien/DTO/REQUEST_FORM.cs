@@ -20,7 +20,6 @@ namespace DoAnQuanLyThuVien.DTO
         public Nullable<System.DateTime> DUE_DATE { get; set; }
         public string STATUS { get; set; }
     
-        public virtual REQUEST_INFO REQUEST_INFO { get; set; }
-        public virtual REQUEST_INFO REQUEST_INFO1 { get; set; }
+        public virtual CLIENT_INFO CLIENT_INFO { get; set; }
     }
 }

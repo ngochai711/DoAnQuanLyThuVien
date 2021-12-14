@@ -13,10 +13,10 @@ namespace DoAnQuanLyThuVien.DTO
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LIBRARY_DATABASEEntities6 : DbContext
+    public partial class LIBRARY_DATABASEEntities7 : DbContext
     {
-        public LIBRARY_DATABASEEntities6()
-            : base("name=LIBRARY_DATABASEEntities6")
+        public LIBRARY_DATABASEEntities7()
+            : base("name=LIBRARY_DATABASEEntities7")
         {
         }
     
@@ -25,7 +25,7 @@ namespace DoAnQuanLyThuVien.DTO
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<CLIENT_INFO> CLIENT_INFO { get; set; }
         public virtual DbSet<REQUEST_FORM> REQUEST_FORM { get; set; }
-        public virtual DbSet<REQUEST_INFO> REQUEST_INFO { get; set; }
     }
 }
