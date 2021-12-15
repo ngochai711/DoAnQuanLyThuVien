@@ -69,6 +69,7 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -108,24 +109,6 @@
     <Compile Include="DTO\BOOKS_MANAGEMENT.cs">
       <DependentUpon>ListBook.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\CardDT.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CardDT.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\CardDT.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CardDT.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\CardDT.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CardDT.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\CLIENT_INFO.cs">
-      <DependentUpon>CardDT.tt</DependentUpon>
-    </Compile>
     <Compile Include="DTO\EBOOKS_MANAGEMENT.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -159,27 +142,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DTO\ReqCard.cs" />
-    <Compile Include="DTO\RequestDT.Context.cs">
+    <Compile Include="DTO\ReqDT.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RequestDT.Context.tt</DependentUpon>
+      <DependentUpon>ReqDT.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\RequestDT.cs">
+    <Compile Include="DTO\ReqDT.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RequestDT.tt</DependentUpon>
+      <DependentUpon>ReqDT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\RequestDT.Designer.cs">
+    <Compile Include="DTO\ReqDT.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RequestDT.edmx</DependentUpon>
+      <DependentUpon>ReqDT.edmx</DependentUpon>
     </Compile>
     <Compile Include="DTO\REQUEST_FORM.cs">
-      <DependentUpon>CardDT.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\REQUEST_INFO.cs">
-      <DependentUpon>RequestDT.tt</DependentUpon>
+      <DependentUpon>ReqDT.tt</DependentUpon>
     </Compile>
     <Compile Include="fBookManager.cs">
       <SubType>Form</SubType>
@@ -245,13 +224,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ListBook.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <EntityDeploy Include="DTO\CardDT.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CardDT.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="DTO\CardDT.edmx.diagram">
-      <DependentUpon>CardDT.edmx</DependentUpon>
-    </None>
     <None Include="DTO\ListBook.edmx.diagram">
       <DependentUpon>ListBook.edmx</DependentUpon>
     </None>
@@ -262,12 +234,12 @@
     <None Include="DTO\Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
-    <EntityDeploy Include="DTO\RequestDT.edmx">
+    <EntityDeploy Include="DTO\ReqDT.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RequestDT.Designer.cs</LastGenOutput>
+      <LastGenOutput>ReqDT.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DTO\RequestDT.edmx.diagram">
-      <DependentUpon>RequestDT.edmx</DependentUpon>
+    <None Include="DTO\ReqDT.edmx.diagram">
+      <DependentUpon>ReqDT.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT.datasource" />
@@ -317,16 +289,6 @@
     <Folder Include="song\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DTO\CardDT.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CardDT.edmx</DependentUpon>
-      <LastGenOutput>CardDT.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DTO\CardDT.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CardDT.edmx</DependentUpon>
-      <LastGenOutput>CardDT.cs</LastGenOutput>
-    </Content>
     <Content Include="DTO\ListBook.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ListBook.edmx</DependentUpon>
@@ -347,15 +309,15 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
-    <Content Include="DTO\RequestDT.Context.tt">
+    <Content Include="DTO\ReqDT.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RequestDT.edmx</DependentUpon>
-      <LastGenOutput>RequestDT.Context.cs</LastGenOutput>
+      <DependentUpon>ReqDT.edmx</DependentUpon>
+      <LastGenOutput>ReqDT.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DTO\RequestDT.tt">
+    <Content Include="DTO\ReqDT.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RequestDT.edmx</DependentUpon>
-      <LastGenOutput>RequestDT.cs</LastGenOutput>
+      <DependentUpon>ReqDT.edmx</DependentUpon>
+      <LastGenOutput>ReqDT.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

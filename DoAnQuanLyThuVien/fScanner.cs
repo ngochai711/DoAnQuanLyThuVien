@@ -57,14 +57,14 @@ namespace DoAnQuanLyThuVien
                 if (result != null)
                 {
                     id = int.Parse(result.ToString());
-                    MessageBox.Show("Đã nhận được mã vạch!!!");
+                    XtraMessageBox.Show("Đã nhận được mã vạch!!!");
 
                 }
                 pictureBox1.Image = bitmap;
             }
             catch
             {
-                MessageBox.Show("Chưa thể nhận dạng được mã sách");
+                XtraMessageBox.Show("Chưa thể nhận dạng được mã sách");
             }
             
 

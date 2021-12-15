@@ -30,10 +30,15 @@ namespace DoAnQuanLyThuVien
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.rEQUESTFORMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rEQUESTINFOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -43,10 +48,11 @@ namespace DoAnQuanLyThuVien
             this.colREQUEST_DATE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDUE_DATE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSTATUS = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnSubmit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.deToDateList = new DevExpress.XtraEditors.DateEdit();
+            this.deFromDateList = new DevExpress.XtraEditors.DateEdit();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
             this.sbCreateLendCard = new DevExpress.XtraEditors.SimpleButton();
@@ -84,21 +90,21 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.cLIENTINFOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rEQUESTFORMBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.rEQUESTFORMBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rEQUESTINFOBindingSource)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deToDateList.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deToDateList.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deFromDateList.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deFromDateList.Properties)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
             this.layoutControl3.SuspendLayout();
@@ -123,16 +129,12 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLIENTINFOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rEQUESTFORMBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // rEQUESTFORMBindingSource
             // 
             this.rEQUESTFORMBindingSource.DataSource = typeof(DoAnQuanLyThuVien.DTO.REQUEST_FORM);
-            // 
-            // rEQUESTINFOBindingSource
-            // 
-            this.rEQUESTINFOBindingSource.DataSource = typeof(DoAnQuanLyThuVien.DTO.REQUEST_INFO);
             // 
             // tabControl1
             // 
@@ -142,30 +144,40 @@ namespace DoAnQuanLyThuVien
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(883, 455);
+            this.tabControl1.Size = new System.Drawing.Size(883, 451);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.simpleButton1);
             this.tabPage1.Controls.Add(this.labelControl2);
             this.tabPage1.Controls.Add(this.labelControl1);
             this.tabPage1.Controls.Add(this.layoutControl1);
-            this.tabPage1.Controls.Add(this.dateEdit2);
-            this.tabPage1.Controls.Add(this.dateEdit1);
+            this.tabPage1.Controls.Add(this.deToDateList);
+            this.tabPage1.Controls.Add(this.deFromDateList);
             this.tabPage1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(875, 426);
+            this.tabPage1.Size = new System.Drawing.Size(875, 422);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Lịch sử phiếu mượn";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(719, 11);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(126, 41);
+            this.simpleButton1.TabIndex = 5;
+            this.simpleButton1.Text = "Xác nhận";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(575, 0);
+            this.labelControl2.Location = new System.Drawing.Point(372, 0);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(85, 22);
             this.labelControl2.TabIndex = 4;
@@ -175,7 +187,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(3, 0);
+            this.labelControl1.Location = new System.Drawing.Point(32, 0);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(75, 22);
             this.labelControl1.TabIndex = 3;
@@ -197,10 +209,13 @@ namespace DoAnQuanLyThuVien
             this.gridControl1.Location = new System.Drawing.Point(12, 12);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.btnSubmit});
             this.gridControl1.Size = new System.Drawing.Size(846, 342);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Load += new System.EventHandler(this.gridControl1_Load);
             // 
             // gridView1
             // 
@@ -211,6 +226,7 @@ namespace DoAnQuanLyThuVien
             this.colSTATUS});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.ReadOnly = true;
             // 
             // colREQUEST_ID
             // 
@@ -252,6 +268,29 @@ namespace DoAnQuanLyThuVien
             this.colSTATUS.VisibleIndex = 3;
             this.colSTATUS.Width = 229;
             // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btnSubmit.Appearance.BackColor2 = System.Drawing.Color.Transparent;
+            this.btnSubmit.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSubmit.Appearance.Options.UseBackColor = true;
+            this.btnSubmit.Appearance.Options.UseBorderColor = true;
+            this.btnSubmit.AutoHeight = false;
+            serializableAppearanceObject1.BackColor = System.Drawing.Color.Transparent;
+            serializableAppearanceObject1.BackColor2 = System.Drawing.Color.Transparent;
+            serializableAppearanceObject1.BorderColor = System.Drawing.Color.Transparent;
+            serializableAppearanceObject1.Options.UseBackColor = true;
+            serializableAppearanceObject1.Options.UseBorderColor = true;
+            serializableAppearanceObject3.BackColor = System.Drawing.Color.Transparent;
+            serializableAppearanceObject3.Options.UseBackColor = true;
+            this.btnSubmit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btnSubmit.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnSubmit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnSubmit_ButtonClick);
+            this.btnSubmit.Click += new System.EventHandler(this.repositoryItemButtonEdit1_Click);
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -271,29 +310,29 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // dateEdit2
+            // deToDateList
             // 
-            this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(575, 25);
-            this.dateEdit2.Name = "dateEdit2";
-            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.deToDateList.EditValue = null;
+            this.deToDateList.Location = new System.Drawing.Point(372, 25);
+            this.deToDateList.Name = "deToDateList";
+            this.deToDateList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.deToDateList.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Size = new System.Drawing.Size(297, 22);
-            this.dateEdit2.TabIndex = 1;
+            this.deToDateList.Size = new System.Drawing.Size(320, 22);
+            this.deToDateList.TabIndex = 1;
             // 
-            // dateEdit1
+            // deFromDateList
             // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(3, 25);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.deFromDateList.EditValue = null;
+            this.deFromDateList.Location = new System.Drawing.Point(32, 25);
+            this.deFromDateList.Name = "deFromDateList";
+            this.deFromDateList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.deFromDateList.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(312, 22);
-            this.dateEdit1.TabIndex = 0;
+            this.deFromDateList.Size = new System.Drawing.Size(312, 22);
+            this.deFromDateList.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -303,7 +342,7 @@ namespace DoAnQuanLyThuVien
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(875, 426);
+            this.tabPage2.Size = new System.Drawing.Size(875, 422);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tạo phiếu mượn";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -317,13 +356,13 @@ namespace DoAnQuanLyThuVien
             this.layoutControl3.Location = new System.Drawing.Point(362, 3);
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.Root = this.layoutControlGroup2;
-            this.layoutControl3.Size = new System.Drawing.Size(510, 420);
+            this.layoutControl3.Size = new System.Drawing.Size(510, 416);
             this.layoutControl3.TabIndex = 1;
             this.layoutControl3.Text = "layoutControl3";
             // 
             // sbCreateLendCard
             // 
-            this.sbCreateLendCard.Location = new System.Drawing.Point(257, 381);
+            this.sbCreateLendCard.Location = new System.Drawing.Point(257, 377);
             this.sbCreateLendCard.Name = "sbCreateLendCard";
             this.sbCreateLendCard.Size = new System.Drawing.Size(241, 27);
             this.sbCreateLendCard.StyleController = this.layoutControl3;
@@ -333,7 +372,7 @@ namespace DoAnQuanLyThuVien
             // 
             // sbScanner
             // 
-            this.sbScanner.Location = new System.Drawing.Point(12, 381);
+            this.sbScanner.Location = new System.Drawing.Point(12, 377);
             this.sbScanner.Name = "sbScanner";
             this.sbScanner.Size = new System.Drawing.Size(241, 27);
             this.sbScanner.StyleController = this.layoutControl3;
@@ -350,7 +389,7 @@ namespace DoAnQuanLyThuVien
             this.lvBorrowBook.HideSelection = false;
             this.lvBorrowBook.Location = new System.Drawing.Point(12, 12);
             this.lvBorrowBook.Name = "lvBorrowBook";
-            this.lvBorrowBook.Size = new System.Drawing.Size(486, 365);
+            this.lvBorrowBook.Size = new System.Drawing.Size(486, 361);
             this.lvBorrowBook.TabIndex = 0;
             this.lvBorrowBook.UseCompatibleStateImageBehavior = false;
             this.lvBorrowBook.View = System.Windows.Forms.View.Details;
@@ -379,7 +418,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem3,
             this.layoutControlItem4});
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(510, 420);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(510, 416);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem2
@@ -387,14 +426,14 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem2.Control = this.lvBorrowBook;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(490, 369);
+            this.layoutControlItem2.Size = new System.Drawing.Size(490, 365);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.sbScanner;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 369);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 365);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(245, 31);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
@@ -403,7 +442,7 @@ namespace DoAnQuanLyThuVien
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.sbCreateLendCard;
-            this.layoutControlItem4.Location = new System.Drawing.Point(245, 369);
+            this.layoutControlItem4.Location = new System.Drawing.Point(245, 365);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(245, 31);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
@@ -426,7 +465,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControl2.Location = new System.Drawing.Point(3, 3);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(353, 420);
+            this.layoutControl2.Size = new System.Drawing.Size(353, 416);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -558,7 +597,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem16,
             this.layoutControlItem7});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(353, 420);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(353, 416);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem5
@@ -575,7 +614,7 @@ namespace DoAnQuanLyThuVien
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 292);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(333, 108);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(333, 104);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem6
@@ -668,9 +707,9 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
-            // cLIENTINFOBindingSource
+            // rEQUESTFORMBindingSource1
             // 
-            this.cLIENTINFOBindingSource.DataSource = typeof(DoAnQuanLyThuVien.DTO.CLIENT_INFO);
+            this.rEQUESTFORMBindingSource1.DataSource = typeof(DoAnQuanLyThuVien.DTO.REQUEST_FORM);
             // 
             // fCreateCardLendBook
             // 
@@ -680,15 +719,14 @@ namespace DoAnQuanLyThuVien
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 455);
+            this.ClientSize = new System.Drawing.Size(883, 451);
             this.Controls.Add(this.tabControl1);
             this.InactiveGlowColor = System.Drawing.Color.White;
             this.Name = "fCreateCardLendBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fCreateCardLendBook";
+            this.Text = "Mượn sách";
             this.Load += new System.EventHandler(this.fCreateCardLendBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rEQUESTFORMBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rEQUESTINFOBindingSource)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -696,12 +734,13 @@ namespace DoAnQuanLyThuVien
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deToDateList.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deToDateList.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deFromDateList.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deFromDateList.Properties)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
             this.layoutControl3.ResumeLayout(false);
@@ -726,14 +765,13 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLIENTINFOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rEQUESTFORMBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.BindingSource rEQUESTFORMBindingSource;
-        private System.Windows.Forms.BindingSource rEQUESTINFOBindingSource;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -746,11 +784,10 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraGrid.Columns.GridColumn colSTATUS;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private DevExpress.XtraEditors.DateEdit dateEdit2;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.DateEdit deToDateList;
+        private DevExpress.XtraEditors.DateEdit deFromDateList;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private System.Windows.Forms.BindingSource cLIENTINFOBindingSource;
         private DevExpress.XtraLayout.LayoutControl layoutControl3;
         private DevExpress.XtraEditors.SimpleButton sbCreateLendCard;
         private DevExpress.XtraEditors.SimpleButton sbScanner;
@@ -787,5 +824,8 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private DevExpress.XtraEditors.LabelControl lcNotice;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private System.Windows.Forms.BindingSource rEQUESTFORMBindingSource1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnSubmit;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
