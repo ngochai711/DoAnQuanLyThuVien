@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnQuanLyThuVien.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,8 +15,11 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fReader : Form
     {
-        public fReader()
+        private activeAccountDTO activeAccount;
+        public fReader(activeAccountDTO acc)
         {
+            activeAccount = acc;
+
             InitializeComponent();
             fBookList _bookList = new fBookList();
             _bookList.FormBorderStyle = FormBorderStyle.None;
