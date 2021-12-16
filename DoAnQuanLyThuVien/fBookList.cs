@@ -27,8 +27,6 @@ namespace DoAnQuanLyThuVien
             db3.BOOKS_MANAGEMENT.Load();
             bOOKSMANAGEMENTBindingSource.DataSource = db3.BOOKS_MANAGEMENT.Local;
             gridView11.OptionsBehavior.Editable = false;
-          
-
         }
     }
 }

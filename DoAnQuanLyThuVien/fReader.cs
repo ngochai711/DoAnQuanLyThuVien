@@ -17,6 +17,10 @@ namespace DoAnQuanLyThuVien
         public fReader()
         {
             InitializeComponent();
+        }
+        private Form activeForm = null;
+        private void fReader_Load(object sender, EventArgs e)
+        {
             fBookList _bookList = new fBookList();
             _bookList.FormBorderStyle = FormBorderStyle.None;
             //BookList.backcolor = Color.FromArgb(245, 238, 220);
@@ -33,12 +37,9 @@ namespace DoAnQuanLyThuVien
             windowsMediaPlayer.Visible = false;
         }
 
-        private Form activeForm = null;
 
         private void openChildForm(Form childForm)
         {
-
-
             if (activeForm != null)
             {
                 activeForm.Close();
@@ -52,6 +53,14 @@ namespace DoAnQuanLyThuVien
             childForm.BringToFront();
             childForm.Show();
 
+        }
+
+        #region button click
+        private void btnUserLendingCard_Click(object sender, EventArgs e)
+        {
+            fReaderBorrowedBook _readerBorrowedBook = new fReaderBorrowedBook();
+            _readerBorrowedBook.FormBorderStyle = FormBorderStyle.None;
+            openChildForm(_readerBorrowedBook);
         }
 
         private void btnEbookReading_Click(object sender, EventArgs e)
@@ -77,12 +86,11 @@ namespace DoAnQuanLyThuVien
         private void btnSupport_Click(object sender, EventArgs e)
         {
             MessageBox.Show("           Các thành viên nhóm phát triển:\n                  Nguyễn Hoàng Ngọc Hải\n                             Lê Hoàng Quý\n                              Lâm Tấn Phát\n                      Trần Huyền Anh Thy\n                Phiên bản ứng dụng 1.4.21\nLiên hệ đường dây nóng: 0912345678\nHoặc qua gmail: phattrienpm@gmail.com", "Hỗ trợ");
-
         }
+        #endregion
+
 
         #region mp3 button and function
-
-   
         private void CreatePlayLis(FolderBrowserDialog folder, string extendsion)
         {
             string myPlaylist = "Sample1";
@@ -129,8 +137,6 @@ namespace DoAnQuanLyThuVien
             }
         }
 
-        #endregion
-
         private void btnPlay_Click_1(object sender, EventArgs e)
         {
             if (windowsMediaPlayer.status == "Stop" || windowsMediaPlayer.status == "Paused" || windowsMediaPlayer.status == "Ready")
@@ -150,15 +156,8 @@ namespace DoAnQuanLyThuVien
             label1.Text = Path.GetFileNameWithoutExtension(windowsMediaPlayer.currentMedia.name);
         }
 
-        private void btnUserLendingCard_Click(object sender, EventArgs e)
-        {
-            fReaderBorrowedBook _readerBorrowedBook = new fReaderBorrowedBook();
-            _readerBorrowedBook.FormBorderStyle = FormBorderStyle.None;
-            openChildForm(_readerBorrowedBook);
-        }
+        #endregion
 
-      
+   
     }
-
-
 }
