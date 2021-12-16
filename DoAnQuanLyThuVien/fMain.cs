@@ -244,7 +244,8 @@ namespace DoAnQuanLyThuVien
 
         private void btnAcountInfo_Click(object sender, EventArgs e)
         {
-
+            fPersonalManage f = new fPersonalManage();
+            f.ShowDialog();
         }
 
 

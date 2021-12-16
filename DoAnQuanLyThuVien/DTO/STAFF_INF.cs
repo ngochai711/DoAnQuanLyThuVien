@@ -30,24 +30,13 @@ namespace DoAnQuanLyThuVien.DTO
         public Nullable<bool> TYPE { get; set; }
         public string NOTE { get; set; }
 
-        public STAFF_INF() { }
+        public STAFF_INF()
+        {
 
+        }
         public STAFF_INF(DataRow source)
         {
-            USERNAME = source[0].ToString();
-            PASSWORD = source[1].ToString();
-            AVATAR = null;
-            STAFFID = source[3].ToString();
-            PID = source[4].ToString();
-            NAME = source[5].ToString();
-            SEX = source[6].ToString();
-            BIRTH = Convert.ToDateTime(source[7]);
-            AGE = Convert.ToByte(source[8]);
-            ADDRESS = source[9].ToString();
-            PHONE = source[10].ToString();
-            EMAIL = source[11].ToString();
-            TYPE = Convert.ToBoolean(source[12]);
-            NOTE = source[13].ToString();
+
         }
     }
 }

@@ -39,9 +39,16 @@ namespace DoAnQuanLyThuVien.DAO
             return null;
         }
 
-        public int update_Avatar(string usrname, byte[] binary_img)
+        public int update_readerAvatar(string usrname, byte[] binary_img)
         {
-            string query = "UPDATE STAFF_ACCOUNT SET AVATAR = @value WHERE USERNAME = @userName";
+            string query = "UPDATE READER_INF SET AVATAR = @value WHERE USERNAME = @userName";
+
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { binary_img, usrname });
+        }
+
+        public int update_staffAvatar(string usrname, byte[] binary_img)
+        {
+            string query = "UPDATE STAFF_INF SET AVATAR = @value WHERE USERNAME = @userName";
 
             return DataProvider.Instance.ExecuteNonQuery(query, new object[] { binary_img, usrname });
         }

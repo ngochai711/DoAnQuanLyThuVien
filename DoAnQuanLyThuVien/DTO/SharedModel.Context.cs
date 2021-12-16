@@ -13,10 +13,10 @@ namespace DoAnQuanLyThuVien.DTO
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LIBRARY_DATABASEEntities6 : DbContext
+    public partial class SHARED_LIBRARY_ENTITY : DbContext
     {
-        public LIBRARY_DATABASEEntities6()
-            : base("name=LIBRARY_DATABASEEntities6")
+        public SHARED_LIBRARY_ENTITY()
+            : base("name=SHARED_LIBRARY_ENTITY")
         {
         }
     
@@ -25,8 +25,11 @@ namespace DoAnQuanLyThuVien.DTO
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<READER_INF> READER_INF { get; set; }
         public virtual DbSet<BOOKS_MANAGEMENT> BOOKS_MANAGEMENT { get; set; }
+        public virtual DbSet<EBOOKS_MANAGEMENT> EBOOKS_MANAGEMENT { get; set; }
         public virtual DbSet<REQUEST_FORM> REQUEST_FORM { get; set; }
         public virtual DbSet<REQUEST_INFO> REQUEST_INFO { get; set; }
+        public virtual DbSet<STAFF_INF> STAFF_INF { get; set; }
     }
 }
