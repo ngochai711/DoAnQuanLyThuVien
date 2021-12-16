@@ -526,7 +526,6 @@ namespace DoAnQuanLyThuVien
             this.Controls.Add(this.SlidingPanel);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Thư Viện";
