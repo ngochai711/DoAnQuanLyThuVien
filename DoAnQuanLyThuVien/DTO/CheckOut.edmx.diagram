@@ -4,12 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f06102dbc08046df931b4c10bb42713c" Name="Diagram1">
+      <Diagram DiagramId="04fe467b943a472b8dea8cf7d74f9acf" Name="Diagram1">
         <EntityTypeShape EntityType="LIBRARY_DATABASEModel2.BOOKS_MANAGEMENT" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="LIBRARY_DATABASEModel2.REQUEST_FORM" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARY_DATABASEModel2.REQUEST_FORM" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
         <EntityTypeShape EntityType="LIBRARY_DATABASEModel2.REQUEST_INFO" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
-        <AssociationConnector Association="LIBRARY_DATABASEModel2.FK__REQUEST_I__BOOKS__44FF419A" ManuallyRouted="false" />
-        <AssociationConnector Association="LIBRARY_DATABASEModel2.FK__REQUEST_F__REQUE__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARY_DATABASEModel2.FK__REQUEST_I__BOOKS__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARY_DATABASEModel2.FK__REQUEST_I__REQUE__35BCFE0A" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

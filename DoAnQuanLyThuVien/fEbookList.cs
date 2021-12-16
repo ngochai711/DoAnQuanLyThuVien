@@ -19,12 +19,12 @@ namespace DoAnQuanLyThuVien
         {
             InitializeComponent();
         }
-        LIBRARY_DATABASEEntities3 db3;
+        SHARED_LIBRARY_ENTITY db3;
     
 
         private void BookList_Load(object sender, EventArgs e)
         {
-            db3 = new LIBRARY_DATABASEEntities3();
+            db3 = new SHARED_LIBRARY_ENTITY();
             db3.EBOOKS_MANAGEMENT.Load();
             eBOOKSMANAGEMENTBindingSource.DataSource = db3.EBOOKS_MANAGEMENT.Local;
             gridView1.OptionsBehavior.Editable = false;

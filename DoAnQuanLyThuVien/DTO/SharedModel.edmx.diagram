@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4888bcf80d0f4a9385c1721dfbbfbfd6" Name="Diagram1">
+        <EntityTypeShape EntityType="LIBRARY_DATABASEModel3.READER_INF" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARY_DATABASEModel3.BOOKS_MANAGEMENT" Width="1.5" PointX="3.375" PointY="5" />
+        <EntityTypeShape EntityType="LIBRARY_DATABASEModel3.EBOOKS_MANAGEMENT" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="LIBRARY_DATABASEModel3.REQUEST_FORM" Width="1.5" PointX="3.375" PointY="1.375" />
+        <EntityTypeShape EntityType="LIBRARY_DATABASEModel3.REQUEST_INFO" Width="1.5" PointX="5.625" PointY="1.5" />
+        <EntityTypeShape EntityType="LIBRARY_DATABASEModel3.STAFF_INF" Width="1.5" PointX="5.75" PointY="4.75" />
+        <AssociationConnector Association="LIBRARY_DATABASEModel3.FK__REQUEST_I__BOOKS__36B12243" />
+        <AssociationConnector Association="LIBRARY_DATABASEModel3.FK__REQUEST_F__USERI__300424B4" />
+        <AssociationConnector Association="LIBRARY_DATABASEModel3.FK__REQUEST_I__REQUE__35BCFE0A" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

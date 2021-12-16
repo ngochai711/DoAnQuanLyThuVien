@@ -14,19 +14,12 @@ namespace DoAnQuanLyThuVien.DTO
     
     public partial class REQUEST_INFO
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public REQUEST_INFO()
-        {
-            this.REQUEST_FORM = new HashSet<REQUEST_FORM>();
-        }
-    
-        public int REQUEST_ID { get; set; }
+        public int ID { get; set; }
+        public string REQUEST_ID { get; set; }
         public Nullable<int> BOOKS_ID { get; set; }
-        public Nullable<System.DateTime> RETURN_DATE { get; set; }
         public Nullable<int> NUMBER { get; set; }
     
         public virtual BOOKS_MANAGEMENT BOOKS_MANAGEMENT { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<REQUEST_FORM> REQUEST_FORM { get; set; }
+        public virtual REQUEST_FORM REQUEST_FORM { get; set; }
     }
 }

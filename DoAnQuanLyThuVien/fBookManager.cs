@@ -21,19 +21,19 @@ namespace DoAnQuanLyThuVien
             InitializeComponent();
         }
 
-        LIBRARY_DATABASEEntities db;
-        LIBRARY_DATABASEEntities3 db3;
+        SHARED_LIBRARY_ENTITY db;
+        SHARED_LIBRARY_ENTITY db3;
 
 
         private void fBookManager_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'lIBRARY_DATABASEDataSet.EBOOKS_MANAGEMENT' table. You can move, or remove it, as needed.
 
-            db = new LIBRARY_DATABASEEntities();
+            db = new SHARED_LIBRARY_ENTITY();
             db.BOOKS_MANAGEMENT.Load();
             bOOKSMANAGEMENTBindingSource.DataSource = db.BOOKS_MANAGEMENT.Local;
 
-            db3 = new LIBRARY_DATABASEEntities3();
+            db3 = new SHARED_LIBRARY_ENTITY();
             db3.EBOOKS_MANAGEMENT.Load();
             eBOOKSMANAGEMENTBindingSource.DataSource = db3.EBOOKS_MANAGEMENT.Local;
             gridView2.OptionsBehavior.Editable = false;

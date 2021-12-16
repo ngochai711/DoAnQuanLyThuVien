@@ -10,11 +10,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnQuanLyThuVien.DTO;
 
 namespace DoAnQuanLyThuVien
 {
     public partial class fMain : Form
     {
+        private activeAccountDTO activeAccount;
+
+
         int oldPanelWidth, oldPanelHeight;
         string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement, oldbtnBookBorrowing;
         //int oldListWidth, oldListHeight;
@@ -22,11 +26,12 @@ namespace DoAnQuanLyThuVien
 
 
         bool hidden;
-        public fMain()
+        public fMain(activeAccountDTO acc)
         {
+            activeAccount = acc;
+
             InitializeComponent();
             pre_loading();
-
         }
 
 
@@ -240,7 +245,8 @@ namespace DoAnQuanLyThuVien
 
         private void btnAcountInfo_Click(object sender, EventArgs e)
         {
-
+            fPersonalManage f = new fPersonalManage();
+            f.ShowDialog();
         }
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnQuanLyThuVien.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,8 +15,11 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fReader : Form
     {
-        public fReader()
+        private activeAccountDTO activeAccount;
+        public fReader(activeAccountDTO acc)
         {
+            activeAccount = acc;
+
             InitializeComponent();
         }
         private Form activeForm = null;
@@ -79,8 +83,8 @@ namespace DoAnQuanLyThuVien
 
         private void btnAccountInfo_Click(object sender, EventArgs e)
         {
-            Finfo _form1 = new Finfo();
-            openChildForm(_form1);
+            fInfo _formInfo = new fInfo();
+            openChildForm(_formInfo);
         }
 
         private void btnSupport_Click(object sender, EventArgs e)

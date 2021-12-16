@@ -1,7 +1,7 @@
 ﻿
 namespace DoAnQuanLyThuVien
 {
-    partial class Finfo
+    partial class fInfo
     {
         /// <summary>
         /// Required designer variable.

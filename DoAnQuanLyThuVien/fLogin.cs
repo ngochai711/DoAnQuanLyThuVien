@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnQuanLyThuVien.DTO;
+using DoAnQuanLyThuVien.DAO;
 
 namespace DoAnQuanLyThuVien
 {
@@ -17,33 +19,56 @@ namespace DoAnQuanLyThuVien
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void button_Exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
-        private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
+        private void button_Login_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn muốn thoát khỏi chương trình không ?","Thông báo",MessageBoxButtons.OKCancel)!=System.Windows.Forms.DialogResult.OK)
+            string userName = textBox_Username.Text;
+            string passWord = textBox_Password.Text;
+            bool isStaff = checkBox_isStaff.Checked;
+
+            activeAccountDTO validAccount = get_validAccount(userName, passWord, isStaff);
+
+            if (validAccount == null)
             {
-                e.Cancel = true;
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+            }
+            else
+            {
+                Form f = null;
+
+                if (isStaff)
+                    f = new fMain(validAccount);
+                else
+                    f = new fReader(validAccount);
+
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private activeAccountDTO get_validAccount(string userName, string passWord, bool isStaff)
         {
-            string userName = txbUserName.Text;
-            string passWord = txbPassWord.Text;
-            fMain f = new fMain();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();//note nha
-           
+            activeAccountDTO validAccount = null;
+
+            DataRow result = AccountDAO.Instance.get_requiredAccount(userName, passWord, isStaff);
+
+            if (result != null)
+                get_accountData(ref validAccount, result, isStaff);
+
+            return validAccount;
         }
 
-        private void fLogin_Load(object sender, EventArgs e)
+        private void get_accountData(ref activeAccountDTO validAccount, DataRow dataSource, bool isStaff)
         {
-
+            if (isStaff)
+                validAccount = new STAFF_INF(dataSource);
+            else
+                validAccount = new READER_INF(dataSource);
         }
     }
 }
