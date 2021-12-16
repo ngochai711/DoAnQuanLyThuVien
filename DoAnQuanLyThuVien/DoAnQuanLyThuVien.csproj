@@ -76,6 +76,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\InfoDAO.cs" />
     <Compile Include="DTO\CheckOut.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,6 +92,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CheckOut.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DTO\Info.cs" />
     <Compile Include="DTO\REQUEST_FORM.cs">
       <DependentUpon>CheckOut.tt</DependentUpon>
     </Compile>
@@ -155,6 +157,12 @@
     <Compile Include="fBookManager.Designer.cs">
       <DependentUpon>fBookManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="fInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInfo.Designer.cs">
+      <DependentUpon>fInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fEbookList.resx">
       <DependentUpon>fEbookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInfo.resx">
+      <DependentUpon>fInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLendBook.resx">
       <DependentUpon>fLendBook.cs</DependentUpon>
