@@ -18,10 +18,10 @@ namespace DoAnQuanLyThuVien
         {
             InitializeComponent();
         }
-        LIBRARY_DATABASEEntities6 db4;
+        LIBRARY_DATABASEEntities7 db4;
         private void fReaderBorrowedBook_Load(object sender, EventArgs e)
         {
-            db4 = new LIBRARY_DATABASEEntities6();
+            db4 = new LIBRARY_DATABASEEntities7();
             //db4.REQUEST_INFO.Load();
             rEQUESTFORMBindingSource.DataSource = db4.REQUEST_FORM.ToList();
             gridView1.OptionsBehavior.Editable = false;

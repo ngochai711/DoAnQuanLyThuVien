@@ -77,6 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\InfoDAO.cs" />
+    <Compile Include="DTO\BOOKS_MANAGEMENT.cs">
+      <DependentUpon>CheckOut.tt</DependentUpon>
+    </Compile>
     <Compile Include="DTO\CheckOut.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,9 +111,6 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\RoundedButton.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DTO\BOOKS_MANAGEMENT.cs">
-      <DependentUpon>CheckOut.tt</DependentUpon>
     </Compile>
     <Compile Include="DTO\EBOOKS_MANAGEMENT.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -169,11 +169,11 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Finfo.cs">
+    <Compile Include="fInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Finfo.designer.cs">
-      <DependentUpon>Finfo.cs</DependentUpon>
+    <Compile Include="fInfo.designer.cs">
+      <DependentUpon>fInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="fReader.cs">
       <SubType>Form</SubType>
@@ -213,8 +213,8 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finfo.resx">
-      <DependentUpon>Finfo.cs</DependentUpon>
+    <EmbeddedResource Include="fInfo.resx">
+      <DependentUpon>fInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReader.resx">
       <DependentUpon>fReader.cs</DependentUpon>

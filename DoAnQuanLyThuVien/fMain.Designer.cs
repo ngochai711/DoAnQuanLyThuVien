@@ -47,7 +47,6 @@ namespace DoAnQuanLyThuVien
             this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnBookManagement = new System.Windows.Forms.Button();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPlay = new System.Windows.Forms.Button();
@@ -55,6 +54,7 @@ namespace DoAnQuanLyThuVien
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SlidingPanel.SuspendLayout();
@@ -65,10 +65,10 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -436,17 +436,6 @@ namespace DoAnQuanLyThuVien
             this.separatorControl1.Size = new System.Drawing.Size(273, 23);
             this.separatorControl1.TabIndex = 9;
             // 
-            // windowsMediaPlayer
-            // 
-            this.windowsMediaPlayer.Enabled = true;
-            this.windowsMediaPlayer.Location = new System.Drawing.Point(67, 458);
-            this.windowsMediaPlayer.Margin = new System.Windows.Forms.Padding(2);
-            this.windowsMediaPlayer.Name = "windowsMediaPlayer";
-            this.windowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("windowsMediaPlayer.OcxState")));
-            this.windowsMediaPlayer.Size = new System.Drawing.Size(157, 58);
-            this.windowsMediaPlayer.TabIndex = 23;
-            this.windowsMediaPlayer.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.windowsMediaPlayer_CurrentItemChange);
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
@@ -505,8 +494,8 @@ namespace DoAnQuanLyThuVien
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.windowsMediaPlayer);
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(828, 0);
@@ -517,10 +506,20 @@ namespace DoAnQuanLyThuVien
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(67, 45);
+            this.panel4.Location = new System.Drawing.Point(3, 45);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(105, 79);
+            this.panel4.Size = new System.Drawing.Size(239, 162);
             this.panel4.TabIndex = 25;
+            // 
+            // windowsMediaPlayer
+            // 
+            this.windowsMediaPlayer.Enabled = true;
+            this.windowsMediaPlayer.Location = new System.Drawing.Point(88, 407);
+            this.windowsMediaPlayer.Name = "windowsMediaPlayer";
+            this.windowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("windowsMediaPlayer.OcxState")));
+            this.windowsMediaPlayer.Size = new System.Drawing.Size(75, 23);
+            this.windowsMediaPlayer.TabIndex = 26;
+            this.windowsMediaPlayer.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.windowsMediaPlayer_CurrentItemChange);
             // 
             // fMain
             // 
@@ -553,11 +552,11 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -573,7 +572,6 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private AxWMPLib.AxWindowsMediaPlayer windowsMediaPlayer;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ImageList menuIconList;
@@ -595,5 +593,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraEditors.SeparatorControl separatorControl7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;
+        private AxWMPLib.AxWindowsMediaPlayer windowsMediaPlayer;
     }
 }

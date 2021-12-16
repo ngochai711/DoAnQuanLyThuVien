@@ -13,9 +13,9 @@ using System.IO;
 
 namespace DoAnQuanLyThuVien
 {
-    public partial class Finfo : DevExpress.XtraEditors.XtraForm
+    public partial class fInfo : DevExpress.XtraEditors.XtraForm
     {
-        public Finfo()
+        public fInfo()
         {
             InitializeComponent();
         }
