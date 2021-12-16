@@ -157,12 +157,6 @@
     <Compile Include="fBookManager.Designer.cs">
       <DependentUpon>fBookManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="fInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fInfo.Designer.cs">
-      <DependentUpon>fInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="fMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,11 +169,11 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Finfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Finfo.designer.cs">
+      <DependentUpon>Finfo.cs</DependentUpon>
     </Compile>
     <Compile Include="fReader.cs">
       <SubType>Form</SubType>
@@ -207,9 +201,6 @@
     <EmbeddedResource Include="fEbookList.resx">
       <DependentUpon>fEbookList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fInfo.resx">
-      <DependentUpon>fInfo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fLendBook.resx">
       <DependentUpon>fLendBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,8 +213,8 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Finfo.resx">
+      <DependentUpon>Finfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReader.resx">
       <DependentUpon>fReader.cs</DependentUpon>

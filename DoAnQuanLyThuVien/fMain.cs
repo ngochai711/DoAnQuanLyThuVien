@@ -15,9 +15,6 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fMain : Form
     {
-
-
-
         int oldPanelWidth, oldPanelHeight;
         string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement, oldbtnBookBorrowing;
         //int oldListWidth, oldListHeight;

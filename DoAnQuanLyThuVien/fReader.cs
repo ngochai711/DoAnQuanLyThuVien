@@ -79,7 +79,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnAccountInfo_Click(object sender, EventArgs e)
         {
-            Form1 _form1 = new Form1();
+            Finfo _form1 = new Finfo();
             openChildForm(_form1);
         }
 
