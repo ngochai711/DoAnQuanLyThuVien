@@ -157,6 +157,12 @@
     <Compile Include="fBookManager.Designer.cs">
       <DependentUpon>fBookManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="fInfoReader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fInfoReader.Designer.cs">
+      <DependentUpon>fInfoReader.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fEbookList.resx">
       <DependentUpon>fEbookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInfoReader.resx">
+      <DependentUpon>fInfoReader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLendBook.resx">
       <DependentUpon>fLendBook.cs</DependentUpon>
