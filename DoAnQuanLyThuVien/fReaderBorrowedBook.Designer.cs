@@ -32,10 +32,10 @@ namespace DoAnQuanLyThuVien
             this.components = new System.ComponentModel.Container();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSTATUS = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colREQUEST_DATE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDUE_DATE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.rEQUESTFORMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bOOKSMANAGEMENTBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -62,28 +62,7 @@ namespace DoAnQuanLyThuVien
             this.gridColumn1.FieldName = "REQUEST_INFO.BOOKS_ID";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 4;
-            // 
-            // colSTATUS
-            // 
-            this.colSTATUS.FieldName = "STATUS";
-            this.colSTATUS.Name = "colSTATUS";
-            this.colSTATUS.Visible = true;
-            this.colSTATUS.VisibleIndex = 3;
-            // 
-            // colREQUEST_DATE
-            // 
-            this.colREQUEST_DATE.FieldName = "REQUEST_DATE";
-            this.colREQUEST_DATE.Name = "colREQUEST_DATE";
-            this.colREQUEST_DATE.Visible = true;
-            this.colREQUEST_DATE.VisibleIndex = 0;
-            // 
-            // colDUE_DATE
-            // 
-            this.colDUE_DATE.FieldName = "DUE_DATE";
-            this.colDUE_DATE.Name = "colDUE_DATE";
-            this.colDUE_DATE.Visible = true;
-            this.colDUE_DATE.VisibleIndex = 1;
+            this.gridColumn1.VisibleIndex = 0;
             // 
             // gridColumn2
             // 
@@ -91,16 +70,39 @@ namespace DoAnQuanLyThuVien
             this.gridColumn2.FieldName = "REQUEST_INFO.BOOKS_MANAGEMENT.TITLE";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.VisibleIndex = 1;
+            // 
+            // colSTATUS
+            // 
+            this.colSTATUS.FieldName = "STATUS";
+            this.colSTATUS.Name = "colSTATUS";
+            this.colSTATUS.Visible = true;
+            this.colSTATUS.VisibleIndex = 2;
+            // 
+            // colREQUEST_DATE
+            // 
+            this.colREQUEST_DATE.FieldName = "REQUEST_DATE";
+            this.colREQUEST_DATE.Name = "colREQUEST_DATE";
+            this.colREQUEST_DATE.Visible = true;
+            this.colREQUEST_DATE.VisibleIndex = 3;
+            // 
+            // colDUE_DATE
+            // 
+            this.colDUE_DATE.FieldName = "DUE_DATE";
+            this.colDUE_DATE.Name = "colDUE_DATE";
+            this.colDUE_DATE.Visible = true;
+            this.colDUE_DATE.VisibleIndex = 4;
             // 
             // gridControl1
             // 
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.DataSource = this.rEQUESTFORMBindingSource;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.Location = new System.Drawing.Point(32, 29);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(800, 450);
+            this.gridControl1.Size = new System.Drawing.Size(739, 390);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});

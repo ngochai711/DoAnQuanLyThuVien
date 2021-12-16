@@ -18,6 +18,7 @@ namespace DoAnQuanLyThuVien
     {
         private activeAccountDTO activeAccount;
 
+
         int oldPanelWidth, oldPanelHeight;
         string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement, oldbtnBookBorrowing;
         //int oldListWidth, oldListHeight;
@@ -287,32 +288,7 @@ namespace DoAnQuanLyThuVien
             }
 
         }
+        #endregion
 
-        private void ActiveChildForm(string name)
-        {
-            foreach (Form frm in this.MdiChildren)
-            {
-                if (frm.Name == name)
-                {
-                    frm.Activate();
-                    break;
-                }
-            }
-        }
-
-        private bool CheckExitsForm(string name)
-        {
-            bool check = false;
-            foreach (Form frm in this.MdiChildren)
-            {
-                if (frm.Name == name)
-                {
-                    check = true;
-                    break;
-                }
-            }
-            return check;
-            #endregion
-        }
     }
 }

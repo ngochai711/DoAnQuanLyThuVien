@@ -119,7 +119,6 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForIMAGES = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -129,6 +128,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.pcListBook)).BeginInit();
             this.pcListBook.SuspendLayout();
@@ -198,7 +198,6 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForIMAGES)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
@@ -208,6 +207,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,7 +218,7 @@ namespace DoAnQuanLyThuVien
             this.pcListBook.Location = new System.Drawing.Point(0, 0);
             this.pcListBook.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.pcListBook.Name = "pcListBook";
-            this.pcListBook.Size = new System.Drawing.Size(908, 485);
+            this.pcListBook.Size = new System.Drawing.Size(900, 604);
             this.pcListBook.TabIndex = 0;
             // 
             // tcLibBook
@@ -228,7 +228,7 @@ namespace DoAnQuanLyThuVien
             this.tcLibBook.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.tcLibBook.Name = "tcLibBook";
             this.tcLibBook.SelectedTabPage = this.tcLibBookS;
-            this.tcLibBook.Size = new System.Drawing.Size(904, 481);
+            this.tcLibBook.Size = new System.Drawing.Size(896, 600);
             this.tcLibBook.TabIndex = 0;
             this.tcLibBook.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tcLibBookS,
@@ -239,7 +239,7 @@ namespace DoAnQuanLyThuVien
             this.tcLibBookS.Controls.Add(this.pcLibBookGrid);
             this.tcLibBookS.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.tcLibBookS.Name = "tcLibBookS";
-            this.tcLibBookS.Size = new System.Drawing.Size(902, 456);
+            this.tcLibBookS.Size = new System.Drawing.Size(894, 575);
             this.tcLibBookS.Text = "Sách thư viện";
             // 
             // pcLibBookGrid
@@ -250,7 +250,7 @@ namespace DoAnQuanLyThuVien
             this.pcLibBookGrid.Location = new System.Drawing.Point(0, 0);
             this.pcLibBookGrid.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.pcLibBookGrid.Name = "pcLibBookGrid";
-            this.pcLibBookGrid.Size = new System.Drawing.Size(902, 456);
+            this.pcLibBookGrid.Size = new System.Drawing.Size(894, 575);
             this.pcLibBookGrid.TabIndex = 0;
             // 
             // dtlcLibBook
@@ -271,7 +271,7 @@ namespace DoAnQuanLyThuVien
             this.dtlcLibBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtlcLibBook.Name = "dtlcLibBook";
             this.dtlcLibBook.Root = this.Root;
-            this.dtlcLibBook.Size = new System.Drawing.Size(898, 452);
+            this.dtlcLibBook.Size = new System.Drawing.Size(890, 571);
             this.dtlcLibBook.TabIndex = 0;
             this.dtlcLibBook.Text = "dataLayoutControl2";
             // 
@@ -286,16 +286,16 @@ namespace DoAnQuanLyThuVien
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup2;
-            this.layoutControl1.Size = new System.Drawing.Size(874, 266);
+            this.layoutControl1.Size = new System.Drawing.Size(866, 385);
             this.layoutControl1.TabIndex = 13;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(652, 12);
+            this.btnCancel.Location = new System.Drawing.Point(646, 12);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(210, 22);
+            this.btnCancel.Size = new System.Drawing.Size(208, 22);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Hủy";
@@ -303,10 +303,10 @@ namespace DoAnQuanLyThuVien
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(226, 12);
+            this.btnDelete.Location = new System.Drawing.Point(224, 12);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(210, 22);
+            this.btnDelete.Size = new System.Drawing.Size(208, 22);
             this.btnDelete.StyleController = this.layoutControl1;
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa";
@@ -314,10 +314,10 @@ namespace DoAnQuanLyThuVien
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(440, 12);
+            this.btnEdit.Location = new System.Drawing.Point(436, 12);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(208, 22);
+            this.btnEdit.Size = new System.Drawing.Size(206, 22);
             this.btnEdit.StyleController = this.layoutControl1;
             this.btnEdit.TabIndex = 6;
             this.btnEdit.Text = "Cập nhật";
@@ -328,7 +328,7 @@ namespace DoAnQuanLyThuVien
             this.btnAdd.Location = new System.Drawing.Point(12, 12);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(210, 22);
+            this.btnAdd.Size = new System.Drawing.Size(208, 22);
             this.btnAdd.StyleController = this.layoutControl1;
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Thêm";
@@ -342,7 +342,7 @@ namespace DoAnQuanLyThuVien
             this.gcListBook.MainView = this.gridView1;
             this.gcListBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcListBook.Name = "gcListBook";
-            this.gcListBook.Size = new System.Drawing.Size(850, 216);
+            this.gcListBook.Size = new System.Drawing.Size(842, 335);
             this.gcListBook.TabIndex = 4;
             this.gcListBook.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -473,7 +473,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem5,
             this.layoutControlItem6});
             this.layoutControlGroup2.Name = "Root";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(874, 266);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(866, 385);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem2
@@ -481,7 +481,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem2.Control = this.gcListBook;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(854, 220);
+            this.layoutControlItem2.Size = new System.Drawing.Size(846, 339);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -490,41 +490,41 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem3.Control = this.btnAdd;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(214, 26);
+            this.layoutControlItem3.Size = new System.Drawing.Size(212, 26);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnEdit;
-            this.layoutControlItem4.Location = new System.Drawing.Point(428, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(424, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(212, 26);
+            this.layoutControlItem4.Size = new System.Drawing.Size(210, 26);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnDelete;
-            this.layoutControlItem5.Location = new System.Drawing.Point(214, 0);
+            this.layoutControlItem5.Location = new System.Drawing.Point(212, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(214, 26);
+            this.layoutControlItem5.Size = new System.Drawing.Size(212, 26);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnCancel;
-            this.layoutControlItem6.Location = new System.Drawing.Point(640, 0);
+            this.layoutControlItem6.Location = new System.Drawing.Point(634, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(214, 26);
+            this.layoutControlItem6.Size = new System.Drawing.Size(212, 26);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // teBookType
             // 
             this.teBookType.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "CATEGORY", true));
-            this.teBookType.Location = new System.Drawing.Point(758, 69);
+            this.teBookType.Location = new System.Drawing.Point(750, 69);
             this.teBookType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teBookType.Name = "teBookType";
             this.teBookType.Size = new System.Drawing.Size(116, 20);
@@ -534,7 +534,7 @@ namespace DoAnQuanLyThuVien
             // teLanguage
             // 
             this.teLanguage.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "LANGUAGE", true));
-            this.teLanguage.Location = new System.Drawing.Point(542, 69);
+            this.teLanguage.Location = new System.Drawing.Point(534, 69);
             this.teLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teLanguage.Name = "teLanguage";
             this.teLanguage.Size = new System.Drawing.Size(138, 20);
@@ -544,7 +544,7 @@ namespace DoAnQuanLyThuVien
             // teBookName
             // 
             this.teBookName.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "TITLE", true));
-            this.teBookName.Location = new System.Drawing.Point(217, 45);
+            this.teBookName.Location = new System.Drawing.Point(209, 45);
             this.teBookName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teBookName.Name = "teBookName";
             this.teBookName.Size = new System.Drawing.Size(657, 20);
@@ -554,7 +554,7 @@ namespace DoAnQuanLyThuVien
             // teAuthor
             // 
             this.teAuthor.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "AUTHOR", true));
-            this.teAuthor.Location = new System.Drawing.Point(217, 69);
+            this.teAuthor.Location = new System.Drawing.Point(209, 69);
             this.teAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teAuthor.Name = "teAuthor";
             this.teAuthor.Size = new System.Drawing.Size(247, 20);
@@ -564,7 +564,7 @@ namespace DoAnQuanLyThuVien
             // tePublisher
             // 
             this.tePublisher.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "PUBLISHER", true));
-            this.tePublisher.Location = new System.Drawing.Point(217, 93);
+            this.tePublisher.Location = new System.Drawing.Point(209, 93);
             this.tePublisher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tePublisher.Name = "tePublisher";
             this.tePublisher.Size = new System.Drawing.Size(247, 20);
@@ -574,7 +574,7 @@ namespace DoAnQuanLyThuVien
             // teNum
             // 
             this.teNum.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "REMAIN", true));
-            this.teNum.Location = new System.Drawing.Point(758, 93);
+            this.teNum.Location = new System.Drawing.Point(750, 93);
             this.teNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teNum.Name = "teNum";
             this.teNum.Properties.Mask.EditMask = "d";
@@ -587,7 +587,7 @@ namespace DoAnQuanLyThuVien
             // teYear
             // 
             this.teYear.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "YEAROFPUB", true));
-            this.teYear.Location = new System.Drawing.Point(542, 93);
+            this.teYear.Location = new System.Drawing.Point(534, 93);
             this.teYear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teYear.Name = "teYear";
             this.teYear.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -604,8 +604,9 @@ namespace DoAnQuanLyThuVien
             this.peImage.Location = new System.Drawing.Point(12, 12);
             this.peImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.peImage.Name = "peImage";
+            this.peImage.Properties.ShowMenu = false;
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.peImage.Size = new System.Drawing.Size(115, 158);
+            this.peImage.Size = new System.Drawing.Size(107, 158);
             this.peImage.StyleController = this.dtlcLibBook;
             this.peImage.TabIndex = 14;
             this.peImage.Click += new System.EventHandler(this.BOOKIMAGEPictureEdit_Click);
@@ -613,7 +614,7 @@ namespace DoAnQuanLyThuVien
             // teNote
             // 
             this.teNote.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bOOKSMANAGEMENTBindingSource, "NOTE", true));
-            this.teNote.Location = new System.Drawing.Point(217, 117);
+            this.teNote.Location = new System.Drawing.Point(209, 117);
             this.teNote.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.teNote.Name = "teNote";
             this.teNote.Size = new System.Drawing.Size(657, 41);
@@ -628,7 +629,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup1,
             this.layoutControlItem1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(898, 452);
+            this.Root.Size = new System.Drawing.Size(890, 571);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -640,7 +641,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForBOOKIMAGE});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(878, 162);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(870, 162);
             // 
             // layoutControlGroup6
             // 
@@ -653,7 +654,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForREMAIN,
             this.ItemForPUBLISHER,
             this.ItemForNOTE});
-            this.layoutControlGroup6.Location = new System.Drawing.Point(119, 0);
+            this.layoutControlGroup6.Location = new System.Drawing.Point(111, 0);
             this.layoutControlGroup6.Name = "layoutControlGroup6";
             this.layoutControlGroup6.Size = new System.Drawing.Size(759, 162);
             this.layoutControlGroup6.Text = "Thông tin sách";
@@ -738,7 +739,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForBOOKIMAGE.Control = this.peImage;
             this.ItemForBOOKIMAGE.Location = new System.Drawing.Point(0, 0);
             this.ItemForBOOKIMAGE.Name = "ItemForBOOKIMAGE";
-            this.ItemForBOOKIMAGE.Size = new System.Drawing.Size(119, 162);
+            this.ItemForBOOKIMAGE.Size = new System.Drawing.Size(111, 162);
             this.ItemForBOOKIMAGE.StartNewLine = true;
             this.ItemForBOOKIMAGE.Text = "BOOKIMAGE";
             this.ItemForBOOKIMAGE.TextSize = new System.Drawing.Size(0, 0);
@@ -749,7 +750,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem1.Control = this.layoutControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 162);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(878, 270);
+            this.layoutControlItem1.Size = new System.Drawing.Size(870, 389);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -758,7 +759,7 @@ namespace DoAnQuanLyThuVien
             this.xtraTabPage2.Controls.Add(this.dataLayoutControl1);
             this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(902, 456);
+            this.xtraTabPage2.Size = new System.Drawing.Size(894, 575);
             this.xtraTabPage2.Text = "Tài liệu điện tử";
             // 
             // dataLayoutControl1
@@ -780,7 +781,7 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl1.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup4;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(902, 456);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(894, 575);
             this.dataLayoutControl1.TabIndex = 1;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
@@ -791,20 +792,20 @@ namespace DoAnQuanLyThuVien
             this.layoutControl2.Controls.Add(this.simpleButton1);
             this.layoutControl2.Controls.Add(this.simpleButton2);
             this.layoutControl2.Controls.Add(this.simpleButton4);
-            this.layoutControl2.Location = new System.Drawing.Point(12, 176);
+            this.layoutControl2.Location = new System.Drawing.Point(12, 181);
             this.layoutControl2.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup3;
-            this.layoutControl2.Size = new System.Drawing.Size(878, 268);
+            this.layoutControl2.Size = new System.Drawing.Size(870, 382);
             this.layoutControl2.TabIndex = 12;
             this.layoutControl2.Text = "layoutControl1";
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(431, 12);
+            this.simpleButton3.Location = new System.Drawing.Point(427, 12);
             this.simpleButton3.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(217, 22);
+            this.simpleButton3.Size = new System.Drawing.Size(215, 22);
             this.simpleButton3.StyleController = this.layoutControl2;
             this.simpleButton3.TabIndex = 8;
             this.simpleButton3.Text = "Cập nhật";
@@ -818,7 +819,7 @@ namespace DoAnQuanLyThuVien
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(854, 218);
+            this.gridControl2.Size = new System.Drawing.Size(846, 332);
             this.gridControl2.TabIndex = 7;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -939,7 +940,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton1.Location = new System.Drawing.Point(12, 12);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(211, 22);
+            this.simpleButton1.Size = new System.Drawing.Size(209, 22);
             this.simpleButton1.StyleController = this.layoutControl2;
             this.simpleButton1.TabIndex = 6;
             this.simpleButton1.Text = "Thêm";
@@ -947,10 +948,10 @@ namespace DoAnQuanLyThuVien
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(227, 12);
+            this.simpleButton2.Location = new System.Drawing.Point(225, 12);
             this.simpleButton2.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(200, 22);
+            this.simpleButton2.Size = new System.Drawing.Size(198, 22);
             this.simpleButton2.StyleController = this.layoutControl2;
             this.simpleButton2.TabIndex = 5;
             this.simpleButton2.Text = "Xóa";
@@ -958,10 +959,10 @@ namespace DoAnQuanLyThuVien
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(652, 12);
+            this.simpleButton4.Location = new System.Drawing.Point(646, 12);
             this.simpleButton4.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(214, 22);
+            this.simpleButton4.Size = new System.Drawing.Size(212, 22);
             this.simpleButton4.StyleController = this.layoutControl2;
             this.simpleButton4.TabIndex = 6;
             this.simpleButton4.Text = "Hủy";
@@ -978,15 +979,15 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem7,
             this.layoutControlItem11});
             this.layoutControlGroup3.Name = "Root";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(878, 268);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(870, 382);
             this.layoutControlGroup3.TextVisible = false;
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.simpleButton2;
-            this.layoutControlItem8.Location = new System.Drawing.Point(215, 0);
+            this.layoutControlItem8.Location = new System.Drawing.Point(213, 0);
             this.layoutControlItem8.Name = "layoutControlItem3";
-            this.layoutControlItem8.Size = new System.Drawing.Size(204, 26);
+            this.layoutControlItem8.Size = new System.Drawing.Size(202, 26);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
@@ -995,7 +996,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem9.Control = this.simpleButton1;
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem9.Name = "layoutControlItem4";
-            this.layoutControlItem9.Size = new System.Drawing.Size(215, 26);
+            this.layoutControlItem9.Size = new System.Drawing.Size(213, 26);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
@@ -1004,9 +1005,9 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem10.Control = this.simpleButton4;
             this.layoutControlItem10.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem10.CustomizationFormText = "layoutControlItem4";
-            this.layoutControlItem10.Location = new System.Drawing.Point(640, 0);
+            this.layoutControlItem10.Location = new System.Drawing.Point(634, 0);
             this.layoutControlItem10.Name = "layoutControlItem6";
-            this.layoutControlItem10.Size = new System.Drawing.Size(218, 26);
+            this.layoutControlItem10.Size = new System.Drawing.Size(216, 26);
             this.layoutControlItem10.Text = "layoutControlItem4";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
@@ -1016,26 +1017,26 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem7.Control = this.gridControl2;
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(858, 222);
+            this.layoutControlItem7.Size = new System.Drawing.Size(850, 336);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem11
             // 
             this.layoutControlItem11.Control = this.simpleButton3;
-            this.layoutControlItem11.Location = new System.Drawing.Point(419, 0);
+            this.layoutControlItem11.Location = new System.Drawing.Point(415, 0);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(221, 26);
+            this.layoutControlItem11.Size = new System.Drawing.Size(219, 26);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
             // CATEGORYTextEdit
             // 
             this.CATEGORYTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "CATEGORY", true));
-            this.CATEGORYTextEdit.Location = new System.Drawing.Point(599, 69);
+            this.CATEGORYTextEdit.Location = new System.Drawing.Point(594, 69);
             this.CATEGORYTextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.CATEGORYTextEdit.Name = "CATEGORYTextEdit";
-            this.CATEGORYTextEdit.Size = new System.Drawing.Size(279, 20);
+            this.CATEGORYTextEdit.Size = new System.Drawing.Size(276, 20);
             this.CATEGORYTextEdit.StyleController = this.dataLayoutControl1;
             this.CATEGORYTextEdit.TabIndex = 13;
             // 
@@ -1043,39 +1044,39 @@ namespace DoAnQuanLyThuVien
             // 
             this.LANGUAGETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "LANGUAGE", true));
             this.LANGUAGETextEdit.EditValue = "";
-            this.LANGUAGETextEdit.Location = new System.Drawing.Point(599, 45);
+            this.LANGUAGETextEdit.Location = new System.Drawing.Point(594, 45);
             this.LANGUAGETextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.LANGUAGETextEdit.Name = "LANGUAGETextEdit";
-            this.LANGUAGETextEdit.Size = new System.Drawing.Size(279, 20);
+            this.LANGUAGETextEdit.Size = new System.Drawing.Size(276, 20);
             this.LANGUAGETextEdit.StyleController = this.dataLayoutControl1;
             this.LANGUAGETextEdit.TabIndex = 14;
             // 
             // TITLETextEdit
             // 
             this.TITLETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "TITLE", true));
-            this.TITLETextEdit.Location = new System.Drawing.Point(212, 45);
+            this.TITLETextEdit.Location = new System.Drawing.Point(211, 45);
             this.TITLETextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.TITLETextEdit.Name = "TITLETextEdit";
-            this.TITLETextEdit.Size = new System.Drawing.Size(309, 20);
+            this.TITLETextEdit.Size = new System.Drawing.Size(305, 20);
             this.TITLETextEdit.StyleController = this.dataLayoutControl1;
             this.TITLETextEdit.TabIndex = 15;
             // 
             // AUTHORTextEdit
             // 
             this.AUTHORTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "AUTHOR", true));
-            this.AUTHORTextEdit.Location = new System.Drawing.Point(212, 69);
+            this.AUTHORTextEdit.Location = new System.Drawing.Point(211, 69);
             this.AUTHORTextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.AUTHORTextEdit.Name = "AUTHORTextEdit";
-            this.AUTHORTextEdit.Size = new System.Drawing.Size(309, 20);
+            this.AUTHORTextEdit.Size = new System.Drawing.Size(305, 20);
             this.AUTHORTextEdit.StyleController = this.dataLayoutControl1;
             this.AUTHORTextEdit.TabIndex = 16;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(763, 117);
+            this.btnBrowse.Location = new System.Drawing.Point(756, 117);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(10);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(115, 22);
+            this.btnBrowse.Size = new System.Drawing.Size(114, 22);
             this.btnBrowse.StyleController = this.dataLayoutControl1;
             this.btnBrowse.TabIndex = 6;
             this.btnBrowse.Text = "Browse";
@@ -1084,17 +1085,17 @@ namespace DoAnQuanLyThuVien
             // PUBLISHERTextEdit
             // 
             this.PUBLISHERTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "PUBLISHER", true));
-            this.PUBLISHERTextEdit.Location = new System.Drawing.Point(212, 93);
+            this.PUBLISHERTextEdit.Location = new System.Drawing.Point(211, 93);
             this.PUBLISHERTextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.PUBLISHERTextEdit.Name = "PUBLISHERTextEdit";
-            this.PUBLISHERTextEdit.Size = new System.Drawing.Size(309, 20);
+            this.PUBLISHERTextEdit.Size = new System.Drawing.Size(305, 20);
             this.PUBLISHERTextEdit.StyleController = this.dataLayoutControl1;
             this.PUBLISHERTextEdit.TabIndex = 17;
             // 
             // YEAROFPUBTextEdit
             // 
             this.YEAROFPUBTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "YEAROFPUB", true));
-            this.YEAROFPUBTextEdit.Location = new System.Drawing.Point(599, 93);
+            this.YEAROFPUBTextEdit.Location = new System.Drawing.Point(594, 93);
             this.YEAROFPUBTextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.YEAROFPUBTextEdit.Name = "YEAROFPUBTextEdit";
             this.YEAROFPUBTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -1103,17 +1104,17 @@ namespace DoAnQuanLyThuVien
             this.YEAROFPUBTextEdit.Properties.Mask.EditMask = "N0";
             this.YEAROFPUBTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.YEAROFPUBTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.YEAROFPUBTextEdit.Size = new System.Drawing.Size(279, 20);
+            this.YEAROFPUBTextEdit.Size = new System.Drawing.Size(276, 20);
             this.YEAROFPUBTextEdit.StyleController = this.dataLayoutControl1;
             this.YEAROFPUBTextEdit.TabIndex = 18;
             // 
             // BOOK_URLTextEdit
             // 
             this.BOOK_URLTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "BOOK_URL", true));
-            this.BOOK_URLTextEdit.Location = new System.Drawing.Point(212, 117);
+            this.BOOK_URLTextEdit.Location = new System.Drawing.Point(211, 117);
             this.BOOK_URLTextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.BOOK_URLTextEdit.Name = "BOOK_URLTextEdit";
-            this.BOOK_URLTextEdit.Size = new System.Drawing.Size(547, 20);
+            this.BOOK_URLTextEdit.Size = new System.Drawing.Size(541, 20);
             this.BOOK_URLTextEdit.StyleController = this.dataLayoutControl1;
             this.BOOK_URLTextEdit.TabIndex = 20;
             // 
@@ -1123,9 +1124,10 @@ namespace DoAnQuanLyThuVien
             this.IMAGESPictureEdit.Location = new System.Drawing.Point(12, 12);
             this.IMAGESPictureEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.IMAGESPictureEdit.Name = "IMAGESPictureEdit";
+            this.IMAGESPictureEdit.Properties.ShowMenu = false;
             this.IMAGESPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.IMAGESPictureEdit.ShowToolTips = false;
-            this.IMAGESPictureEdit.Size = new System.Drawing.Size(110, 160);
+            this.IMAGESPictureEdit.Size = new System.Drawing.Size(109, 165);
             this.IMAGESPictureEdit.StyleController = this.dataLayoutControl1;
             this.IMAGESPictureEdit.TabIndex = 21;
             this.IMAGESPictureEdit.Click += new System.EventHandler(this.BOOKIMAGEPictureEditf_Click);
@@ -1133,10 +1135,10 @@ namespace DoAnQuanLyThuVien
             // NOTETextEdit
             // 
             this.NOTETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.eBOOKSMANAGEMENTBindingSource, "NOTE", true));
-            this.NOTETextEdit.Location = new System.Drawing.Point(212, 143);
+            this.NOTETextEdit.Location = new System.Drawing.Point(211, 143);
             this.NOTETextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.NOTETextEdit.Name = "NOTETextEdit";
-            this.NOTETextEdit.Size = new System.Drawing.Size(666, 17);
+            this.NOTETextEdit.Size = new System.Drawing.Size(659, 22);
             this.NOTETextEdit.StyleController = this.dataLayoutControl1;
             this.NOTETextEdit.TabIndex = 19;
             // 
@@ -1148,7 +1150,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup5,
             this.layoutControlItem20});
             this.layoutControlGroup4.Name = "Root";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(902, 456);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(894, 575);
             this.layoutControlGroup4.TextVisible = false;
             // 
             // layoutControlGroup5
@@ -1160,27 +1162,18 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup7});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup5.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(882, 164);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(874, 169);
             // 
             // ItemForIMAGES
             // 
             this.ItemForIMAGES.Control = this.IMAGESPictureEdit;
             this.ItemForIMAGES.Location = new System.Drawing.Point(0, 0);
             this.ItemForIMAGES.Name = "ItemForIMAGES";
-            this.ItemForIMAGES.Size = new System.Drawing.Size(114, 164);
+            this.ItemForIMAGES.Size = new System.Drawing.Size(113, 169);
             this.ItemForIMAGES.StartNewLine = true;
             this.ItemForIMAGES.Text = "IMAGES";
             this.ItemForIMAGES.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForIMAGES.TextVisible = false;
-            // 
-            // layoutControlItem19
-            // 
-            this.layoutControlItem19.Control = this.btnBrowse;
-            this.layoutControlItem19.Location = new System.Drawing.Point(625, 72);
-            this.layoutControlItem19.Name = "layoutControlItem19";
-            this.layoutControlItem19.Size = new System.Drawing.Size(119, 26);
-            this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem19.TextVisible = false;
             // 
             // layoutControlGroup7
             // 
@@ -1194,9 +1187,9 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem12,
             this.layoutControlItem13,
             this.layoutControlItem19});
-            this.layoutControlGroup7.Location = new System.Drawing.Point(114, 0);
+            this.layoutControlGroup7.Location = new System.Drawing.Point(113, 0);
             this.layoutControlGroup7.Name = "layoutControlGroup7";
-            this.layoutControlGroup7.Size = new System.Drawing.Size(768, 164);
+            this.layoutControlGroup7.Size = new System.Drawing.Size(761, 169);
             this.layoutControlGroup7.Text = "Thông tin sách";
             // 
             // layoutControlItem14
@@ -1205,7 +1198,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem14.CustomizationFormText = "Tên sách:";
             this.layoutControlItem14.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem14.Name = "ItemForTITLE";
-            this.layoutControlItem14.Size = new System.Drawing.Size(387, 24);
+            this.layoutControlItem14.Size = new System.Drawing.Size(383, 24);
             this.layoutControlItem14.Text = "Tên sách:";
             this.layoutControlItem14.TextSize = new System.Drawing.Size(71, 13);
             // 
@@ -1215,7 +1208,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem15.CustomizationFormText = "Tác giả:";
             this.layoutControlItem15.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem15.Name = "ItemForAUTHOR";
-            this.layoutControlItem15.Size = new System.Drawing.Size(387, 24);
+            this.layoutControlItem15.Size = new System.Drawing.Size(383, 24);
             this.layoutControlItem15.Text = "Tác giả:";
             this.layoutControlItem15.TextSize = new System.Drawing.Size(71, 13);
             // 
@@ -1225,7 +1218,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem16.CustomizationFormText = "Nhà xuất bản:";
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem16.Name = "ItemForPUBLISHER";
-            this.layoutControlItem16.Size = new System.Drawing.Size(387, 24);
+            this.layoutControlItem16.Size = new System.Drawing.Size(383, 24);
             this.layoutControlItem16.Text = "Nhà xuất bản:";
             this.layoutControlItem16.TextSize = new System.Drawing.Size(71, 13);
             // 
@@ -1234,7 +1227,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForBOOK_URL.Control = this.BOOK_URLTextEdit;
             this.ItemForBOOK_URL.Location = new System.Drawing.Point(0, 72);
             this.ItemForBOOK_URL.Name = "ItemForBOOK_URL";
-            this.ItemForBOOK_URL.Size = new System.Drawing.Size(625, 26);
+            this.ItemForBOOK_URL.Size = new System.Drawing.Size(619, 26);
             this.ItemForBOOK_URL.Text = "BOOK_URL";
             this.ItemForBOOK_URL.TextSize = new System.Drawing.Size(71, 13);
             // 
@@ -1244,7 +1237,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem18.CustomizationFormText = "Ghi chú:";
             this.layoutControlItem18.Location = new System.Drawing.Point(0, 98);
             this.layoutControlItem18.Name = "ItemForNOTE";
-            this.layoutControlItem18.Size = new System.Drawing.Size(744, 21);
+            this.layoutControlItem18.Size = new System.Drawing.Size(737, 26);
             this.layoutControlItem18.Text = "Ghi chú:";
             this.layoutControlItem18.TextSize = new System.Drawing.Size(71, 13);
             // 
@@ -1252,9 +1245,9 @@ namespace DoAnQuanLyThuVien
             // 
             this.layoutControlItem17.Control = this.YEAROFPUBTextEdit;
             this.layoutControlItem17.CustomizationFormText = "Năm xuất bản:";
-            this.layoutControlItem17.Location = new System.Drawing.Point(387, 48);
+            this.layoutControlItem17.Location = new System.Drawing.Point(383, 48);
             this.layoutControlItem17.Name = "ItemForYEAROFPUB";
-            this.layoutControlItem17.Size = new System.Drawing.Size(357, 24);
+            this.layoutControlItem17.Size = new System.Drawing.Size(354, 24);
             this.layoutControlItem17.Text = "Năm xuất bản:";
             this.layoutControlItem17.TextSize = new System.Drawing.Size(71, 13);
             // 
@@ -1262,9 +1255,9 @@ namespace DoAnQuanLyThuVien
             // 
             this.layoutControlItem12.Control = this.CATEGORYTextEdit;
             this.layoutControlItem12.CustomizationFormText = "Thể loại:";
-            this.layoutControlItem12.Location = new System.Drawing.Point(387, 24);
+            this.layoutControlItem12.Location = new System.Drawing.Point(383, 24);
             this.layoutControlItem12.Name = "ItemForCATEGORY";
-            this.layoutControlItem12.Size = new System.Drawing.Size(357, 24);
+            this.layoutControlItem12.Size = new System.Drawing.Size(354, 24);
             this.layoutControlItem12.Text = "Thể loại:";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(71, 13);
             // 
@@ -1272,18 +1265,27 @@ namespace DoAnQuanLyThuVien
             // 
             this.layoutControlItem13.Control = this.LANGUAGETextEdit;
             this.layoutControlItem13.CustomizationFormText = "Ngôn ngữ:";
-            this.layoutControlItem13.Location = new System.Drawing.Point(387, 0);
+            this.layoutControlItem13.Location = new System.Drawing.Point(383, 0);
             this.layoutControlItem13.Name = "ItemForLANGUAGE";
-            this.layoutControlItem13.Size = new System.Drawing.Size(357, 24);
+            this.layoutControlItem13.Size = new System.Drawing.Size(354, 24);
             this.layoutControlItem13.Text = "Ngôn ngữ:";
             this.layoutControlItem13.TextSize = new System.Drawing.Size(71, 13);
+            // 
+            // layoutControlItem19
+            // 
+            this.layoutControlItem19.Control = this.btnBrowse;
+            this.layoutControlItem19.Location = new System.Drawing.Point(619, 72);
+            this.layoutControlItem19.Name = "layoutControlItem19";
+            this.layoutControlItem19.Size = new System.Drawing.Size(118, 26);
+            this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem19.TextVisible = false;
             // 
             // layoutControlItem20
             // 
             this.layoutControlItem20.Control = this.layoutControl2;
-            this.layoutControlItem20.Location = new System.Drawing.Point(0, 164);
+            this.layoutControlItem20.Location = new System.Drawing.Point(0, 169);
             this.layoutControlItem20.Name = "layoutControlItem1";
-            this.layoutControlItem20.Size = new System.Drawing.Size(882, 272);
+            this.layoutControlItem20.Size = new System.Drawing.Size(874, 386);
             this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem20.TextVisible = false;
             // 
@@ -1291,7 +1293,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 485);
+            this.ClientSize = new System.Drawing.Size(900, 604);
             this.Controls.Add(this.pcListBook);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1368,7 +1370,6 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForIMAGES)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
@@ -1378,6 +1379,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             this.ResumeLayout(false);
 

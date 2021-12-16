@@ -17,11 +17,16 @@ namespace DoAnQuanLyThuVien
         public fBookList()
         {
             InitializeComponent();
-            db3 = new SHARED_LIBRARY_ENTITY();
+          
+        }
+        LIBRARY_DATABASEEntities db3;
+
+        private void fBookList_Load(object sender, EventArgs e)
+        {
+            db3 = new LIBRARY_DATABASEEntities();
             db3.BOOKS_MANAGEMENT.Load();
             bOOKSMANAGEMENTBindingSource.DataSource = db3.BOOKS_MANAGEMENT.Local;
             gridView11.OptionsBehavior.Editable = false;
         }
-        SHARED_LIBRARY_ENTITY db3;
     }
 }
