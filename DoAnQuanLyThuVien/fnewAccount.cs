@@ -38,21 +38,31 @@ namespace DoAnQuanLyThuVien
                 return;
             }
 
-            try
-            {
-                READER_INF item = new READER_INF(userName, passWord);
+            READER_INF item = new READER_INF(userName, passWord);
 
-                dataBase.READER_INF.Add(item);
-                dataBase.SaveChanges();
+            dataBase.READER_INF.Add(item);
+            dataBase.SaveChanges();
 
-                this.DialogResult = DialogResult.OK;
+            this.DialogResult = DialogResult.OK;
 
-                this.Close();
-            }
-            catch
-            {
-                DialogResult duplicatedUsername = MessageBox.Show("Tài khoản đã tồn tại!");
-            }
+            this.Close();
+
+            //try
+            //{
+            //    READER_INF item = new READER_INF(userName, passWord);
+
+            //    dataBase.READER_INF.Add(item);
+            //    dataBase.SaveChanges();
+
+            //    this.DialogResult = DialogResult.OK;
+
+            //    this.Close();
+            //}
+            //    catch
+            //    {
+            //        DialogResult duplicatedUsername = MessageBox.Show("Tài khoản đã tồn tại!");
+            //    }
+            //}
         }
     }
 }

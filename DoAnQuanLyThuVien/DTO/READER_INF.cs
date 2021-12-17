@@ -15,8 +15,6 @@ namespace DoAnQuanLyThuVien.DTO
 
     public partial class READER_INF : activeAccountDTO
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    
         public string USERNAME { get; set; }
         public string PASSWORD { get; set; }
         public byte[] AVATAR { get; set; }
@@ -31,7 +29,6 @@ namespace DoAnQuanLyThuVien.DTO
         public string EMAIL { get; set; }
         public string NOTE { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<REQUEST_FORM> REQUEST_FORM { get; set; }
 
         public READER_INF()
@@ -41,7 +38,8 @@ namespace DoAnQuanLyThuVien.DTO
 
         public READER_INF(string username, string pass)
         {
-            this.REQUEST_FORM = new HashSet<REQUEST_FORM>();
+            USERNAME = username;
+            PASSWORD = pass;
         }
 
         public READER_INF(DataRow source)

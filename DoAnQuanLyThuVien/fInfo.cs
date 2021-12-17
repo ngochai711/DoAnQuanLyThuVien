@@ -22,24 +22,24 @@ namespace DoAnQuanLyThuVien
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string username = "anhthy789";
-            List<Infomation> ListInfo = InfoDAO.Instance.GetListInfo(username);
-            foreach (Infomation item in ListInfo)
-            {
-                tbxUsername.Text = item.Username.ToString();
-                tbxPass.Text = item.Pass.ToString();
-                tbxLName.Text = item.Lastname.ToString();
-                tbxFName.Text = item.Finame.ToString();
-                if (item.Gen.ToString() == "Nữ")
-                    radioBtnFemale.Checked = true;
-                else if (item.Gen.ToString() == "Nam")
-                    radioBtnMale.Checked = true;
-                else radioBtnOther.Checked = true;
-                dtpBirthDate.Value = item.Bd;
-                tbxAddress.Text = item.Address.ToString();
-                tbxPhoneNum.Text = item.Phonenumber.ToString();
-                tbxEmail.Text = item.Email.ToString();
-            }
+            //string username = "anhthy789";
+            //List<Infomation> ListInfo = InfoDAO.Instance.GetListInfo(username);
+            //foreach (Infomation item in ListInfo)
+            //{
+            //    tbxUsername.Text = item.Username.ToString();
+            //    tbxPass.Text = item.Pass.ToString();
+            //    tbxLName.Text = item.Lastname.ToString();
+            //    tbxFName.Text = item.Finame.ToString();
+            //    if (item.Gen.ToString() == "Nữ")
+            //        radioBtnFemale.Checked = true;
+            //    else if (item.Gen.ToString() == "Nam")
+            //        radioBtnMale.Checked = true;
+            //    else radioBtnOther.Checked = true;
+            //    dtpBirthDate.Value = item.Bd;
+            //    tbxAddress.Text = item.Address.ToString();
+            //    tbxPhoneNum.Text = item.Phonenumber.ToString();
+            //    tbxEmail.Text = item.Email.ToString();
+            //}
         }
         void Edit(string Username, string Pass, string LName, string FName, string Newpass, string Gen, DateTime BD, string Address, string SDT, string Email)
         {
@@ -50,10 +50,10 @@ namespace DoAnQuanLyThuVien
             }
             else
             {
-                if(InfoDAO.Instance.EditInfo(Username, Pass, LName, FName, Newpass, Gen, BD, Address, SDT, Email))
-                {
-                    MessageBox.Show("Lưu thông tin thành công", "Thông báo");
-                }    
+                //if(InfoDAO.Instance.EditInfo(Username, Pass, LName, FName, Newpass, Gen, BD, Address, SDT, Email))
+                //{
+                //    MessageBox.Show("Lưu thông tin thành công", "Thông báo");
+                //}    
             }    
         }
 

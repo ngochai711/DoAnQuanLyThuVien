@@ -14,7 +14,6 @@ namespace DoAnQuanLyThuVien.DTO
     
     public partial class REQUEST_FORM
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public REQUEST_FORM()
         {
             this.REQUEST_INFO = new HashSet<REQUEST_INFO>();
@@ -27,7 +26,6 @@ namespace DoAnQuanLyThuVien.DTO
         public string STATUS { get; set; }
     
         public virtual READER_INF READER_INF { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<REQUEST_INFO> REQUEST_INFO { get; set; }
     }
 }
