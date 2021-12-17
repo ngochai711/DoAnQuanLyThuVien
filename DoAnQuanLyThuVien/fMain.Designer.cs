@@ -35,6 +35,8 @@ namespace DoAnQuanLyThuVien
             this.menuIconList = new System.Windows.Forms.ImageList(this.components);
             this.btnExit = new System.Windows.Forms.Button();
             this.SlidingPanel = new System.Windows.Forms.Panel();
+            this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
+            this.btnAssist = new System.Windows.Forms.Button();
             this.separatorControl7 = new DevExpress.XtraEditors.SeparatorControl();
             this.separatorControl5 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnL_card_show = new System.Windows.Forms.Button();
@@ -52,12 +54,13 @@ namespace DoAnQuanLyThuVien
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnAssist = new System.Windows.Forms.Button();
-            this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
+            this.settingPanel = new System.Windows.Forms.Panel();
+            this.btnPlayListChanging = new System.Windows.Forms.Button();
+            this.btnBackgroundChanging = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SlidingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
@@ -68,7 +71,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
+            this.settingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -252,6 +255,39 @@ namespace DoAnQuanLyThuVien
             this.SlidingPanel.Size = new System.Drawing.Size(273, 596);
             this.SlidingPanel.TabIndex = 11;
             this.SlidingPanel.Click += new System.EventHandler(this.btnShow_Click);
+            // 
+            // separatorControl6
+            // 
+            this.separatorControl6.BackColor = System.Drawing.Color.Transparent;
+            this.separatorControl6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.separatorControl6.LineColor = System.Drawing.Color.Black;
+            this.separatorControl6.Location = new System.Drawing.Point(0, 469);
+            this.separatorControl6.Name = "separatorControl6";
+            this.separatorControl6.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
+            this.separatorControl6.Size = new System.Drawing.Size(273, 23);
+            this.separatorControl6.TabIndex = 31;
+            // 
+            // btnAssist
+            // 
+            this.btnAssist.BackColor = System.Drawing.Color.Transparent;
+            this.btnAssist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAssist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAssist.FlatAppearance.BorderSize = 0;
+            this.btnAssist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAssist.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAssist.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAssist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAssist.ImageKey = "help_64px.png";
+            this.btnAssist.ImageList = this.menuIconList;
+            this.btnAssist.Location = new System.Drawing.Point(0, 412);
+            this.btnAssist.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAssist.Name = "btnAssist";
+            this.btnAssist.Padding = new System.Windows.Forms.Padding(8);
+            this.btnAssist.Size = new System.Drawing.Size(273, 57);
+            this.btnAssist.TabIndex = 30;
+            this.btnAssist.Text = "Hỗ Trợ";
+            this.btnAssist.UseVisualStyleBackColor = false;
+            this.btnAssist.Click += new System.EventHandler(this.btnAssist_Click_1);
             // 
             // separatorControl7
             // 
@@ -463,7 +499,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.windowsMediaPlayer);
-            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.settingPanel);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(828, 0);
@@ -482,53 +518,49 @@ namespace DoAnQuanLyThuVien
             this.windowsMediaPlayer.TabIndex = 26;
             this.windowsMediaPlayer.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.windowsMediaPlayer_CurrentItemChange);
             // 
-            // panel4
+            // settingPanel
             // 
-            this.panel4.Location = new System.Drawing.Point(3, 45);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(239, 162);
-            this.panel4.TabIndex = 25;
+            this.settingPanel.Controls.Add(this.btnPlayListChanging);
+            this.settingPanel.Controls.Add(this.btnBackgroundChanging);
+            this.settingPanel.Location = new System.Drawing.Point(3, 45);
+            this.settingPanel.Name = "settingPanel";
+            this.settingPanel.Size = new System.Drawing.Size(239, 162);
+            this.settingPanel.TabIndex = 25;
             // 
-            // btnAssist
+            // btnPlayListChanging
             // 
-            this.btnAssist.BackColor = System.Drawing.Color.Transparent;
-            this.btnAssist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAssist.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAssist.FlatAppearance.BorderSize = 0;
-            this.btnAssist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAssist.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAssist.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAssist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAssist.ImageKey = "help_64px.png";
-            this.btnAssist.ImageList = this.menuIconList;
-            this.btnAssist.Location = new System.Drawing.Point(0, 412);
-            this.btnAssist.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAssist.Name = "btnAssist";
-            this.btnAssist.Padding = new System.Windows.Forms.Padding(8);
-            this.btnAssist.Size = new System.Drawing.Size(273, 57);
-            this.btnAssist.TabIndex = 30;
-            this.btnAssist.Text = "Hỗ Trợ";
-            this.btnAssist.UseVisualStyleBackColor = false;
-            this.btnAssist.Click += new System.EventHandler(this.btnAssist_Click_1);
+            this.btnPlayListChanging.Font = new System.Drawing.Font("Open Sans SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayListChanging.ImageKey = "icons8_audio_file_32.png";
+            this.btnPlayListChanging.ImageList = this.imageList1;
+            this.btnPlayListChanging.Location = new System.Drawing.Point(23, 89);
+            this.btnPlayListChanging.Name = "btnPlayListChanging";
+            this.btnPlayListChanging.Size = new System.Drawing.Size(192, 49);
+            this.btnPlayListChanging.TabIndex = 3;
+            this.btnPlayListChanging.Text = "Cài đặt danh sách nhạc";
+            this.btnPlayListChanging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPlayListChanging.UseVisualStyleBackColor = true;
+            this.btnPlayListChanging.Visible = false;
             // 
-            // separatorControl6
+            // btnBackgroundChanging
             // 
-            this.separatorControl6.BackColor = System.Drawing.Color.Transparent;
-            this.separatorControl6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.separatorControl6.LineColor = System.Drawing.Color.Black;
-            this.separatorControl6.Location = new System.Drawing.Point(0, 469);
-            this.separatorControl6.Name = "separatorControl6";
-            this.separatorControl6.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
-            this.separatorControl6.Size = new System.Drawing.Size(273, 23);
-            this.separatorControl6.TabIndex = 31;
+            this.btnBackgroundChanging.Font = new System.Drawing.Font("Open Sans SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackgroundChanging.ImageKey = "icons8_laptop_settings_32.png";
+            this.btnBackgroundChanging.ImageList = this.imageList1;
+            this.btnBackgroundChanging.Location = new System.Drawing.Point(23, 25);
+            this.btnBackgroundChanging.Name = "btnBackgroundChanging";
+            this.btnBackgroundChanging.Size = new System.Drawing.Size(192, 49);
+            this.btnBackgroundChanging.TabIndex = 2;
+            this.btnBackgroundChanging.Text = "Cài đặt ảnh nền";
+            this.btnBackgroundChanging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBackgroundChanging.UseVisualStyleBackColor = true;
+            this.btnBackgroundChanging.Visible = false;
+            this.btnBackgroundChanging.Click += new System.EventHandler(this.btnBackgroundChanging_Click);
             // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(110)))), ((int)(((byte)(176)))));
-            this.BackgroundImage = Properties.Resources.Background;
-
+            this.BackgroundImage = global::DoAnQuanLyThuVien.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1070, 596);
             this.Controls.Add(this.panel2);
@@ -547,6 +579,7 @@ namespace DoAnQuanLyThuVien
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.SlidingPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
@@ -558,7 +591,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
+            this.settingPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -592,9 +625,11 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraEditors.SeparatorControl separatorControl5;
         private DevExpress.XtraEditors.SeparatorControl separatorControl7;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel settingPanel;
         private AxWMPLib.AxWindowsMediaPlayer windowsMediaPlayer;
         private DevExpress.XtraEditors.SeparatorControl separatorControl6;
         private System.Windows.Forms.Button btnAssist;
+        private System.Windows.Forms.Button btnPlayListChanging;
+        private System.Windows.Forms.Button btnBackgroundChanging;
     }
 }

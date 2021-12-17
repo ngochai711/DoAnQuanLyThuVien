@@ -24,7 +24,7 @@ namespace DoAnQuanLyThuVien
         string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement, oldbtnBookBorrowing;
         //int oldListWidth, oldListHeight;
         bool max_ed = true;
-
+        bool isSetting = false;
 
         bool hidden;
         public fMain(activeAccountDTO acc)
@@ -38,10 +38,6 @@ namespace DoAnQuanLyThuVien
 
         private void pre_loading()
         {
-            // Properties.Resources.Background.Save(ms, ImageFormat.Jpeg);
-            ////string img = ;
-            ////byte[] i = Convert.FromBase64String(img);
-            ///
            if(Properties.Settings.Default.BackImg != null)
             {
                 string img = Properties.Settings.Default.BackImg;
@@ -85,6 +81,8 @@ namespace DoAnQuanLyThuVien
         }
 
         #region form's control
+
+
         // minimize, maximize, close button
 
         private void button3_Click(object sender, EventArgs e)
@@ -113,7 +111,6 @@ namespace DoAnQuanLyThuVien
             {
                 WindowState = FormWindowState.Normal;
                 max_ed = false;
-
             }
 
         }
@@ -223,6 +220,19 @@ namespace DoAnQuanLyThuVien
         #endregion
 
         #region application's function button
+        private void btnBackgroundChanging_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog _openFileDialog = new OpenFileDialog();
+            _openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+            if (_openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+
+                this.BackgroundImage = new Bitmap(_openFileDialog.FileName);
+                Properties.Settings.Default.Save();
+                //parentForm.BackgroundImage.Save(_openFileDialog.FileName,System.Drawing.Imaging.ImageFormat.Jpeg);
+
+            }
+        }
         private void btnL_card_show_Click(object sender, EventArgs e)
         {
 
@@ -230,8 +240,24 @@ namespace DoAnQuanLyThuVien
 
         private void button4_Click(object sender, EventArgs e)
         {
-            fSetting _fSetting = new fSetting(this);
-            _fSetting.ShowDialog();
+            //fSetting _fSetting = new fSetting(this);
+            //_fSetting.FormBorderStyle = FormBorderStyle.None;
+            //openChildForm(_fSetting);
+            if (!isSetting)
+            {
+                settingPanel.BackColor = Color.FromArgb(50, 255, 255, 255);
+                btnBackgroundChanging.Visible = true;
+                btnPlayListChanging.Visible = true;
+                isSetting = true;
+            }
+            else
+            {
+                settingPanel.BackColor = Color.FromArgb(0, 255, 255, 255);
+                btnBackgroundChanging.Visible = !true;
+                btnPlayListChanging.Visible = !true;
+                isSetting = !true;
+
+            }
         }
 
         private void btnAssist_Click_1(object sender, EventArgs e)
@@ -322,6 +348,26 @@ namespace DoAnQuanLyThuVien
                 btnEbookReading.Text = oldbtnBookBorrowing;
                 hidden = false;
             }
+
+        }
+        #endregion
+
+        #region openfChild region
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            settingPanel.Controls.Add(childForm);
+            settingPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
 
         }
         #endregion
