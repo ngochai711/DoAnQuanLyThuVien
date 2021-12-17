@@ -134,7 +134,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panel5 = new System.Windows.Forms.Panel();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView_Staff = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colUSERNAME1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPASSWORD1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAVATAR1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -248,7 +248,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_Staff)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
@@ -381,6 +381,7 @@ namespace DoAnQuanLyThuVien
             // AGETextEdit
             // 
             this.AGETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "AGE", true));
+            this.AGETextEdit.EditValue = "12";
             this.AGETextEdit.Location = new System.Drawing.Point(223, 337);
             this.AGETextEdit.Name = "AGETextEdit";
             this.AGETextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -1097,7 +1098,7 @@ namespace DoAnQuanLyThuVien
             this.textEdit2.Location = new System.Drawing.Point(202, 91);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
             this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -1112,6 +1113,10 @@ namespace DoAnQuanLyThuVien
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
             this.comboBoxEdit1.Size = new System.Drawing.Size(145, 22);
             this.comboBoxEdit1.StyleController = this.dataLayoutControl2;
             this.comboBoxEdit1.TabIndex = 8;
@@ -1134,11 +1139,12 @@ namespace DoAnQuanLyThuVien
             // textEdit3
             // 
             this.textEdit3.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "AGE", true));
+            this.textEdit3.EditValue = "12";
             this.textEdit3.Location = new System.Drawing.Point(222, 337);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.textEdit3.Properties.Appearance.Options.UseTextOptions = true;
-            this.textEdit3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.textEdit3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.textEdit3.Properties.Mask.EditMask = "N0";
             this.textEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.textEdit3.Properties.Mask.UseMaskAsDisplayFormat = true;
@@ -1182,9 +1188,10 @@ namespace DoAnQuanLyThuVien
             this.TYPEComboBoxEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.TYPEComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.TYPEComboBoxEdit.Properties.DropDownRows = 2;
             this.TYPEComboBoxEdit.Properties.Items.AddRange(new object[] {
-            "Quản Lý",
-            "Nhân Viên"});
+            "True",
+            "False"});
             this.TYPEComboBoxEdit.Size = new System.Drawing.Size(208, 20);
             this.TYPEComboBoxEdit.StyleController = this.dataLayoutControl2;
             this.TYPEComboBoxEdit.TabIndex = 14;
@@ -1415,16 +1422,16 @@ namespace DoAnQuanLyThuVien
             this.gridControl2.DataSource = this.sTAFFINFBindingSource;
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl2.Location = new System.Drawing.Point(0, 0);
-            this.gridControl2.MainView = this.gridView1;
+            this.gridControl2.MainView = this.gridView_Staff;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.Size = new System.Drawing.Size(1040, 812);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridView_Staff});
             // 
-            // gridView1
+            // gridView_Staff
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridView_Staff.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colUSERNAME1,
             this.colPASSWORD1,
             this.colAVATAR1,
@@ -1439,16 +1446,16 @@ namespace DoAnQuanLyThuVien
             this.colEMAIL1,
             this.colTYPE,
             this.colNOTE1});
-            this.gridView1.GridControl = this.gridControl2;
-            this.gridView1.Name = "gridView1";
+            this.gridView_Staff.GridControl = this.gridControl2;
+            this.gridView_Staff.Name = "gridView_Staff";
+            this.gridView_Staff.OptionsFind.AlwaysVisible = true;
+            this.gridView_Staff.OptionsView.ShowGroupPanel = false;
             // 
             // colUSERNAME1
             // 
             this.colUSERNAME1.FieldName = "USERNAME";
             this.colUSERNAME1.MinWidth = 25;
             this.colUSERNAME1.Name = "colUSERNAME1";
-            this.colUSERNAME1.Visible = true;
-            this.colUSERNAME1.VisibleIndex = 0;
             this.colUSERNAME1.Width = 94;
             // 
             // colPASSWORD1
@@ -1456,8 +1463,6 @@ namespace DoAnQuanLyThuVien
             this.colPASSWORD1.FieldName = "PASSWORD";
             this.colPASSWORD1.MinWidth = 25;
             this.colPASSWORD1.Name = "colPASSWORD1";
-            this.colPASSWORD1.Visible = true;
-            this.colPASSWORD1.VisibleIndex = 1;
             this.colPASSWORD1.Width = 94;
             // 
             // colAVATAR1
@@ -1469,101 +1474,106 @@ namespace DoAnQuanLyThuVien
             // 
             // colSTAFFID
             // 
+            this.colSTAFFID.Caption = "ID";
             this.colSTAFFID.FieldName = "STAFFID";
             this.colSTAFFID.MinWidth = 25;
             this.colSTAFFID.Name = "colSTAFFID";
             this.colSTAFFID.Visible = true;
-            this.colSTAFFID.VisibleIndex = 2;
-            this.colSTAFFID.Width = 94;
+            this.colSTAFFID.VisibleIndex = 0;
+            this.colSTAFFID.Width = 66;
             // 
             // colPID1
             // 
+            this.colPID1.Caption = "CMND";
             this.colPID1.FieldName = "PID";
             this.colPID1.MinWidth = 25;
             this.colPID1.Name = "colPID1";
             this.colPID1.Visible = true;
-            this.colPID1.VisibleIndex = 3;
-            this.colPID1.Width = 94;
+            this.colPID1.VisibleIndex = 2;
+            this.colPID1.Width = 120;
             // 
             // colNAME1
             // 
+            this.colNAME1.Caption = "Họ & Tên";
             this.colNAME1.FieldName = "NAME";
             this.colNAME1.MinWidth = 25;
             this.colNAME1.Name = "colNAME1";
             this.colNAME1.Visible = true;
-            this.colNAME1.VisibleIndex = 4;
-            this.colNAME1.Width = 94;
+            this.colNAME1.VisibleIndex = 3;
+            this.colNAME1.Width = 173;
             // 
             // colSEX1
             // 
+            this.colSEX1.Caption = "Giới Tính";
             this.colSEX1.FieldName = "SEX";
             this.colSEX1.MinWidth = 25;
             this.colSEX1.Name = "colSEX1";
             this.colSEX1.Visible = true;
-            this.colSEX1.VisibleIndex = 5;
-            this.colSEX1.Width = 94;
+            this.colSEX1.VisibleIndex = 4;
+            this.colSEX1.Width = 68;
             // 
             // colBIRTH1
             // 
+            this.colBIRTH1.Caption = "Ngày Sinh";
             this.colBIRTH1.FieldName = "BIRTH";
             this.colBIRTH1.MinWidth = 25;
             this.colBIRTH1.Name = "colBIRTH1";
             this.colBIRTH1.Visible = true;
-            this.colBIRTH1.VisibleIndex = 6;
-            this.colBIRTH1.Width = 94;
+            this.colBIRTH1.VisibleIndex = 5;
+            this.colBIRTH1.Width = 80;
             // 
             // colAGE1
             // 
+            this.colAGE1.Caption = "Tuổi";
             this.colAGE1.FieldName = "AGE";
             this.colAGE1.MinWidth = 25;
             this.colAGE1.Name = "colAGE1";
             this.colAGE1.Visible = true;
-            this.colAGE1.VisibleIndex = 7;
-            this.colAGE1.Width = 94;
+            this.colAGE1.VisibleIndex = 6;
+            this.colAGE1.Width = 50;
             // 
             // colADDRESS1
             // 
             this.colADDRESS1.FieldName = "ADDRESS";
             this.colADDRESS1.MinWidth = 25;
             this.colADDRESS1.Name = "colADDRESS1";
-            this.colADDRESS1.Visible = true;
-            this.colADDRESS1.VisibleIndex = 8;
             this.colADDRESS1.Width = 94;
             // 
             // colPHONE1
             // 
+            this.colPHONE1.Caption = "SĐT";
             this.colPHONE1.FieldName = "PHONE";
             this.colPHONE1.MinWidth = 25;
             this.colPHONE1.Name = "colPHONE1";
             this.colPHONE1.Visible = true;
-            this.colPHONE1.VisibleIndex = 9;
-            this.colPHONE1.Width = 94;
+            this.colPHONE1.VisibleIndex = 7;
+            this.colPHONE1.Width = 116;
             // 
             // colEMAIL1
             // 
+            this.colEMAIL1.Caption = "Email";
             this.colEMAIL1.FieldName = "EMAIL";
             this.colEMAIL1.MinWidth = 25;
             this.colEMAIL1.Name = "colEMAIL1";
             this.colEMAIL1.Visible = true;
-            this.colEMAIL1.VisibleIndex = 10;
-            this.colEMAIL1.Width = 94;
+            this.colEMAIL1.VisibleIndex = 8;
+            this.colEMAIL1.Width = 267;
             // 
             // colTYPE
             // 
+            this.colTYPE.Caption = "Quản Lý";
             this.colTYPE.FieldName = "TYPE";
             this.colTYPE.MinWidth = 25;
             this.colTYPE.Name = "colTYPE";
             this.colTYPE.Visible = true;
-            this.colTYPE.VisibleIndex = 11;
-            this.colTYPE.Width = 94;
+            this.colTYPE.VisibleIndex = 1;
+            this.colTYPE.Width = 70;
             // 
             // colNOTE1
             // 
             this.colNOTE1.FieldName = "NOTE";
             this.colNOTE1.MinWidth = 25;
             this.colNOTE1.Name = "colNOTE1";
-            this.colNOTE1.Visible = true;
-            this.colNOTE1.VisibleIndex = 12;
             this.colNOTE1.Width = 94;
             // 
             // panel7
@@ -1838,7 +1848,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_Staff)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).EndInit();
@@ -1934,7 +1944,7 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
         private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView_Staff;
         private DevExpress.XtraGrid.Columns.GridColumn colUSERNAME1;
         private DevExpress.XtraGrid.Columns.GridColumn colPASSWORD1;
         private DevExpress.XtraGrid.Columns.GridColumn colAVATAR1;
