@@ -19,11 +19,11 @@ namespace DoAnQuanLyThuVien
             InitializeComponent();
           
         }
-        LIBRARY_DATABASEEntities db3;
+        SHARED_LIBRARY_ENTITY db3;
 
         private void fBookList_Load(object sender, EventArgs e)
         {
-            db3 = new LIBRARY_DATABASEEntities();
+            db3 = new SHARED_LIBRARY_ENTITY();
             db3.BOOKS_MANAGEMENT.Load();
             bOOKSMANAGEMENTBindingSource.DataSource = db3.BOOKS_MANAGEMENT.Local;
             gridView11.OptionsBehavior.Editable = false;

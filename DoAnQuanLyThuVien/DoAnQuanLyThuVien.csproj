@@ -97,6 +97,12 @@
     <Compile Include="feditAccount.designer.cs">
       <DependentUpon>feditAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="fInfReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInfReader.Designer.cs">
+      <DependentUpon>fInfReader.cs</DependentUpon>
+    </Compile>
     <Compile Include="fnewAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,12 +151,6 @@
     <Compile Include="fBookManager.Designer.cs">
       <DependentUpon>fBookManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="fInfoReader.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="fInfoReader.Designer.cs">
-      <DependentUpon>fInfoReader.cs</DependentUpon>
-    </Compile>
     <Compile Include="fMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,12 +162,6 @@
     </Compile>
     <Compile Include="fPersonalManage.Designer.cs">
       <DependentUpon>fPersonalManage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fInfo.designer.cs">
-      <DependentUpon>fInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="fReader.cs">
       <SubType>Form</SubType>
@@ -198,6 +192,9 @@
     <EmbeddedResource Include="feditAccount.resx">
       <DependentUpon>feditAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fInfReader.resx">
+      <DependentUpon>fInfReader.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fnewAccount.resx">
       <DependentUpon>fnewAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,9 +203,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fEbookList.resx">
       <DependentUpon>fEbookList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fInfoReader.resx">
-      <DependentUpon>fInfoReader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLendBook.resx">
       <DependentUpon>fLendBook.cs</DependentUpon>
@@ -221,9 +215,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fPersonalManage.resx">
       <DependentUpon>fPersonalManage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fInfo.resx">
-      <DependentUpon>fInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReader.resx">
       <DependentUpon>fReader.cs</DependentUpon>
