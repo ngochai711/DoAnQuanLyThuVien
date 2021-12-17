@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DoAnQuanLyThuVien.DTO;
+using System.Drawing.Imaging;
 
 namespace DoAnQuanLyThuVien
 {
@@ -37,8 +38,17 @@ namespace DoAnQuanLyThuVien
 
         private void pre_loading()
         {
+            // Properties.Resources.Background.Save(ms, ImageFormat.Jpeg);
+            ////string img = ;
+            ////byte[] i = Convert.FromBase64String(img);
+            ///
+           if(Properties.Settings.Default.BackImg != null)
+            {
+                string img = Properties.Settings.Default.BackImg;
+                byte[] i = Convert.FromBase64String(img);
+                this.BackgroundImage = Image.FromStream(new MemoryStream(i));
 
-
+            }
             // menu data
             oldPanelWidth = 290;
             oldPanelHeight = SlidingPanel.Height;
@@ -50,15 +60,17 @@ namespace DoAnQuanLyThuVien
             oldbtnBookManagement = btnBookManagement.Text;
             oldbtnL_card_show = btnL_card_show.Text;
             oldbtnAcountInfo = btnAcountInfo.Text;
-            oldbtnBookBorrowing = btnBookBorrowing.Text;
+            oldbtnBookBorrowing = btnEbookReading.Text;
             btnAssist.Text = "";
             btnExit.Text = "";
             btnBookManagement.Text = "";
             btnL_card_show.Text = "";
             btnAcountInfo.Text = "";
-            btnBookBorrowing.Text = "";
+            btnEbookReading.Text = "";
             hidden = true;
+            
 
+            SlidingPanel.BackColor = Color.FromArgb(120, 245, 245, 245);
             //set WMP data
 
             FolderBrowserDialog fld = new FolderBrowserDialog();
@@ -74,9 +86,20 @@ namespace DoAnQuanLyThuVien
 
         #region form's control
         // minimize, maximize, close button
+
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
+
+            // background changes saving
+            var base64 = string.Empty;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                this.BackgroundImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                base64 = Convert.ToBase64String(ms.ToArray());
+            }
+            Properties.Settings.Default.BackImg = base64;
+            Properties.Settings.Default.Save();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -205,6 +228,17 @@ namespace DoAnQuanLyThuVien
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            fSetting _fSetting = new fSetting(this);
+            _fSetting.ShowDialog();
+        }
+
+        private void btnAssist_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("           Các thành viên nhóm phát triển:\n                  Nguyễn Hoàng Ngọc Hải\n                             Lê Hoàng Quý\n                              Lâm Tấn Phát\n                      Trần Huyền Anh Thy\n                Phiên bản ứng dụng 1.4.21\nLiên hệ đường dây nóng: 0912345678\nHoặc qua gmail: phattrienpm@gmail.com", "Hỗ trợ");
+        }
+
         private void btnBookManagement_Click(object sender, EventArgs e)
         {
 
@@ -219,12 +253,18 @@ namespace DoAnQuanLyThuVien
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
+            // background changes saving
+            var base64 = string.Empty;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                this.BackgroundImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                base64 = Convert.ToBase64String(ms.ToArray());
+            }
+            Properties.Settings.Default.BackImg = base64;
+            Properties.Settings.Default.Save();
         }
 
-        
-
-       
 
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -236,11 +276,7 @@ namespace DoAnQuanLyThuVien
             f.ShowDialog();
         }
 
-        private void btnAssist_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("           Các thành viên nhóm phát triển:\n                  Nguyễn Hoàng Ngọc Hải\n                             Lê Hoàng Quý\n                              Lâm Tấn Phát\n                      Trần Huyền Anh Thy\n                Phiên bản ứng dụng 1.4.21\nLiên hệ đường dây nóng: 0912345678\nHoặc qua gmail: phattrienpm@gmail.com", "Hỗ trợ");
 
-        }
 
 
         private void btnAcountInfo_Click(object sender, EventArgs e)
@@ -272,7 +308,7 @@ namespace DoAnQuanLyThuVien
                 btnAcountInfo.Text = "";
                 btnBookManagement.Text = "";
                 btnL_card_show.Text = "";
-                btnBookBorrowing.Text = "";
+                btnEbookReading.Text = "";
             }
             else
             {
@@ -283,7 +319,7 @@ namespace DoAnQuanLyThuVien
                 btnAcountInfo.Text = oldbtnAcountInfo;
                 btnBookManagement.Text = oldbtnBookManagement;
                 btnL_card_show.Text = oldbtnL_card_show;
-                btnBookBorrowing.Text = oldbtnBookBorrowing;
+                btnEbookReading.Text = oldbtnBookBorrowing;
                 hidden = false;
             }
 

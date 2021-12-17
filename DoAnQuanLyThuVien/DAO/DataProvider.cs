@@ -28,7 +28,7 @@ namespace DoAnQuanLyThuVien.DAO
         }
         private DataProvider() { }
 
-        private string connectionSTR = @"data source=.\SQLEXPRESS;initial catalog=LIBRARY_DTB;integrated security=True";
+        private string connectionSTR = @"Data Source=.\sqlexpress;Initial Catalog=LIBRARY_DATABASE;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

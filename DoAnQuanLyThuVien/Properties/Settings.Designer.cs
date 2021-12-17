@@ -33,5 +33,17 @@ namespace DoAnQuanLyThuVien.Properties {
                 return ((string)(this["LIBRARY_DATABASEConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string BackImg {
+            get {
+                return ((string)(this["BackImg"]));
+            }
+            set {
+                this["BackImg"] = value;
+            }
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fLogin : Form
     {
+        public static SHARED_LIBRARY_ENTITY tendephanbiet = new SHARED_LIBRARY_ENTITY();
         public fLogin()
         {
             InitializeComponent();
