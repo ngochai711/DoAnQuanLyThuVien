@@ -29,5 +29,14 @@ namespace DoAnQuanLyThuVien.DAO
         {
             DataProvider.Instance.ExecuteNonQuery("exec USP_InsertBookInfo @req_id , @book_id", new object[] { req_Id, id });
         }
+        public void UpdateBookRemain(string id)
+        {
+            DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.BOOKS_MANAGEMENT SET REMAIN-=1 WHERE SERIAL_NUMBER = " + id);
+        }
+        public void UpdateBookRemainAccept(string id)
+        {
+            DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.BOOKS_MANAGEMENT SET REMAIN += 1 WHERE SERIAL_NUMBER = " + id);
+        }
+
     }
 }

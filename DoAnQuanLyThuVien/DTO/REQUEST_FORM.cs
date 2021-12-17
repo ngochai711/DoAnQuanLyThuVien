@@ -15,9 +15,9 @@ namespace DoAnQuanLyThuVien.DTO
     public partial class REQUEST_FORM
     {
         public string REQUEST_ID { get; set; }
-        public string ID { get; set; }
         public System.DateTime REQUEST_DATE { get; set; }
         public Nullable<System.DateTime> DUE_DATE { get; set; }
         public string STATUS { get; set; }
+        public string USERID { get; set; }
     }
 }

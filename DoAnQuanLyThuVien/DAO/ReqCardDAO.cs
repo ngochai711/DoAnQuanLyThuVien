@@ -38,9 +38,14 @@ namespace DoAnQuanLyThuVien.DAO
             return id <= 0 ? 1 : ++id;
         }
 
+        public int GetBookNumByReqID(string req_Id)
+        {
+            return (int)DataProvider.Instance.ExecuteScalar("SELECT COUNT(BOOKS_ID) FROM dbo.REQUEST_INFO WHERE REQUEST_ID ="+req_Id);
+        }
+
         public bool CheckID(string id)
         {
-            if((int)DataProvider.Instance.ExecuteScalar("SELECT count(*) FROM dbo.CLIENT_INFO WHERE ID = '" + id+"'") > 0)
+            if((int)DataProvider.Instance.ExecuteScalar("SELECT count(*) FROM dbo.READER_INF WHERE USERNAME = '" + id+"'") > 0)
             {
                 return true;
             }

@@ -28,16 +28,10 @@ namespace DoAnQuanLyThuVien
         public fCreateCardLendBook()
         {
             InitializeComponent();
-            LoadDatePicker();
         }
         #region Method
 
-        void LoadDatePicker()
-        {
-            DateTime today = DateTime.Now;
-            deFromDateList.EditValue = new DateTime(today.Year, today.Month, 1);
-            deToDateList.EditValue = deFromDateList.DateTime.AddMonths(1).AddDays(-1);
-        }
+        
         private void labelControl2_Click(object sender, EventArgs e)
         {
 
@@ -111,12 +105,12 @@ namespace DoAnQuanLyThuVien
         {
             if (ReqCardDAO.Instance.CheckID(txbID.Text) == false)
             {
-                lcNotice.Text = "CMND/CCCD của độc giả hiện tại chưa được đăng ký";
+                lcNotice.Text = "Tài khoản này chưa được đăng ký!!!";
                 lcNotice.ForeColor = Color.Red;
             }
             else
             {
-                lcNotice.Text = "Độc giả đã đăng ký tài khoản";
+                lcNotice.Text = "Tài khoản hợp lệ.";
                 lcNotice.ForeColor = Color.Green;
             }
         }
@@ -141,10 +135,12 @@ namespace DoAnQuanLyThuVien
         #region Button
         private void sbCreateLendCard_Click(object sender, EventArgs e)
         {
+            count = 1;
             ReqCardDAO.Instance.InsertCard(CardID.ToString(),txbID.Text,DateTime.Parse(deToDate.Text));
             for(int i = 1; i < count; i++)
             {
                 ReqCardInfoDAO.Instance.InsertCardInfo(CardID.ToString(), BookID[i].ToString());
+                ReqCardInfoDAO.Instance.UpdateBookRemain(BookID[i].ToString());
             }
             
             fCreateCardLendBook_Load(sender, e);
@@ -176,15 +172,20 @@ namespace DoAnQuanLyThuVien
 
         private void repositoryItemButtonEdit1_Click(object sender, EventArgs e)
         {
-                    }
+        }
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             if ((gridView1.GetFocusedRow() as REQUEST_FORM).STATUS != "Đã trả")
             {
-
                 (gridView1.GetFocusedRow() as REQUEST_FORM).STATUS = "Đã trả";
                 db8.SaveChanges();
+
+                DataTable table = DataProvider.Instance.ExecuteQuery("SELECT BOOKS_ID FROM dbo.REQUEST_INFO WHERE REQUEST_ID = " + (gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID);
+                foreach(DataRow item in table.Rows)
+                {
+                    ReqCardInfoDAO.Instance.UpdateBookRemainAccept(item.ToString());
+                }
             }
             fCreateCardLendBook_Load(sender, e);
         }
