@@ -31,16 +31,13 @@ namespace DoAnQuanLyThuVien.DTO
     
         public virtual ICollection<REQUEST_FORM> REQUEST_FORM { get; set; }
 
-        public READER_INF()
-        {
+        public READER_INF() { }
 
-        }
-
-        public READER_INF(string username, string pass, string name = "")
+        public READER_INF(string _USERNAME, string _PASSWORD, string _NAME)
         {
-            USERNAME = username;
-            PASSWORD = pass;
-            NAME = name;
+            USERNAME = _USERNAME;
+            PASSWORD = _PASSWORD;
+            NAME = _NAME;
         }
 
         public READER_INF(DataRow source)

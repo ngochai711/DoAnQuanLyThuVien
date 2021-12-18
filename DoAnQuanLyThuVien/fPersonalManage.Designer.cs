@@ -910,7 +910,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_reader_resetPass.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_reader_resetPass.TabIndex = 9;
             this.simpleButton_reader_resetPass.Text = "Đặt lại mật khẩu";
-            this.simpleButton_reader_resetPass.Click += new System.EventHandler(this.button_resetPass_Click);
+            this.simpleButton_reader_resetPass.Click += new System.EventHandler(this.simpleButton_resetPass_Click);
             // 
             // simpleButton_readerAccount
             // 
@@ -965,7 +965,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerEdit.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_readerEdit.TabIndex = 4;
             this.simpleButton_readerEdit.Text = "Cập nhật";
-            this.simpleButton_readerEdit.Click += new System.EventHandler(this.simpleButton_readerEdit_Click);
+            this.simpleButton_readerEdit.Click += new System.EventHandler(this.simpleButton_Edit_Click);
             // 
             // simpleButton_readerDel
             // 
@@ -980,7 +980,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerDel.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_readerDel.TabIndex = 3;
             this.simpleButton_readerDel.Text = "Xóa";
-            this.simpleButton_readerDel.Click += new System.EventHandler(this.simpleButton_readerDel_Click);
+            this.simpleButton_readerDel.Click += new System.EventHandler(this.simpleButton_Del_Click);
             // 
             // separatorControl1
             // 
@@ -1005,7 +1005,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerAdd.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_readerAdd.TabIndex = 1;
             this.simpleButton_readerAdd.Text = "Thêm";
-            this.simpleButton_readerAdd.Click += new System.EventHandler(this.simpleButton_readerAdd_Click);
+            this.simpleButton_readerAdd.Click += new System.EventHandler(this.simpleButton_Add_Click);
             // 
             // simpleButton_Close1
             // 
@@ -1647,6 +1647,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staff_resetPass.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_staff_resetPass.TabIndex = 9;
             this.simpleButton_staff_resetPass.Text = "Đặt lại mật khẩu";
+            this.simpleButton_staff_resetPass.Click += new System.EventHandler(this.simpleButton_resetPass_Click);
             // 
             // simpleButton_staffAccount
             // 
@@ -1675,6 +1676,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffReload.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_staffReload.TabIndex = 6;
             this.simpleButton_staffReload.Text = "Làm mới";
+            this.simpleButton_staffReload.Click += new System.EventHandler(this.simpleButton_Reload_Click);
             // 
             // separatorControl5
             // 
@@ -1699,7 +1701,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffEdit.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_staffEdit.TabIndex = 4;
             this.simpleButton_staffEdit.Text = "Cập nhật";
-            this.simpleButton_staffEdit.Click += new System.EventHandler(this.simpleButton_staffEdit_Click);
+            this.simpleButton_staffEdit.Click += new System.EventHandler(this.simpleButton_Edit_Click);
             // 
             // simpleButton_staffDel
             // 
@@ -1714,7 +1716,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffDel.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_staffDel.TabIndex = 3;
             this.simpleButton_staffDel.Text = "Xóa";
-            this.simpleButton_staffDel.Click += new System.EventHandler(this.simpleButton5_Click);
+            this.simpleButton_staffDel.Click += new System.EventHandler(this.simpleButton_Del_Click);
             // 
             // separatorControl6
             // 
@@ -1739,7 +1741,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffAdd.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_staffAdd.TabIndex = 1;
             this.simpleButton_staffAdd.Text = "Thêm";
-            this.simpleButton_staffAdd.Click += new System.EventHandler(this.simpleButton_Reload_Click);
+            this.simpleButton_staffAdd.Click += new System.EventHandler(this.simpleButton_Add_Click);
             // 
             // simpleButton_Close2
             // 

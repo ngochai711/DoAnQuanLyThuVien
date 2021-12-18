@@ -14,46 +14,99 @@ namespace DoAnQuanLyThuVien
     public partial class fnewAccount : Form
     {
         private SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
+        private bool isStaff;
 
-        public fnewAccount()
+        public fnewAccount(bool _isStaff)
         {
             InitializeComponent();
+
+            set_formIcon(_isStaff);
+
+            isStaff = _isStaff;   
         }
 
+
+
+        //---Region_1---
+        #region ===============Controls_Events===============
         private void button_signIn_Click(object sender, EventArgs e)
         {
+            newAccount_signIn();
+        }
+        #endregion
+
+        //---Region_2---
+        #region ================Funcs_&_Procs================
+        private void set_formIcon(bool _isStaff)
+        {
+            Bitmap formIcon;
+
+            if (_isStaff)
+                formIcon = new Bitmap(global::DoAnQuanLyThuVien.Properties.Resources.librarian_2);
+            else
+                formIcon = new Bitmap(global::DoAnQuanLyThuVien.Properties.Resources.reader);
+
+            panel_Icon.BackgroundImage = formIcon;
+        }
+
+        private bool is_dataErrors(string _userName, string _passWord, string _rePass)
+        {
+            if (_userName == "")
+            {
+                DialogResult empty_Username = MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return true;
+            }
+
+            if (_passWord != _rePass)
+            {
+                DialogResult unmatched_Password = MessageBox.Show("Mật khẩu không trùng khớp!");
+                return true;
+            }
+
+            return false;
+        }
+
+        private void newAccount_signIn()
+        {
+            string name = NAMEtextEdit.Text == "" ? "Unnamed User" : NAMEtextEdit.Text;
+            string reEnter_Password = REPASStextEdit.Text;
             string userName = USERNAMETextEdit.Text;
             string passWord = PASSWORDTextEdit.Text;
-            string name = NAMEtextEdit.Text;
-            string rePass = REPASStextEdit.Text;
 
-            if (userName == "")
-            {
-                DialogResult emptyUsername = MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+            if (is_dataErrors(userName, passWord, reEnter_Password))
                 return;
-            }
-
-            if (passWord != rePass)
-            {
-                DialogResult unmatchedPass = MessageBox.Show("Mật khẩu không trùng khớp!");
-                return;
-            }
 
             try
             {
-                READER_INF item = new READER_INF(userName, passWord, name);
-
-                dataBase.READER_INF.Add(item);
-                dataBase.SaveChanges();
-
-                this.DialogResult = DialogResult.OK;
-
-                this.Close();
+                newAccount_signIn(userName, passWord, name);
             }
             catch
             {
-                DialogResult duplicatedusername = MessageBox.Show("tài khoản đã tồn tại!");
+                DialogResult duplicated_Username = MessageBox.Show("Tài khoản đã tồn tại!");
             }
         }
+
+        private void newAccount_signIn(string _userName, string _passWord, string _name)
+        {
+            if (isStaff)
+            {
+                var item = new STAFF_INF(_userName, _passWord, _name);
+
+                dataBase.STAFF_INF.Add(item);
+            }
+            else
+            {
+                var item = new READER_INF(_userName, _passWord, _name);
+
+                dataBase.READER_INF.Add(item);
+            }
+
+            dataBase.SaveChanges();
+
+            DialogResult successfully_Create_newAccount = MessageBox.Show("Tạo tài khoản mới thành công!");
+
+            this.Close();
+        }
+        #endregion
     }
 }

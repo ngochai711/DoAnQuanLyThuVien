@@ -44,7 +44,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForNAME = new DevExpress.XtraLayout.LayoutControlItem();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_Icon = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
@@ -228,14 +228,14 @@ namespace DoAnQuanLyThuVien
             this.ItemForNAME.TextLocation = DevExpress.Utils.Locations.Top;
             this.ItemForNAME.TextSize = new System.Drawing.Size(109, 17);
             // 
-            // panel2
+            // panel_Icon
             // 
-            this.panel2.BackgroundImage = global::DoAnQuanLyThuVien.Properties.Resources.reader;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(43, 29);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(80, 80);
-            this.panel2.TabIndex = 2;
+            this.panel_Icon.BackgroundImage = global::DoAnQuanLyThuVien.Properties.Resources.librarian_2;
+            this.panel_Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_Icon.Location = new System.Drawing.Point(43, 29);
+            this.panel_Icon.Name = "panel_Icon";
+            this.panel_Icon.Size = new System.Drawing.Size(80, 80);
+            this.panel_Icon.TabIndex = 2;
             // 
             // fnewAccount
             // 
@@ -243,7 +243,7 @@ namespace DoAnQuanLyThuVien
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(394, 470);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel_Icon);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label_formName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -287,6 +287,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraEditors.TextEdit NAMEtextEdit;
         private DevExpress.XtraLayout.LayoutControlItem ItemForNAME;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_Icon;
     }
 }

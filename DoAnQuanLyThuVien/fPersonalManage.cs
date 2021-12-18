@@ -26,8 +26,9 @@ namespace DoAnQuanLyThuVien
 
             //dataLayoutControl_Reader.OptionsView.IsReadOnly = DevExpress.Utils.DefaultBoolean.True;
         }
-        //
-        //
+ 
+
+
         //---Region_1---
         #region ===============Controls_Events===============
         private void simpleButton_Close_Click(object sender, EventArgs e)
@@ -35,27 +36,59 @@ namespace DoAnQuanLyThuVien
             this.Close();
         }
 
+        private void simpleButton_Add_Click(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
+            bool isStaff = eventCalled_Button.Name == "simpleButton_staffAdd";
+            
+            fnewAccount f = new fnewAccount(isStaff);
+            f.ShowDialog();
+
+            data_Load();
+        }
+
+        private void simpleButton_Del_Click(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
+            bool isStaff = eventCalled_Button.Name == "simpleButton_staffDel";
+
+            if (MessageBox.Show("Xóa tài khoản này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (isStaff)
+                    delete_staffAccount();
+                else
+                    delete_readerAccount();          
+        }
+
+        private void simpleButton_Edit_Click(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
+
+            if (eventCalled_Button.Name == "simpleButton_staffEdit")
+                sTAFFINFBindingSource.EndEdit();
+            else
+                rEADERINFBindingSource.EndEdit();
+
+            dataChange_Save();
+        }
+
         private void simpleButton_Reload_Click(object sender, EventArgs e)
         {
             data_Load();
         }
 
-        private void simpleButton_readerEdit_Click(object sender, EventArgs e)
+        private void simpleButton_resetPass_Click(object sender, EventArgs e)
         {
-            rEADERINFBindingSource.EndEdit();
+            DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
 
-            dataChange_Save();
-        }
+            if (eventCalled_Button.Name == "simpleButton_staff_resetPass")
+                resetPass_Staff();
+            else
+                resetPass_Reader();
 
-        private void simpleButton_staffEdit_Click(object sender, EventArgs e)
-        {
-            sTAFFINFBindingSource.EndEdit();
-
-            dataChange_Save();
+            data_Load();
         }
         #endregion
-        //--------------
-        //
+
         //---Region_2---
         #region ================Funcs_&_Procs================
         private void data_Load()
@@ -75,31 +108,28 @@ namespace DoAnQuanLyThuVien
                 data_Load();
             }
         }
-        #endregion
-        //--------------
-        //
-        //
-        private void simpleButton_readerAdd_Click(object sender, EventArgs e)
+
+        private void delete_readerAccount()
         {
-            fnewAccount f = new fnewAccount();
-            f.ShowDialog();
-            data_Load();
+            var item = rEADERINFBindingSource.Current as READER_INF;
+
+            dataBase.Entry<READER_INF>(item).State = System.Data.Entity.EntityState.Deleted;
+            dataBase.SaveChanges();
+
+            rEADERINFBindingSource.RemoveCurrent();
         }
 
-        private void simpleButton_readerDel_Click(object sender, EventArgs e)
+        private void delete_staffAccount()
         {
-            if (MessageBox.Show("Bạn có chắc muốn xóa thông tin này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                var item = rEADERINFBindingSource.Current as READER_INF;
+            var item = sTAFFINFBindingSource.Current as STAFF_INF;
 
-                dataBase.Entry<READER_INF>(item).State = System.Data.Entity.EntityState.Deleted;
-                dataBase.SaveChanges();
+            dataBase.Entry<STAFF_INF>(item).State = System.Data.Entity.EntityState.Deleted;
+            dataBase.SaveChanges();
 
-                rEADERINFBindingSource.RemoveCurrent();
-            }
+            sTAFFINFBindingSource.RemoveCurrent();
         }
 
-        private void button_resetPass_Click(object sender, EventArgs e)
+        private void resetPass_Reader()
         {
             var item = rEADERINFBindingSource.Current as READER_INF;
 
@@ -107,9 +137,18 @@ namespace DoAnQuanLyThuVien
 
             dataBase.READER_INF.AddOrUpdate(item);
             dataBase.SaveChanges();
-
-            data_Load();
         }
+
+        private void resetPass_Staff()
+        {
+            var item = sTAFFINFBindingSource.Current as STAFF_INF;
+
+            item.PASSWORD = "1";
+
+            dataBase.STAFF_INF.AddOrUpdate(item);
+            dataBase.SaveChanges();
+        }
+        #endregion
 
         private void AVATARPictureEdit_Click(object sender, EventArgs e)
         {
@@ -145,11 +184,6 @@ namespace DoAnQuanLyThuVien
             f.ShowDialog();
             
             data_Load();
-        }
-
-        private void simpleButton5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

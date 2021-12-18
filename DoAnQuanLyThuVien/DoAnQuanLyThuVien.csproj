@@ -303,6 +303,7 @@
       <DependentUpon>SharedModel.edmx</DependentUpon>
       <LastGenOutput>SharedModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\librarian 2.jpg" />
     <None Include="Resources\reader.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
