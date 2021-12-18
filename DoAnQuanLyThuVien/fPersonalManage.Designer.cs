@@ -34,20 +34,20 @@ namespace DoAnQuanLyThuVien
             this.tabControl_pplManage = new System.Windows.Forms.TabControl();
             this.tabPage_Reader = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.AVATARPictureEdit = new DevExpress.XtraEditors.PictureEdit();
+            this.dataLayoutControl_Reader = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.READERAVATARPictureEdit = new DevExpress.XtraEditors.PictureEdit();
             this.rEADERINFBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.READERIDTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.PIDTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.SEXComboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.BIRTHDateEdit = new DevExpress.XtraEditors.DateEdit();
-            this.AGETextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ADDRESSTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.PHONETextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.EMAILTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.NOTEMemoEdit = new DevExpress.XtraEditors.MemoEdit();
-            this.NAMETextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.READERPIDTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.READERSEXComboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.READERBIRTHDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.READERAGETextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.READERADDRESSTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.READERPHONETextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.READEREMAILTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.READERNOTEMemoEdit = new DevExpress.XtraEditors.MemoEdit();
+            this.READERNAMETextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.READERTYPEtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForAVATAR = new DevExpress.XtraLayout.LayoutControlItem();
@@ -69,7 +69,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForREADERID = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_Reader = new DevExpress.XtraGrid.GridControl();
             this.gridView_Reader = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colUSERNAME = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPASSWORD = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -88,31 +88,31 @@ namespace DoAnQuanLyThuVien
             this.panel1 = new System.Windows.Forms.Panel();
             this.separatorControl3 = new DevExpress.XtraEditors.SeparatorControl();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button_resetPass = new DevExpress.XtraEditors.SimpleButton();
-            this.button_Account = new DevExpress.XtraEditors.SimpleButton();
-            this.button_Refresh = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_reader_resetPass = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_readerAccount = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_readerReload = new DevExpress.XtraEditors.SimpleButton();
             this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
-            this.Button_Edit = new DevExpress.XtraEditors.SimpleButton();
-            this.button_Delete = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_readerEdit = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_readerDel = new DevExpress.XtraEditors.SimpleButton();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.button_Add = new DevExpress.XtraEditors.SimpleButton();
-            this.button_Close = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_readerAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_Close1 = new DevExpress.XtraEditors.SimpleButton();
             this.tabPage_Staff = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataLayoutControl2 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.STAFFAVATARpictureEdit = new DevExpress.XtraEditors.PictureEdit();
             this.sTAFFINFBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.STAFFIDTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.STAFFPIDTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.STAFFNAMEtextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.STAFFSEXcomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.STAFFBIRTHdateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.STAFFAGEtextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.STAFFADDRESStextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.STAFFPHONEtextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.STAFFEMAILtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.TYPEComboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.STAFFNOTEmemoEdit = new DevExpress.XtraEditors.MemoEdit();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -133,7 +133,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForSTAFFID = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_Staff = new DevExpress.XtraGrid.GridControl();
             this.gridView_Staff = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colUSERNAME1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPASSWORD1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -152,36 +152,36 @@ namespace DoAnQuanLyThuVien
             this.panel7 = new System.Windows.Forms.Panel();
             this.separatorControl4 = new DevExpress.XtraEditors.SeparatorControl();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_staff_resetPass = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_staffAccount = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_staffReload = new DevExpress.XtraEditors.SimpleButton();
             this.separatorControl5 = new DevExpress.XtraEditors.SeparatorControl();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_staffEdit = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_staffDel = new DevExpress.XtraEditors.SimpleButton();
             this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_staffAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton_Close2 = new DevExpress.XtraEditors.SimpleButton();
             this.openFileDialog_Avatar = new System.Windows.Forms.OpenFileDialog();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.tabControl_pplManage.SuspendLayout();
             this.tabPage_Reader.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
-            this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AVATARPictureEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl_Reader)).BeginInit();
+            this.dataLayoutControl_Reader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.READERAVATARPictureEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEADERINFBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.READERIDTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PIDTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SEXComboBoxEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BIRTHDateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BIRTHDateEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AGETextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ADDRESSTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PHONETextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EMAILTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NOTEMemoEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NAMETextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERPIDTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERSEXComboBoxEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERBIRTHDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERBIRTHDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERAGETextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERADDRESSTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERPHONETextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READEREMAILTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERNOTEMemoEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERNAMETextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERTYPEtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAVATAR)).BeginInit();
@@ -203,7 +203,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.ItemForREADERID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Reader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Reader)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
@@ -213,20 +213,20 @@ namespace DoAnQuanLyThuVien
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl2)).BeginInit();
             this.dataLayoutControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFAVATARpictureEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sTAFFINFBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STAFFIDTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFPIDTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFNAMEtextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFSEXcomboBoxEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFBIRTHdateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFBIRTHdateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFAGEtextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFADDRESStextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFPHONEtextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFEMAILtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TYPEComboBoxEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFNOTEmemoEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
@@ -247,7 +247,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSTAFFID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Staff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Staff)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
@@ -285,45 +285,48 @@ namespace DoAnQuanLyThuVien
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.Controls.Add(this.dataLayoutControl1);
+            this.panel3.Controls.Add(this.dataLayoutControl_Reader);
             this.panel3.Location = new System.Drawing.Point(1047, 109);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(524, 812);
             this.panel3.TabIndex = 2;
             // 
-            // dataLayoutControl1
+            // dataLayoutControl_Reader
             // 
-            this.dataLayoutControl1.Controls.Add(this.AVATARPictureEdit);
-            this.dataLayoutControl1.Controls.Add(this.READERIDTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.PIDTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.SEXComboBoxEdit);
-            this.dataLayoutControl1.Controls.Add(this.BIRTHDateEdit);
-            this.dataLayoutControl1.Controls.Add(this.AGETextEdit);
-            this.dataLayoutControl1.Controls.Add(this.ADDRESSTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.PHONETextEdit);
-            this.dataLayoutControl1.Controls.Add(this.EMAILTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.NOTEMemoEdit);
-            this.dataLayoutControl1.Controls.Add(this.NAMETextEdit);
-            this.dataLayoutControl1.Controls.Add(this.textEdit7);
-            this.dataLayoutControl1.DataSource = this.rEADERINFBindingSource;
-            this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.dataLayoutControl1.Name = "dataLayoutControl1";
-            this.dataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1108, 148, 812, 500);
-            this.dataLayoutControl1.Root = this.Root;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(524, 812);
-            this.dataLayoutControl1.TabIndex = 0;
-            this.dataLayoutControl1.Text = "dataLayoutControl1";
+            this.dataLayoutControl_Reader.Controls.Add(this.READERAVATARPictureEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERIDTextEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERPIDTextEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERSEXComboBoxEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERBIRTHDateEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERAGETextEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERADDRESSTextEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERPHONETextEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READEREMAILTextEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERNOTEMemoEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERNAMETextEdit);
+            this.dataLayoutControl_Reader.Controls.Add(this.READERTYPEtextEdit);
+            this.dataLayoutControl_Reader.DataSource = this.rEADERINFBindingSource;
+            this.dataLayoutControl_Reader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataLayoutControl_Reader.Location = new System.Drawing.Point(0, 0);
+            this.dataLayoutControl_Reader.Name = "dataLayoutControl_Reader";
+            this.dataLayoutControl_Reader.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1108, 148, 812, 500);
+            this.dataLayoutControl_Reader.Root = this.Root;
+            this.dataLayoutControl_Reader.Size = new System.Drawing.Size(524, 812);
+            this.dataLayoutControl_Reader.TabIndex = 0;
+            this.dataLayoutControl_Reader.Text = "dataLayoutControl1";
             // 
-            // AVATARPictureEdit
+            // READERAVATARPictureEdit
             // 
-            this.AVATARPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "AVATAR", true));
-            this.AVATARPictureEdit.Location = new System.Drawing.Point(12, 12);
-            this.AVATARPictureEdit.Name = "AVATARPictureEdit";
-            this.AVATARPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.AVATARPictureEdit.Size = new System.Drawing.Size(174, 262);
-            this.AVATARPictureEdit.StyleController = this.dataLayoutControl1;
-            this.AVATARPictureEdit.TabIndex = 4;
+            this.READERAVATARPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "AVATAR", true));
+            this.READERAVATARPictureEdit.Location = new System.Drawing.Point(12, 12);
+            this.READERAVATARPictureEdit.Name = "READERAVATARPictureEdit";
+            this.READERAVATARPictureEdit.Properties.ShowEditMenuItem = DevExpress.Utils.DefaultBoolean.False;
+            this.READERAVATARPictureEdit.Properties.ShowMenu = false;
+            this.READERAVATARPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.READERAVATARPictureEdit.Size = new System.Drawing.Size(174, 262);
+            this.READERAVATARPictureEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERAVATARPictureEdit.TabIndex = 4;
+            this.READERAVATARPictureEdit.Click += new System.EventHandler(this.AVATARPictureEdit_Click);
             // 
             // rEADERINFBindingSource
             // 
@@ -335,124 +338,124 @@ namespace DoAnQuanLyThuVien
             this.READERIDTextEdit.Location = new System.Drawing.Point(293, 214);
             this.READERIDTextEdit.Name = "READERIDTextEdit";
             this.READERIDTextEdit.Size = new System.Drawing.Size(207, 22);
-            this.READERIDTextEdit.StyleController = this.dataLayoutControl1;
+            this.READERIDTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERIDTextEdit.TabIndex = 5;
             // 
-            // PIDTextEdit
+            // READERPIDTextEdit
             // 
-            this.PIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "PID", true));
-            this.PIDTextEdit.Location = new System.Drawing.Point(293, 240);
-            this.PIDTextEdit.Name = "PIDTextEdit";
-            this.PIDTextEdit.Size = new System.Drawing.Size(207, 22);
-            this.PIDTextEdit.StyleController = this.dataLayoutControl1;
-            this.PIDTextEdit.TabIndex = 6;
+            this.READERPIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "PID", true));
+            this.READERPIDTextEdit.Location = new System.Drawing.Point(293, 240);
+            this.READERPIDTextEdit.Name = "READERPIDTextEdit";
+            this.READERPIDTextEdit.Size = new System.Drawing.Size(207, 22);
+            this.READERPIDTextEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERPIDTextEdit.TabIndex = 6;
             // 
-            // SEXComboBoxEdit
+            // READERSEXComboBoxEdit
             // 
-            this.SEXComboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "SEX", true));
-            this.SEXComboBoxEdit.Location = new System.Drawing.Point(359, 337);
-            this.SEXComboBoxEdit.Name = "SEXComboBoxEdit";
-            this.SEXComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.READERSEXComboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "SEX", true));
+            this.READERSEXComboBoxEdit.Location = new System.Drawing.Point(359, 337);
+            this.READERSEXComboBoxEdit.Name = "READERSEXComboBoxEdit";
+            this.READERSEXComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.SEXComboBoxEdit.Properties.DropDownRows = 3;
-            this.SEXComboBoxEdit.Properties.Items.AddRange(new object[] {
+            this.READERSEXComboBoxEdit.Properties.DropDownRows = 3;
+            this.READERSEXComboBoxEdit.Properties.Items.AddRange(new object[] {
             "Nam",
             "Nữ",
             "Khác"});
-            this.SEXComboBoxEdit.Size = new System.Drawing.Size(141, 22);
-            this.SEXComboBoxEdit.StyleController = this.dataLayoutControl1;
-            this.SEXComboBoxEdit.TabIndex = 8;
+            this.READERSEXComboBoxEdit.Size = new System.Drawing.Size(141, 22);
+            this.READERSEXComboBoxEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERSEXComboBoxEdit.TabIndex = 8;
             // 
-            // BIRTHDateEdit
+            // READERBIRTHDateEdit
             // 
-            this.BIRTHDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "BIRTH", true));
-            this.BIRTHDateEdit.EditValue = null;
-            this.BIRTHDateEdit.Location = new System.Drawing.Point(24, 336);
-            this.BIRTHDateEdit.Name = "BIRTHDateEdit";
-            this.BIRTHDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.BIRTHDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.READERBIRTHDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "BIRTH", true));
+            this.READERBIRTHDateEdit.EditValue = null;
+            this.READERBIRTHDateEdit.Location = new System.Drawing.Point(24, 336);
+            this.READERBIRTHDateEdit.Name = "READERBIRTHDateEdit";
+            this.READERBIRTHDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.READERBIRTHDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.BIRTHDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.READERBIRTHDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.BIRTHDateEdit.Size = new System.Drawing.Size(195, 22);
-            this.BIRTHDateEdit.StyleController = this.dataLayoutControl1;
-            this.BIRTHDateEdit.TabIndex = 9;
+            this.READERBIRTHDateEdit.Size = new System.Drawing.Size(195, 22);
+            this.READERBIRTHDateEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERBIRTHDateEdit.TabIndex = 9;
             // 
-            // AGETextEdit
+            // READERAGETextEdit
             // 
-            this.AGETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "AGE", true));
-            this.AGETextEdit.EditValue = "12";
-            this.AGETextEdit.Location = new System.Drawing.Point(223, 337);
-            this.AGETextEdit.Name = "AGETextEdit";
-            this.AGETextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.AGETextEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.AGETextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.AGETextEdit.Properties.Mask.EditMask = "N0";
-            this.AGETextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.AGETextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.AGETextEdit.Size = new System.Drawing.Size(132, 22);
-            this.AGETextEdit.StyleController = this.dataLayoutControl1;
-            this.AGETextEdit.TabIndex = 10;
+            this.READERAGETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "AGE", true));
+            this.READERAGETextEdit.EditValue = "12";
+            this.READERAGETextEdit.Location = new System.Drawing.Point(223, 337);
+            this.READERAGETextEdit.Name = "READERAGETextEdit";
+            this.READERAGETextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.READERAGETextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.READERAGETextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.READERAGETextEdit.Properties.Mask.EditMask = "N0";
+            this.READERAGETextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.READERAGETextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.READERAGETextEdit.Size = new System.Drawing.Size(132, 22);
+            this.READERAGETextEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERAGETextEdit.TabIndex = 10;
             // 
-            // ADDRESSTextEdit
+            // READERADDRESSTextEdit
             // 
-            this.ADDRESSTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "ADDRESS", true));
-            this.ADDRESSTextEdit.Location = new System.Drawing.Point(24, 383);
-            this.ADDRESSTextEdit.Name = "ADDRESSTextEdit";
-            this.ADDRESSTextEdit.Size = new System.Drawing.Size(476, 22);
-            this.ADDRESSTextEdit.StyleController = this.dataLayoutControl1;
-            this.ADDRESSTextEdit.TabIndex = 11;
+            this.READERADDRESSTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "ADDRESS", true));
+            this.READERADDRESSTextEdit.Location = new System.Drawing.Point(24, 383);
+            this.READERADDRESSTextEdit.Name = "READERADDRESSTextEdit";
+            this.READERADDRESSTextEdit.Size = new System.Drawing.Size(476, 22);
+            this.READERADDRESSTextEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERADDRESSTextEdit.TabIndex = 11;
             // 
-            // PHONETextEdit
+            // READERPHONETextEdit
             // 
-            this.PHONETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "PHONE", true));
-            this.PHONETextEdit.Location = new System.Drawing.Point(24, 428);
-            this.PHONETextEdit.Name = "PHONETextEdit";
-            this.PHONETextEdit.Size = new System.Drawing.Size(476, 22);
-            this.PHONETextEdit.StyleController = this.dataLayoutControl1;
-            this.PHONETextEdit.TabIndex = 12;
+            this.READERPHONETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "PHONE", true));
+            this.READERPHONETextEdit.Location = new System.Drawing.Point(24, 428);
+            this.READERPHONETextEdit.Name = "READERPHONETextEdit";
+            this.READERPHONETextEdit.Size = new System.Drawing.Size(476, 22);
+            this.READERPHONETextEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERPHONETextEdit.TabIndex = 12;
             // 
-            // EMAILTextEdit
+            // READEREMAILTextEdit
             // 
-            this.EMAILTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "EMAIL", true));
-            this.EMAILTextEdit.Location = new System.Drawing.Point(24, 473);
-            this.EMAILTextEdit.Name = "EMAILTextEdit";
-            this.EMAILTextEdit.Size = new System.Drawing.Size(476, 22);
-            this.EMAILTextEdit.StyleController = this.dataLayoutControl1;
-            this.EMAILTextEdit.TabIndex = 13;
+            this.READEREMAILTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "EMAIL", true));
+            this.READEREMAILTextEdit.Location = new System.Drawing.Point(24, 473);
+            this.READEREMAILTextEdit.Name = "READEREMAILTextEdit";
+            this.READEREMAILTextEdit.Size = new System.Drawing.Size(476, 22);
+            this.READEREMAILTextEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READEREMAILTextEdit.TabIndex = 13;
             // 
-            // NOTEMemoEdit
+            // READERNOTEMemoEdit
             // 
-            this.NOTEMemoEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "NOTE", true));
-            this.NOTEMemoEdit.Location = new System.Drawing.Point(24, 550);
-            this.NOTEMemoEdit.Name = "NOTEMemoEdit";
-            this.NOTEMemoEdit.Size = new System.Drawing.Size(476, 238);
-            this.NOTEMemoEdit.StyleController = this.dataLayoutControl1;
-            this.NOTEMemoEdit.TabIndex = 14;
+            this.READERNOTEMemoEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "NOTE", true));
+            this.READERNOTEMemoEdit.Location = new System.Drawing.Point(24, 550);
+            this.READERNOTEMemoEdit.Name = "READERNOTEMemoEdit";
+            this.READERNOTEMemoEdit.Size = new System.Drawing.Size(476, 238);
+            this.READERNOTEMemoEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERNOTEMemoEdit.TabIndex = 14;
             // 
-            // NAMETextEdit
+            // READERNAMETextEdit
             // 
-            this.NAMETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "NAME", true));
-            this.NAMETextEdit.Location = new System.Drawing.Point(202, 90);
-            this.NAMETextEdit.Name = "NAMETextEdit";
-            this.NAMETextEdit.Properties.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NAMETextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NAMETextEdit.Properties.Appearance.Options.UseBackColor = true;
-            this.NAMETextEdit.Properties.Appearance.Options.UseFont = true;
-            this.NAMETextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.NAMETextEdit.Size = new System.Drawing.Size(298, 28);
-            this.NAMETextEdit.StyleController = this.dataLayoutControl1;
-            this.NAMETextEdit.TabIndex = 7;
+            this.READERNAMETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "NAME", true));
+            this.READERNAMETextEdit.Location = new System.Drawing.Point(202, 90);
+            this.READERNAMETextEdit.Name = "READERNAMETextEdit";
+            this.READERNAMETextEdit.Properties.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.READERNAMETextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.READERNAMETextEdit.Properties.Appearance.Options.UseBackColor = true;
+            this.READERNAMETextEdit.Properties.Appearance.Options.UseFont = true;
+            this.READERNAMETextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.READERNAMETextEdit.Size = new System.Drawing.Size(298, 28);
+            this.READERNAMETextEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERNAMETextEdit.TabIndex = 7;
             // 
-            // textEdit7
+            // READERTYPEtextEdit
             // 
-            this.textEdit7.EditValue = "Người đọc";
-            this.textEdit7.Location = new System.Drawing.Point(293, 188);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Properties.ReadOnly = true;
-            this.textEdit7.Size = new System.Drawing.Size(207, 22);
-            this.textEdit7.StyleController = this.dataLayoutControl1;
-            this.textEdit7.TabIndex = 15;
+            this.READERTYPEtextEdit.EditValue = "Người đọc";
+            this.READERTYPEtextEdit.Location = new System.Drawing.Point(293, 188);
+            this.READERTYPEtextEdit.Name = "READERTYPEtextEdit";
+            this.READERTYPEtextEdit.Properties.ReadOnly = true;
+            this.READERTYPEtextEdit.Size = new System.Drawing.Size(207, 22);
+            this.READERTYPEtextEdit.StyleController = this.dataLayoutControl_Reader;
+            this.READERTYPEtextEdit.TabIndex = 15;
             // 
             // Root
             // 
@@ -482,7 +485,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForAVATAR
             // 
-            this.ItemForAVATAR.Control = this.AVATARPictureEdit;
+            this.ItemForAVATAR.Control = this.READERAVATARPictureEdit;
             this.ItemForAVATAR.Location = new System.Drawing.Point(0, 0);
             this.ItemForAVATAR.MinSize = new System.Drawing.Size(24, 24);
             this.ItemForAVATAR.Name = "ItemForAVATAR";
@@ -530,7 +533,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForBIRTH
             // 
-            this.ItemForBIRTH.Control = this.BIRTHDateEdit;
+            this.ItemForBIRTH.Control = this.READERBIRTHDateEdit;
             this.ItemForBIRTH.Location = new System.Drawing.Point(0, 0);
             this.ItemForBIRTH.Name = "ItemForBIRTH";
             this.ItemForBIRTH.Size = new System.Drawing.Size(199, 46);
@@ -540,7 +543,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForADDRESS
             // 
-            this.ItemForADDRESS.Control = this.ADDRESSTextEdit;
+            this.ItemForADDRESS.Control = this.READERADDRESSTextEdit;
             this.ItemForADDRESS.Location = new System.Drawing.Point(0, 46);
             this.ItemForADDRESS.Name = "ItemForADDRESS";
             this.ItemForADDRESS.Size = new System.Drawing.Size(480, 46);
@@ -550,7 +553,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForPHONE
             // 
-            this.ItemForPHONE.Control = this.PHONETextEdit;
+            this.ItemForPHONE.Control = this.READERPHONETextEdit;
             this.ItemForPHONE.Location = new System.Drawing.Point(0, 92);
             this.ItemForPHONE.Name = "ItemForPHONE";
             this.ItemForPHONE.Size = new System.Drawing.Size(480, 45);
@@ -560,7 +563,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForEMAIL
             // 
-            this.ItemForEMAIL.Control = this.EMAILTextEdit;
+            this.ItemForEMAIL.Control = this.READEREMAILTextEdit;
             this.ItemForEMAIL.Location = new System.Drawing.Point(0, 137);
             this.ItemForEMAIL.Name = "ItemForEMAIL";
             this.ItemForEMAIL.Size = new System.Drawing.Size(480, 45);
@@ -570,7 +573,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForAGE
             // 
-            this.ItemForAGE.Control = this.AGETextEdit;
+            this.ItemForAGE.Control = this.READERAGETextEdit;
             this.ItemForAGE.Location = new System.Drawing.Point(199, 0);
             this.ItemForAGE.Name = "ItemForAGE";
             this.ItemForAGE.Size = new System.Drawing.Size(136, 46);
@@ -580,7 +583,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForSEX
             // 
-            this.ItemForSEX.Control = this.SEXComboBoxEdit;
+            this.ItemForSEX.Control = this.READERSEXComboBoxEdit;
             this.ItemForSEX.Location = new System.Drawing.Point(335, 0);
             this.ItemForSEX.Name = "ItemForSEX";
             this.ItemForSEX.Size = new System.Drawing.Size(145, 46);
@@ -599,7 +602,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForNOTE
             // 
-            this.ItemForNOTE.Control = this.NOTEMemoEdit;
+            this.ItemForNOTE.Control = this.READERNOTEMemoEdit;
             this.ItemForNOTE.Location = new System.Drawing.Point(0, 0);
             this.ItemForNOTE.MinSize = new System.Drawing.Size(62, 45);
             this.ItemForNOTE.Name = "ItemForNOTE";
@@ -632,7 +635,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForNAME.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.ItemForNAME.AppearanceItemCaption.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.ItemForNAME.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.ItemForNAME.Control = this.NAMETextEdit;
+            this.ItemForNAME.Control = this.READERNAMETextEdit;
             this.ItemForNAME.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.ItemForNAME.Location = new System.Drawing.Point(0, 0);
             this.ItemForNAME.MinSize = new System.Drawing.Size(50, 25);
@@ -646,7 +649,7 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForPID
             // 
-            this.ItemForPID.Control = this.PIDTextEdit;
+            this.ItemForPID.Control = this.READERPIDTextEdit;
             this.ItemForPID.Location = new System.Drawing.Point(0, 216);
             this.ItemForPID.Name = "ItemForPID";
             this.ItemForPID.Size = new System.Drawing.Size(302, 26);
@@ -666,7 +669,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem11
             // 
-            this.layoutControlItem11.Control = this.textEdit7;
+            this.layoutControlItem11.Control = this.READERTYPEtextEdit;
             this.layoutControlItem11.Location = new System.Drawing.Point(0, 164);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(302, 26);
@@ -678,26 +681,30 @@ namespace DoAnQuanLyThuVien
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.gridControl1);
+            this.panel2.Controls.Add(this.gridControl_Reader);
             this.panel2.Location = new System.Drawing.Point(0, 109);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1040, 812);
             this.panel2.TabIndex = 1;
             // 
-            // gridControl1
+            // gridControl_Reader
             // 
-            this.gridControl1.DataSource = this.rEADERINFBindingSource;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
-            this.gridControl1.MainView = this.gridView_Reader;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1040, 812);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_Reader.DataSource = this.rEADERINFBindingSource;
+            this.gridControl_Reader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_Reader.Location = new System.Drawing.Point(0, 0);
+            this.gridControl_Reader.MainView = this.gridView_Reader;
+            this.gridControl_Reader.Name = "gridControl_Reader";
+            this.gridControl_Reader.Size = new System.Drawing.Size(1040, 812);
+            this.gridControl_Reader.TabIndex = 0;
+            this.gridControl_Reader.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_Reader});
             // 
             // gridView_Reader
             // 
+            this.gridView_Reader.Appearance.FocusedRow.BorderColor = System.Drawing.Color.Transparent;
+            this.gridView_Reader.Appearance.FocusedRow.Options.UseBorderColor = true;
+            this.gridView_Reader.Appearance.SelectedRow.BorderColor = System.Drawing.Color.Transparent;
+            this.gridView_Reader.Appearance.SelectedRow.Options.UseBorderColor = true;
             this.gridView_Reader.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colUSERNAME,
             this.colPASSWORD,
@@ -713,9 +720,14 @@ namespace DoAnQuanLyThuVien
             this.colEMAIL,
             this.colNOTE,
             this.colREQUEST_FORM});
-            this.gridView_Reader.GridControl = this.gridControl1;
+            this.gridView_Reader.GridControl = this.gridControl_Reader;
             this.gridView_Reader.Name = "gridView_Reader";
+            this.gridView_Reader.OptionsBehavior.Editable = false;
+            this.gridView_Reader.OptionsCustomization.AllowColumnMoving = false;
+            this.gridView_Reader.OptionsCustomization.AllowColumnResizing = false;
+            this.gridView_Reader.OptionsFilter.AllowMultiSelectInCheckedFilterPopup = false;
             this.gridView_Reader.OptionsFind.AlwaysVisible = true;
+            this.gridView_Reader.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView_Reader.OptionsView.ColumnAutoWidth = false;
             this.gridView_Reader.OptionsView.ShowGroupPanel = false;
             // 
@@ -848,15 +860,15 @@ namespace DoAnQuanLyThuVien
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Controls.Add(this.separatorControl3);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.button_resetPass);
-            this.panel1.Controls.Add(this.button_Account);
-            this.panel1.Controls.Add(this.button_Refresh);
+            this.panel1.Controls.Add(this.simpleButton_reader_resetPass);
+            this.panel1.Controls.Add(this.simpleButton_readerAccount);
+            this.panel1.Controls.Add(this.simpleButton_readerReload);
             this.panel1.Controls.Add(this.separatorControl2);
-            this.panel1.Controls.Add(this.Button_Edit);
-            this.panel1.Controls.Add(this.button_Delete);
+            this.panel1.Controls.Add(this.simpleButton_readerEdit);
+            this.panel1.Controls.Add(this.simpleButton_readerDel);
             this.panel1.Controls.Add(this.separatorControl1);
-            this.panel1.Controls.Add(this.button_Add);
-            this.panel1.Controls.Add(this.button_Close);
+            this.panel1.Controls.Add(this.simpleButton_readerAdd);
+            this.panel1.Controls.Add(this.simpleButton_Close1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1574, 106);
@@ -883,52 +895,52 @@ namespace DoAnQuanLyThuVien
             this.panel4.Size = new System.Drawing.Size(98, 98);
             this.panel4.TabIndex = 10;
             // 
-            // button_resetPass
+            // simpleButton_reader_resetPass
             // 
-            this.button_resetPass.AllowFocus = false;
-            this.button_resetPass.Appearance.Options.UseTextOptions = true;
-            this.button_resetPass.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.button_resetPass.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.button_resetPass.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("button_resetPass.ImageOptions.SvgImage")));
-            this.button_resetPass.Location = new System.Drawing.Point(731, 4);
-            this.button_resetPass.Margin = new System.Windows.Forms.Padding(15);
-            this.button_resetPass.Name = "button_resetPass";
-            this.button_resetPass.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.button_resetPass.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.button_resetPass.Size = new System.Drawing.Size(94, 98);
-            this.button_resetPass.TabIndex = 9;
-            this.button_resetPass.Text = "Đặt lại mật khẩu";
-            this.button_resetPass.Click += new System.EventHandler(this.button_resetPass_Click);
+            this.simpleButton_reader_resetPass.AllowFocus = false;
+            this.simpleButton_reader_resetPass.Appearance.Options.UseTextOptions = true;
+            this.simpleButton_reader_resetPass.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.simpleButton_reader_resetPass.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_reader_resetPass.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_reader_resetPass.ImageOptions.SvgImage")));
+            this.simpleButton_reader_resetPass.Location = new System.Drawing.Point(731, 4);
+            this.simpleButton_reader_resetPass.Margin = new System.Windows.Forms.Padding(15);
+            this.simpleButton_reader_resetPass.Name = "simpleButton_reader_resetPass";
+            this.simpleButton_reader_resetPass.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_reader_resetPass.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_reader_resetPass.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_reader_resetPass.TabIndex = 9;
+            this.simpleButton_reader_resetPass.Text = "Đặt lại mật khẩu";
+            this.simpleButton_reader_resetPass.Click += new System.EventHandler(this.button_resetPass_Click);
             // 
-            // button_Account
+            // simpleButton_readerAccount
             // 
-            this.button_Account.AllowFocus = false;
-            this.button_Account.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.button_Account.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("button_Account.ImageOptions.SvgImage")));
-            this.button_Account.Location = new System.Drawing.Point(631, 4);
-            this.button_Account.Margin = new System.Windows.Forms.Padding(12);
-            this.button_Account.Name = "button_Account";
-            this.button_Account.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.button_Account.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.button_Account.Size = new System.Drawing.Size(94, 98);
-            this.button_Account.TabIndex = 8;
-            this.button_Account.Text = "Tài khoản";
-            this.button_Account.Click += new System.EventHandler(this.button_Account_Click);
+            this.simpleButton_readerAccount.AllowFocus = false;
+            this.simpleButton_readerAccount.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_readerAccount.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerAccount.ImageOptions.SvgImage")));
+            this.simpleButton_readerAccount.Location = new System.Drawing.Point(631, 4);
+            this.simpleButton_readerAccount.Margin = new System.Windows.Forms.Padding(12);
+            this.simpleButton_readerAccount.Name = "simpleButton_readerAccount";
+            this.simpleButton_readerAccount.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_readerAccount.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_readerAccount.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerAccount.TabIndex = 8;
+            this.simpleButton_readerAccount.Text = "Tài khoản";
+            this.simpleButton_readerAccount.Click += new System.EventHandler(this.button_Account_Click);
             // 
-            // button_Refresh
+            // simpleButton_readerReload
             // 
-            this.button_Refresh.AllowFocus = false;
-            this.button_Refresh.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.button_Refresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("button_Refresh.ImageOptions.SvgImage")));
-            this.button_Refresh.Location = new System.Drawing.Point(485, 4);
-            this.button_Refresh.Margin = new System.Windows.Forms.Padding(10);
-            this.button_Refresh.Name = "button_Refresh";
-            this.button_Refresh.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.button_Refresh.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.button_Refresh.Size = new System.Drawing.Size(94, 98);
-            this.button_Refresh.TabIndex = 6;
-            this.button_Refresh.Text = "Làm mới";
-            this.button_Refresh.Click += new System.EventHandler(this.button_Refresh_Click);
+            this.simpleButton_readerReload.AllowFocus = false;
+            this.simpleButton_readerReload.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_readerReload.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerReload.ImageOptions.SvgImage")));
+            this.simpleButton_readerReload.Location = new System.Drawing.Point(485, 4);
+            this.simpleButton_readerReload.Margin = new System.Windows.Forms.Padding(10);
+            this.simpleButton_readerReload.Name = "simpleButton_readerReload";
+            this.simpleButton_readerReload.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_readerReload.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_readerReload.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerReload.TabIndex = 6;
+            this.simpleButton_readerReload.Text = "Làm mới";
+            this.simpleButton_readerReload.Click += new System.EventHandler(this.simpleButton_Reload_Click);
             // 
             // separatorControl2
             // 
@@ -940,35 +952,35 @@ namespace DoAnQuanLyThuVien
             this.separatorControl2.Size = new System.Drawing.Size(31, 98);
             this.separatorControl2.TabIndex = 5;
             // 
-            // Button_Edit
+            // simpleButton_readerEdit
             // 
-            this.Button_Edit.AllowFocus = false;
-            this.Button_Edit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.Button_Edit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Button_Edit.ImageOptions.SvgImage")));
-            this.Button_Edit.Location = new System.Drawing.Point(348, 4);
-            this.Button_Edit.Margin = new System.Windows.Forms.Padding(8);
-            this.Button_Edit.Name = "Button_Edit";
-            this.Button_Edit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.Button_Edit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.Button_Edit.Size = new System.Drawing.Size(94, 98);
-            this.Button_Edit.TabIndex = 4;
-            this.Button_Edit.Text = "Cập nhật";
-            this.Button_Edit.Click += new System.EventHandler(this.Button_Edit_Click);
+            this.simpleButton_readerEdit.AllowFocus = false;
+            this.simpleButton_readerEdit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_readerEdit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerEdit.ImageOptions.SvgImage")));
+            this.simpleButton_readerEdit.Location = new System.Drawing.Point(348, 4);
+            this.simpleButton_readerEdit.Margin = new System.Windows.Forms.Padding(8);
+            this.simpleButton_readerEdit.Name = "simpleButton_readerEdit";
+            this.simpleButton_readerEdit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_readerEdit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_readerEdit.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerEdit.TabIndex = 4;
+            this.simpleButton_readerEdit.Text = "Cập nhật";
+            this.simpleButton_readerEdit.Click += new System.EventHandler(this.simpleButton_readerEdit_Click);
             // 
-            // button_Delete
+            // simpleButton_readerDel
             // 
-            this.button_Delete.AllowFocus = false;
-            this.button_Delete.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.button_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("button_Delete.ImageOptions.SvgImage")));
-            this.button_Delete.Location = new System.Drawing.Point(244, 4);
-            this.button_Delete.Margin = new System.Windows.Forms.Padding(6);
-            this.button_Delete.Name = "button_Delete";
-            this.button_Delete.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.button_Delete.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.button_Delete.Size = new System.Drawing.Size(94, 98);
-            this.button_Delete.TabIndex = 3;
-            this.button_Delete.Text = "Xóa";
-            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
+            this.simpleButton_readerDel.AllowFocus = false;
+            this.simpleButton_readerDel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_readerDel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerDel.ImageOptions.SvgImage")));
+            this.simpleButton_readerDel.Location = new System.Drawing.Point(244, 4);
+            this.simpleButton_readerDel.Margin = new System.Windows.Forms.Padding(6);
+            this.simpleButton_readerDel.Name = "simpleButton_readerDel";
+            this.simpleButton_readerDel.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_readerDel.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_readerDel.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerDel.TabIndex = 3;
+            this.simpleButton_readerDel.Text = "Xóa";
+            this.simpleButton_readerDel.Click += new System.EventHandler(this.simpleButton_readerDel_Click);
             // 
             // separatorControl1
             // 
@@ -980,37 +992,37 @@ namespace DoAnQuanLyThuVien
             this.separatorControl1.Size = new System.Drawing.Size(25, 98);
             this.separatorControl1.TabIndex = 2;
             // 
-            // button_Add
+            // simpleButton_readerAdd
             // 
-            this.button_Add.AllowFocus = false;
-            this.button_Add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.button_Add.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("button_Add.ImageOptions.SvgImage")));
-            this.button_Add.Location = new System.Drawing.Point(139, 4);
-            this.button_Add.Margin = new System.Windows.Forms.Padding(5);
-            this.button_Add.Name = "button_Add";
-            this.button_Add.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.button_Add.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.button_Add.Size = new System.Drawing.Size(94, 98);
-            this.button_Add.TabIndex = 1;
-            this.button_Add.Text = "Thêm";
-            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
+            this.simpleButton_readerAdd.AllowFocus = false;
+            this.simpleButton_readerAdd.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_readerAdd.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerAdd.ImageOptions.SvgImage")));
+            this.simpleButton_readerAdd.Location = new System.Drawing.Point(139, 4);
+            this.simpleButton_readerAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton_readerAdd.Name = "simpleButton_readerAdd";
+            this.simpleButton_readerAdd.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_readerAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_readerAdd.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerAdd.TabIndex = 1;
+            this.simpleButton_readerAdd.Text = "Thêm";
+            this.simpleButton_readerAdd.Click += new System.EventHandler(this.simpleButton_readerAdd_Click);
             // 
-            // button_Close
+            // simpleButton_Close1
             // 
-            this.button_Close.AllowFocus = false;
-            this.button_Close.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.button_Close.Appearance.Options.UseBorderColor = true;
-            this.button_Close.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.button_Close.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("button_Close.ImageOptions.SvgImage")));
-            this.button_Close.Location = new System.Drawing.Point(12, 4);
-            this.button_Close.Margin = new System.Windows.Forms.Padding(4);
-            this.button_Close.Name = "button_Close";
-            this.button_Close.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.button_Close.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.button_Close.Size = new System.Drawing.Size(94, 98);
-            this.button_Close.TabIndex = 0;
-            this.button_Close.Text = "Thoát";
-            this.button_Close.Click += new System.EventHandler(this.button_Exit_Click);
+            this.simpleButton_Close1.AllowFocus = false;
+            this.simpleButton_Close1.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.simpleButton_Close1.Appearance.Options.UseBorderColor = true;
+            this.simpleButton_Close1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_Close1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_Close1.ImageOptions.SvgImage")));
+            this.simpleButton_Close1.Location = new System.Drawing.Point(12, 4);
+            this.simpleButton_Close1.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton_Close1.Name = "simpleButton_Close1";
+            this.simpleButton_Close1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_Close1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_Close1.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_Close1.TabIndex = 0;
+            this.simpleButton_Close1.Text = "Thoát";
+            this.simpleButton_Close1.Click += new System.EventHandler(this.simpleButton_Close_Click);
             // 
             // tabPage_Staff
             // 
@@ -1038,18 +1050,18 @@ namespace DoAnQuanLyThuVien
             // 
             // dataLayoutControl2
             // 
-            this.dataLayoutControl2.Controls.Add(this.pictureEdit1);
+            this.dataLayoutControl2.Controls.Add(this.STAFFAVATARpictureEdit);
             this.dataLayoutControl2.Controls.Add(this.STAFFIDTextEdit);
-            this.dataLayoutControl2.Controls.Add(this.textEdit1);
-            this.dataLayoutControl2.Controls.Add(this.textEdit2);
-            this.dataLayoutControl2.Controls.Add(this.comboBoxEdit1);
-            this.dataLayoutControl2.Controls.Add(this.dateEdit1);
-            this.dataLayoutControl2.Controls.Add(this.textEdit3);
-            this.dataLayoutControl2.Controls.Add(this.textEdit4);
-            this.dataLayoutControl2.Controls.Add(this.textEdit5);
-            this.dataLayoutControl2.Controls.Add(this.textEdit6);
+            this.dataLayoutControl2.Controls.Add(this.STAFFPIDTextEdit);
+            this.dataLayoutControl2.Controls.Add(this.STAFFNAMEtextEdit);
+            this.dataLayoutControl2.Controls.Add(this.STAFFSEXcomboBoxEdit);
+            this.dataLayoutControl2.Controls.Add(this.STAFFBIRTHdateEdit);
+            this.dataLayoutControl2.Controls.Add(this.STAFFAGEtextEdit);
+            this.dataLayoutControl2.Controls.Add(this.STAFFADDRESStextEdit);
+            this.dataLayoutControl2.Controls.Add(this.STAFFPHONEtextEdit);
+            this.dataLayoutControl2.Controls.Add(this.STAFFEMAILtextEdit);
             this.dataLayoutControl2.Controls.Add(this.TYPEComboBoxEdit);
-            this.dataLayoutControl2.Controls.Add(this.memoEdit1);
+            this.dataLayoutControl2.Controls.Add(this.STAFFNOTEmemoEdit);
             this.dataLayoutControl2.DataSource = this.sTAFFINFBindingSource;
             this.dataLayoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl2.Location = new System.Drawing.Point(0, 0);
@@ -1060,15 +1072,15 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl2.TabIndex = 0;
             this.dataLayoutControl2.Text = "dataLayoutControl2";
             // 
-            // pictureEdit1
+            // STAFFAVATARpictureEdit
             // 
-            this.pictureEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "AVATAR", true));
-            this.pictureEdit1.Location = new System.Drawing.Point(12, 12);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.pictureEdit1.Size = new System.Drawing.Size(174, 262);
-            this.pictureEdit1.StyleController = this.dataLayoutControl2;
-            this.pictureEdit1.TabIndex = 4;
+            this.STAFFAVATARpictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "AVATAR", true));
+            this.STAFFAVATARpictureEdit.Location = new System.Drawing.Point(12, 12);
+            this.STAFFAVATARpictureEdit.Name = "STAFFAVATARpictureEdit";
+            this.STAFFAVATARpictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.STAFFAVATARpictureEdit.Size = new System.Drawing.Size(174, 262);
+            this.STAFFAVATARpictureEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFAVATARpictureEdit.TabIndex = 4;
             // 
             // sTAFFINFBindingSource
             // 
@@ -1083,101 +1095,101 @@ namespace DoAnQuanLyThuVien
             this.STAFFIDTextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFIDTextEdit.TabIndex = 5;
             // 
-            // textEdit1
+            // STAFFPIDTextEdit
             // 
-            this.textEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PID", true));
-            this.textEdit1.Location = new System.Drawing.Point(293, 240);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(208, 22);
-            this.textEdit1.StyleController = this.dataLayoutControl2;
-            this.textEdit1.TabIndex = 6;
+            this.STAFFPIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PID", true));
+            this.STAFFPIDTextEdit.Location = new System.Drawing.Point(293, 240);
+            this.STAFFPIDTextEdit.Name = "STAFFPIDTextEdit";
+            this.STAFFPIDTextEdit.Size = new System.Drawing.Size(208, 22);
+            this.STAFFPIDTextEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFPIDTextEdit.TabIndex = 6;
             // 
-            // textEdit2
+            // STAFFNAMEtextEdit
             // 
-            this.textEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NAME", true));
-            this.textEdit2.Location = new System.Drawing.Point(202, 91);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit2.Size = new System.Drawing.Size(299, 28);
-            this.textEdit2.StyleController = this.dataLayoutControl2;
-            this.textEdit2.TabIndex = 7;
+            this.STAFFNAMEtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NAME", true));
+            this.STAFFNAMEtextEdit.Location = new System.Drawing.Point(202, 91);
+            this.STAFFNAMEtextEdit.Name = "STAFFNAMEtextEdit";
+            this.STAFFNAMEtextEdit.Properties.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.STAFFNAMEtextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.STAFFNAMEtextEdit.Properties.Appearance.Options.UseBackColor = true;
+            this.STAFFNAMEtextEdit.Properties.Appearance.Options.UseFont = true;
+            this.STAFFNAMEtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.STAFFNAMEtextEdit.Size = new System.Drawing.Size(299, 28);
+            this.STAFFNAMEtextEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFNAMEtextEdit.TabIndex = 7;
             // 
-            // comboBoxEdit1
+            // STAFFSEXcomboBoxEdit
             // 
-            this.comboBoxEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "SEX", true));
-            this.comboBoxEdit1.Location = new System.Drawing.Point(356, 337);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.STAFFSEXcomboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "SEX", true));
+            this.STAFFSEXcomboBoxEdit.Location = new System.Drawing.Point(356, 337);
+            this.STAFFSEXcomboBoxEdit.Name = "STAFFSEXcomboBoxEdit";
+            this.STAFFSEXcomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            this.STAFFSEXcomboBoxEdit.Properties.Items.AddRange(new object[] {
             "Nam",
             "Nữ",
             "Khác"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(145, 22);
-            this.comboBoxEdit1.StyleController = this.dataLayoutControl2;
-            this.comboBoxEdit1.TabIndex = 8;
+            this.STAFFSEXcomboBoxEdit.Size = new System.Drawing.Size(145, 22);
+            this.STAFFSEXcomboBoxEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFSEXcomboBoxEdit.TabIndex = 8;
             // 
-            // dateEdit1
+            // STAFFBIRTHdateEdit
             // 
-            this.dateEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "BIRTH", true));
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(24, 336);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.STAFFBIRTHdateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "BIRTH", true));
+            this.STAFFBIRTHdateEdit.EditValue = null;
+            this.STAFFBIRTHdateEdit.Location = new System.Drawing.Point(24, 336);
+            this.STAFFBIRTHdateEdit.Name = "STAFFBIRTHdateEdit";
+            this.STAFFBIRTHdateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.STAFFBIRTHdateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.STAFFBIRTHdateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(194, 22);
-            this.dateEdit1.StyleController = this.dataLayoutControl2;
-            this.dateEdit1.TabIndex = 9;
+            this.STAFFBIRTHdateEdit.Size = new System.Drawing.Size(194, 22);
+            this.STAFFBIRTHdateEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFBIRTHdateEdit.TabIndex = 9;
             // 
-            // textEdit3
+            // STAFFAGEtextEdit
             // 
-            this.textEdit3.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "AGE", true));
-            this.textEdit3.EditValue = "12";
-            this.textEdit3.Location = new System.Drawing.Point(222, 337);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.textEdit3.Properties.Appearance.Options.UseTextOptions = true;
-            this.textEdit3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.textEdit3.Properties.Mask.EditMask = "N0";
-            this.textEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.textEdit3.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.textEdit3.Size = new System.Drawing.Size(130, 22);
-            this.textEdit3.StyleController = this.dataLayoutControl2;
-            this.textEdit3.TabIndex = 10;
+            this.STAFFAGEtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "AGE", true));
+            this.STAFFAGEtextEdit.EditValue = "12";
+            this.STAFFAGEtextEdit.Location = new System.Drawing.Point(222, 337);
+            this.STAFFAGEtextEdit.Name = "STAFFAGEtextEdit";
+            this.STAFFAGEtextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.STAFFAGEtextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.STAFFAGEtextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.STAFFAGEtextEdit.Properties.Mask.EditMask = "N0";
+            this.STAFFAGEtextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.STAFFAGEtextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.STAFFAGEtextEdit.Size = new System.Drawing.Size(130, 22);
+            this.STAFFAGEtextEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFAGEtextEdit.TabIndex = 10;
             // 
-            // textEdit4
+            // STAFFADDRESStextEdit
             // 
-            this.textEdit4.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "ADDRESS", true));
-            this.textEdit4.Location = new System.Drawing.Point(24, 383);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(477, 22);
-            this.textEdit4.StyleController = this.dataLayoutControl2;
-            this.textEdit4.TabIndex = 11;
+            this.STAFFADDRESStextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "ADDRESS", true));
+            this.STAFFADDRESStextEdit.Location = new System.Drawing.Point(24, 383);
+            this.STAFFADDRESStextEdit.Name = "STAFFADDRESStextEdit";
+            this.STAFFADDRESStextEdit.Size = new System.Drawing.Size(477, 22);
+            this.STAFFADDRESStextEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFADDRESStextEdit.TabIndex = 11;
             // 
-            // textEdit5
+            // STAFFPHONEtextEdit
             // 
-            this.textEdit5.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PHONE", true));
-            this.textEdit5.Location = new System.Drawing.Point(24, 428);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(477, 22);
-            this.textEdit5.StyleController = this.dataLayoutControl2;
-            this.textEdit5.TabIndex = 12;
+            this.STAFFPHONEtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PHONE", true));
+            this.STAFFPHONEtextEdit.Location = new System.Drawing.Point(24, 428);
+            this.STAFFPHONEtextEdit.Name = "STAFFPHONEtextEdit";
+            this.STAFFPHONEtextEdit.Size = new System.Drawing.Size(477, 22);
+            this.STAFFPHONEtextEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFPHONEtextEdit.TabIndex = 12;
             // 
-            // textEdit6
+            // STAFFEMAILtextEdit
             // 
-            this.textEdit6.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "EMAIL", true));
-            this.textEdit6.Location = new System.Drawing.Point(24, 473);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(477, 22);
-            this.textEdit6.StyleController = this.dataLayoutControl2;
-            this.textEdit6.TabIndex = 13;
+            this.STAFFEMAILtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "EMAIL", true));
+            this.STAFFEMAILtextEdit.Location = new System.Drawing.Point(24, 473);
+            this.STAFFEMAILtextEdit.Name = "STAFFEMAILtextEdit";
+            this.STAFFEMAILtextEdit.Size = new System.Drawing.Size(477, 22);
+            this.STAFFEMAILtextEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFEMAILtextEdit.TabIndex = 13;
             // 
             // TYPEComboBoxEdit
             // 
@@ -1196,14 +1208,14 @@ namespace DoAnQuanLyThuVien
             this.TYPEComboBoxEdit.StyleController = this.dataLayoutControl2;
             this.TYPEComboBoxEdit.TabIndex = 14;
             // 
-            // memoEdit1
+            // STAFFNOTEmemoEdit
             // 
-            this.memoEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NOTE", true));
-            this.memoEdit1.Location = new System.Drawing.Point(24, 549);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(477, 242);
-            this.memoEdit1.StyleController = this.dataLayoutControl2;
-            this.memoEdit1.TabIndex = 15;
+            this.STAFFNOTEmemoEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NOTE", true));
+            this.STAFFNOTEmemoEdit.Location = new System.Drawing.Point(24, 549);
+            this.STAFFNOTEmemoEdit.Name = "STAFFNOTEmemoEdit";
+            this.STAFFNOTEmemoEdit.Size = new System.Drawing.Size(477, 242);
+            this.STAFFNOTEmemoEdit.StyleController = this.dataLayoutControl2;
+            this.STAFFNOTEmemoEdit.TabIndex = 15;
             // 
             // layoutControlGroup5
             // 
@@ -1232,7 +1244,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.pictureEdit1;
+            this.layoutControlItem1.Control = this.STAFFAVATARpictureEdit;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(24, 24);
             this.layoutControlItem1.Name = "ItemForAVATAR";
@@ -1254,7 +1266,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem10
             // 
-            this.layoutControlItem10.Control = this.memoEdit1;
+            this.layoutControlItem10.Control = this.STAFFNOTEmemoEdit;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem10.MinSize = new System.Drawing.Size(74, 26);
             this.layoutControlItem10.Name = "ItemForNOTE";
@@ -1281,7 +1293,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem5
             // 
-            this.layoutControlItem5.Control = this.dateEdit1;
+            this.layoutControlItem5.Control = this.STAFFBIRTHdateEdit;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "ItemForBIRTH";
             this.layoutControlItem5.Size = new System.Drawing.Size(198, 46);
@@ -1291,7 +1303,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.textEdit3;
+            this.layoutControlItem6.Control = this.STAFFAGEtextEdit;
             this.layoutControlItem6.Location = new System.Drawing.Point(198, 0);
             this.layoutControlItem6.Name = "ItemForAGE";
             this.layoutControlItem6.Size = new System.Drawing.Size(134, 46);
@@ -1301,7 +1313,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem4
             // 
-            this.layoutControlItem4.Control = this.comboBoxEdit1;
+            this.layoutControlItem4.Control = this.STAFFSEXcomboBoxEdit;
             this.layoutControlItem4.Location = new System.Drawing.Point(332, 0);
             this.layoutControlItem4.Name = "ItemForSEX";
             this.layoutControlItem4.Size = new System.Drawing.Size(149, 46);
@@ -1311,7 +1323,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem7
             // 
-            this.layoutControlItem7.Control = this.textEdit4;
+            this.layoutControlItem7.Control = this.STAFFADDRESStextEdit;
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 46);
             this.layoutControlItem7.Name = "ItemForADDRESS";
             this.layoutControlItem7.Size = new System.Drawing.Size(481, 46);
@@ -1321,7 +1333,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem8
             // 
-            this.layoutControlItem8.Control = this.textEdit5;
+            this.layoutControlItem8.Control = this.STAFFPHONEtextEdit;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 92);
             this.layoutControlItem8.Name = "ItemForPHONE";
             this.layoutControlItem8.Size = new System.Drawing.Size(481, 45);
@@ -1331,7 +1343,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem9
             // 
-            this.layoutControlItem9.Control = this.textEdit6;
+            this.layoutControlItem9.Control = this.STAFFEMAILtextEdit;
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 137);
             this.layoutControlItem9.Name = "ItemForEMAIL";
             this.layoutControlItem9.Size = new System.Drawing.Size(481, 45);
@@ -1369,7 +1381,7 @@ namespace DoAnQuanLyThuVien
             // layoutControlItem3
             // 
             this.layoutControlItem3.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.layoutControlItem3.Control = this.textEdit2;
+            this.layoutControlItem3.Control = this.STAFFNAMEtextEdit;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.MinSize = new System.Drawing.Size(124, 26);
             this.layoutControlItem3.Name = "ItemForNAME";
@@ -1399,7 +1411,7 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.Control = this.textEdit1;
+            this.layoutControlItem2.Control = this.STAFFPIDTextEdit;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 216);
             this.layoutControlItem2.Name = "ItemForPID";
             this.layoutControlItem2.Size = new System.Drawing.Size(303, 26);
@@ -1411,22 +1423,23 @@ namespace DoAnQuanLyThuVien
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.gridControl2);
+            this.panel5.Controls.Add(this.gridControl_Staff);
             this.panel5.Location = new System.Drawing.Point(0, 109);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1040, 812);
             this.panel5.TabIndex = 4;
             // 
-            // gridControl2
+            // gridControl_Staff
             // 
-            this.gridControl2.DataSource = this.sTAFFINFBindingSource;
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.Location = new System.Drawing.Point(0, 0);
-            this.gridControl2.MainView = this.gridView_Staff;
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1040, 812);
-            this.gridControl2.TabIndex = 0;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_Staff.AllowRestoreSelectionAndFocusedRow = DevExpress.Utils.DefaultBoolean.False;
+            this.gridControl_Staff.DataSource = this.sTAFFINFBindingSource;
+            this.gridControl_Staff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_Staff.Location = new System.Drawing.Point(0, 0);
+            this.gridControl_Staff.MainView = this.gridView_Staff;
+            this.gridControl_Staff.Name = "gridControl_Staff";
+            this.gridControl_Staff.Size = new System.Drawing.Size(1040, 812);
+            this.gridControl_Staff.TabIndex = 0;
+            this.gridControl_Staff.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_Staff});
             // 
             // gridView_Staff
@@ -1446,9 +1459,10 @@ namespace DoAnQuanLyThuVien
             this.colEMAIL1,
             this.colTYPE,
             this.colNOTE1});
-            this.gridView_Staff.GridControl = this.gridControl2;
+            this.gridView_Staff.GridControl = this.gridControl_Staff;
             this.gridView_Staff.Name = "gridView_Staff";
             this.gridView_Staff.OptionsFind.AlwaysVisible = true;
+            this.gridView_Staff.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView_Staff.OptionsView.ShowGroupPanel = false;
             // 
             // colUSERNAME1
@@ -1583,15 +1597,15 @@ namespace DoAnQuanLyThuVien
             this.panel7.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel7.Controls.Add(this.separatorControl4);
             this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.simpleButton1);
-            this.panel7.Controls.Add(this.simpleButton2);
-            this.panel7.Controls.Add(this.simpleButton3);
+            this.panel7.Controls.Add(this.simpleButton_staff_resetPass);
+            this.panel7.Controls.Add(this.simpleButton_staffAccount);
+            this.panel7.Controls.Add(this.simpleButton_staffReload);
             this.panel7.Controls.Add(this.separatorControl5);
-            this.panel7.Controls.Add(this.simpleButton4);
-            this.panel7.Controls.Add(this.simpleButton5);
+            this.panel7.Controls.Add(this.simpleButton_staffEdit);
+            this.panel7.Controls.Add(this.simpleButton_staffDel);
             this.panel7.Controls.Add(this.separatorControl6);
-            this.panel7.Controls.Add(this.simpleButton6);
-            this.panel7.Controls.Add(this.simpleButton7);
+            this.panel7.Controls.Add(this.simpleButton_staffAdd);
+            this.panel7.Controls.Add(this.simpleButton_Close2);
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1574, 106);
@@ -1618,49 +1632,49 @@ namespace DoAnQuanLyThuVien
             this.panel8.Size = new System.Drawing.Size(98, 98);
             this.panel8.TabIndex = 10;
             // 
-            // simpleButton1
+            // simpleButton_staff_resetPass
             // 
-            this.simpleButton1.AllowFocus = false;
-            this.simpleButton1.Appearance.Options.UseTextOptions = true;
-            this.simpleButton1.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(731, 4);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(15);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton1.Size = new System.Drawing.Size(94, 98);
-            this.simpleButton1.TabIndex = 9;
-            this.simpleButton1.Text = "Đặt lại mật khẩu";
+            this.simpleButton_staff_resetPass.AllowFocus = false;
+            this.simpleButton_staff_resetPass.Appearance.Options.UseTextOptions = true;
+            this.simpleButton_staff_resetPass.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.simpleButton_staff_resetPass.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_staff_resetPass.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staff_resetPass.ImageOptions.SvgImage")));
+            this.simpleButton_staff_resetPass.Location = new System.Drawing.Point(731, 4);
+            this.simpleButton_staff_resetPass.Margin = new System.Windows.Forms.Padding(15);
+            this.simpleButton_staff_resetPass.Name = "simpleButton_staff_resetPass";
+            this.simpleButton_staff_resetPass.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_staff_resetPass.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_staff_resetPass.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staff_resetPass.TabIndex = 9;
+            this.simpleButton_staff_resetPass.Text = "Đặt lại mật khẩu";
             // 
-            // simpleButton2
+            // simpleButton_staffAccount
             // 
-            this.simpleButton2.AllowFocus = false;
-            this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(631, 4);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(12);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton2.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton2.Size = new System.Drawing.Size(94, 98);
-            this.simpleButton2.TabIndex = 8;
-            this.simpleButton2.Text = "Tài khoản";
+            this.simpleButton_staffAccount.AllowFocus = false;
+            this.simpleButton_staffAccount.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_staffAccount.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffAccount.ImageOptions.SvgImage")));
+            this.simpleButton_staffAccount.Location = new System.Drawing.Point(631, 4);
+            this.simpleButton_staffAccount.Margin = new System.Windows.Forms.Padding(12);
+            this.simpleButton_staffAccount.Name = "simpleButton_staffAccount";
+            this.simpleButton_staffAccount.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_staffAccount.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_staffAccount.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffAccount.TabIndex = 8;
+            this.simpleButton_staffAccount.Text = "Tài khoản";
             // 
-            // simpleButton3
+            // simpleButton_staffReload
             // 
-            this.simpleButton3.AllowFocus = false;
-            this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(485, 4);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(10);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton3.Size = new System.Drawing.Size(94, 98);
-            this.simpleButton3.TabIndex = 6;
-            this.simpleButton3.Text = "Làm mới";
+            this.simpleButton_staffReload.AllowFocus = false;
+            this.simpleButton_staffReload.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_staffReload.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffReload.ImageOptions.SvgImage")));
+            this.simpleButton_staffReload.Location = new System.Drawing.Point(485, 4);
+            this.simpleButton_staffReload.Margin = new System.Windows.Forms.Padding(10);
+            this.simpleButton_staffReload.Name = "simpleButton_staffReload";
+            this.simpleButton_staffReload.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_staffReload.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_staffReload.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffReload.TabIndex = 6;
+            this.simpleButton_staffReload.Text = "Làm mới";
             // 
             // separatorControl5
             // 
@@ -1672,33 +1686,35 @@ namespace DoAnQuanLyThuVien
             this.separatorControl5.Size = new System.Drawing.Size(31, 98);
             this.separatorControl5.TabIndex = 5;
             // 
-            // simpleButton4
+            // simpleButton_staffEdit
             // 
-            this.simpleButton4.AllowFocus = false;
-            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
-            this.simpleButton4.Location = new System.Drawing.Point(348, 4);
-            this.simpleButton4.Margin = new System.Windows.Forms.Padding(8);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton4.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton4.Size = new System.Drawing.Size(94, 98);
-            this.simpleButton4.TabIndex = 4;
-            this.simpleButton4.Text = "Cập nhật";
+            this.simpleButton_staffEdit.AllowFocus = false;
+            this.simpleButton_staffEdit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_staffEdit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffEdit.ImageOptions.SvgImage")));
+            this.simpleButton_staffEdit.Location = new System.Drawing.Point(348, 4);
+            this.simpleButton_staffEdit.Margin = new System.Windows.Forms.Padding(8);
+            this.simpleButton_staffEdit.Name = "simpleButton_staffEdit";
+            this.simpleButton_staffEdit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_staffEdit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_staffEdit.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffEdit.TabIndex = 4;
+            this.simpleButton_staffEdit.Text = "Cập nhật";
+            this.simpleButton_staffEdit.Click += new System.EventHandler(this.simpleButton_staffEdit_Click);
             // 
-            // simpleButton5
+            // simpleButton_staffDel
             // 
-            this.simpleButton5.AllowFocus = false;
-            this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
-            this.simpleButton5.Location = new System.Drawing.Point(244, 4);
-            this.simpleButton5.Margin = new System.Windows.Forms.Padding(6);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton5.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton5.Size = new System.Drawing.Size(94, 98);
-            this.simpleButton5.TabIndex = 3;
-            this.simpleButton5.Text = "Xóa";
+            this.simpleButton_staffDel.AllowFocus = false;
+            this.simpleButton_staffDel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_staffDel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffDel.ImageOptions.SvgImage")));
+            this.simpleButton_staffDel.Location = new System.Drawing.Point(244, 4);
+            this.simpleButton_staffDel.Margin = new System.Windows.Forms.Padding(6);
+            this.simpleButton_staffDel.Name = "simpleButton_staffDel";
+            this.simpleButton_staffDel.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_staffDel.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_staffDel.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffDel.TabIndex = 3;
+            this.simpleButton_staffDel.Text = "Xóa";
+            this.simpleButton_staffDel.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // separatorControl6
             // 
@@ -1710,36 +1726,37 @@ namespace DoAnQuanLyThuVien
             this.separatorControl6.Size = new System.Drawing.Size(25, 98);
             this.separatorControl6.TabIndex = 2;
             // 
-            // simpleButton6
+            // simpleButton_staffAdd
             // 
-            this.simpleButton6.AllowFocus = false;
-            this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton6.ImageOptions.SvgImage")));
-            this.simpleButton6.Location = new System.Drawing.Point(139, 4);
-            this.simpleButton6.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton6.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton6.Size = new System.Drawing.Size(94, 98);
-            this.simpleButton6.TabIndex = 1;
-            this.simpleButton6.Text = "Thêm";
+            this.simpleButton_staffAdd.AllowFocus = false;
+            this.simpleButton_staffAdd.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_staffAdd.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffAdd.ImageOptions.SvgImage")));
+            this.simpleButton_staffAdd.Location = new System.Drawing.Point(139, 4);
+            this.simpleButton_staffAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton_staffAdd.Name = "simpleButton_staffAdd";
+            this.simpleButton_staffAdd.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_staffAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_staffAdd.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffAdd.TabIndex = 1;
+            this.simpleButton_staffAdd.Text = "Thêm";
+            this.simpleButton_staffAdd.Click += new System.EventHandler(this.simpleButton_Reload_Click);
             // 
-            // simpleButton7
+            // simpleButton_Close2
             // 
-            this.simpleButton7.AllowFocus = false;
-            this.simpleButton7.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.simpleButton7.Appearance.Options.UseBorderColor = true;
-            this.simpleButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
-            this.simpleButton7.Location = new System.Drawing.Point(12, 4);
-            this.simpleButton7.Margin = new System.Windows.Forms.Padding(4);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton7.Size = new System.Drawing.Size(94, 98);
-            this.simpleButton7.TabIndex = 0;
-            this.simpleButton7.Text = "Thoát";
-            this.simpleButton7.Click += new System.EventHandler(this.button_Exit_Click);
+            this.simpleButton_Close2.AllowFocus = false;
+            this.simpleButton_Close2.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.simpleButton_Close2.Appearance.Options.UseBorderColor = true;
+            this.simpleButton_Close2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_Close2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_Close2.ImageOptions.SvgImage")));
+            this.simpleButton_Close2.Location = new System.Drawing.Point(12, 4);
+            this.simpleButton_Close2.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton_Close2.Name = "simpleButton_Close2";
+            this.simpleButton_Close2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_Close2.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_Close2.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_Close2.TabIndex = 0;
+            this.simpleButton_Close2.Text = "Thoát";
+            this.simpleButton_Close2.Click += new System.EventHandler(this.simpleButton_Close_Click);
             // 
             // openFileDialog_Avatar
             // 
@@ -1766,22 +1783,22 @@ namespace DoAnQuanLyThuVien
             this.tabControl_pplManage.ResumeLayout(false);
             this.tabPage_Reader.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
-            this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.AVATARPictureEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl_Reader)).EndInit();
+            this.dataLayoutControl_Reader.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.READERAVATARPictureEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEADERINFBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.READERIDTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PIDTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SEXComboBoxEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BIRTHDateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BIRTHDateEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AGETextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ADDRESSTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PHONETextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EMAILTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NOTEMemoEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NAMETextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERPIDTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERSEXComboBoxEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERBIRTHDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERBIRTHDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERAGETextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERADDRESSTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERPHONETextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READEREMAILTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERNOTEMemoEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERNAMETextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.READERTYPEtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAVATAR)).EndInit();
@@ -1803,7 +1820,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.ItemForREADERID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Reader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Reader)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
@@ -1813,20 +1830,20 @@ namespace DoAnQuanLyThuVien
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl2)).EndInit();
             this.dataLayoutControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFAVATARpictureEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sTAFFINFBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STAFFIDTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFPIDTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFNAMEtextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFSEXcomboBoxEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFBIRTHdateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFBIRTHdateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFAGEtextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFADDRESStextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFPHONEtextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFEMAILtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TYPEComboBoxEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STAFFNOTEmemoEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
@@ -1847,7 +1864,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSTAFFID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Staff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Staff)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
@@ -1866,34 +1883,34 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.BindingSource rEADERINFBindingSource;
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.SimpleButton button_Account;
-        private DevExpress.XtraEditors.SimpleButton button_Refresh;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_readerAccount;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_readerReload;
         private DevExpress.XtraEditors.SeparatorControl separatorControl2;
-        private DevExpress.XtraEditors.SimpleButton Button_Edit;
-        private DevExpress.XtraEditors.SimpleButton button_Delete;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_readerEdit;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_readerDel;
         private DevExpress.XtraEditors.SeparatorControl separatorControl1;
-        private DevExpress.XtraEditors.SimpleButton button_Add;
-        private DevExpress.XtraEditors.SimpleButton button_Close;
-        private DevExpress.XtraEditors.SimpleButton button_resetPass;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_readerAdd;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_Close1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_reader_resetPass;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SeparatorControl separatorControl3;
         private System.Windows.Forms.Panel panel7;
         private DevExpress.XtraEditors.SeparatorControl separatorControl4;
         private System.Windows.Forms.Panel panel8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_staff_resetPass;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_staffAccount;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_staffReload;
         private DevExpress.XtraEditors.SeparatorControl separatorControl5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_staffEdit;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_staffDel;
         private DevExpress.XtraEditors.SeparatorControl separatorControl6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_staffAdd;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_Close2;
         private System.Windows.Forms.OpenFileDialog openFileDialog_Avatar;
         private System.Windows.Forms.BindingSource sTAFFINFBindingSource;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gridControl_Reader;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView_Reader;
         private DevExpress.XtraGrid.Columns.GridColumn colUSERNAME;
         private DevExpress.XtraGrid.Columns.GridColumn colPASSWORD;
@@ -1909,17 +1926,17 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraGrid.Columns.GridColumn colEMAIL;
         private DevExpress.XtraGrid.Columns.GridColumn colNOTE;
         private DevExpress.XtraGrid.Columns.GridColumn colREQUEST_FORM;
-        private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
-        private DevExpress.XtraEditors.PictureEdit AVATARPictureEdit;
+        private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl_Reader;
+        private DevExpress.XtraEditors.PictureEdit READERAVATARPictureEdit;
         private DevExpress.XtraEditors.TextEdit READERIDTextEdit;
-        private DevExpress.XtraEditors.TextEdit PIDTextEdit;
-        private DevExpress.XtraEditors.ComboBoxEdit SEXComboBoxEdit;
-        private DevExpress.XtraEditors.DateEdit BIRTHDateEdit;
-        private DevExpress.XtraEditors.TextEdit AGETextEdit;
-        private DevExpress.XtraEditors.TextEdit ADDRESSTextEdit;
-        private DevExpress.XtraEditors.TextEdit PHONETextEdit;
-        private DevExpress.XtraEditors.TextEdit EMAILTextEdit;
-        private DevExpress.XtraEditors.MemoEdit NOTEMemoEdit;
+        private DevExpress.XtraEditors.TextEdit READERPIDTextEdit;
+        private DevExpress.XtraEditors.ComboBoxEdit READERSEXComboBoxEdit;
+        private DevExpress.XtraEditors.DateEdit READERBIRTHDateEdit;
+        private DevExpress.XtraEditors.TextEdit READERAGETextEdit;
+        private DevExpress.XtraEditors.TextEdit READERADDRESSTextEdit;
+        private DevExpress.XtraEditors.TextEdit READERPHONETextEdit;
+        private DevExpress.XtraEditors.TextEdit READEREMAILTextEdit;
+        private DevExpress.XtraEditors.MemoEdit READERNOTEMemoEdit;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForAVATAR;
@@ -1939,11 +1956,11 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
-        private DevExpress.XtraEditors.TextEdit NAMETextEdit;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit READERNAMETextEdit;
+        private DevExpress.XtraEditors.TextEdit READERTYPEtextEdit;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
-        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.GridControl gridControl_Staff;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView_Staff;
         private DevExpress.XtraGrid.Columns.GridColumn colUSERNAME1;
         private DevExpress.XtraGrid.Columns.GridColumn colPASSWORD1;
@@ -1960,18 +1977,18 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraGrid.Columns.GridColumn colTYPE;
         private DevExpress.XtraGrid.Columns.GridColumn colNOTE1;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl2;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit STAFFAVATARpictureEdit;
         private DevExpress.XtraEditors.TextEdit STAFFIDTextEdit;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.TextEdit STAFFPIDTextEdit;
+        private DevExpress.XtraEditors.TextEdit STAFFNAMEtextEdit;
+        private DevExpress.XtraEditors.ComboBoxEdit STAFFSEXcomboBoxEdit;
+        private DevExpress.XtraEditors.DateEdit STAFFBIRTHdateEdit;
+        private DevExpress.XtraEditors.TextEdit STAFFAGEtextEdit;
+        private DevExpress.XtraEditors.TextEdit STAFFADDRESStextEdit;
+        private DevExpress.XtraEditors.TextEdit STAFFPHONEtextEdit;
+        private DevExpress.XtraEditors.TextEdit STAFFEMAILtextEdit;
         private DevExpress.XtraEditors.ComboBoxEdit TYPEComboBoxEdit;
-        private DevExpress.XtraEditors.MemoEdit memoEdit1;
+        private DevExpress.XtraEditors.MemoEdit STAFFNOTEmemoEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;

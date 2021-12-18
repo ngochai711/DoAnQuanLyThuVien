@@ -24,6 +24,7 @@ namespace DoAnQuanLyThuVien
         {
             string userName = USERNAMETextEdit.Text;
             string passWord = PASSWORDTextEdit.Text;
+            string name = NAMEtextEdit.Text;
             string rePass = REPASStextEdit.Text;
 
             if (userName == "")
@@ -38,31 +39,21 @@ namespace DoAnQuanLyThuVien
                 return;
             }
 
-            READER_INF item = new READER_INF(userName, passWord);
+            try
+            {
+                READER_INF item = new READER_INF(userName, passWord, name);
 
-            dataBase.READER_INF.Add(item);
-            dataBase.SaveChanges();
+                dataBase.READER_INF.Add(item);
+                dataBase.SaveChanges();
 
-            this.DialogResult = DialogResult.OK;
+                this.DialogResult = DialogResult.OK;
 
-            this.Close();
-
-            //try
-            //{
-            //    READER_INF item = new READER_INF(userName, passWord);
-
-            //    dataBase.READER_INF.Add(item);
-            //    dataBase.SaveChanges();
-
-            //    this.DialogResult = DialogResult.OK;
-
-            //    this.Close();
-            //}
-            //    catch
-            //    {
-            //        DialogResult duplicatedUsername = MessageBox.Show("Tài khoản đã tồn tại!");
-            //    }
-            //}
+                this.Close();
+            }
+            catch
+            {
+                DialogResult duplicatedusername = MessageBox.Show("tài khoản đã tồn tại!");
+            }
         }
     }
 }

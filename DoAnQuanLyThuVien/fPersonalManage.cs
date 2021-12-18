@@ -16,63 +16,87 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fPersonalManage : Form
     {
-        private SHARED_LIBRARY_ENTITY dtb = new SHARED_LIBRARY_ENTITY();
+        private SHARED_LIBRARY_ENTITY dataBase;
 
         public fPersonalManage()
         {
             InitializeComponent();
 
-            Load_Data();
-        }
+            data_Load();
 
-        private void Load_Data()
-        {
-            rEADERINFBindingSource.DataSource = dtb.READER_INF.ToList();
-            sTAFFINFBindingSource.DataSource = dtb.STAFF_INF.ToList();
+            //dataLayoutControl_Reader.OptionsView.IsReadOnly = DevExpress.Utils.DefaultBoolean.True;
         }
-
-        private void button_Exit_Click(object sender, EventArgs e)
+        //
+        //
+        //---Region_1---
+        #region ===============Controls_Events===============
+        private void simpleButton_Close_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button_Add_Click(object sender, EventArgs e)
+        private void simpleButton_Reload_Click(object sender, EventArgs e)
         {
-            fnewAccount f = new fnewAccount();
-            f.ShowDialog();
-            Load_Data();
+            data_Load();
         }
 
-        private void button_Delete_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có chắc muốn xóa thông tin này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                READER_INF item = rEADERINFBindingSource.Current as READER_INF;
-
-                dtb.Entry<READER_INF>(item).State = System.Data.Entity.EntityState.Deleted;
-                dtb.SaveChanges();
-                
-                rEADERINFBindingSource.RemoveCurrent();
-            }
-        }
-
-        private void Button_Edit_Click(object sender, EventArgs e)
+        private void simpleButton_readerEdit_Click(object sender, EventArgs e)
         {
             rEADERINFBindingSource.EndEdit();
 
-            if (dtb.SaveChanges() == 1)
+            dataChange_Save();
+        }
+
+        private void simpleButton_staffEdit_Click(object sender, EventArgs e)
+        {
+            sTAFFINFBindingSource.EndEdit();
+
+            dataChange_Save();
+        }
+        #endregion
+        //--------------
+        //
+        //---Region_2---
+        #region ================Funcs_&_Procs================
+        private void data_Load()
+        {
+            dataBase = new SHARED_LIBRARY_ENTITY();
+
+            rEADERINFBindingSource.DataSource = dataBase.READER_INF.ToList();
+            sTAFFINFBindingSource.DataSource = dataBase.STAFF_INF.ToList();
+        }
+
+        private void dataChange_Save()
+        {
+            if (dataBase.SaveChanges() == 1)
             {
                 MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK);
 
-                Load_Data();
+                data_Load();
             }
         }
-
-        private void button_Refresh_Click(object sender, EventArgs e)
+        #endregion
+        //--------------
+        //
+        //
+        private void simpleButton_readerAdd_Click(object sender, EventArgs e)
         {
-            rEADERINFBindingSource.ResetBindings(false);
-         
-            Load_Data();
+            fnewAccount f = new fnewAccount();
+            f.ShowDialog();
+            data_Load();
+        }
+
+        private void simpleButton_readerDel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn xóa thông tin này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                var item = rEADERINFBindingSource.Current as READER_INF;
+
+                dataBase.Entry<READER_INF>(item).State = System.Data.Entity.EntityState.Deleted;
+                dataBase.SaveChanges();
+
+                rEADERINFBindingSource.RemoveCurrent();
+            }
         }
 
         private void button_resetPass_Click(object sender, EventArgs e)
@@ -81,10 +105,10 @@ namespace DoAnQuanLyThuVien
 
             item.PASSWORD = "1";
 
-            dtb.READER_INF.AddOrUpdate(item);
-            dtb.SaveChanges();
+            dataBase.READER_INF.AddOrUpdate(item);
+            dataBase.SaveChanges();
 
-            Load_Data();
+            data_Load();
         }
 
         private void AVATARPictureEdit_Click(object sender, EventArgs e)
@@ -106,18 +130,26 @@ namespace DoAnQuanLyThuVien
 
                 item.AVATAR = img;
 
-                dtb.READER_INF.AddOrUpdate(item);
-                dtb.SaveChanges();
+                dataBase.READER_INF.AddOrUpdate(item);
+                dataBase.SaveChanges();
 
-                Load_Data();
+                data_Load();
             }
         }
 
         private void button_Account_Click(object sender, EventArgs e)
         {
             READER_INF focused = (READER_INF)gridView_Reader.GetFocusedRow();
-            feditAccount f = new feditAccount(focused.USERNAME, focused.PASSWORD);
+            fAccount f = new fAccount(focused.USERNAME, focused.PASSWORD);
+            
             f.ShowDialog();
+            
+            data_Load();
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

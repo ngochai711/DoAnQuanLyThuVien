@@ -36,15 +36,29 @@ namespace DoAnQuanLyThuVien.DTO
 
         }
 
-        public READER_INF(string username, string pass)
+        public READER_INF(string username, string pass, string name = "")
         {
             USERNAME = username;
             PASSWORD = pass;
+            NAME = name;
         }
 
         public READER_INF(DataRow source)
         {
-
+            USERNAME = source[0].ToString();
+            PASSWORD = source[1].ToString();
+            AVATAR = (byte[])source[2];
+            READERID = source[3].ToString();
+            PID = source[4].ToString();
+            NAME = source[5].ToString();
+            SEX = source[6].ToString();
+            BIRTH = Convert.ToDateTime(source[7]);
+            AGE = Convert.ToByte(source[8]);
+            ADDRESS = source[9].ToString();
+            PHONE = source[10].ToString();
+            EMAIL = source[11].ToString();
+            EMAIL = source[11].ToString();
+            NOTE = source[12].ToString();
         }
     }
 }
