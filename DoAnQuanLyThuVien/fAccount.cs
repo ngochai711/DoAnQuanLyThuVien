@@ -19,15 +19,29 @@ namespace DoAnQuanLyThuVien
 
         private bool ischangingPass = false;
 
-        public fAccount(string userName, string passWord)
+        public fAccount(string _userName, string _passWord, bool _isStaff)
         {
             InitializeComponent();
 
-            account = dataBase.READER_INF.Find(userName);
+            account = dataBase.READER_INF.Find(_userName);
 
-            USERNAMETextEdit.Text = userName;
-            PASSWORDTextEdit.Text = passWord;
+            USERNAMETextEdit.Text = _userName;
+            PASSWORDTextEdit.Text = _passWord;
         }
+
+
+
+        //---Region_1---
+        #region ===============Controls_Events===============
+
+        #endregion ==========================================
+
+
+        //---Region_2---
+        #region ===============Funcs_and_Procs===============
+
+        #endregion ==========================================
+
 
         private void hyperlinkLabelControl_changePass_Click(object sender, EventArgs e)
         {

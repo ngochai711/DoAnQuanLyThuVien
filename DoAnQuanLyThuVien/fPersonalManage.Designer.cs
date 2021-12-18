@@ -161,7 +161,6 @@ namespace DoAnQuanLyThuVien
             this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
             this.simpleButton_staffAdd = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton_Close2 = new DevExpress.XtraEditors.SimpleButton();
-            this.openFileDialog_Avatar = new System.Windows.Forms.OpenFileDialog();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.tabControl_pplManage.SuspendLayout();
             this.tabPage_Reader.SuspendLayout();
@@ -326,7 +325,7 @@ namespace DoAnQuanLyThuVien
             this.READERAVATARPictureEdit.Size = new System.Drawing.Size(174, 262);
             this.READERAVATARPictureEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERAVATARPictureEdit.TabIndex = 4;
-            this.READERAVATARPictureEdit.Click += new System.EventHandler(this.AVATARPictureEdit_Click);
+            this.READERAVATARPictureEdit.Click += new System.EventHandler(this.pictureEdit_AVATARPictureEdit_Click);
             // 
             // rEADERINFBindingSource
             // 
@@ -925,7 +924,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerAccount.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_readerAccount.TabIndex = 8;
             this.simpleButton_readerAccount.Text = "Tài khoản";
-            this.simpleButton_readerAccount.Click += new System.EventHandler(this.button_Account_Click);
+            this.simpleButton_readerAccount.Click += new System.EventHandler(this.simpleButton_Account_Click);
             // 
             // simpleButton_readerReload
             // 
@@ -1081,6 +1080,7 @@ namespace DoAnQuanLyThuVien
             this.STAFFAVATARpictureEdit.Size = new System.Drawing.Size(174, 262);
             this.STAFFAVATARpictureEdit.StyleController = this.dataLayoutControl2;
             this.STAFFAVATARpictureEdit.TabIndex = 4;
+            this.STAFFAVATARpictureEdit.Click += new System.EventHandler(this.pictureEdit_AVATARPictureEdit_Click);
             // 
             // sTAFFINFBindingSource
             // 
@@ -1662,6 +1662,7 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffAccount.Size = new System.Drawing.Size(94, 98);
             this.simpleButton_staffAccount.TabIndex = 8;
             this.simpleButton_staffAccount.Text = "Tài khoản";
+            this.simpleButton_staffAccount.Click += new System.EventHandler(this.simpleButton_Account_Click);
             // 
             // simpleButton_staffReload
             // 
@@ -1759,10 +1760,6 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_Close2.TabIndex = 0;
             this.simpleButton_Close2.Text = "Thoát";
             this.simpleButton_Close2.Click += new System.EventHandler(this.simpleButton_Close_Click);
-            // 
-            // openFileDialog_Avatar
-            // 
-            this.openFileDialog_Avatar.FileName = "openFileDialog_Avatar";
             // 
             // simpleLabelItem1
             // 
@@ -1908,7 +1905,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraEditors.SeparatorControl separatorControl6;
         private DevExpress.XtraEditors.SimpleButton simpleButton_staffAdd;
         private DevExpress.XtraEditors.SimpleButton simpleButton_Close2;
-        private System.Windows.Forms.OpenFileDialog openFileDialog_Avatar;
         private System.Windows.Forms.BindingSource sTAFFINFBindingSource;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
