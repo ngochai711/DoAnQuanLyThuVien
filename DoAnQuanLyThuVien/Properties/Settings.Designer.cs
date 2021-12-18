@@ -45,5 +45,17 @@ namespace DoAnQuanLyThuVien.Properties {
                 this["BackImg"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string songPath {
+            get {
+                return ((string)(this["songPath"]));
+            }
+            set {
+                this["songPath"] = value;
+            }
+        }
     }
 }

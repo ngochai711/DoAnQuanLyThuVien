@@ -88,17 +88,19 @@ namespace DoAnQuanLyThuVien
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog o = new OpenFileDialog();
-          
-            if (o.ShowDialog() == DialogResult.OK)
+            OpenFileDialog ofd = new OpenFileDialog();
+            
+
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                gridView2.SetFocusedRowCellValue("BOOK_URL", o.FileName);
-                BOOK_URLTextEdit.Text = o.FileName;
+                gridView2.SetFocusedRowCellValue("BOOK_URL", ofd.FileName);
+                BOOK_URLTextEdit.Text = ofd.FileName;
             }
         }
         private void BOOKIMAGEPictureEditf_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
+            o.Filter = "Pdf Files|*.pdf";
             if (o.ShowDialog() == DialogResult.OK)
             {
                 byte[] img = null;
@@ -156,6 +158,7 @@ namespace DoAnQuanLyThuVien
         private void BOOKIMAGEPictureEdit_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
+            o.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif";
             if (o.ShowDialog() == DialogResult.OK)
             {
                 byte[] img = null;

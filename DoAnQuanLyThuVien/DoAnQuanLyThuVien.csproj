@@ -189,6 +189,7 @@
     <Compile Include="fLendBook.Designer.cs">
       <DependentUpon>fLendBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <EmbeddedResource Include="feditAccount.resx">
       <DependentUpon>feditAccount.cs</DependentUpon>
     </EmbeddedResource>

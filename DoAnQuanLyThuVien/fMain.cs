@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using DoAnQuanLyThuVien.DTO;
 using System.Drawing.Imaging;
 
+
 namespace DoAnQuanLyThuVien
 {
     public partial class fMain : Form
@@ -38,19 +39,21 @@ namespace DoAnQuanLyThuVien
 
         private void pre_loading()
         {
-           if(Properties.Settings.Default.BackImg != null)
+
+            if (Properties.Settings.Default.BackImg != "")
             {
                 string img = Properties.Settings.Default.BackImg;
                 byte[] i = Convert.FromBase64String(img);
                 this.BackgroundImage = Image.FromStream(new MemoryStream(i));
 
             }
+           
             // menu data
             oldPanelWidth = 290;
             oldPanelHeight = SlidingPanel.Height;
             SlidingPanel.Width = btnShow.Width;
 
-            //button data
+            //sliding menu's button properties
             oldbtnExit = btnExit.Text;
             oldbtnAssist = btnAssist.Text;
             oldbtnBookManagement = btnBookManagement.Text;
@@ -64,20 +67,27 @@ namespace DoAnQuanLyThuVien
             btnAcountInfo.Text = "";
             btnEbookReading.Text = "";
             hidden = true;
-            
+
 
             SlidingPanel.BackColor = Color.FromArgb(120, 245, 245, 245);
             //set WMP data
 
-            FolderBrowserDialog fld = new FolderBrowserDialog();
             //doi ten duong truyen
+            set_Playlist_properties();
+
+        }
+
+        private void set_Playlist_properties()
+        {
+            FolderBrowserDialog fld = new FolderBrowserDialog();
             fld.SelectedPath = @"..\..\song";
 
             tsbClearPlaylist_Click();
-
+            if(Properties.Settings.Default.songPath != "")
+                fld.SelectedPath = Properties.Settings.Default.songPath;
             CreatePlayLis(fld, "*.mp3");
-            windowsMediaPlayer.Visible = false;
 
+            windowsMediaPlayer.Visible = false;
         }
 
         #region form's control
@@ -88,6 +98,11 @@ namespace DoAnQuanLyThuVien
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+            save_Personal_Setting();
+        }
+
+        private void save_Personal_Setting()
+        {
 
             // background changes saving
             var base64 = string.Empty;
@@ -97,7 +112,10 @@ namespace DoAnQuanLyThuVien
                 base64 = Convert.ToBase64String(ms.ToArray());
             }
             Properties.Settings.Default.BackImg = base64;
+            Properties.Settings.Default.songPath = songFolder.SelectedPath;
             Properties.Settings.Default.Save();
+
+            //playList changes saving
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -123,7 +141,7 @@ namespace DoAnQuanLyThuVien
         private bool mouseDown;
         private Point lastLocation;
 
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private void fMain_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
             lastLocation = e.Location;
@@ -277,18 +295,24 @@ namespace DoAnQuanLyThuVien
             f.ShowDialog();
         }
 
+        FolderBrowserDialog songFolder = new FolderBrowserDialog();
+
+        private void btnPlayListChanging_Click(object sender, EventArgs e)
+        {
+            //openFileDialog.Filter = "All Media Files|*.wav;*.aac;*.wma;*.wmv;*.avi;*.mpg;*.mpeg;*.m1v;*.mp2;*.mp3;*.mpa;*.mpe;*.m3u;*.mp4;*.mov;*.3g2;*.3gp2;*.3gp;*.3gpp;*.m4a;*.cda;*.aif;*.aifc;*.aiff;*.mid;*.midi;*.rmi;*.mkv;*.WAV;*.AAC;*.WMA;*.WMV;*.AVI;*.MPG;*.MPEG;*.M1V;*.MP2;*.MP3;*.MPA;*.MPE;*.M3U;*.MP4;*.MOV;*.3G2;*.3GP2;*.3GP;*.3GPP;*.M4A;*.CDA;*.AIF;*.AIFC;*.AIFF;*.MID;*.MIDI;*.RMI;*.MKV";
+            //openFileDialog.Multiselect = true;
+            if (songFolder.ShowDialog() == DialogResult.OK)
+            {
+                Properties.Settings.Default.songPath = songFolder.SelectedPath;
+                set_Playlist_properties();
+            }
+        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            // background changes saving
-            var base64 = string.Empty;
-            using (MemoryStream ms = new MemoryStream())
-            {
-                this.BackgroundImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                base64 = Convert.ToBase64String(ms.ToArray());
-            }
-            Properties.Settings.Default.BackImg = base64;
-            Properties.Settings.Default.Save();
+
+            save_Personal_Setting();
         }
 
 

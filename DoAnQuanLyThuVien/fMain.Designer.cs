@@ -540,6 +540,7 @@ namespace DoAnQuanLyThuVien
             this.btnPlayListChanging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPlayListChanging.UseVisualStyleBackColor = true;
             this.btnPlayListChanging.Visible = false;
+            this.btnPlayListChanging.Click += new System.EventHandler(this.btnPlayListChanging_Click);
             // 
             // btnBackgroundChanging
             // 
@@ -572,7 +573,7 @@ namespace DoAnQuanLyThuVien
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Thư Viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.fMain_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.panel2.ResumeLayout(false);
