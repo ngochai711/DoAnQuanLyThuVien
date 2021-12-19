@@ -18,7 +18,7 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fMain : Form
     {
-        private activeAccountDTO activeAccount;
+        private STAFF_INF activeAccount;
 
 
         int oldPanelWidth, oldPanelHeight;
@@ -28,7 +28,7 @@ namespace DoAnQuanLyThuVien
         bool isSetting = false;
 
         bool hidden;
-        public fMain(activeAccountDTO acc)
+        public fMain(STAFF_INF acc)
         {
             activeAccount = acc;
 
@@ -332,7 +332,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnAcountInfo_Click(object sender, EventArgs e)
         {
-            fPersonalManage f = new fPersonalManage();
+            fPersonalManage f = new fPersonalManage(activeAccount);
             f.ShowDialog();
         }
 

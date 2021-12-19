@@ -42,7 +42,7 @@ namespace DoAnQuanLyThuVien
                 Form f = null;
 
                 if (isStaff)
-                    f = new fMain(validAccount);
+                    f = new fMain(validAccount as STAFF_INF);
                 else
                     f = new fReader(validAccount);
 
