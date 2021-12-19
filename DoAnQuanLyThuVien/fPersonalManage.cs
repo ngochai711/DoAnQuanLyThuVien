@@ -11,14 +11,17 @@ using System.Windows.Forms;
 using DoAnQuanLyThuVien.DTO;
 using DoAnQuanLyThuVien.DAO;
 using System.Data.Entity.Migrations;
+using DevExpress.XtraEditors;
 
 namespace DoAnQuanLyThuVien
 {
     public partial class fPersonalManage : Form
     {
+        private STAFF_INF currentAccount = null;
+
         private SHARED_LIBRARY_ENTITY dataBase;
 
-        private STAFF_INF currentAccount;
+        private bool is_edittingMode = false;
 
         public fPersonalManage()
         {
@@ -36,11 +39,17 @@ namespace DoAnQuanLyThuVien
 
         private void simpleButton_Close_Click(object sender, EventArgs e)
         {
+            if (is_edittingMode)
+            { MessageBox.Show("Các thay đổi chưa được lưu!"); return; }
+
             this.Close();
         }
 
         private void simpleButton_Add_Click(object sender, EventArgs e)
         {
+            if (is_edittingMode)
+            { MessageBox.Show("Các thay đổi chưa được lưu!"); return; }
+
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
             
             bool isStaff = eventCalled_Button.Name == "simpleButton_staffAdd";
@@ -53,6 +62,9 @@ namespace DoAnQuanLyThuVien
 
         private void simpleButton_Del_Click(object sender, EventArgs e)
         {
+            if (is_edittingMode)
+            { MessageBox.Show("Các thay đổi chưa được lưu!"); return; }
+
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
             
             bool isStaff = eventCalled_Button.Name == "simpleButton_staffDel";
@@ -65,12 +77,18 @@ namespace DoAnQuanLyThuVien
         {
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
 
-            if (eventCalled_Button.Name == "simpleButton_staffEdit")
-                sTAFFINFBindingSource.EndEdit();
-            else
-                rEADERINFBindingSource.EndEdit();
+            if (is_edittingMode)
+            {
+                Save_editedInfo(eventCalled_Button.Name);
 
-            dataChange_Save();
+                eventCalled_Button.Text = "Cập nhật";
+            }
+            else
+                eventCalled_Button.Text = "Lưu";
+
+            is_edittingMode = !is_edittingMode;
+
+            Enable_Disable_Editing(eventCalled_Button.Name);
         }
 
         private void simpleButton_Reload_Click(object sender, EventArgs e)
@@ -80,6 +98,9 @@ namespace DoAnQuanLyThuVien
 
         private void simpleButton_Account_Click(object sender, EventArgs e)
         {
+            if (is_edittingMode)
+            { MessageBox.Show("Các thay đổi chưa được lưu!"); return; }
+
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
 
             bool isStaff = eventCalled_Button.Name == "simpleButton_staffAccount";
@@ -106,6 +127,9 @@ namespace DoAnQuanLyThuVien
 
         private void simpleButton_resetPass_Click(object sender, EventArgs e)
         {
+            if (is_edittingMode)
+            { MessageBox.Show("Các thay đổi chưa được lưu!"); return; }
+
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
 
             bool isStaff = eventCalled_Button.Name == "simpleButton_staff_resetPass";
@@ -117,6 +141,8 @@ namespace DoAnQuanLyThuVien
 
         private void pictureEdit_AVATARPictureEdit_Click(object sender, EventArgs e)
         {
+            if (!is_edittingMode) { return; }
+
             DevExpress.XtraEditors.PictureEdit accountAvatar = sender as DevExpress.XtraEditors.PictureEdit;
             
             bool isStaff = accountAvatar.Name == "STAFFAVATARpictureEdit";
@@ -187,6 +213,50 @@ namespace DoAnQuanLyThuVien
             }
 
             dataBase.SaveChanges();
+        }
+
+        private void Enable_Disable_Editing(string eventCalled_buttonName)
+        {
+            if (eventCalled_buttonName == "simpleButton_staffEdit")
+            {
+                STAFFPIDTextEdit.ReadOnly = !is_edittingMode;
+                STAFFBIRTHdateEdit.ReadOnly = !is_edittingMode;
+                STAFFSEXcomboBoxEdit.ReadOnly = !is_edittingMode;
+                STAFFADDRESStextEdit.ReadOnly = !is_edittingMode;
+                STAFFPHONEtextEdit.ReadOnly = !is_edittingMode;
+                STAFFEMAILtextEdit.ReadOnly = !is_edittingMode;
+                STAFFNOTEmemoEdit.ReadOnly = !is_edittingMode;
+                STAFFPIDTextEdit.Focus();
+            }
+            else
+            {
+                READERPIDTextEdit.ReadOnly = !is_edittingMode;
+                READERBIRTHDateEdit.ReadOnly = !is_edittingMode;
+                READERSEXComboBoxEdit.ReadOnly = !is_edittingMode;
+                READERADDRESSTextEdit.ReadOnly = !is_edittingMode;
+                READERPHONETextEdit.ReadOnly = !is_edittingMode;
+                READEREMAILTextEdit.ReadOnly = !is_edittingMode;
+                READERNOTEMemoEdit.ReadOnly = !is_edittingMode;
+                READERPIDTextEdit.Focus();
+            }
+        }
+
+        private void Save_editedInfo(string eventCalled_buttonName)
+        {
+            if (eventCalled_buttonName == "simpleButton_staffEdit")
+            {
+                sTAFFINFBindingSource.EndEdit();
+
+                STAFFAVATARpictureEdit.Focus();
+            }    
+            else
+            {
+                rEADERINFBindingSource.EndEdit();
+
+                READERAVATARPictureEdit.Focus();
+            }
+
+            dataChange_Save();
         }
 
         private void reset_Pass(bool _isStaff)

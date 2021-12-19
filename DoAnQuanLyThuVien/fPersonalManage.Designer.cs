@@ -336,6 +336,7 @@ namespace DoAnQuanLyThuVien
             this.READERIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "READERID", true));
             this.READERIDTextEdit.Location = new System.Drawing.Point(293, 214);
             this.READERIDTextEdit.Name = "READERIDTextEdit";
+            this.READERIDTextEdit.Properties.ReadOnly = true;
             this.READERIDTextEdit.Size = new System.Drawing.Size(207, 22);
             this.READERIDTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERIDTextEdit.TabIndex = 5;
@@ -345,6 +346,8 @@ namespace DoAnQuanLyThuVien
             this.READERPIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "PID", true));
             this.READERPIDTextEdit.Location = new System.Drawing.Point(293, 240);
             this.READERPIDTextEdit.Name = "READERPIDTextEdit";
+            this.READERPIDTextEdit.Properties.ReadOnly = true;
+            this.READERPIDTextEdit.Properties.UseReadOnlyAppearance = false;
             this.READERPIDTextEdit.Size = new System.Drawing.Size(207, 22);
             this.READERPIDTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERPIDTextEdit.TabIndex = 6;
@@ -361,6 +364,8 @@ namespace DoAnQuanLyThuVien
             "Nam",
             "Nữ",
             "Khác"});
+            this.READERSEXComboBoxEdit.Properties.ReadOnly = true;
+            this.READERSEXComboBoxEdit.Properties.UseReadOnlyAppearance = false;
             this.READERSEXComboBoxEdit.Size = new System.Drawing.Size(141, 22);
             this.READERSEXComboBoxEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERSEXComboBoxEdit.TabIndex = 8;
@@ -376,6 +381,8 @@ namespace DoAnQuanLyThuVien
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.READERBIRTHDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.READERBIRTHDateEdit.Properties.ReadOnly = true;
+            this.READERBIRTHDateEdit.Properties.UseReadOnlyAppearance = false;
             this.READERBIRTHDateEdit.Size = new System.Drawing.Size(195, 22);
             this.READERBIRTHDateEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERBIRTHDateEdit.TabIndex = 9;
@@ -392,6 +399,8 @@ namespace DoAnQuanLyThuVien
             this.READERAGETextEdit.Properties.Mask.EditMask = "N0";
             this.READERAGETextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.READERAGETextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.READERAGETextEdit.Properties.ReadOnly = true;
+            this.READERAGETextEdit.Properties.UseReadOnlyAppearance = false;
             this.READERAGETextEdit.Size = new System.Drawing.Size(132, 22);
             this.READERAGETextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERAGETextEdit.TabIndex = 10;
@@ -401,6 +410,8 @@ namespace DoAnQuanLyThuVien
             this.READERADDRESSTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "ADDRESS", true));
             this.READERADDRESSTextEdit.Location = new System.Drawing.Point(24, 383);
             this.READERADDRESSTextEdit.Name = "READERADDRESSTextEdit";
+            this.READERADDRESSTextEdit.Properties.ReadOnly = true;
+            this.READERADDRESSTextEdit.Properties.UseReadOnlyAppearance = false;
             this.READERADDRESSTextEdit.Size = new System.Drawing.Size(476, 22);
             this.READERADDRESSTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERADDRESSTextEdit.TabIndex = 11;
@@ -410,6 +421,8 @@ namespace DoAnQuanLyThuVien
             this.READERPHONETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "PHONE", true));
             this.READERPHONETextEdit.Location = new System.Drawing.Point(24, 428);
             this.READERPHONETextEdit.Name = "READERPHONETextEdit";
+            this.READERPHONETextEdit.Properties.ReadOnly = true;
+            this.READERPHONETextEdit.Properties.UseReadOnlyAppearance = false;
             this.READERPHONETextEdit.Size = new System.Drawing.Size(476, 22);
             this.READERPHONETextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERPHONETextEdit.TabIndex = 12;
@@ -419,6 +432,8 @@ namespace DoAnQuanLyThuVien
             this.READEREMAILTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "EMAIL", true));
             this.READEREMAILTextEdit.Location = new System.Drawing.Point(24, 473);
             this.READEREMAILTextEdit.Name = "READEREMAILTextEdit";
+            this.READEREMAILTextEdit.Properties.ReadOnly = true;
+            this.READEREMAILTextEdit.Properties.UseReadOnlyAppearance = false;
             this.READEREMAILTextEdit.Size = new System.Drawing.Size(476, 22);
             this.READEREMAILTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READEREMAILTextEdit.TabIndex = 13;
@@ -428,6 +443,8 @@ namespace DoAnQuanLyThuVien
             this.READERNOTEMemoEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "NOTE", true));
             this.READERNOTEMemoEdit.Location = new System.Drawing.Point(24, 550);
             this.READERNOTEMemoEdit.Name = "READERNOTEMemoEdit";
+            this.READERNOTEMemoEdit.Properties.ReadOnly = true;
+            this.READERNOTEMemoEdit.Properties.UseReadOnlyAppearance = false;
             this.READERNOTEMemoEdit.Size = new System.Drawing.Size(476, 238);
             this.READERNOTEMemoEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERNOTEMemoEdit.TabIndex = 14;
@@ -1091,6 +1108,7 @@ namespace DoAnQuanLyThuVien
             this.STAFFIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "STAFFID", true));
             this.STAFFIDTextEdit.Location = new System.Drawing.Point(293, 214);
             this.STAFFIDTextEdit.Name = "STAFFIDTextEdit";
+            this.STAFFIDTextEdit.Properties.ReadOnly = true;
             this.STAFFIDTextEdit.Size = new System.Drawing.Size(208, 22);
             this.STAFFIDTextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFIDTextEdit.TabIndex = 5;
@@ -1100,6 +1118,8 @@ namespace DoAnQuanLyThuVien
             this.STAFFPIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PID", true));
             this.STAFFPIDTextEdit.Location = new System.Drawing.Point(293, 240);
             this.STAFFPIDTextEdit.Name = "STAFFPIDTextEdit";
+            this.STAFFPIDTextEdit.Properties.ReadOnly = true;
+            this.STAFFPIDTextEdit.Properties.UseReadOnlyAppearance = false;
             this.STAFFPIDTextEdit.Size = new System.Drawing.Size(208, 22);
             this.STAFFPIDTextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFPIDTextEdit.TabIndex = 6;
@@ -1129,6 +1149,8 @@ namespace DoAnQuanLyThuVien
             "Nam",
             "Nữ",
             "Khác"});
+            this.STAFFSEXcomboBoxEdit.Properties.ReadOnly = true;
+            this.STAFFSEXcomboBoxEdit.Properties.UseReadOnlyAppearance = false;
             this.STAFFSEXcomboBoxEdit.Size = new System.Drawing.Size(145, 22);
             this.STAFFSEXcomboBoxEdit.StyleController = this.dataLayoutControl2;
             this.STAFFSEXcomboBoxEdit.TabIndex = 8;
@@ -1144,6 +1166,8 @@ namespace DoAnQuanLyThuVien
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.STAFFBIRTHdateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.STAFFBIRTHdateEdit.Properties.ReadOnly = true;
+            this.STAFFBIRTHdateEdit.Properties.UseReadOnlyAppearance = false;
             this.STAFFBIRTHdateEdit.Size = new System.Drawing.Size(194, 22);
             this.STAFFBIRTHdateEdit.StyleController = this.dataLayoutControl2;
             this.STAFFBIRTHdateEdit.TabIndex = 9;
@@ -1160,6 +1184,8 @@ namespace DoAnQuanLyThuVien
             this.STAFFAGEtextEdit.Properties.Mask.EditMask = "N0";
             this.STAFFAGEtextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.STAFFAGEtextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.STAFFAGEtextEdit.Properties.ReadOnly = true;
+            this.STAFFAGEtextEdit.Properties.UseReadOnlyAppearance = false;
             this.STAFFAGEtextEdit.Size = new System.Drawing.Size(130, 22);
             this.STAFFAGEtextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFAGEtextEdit.TabIndex = 10;
@@ -1169,6 +1195,8 @@ namespace DoAnQuanLyThuVien
             this.STAFFADDRESStextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "ADDRESS", true));
             this.STAFFADDRESStextEdit.Location = new System.Drawing.Point(24, 383);
             this.STAFFADDRESStextEdit.Name = "STAFFADDRESStextEdit";
+            this.STAFFADDRESStextEdit.Properties.ReadOnly = true;
+            this.STAFFADDRESStextEdit.Properties.UseReadOnlyAppearance = false;
             this.STAFFADDRESStextEdit.Size = new System.Drawing.Size(477, 22);
             this.STAFFADDRESStextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFADDRESStextEdit.TabIndex = 11;
@@ -1178,6 +1206,8 @@ namespace DoAnQuanLyThuVien
             this.STAFFPHONEtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PHONE", true));
             this.STAFFPHONEtextEdit.Location = new System.Drawing.Point(24, 428);
             this.STAFFPHONEtextEdit.Name = "STAFFPHONEtextEdit";
+            this.STAFFPHONEtextEdit.Properties.ReadOnly = true;
+            this.STAFFPHONEtextEdit.Properties.UseReadOnlyAppearance = false;
             this.STAFFPHONEtextEdit.Size = new System.Drawing.Size(477, 22);
             this.STAFFPHONEtextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFPHONEtextEdit.TabIndex = 12;
@@ -1187,6 +1217,8 @@ namespace DoAnQuanLyThuVien
             this.STAFFEMAILtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "EMAIL", true));
             this.STAFFEMAILtextEdit.Location = new System.Drawing.Point(24, 473);
             this.STAFFEMAILtextEdit.Name = "STAFFEMAILtextEdit";
+            this.STAFFEMAILtextEdit.Properties.ReadOnly = true;
+            this.STAFFEMAILtextEdit.Properties.UseReadOnlyAppearance = false;
             this.STAFFEMAILtextEdit.Size = new System.Drawing.Size(477, 22);
             this.STAFFEMAILtextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFEMAILtextEdit.TabIndex = 13;
@@ -1204,6 +1236,7 @@ namespace DoAnQuanLyThuVien
             this.TYPEComboBoxEdit.Properties.Items.AddRange(new object[] {
             "True",
             "False"});
+            this.TYPEComboBoxEdit.Properties.ReadOnly = true;
             this.TYPEComboBoxEdit.Size = new System.Drawing.Size(208, 20);
             this.TYPEComboBoxEdit.StyleController = this.dataLayoutControl2;
             this.TYPEComboBoxEdit.TabIndex = 14;
@@ -1213,6 +1246,8 @@ namespace DoAnQuanLyThuVien
             this.STAFFNOTEmemoEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NOTE", true));
             this.STAFFNOTEmemoEdit.Location = new System.Drawing.Point(24, 549);
             this.STAFFNOTEmemoEdit.Name = "STAFFNOTEmemoEdit";
+            this.STAFFNOTEmemoEdit.Properties.ReadOnly = true;
+            this.STAFFNOTEmemoEdit.Properties.UseReadOnlyAppearance = false;
             this.STAFFNOTEmemoEdit.Size = new System.Drawing.Size(477, 242);
             this.STAFFNOTEmemoEdit.StyleController = this.dataLayoutControl2;
             this.STAFFNOTEmemoEdit.TabIndex = 15;
