@@ -37,6 +37,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -60,6 +69,7 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,6 +84,12 @@
     </Reference>
     <Reference Include="UIAutomationClient" />
     <Reference Include="WindowsBase" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\SharedModel.Context.cs">
@@ -117,10 +133,14 @@
     <Compile Include="fEbookList.Designer.cs">
       <DependentUpon>fEbookList.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\BookListCardDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\ReqCardDAO.cs" />
+    <Compile Include="DAO\ReqCardInfoDAO.cs" />
     <Compile Include="DAO\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DTO\BookListCard.cs" />
     <Compile Include="DTO\BOOKS_MANAGEMENT.cs">
       <DependentUpon>SharedModel.tt</DependentUpon>
     </Compile>
@@ -133,11 +153,37 @@
     <Compile Include="fBookList.Designer.cs">
       <DependentUpon>fBookList.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\ReqCard.cs" />
+    <Compile Include="DTO\ReqCardInfo.cs" />
+    <Compile Include="DTO\ReqDT.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReqDT.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ReqDT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReqDT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ReqDT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReqDT.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\REQUEST_FORM.cs">
+      <DependentUpon>ReqDT.tt</DependentUpon>
+    </Compile>
     <Compile Include="fBookManager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fBookManager.Designer.cs">
       <DependentUpon>fBookManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCreateCardLendBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCreateCardLendBook.Designer.cs">
+      <DependentUpon>fCreateCardLendBook.cs</DependentUpon>
     </Compile>
     <Compile Include="fMain.cs">
       <SubType>Form</SubType>
@@ -187,13 +233,11 @@
     <Compile Include="fLogin.designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="fLendBook.cs">
+    <Compile Include="fScanner.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fLendBook.Designer.cs">
-      <DependentUpon>fLendBook.cs</DependentUpon>
+    <Compile Include="fScanner.Designer.cs">
+      <DependentUpon>fScanner.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="fnewAccount.resx">
       <DependentUpon>fnewAccount.cs</DependentUpon>
@@ -204,8 +248,8 @@
     <EmbeddedResource Include="fEbookList.resx">
       <DependentUpon>fEbookList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fLendBook.resx">
-      <DependentUpon>fLendBook.cs</DependentUpon>
+    <EmbeddedResource Include="fCreateCardLendBook.resx">
+      <DependentUpon>fCreateCardLendBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fBookManager.resx">
       <DependentUpon>fBookManager.cs</DependentUpon>
@@ -234,6 +278,9 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fScanner.resx">
+      <DependentUpon>fScanner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -254,8 +301,11 @@
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.BOOKS_MANAGEMENT.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.CLIENT_INFO.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.EBOOKS_MANAGEMENT.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.REQUEST_FORM.datasource" />
+    <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.REQUEST_INFO.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.LIBRARY_DATABASEEntities4.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.READER_INF.datasource" />
     <None Include="Properties\DataSources\DoAnQuanLyThuVien.DTO.REQUEST_FORM.datasource" />
@@ -312,6 +362,17 @@
       <DependentUpon>SharedModel.edmx</DependentUpon>
       <LastGenOutput>SharedModel.cs</LastGenOutput>
     </Content>
+    <Content Include="DTO\ReqDT.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReqDT.edmx</DependentUpon>
+      <LastGenOutput>ReqDT.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DTO\ReqDT.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReqDT.edmx</DependentUpon>
+      <LastGenOutput>ReqDT.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\win11Background.jpg" />
     <None Include="Resources\librarian 2.jpg" />
     <None Include="Resources\reader.png" />
   </ItemGroup>

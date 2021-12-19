@@ -22,7 +22,7 @@ namespace DoAnQuanLyThuVien
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //string username = "anhthy789";
+            string username = "anhthy789";
             //List<Infomation> ListInfo = InfoDAO.Instance.GetListInfo(username);
             //foreach (Infomation item in ListInfo)
             //{
@@ -50,11 +50,11 @@ namespace DoAnQuanLyThuVien
             }
             else
             {
-                //if(InfoDAO.Instance.EditInfo(Username, Pass, LName, FName, Newpass, Gen, BD, Address, SDT, Email))
+                //if (InfoDAO.Instance.EditInfo(Username, Pass, LName, FName, Newpass, Gen, BD, Address, SDT, Email))
                 //{
                 //    MessageBox.Show("Lưu thông tin thành công", "Thông báo");
-                //}    
-            }    
+                //}
+            }
         }
 
         private void btnEditSave_Click(object sender, EventArgs e)

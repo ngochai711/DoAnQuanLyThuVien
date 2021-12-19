@@ -12,10 +12,13 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DoAnQuanLyThuVien.DTO;
 
+
 namespace DoAnQuanLyThuVien
 {
     public partial class fBookManager : DevExpress.XtraEditors.XtraForm
     {
+        public SHARED_LIBRARY_ENTITY tendephanbiet1;
+
         public fBookManager()
         {
             InitializeComponent();
@@ -28,14 +31,14 @@ namespace DoAnQuanLyThuVien
         private void fBookManager_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'lIBRARY_DATABASEDataSet.EBOOKS_MANAGEMENT' table. You can move, or remove it, as needed.
+            tendephanbiet1 = fLogin.tendephanbiet;
+            //db = new SHARED_LIBRARY_ENTITY();
+            //tendephanbiet1.BOOKS_MANAGEMENT.Load();
+            bOOKSMANAGEMENTBindingSource.DataSource = tendephanbiet1.BOOKS_MANAGEMENT.ToList();
 
-            db = new SHARED_LIBRARY_ENTITY();
-            db.BOOKS_MANAGEMENT.Load();
-            bOOKSMANAGEMENTBindingSource.DataSource = db.BOOKS_MANAGEMENT.Local;
-
-            db3 = new SHARED_LIBRARY_ENTITY();
-            db3.EBOOKS_MANAGEMENT.Load();
-            eBOOKSMANAGEMENTBindingSource.DataSource = db3.EBOOKS_MANAGEMENT.Local;
+            //db3 = new SHARED_LIBRARY_ENTITY();
+            //tendephanbiet1.EBOOKS_MANAGEMENT.Load();
+            eBOOKSMANAGEMENTBindingSource.DataSource = tendephanbiet1.EBOOKS_MANAGEMENT.ToList();
             gridView2.OptionsBehavior.Editable = false;
         }
 
@@ -85,17 +88,19 @@ namespace DoAnQuanLyThuVien
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog o = new OpenFileDialog();
-          
-            if (o.ShowDialog() == DialogResult.OK)
+            OpenFileDialog ofd = new OpenFileDialog();
+            
+
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                gridView2.SetFocusedRowCellValue("BOOK_URL", o.FileName);
-                BOOK_URLTextEdit.Text = o.FileName;
+                gridView2.SetFocusedRowCellValue("BOOK_URL", ofd.FileName);
+                BOOK_URLTextEdit.Text = ofd.FileName;
             }
         }
         private void BOOKIMAGEPictureEditf_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
+            o.Filter = "Pdf Files|*.pdf";
             if (o.ShowDialog() == DialogResult.OK)
             {
                 byte[] img = null;
@@ -153,6 +158,7 @@ namespace DoAnQuanLyThuVien
         private void BOOKIMAGEPictureEdit_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
+            o.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif";
             if (o.ShowDialog() == DialogResult.OK)
             {
                 byte[] img = null;

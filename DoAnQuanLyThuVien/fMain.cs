@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DoAnQuanLyThuVien.DTO;
+using System.Drawing.Imaging;
+
 
 namespace DoAnQuanLyThuVien
 {
@@ -23,7 +25,7 @@ namespace DoAnQuanLyThuVien
         string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement, oldbtnBookBorrowing;
         //int oldListWidth, oldListHeight;
         bool max_ed = true;
-
+        bool isSetting = false;
 
         bool hidden;
         public fMain(activeAccountDTO acc)
@@ -38,45 +40,82 @@ namespace DoAnQuanLyThuVien
         private void pre_loading()
         {
 
+            if (Properties.Settings.Default.BackImg != "")
+            {
+                string img = Properties.Settings.Default.BackImg;
+                byte[] i = Convert.FromBase64String(img);
+                this.BackgroundImage = Image.FromStream(new MemoryStream(i));
 
+            }
+           
             // menu data
             oldPanelWidth = 290;
             oldPanelHeight = SlidingPanel.Height;
             SlidingPanel.Width = btnShow.Width;
 
-            //button data
+            //sliding menu's button properties
             oldbtnExit = btnExit.Text;
             oldbtnAssist = btnAssist.Text;
             oldbtnBookManagement = btnBookManagement.Text;
             oldbtnL_card_show = btnL_card_show.Text;
             oldbtnAcountInfo = btnAcountInfo.Text;
-            oldbtnBookBorrowing = btnBookBorrowing.Text;
+            oldbtnBookBorrowing = btnEbookReading.Text;
             btnAssist.Text = "";
             btnExit.Text = "";
             btnBookManagement.Text = "";
             btnL_card_show.Text = "";
             btnAcountInfo.Text = "";
-            btnBookBorrowing.Text = "";
+            btnEbookReading.Text = "";
             hidden = true;
 
+
+            SlidingPanel.BackColor = Color.FromArgb(120, 245, 245, 245);
             //set WMP data
 
-            FolderBrowserDialog fld = new FolderBrowserDialog();
             //doi ten duong truyen
-            fld.SelectedPath = @"..\..\song";
-
-            tsbClearPlaylist_Click();
-
-            CreatePlayLis(fld, "*.mp3");
-            windowsMediaPlayer.Visible = false;
+            set_Playlist_properties();
 
         }
 
+        private void set_Playlist_properties()
+        {
+            FolderBrowserDialog fld = new FolderBrowserDialog();
+            fld.SelectedPath = @"..\..\song";
+
+            tsbClearPlaylist_Click();
+            if(Properties.Settings.Default.songPath != "")
+                fld.SelectedPath = Properties.Settings.Default.songPath;
+            CreatePlayLis(fld, "*.mp3");
+
+            windowsMediaPlayer.Visible = false;
+        }
+
         #region form's control
+
+
         // minimize, maximize, close button
+
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
+            save_Personal_Setting();
+        }
+
+        private void save_Personal_Setting()
+        {
+
+            // background changes saving
+            var base64 = string.Empty;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                this.BackgroundImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                base64 = Convert.ToBase64String(ms.ToArray());
+            }
+            Properties.Settings.Default.BackImg = base64;
+            Properties.Settings.Default.songPath = songFolder.SelectedPath;
+            Properties.Settings.Default.Save();
+
+            //playList changes saving
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -90,7 +129,6 @@ namespace DoAnQuanLyThuVien
             {
                 WindowState = FormWindowState.Normal;
                 max_ed = false;
-
             }
 
         }
@@ -103,7 +141,7 @@ namespace DoAnQuanLyThuVien
         private bool mouseDown;
         private Point lastLocation;
 
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private void fMain_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
             lastLocation = e.Location;
@@ -200,9 +238,50 @@ namespace DoAnQuanLyThuVien
         #endregion
 
         #region application's function button
+        private void btnBackgroundChanging_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog _openFileDialog = new OpenFileDialog();
+            _openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+            if (_openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+
+                this.BackgroundImage = new Bitmap(_openFileDialog.FileName);
+                Properties.Settings.Default.Save();
+                //parentForm.BackgroundImage.Save(_openFileDialog.FileName,System.Drawing.Imaging.ImageFormat.Jpeg);
+
+            }
+        }
         private void btnL_card_show_Click(object sender, EventArgs e)
         {
+            fCreateCardLendBook f = new fCreateCardLendBook();
+            f.ShowDialog();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //fSetting _fSetting = new fSetting(this);
+            //_fSetting.FormBorderStyle = FormBorderStyle.None;
+            //openChildForm(_fSetting);
+            if (!isSetting)
+            {
+                settingPanel.BackColor = Color.FromArgb(50, 255, 255, 255);
+                btnBackgroundChanging.Visible = true;
+                btnPlayListChanging.Visible = true;
+                isSetting = true;
+            }
+            else
+            {
+                settingPanel.BackColor = Color.FromArgb(0, 255, 255, 255);
+                btnBackgroundChanging.Visible = !true;
+                btnPlayListChanging.Visible = !true;
+                isSetting = !true;
+
+            }
+        }
+
+        private void btnAssist_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("           Các thành viên nhóm phát triển:\n                  Nguyễn Hoàng Ngọc Hải\n                             Lê Hoàng Quý\n                              Lâm Tấn Phát\n                      Trần Huyền Anh Thy\n                Phiên bản ứng dụng 1.4.21\nLiên hệ đường dây nóng: 0912345678\nHoặc qua gmail: phattrienpm@gmail.com", "Hỗ trợ");
         }
 
         private void btnBookManagement_Click(object sender, EventArgs e)
@@ -217,14 +296,26 @@ namespace DoAnQuanLyThuVien
             f.ShowDialog();
         }
 
+        FolderBrowserDialog songFolder = new FolderBrowserDialog();
+
+        private void btnPlayListChanging_Click(object sender, EventArgs e)
+        {
+            //openFileDialog.Filter = "All Media Files|*.wav;*.aac;*.wma;*.wmv;*.avi;*.mpg;*.mpeg;*.m1v;*.mp2;*.mp3;*.mpa;*.mpe;*.m3u;*.mp4;*.mov;*.3g2;*.3gp2;*.3gp;*.3gpp;*.m4a;*.cda;*.aif;*.aifc;*.aiff;*.mid;*.midi;*.rmi;*.mkv;*.WAV;*.AAC;*.WMA;*.WMV;*.AVI;*.MPG;*.MPEG;*.M1V;*.MP2;*.MP3;*.MPA;*.MPE;*.M3U;*.MP4;*.MOV;*.3G2;*.3GP2;*.3GP;*.3GPP;*.M4A;*.CDA;*.AIF;*.AIFC;*.AIFF;*.MID;*.MIDI;*.RMI;*.MKV";
+            //openFileDialog.Multiselect = true;
+            if (songFolder.ShowDialog() == DialogResult.OK)
+            {
+                Properties.Settings.Default.songPath = songFolder.SelectedPath;
+                set_Playlist_properties();
+            }
+        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+
+            save_Personal_Setting();
         }
 
-        
-
-       
 
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -236,11 +327,7 @@ namespace DoAnQuanLyThuVien
             f.ShowDialog();
         }
 
-        private void btnAssist_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("           Các thành viên nhóm phát triển:\n                  Nguyễn Hoàng Ngọc Hải\n                             Lê Hoàng Quý\n                              Lâm Tấn Phát\n                      Trần Huyền Anh Thy\n                Phiên bản ứng dụng 1.4.21\nLiên hệ đường dây nóng: 0912345678\nHoặc qua gmail: phattrienpm@gmail.com", "Hỗ trợ");
 
-        }
 
 
         private void btnAcountInfo_Click(object sender, EventArgs e)
@@ -272,7 +359,7 @@ namespace DoAnQuanLyThuVien
                 btnAcountInfo.Text = "";
                 btnBookManagement.Text = "";
                 btnL_card_show.Text = "";
-                btnBookBorrowing.Text = "";
+                btnEbookReading.Text = "";
             }
             else
             {
@@ -283,9 +370,29 @@ namespace DoAnQuanLyThuVien
                 btnAcountInfo.Text = oldbtnAcountInfo;
                 btnBookManagement.Text = oldbtnBookManagement;
                 btnL_card_show.Text = oldbtnL_card_show;
-                btnBookBorrowing.Text = oldbtnBookBorrowing;
+                btnEbookReading.Text = oldbtnBookBorrowing;
                 hidden = false;
             }
+
+        }
+        #endregion
+
+        #region openfChild region
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            settingPanel.Controls.Add(childForm);
+            settingPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
 
         }
         #endregion
