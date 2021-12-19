@@ -111,6 +111,26 @@ namespace DoAnQuanLyThuVien
                 IMAGESPictureEdit.EditValue = img;
             }
         }
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+            int[] selectedRows = gridView1.GetSelectedRows();
+            string filename = "";
+            try
+            {
+                var temp = gridView1.GetRowCellValue(selectedRows[0], "BOOK_URL");
+                if (temp == null)
+                    throw new Exception("Sách chưa được cập nhật.");
+                else filename = temp.ToString();
+
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show(a.Message);
+
+                return;
+            }
+            System.Diagnostics.Process.Start(filename);
+        }
         #endregion
 
         #region LibBook
@@ -170,8 +190,9 @@ namespace DoAnQuanLyThuVien
             }
         }
 
+
         #endregion
 
-
+       
     }
 }

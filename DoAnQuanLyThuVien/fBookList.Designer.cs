@@ -158,7 +158,7 @@ namespace DoAnQuanLyThuVien
             this.gcListBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcListBook.Name = "gcListBook";
             this.gcListBook.Size = new System.Drawing.Size(864, 349);
-            this.gcListBook.TabIndex = 4;
+            this.gcListBook.TabIndex = 10;
             this.gcListBook.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView11});
             // 
@@ -306,7 +306,7 @@ namespace DoAnQuanLyThuVien
             this.CATEGORYTextEdit.Properties.ReadOnly = true;
             this.CATEGORYTextEdit.Size = new System.Drawing.Size(307, 20);
             this.CATEGORYTextEdit.StyleController = this.dtlcLibBook;
-            this.CATEGORYTextEdit.TabIndex = 15;
+            this.CATEGORYTextEdit.TabIndex = 4;
             // 
             // LANGUAGETextEdit
             // 
@@ -316,7 +316,7 @@ namespace DoAnQuanLyThuVien
             this.LANGUAGETextEdit.Properties.ReadOnly = true;
             this.LANGUAGETextEdit.Size = new System.Drawing.Size(316, 20);
             this.LANGUAGETextEdit.StyleController = this.dtlcLibBook;
-            this.LANGUAGETextEdit.TabIndex = 16;
+            this.LANGUAGETextEdit.TabIndex = 5;
             // 
             // TITLETextEdit
             // 
@@ -326,7 +326,7 @@ namespace DoAnQuanLyThuVien
             this.TITLETextEdit.Properties.ReadOnly = true;
             this.TITLETextEdit.Size = new System.Drawing.Size(307, 20);
             this.TITLETextEdit.StyleController = this.dtlcLibBook;
-            this.TITLETextEdit.TabIndex = 17;
+            this.TITLETextEdit.TabIndex = 2;
             // 
             // AUTHORTextEdit
             // 
@@ -336,7 +336,7 @@ namespace DoAnQuanLyThuVien
             this.AUTHORTextEdit.Properties.ReadOnly = true;
             this.AUTHORTextEdit.Size = new System.Drawing.Size(316, 20);
             this.AUTHORTextEdit.StyleController = this.dtlcLibBook;
-            this.AUTHORTextEdit.TabIndex = 18;
+            this.AUTHORTextEdit.TabIndex = 3;
             // 
             // PUBLISHERTextEdit
             // 
@@ -346,7 +346,7 @@ namespace DoAnQuanLyThuVien
             this.PUBLISHERTextEdit.Properties.ReadOnly = true;
             this.PUBLISHERTextEdit.Size = new System.Drawing.Size(307, 20);
             this.PUBLISHERTextEdit.StyleController = this.dtlcLibBook;
-            this.PUBLISHERTextEdit.TabIndex = 19;
+            this.PUBLISHERTextEdit.TabIndex = 6;
             // 
             // REMAINTextEdit
             // 
@@ -361,7 +361,7 @@ namespace DoAnQuanLyThuVien
             this.REMAINTextEdit.Properties.ReadOnly = true;
             this.REMAINTextEdit.Size = new System.Drawing.Size(689, 20);
             this.REMAINTextEdit.StyleController = this.dtlcLibBook;
-            this.REMAINTextEdit.TabIndex = 20;
+            this.REMAINTextEdit.TabIndex = 8;
             // 
             // YEAROFPUBTextEdit
             // 
@@ -377,7 +377,7 @@ namespace DoAnQuanLyThuVien
             this.YEAROFPUBTextEdit.Properties.ReadOnly = true;
             this.YEAROFPUBTextEdit.Size = new System.Drawing.Size(316, 20);
             this.YEAROFPUBTextEdit.StyleController = this.dtlcLibBook;
-            this.YEAROFPUBTextEdit.TabIndex = 21;
+            this.YEAROFPUBTextEdit.TabIndex = 7;
             // 
             // BOOKIMAGEPictureEdit
             // 
@@ -388,7 +388,7 @@ namespace DoAnQuanLyThuVien
             this.BOOKIMAGEPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.BOOKIMAGEPictureEdit.Size = new System.Drawing.Size(109, 168);
             this.BOOKIMAGEPictureEdit.StyleController = this.dtlcLibBook;
-            this.BOOKIMAGEPictureEdit.TabIndex = 23;
+            this.BOOKIMAGEPictureEdit.TabIndex = 1;
             // 
             // NOTETextEdit
             // 
@@ -398,7 +398,7 @@ namespace DoAnQuanLyThuVien
             this.NOTETextEdit.Properties.ReadOnly = true;
             this.NOTETextEdit.Size = new System.Drawing.Size(689, 27);
             this.NOTETextEdit.StyleController = this.dtlcLibBook;
-            this.NOTETextEdit.TabIndex = 22;
+            this.NOTETextEdit.TabIndex = 9;
             // 
             // Root
             // 

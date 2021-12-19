@@ -22,7 +22,7 @@ namespace DoAnQuanLyThuVien
 
 
         int oldPanelWidth, oldPanelHeight;
-        string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement, oldbtnBookBorrowing;
+        string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement;
         //int oldListWidth, oldListHeight;
         bool max_ed = true;
         bool isSetting = false;
@@ -59,13 +59,13 @@ namespace DoAnQuanLyThuVien
             oldbtnBookManagement = btnBookManagement.Text;
             oldbtnL_card_show = btnL_card_show.Text;
             oldbtnAcountInfo = btnAcountInfo.Text;
-            oldbtnBookBorrowing = btnEbookReading.Text;
+          
             btnAssist.Text = "";
             btnExit.Text = "";
             btnBookManagement.Text = "";
             btnL_card_show.Text = "";
             btnAcountInfo.Text = "";
-            btnEbookReading.Text = "";
+            
             hidden = true;
 
 
@@ -359,7 +359,7 @@ namespace DoAnQuanLyThuVien
                 btnAcountInfo.Text = "";
                 btnBookManagement.Text = "";
                 btnL_card_show.Text = "";
-                btnEbookReading.Text = "";
+               
             }
             else
             {
@@ -370,7 +370,7 @@ namespace DoAnQuanLyThuVien
                 btnAcountInfo.Text = oldbtnAcountInfo;
                 btnBookManagement.Text = oldbtnBookManagement;
                 btnL_card_show.Text = oldbtnL_card_show;
-                btnEbookReading.Text = oldbtnBookBorrowing;
+              
                 hidden = false;
             }
 
