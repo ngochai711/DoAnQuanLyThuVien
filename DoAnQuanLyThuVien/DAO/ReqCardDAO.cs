@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoAnQuanLyThuVien.DTO;
 
 namespace DoAnQuanLyThuVien.DAO
 {
@@ -50,6 +52,18 @@ namespace DoAnQuanLyThuVien.DAO
                 return true;
             }
             return false;
+        }
+        public string TakeStatusByID(string id)
+        {
+            string temp="";
+            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.REQUEST_FORM WHERE REQUEST_ID = '" + id + "'");
+            foreach(DataRow item in table.Rows)
+            {
+                ReqCard rq = new ReqCard(item);
+                temp = rq.Status;
+            }
+            return temp;
+
         }
     }
 }

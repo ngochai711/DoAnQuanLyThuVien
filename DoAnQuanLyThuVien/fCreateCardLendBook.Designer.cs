@@ -35,11 +35,15 @@ namespace DoAnQuanLyThuVien
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.rEQUESTFORMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colREQUEST_ID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -48,9 +52,9 @@ namespace DoAnQuanLyThuVien
             this.colSTATUS = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Submit = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnSubmit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.btnChecked = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
             this.sbCreateLendCard = new DevExpress.XtraEditors.SimpleButton();
@@ -97,9 +101,9 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnChecked)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
             this.layoutControl3.SuspendLayout();
@@ -156,7 +160,6 @@ namespace DoAnQuanLyThuVien
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Controls.Add(this.gridControl1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(3, 3);
@@ -166,16 +169,6 @@ namespace DoAnQuanLyThuVien
             this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(12, 373);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(845, 31);
-            this.simpleButton1.StyleController = this.layoutControl1;
-            this.simpleButton1.TabIndex = 5;
-            this.simpleButton1.Text = "Xác nhận";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
             // gridControl1
             // 
             this.gridControl1.DataSource = this.rEQUESTFORMBindingSource;
@@ -183,8 +176,9 @@ namespace DoAnQuanLyThuVien
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.btnSubmit});
-            this.gridControl1.Size = new System.Drawing.Size(845, 357);
+            this.btnSubmit,
+            this.btnChecked});
+            this.gridControl1.Size = new System.Drawing.Size(845, 392);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -201,6 +195,7 @@ namespace DoAnQuanLyThuVien
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.ReadOnly = true;
+            this.gridView1.CustomRowCellEdit += new DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventHandler(this.gridView1_CustomRowCellEdit);
             // 
             // colREQUEST_ID
             // 
@@ -244,10 +239,11 @@ namespace DoAnQuanLyThuVien
             // 
             // Submit
             // 
-            this.Submit.Caption = "gridColumn1";
-            this.Submit.ColumnEdit = this.btnSubmit;
+            this.Submit.Caption = "Xác nhận";
+            this.Submit.FieldName = "Submit";
             this.Submit.MinWidth = 25;
             this.Submit.Name = "Submit";
+            this.Submit.UnboundType = DevExpress.Data.UnboundColumnType.Object;
             this.Submit.Visible = true;
             this.Submit.VisibleIndex = 4;
             this.Submit.Width = 94;
@@ -275,13 +271,25 @@ namespace DoAnQuanLyThuVien
             this.btnSubmit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnSubmit_ButtonClick);
             this.btnSubmit.Click += new System.EventHandler(this.repositoryItemButtonEdit1_Click);
             // 
+            // btnChecked
+            // 
+            this.btnChecked.AutoHeight = false;
+            serializableAppearanceObject5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            serializableAppearanceObject5.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            serializableAppearanceObject5.Options.UseBackColor = true;
+            this.btnChecked.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btnChecked.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnChecked.Name = "btnChecked";
+            this.btnChecked.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnChecked.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnChecked_ButtonClick);
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.Root.GroupBordersVisible = false;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1,
-            this.layoutControlItem8});
+            this.layoutControlItem1});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(869, 416);
             this.Root.TextVisible = false;
@@ -291,20 +299,9 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem1.Control = this.gridControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(849, 361);
+            this.layoutControlItem1.Size = new System.Drawing.Size(849, 396);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.simpleButton1;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 361);
-            this.layoutControlItem8.MinSize = new System.Drawing.Size(68, 31);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(849, 35);
-            this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem8.TextVisible = false;
             // 
             // tabPage2
             // 
@@ -706,9 +703,9 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnChecked)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
             this.layoutControl3.ResumeLayout(false);
@@ -790,8 +787,7 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private System.Windows.Forms.BindingSource rEQUESTFORMBindingSource1;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnSubmit;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraGrid.Columns.GridColumn Submit;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnChecked;
     }
 }

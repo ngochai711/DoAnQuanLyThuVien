@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using AForge.Video.DirectShow;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraEditors.Repository;
 using DoAnQuanLyThuVien.DAO;
 using DoAnQuanLyThuVien.DTO;
 
@@ -82,24 +83,7 @@ namespace DoAnQuanLyThuVien
             rEQUESTFORMBindingSource.DataSource = db8.REQUEST_FORM.ToList();
         }
         
-        private void CheckTypeButton(EditorButton button)
-        {
-            for (int i = 0; i < CardID-1; i++)
-            {
-                if (CheckCard(i+1))
-                {
-                    button.Kind = ButtonPredefines.Delete;
-                    button.Appearance.BackColor = Color.PaleVioletRed;
-                    button.Appearance.BackColor2 = Color.PaleVioletRed;
-                }
-                else
-                {
-                    button.Kind = ButtonPredefines.OK;
-                    button.Appearance.BackColor = Color.Lime;
-                    button.Appearance.BackColor2 = Color.Lime;
-                }
-            }
-        }
+        
 
         private void txbID_TextChanged(object sender, EventArgs e)
         {
@@ -115,19 +99,30 @@ namespace DoAnQuanLyThuVien
             }
         }
 
-        public bool CheckCard(int id)
+        public bool CheckCard(string id)
         {
-            string temp ="";
-            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT STATUS FROM dbo.REQUEST_FORM WHERE REQUEST_ID = '" + id + "'");
-            foreach(DataRow item in table.Rows)
-            {
-                temp = item.ToString();
-            }
-            if (String.Compare(temp,"Đã trả")==1)
+            string temp = ReqCardDAO.Instance.TakeStatusByID(id);
+            
+            if (String.Equals(temp,"Đã trả"))
                 return true;
             return false;
         }
 
+        private void gridView1_CustomRowCellEdit(object sender, DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventArgs e)
+        {
+
+
+            if (e.Column.FieldName == "Submit" && CheckCard((e.RowHandle + 1).ToString()))
+            {
+
+                e.RepositoryItem = btnChecked;
+            }
+
+            else if (e.Column.FieldName == "Submit" && !CheckCard((e.RowHandle + 1).ToString()))
+            {
+                e.RepositoryItem = btnSubmit;
+            }
+        }
         #endregion
 
 
@@ -135,14 +130,14 @@ namespace DoAnQuanLyThuVien
         #region Button
         private void sbCreateLendCard_Click(object sender, EventArgs e)
         {
-            count = 1;
+            
             ReqCardDAO.Instance.InsertCard(CardID.ToString(),txbID.Text,DateTime.Parse(deToDate.Text));
             for(int i = 1; i < count; i++)
             {
                 ReqCardInfoDAO.Instance.InsertCardInfo(CardID.ToString(), BookID[i].ToString());
-                ReqCardInfoDAO.Instance.UpdateBookRemain(BookID[i].ToString());
+                ReqCardInfoDAO.Instance.UpdateBookRemain(BookID[i]);
             }
-            
+            count = 1;
             fCreateCardLendBook_Load(sender, e);
         }
         private void sbScanner_Click(object sender, EventArgs e)
@@ -174,22 +169,6 @@ namespace DoAnQuanLyThuVien
         {
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            if ((gridView1.GetFocusedRow() as REQUEST_FORM).STATUS != "Đã trả")
-            {
-                (gridView1.GetFocusedRow() as REQUEST_FORM).STATUS = "Đã trả";
-                db8.SaveChanges();
-
-                DataTable table = DataProvider.Instance.ExecuteQuery("SELECT BOOKS_ID FROM dbo.REQUEST_INFO WHERE REQUEST_ID = " + (gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID);
-                foreach(DataRow item in table.Rows)
-                {
-                    ReqCardInfoDAO.Instance.UpdateBookRemainAccept(item.ToString());
-                }
-            }
-            fCreateCardLendBook_Load(sender, e);
-        }
-        
 
         private void gridControl1_Load(object sender, EventArgs e)
         {
@@ -200,33 +179,35 @@ namespace DoAnQuanLyThuVien
         //Du an sau khi co thoi gian tim hieu hon
         private void btnSubmit_ButtonClick(object sender, ButtonPressedEventArgs e)
         {
-
-            EditorButton button = e.Button;
-            if (e.Button.Kind == ButtonPredefines.OK)
+            
+            if (XtraMessageBox.Show("Bạn đã chắc chắn toàn bộ sách trong phiếu mượn đã được trả ?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 string query = "UPDATE dbo.REQUEST_FORM SET STATUS = N'Đã trả' WHERE REQUEST_ID = " + (gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID;
                 DataProvider.Instance.ExecuteNonQuery(query);
+                fCreateCardLendBook_Load(sender, e);
 
-                button.Kind = ButtonPredefines.Delete;
-                button.Appearance.BackColor = Color.PaleVioletRed;
-                button.Appearance.BackColor2 = Color.PaleVioletRed;
+                //Ta
+                List<ReqCardInfo> list = ReqCardInfoDAO.Instance.TakeIDBook(gridView1.FocusedRowHandle.ToString());
+                foreach (ReqCardInfo item in list)
+                {
+                    ReqCardInfoDAO.Instance.UpdateBookRemainAccept(item.Books_ID);
+                }
             }
-            else if (e.Button.Kind == ButtonPredefines.Delete)
+        }
+        private void btnChecked_ButtonClick(object sender, ButtonPressedEventArgs e)
+        {
+
+            if (XtraMessageBox.Show("Bạn có chắc muốn hủy xác nhận không ?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 string query = "UPDATE dbo.REQUEST_FORM SET STATUS = N'Đang được mượn' WHERE REQUEST_ID = " + (gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID;
                 DataProvider.Instance.ExecuteNonQuery(query);
+                fCreateCardLendBook_Load(sender, e);
 
-                button.Kind = ButtonPredefines.OK;
-                button.Appearance.BackColor = Color.Lime;
-                button.Appearance.BackColor2 = Color.Lime;
             }
-            //fCreateCardLendBook_Load(sender, e);
-            this.Refresh();
-            CheckTypeButton(button);
-
-
         }
+
         #endregion
+
 
     }
 }

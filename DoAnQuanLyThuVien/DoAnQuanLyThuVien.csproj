@@ -142,6 +142,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DTO\ReqCard.cs" />
+    <Compile Include="DTO\ReqCardInfo.cs" />
     <Compile Include="DTO\ReqDT.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
