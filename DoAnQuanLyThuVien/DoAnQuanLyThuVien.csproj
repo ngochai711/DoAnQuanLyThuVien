@@ -163,6 +163,12 @@
     <Compile Include="fReader.Designer.cs">
       <DependentUpon>fReader.cs</DependentUpon>
     </Compile>
+    <Compile Include="fReaderAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderAccount.designer.cs">
+      <DependentUpon>fReaderAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="fStaffAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fReader.resx">
       <DependentUpon>fReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReaderAccount.resx">
+      <DependentUpon>fReaderAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fStaffAccount.resx">
       <DependentUpon>fStaffAccount.cs</DependentUpon>

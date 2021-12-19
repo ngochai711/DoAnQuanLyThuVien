@@ -254,7 +254,7 @@ namespace DoAnQuanLyThuVien
             this.panel2.Size = new System.Drawing.Size(120, 120);
             this.panel2.TabIndex = 2;
             // 
-            // fReaderAccount
+            // fStaffAccount
             // 
             this.AcceptButton = this.button_Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,7 +267,7 @@ namespace DoAnQuanLyThuVien
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "fReaderAccount";
+            this.Name = "fStaffAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông tin tài khoản";
             this.Load += new System.EventHandler(this.fAccount_Load);

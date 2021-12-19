@@ -96,7 +96,7 @@ namespace DoAnQuanLyThuVien
             {
                 var current_readerAccount = rEADERINFBindingSource.Current as READER_INF;
 
-                //accountForm = new fStaffAccount(current_readerAccount);
+                accountForm = new fReaderAccount(current_readerAccount.USERNAME, current_readerAccount.PASSWORD);
             }
 
             accountForm.ShowDialog();
