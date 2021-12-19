@@ -202,7 +202,11 @@ namespace DoAnQuanLyThuVien
                 string query = "UPDATE dbo.REQUEST_FORM SET STATUS = N'Đang được mượn' WHERE REQUEST_ID = " + (gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID;
                 DataProvider.Instance.ExecuteNonQuery(query);
                 fCreateCardLendBook_Load(sender, e);
-
+                List<ReqCardInfo> list = ReqCardInfoDAO.Instance.TakeIDBook(gridView1.FocusedRowHandle.ToString());
+                foreach (ReqCardInfo item in list)
+                {
+                    ReqCardInfoDAO.Instance.UpdateBookRemain(item.Books_ID);
+                }
             }
         }
 
