@@ -253,7 +253,8 @@ namespace DoAnQuanLyThuVien
         }
         private void btnL_card_show_Click(object sender, EventArgs e)
         {
-
+            fCreateCardLendBook f = new fCreateCardLendBook();
+            f.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

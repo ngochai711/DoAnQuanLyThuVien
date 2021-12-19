@@ -25,7 +25,7 @@ namespace DoAnQuanLyThuVien
         static int[] BookID;
         int count = 1;
         int reLoad = 0;
-        LIBRARY_DATABASEEntities8 db8;
+        SHARED_LIBRARY_ENTITY db8;
         public fCreateCardLendBook()
         {
             InitializeComponent();
@@ -79,7 +79,7 @@ namespace DoAnQuanLyThuVien
 
         private void LoadReqCard()
         {
-            db8 = new LIBRARY_DATABASEEntities8();
+            db8 = new SHARED_LIBRARY_ENTITY();
             rEQUESTFORMBindingSource.DataSource = db8.REQUEST_FORM.ToList();
         }
         
