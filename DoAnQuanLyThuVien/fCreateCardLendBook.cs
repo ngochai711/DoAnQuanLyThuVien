@@ -142,15 +142,17 @@ namespace DoAnQuanLyThuVien
         }
         private void sbScanner_Click(object sender, EventArgs e)
         {
+            
             if (count > 5)
             {
                 XtraMessageBox.Show("Chỉ có thể mượn tối đa được 5 quyển sách cùng lúc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             fScanner f = new fScanner();
+            f.GetId(-1);
             f.ShowDialog();
 
-            if (f.Id() != null)
+            if (f.Id() >= 0)
             {
                 List<BookListCard> listBook = BookListCardDAO.Instance.GetBookByID(f.Id());
                 foreach (BookListCard item in listBook)
@@ -208,6 +210,12 @@ namespace DoAnQuanLyThuVien
                     ReqCardInfoDAO.Instance.UpdateBookRemain(item.Books_ID);
                 }
             }
+        }
+
+        private void gridControl1_DoubleClick(object sender, EventArgs e)
+        {
+            fReqCardInfo f = new fReqCardInfo();
+            f.ShowDialog();
         }
 
         #endregion

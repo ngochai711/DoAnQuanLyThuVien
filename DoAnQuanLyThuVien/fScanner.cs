@@ -24,6 +24,11 @@ namespace DoAnQuanLyThuVien
             InitializeComponent();
         }
 
+        public void GetId(int num)
+        {
+            id = num;
+        }
+
         public int Id()
         {
             return id;
@@ -51,6 +56,7 @@ namespace DoAnQuanLyThuVien
             
             try
             {
+                
                 Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
                 BarcodeReader reader = new BarcodeReader();
                 var result = reader.Decode(bitmap);
