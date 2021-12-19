@@ -235,8 +235,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BookList.resx">
-      <DependentUpon>BookList.cs</DependentUpon>
+
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="feditAccount.resx">
       <DependentUpon>feditAccount.cs</DependentUpon>
