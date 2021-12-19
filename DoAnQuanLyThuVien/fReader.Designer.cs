@@ -39,6 +39,7 @@
             this.btnEbookReading = new System.Windows.Forms.Button();
             this.btnBookSearching = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbTeamName = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.lbTeamName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -163,6 +163,19 @@
             this.panel2.Size = new System.Drawing.Size(211, 73);
             this.panel2.TabIndex = 0;
             // 
+            // lbTeamName
+            // 
+            this.lbTeamName.AutoSize = true;
+            this.lbTeamName.BackColor = System.Drawing.Color.Transparent;
+            this.lbTeamName.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lbTeamName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbTeamName.Location = new System.Drawing.Point(1, 21);
+            this.lbTeamName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTeamName.Name = "lbTeamName";
+            this.lbTeamName.Size = new System.Drawing.Size(209, 30);
+            this.lbTeamName.TabIndex = 12;
+            this.lbTeamName.Text = "Library";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(161)))));
@@ -247,19 +260,6 @@
             this.panelChildForm.Size = new System.Drawing.Size(966, 603);
             this.panelChildForm.TabIndex = 3;
             // 
-            // lbTeamName
-            // 
-            this.lbTeamName.AutoSize = true;
-            this.lbTeamName.BackColor = System.Drawing.Color.Transparent;
-            this.lbTeamName.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.lbTeamName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbTeamName.Location = new System.Drawing.Point(1, 21);
-            this.lbTeamName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbTeamName.Name = "lbTeamName";
-            this.lbTeamName.Size = new System.Drawing.Size(209, 30);
-            this.lbTeamName.TabIndex = 12;
-            this.lbTeamName.Text = "Library";
-            // 
             // fReader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,6 +273,7 @@
             this.MinimumSize = new System.Drawing.Size(1152, 720);
             this.Name = "fReader";
             this.Text = "fReader";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fReader_FormClosed);
             this.Load += new System.EventHandler(this.fReader_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();

@@ -19,11 +19,9 @@ namespace DoAnQuanLyThuVien
     public partial class fMain : Form
     {
         private STAFF_INF activeAccount;
-
-
         int oldPanelWidth, oldPanelHeight;
         string oldbtnExit, oldbtnAssist, oldbtnAcountInfo, oldbtnL_card_show, oldbtnBookManagement;
-        //int oldListWidth, oldListHeight;
+       
         bool max_ed = true;
         bool isSetting = false;
 
@@ -37,6 +35,9 @@ namespace DoAnQuanLyThuVien
         }
 
 
+
+        #region form's control
+
         private void pre_loading()
         {
 
@@ -47,7 +48,7 @@ namespace DoAnQuanLyThuVien
                 this.BackgroundImage = Image.FromStream(new MemoryStream(i));
 
             }
-           
+
             // menu data
             oldPanelWidth = 290;
             oldPanelHeight = SlidingPanel.Height;
@@ -59,13 +60,13 @@ namespace DoAnQuanLyThuVien
             oldbtnBookManagement = btnBookManagement.Text;
             oldbtnL_card_show = btnL_card_show.Text;
             oldbtnAcountInfo = btnAcountInfo.Text;
-          
+
             btnAssist.Text = "";
             btnExit.Text = "";
             btnBookManagement.Text = "";
             btnL_card_show.Text = "";
             btnAcountInfo.Text = "";
-            
+
             hidden = true;
 
 
@@ -76,23 +77,10 @@ namespace DoAnQuanLyThuVien
             set_Playlist_properties();
 
         }
-
-        private void set_Playlist_properties()
+        private void fMain_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FolderBrowserDialog fld = new FolderBrowserDialog();
-            fld.SelectedPath = @"..\..\song";
-
-            tsbClearPlaylist_Click();
-            if(Properties.Settings.Default.songPath != "")
-                fld.SelectedPath = Properties.Settings.Default.songPath;
-            CreatePlayLis(fld, "*.mp3");
-
-            windowsMediaPlayer.Visible = false;
+            windowsMediaPlayer.Dispose();
         }
-
-        #region form's control
-
-
         // minimize, maximize, close button
 
         private void button3_Click(object sender, EventArgs e)
@@ -112,7 +100,6 @@ namespace DoAnQuanLyThuVien
                 base64 = Convert.ToBase64String(ms.ToArray());
             }
             Properties.Settings.Default.BackImg = base64;
-            Properties.Settings.Default.songPath = songFolder.SelectedPath;
             Properties.Settings.Default.Save();
 
             //playList changes saving
@@ -165,7 +152,18 @@ namespace DoAnQuanLyThuVien
         #endregion
 
         #region mp3 button and function
+        private void set_Playlist_properties()
+        {
+            FolderBrowserDialog fld = new FolderBrowserDialog();
+            fld.SelectedPath = @"..\..\song";
 
+            tsbClearPlaylist_Click();
+            if (Properties.Settings.Default.songPath != "")
+                fld.SelectedPath = Properties.Settings.Default.songPath;
+            CreatePlayLis(fld, "*.mp3");
+
+            windowsMediaPlayer.Visible = false;
+        }
         private void btnPlay_Click(object sender, EventArgs e)
         {
 
@@ -247,7 +245,6 @@ namespace DoAnQuanLyThuVien
 
                 this.BackgroundImage = new Bitmap(_openFileDialog.FileName);
                 Properties.Settings.Default.Save();
-                //parentForm.BackgroundImage.Save(_openFileDialog.FileName,System.Drawing.Imaging.ImageFormat.Jpeg);
 
             }
         }
@@ -257,11 +254,9 @@ namespace DoAnQuanLyThuVien
             f.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnSetting_Click(object sender, EventArgs e)
         {
-            //fSetting _fSetting = new fSetting(this);
-            //_fSetting.FormBorderStyle = FormBorderStyle.None;
-            //openChildForm(_fSetting);
+           
             if (!isSetting)
             {
                 settingPanel.BackColor = Color.FromArgb(50, 255, 255, 255);
@@ -315,6 +310,7 @@ namespace DoAnQuanLyThuVien
 
             save_Personal_Setting();
         }
+
 
 
         private void button4_Click_1(object sender, EventArgs e)

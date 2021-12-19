@@ -63,27 +63,27 @@ namespace DoAnQuanLyThuVien
             // 
             this.textBox_Username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_Username.Location = new System.Drawing.Point(101, 50);
-            this.textBox_Username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_Username.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Username.Name = "textBox_Username";
             this.textBox_Username.Size = new System.Drawing.Size(299, 20);
-            this.textBox_Username.TabIndex = 2;
+            this.textBox_Username.TabIndex = 0;
             // 
             // textBox_Password
             // 
             this.textBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_Password.Location = new System.Drawing.Point(101, 72);
-            this.textBox_Password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_Password.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Password.Name = "textBox_Password";
             this.textBox_Password.Size = new System.Drawing.Size(299, 20);
-            this.textBox_Password.TabIndex = 3;
+            this.textBox_Password.TabIndex = 1;
             // 
             // button_Login
             // 
             this.button_Login.Location = new System.Drawing.Point(206, 136);
-            this.button_Login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_Login.Margin = new System.Windows.Forms.Padding(2);
             this.button_Login.Name = "button_Login";
             this.button_Login.Size = new System.Drawing.Size(100, 19);
-            this.button_Login.TabIndex = 4;
+            this.button_Login.TabIndex = 3;
             this.button_Login.Text = "Đăng nhập";
             this.button_Login.UseVisualStyleBackColor = true;
             this.button_Login.Click += new System.EventHandler(this.button_Login_Click);
@@ -92,10 +92,10 @@ namespace DoAnQuanLyThuVien
             // 
             this.button_Exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_Exit.Location = new System.Drawing.Point(308, 136);
-            this.button_Exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_Exit.Margin = new System.Windows.Forms.Padding(2);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(92, 19);
-            this.button_Exit.TabIndex = 5;
+            this.button_Exit.TabIndex = 4;
             this.button_Exit.Text = "Thoát";
             this.button_Exit.UseVisualStyleBackColor = true;
             this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
@@ -104,10 +104,10 @@ namespace DoAnQuanLyThuVien
             // 
             this.checkBox_isStaff.AutoSize = true;
             this.checkBox_isStaff.Location = new System.Drawing.Point(338, 107);
-            this.checkBox_isStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox_isStaff.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox_isStaff.Name = "checkBox_isStaff";
             this.checkBox_isStaff.Size = new System.Drawing.Size(75, 17);
-            this.checkBox_isStaff.TabIndex = 3;
+            this.checkBox_isStaff.TabIndex = 2;
             this.checkBox_isStaff.Text = "Nhân viên";
             this.checkBox_isStaff.UseVisualStyleBackColor = true;
             // 
@@ -115,7 +115,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
             this.panel1.Location = new System.Drawing.Point(0, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(446, 31);
             this.panel1.TabIndex = 8;
@@ -136,7 +136,7 @@ namespace DoAnQuanLyThuVien
             this.Controls.Add(this.label_Password);
             this.Controls.Add(this.label_Username);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
