@@ -91,12 +91,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SharedModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="fAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fAccount.designer.cs">
-      <DependentUpon>fAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="fnewAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +163,12 @@
     <Compile Include="fReader.Designer.cs">
       <DependentUpon>fReader.cs</DependentUpon>
     </Compile>
+    <Compile Include="fStaffAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStaffAccount.designer.cs">
+      <DependentUpon>fStaffAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="fReaderBorrowedBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,9 +189,6 @@
     <Compile Include="fLendBook.Designer.cs">
       <DependentUpon>fLendBook.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fAccount.resx">
-      <DependentUpon>fAccount.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fnewAccount.resx">
       <DependentUpon>fnewAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fReader.resx">
       <DependentUpon>fReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStaffAccount.resx">
+      <DependentUpon>fStaffAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReaderBorrowedBook.resx">
       <DependentUpon>fReaderBorrowedBook.cs</DependentUpon>

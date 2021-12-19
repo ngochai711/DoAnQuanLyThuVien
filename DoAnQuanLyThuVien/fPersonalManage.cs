@@ -18,6 +18,8 @@ namespace DoAnQuanLyThuVien
     {
         private SHARED_LIBRARY_ENTITY dataBase;
 
+        private STAFF_INF currentAccount;
+
         public fPersonalManage()
         {
             InitializeComponent();
@@ -82,19 +84,19 @@ namespace DoAnQuanLyThuVien
 
             bool isStaff = eventCalled_Button.Name == "simpleButton_staffAccount";
 
-            fAccount accountForm = null;
+            Form accountForm = null;
 
             if (isStaff)
             {
                 var current_staffAccount = sTAFFINFBindingSource.Current as STAFF_INF;
 
-                accountForm = new fAccount(current_staffAccount.USERNAME, current_staffAccount.PASSWORD, isStaff);
+                accountForm = new fStaffAccount(current_staffAccount);
             }
             else
             {
                 var current_readerAccount = rEADERINFBindingSource.Current as READER_INF;
 
-                accountForm = new fAccount(current_readerAccount.USERNAME, current_readerAccount.PASSWORD, isStaff);
+                //accountForm = new fStaffAccount(current_readerAccount);
             }
 
             accountForm.ShowDialog();
@@ -116,6 +118,7 @@ namespace DoAnQuanLyThuVien
         private void pictureEdit_AVATARPictureEdit_Click(object sender, EventArgs e)
         {
             DevExpress.XtraEditors.PictureEdit accountAvatar = sender as DevExpress.XtraEditors.PictureEdit;
+            
             bool isStaff = accountAvatar.Name == "STAFFAVATARpictureEdit";
 
             OpenFileDialog browseImage_Dialog = new OpenFileDialog();
@@ -129,6 +132,11 @@ namespace DoAnQuanLyThuVien
             if (browseImage_Dialog.ShowDialog() == DialogResult.OK)
             {
                 byte[] _AVATAR = get_binaryImage_from_Path(browseImage_Dialog.FileName);
+
+                if (isStaff)
+                    STAFFAVATARpictureEdit.EditValue = _AVATAR;
+                else
+                    READERAVATARPictureEdit.EditValue = _AVATAR;
 
                 update_accountAvatar(isStaff, _AVATAR);
             }
@@ -234,10 +242,6 @@ namespace DoAnQuanLyThuVien
 
                 dataBase.READER_INF.AddOrUpdate(item);
             }
-
-            dataBase.SaveChanges();
-
-            data_Load();
         }
 
         #endregion==========================================

@@ -1,7 +1,7 @@
 ﻿
 namespace DoAnQuanLyThuVien
 {
-    partial class fAccount
+    partial class fStaffAccount
     {
         /// <summary>
         /// Required designer variable.
@@ -126,19 +126,19 @@ namespace DoAnQuanLyThuVien
             this.PASSWORDTextEdit.StyleController = this.dataLayoutControl1;
             this.PASSWORDTextEdit.TabIndex = 5;
             // 
-            // textEdit1
+            // NEWPASStextEdit
             // 
             this.NEWPASStextEdit.Location = new System.Drawing.Point(12, 146);
-            this.NEWPASStextEdit.Name = "textEdit1";
+            this.NEWPASStextEdit.Name = "NEWPASStextEdit";
             this.NEWPASStextEdit.Properties.UseSystemPasswordChar = true;
             this.NEWPASStextEdit.Size = new System.Drawing.Size(301, 22);
             this.NEWPASStextEdit.StyleController = this.dataLayoutControl1;
             this.NEWPASStextEdit.TabIndex = 7;
             // 
-            // textEdit2
+            // REENTERtextEdit
             // 
             this.REENTERtextEdit.Location = new System.Drawing.Point(12, 191);
-            this.REENTERtextEdit.Name = "textEdit2";
+            this.REENTERtextEdit.Name = "REENTERtextEdit";
             this.REENTERtextEdit.Properties.UseSystemPasswordChar = true;
             this.REENTERtextEdit.Size = new System.Drawing.Size(301, 22);
             this.REENTERtextEdit.StyleController = this.dataLayoutControl1;
@@ -247,14 +247,14 @@ namespace DoAnQuanLyThuVien
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::DoAnQuanLyThuVien.Properties.Resources.reader;
+            this.panel2.BackgroundImage = global::DoAnQuanLyThuVien.Properties.Resources.librarian_2;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Location = new System.Drawing.Point(22, 59);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(120, 120);
             this.panel2.TabIndex = 2;
             // 
-            // fAccount
+            // fReaderAccount
             // 
             this.AcceptButton = this.button_Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,9 +267,10 @@ namespace DoAnQuanLyThuVien
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "fAccount";
+            this.Name = "fReaderAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông tin tài khoản";
+            this.Load += new System.EventHandler(this.fAccount_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
