@@ -239,6 +239,7 @@
     <Compile Include="fScanner.Designer.cs">
       <DependentUpon>fScanner.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <EmbeddedResource Include="fnewAccount.resx">
       <DependentUpon>fnewAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,6 +288,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>

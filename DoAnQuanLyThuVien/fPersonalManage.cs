@@ -23,13 +23,13 @@ namespace DoAnQuanLyThuVien
 
         private bool is_edittingMode = false;
 
-        public fPersonalManage()
+        public fPersonalManage(STAFF_INF _currentAccount)
         {
             InitializeComponent();
 
             data_Load();
 
-            //dataLayoutControl_Reader.OptionsView.IsReadOnly = DevExpress.Utils.DefaultBoolean.True;
+            currentAccount = _currentAccount;
         }
  
 
@@ -109,9 +109,7 @@ namespace DoAnQuanLyThuVien
 
             if (isStaff)
             {
-                var current_staffAccount = sTAFFINFBindingSource.Current as STAFF_INF;
-
-                accountForm = new fStaffAccount(current_staffAccount);
+                accountForm = new fStaffAccount(currentAccount);
             }
             else
             {
