@@ -240,6 +240,7 @@ namespace DoAnQuanLyThuVien
         {
             if (eventCalled_buttonName == "simpleButton_staffEdit")
             {
+                TYPEComboBoxEdit.ReadOnly = !is_edittingMode || !(bool)currentAccount.TYPE;
                 STAFFPIDTextEdit.ReadOnly = !is_edittingMode;
                 STAFFBIRTHdateEdit.ReadOnly = !is_edittingMode;
                 STAFFSEXcomboBoxEdit.ReadOnly = !is_edittingMode;
@@ -282,7 +283,7 @@ namespace DoAnQuanLyThuVien
 
         private void reset_Pass(bool _isStaff)
         {
-            string defaultPassword = "1";
+            string defaultPassword = "1962026656160185351301320480154111117132155";
 
             if (_isStaff)
             {
@@ -301,7 +302,8 @@ namespace DoAnQuanLyThuVien
                 dataBase.READER_INF.AddOrUpdate(item);
             }    
 
-            dataBase.SaveChanges();
+            if (dataBase.SaveChanges() == 1)
+                MessageBox.Show("Đặt lại mật khẩu thành công!");
         }
 
         private byte[] get_binaryImage_from_Path(string _fileName)

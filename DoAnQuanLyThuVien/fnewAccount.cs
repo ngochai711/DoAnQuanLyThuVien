@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -66,6 +67,22 @@ namespace DoAnQuanLyThuVien
             return false;
         }
 
+        private string Encrypt_Password()
+        {
+            byte[] password_byteArray = ASCIIEncoding.ASCII.GetBytes(PASSWORDTextEdit.Text);
+
+            byte[] byte_hashedPassword = new MD5CryptoServiceProvider().ComputeHash(password_byteArray);
+
+            string str_hashedPassword = "";
+
+            foreach (byte item in byte_hashedPassword)
+            {
+                str_hashedPassword += item;
+            }
+
+            return str_hashedPassword;
+        }
+
         private void newAccount_signIn()
         {
             string name = NAMEtextEdit.Text == "" ? "Unnamed User" : NAMEtextEdit.Text;
@@ -78,7 +95,9 @@ namespace DoAnQuanLyThuVien
 
             try
             {
-                newAccount_signIn(userName, passWord, name);
+                string encryptedPassword = Encrypt_Password();
+
+                newAccount_signIn(userName, encryptedPassword, name);
             }
             catch
             {
@@ -86,17 +105,17 @@ namespace DoAnQuanLyThuVien
             }
         }
 
-        private void newAccount_signIn(string _userName, string _passWord, string _name)
+        private void newAccount_signIn(string _userName, string _encryptedPassword, string _name)
         {
             if (isStaff)
             {
-                var item = new STAFF_INF(_userName, _passWord, _name);
+                var item = new STAFF_INF(_userName, _encryptedPassword, _name);
 
                 dataBase.STAFF_INF.Add(item);
             }
             else
             {
-                var item = new READER_INF(_userName, _passWord, _name);
+                var item = new READER_INF(_userName, _encryptedPassword, _name);
 
                 dataBase.READER_INF.Add(item);
             }
