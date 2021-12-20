@@ -739,10 +739,12 @@ namespace DoAnQuanLyThuVien
             this.gridView_Reader.GridControl = this.gridControl_Reader;
             this.gridView_Reader.Name = "gridView_Reader";
             this.gridView_Reader.OptionsBehavior.Editable = false;
+            this.gridView_Reader.OptionsBehavior.KeepFocusedRowOnUpdate = false;
             this.gridView_Reader.OptionsCustomization.AllowColumnMoving = false;
             this.gridView_Reader.OptionsCustomization.AllowColumnResizing = false;
             this.gridView_Reader.OptionsFilter.AllowMultiSelectInCheckedFilterPopup = false;
             this.gridView_Reader.OptionsFind.AlwaysVisible = true;
+            this.gridView_Reader.OptionsNavigation.AutoFocusNewRow = true;
             this.gridView_Reader.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView_Reader.OptionsView.ColumnAutoWidth = false;
             this.gridView_Reader.OptionsView.ShowGroupPanel = false;
@@ -1496,7 +1498,10 @@ namespace DoAnQuanLyThuVien
             this.colNOTE1});
             this.gridView_Staff.GridControl = this.gridControl_Staff;
             this.gridView_Staff.Name = "gridView_Staff";
+            this.gridView_Staff.OptionsBehavior.Editable = false;
+            this.gridView_Staff.OptionsBehavior.KeepFocusedRowOnUpdate = false;
             this.gridView_Staff.OptionsFind.AlwaysVisible = true;
+            this.gridView_Staff.OptionsNavigation.AutoFocusNewRow = true;
             this.gridView_Staff.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView_Staff.OptionsView.ShowGroupPanel = false;
             // 
