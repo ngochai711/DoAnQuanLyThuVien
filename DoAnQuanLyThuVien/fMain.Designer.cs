@@ -25,7 +25,7 @@ namespace DoAnQuanLyThuVien
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnSetting = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -40,8 +40,6 @@ namespace DoAnQuanLyThuVien
             this.separatorControl7 = new DevExpress.XtraEditors.SeparatorControl();
             this.separatorControl5 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnL_card_show = new System.Windows.Forms.Button();
-            this.separatorControl4 = new DevExpress.XtraEditors.SeparatorControl();
-            this.btnEbookReading = new System.Windows.Forms.Button();
             this.separatorControl3 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnAcountInfo = new System.Windows.Forms.Button();
             this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
@@ -63,7 +61,6 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
@@ -78,32 +75,32 @@ namespace DoAnQuanLyThuVien
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnSetting);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Location = new System.Drawing.Point(893, 0);
+            this.panel2.Location = new System.Drawing.Point(828, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(176, 40);
+            this.panel2.Size = new System.Drawing.Size(241, 41);
             this.panel2.TabIndex = 12;
             // 
-            // button4
+            // btnSetting
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(2, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 40);
-            this.button4.TabIndex = 18;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetting.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSetting.BackgroundImage")));
+            this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.ForeColor = System.Drawing.Color.Black;
+            this.btnSetting.Location = new System.Drawing.Point(61, 0);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(45, 41);
+            this.btnSetting.TabIndex = 7;
+            this.btnSetting.UseVisualStyleBackColor = false;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // button1
             // 
@@ -114,11 +111,11 @@ namespace DoAnQuanLyThuVien
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(47, 0);
+            this.button1.Location = new System.Drawing.Point(106, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 40);
-            this.button1.TabIndex = 17;
+            this.button1.Size = new System.Drawing.Size(45, 41);
+            this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -131,11 +128,11 @@ namespace DoAnQuanLyThuVien
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(92, 0);
+            this.button2.Location = new System.Drawing.Point(151, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 40);
-            this.button2.TabIndex = 16;
+            this.button2.Size = new System.Drawing.Size(45, 41);
+            this.button2.TabIndex = 9;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -148,11 +145,11 @@ namespace DoAnQuanLyThuVien
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(137, 0);
+            this.button3.Location = new System.Drawing.Point(196, 0);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(39, 40);
-            this.button3.TabIndex = 15;
+            this.button3.Size = new System.Drawing.Size(45, 41);
+            this.button3.TabIndex = 10;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -192,7 +189,7 @@ namespace DoAnQuanLyThuVien
             this.btnShow.Margin = new System.Windows.Forms.Padding(2);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(56, 58);
-            this.btnShow.TabIndex = 2;
+            this.btnShow.TabIndex = 1;
             this.btnShow.UseVisualStyleBackColor = false;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
@@ -215,7 +212,7 @@ namespace DoAnQuanLyThuVien
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.ImageKey = "exit_48px.png";
@@ -238,8 +235,6 @@ namespace DoAnQuanLyThuVien
             this.SlidingPanel.Controls.Add(this.separatorControl7);
             this.SlidingPanel.Controls.Add(this.separatorControl5);
             this.SlidingPanel.Controls.Add(this.btnL_card_show);
-            this.SlidingPanel.Controls.Add(this.separatorControl4);
-            this.SlidingPanel.Controls.Add(this.btnEbookReading);
             this.SlidingPanel.Controls.Add(this.separatorControl3);
             this.SlidingPanel.Controls.Add(this.btnAcountInfo);
             this.SlidingPanel.Controls.Add(this.separatorControl2);
@@ -261,7 +256,7 @@ namespace DoAnQuanLyThuVien
             this.separatorControl6.BackColor = System.Drawing.Color.Transparent;
             this.separatorControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.separatorControl6.LineColor = System.Drawing.Color.Black;
-            this.separatorControl6.Location = new System.Drawing.Point(0, 469);
+            this.separatorControl6.Location = new System.Drawing.Point(0, 387);
             this.separatorControl6.Name = "separatorControl6";
             this.separatorControl6.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
             this.separatorControl6.Size = new System.Drawing.Size(273, 23);
@@ -274,17 +269,17 @@ namespace DoAnQuanLyThuVien
             this.btnAssist.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAssist.FlatAppearance.BorderSize = 0;
             this.btnAssist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAssist.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAssist.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAssist.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAssist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAssist.ImageKey = "help_64px.png";
             this.btnAssist.ImageList = this.menuIconList;
-            this.btnAssist.Location = new System.Drawing.Point(0, 412);
+            this.btnAssist.Location = new System.Drawing.Point(0, 330);
             this.btnAssist.Margin = new System.Windows.Forms.Padding(2);
             this.btnAssist.Name = "btnAssist";
             this.btnAssist.Padding = new System.Windows.Forms.Padding(8);
             this.btnAssist.Size = new System.Drawing.Size(273, 57);
-            this.btnAssist.TabIndex = 30;
+            this.btnAssist.TabIndex = 5;
             this.btnAssist.Text = "Hỗ Trợ";
             this.btnAssist.UseVisualStyleBackColor = false;
             this.btnAssist.Click += new System.EventHandler(this.btnAssist_Click_1);
@@ -294,7 +289,7 @@ namespace DoAnQuanLyThuVien
             this.separatorControl7.BackColor = System.Drawing.Color.Transparent;
             this.separatorControl7.Dock = System.Windows.Forms.DockStyle.Top;
             this.separatorControl7.LineColor = System.Drawing.Color.Black;
-            this.separatorControl7.Location = new System.Drawing.Point(0, 389);
+            this.separatorControl7.Location = new System.Drawing.Point(0, 307);
             this.separatorControl7.Name = "separatorControl7";
             this.separatorControl7.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
             this.separatorControl7.Size = new System.Drawing.Size(273, 23);
@@ -317,52 +312,20 @@ namespace DoAnQuanLyThuVien
             this.btnL_card_show.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnL_card_show.FlatAppearance.BorderSize = 0;
             this.btnL_card_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnL_card_show.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnL_card_show.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnL_card_show.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnL_card_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnL_card_show.ImageKey = "book_52px.png";
             this.btnL_card_show.ImageList = this.menuIconList;
-            this.btnL_card_show.Location = new System.Drawing.Point(0, 330);
+            this.btnL_card_show.Location = new System.Drawing.Point(0, 248);
             this.btnL_card_show.Margin = new System.Windows.Forms.Padding(2);
             this.btnL_card_show.Name = "btnL_card_show";
             this.btnL_card_show.Padding = new System.Windows.Forms.Padding(8);
             this.btnL_card_show.Size = new System.Drawing.Size(273, 59);
-            this.btnL_card_show.TabIndex = 16;
+            this.btnL_card_show.TabIndex = 4;
             this.btnL_card_show.Text = "Mượn Trả Sách";
             this.btnL_card_show.UseVisualStyleBackColor = false;
             this.btnL_card_show.Click += new System.EventHandler(this.btnL_card_show_Click);
-            // 
-            // separatorControl4
-            // 
-            this.separatorControl4.BackColor = System.Drawing.Color.Transparent;
-            this.separatorControl4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.separatorControl4.LineColor = System.Drawing.Color.Black;
-            this.separatorControl4.Location = new System.Drawing.Point(0, 307);
-            this.separatorControl4.Name = "separatorControl4";
-            this.separatorControl4.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
-            this.separatorControl4.Size = new System.Drawing.Size(273, 23);
-            this.separatorControl4.TabIndex = 15;
-            // 
-            // btnEbookReading
-            // 
-            this.btnEbookReading.BackColor = System.Drawing.Color.Transparent;
-            this.btnEbookReading.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEbookReading.FlatAppearance.BorderSize = 0;
-            this.btnEbookReading.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEbookReading.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEbookReading.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEbookReading.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEbookReading.ImageKey = "borrow_book_64px.png";
-            this.btnEbookReading.ImageList = this.menuIconList;
-            this.btnEbookReading.Location = new System.Drawing.Point(0, 248);
-            this.btnEbookReading.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEbookReading.Name = "btnEbookReading";
-            this.btnEbookReading.Padding = new System.Windows.Forms.Padding(8);
-            this.btnEbookReading.Size = new System.Drawing.Size(273, 59);
-            this.btnEbookReading.TabIndex = 14;
-            this.btnEbookReading.Text = "Đọc sách điện tử";
-            this.btnEbookReading.UseVisualStyleBackColor = false;
-            this.btnEbookReading.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // separatorControl3
             // 
@@ -381,7 +344,7 @@ namespace DoAnQuanLyThuVien
             this.btnAcountInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAcountInfo.FlatAppearance.BorderSize = 0;
             this.btnAcountInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcountInfo.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcountInfo.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcountInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAcountInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcountInfo.ImageKey = "account_64px.png";
@@ -391,7 +354,7 @@ namespace DoAnQuanLyThuVien
             this.btnAcountInfo.Name = "btnAcountInfo";
             this.btnAcountInfo.Padding = new System.Windows.Forms.Padding(8);
             this.btnAcountInfo.Size = new System.Drawing.Size(273, 59);
-            this.btnAcountInfo.TabIndex = 12;
+            this.btnAcountInfo.TabIndex = 3;
             this.btnAcountInfo.Text = "Thông Tin Tài Khoản";
             this.btnAcountInfo.UseVisualStyleBackColor = false;
             this.btnAcountInfo.Click += new System.EventHandler(this.btnAcountInfo_Click);
@@ -414,7 +377,7 @@ namespace DoAnQuanLyThuVien
             this.btnBookManagement.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBookManagement.FlatAppearance.BorderSize = 0;
             this.btnBookManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBookManagement.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookManagement.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookManagement.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBookManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBookManagement.ImageKey = "book_60px.png";
@@ -424,7 +387,7 @@ namespace DoAnQuanLyThuVien
             this.btnBookManagement.Name = "btnBookManagement";
             this.btnBookManagement.Padding = new System.Windows.Forms.Padding(8);
             this.btnBookManagement.Size = new System.Drawing.Size(273, 59);
-            this.btnBookManagement.TabIndex = 10;
+            this.btnBookManagement.TabIndex = 2;
             this.btnBookManagement.Text = "Quản Lý Sách";
             this.btnBookManagement.UseVisualStyleBackColor = false;
             this.btnBookManagement.Click += new System.EventHandler(this.btnBookManagement_Click);
@@ -478,7 +441,7 @@ namespace DoAnQuanLyThuVien
             this.btnPlay.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(48, 38);
-            this.btnPlay.TabIndex = 19;
+            this.btnPlay.TabIndex = 11;
             this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
@@ -535,7 +498,7 @@ namespace DoAnQuanLyThuVien
             this.btnPlayListChanging.Location = new System.Drawing.Point(23, 89);
             this.btnPlayListChanging.Name = "btnPlayListChanging";
             this.btnPlayListChanging.Size = new System.Drawing.Size(192, 49);
-            this.btnPlayListChanging.TabIndex = 3;
+            this.btnPlayListChanging.TabIndex = 13;
             this.btnPlayListChanging.Text = "Cài đặt danh sách nhạc";
             this.btnPlayListChanging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPlayListChanging.UseVisualStyleBackColor = true;
@@ -550,7 +513,7 @@ namespace DoAnQuanLyThuVien
             this.btnBackgroundChanging.Location = new System.Drawing.Point(23, 25);
             this.btnBackgroundChanging.Name = "btnBackgroundChanging";
             this.btnBackgroundChanging.Size = new System.Drawing.Size(192, 49);
-            this.btnBackgroundChanging.TabIndex = 2;
+            this.btnBackgroundChanging.TabIndex = 12;
             this.btnBackgroundChanging.Text = "Cài đặt ảnh nền";
             this.btnBackgroundChanging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBackgroundChanging.UseVisualStyleBackColor = true;
@@ -573,6 +536,7 @@ namespace DoAnQuanLyThuVien
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Thư Viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fMain_FormClosed);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.fMain_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
@@ -583,7 +547,6 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
@@ -617,20 +580,18 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SeparatorControl separatorControl1;
         private System.Windows.Forms.Button btnL_card_show;
-        private DevExpress.XtraEditors.SeparatorControl separatorControl4;
-        private System.Windows.Forms.Button btnEbookReading;
         private DevExpress.XtraEditors.SeparatorControl separatorControl3;
         private System.Windows.Forms.Button btnAcountInfo;
         private DevExpress.XtraEditors.SeparatorControl separatorControl2;
         private System.Windows.Forms.Button btnBookManagement;
         private DevExpress.XtraEditors.SeparatorControl separatorControl5;
         private DevExpress.XtraEditors.SeparatorControl separatorControl7;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel settingPanel;
         private AxWMPLib.AxWindowsMediaPlayer windowsMediaPlayer;
         private DevExpress.XtraEditors.SeparatorControl separatorControl6;
         private System.Windows.Forms.Button btnAssist;
         private System.Windows.Forms.Button btnPlayListChanging;
         private System.Windows.Forms.Button btnBackgroundChanging;
+        private System.Windows.Forms.Button btnSetting;
     }
 }

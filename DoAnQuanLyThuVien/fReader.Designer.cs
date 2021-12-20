@@ -39,6 +39,7 @@
             this.btnEbookReading = new System.Windows.Forms.Button();
             this.btnBookSearching = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbTeamName = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
@@ -65,6 +67,7 @@
             this.panel1.Controls.Add(this.btnBookSearching);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Font = new System.Drawing.Font("Adobe Devanagari", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(211, 681);
@@ -73,6 +76,7 @@
             // separatorControl1
             // 
             this.separatorControl1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.separatorControl1.LineAlignment = DevExpress.XtraEditors.Alignment.Far;
             this.separatorControl1.LineColor = System.Drawing.Color.Black;
             this.separatorControl1.Location = new System.Drawing.Point(3, 603);
             this.separatorControl1.Name = "separatorControl1";
@@ -82,6 +86,7 @@
             // btnAccountInfo
             // 
             this.btnAccountInfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAccountInfo.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccountInfo.Location = new System.Drawing.Point(3, 244);
             this.btnAccountInfo.Name = "btnAccountInfo";
             this.btnAccountInfo.Size = new System.Drawing.Size(205, 49);
@@ -93,6 +98,7 @@
             // btnSupport
             // 
             this.btnSupport.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSupport.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupport.Location = new System.Drawing.Point(3, 299);
             this.btnSupport.Name = "btnSupport";
             this.btnSupport.Size = new System.Drawing.Size(205, 49);
@@ -104,6 +110,7 @@
             // btnExit
             // 
             this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnExit.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(3, 630);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(205, 49);
@@ -114,6 +121,7 @@
             // btnUserLendingCard
             // 
             this.btnUserLendingCard.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnUserLendingCard.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserLendingCard.Location = new System.Drawing.Point(3, 189);
             this.btnUserLendingCard.Name = "btnUserLendingCard";
             this.btnUserLendingCard.Size = new System.Drawing.Size(205, 49);
@@ -125,6 +133,7 @@
             // btnEbookReading
             // 
             this.btnEbookReading.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEbookReading.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEbookReading.Location = new System.Drawing.Point(3, 134);
             this.btnEbookReading.Name = "btnEbookReading";
             this.btnEbookReading.Size = new System.Drawing.Size(205, 49);
@@ -136,6 +145,7 @@
             // btnBookSearching
             // 
             this.btnBookSearching.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBookSearching.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookSearching.Location = new System.Drawing.Point(3, 79);
             this.btnBookSearching.Name = "btnBookSearching";
             this.btnBookSearching.Size = new System.Drawing.Size(205, 49);
@@ -146,11 +156,25 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lbTeamName);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(211, 73);
             this.panel2.TabIndex = 0;
+            // 
+            // lbTeamName
+            // 
+            this.lbTeamName.AutoSize = true;
+            this.lbTeamName.BackColor = System.Drawing.Color.Transparent;
+            this.lbTeamName.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lbTeamName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbTeamName.Location = new System.Drawing.Point(1, 21);
+            this.lbTeamName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTeamName.Name = "lbTeamName";
+            this.lbTeamName.Size = new System.Drawing.Size(209, 30);
+            this.lbTeamName.TabIndex = 12;
+            this.lbTeamName.Text = "Library";
             // 
             // panel3
             // 
@@ -158,9 +182,9 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.windowsMediaPlayer);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(211, 575);
+            this.panel3.Location = new System.Drawing.Point(211, 603);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(925, 106);
+            this.panel3.Size = new System.Drawing.Size(966, 78);
             this.panel3.TabIndex = 2;
             // 
             // panel5
@@ -169,7 +193,7 @@
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.btnPlay);
-            this.panel5.Location = new System.Drawing.Point(690, 55);
+            this.panel5.Location = new System.Drawing.Point(731, 27);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(235, 47);
@@ -178,11 +202,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(44, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
+            this.label1.Size = new System.Drawing.Size(52, 22);
             this.label1.TabIndex = 20;
             this.label1.Text = "label1";
             // 
@@ -191,6 +215,8 @@
             this.btnPlay.BackColor = System.Drawing.Color.Transparent;
             this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPlay.FlatAppearance.BorderSize = 0;
+            this.btnPlay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Moccasin;
+            this.btnPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PapayaWhip;
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.ForeColor = System.Drawing.Color.Black;
             this.btnPlay.ImageIndex = 1;
@@ -215,7 +241,7 @@
             // windowsMediaPlayer
             // 
             this.windowsMediaPlayer.Enabled = true;
-            this.windowsMediaPlayer.Location = new System.Drawing.Point(520, 44);
+            this.windowsMediaPlayer.Location = new System.Drawing.Point(529, 16);
             this.windowsMediaPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.windowsMediaPlayer.Name = "windowsMediaPlayer";
             this.windowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("windowsMediaPlayer.OcxState")));
@@ -228,9 +254,10 @@
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(238)))), ((int)(((byte)(220)))));
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelChildForm.Location = new System.Drawing.Point(211, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(925, 575);
+            this.panelChildForm.Size = new System.Drawing.Size(966, 603);
             this.panelChildForm.TabIndex = 3;
             // 
             // fReader
@@ -238,7 +265,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1136, 681);
+            this.ClientSize = new System.Drawing.Size(1177, 681);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -246,9 +273,12 @@
             this.MinimumSize = new System.Drawing.Size(1152, 720);
             this.Name = "fReader";
             this.Text = "fReader";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fReader_FormClosed);
             this.Load += new System.EventHandler(this.fReader_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -275,5 +305,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Label lbTeamName;
     }
 }
