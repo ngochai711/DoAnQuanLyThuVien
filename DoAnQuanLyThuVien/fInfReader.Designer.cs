@@ -68,7 +68,7 @@ namespace DoAnQuanLyThuVien
             // 
             // picEAva
             // 
-            this.picEAva.Location = new System.Drawing.Point(79, 50);
+            this.picEAva.Location = new System.Drawing.Point(79, 15);
             this.picEAva.Name = "picEAva";
             this.picEAva.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.picEAva.Size = new System.Drawing.Size(150, 170);
@@ -78,7 +78,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.btnBrowse.BackColor = System.Drawing.Color.White;
             this.btnBrowse.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowse.Location = new System.Drawing.Point(241, 129);
+            this.btnBrowse.Location = new System.Drawing.Point(241, 94);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(50, 25);
             this.btnBrowse.TabIndex = 62;
@@ -91,7 +91,7 @@ namespace DoAnQuanLyThuVien
             this.labelUsername.AutoSize = true;
             this.labelUsername.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(74)))), ((int)(((byte)(72)))));
-            this.labelUsername.Location = new System.Drawing.Point(235, 94);
+            this.labelUsername.Location = new System.Drawing.Point(235, 59);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(110, 34);
             this.labelUsername.TabIndex = 65;
@@ -101,7 +101,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.btnEditSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(191)))), ((int)(((byte)(180)))));
             this.btnEditSave.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditSave.Location = new System.Drawing.Point(722, 92);
+            this.btnEditSave.Location = new System.Drawing.Point(722, 57);
             this.btnEditSave.Name = "btnEditSave";
             this.btnEditSave.Size = new System.Drawing.Size(200, 40);
             this.btnEditSave.TabIndex = 64;
@@ -112,7 +112,6 @@ namespace DoAnQuanLyThuVien
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(232)))), ((int)(((byte)(228)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.tbxConfirm);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.tbxPass);
@@ -141,7 +140,7 @@ namespace DoAnQuanLyThuVien
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(19, 160);
+            this.panel1.Location = new System.Drawing.Point(19, 125);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(980, 520);
             this.panel1.TabIndex = 63;
@@ -208,7 +207,7 @@ namespace DoAnQuanLyThuVien
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(200)))), ((int)(((byte)(180)))));
-            this.label15.Location = new System.Drawing.Point(22, 359);
+            this.label15.Location = new System.Drawing.Point(22, 357);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 24);
             this.label15.TabIndex = 62;
@@ -312,7 +311,7 @@ namespace DoAnQuanLyThuVien
             this.textBox8.Location = new System.Drawing.Point(484, 80);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(1, 500);
+            this.textBox8.Size = new System.Drawing.Size(1, 410);
             this.textBox8.TabIndex = 54;
             // 
             // tbxName
@@ -464,7 +463,7 @@ namespace DoAnQuanLyThuVien
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1018, 700);
+            this.ClientSize = new System.Drawing.Size(1018, 660);
             this.Controls.Add(this.picEAva);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.labelUsername);
