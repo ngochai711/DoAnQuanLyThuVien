@@ -89,7 +89,8 @@ namespace DoAnQuanLyThuVien
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            
+            ofd.Filter = "Pdf Files|*.pdf";
+
 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -100,7 +101,7 @@ namespace DoAnQuanLyThuVien
         private void BOOKIMAGEPictureEditf_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
-            o.Filter = "Pdf Files|*.pdf";
+            o.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif";
             if (o.ShowDialog() == DialogResult.OK)
             {
                 byte[] img = null;
