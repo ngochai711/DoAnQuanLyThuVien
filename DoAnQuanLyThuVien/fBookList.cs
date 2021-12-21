@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace DoAnQuanLyThuVien
 {
     public partial class fBookList : Form
@@ -17,8 +18,8 @@ namespace DoAnQuanLyThuVien
         public fBookList()
         {
             InitializeComponent();
-          
         }
+
         SHARED_LIBRARY_ENTITY db3;
 
         private void fBookList_Load(object sender, EventArgs e)

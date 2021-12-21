@@ -15,8 +15,6 @@ namespace DoAnQuanLyThuVien.DTO
 
     public partial class READER_INF : activeAccountDTO
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    
         public string USERNAME { get; set; }
         public string PASSWORD { get; set; }
         public byte[] AVATAR { get; set; }
@@ -31,22 +29,33 @@ namespace DoAnQuanLyThuVien.DTO
         public string EMAIL { get; set; }
         public string NOTE { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<REQUEST_FORM> REQUEST_FORM { get; set; }
 
-        public READER_INF()
-        {
+        public READER_INF() { }
 
-        }
-
-        public READER_INF(string username, string pass)
+        public READER_INF(string _USERNAME, string _PASSWORD, string _NAME)
         {
-            this.REQUEST_FORM = new HashSet<REQUEST_FORM>();
+            USERNAME = _USERNAME;
+            PASSWORD = _PASSWORD;
+            NAME = _NAME;
         }
 
         public READER_INF(DataRow source)
         {
-
+            USERNAME = source[0].ToString();
+            PASSWORD = source[1].ToString();
+            AVATAR = (byte[])source[2];
+            READERID = source[3].ToString();
+            PID = source[4].ToString();
+            NAME = source[5].ToString();
+            SEX = source[6].ToString();
+            BIRTH = Convert.ToDateTime(source[7]);
+            AGE = Convert.ToByte(source[8]);
+            ADDRESS = source[9].ToString();
+            PHONE = source[10].ToString();
+            EMAIL = source[11].ToString();
+            EMAIL = source[11].ToString();
+            NOTE = source[12].ToString();
         }
     }
 }

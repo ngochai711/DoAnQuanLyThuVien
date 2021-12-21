@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnQuanLyThuVien.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,15 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
+using System.Data.Entity.Migrations;
 
 namespace DoAnQuanLyThuVien
 {
-    public partial class XtraForm1 : DevExpress.XtraEditors.XtraForm
+    public partial class fReaderAccount : Form
     {
-        public XtraForm1()
+        public fReaderAccount(string _userName, string _passWord)
         {
             InitializeComponent();
+
+            USERNAMETextEdit.Text = _userName;
+            PASSWORDTextEdit.Text = _passWord;
         }
     }
 }

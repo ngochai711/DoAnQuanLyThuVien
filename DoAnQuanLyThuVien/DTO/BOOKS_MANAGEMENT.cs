@@ -14,7 +14,6 @@ namespace DoAnQuanLyThuVien.DTO
     
     public partial class BOOKS_MANAGEMENT
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public BOOKS_MANAGEMENT()
         {
             this.REQUEST_INFO = new HashSet<REQUEST_INFO>();
@@ -30,8 +29,6 @@ namespace DoAnQuanLyThuVien.DTO
         public Nullable<int> YEAROFPUB { get; set; }
         public string NOTE { get; set; }
         public byte[] BOOKIMAGE { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<REQUEST_INFO> REQUEST_INFO { get; set; }
     }
 }

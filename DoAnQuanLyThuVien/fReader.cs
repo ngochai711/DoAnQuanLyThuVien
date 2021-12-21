@@ -22,6 +22,8 @@ namespace DoAnQuanLyThuVien
 
             InitializeComponent();
         }
+
+        #region Form region
         private Form activeForm = null;
         private void fReader_Load(object sender, EventArgs e)
         {
@@ -31,15 +33,14 @@ namespace DoAnQuanLyThuVien
             openChildForm(_bookList);
 
 
-            FolderBrowserDialog fld = new FolderBrowserDialog();
-            //doi ten duong truyen
-            fld.SelectedPath = @"..\..\song";
-
-            tsbClearPlaylist_Click();
-
-            CreatePlayLis(fld, "*.mp3");
-            windowsMediaPlayer.Visible = false;
+            set_Playlist_properties();
         }
+        private void fReader_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            windowsMediaPlayer.Dispose();
+        }
+
+        #endregion
 
 
         private void openChildForm(Form childForm)
@@ -94,7 +95,21 @@ namespace DoAnQuanLyThuVien
         #endregion
 
 
+
         #region mp3 button and function
+
+        private void set_Playlist_properties()
+        {
+            FolderBrowserDialog fld = new FolderBrowserDialog();
+            fld.SelectedPath = @"..\..\song";
+
+            tsbClearPlaylist_Click();
+            if (Properties.Settings.Default.songPath != "")
+                fld.SelectedPath = Properties.Settings.Default.songPath;
+            CreatePlayLis(fld, "*.mp3");
+
+            windowsMediaPlayer.Visible = false;
+        }
         private void CreatePlayLis(FolderBrowserDialog folder, string extendsion)
         {
             string myPlaylist = "Sample1";
@@ -160,8 +175,9 @@ namespace DoAnQuanLyThuVien
             label1.Text = Path.GetFileNameWithoutExtension(windowsMediaPlayer.currentMedia.name);
         }
 
+
         #endregion
 
-   
+
     }
 }

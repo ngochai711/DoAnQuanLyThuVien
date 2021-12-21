@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DoAnQuanLyThuVien.DTO;
 namespace DoAnQuanLyThuVien
 {
     static class Program
@@ -16,7 +16,7 @@ namespace DoAnQuanLyThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fInfReader());
+            Application.Run(new fMain(new STAFF_INF()));
         }
     }
 }

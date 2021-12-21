@@ -36,31 +36,36 @@ namespace DoAnQuanLyThuVien
             this.PASSWORDTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.REPASStextEdit = new DevExpress.XtraEditors.TextEdit();
             this.button_signIn = new DevExpress.XtraEditors.SimpleButton();
+            this.NAMEtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForUSERNAME = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForPASSWORD = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNAME = new DevExpress.XtraLayout.LayoutControlItem();
+            this.panel_Icon = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.USERNAMETextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PASSWORDTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.REPASStextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NAMEtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForUSERNAME)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPASSWORD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNAME)).BeginInit();
             this.SuspendLayout();
             // 
             // label_formName
             // 
             this.label_formName.AutoSize = true;
             this.label_formName.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_formName.Location = new System.Drawing.Point(36, 79);
+            this.label_formName.Location = new System.Drawing.Point(142, 77);
             this.label_formName.Name = "label_formName";
             this.label_formName.Size = new System.Drawing.Size(193, 32);
             this.label_formName.TabIndex = 0;
@@ -71,7 +76,7 @@ namespace DoAnQuanLyThuVien
             this.panel1.Controls.Add(this.dataLayoutControl1);
             this.panel1.Location = new System.Drawing.Point(31, 115);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(325, 273);
+            this.panel1.Size = new System.Drawing.Size(325, 322);
             this.panel1.TabIndex = 1;
             // 
             // dataLayoutControl1
@@ -80,11 +85,12 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl1.Controls.Add(this.PASSWORDTextEdit);
             this.dataLayoutControl1.Controls.Add(this.REPASStextEdit);
             this.dataLayoutControl1.Controls.Add(this.button_signIn);
+            this.dataLayoutControl1.Controls.Add(this.NAMEtextEdit);
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.Root;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(325, 273);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(325, 322);
             this.dataLayoutControl1.TabIndex = 0;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
@@ -98,7 +104,7 @@ namespace DoAnQuanLyThuVien
             // 
             // PASSWORDTextEdit
             // 
-            this.PASSWORDTextEdit.Location = new System.Drawing.Point(12, 117);
+            this.PASSWORDTextEdit.Location = new System.Drawing.Point(12, 165);
             this.PASSWORDTextEdit.Name = "PASSWORDTextEdit";
             this.PASSWORDTextEdit.Properties.UseSystemPasswordChar = true;
             this.PASSWORDTextEdit.Size = new System.Drawing.Size(301, 22);
@@ -107,7 +113,7 @@ namespace DoAnQuanLyThuVien
             // 
             // REPASStextEdit
             // 
-            this.REPASStextEdit.Location = new System.Drawing.Point(12, 167);
+            this.REPASStextEdit.Location = new System.Drawing.Point(12, 216);
             this.REPASStextEdit.Name = "REPASStextEdit";
             this.REPASStextEdit.Properties.UseSystemPasswordChar = true;
             this.REPASStextEdit.Size = new System.Drawing.Size(301, 22);
@@ -116,21 +122,28 @@ namespace DoAnQuanLyThuVien
             // 
             // button_signIn
             // 
-            this.button_signIn.AllowFocus = false;
             this.button_signIn.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
             this.button_signIn.Appearance.BorderColor = System.Drawing.Color.Transparent;
             this.button_signIn.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_signIn.Appearance.Options.UseBackColor = true;
             this.button_signIn.Appearance.Options.UseBorderColor = true;
             this.button_signIn.Appearance.Options.UseFont = true;
-            this.button_signIn.Location = new System.Drawing.Point(12, 224);
+            this.button_signIn.Location = new System.Drawing.Point(12, 265);
             this.button_signIn.Name = "button_signIn";
             this.button_signIn.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.button_signIn.Size = new System.Drawing.Size(301, 37);
+            this.button_signIn.Size = new System.Drawing.Size(301, 45);
             this.button_signIn.StyleController = this.dataLayoutControl1;
             this.button_signIn.TabIndex = 7;
             this.button_signIn.Text = "Tạo Tài Khoản";
             this.button_signIn.Click += new System.EventHandler(this.button_signIn_Click);
+            // 
+            // NAMEtextEdit
+            // 
+            this.NAMEtextEdit.Location = new System.Drawing.Point(12, 83);
+            this.NAMEtextEdit.Name = "NAMEtextEdit";
+            this.NAMEtextEdit.Size = new System.Drawing.Size(301, 22);
+            this.NAMEtextEdit.StyleController = this.dataLayoutControl1;
+            this.NAMEtextEdit.TabIndex = 8;
             // 
             // Root
             // 
@@ -139,7 +152,7 @@ namespace DoAnQuanLyThuVien
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(325, 273);
+            this.Root.Size = new System.Drawing.Size(325, 322);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -150,10 +163,11 @@ namespace DoAnQuanLyThuVien
             this.ItemForUSERNAME,
             this.ItemForPASSWORD,
             this.layoutControlItem1,
-            this.layoutControlItem2});
+            this.layoutControlItem2,
+            this.ItemForNAME});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(305, 253);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(305, 302);
             // 
             // ItemForUSERNAME
             // 
@@ -161,7 +175,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForUSERNAME.Location = new System.Drawing.Point(0, 0);
             this.ItemForUSERNAME.MinSize = new System.Drawing.Size(146, 26);
             this.ItemForUSERNAME.Name = "ItemForUSERNAME";
-            this.ItemForUSERNAME.Size = new System.Drawing.Size(305, 85);
+            this.ItemForUSERNAME.Size = new System.Drawing.Size(305, 51);
             this.ItemForUSERNAME.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.ItemForUSERNAME.Text = "Tên đăng nhập";
             this.ItemForUSERNAME.TextLocation = DevExpress.Utils.Locations.Top;
@@ -170,10 +184,10 @@ namespace DoAnQuanLyThuVien
             // ItemForPASSWORD
             // 
             this.ItemForPASSWORD.Control = this.PASSWORDTextEdit;
-            this.ItemForPASSWORD.Location = new System.Drawing.Point(0, 85);
+            this.ItemForPASSWORD.Location = new System.Drawing.Point(0, 133);
             this.ItemForPASSWORD.MinSize = new System.Drawing.Size(146, 26);
             this.ItemForPASSWORD.Name = "ItemForPASSWORD";
-            this.ItemForPASSWORD.Size = new System.Drawing.Size(305, 50);
+            this.ItemForPASSWORD.Size = new System.Drawing.Size(305, 51);
             this.ItemForPASSWORD.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.ItemForPASSWORD.Text = "Mật Khẩu";
             this.ItemForPASSWORD.TextLocation = DevExpress.Utils.Locations.Top;
@@ -182,10 +196,10 @@ namespace DoAnQuanLyThuVien
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.REPASStextEdit;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 135);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 184);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(186, 26);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(305, 77);
+            this.layoutControlItem1.Size = new System.Drawing.Size(305, 69);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.Text = "Nhập lại mật khẩu";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
@@ -194,39 +208,63 @@ namespace DoAnQuanLyThuVien
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.button_signIn;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 212);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 253);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(91, 31);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(305, 41);
+            this.layoutControlItem2.Size = new System.Drawing.Size(305, 49);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
+            // 
+            // ItemForNAME
+            // 
+            this.ItemForNAME.Control = this.NAMEtextEdit;
+            this.ItemForNAME.Location = new System.Drawing.Point(0, 51);
+            this.ItemForNAME.MinSize = new System.Drawing.Size(178, 26);
+            this.ItemForNAME.Name = "ItemForNAME";
+            this.ItemForNAME.Size = new System.Drawing.Size(305, 82);
+            this.ItemForNAME.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.ItemForNAME.Text = "Họ và Tên";
+            this.ItemForNAME.TextLocation = DevExpress.Utils.Locations.Top;
+            this.ItemForNAME.TextSize = new System.Drawing.Size(109, 17);
+            // 
+            // panel_Icon
+            // 
+            this.panel_Icon.BackgroundImage = global::DoAnQuanLyThuVien.Properties.Resources.librarian_2;
+            this.panel_Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_Icon.Location = new System.Drawing.Point(43, 29);
+            this.panel_Icon.Name = "panel_Icon";
+            this.panel_Icon.Size = new System.Drawing.Size(80, 80);
+            this.panel_Icon.TabIndex = 2;
             // 
             // fnewAccount
             // 
             this.AcceptButton = this.button_signIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 406);
+            this.ClientSize = new System.Drawing.Size(394, 470);
+            this.Controls.Add(this.panel_Icon);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label_formName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "fnewAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Account";
+            this.Text = "Người đọc mới";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.USERNAMETextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PASSWORDTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.REPASStextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NAMEtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForUSERNAME)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPASSWORD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNAME)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +285,8 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlItem ItemForPASSWORD;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraEditors.TextEdit NAMEtextEdit;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForNAME;
+        private System.Windows.Forms.Panel panel_Icon;
     }
 }

@@ -29,108 +29,212 @@ namespace DoAnQuanLyThuVien
         /// </summary>
         private void InitializeComponent()
         {
-            this.label_Username = new System.Windows.Forms.Label();
-            this.label_Password = new System.Windows.Forms.Label();
-            this.textBox_Username = new System.Windows.Forms.TextBox();
-            this.textBox_Password = new System.Windows.Forms.TextBox();
-            this.button_Login = new System.Windows.Forms.Button();
-            this.button_Exit = new System.Windows.Forms.Button();
-            this.checkBox_isStaff = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.USERNAMEtextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.PASSWORDtextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton_Login = new DevExpress.XtraEditors.SimpleButton();
+            this.ISTAFFcheckEdit = new DevExpress.XtraEditors.CheckEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem_Username = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem_Password = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem_isStaff = new DevExpress.XtraLayout.LayoutControlItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.USERNAMEtextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PASSWORDtextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ISTAFFcheckEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_Username)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_Password)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_isStaff)).BeginInit();
             this.SuspendLayout();
             // 
-            // label_Username
+            // panel2
             // 
-            this.label_Username.AutoSize = true;
-            this.label_Username.Location = new System.Drawing.Point(23, 61);
-            this.label_Username.Name = "label_Username";
-            this.label_Username.Size = new System.Drawing.Size(105, 17);
-            this.label_Username.TabIndex = 0;
-            this.label_Username.Text = "Tên đăng nhập";
+            this.panel2.Controls.Add(this.layoutControl1);
+            this.panel2.Location = new System.Drawing.Point(64, 274);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(331, 228);
+            this.panel2.TabIndex = 1;
             // 
-            // label_Password
+            // layoutControl1
             // 
-            this.label_Password.AutoSize = true;
-            this.label_Password.Location = new System.Drawing.Point(23, 91);
-            this.label_Password.Name = "label_Password";
-            this.label_Password.Size = new System.Drawing.Size(66, 17);
-            this.label_Password.TabIndex = 1;
-            this.label_Password.Text = "Mật khẩu";
+            this.layoutControl1.Controls.Add(this.USERNAMEtextEdit);
+            this.layoutControl1.Controls.Add(this.PASSWORDtextEdit);
+            this.layoutControl1.Controls.Add(this.simpleButton_Login);
+            this.layoutControl1.Controls.Add(this.ISTAFFcheckEdit);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(432, 138, 812, 500);
+            this.layoutControl1.Root = this.Root;
+            this.layoutControl1.Size = new System.Drawing.Size(331, 228);
+            this.layoutControl1.TabIndex = 0;
+            this.layoutControl1.Text = "layoutControl1";
             // 
-            // textBox_Username
+            // USERNAMEtextEdit
             // 
-            this.textBox_Username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_Username.Location = new System.Drawing.Point(135, 61);
-            this.textBox_Username.Name = "textBox_Username";
-            this.textBox_Username.Size = new System.Drawing.Size(398, 22);
-            this.textBox_Username.TabIndex = 2;
+            this.USERNAMEtextEdit.Location = new System.Drawing.Point(12, 32);
+            this.USERNAMEtextEdit.Name = "USERNAMEtextEdit";
+            this.USERNAMEtextEdit.Size = new System.Drawing.Size(307, 22);
+            this.USERNAMEtextEdit.StyleController = this.layoutControl1;
+            this.USERNAMEtextEdit.TabIndex = 4;
             // 
-            // textBox_Password
+            // PASSWORDtextEdit
             // 
-            this.textBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_Password.Location = new System.Drawing.Point(135, 89);
-            this.textBox_Password.Name = "textBox_Password";
-            this.textBox_Password.Size = new System.Drawing.Size(398, 22);
-            this.textBox_Password.TabIndex = 3;
+            this.PASSWORDtextEdit.Location = new System.Drawing.Point(12, 86);
+            this.PASSWORDtextEdit.Name = "PASSWORDtextEdit";
+            this.PASSWORDtextEdit.Properties.UseSystemPasswordChar = true;
+            this.PASSWORDtextEdit.Size = new System.Drawing.Size(307, 22);
+            this.PASSWORDtextEdit.StyleController = this.layoutControl1;
+            this.PASSWORDtextEdit.TabIndex = 5;
             // 
-            // button_Login
+            // simpleButton_Login
             // 
-            this.button_Login.Location = new System.Drawing.Point(275, 168);
-            this.button_Login.Name = "button_Login";
-            this.button_Login.Size = new System.Drawing.Size(134, 23);
-            this.button_Login.TabIndex = 4;
-            this.button_Login.Text = "Đăng nhập";
-            this.button_Login.UseVisualStyleBackColor = true;
-            this.button_Login.Click += new System.EventHandler(this.button_Login_Click);
+            this.simpleButton_Login.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
+            this.simpleButton_Login.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton_Login.Appearance.Options.UseBackColor = true;
+            this.simpleButton_Login.Appearance.Options.UseFont = true;
+            this.simpleButton_Login.Location = new System.Drawing.Point(12, 166);
+            this.simpleButton_Login.Name = "simpleButton_Login";
+            this.simpleButton_Login.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_Login.Size = new System.Drawing.Size(307, 50);
+            this.simpleButton_Login.StyleController = this.layoutControl1;
+            this.simpleButton_Login.TabIndex = 6;
+            this.simpleButton_Login.Text = "Đăng nhập";
+            this.simpleButton_Login.Click += new System.EventHandler(this.simpleButton_Login_Click);
             // 
-            // button_Exit
+            // ISTAFFcheckEdit
             // 
-            this.button_Exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button_Exit.Location = new System.Drawing.Point(410, 168);
-            this.button_Exit.Name = "button_Exit";
-            this.button_Exit.Size = new System.Drawing.Size(123, 23);
-            this.button_Exit.TabIndex = 5;
-            this.button_Exit.Text = "Thoát";
-            this.button_Exit.UseVisualStyleBackColor = true;
-            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
+            this.ISTAFFcheckEdit.EnterMoveNextControl = true;
+            this.ISTAFFcheckEdit.Location = new System.Drawing.Point(12, 116);
+            this.ISTAFFcheckEdit.Name = "ISTAFFcheckEdit";
+            this.ISTAFFcheckEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.ISTAFFcheckEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.ISTAFFcheckEdit.Properties.Caption = "Nhân viên";
+            this.ISTAFFcheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.ISTAFFcheckEdit.Size = new System.Drawing.Size(307, 24);
+            this.ISTAFFcheckEdit.StyleController = this.layoutControl1;
+            this.ISTAFFcheckEdit.TabIndex = 7;
             // 
-            // checkBox_isStaff
+            // Root
             // 
-            this.checkBox_isStaff.AutoSize = true;
-            this.checkBox_isStaff.Location = new System.Drawing.Point(450, 132);
-            this.checkBox_isStaff.Name = "checkBox_isStaff";
-            this.checkBox_isStaff.Size = new System.Drawing.Size(94, 21);
-            this.checkBox_isStaff.TabIndex = 7;
-            this.checkBox_isStaff.Text = "Nhân viên";
-            this.checkBox_isStaff.UseVisualStyleBackColor = true;
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem_Username,
+            this.layoutControlItem_Password,
+            this.layoutControlItem3,
+            this.layoutControlItem_isStaff});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(331, 228);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlItem_Username
+            // 
+            this.layoutControlItem_Username.Control = this.USERNAMEtextEdit;
+            this.layoutControlItem_Username.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem_Username.MinSize = new System.Drawing.Size(112, 45);
+            this.layoutControlItem_Username.Name = "layoutControlItem_Username";
+            this.layoutControlItem_Username.Size = new System.Drawing.Size(311, 54);
+            this.layoutControlItem_Username.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem_Username.Text = "Tên đăng nhập";
+            this.layoutControlItem_Username.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem_Username.TextSize = new System.Drawing.Size(93, 17);
+            // 
+            // layoutControlItem_Password
+            // 
+            this.layoutControlItem_Password.Control = this.PASSWORDtextEdit;
+            this.layoutControlItem_Password.Location = new System.Drawing.Point(0, 54);
+            this.layoutControlItem_Password.MinSize = new System.Drawing.Size(112, 45);
+            this.layoutControlItem_Password.Name = "layoutControlItem_Password";
+            this.layoutControlItem_Password.Size = new System.Drawing.Size(311, 50);
+            this.layoutControlItem_Password.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem_Password.Text = "Mật khẩu";
+            this.layoutControlItem_Password.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem_Password.TextSize = new System.Drawing.Size(93, 17);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.simpleButton_Login;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 154);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(91, 31);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(311, 54);
+            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // layoutControlItem_isStaff
+            // 
+            this.layoutControlItem_isStaff.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem_isStaff.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.layoutControlItem_isStaff.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
+            this.layoutControlItem_isStaff.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.layoutControlItem_isStaff.ContentVertAlignment = DevExpress.Utils.VertAlignment.Top;
+            this.layoutControlItem_isStaff.Control = this.ISTAFFcheckEdit;
+            this.layoutControlItem_isStaff.ImageOptions.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem_isStaff.Location = new System.Drawing.Point(0, 104);
+            this.layoutControlItem_isStaff.MinSize = new System.Drawing.Size(91, 28);
+            this.layoutControlItem_isStaff.Name = "layoutControlItem_isStaff";
+            this.layoutControlItem_isStaff.Size = new System.Drawing.Size(311, 50);
+            this.layoutControlItem_isStaff.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem_isStaff.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutControlItem_isStaff.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem_isStaff.TextVisible = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(217)))), ((int)(((byte)(191)))));
-            this.panel1.Location = new System.Drawing.Point(0, -3);
+            this.panel1.BackgroundImage = global::DoAnQuanLyThuVien.Properties.Resources.Library_Icon;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(151, 74);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(595, 38);
-            this.panel1.TabIndex = 8;
+            this.panel1.Size = new System.Drawing.Size(150, 150);
+            this.panel1.TabIndex = 0;
             // 
-            // f_Login
+            // label1
             // 
-            this.AcceptButton = this.button_Login;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(118, 222);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 47);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Pandealine";
+            // 
+            // fLogin
+            // 
+            this.AcceptButton = this.simpleButton_Login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.button_Exit;
-            this.ClientSize = new System.Drawing.Size(567, 215);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(463, 590);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkBox_isStaff);
-            this.Controls.Add(this.button_Exit);
-            this.Controls.Add(this.button_Login);
-            this.Controls.Add(this.textBox_Password);
-            this.Controls.Add(this.textBox_Username);
-            this.Controls.Add(this.label_Password);
-            this.Controls.Add(this.label_Username);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "f_Login";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Đăng nhập";
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.USERNAMEtextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PASSWORDtextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ISTAFFcheckEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_Username)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_Password)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_isStaff)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,14 +242,18 @@ namespace DoAnQuanLyThuVien
 
         #endregion
 
-        private System.Windows.Forms.Label label_Username;
-        private System.Windows.Forms.Label label_Password;
-        private System.Windows.Forms.TextBox textBox_Username;
-        private System.Windows.Forms.TextBox textBox_Password;
-        private System.Windows.Forms.Button button_Login;
-        private System.Windows.Forms.Button button_Exit;
-        private System.Windows.Forms.CheckBox checkBox_isStaff;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private DevExpress.XtraEditors.TextEdit USERNAMEtextEdit;
+        private DevExpress.XtraEditors.TextEdit PASSWORDtextEdit;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_Login;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_Username;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_Password;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_isStaff;
+        private System.Windows.Forms.Label label1;
+        public DevExpress.XtraEditors.CheckEdit ISTAFFcheckEdit;
     }
 }
-
