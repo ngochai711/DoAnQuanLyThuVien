@@ -53,7 +53,10 @@ namespace DoAnQuanLyThuVien
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
             
             bool isStaff = eventCalled_Button.Name == "simpleButton_staffAdd";
-            
+
+            if (isStaff && currentAccount.TYPE == false)
+            { MessageBox.Show("Bản phải là quản lý để có thể thực hiện chức năng này"); return; }
+
             fnewAccount f = new fnewAccount(isStaff);
             f.ShowDialog();
 
@@ -69,6 +72,9 @@ namespace DoAnQuanLyThuVien
             
             bool isStaff = eventCalled_Button.Name == "simpleButton_staffDel";
 
+            if (isStaff && currentAccount.TYPE == false)
+            { MessageBox.Show("Bản phải là quản lý để có thể thực hiện chức năng này"); return; }
+
             if (MessageBox.Show("Xóa tài khoản này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     delete_Account(isStaff);          
         }
@@ -77,9 +83,12 @@ namespace DoAnQuanLyThuVien
         {
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
 
+            if (currentAccount.TYPE == false)
+            focus_currentAccount();
+
             if (is_edittingMode)
             {
-                Save_editedInfo(eventCalled_Button.Name);
+                save_editedInfo(eventCalled_Button.Name);
 
                 eventCalled_Button.Text = "Cập nhật";
             }
@@ -88,7 +97,7 @@ namespace DoAnQuanLyThuVien
 
             is_edittingMode = !is_edittingMode;
 
-            Enable_Disable_Editing(eventCalled_Button.Name);
+            enable_disable_Editing(eventCalled_Button.Name);
         }
 
         private void simpleButton_Reload_Click(object sender, EventArgs e)
@@ -131,6 +140,9 @@ namespace DoAnQuanLyThuVien
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
 
             bool isStaff = eventCalled_Button.Name == "simpleButton_staff_resetPass";
+
+            if (isStaff && currentAccount.TYPE == false)
+            { MessageBox.Show("Bản phải là quản lý để có thể thực hiện chức năng này"); return; }
 
             reset_Pass(isStaff);
 
@@ -213,10 +225,22 @@ namespace DoAnQuanLyThuVien
             dataBase.SaveChanges();
         }
 
-        private void Enable_Disable_Editing(string eventCalled_buttonName)
+        private void focus_currentAccount()
+        {
+            var obj = sTAFFINFBindingSource.List.OfType<STAFF_INF>().ToList().Find(f => f.USERNAME == currentAccount.USERNAME);
+
+            int currentAccount_Index = sTAFFINFBindingSource.IndexOf(obj);
+
+            int currentAccount_rowHandle = gridView_Staff.GetRowHandle(currentAccount_Index);
+
+            gridView_Staff.FocusedRowHandle = currentAccount_rowHandle;
+        }
+
+        private void enable_disable_Editing(string eventCalled_buttonName)
         {
             if (eventCalled_buttonName == "simpleButton_staffEdit")
             {
+                TYPEComboBoxEdit.ReadOnly = !is_edittingMode || !(bool)currentAccount.TYPE;
                 STAFFPIDTextEdit.ReadOnly = !is_edittingMode;
                 STAFFBIRTHdateEdit.ReadOnly = !is_edittingMode;
                 STAFFSEXcomboBoxEdit.ReadOnly = !is_edittingMode;
@@ -239,7 +263,7 @@ namespace DoAnQuanLyThuVien
             }
         }
 
-        private void Save_editedInfo(string eventCalled_buttonName)
+        private void save_editedInfo(string eventCalled_buttonName)
         {
             if (eventCalled_buttonName == "simpleButton_staffEdit")
             {
@@ -259,7 +283,7 @@ namespace DoAnQuanLyThuVien
 
         private void reset_Pass(bool _isStaff)
         {
-            string defaultPassword = "1";
+            string defaultPassword = "1962026656160185351301320480154111117132155";
 
             if (_isStaff)
             {
@@ -278,7 +302,8 @@ namespace DoAnQuanLyThuVien
                 dataBase.READER_INF.AddOrUpdate(item);
             }    
 
-            dataBase.SaveChanges();
+            if (dataBase.SaveChanges() == 1)
+                MessageBox.Show("Đặt lại mật khẩu thành công!");
         }
 
         private byte[] get_binaryImage_from_Path(string _fileName)

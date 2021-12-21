@@ -384,6 +384,7 @@
       <DependentUpon>ReqDT.edmx</DependentUpon>
       <LastGenOutput>ReqDT.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Library_Icon.jpg" />
     <None Include="Resources\win11Background.jpg" />
     <None Include="Resources\librarian 2.jpg" />
     <None Include="Resources\reader.png" />

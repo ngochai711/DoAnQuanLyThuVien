@@ -17,7 +17,7 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fBookManager : DevExpress.XtraEditors.XtraForm
     {
-        public SHARED_LIBRARY_ENTITY tendephanbiet1;
+        public SHARED_LIBRARY_ENTITY tendephanbiet1 = new SHARED_LIBRARY_ENTITY();
 
         public fBookManager()
         {
@@ -31,7 +31,7 @@ namespace DoAnQuanLyThuVien
         private void fBookManager_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'lIBRARY_DATABASEDataSet.EBOOKS_MANAGEMENT' table. You can move, or remove it, as needed.
-            tendephanbiet1 = fLogin.tendephanbiet;
+            //tendephanbiet1 = fLogin.tendephanbiet;
             //db = new SHARED_LIBRARY_ENTITY();
             //tendephanbiet1.BOOKS_MANAGEMENT.Load();
             bOOKSMANAGEMENTBindingSource.DataSource = tendephanbiet1.BOOKS_MANAGEMENT.ToList();

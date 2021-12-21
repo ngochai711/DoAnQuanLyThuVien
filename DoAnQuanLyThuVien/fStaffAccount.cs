@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity.Migrations;
 using DoAnQuanLyThuVien.DTO;
+using System.Security.Cryptography;
 
 namespace DoAnQuanLyThuVien
 {
@@ -129,9 +130,27 @@ namespace DoAnQuanLyThuVien
             ResumeLayout(false);
         }
 
+        private string Encrypt_Password(string _needEncrypt_Password)
+        {
+            byte[] password_byteArray = ASCIIEncoding.ASCII.GetBytes(_needEncrypt_Password);
+
+            byte[] byte_hashedPassword = new MD5CryptoServiceProvider().ComputeHash(password_byteArray);
+
+            string str_hashedPassword = "";
+
+            foreach (byte item in byte_hashedPassword)
+            {
+                str_hashedPassword += item;
+            }
+
+            return str_hashedPassword;
+        }
+
         private void Update_newPassword()
         {
-            currentAccount.PASSWORD = NEWPASStextEdit.Text;
+            string encryptedPassword = Encrypt_Password(NEWPASStextEdit.Text);
+
+            currentAccount.PASSWORD = encryptedPassword;
             dataBase.STAFF_INF.AddOrUpdate(currentAccount);
 
             if (dataBase.SaveChanges() == 1)
@@ -145,7 +164,9 @@ namespace DoAnQuanLyThuVien
 
         private bool unmatched_oldPassword()
         {
-            return PASSWORDTextEdit.Text != currentAccount.PASSWORD;
+            string encryptedPassword = Encrypt_Password(PASSWORDTextEdit.Text);
+
+            return encryptedPassword != currentAccount.PASSWORD;
         }
 
         #endregion ==========================================

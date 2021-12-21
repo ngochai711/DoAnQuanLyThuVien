@@ -83,6 +83,16 @@ namespace DoAnQuanLyThuVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Library_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Library_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reader {
             get {
                 object obj = ResourceManager.GetObject("reader", resourceCulture);
