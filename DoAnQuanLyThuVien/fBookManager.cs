@@ -17,15 +17,14 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fBookManager : DevExpress.XtraEditors.XtraForm
     {
-        public SHARED_LIBRARY_ENTITY tendephanbiet1 = new SHARED_LIBRARY_ENTITY();
+        public SHARED_LIBRARY_ENTITY db = new SHARED_LIBRARY_ENTITY();
 
         public fBookManager()
         {
             InitializeComponent();
         }
 
-        SHARED_LIBRARY_ENTITY db;
-        SHARED_LIBRARY_ENTITY db3;
+       
 
 
         private void fBookManager_Load(object sender, EventArgs e)
@@ -33,12 +32,12 @@ namespace DoAnQuanLyThuVien
             // TODO: This line of code loads data into the 'lIBRARY_DATABASEDataSet.EBOOKS_MANAGEMENT' table. You can move, or remove it, as needed.
             //tendephanbiet1 = fLogin.tendephanbiet;
             //db = new SHARED_LIBRARY_ENTITY();
-            //tendephanbiet1.BOOKS_MANAGEMENT.Load();
-            bOOKSMANAGEMENTBindingSource.DataSource = tendephanbiet1.BOOKS_MANAGEMENT.ToList();
+            db.BOOKS_MANAGEMENT.Load();
+            bOOKSMANAGEMENTBindingSource.DataSource = db.BOOKS_MANAGEMENT.Local;
 
             //db3 = new SHARED_LIBRARY_ENTITY();
-            //tendephanbiet1.EBOOKS_MANAGEMENT.Load();
-            eBOOKSMANAGEMENTBindingSource.DataSource = tendephanbiet1.EBOOKS_MANAGEMENT.ToList();
+            db.EBOOKS_MANAGEMENT.Load();
+            eBOOKSMANAGEMENTBindingSource.DataSource = db.EBOOKS_MANAGEMENT.Local;
             gridView2.OptionsBehavior.Editable = false;
         }
 
@@ -58,7 +57,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnEditf_Click(object sender, EventArgs e)
         {
-            db3.SaveChanges();
+            db.SaveChanges();
             XtraMessageBox.Show("Bạn đã cập nhật thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -66,7 +65,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnCancelf_Click(object sender, EventArgs e)
         {
-            var changed = db3.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
+            var changed = db.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
             foreach (var obj in changed)
             {
                 switch (obj.State)
@@ -100,6 +99,7 @@ namespace DoAnQuanLyThuVien
         }
         private void BOOKIMAGEPictureEditf_Click(object sender, EventArgs e)
         {
+            
             OpenFileDialog o = new OpenFileDialog();
             o.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif";
             if (o.ShowDialog() == DialogResult.OK)
@@ -149,8 +149,17 @@ namespace DoAnQuanLyThuVien
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            db.SaveChanges();
-            XtraMessageBox.Show("Bạn đã cập nhật thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                db.SaveChanges();
+                XtraMessageBox.Show("Bạn đã cập nhật thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Vui lòng nhập tên sách!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
+          
         }
  
 

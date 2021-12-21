@@ -311,7 +311,11 @@ namespace DoAnQuanLyThuVien
             save_Personal_Setting();
         }
 
+        private void panel5_MouseHover(object sender, EventArgs e)
+        {
 
+            panel5.BackColor = Color.FromArgb(120, 245, 245, 245);
+        }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
