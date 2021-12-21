@@ -13,7 +13,7 @@ namespace DoAnQuanLyThuVien.DTO
     using System.Collections.Generic;
     using System.Data;
 
-    public partial class READER_INF : activeAccountDTO
+    public partial class READER_INF : AccountDTO
     {
         public string USERNAME { get; set; }
         public string PASSWORD { get; set; }

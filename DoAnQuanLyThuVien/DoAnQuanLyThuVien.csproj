@@ -107,12 +107,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SharedModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="feditAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="feditAccount.designer.cs">
-      <DependentUpon>feditAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="fnewAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +209,18 @@
     <Compile Include="fReader.Designer.cs">
       <DependentUpon>fReader.cs</DependentUpon>
     </Compile>
+    <Compile Include="fReaderAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderAccount.designer.cs">
+      <DependentUpon>fReaderAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStaffAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStaffAccount.designer.cs">
+      <DependentUpon>fStaffAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="fReaderBorrowedBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,12 +245,8 @@
     <Compile Include="fScanner.Designer.cs">
       <DependentUpon>fScanner.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="feditAccount.resx">
-      <DependentUpon>feditAccount.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fnewAccount.resx">
       <DependentUpon>fnewAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +274,12 @@
     <EmbeddedResource Include="fReader.resx">
       <DependentUpon>fReader.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fReaderAccount.resx">
+      <DependentUpon>fReaderAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStaffAccount.resx">
+      <DependentUpon>fStaffAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fReaderBorrowedBook.resx">
       <DependentUpon>fReaderBorrowedBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +298,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -375,7 +384,10 @@
       <DependentUpon>ReqDT.edmx</DependentUpon>
       <LastGenOutput>ReqDT.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Library_Icon.jpg" />
     <None Include="Resources\win11Background.jpg" />
+    <None Include="Resources\librarian 2.jpg" />
+    <None Include="Resources\reader.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

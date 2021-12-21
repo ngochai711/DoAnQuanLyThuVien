@@ -17,7 +17,7 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fBookManager : DevExpress.XtraEditors.XtraForm
     {
-        public SHARED_LIBRARY_ENTITY tendephanbiet1;
+        public SHARED_LIBRARY_ENTITY tendephanbiet1 = new SHARED_LIBRARY_ENTITY();
 
         public fBookManager()
         {
@@ -27,7 +27,7 @@ namespace DoAnQuanLyThuVien
         private void fBookManager_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'lIBRARY_DATABASEDataSet.EBOOKS_MANAGEMENT' table. You can move, or remove it, as needed.
-            tendephanbiet1 = fLogin.tendephanbiet;
+            //tendephanbiet1 = fLogin.tendephanbiet;
             //db = new SHARED_LIBRARY_ENTITY();
             //tendephanbiet1.BOOKS_MANAGEMENT.Load();
             bOOKSMANAGEMENTBindingSource.DataSource = tendephanbiet1.BOOKS_MANAGEMENT.ToList();
@@ -85,7 +85,8 @@ namespace DoAnQuanLyThuVien
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            
+            ofd.Filter = "Pdf Files|*.pdf";
+
 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -96,7 +97,7 @@ namespace DoAnQuanLyThuVien
         private void BOOKIMAGEPictureEditf_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
-            o.Filter = "Pdf Files|*.pdf";
+            o.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif";
             if (o.ShowDialog() == DialogResult.OK)
             {
                 byte[] img = null;
@@ -106,6 +107,26 @@ namespace DoAnQuanLyThuVien
                 gridView2.SetFocusedRowCellValue("IMAGES", img);
                 IMAGESPictureEdit.EditValue = img;
             }
+        }
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+            int[] selectedRows = gridView1.GetSelectedRows();
+            string filename = "";
+            try
+            {
+                var temp = gridView1.GetRowCellValue(selectedRows[0], "BOOK_URL");
+                if (temp == null)
+                    throw new Exception("Sách chưa được cập nhật.");
+                else filename = temp.ToString();
+
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show(a.Message);
+
+                return;
+            }
+            System.Diagnostics.Process.Start(filename);
         }
         #endregion
 
@@ -166,8 +187,9 @@ namespace DoAnQuanLyThuVien
             }
         }
 
+
         #endregion
 
-
+       
     }
 }

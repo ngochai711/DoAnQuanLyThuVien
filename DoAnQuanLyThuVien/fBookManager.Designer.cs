@@ -116,6 +116,7 @@ namespace DoAnQuanLyThuVien
             this.BOOK_URLTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.IMAGESPictureEdit = new DevExpress.XtraEditors.PictureEdit();
             this.NOTETextEdit = new DevExpress.XtraEditors.MemoEdit();
+            this.btnRead = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForIMAGES = new DevExpress.XtraLayout.LayoutControlItem();
@@ -129,6 +130,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.pcListBook)).BeginInit();
             this.pcListBook.SuspendLayout();
@@ -208,6 +210,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             this.SuspendLayout();
             // 
@@ -529,7 +532,7 @@ namespace DoAnQuanLyThuVien
             this.teBookType.Name = "teBookType";
             this.teBookType.Size = new System.Drawing.Size(511, 20);
             this.teBookType.StyleController = this.dtlcLibBook;
-            this.teBookType.TabIndex = 4;
+            this.teBookType.TabIndex = 5;
             // 
             // teLanguage
             // 
@@ -539,7 +542,7 @@ namespace DoAnQuanLyThuVien
             this.teLanguage.Name = "teLanguage";
             this.teLanguage.Size = new System.Drawing.Size(167, 20);
             this.teLanguage.StyleController = this.dtlcLibBook;
-            this.teLanguage.TabIndex = 5;
+            this.teLanguage.TabIndex = 4;
             // 
             // teBookName
             // 
@@ -549,7 +552,7 @@ namespace DoAnQuanLyThuVien
             this.teBookName.Name = "teBookName";
             this.teBookName.Size = new System.Drawing.Size(1001, 20);
             this.teBookName.StyleController = this.dtlcLibBook;
-            this.teBookName.TabIndex = 6;
+            this.teBookName.TabIndex = 2;
             // 
             // teAuthor
             // 
@@ -559,7 +562,7 @@ namespace DoAnQuanLyThuVien
             this.teAuthor.Name = "teAuthor";
             this.teAuthor.Size = new System.Drawing.Size(167, 20);
             this.teAuthor.StyleController = this.dtlcLibBook;
-            this.teAuthor.TabIndex = 7;
+            this.teAuthor.TabIndex = 3;
             // 
             // tePublisher
             // 
@@ -569,7 +572,7 @@ namespace DoAnQuanLyThuVien
             this.tePublisher.Name = "tePublisher";
             this.tePublisher.Size = new System.Drawing.Size(167, 20);
             this.tePublisher.StyleController = this.dtlcLibBook;
-            this.tePublisher.TabIndex = 8;
+            this.tePublisher.TabIndex = 6;
             // 
             // teNum
             // 
@@ -582,7 +585,7 @@ namespace DoAnQuanLyThuVien
             this.teNum.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.teNum.Size = new System.Drawing.Size(511, 20);
             this.teNum.StyleController = this.dtlcLibBook;
-            this.teNum.TabIndex = 9;
+            this.teNum.TabIndex = 8;
             // 
             // teYear
             // 
@@ -596,7 +599,7 @@ namespace DoAnQuanLyThuVien
             this.teYear.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.teYear.Size = new System.Drawing.Size(167, 20);
             this.teYear.StyleController = this.dtlcLibBook;
-            this.teYear.TabIndex = 10;
+            this.teYear.TabIndex = 7;
             // 
             // peImage
             // 
@@ -608,7 +611,7 @@ namespace DoAnQuanLyThuVien
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.peImage.Size = new System.Drawing.Size(141, 180);
             this.peImage.StyleController = this.dtlcLibBook;
-            this.peImage.TabIndex = 14;
+            this.peImage.TabIndex = 1;
             this.peImage.Click += new System.EventHandler(this.BOOKIMAGEPictureEdit_Click);
             // 
             // teNote
@@ -619,7 +622,7 @@ namespace DoAnQuanLyThuVien
             this.teNote.Name = "teNote";
             this.teNote.Size = new System.Drawing.Size(1001, 63);
             this.teNote.StyleController = this.dtlcLibBook;
-            this.teNote.TabIndex = 12;
+            this.teNote.TabIndex = 9;
             // 
             // Root
             // 
@@ -780,6 +783,7 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl1.Controls.Add(this.BOOK_URLTextEdit);
             this.dataLayoutControl1.Controls.Add(this.IMAGESPictureEdit);
             this.dataLayoutControl1.Controls.Add(this.NOTETextEdit);
+            this.dataLayoutControl1.Controls.Add(this.btnRead);
             this.dataLayoutControl1.DataSource = this.eBOOKSMANAGEMENTBindingSource;
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 0);
@@ -1143,9 +1147,20 @@ namespace DoAnQuanLyThuVien
             this.NOTETextEdit.Location = new System.Drawing.Point(260, 143);
             this.NOTETextEdit.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.NOTETextEdit.Name = "NOTETextEdit";
-            this.NOTETextEdit.Size = new System.Drawing.Size(988, 72);
+            this.NOTETextEdit.Size = new System.Drawing.Size(988, 46);
             this.NOTETextEdit.StyleController = this.dataLayoutControl1;
             this.NOTETextEdit.TabIndex = 19;
+            // 
+            // btnRead
+            // 
+            this.btnRead.Location = new System.Drawing.Point(186, 193);
+            this.btnRead.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(1062, 22);
+            this.btnRead.StyleController = this.dataLayoutControl1;
+            this.btnRead.TabIndex = 9;
+            this.btnRead.Text = "Đọc sách";
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
             // layoutControlGroup4
             // 
@@ -1191,7 +1206,8 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem17,
             this.layoutControlItem12,
             this.layoutControlItem13,
-            this.layoutControlItem19});
+            this.layoutControlItem19,
+            this.layoutControlItem21});
             this.layoutControlGroup7.Location = new System.Drawing.Point(162, 0);
             this.layoutControlGroup7.Name = "layoutControlGroup7";
             this.layoutControlGroup7.Size = new System.Drawing.Size(1090, 219);
@@ -1242,7 +1258,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem18.CustomizationFormText = "Ghi chú:";
             this.layoutControlItem18.Location = new System.Drawing.Point(0, 98);
             this.layoutControlItem18.Name = "ItemForNOTE";
-            this.layoutControlItem18.Size = new System.Drawing.Size(1066, 76);
+            this.layoutControlItem18.Size = new System.Drawing.Size(1066, 50);
             this.layoutControlItem18.Text = "Ghi chú:";
             this.layoutControlItem18.TextSize = new System.Drawing.Size(71, 13);
             // 
@@ -1284,6 +1300,15 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem19.Size = new System.Drawing.Size(171, 26);
             this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem19.TextVisible = false;
+            // 
+            // layoutControlItem21
+            // 
+            this.layoutControlItem21.Control = this.btnRead;
+            this.layoutControlItem21.Location = new System.Drawing.Point(0, 148);
+            this.layoutControlItem21.Name = "layoutControlItem21";
+            this.layoutControlItem21.Size = new System.Drawing.Size(1066, 26);
+            this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem21.TextVisible = false;
             // 
             // layoutControlItem20
             // 
@@ -1385,6 +1410,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             this.ResumeLayout(false);
 
@@ -1492,5 +1518,7 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup7;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
+        private DevExpress.XtraEditors.SimpleButton btnRead;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
     }
 }
