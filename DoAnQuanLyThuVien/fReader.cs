@@ -63,7 +63,7 @@ namespace DoAnQuanLyThuVien
         #region button click
         private void btnUserLendingCard_Click(object sender, EventArgs e)
         {
-            fReaderBorrowedBook _readerBorrowedBook = new fReaderBorrowedBook();
+            fReaderBorrowedBook _readerBorrowedBook = new fReaderBorrowedBook(activeAccount as READER_INF);
             _readerBorrowedBook.FormBorderStyle = FormBorderStyle.None;
             openChildForm(_readerBorrowedBook);
         }
