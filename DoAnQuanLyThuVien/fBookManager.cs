@@ -17,7 +17,7 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fBookManager : DevExpress.XtraEditors.XtraForm
     {
-        public SHARED_LIBRARY_ENTITY tendephanbiet1 = new SHARED_LIBRARY_ENTITY();
+        public SHARED_LIBRARY_ENTITY db = new SHARED_LIBRARY_ENTITY();
 
         public fBookManager()
         {
@@ -30,11 +30,11 @@ namespace DoAnQuanLyThuVien
             //tendephanbiet1 = fLogin.tendephanbiet;
             //db = new SHARED_LIBRARY_ENTITY();
             //tendephanbiet1.BOOKS_MANAGEMENT.Load();
-            bOOKSMANAGEMENTBindingSource.DataSource = tendephanbiet1.BOOKS_MANAGEMENT.ToList();
+            bOOKSMANAGEMENTBindingSource.DataSource = db.BOOKS_MANAGEMENT.ToList();
 
             // = new SHARED_LIBRARY_ENTITY();
             //tendephanbiet1.EBOOKS_MANAGEMENT.Load();
-            eBOOKSMANAGEMENTBindingSource.DataSource = tendephanbiet1.EBOOKS_MANAGEMENT.ToList();
+            eBOOKSMANAGEMENTBindingSource.DataSource = db.EBOOKS_MANAGEMENT.ToList();
             gridView2.OptionsBehavior.Editable = false;
         }
 
@@ -54,7 +54,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnEditf_Click(object sender, EventArgs e)
         {
-            tendephanbiet1.SaveChanges();
+            db.SaveChanges();
             XtraMessageBox.Show("Bạn đã cập nhật thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -62,7 +62,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnCancelf_Click(object sender, EventArgs e)
         {
-            var changed = tendephanbiet1.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
+            var changed = db.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
             foreach (var obj in changed)
             {
                 switch (obj.State)
@@ -140,19 +140,19 @@ namespace DoAnQuanLyThuVien
         {
             if (XtraMessageBox.Show("Bạn có muốn xóa sách này hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 bOOKSMANAGEMENTBindingSource.RemoveCurrent();
-            tendephanbiet1.SaveChanges();
+            db.SaveChanges();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            tendephanbiet1.SaveChanges();
+            db.SaveChanges();
             XtraMessageBox.Show("Bạn đã cập nhật thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
  
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-            var changed = tendephanbiet1.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
+            var changed = db.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
             foreach (var obj in changed)
             {
                 switch (obj.State)

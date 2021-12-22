@@ -29,6 +29,7 @@ namespace DoAnQuanLyThuVien
         public fCreateCardLendBook()
         {
             InitializeComponent();
+            
         }
         #region Method
 
@@ -62,14 +63,14 @@ namespace DoAnQuanLyThuVien
         private void fCreateCardLendBook_Load(object sender, EventArgs e)
         {
             
-            
+
             txbCardCode.Text = ReqCardDAO.Instance.GetMaxIDReqCard().ToString();
             CardID = ReqCardDAO.Instance.GetMaxIDReqCard();
             BookID = new int[6];
             txbGuestName.Text = "";
             txbID.Text = "";
             txbPhoneNum.Text = "";
-            deToDate.Text = "";
+            deToDate.Text = DateTime.Now.AddDays(1).ToString("dd-MM-yyyy");
             lvBorrowBook.Items.Clear();
 
             LoadReqCard();
@@ -115,12 +116,12 @@ namespace DoAnQuanLyThuVien
             if (e.Column.FieldName == "Submit" && CheckCard((e.RowHandle + 1).ToString()))
             {
 
-                e.RepositoryItem = btnChecked;
+                e.RepositoryItem = btnSubmit;
             }
 
             else if (e.Column.FieldName == "Submit" && !CheckCard((e.RowHandle + 1).ToString()))
             {
-                e.RepositoryItem = btnSubmit;
+                e.RepositoryItem = btnChecked;
             }
         }
         #endregion
@@ -130,39 +131,59 @@ namespace DoAnQuanLyThuVien
         #region Button
         private void sbCreateLendCard_Click(object sender, EventArgs e)
         {
-            ReqCardDAO.Instance.InsertCard(CardID.ToString(),txbID.Text,DateTime.Parse(deToDate.Text));
-            for(int i = 1; i < count; i++)
+            if (txbID.Text == "" || txbGuestName.Text == "" || txbPhoneNum.Text == "")
             {
-                ReqCardInfoDAO.Instance.InsertCardInfo(CardID.ToString(), BookID[i].ToString());
-                ReqCardInfoDAO.Instance.UpdateBookRemain(BookID[i]);
+                XtraMessageBox.Show("Vui lòng không bỏ trống các mục thông tin.");
+                return;
             }
-            count = 1;
-            fCreateCardLendBook_Load(sender, e);
+            else if (CardID == null)
+            {
+                XtraMessageBox.Show("Vui lòng thêm sách được mượn vào trong phiếu.");
+                return;
+            }
+            else
+            {
+                ReqCardDAO.Instance.InsertCard(CardID.ToString(), txbID.Text, DateTime.Parse(deToDate.Text));
+                for (int i = 1; i < count; i++)
+                {
+                    ReqCardInfoDAO.Instance.InsertCardInfo(CardID.ToString(), BookID[i].ToString());
+                    ReqCardInfoDAO.Instance.UpdateBookRemain(BookID[i]);
+                }
+                count = 1;
+                fCreateCardLendBook_Load(sender, e);
+            }
         }
         private void sbScanner_Click(object sender, EventArgs e)
         {
-            
-            if (count > 5)
+            if (txbID.Text == "" || txbGuestName.Text == "" || txbPhoneNum.Text == "")
             {
-                XtraMessageBox.Show("Chỉ có thể mượn tối đa được 5 quyển sách cùng lúc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                XtraMessageBox.Show("Vui lòng không bỏ trống các mục thông tin.");
                 return;
             }
-            fScanner f = new fScanner();
-            f.GetId(-1);
-            f.ShowDialog();
-
-            if (f.Id() >= 0)
+            else
             {
-                List<BookListCard> listBook = BookListCardDAO.Instance.GetBookByID(f.Id());
-                foreach (BookListCard item in listBook)
+                if (count > 5)
                 {
-                    ListViewItem lvItem = new ListViewItem(item.Title.ToString());
-                    lvItem.SubItems.Add(item.Author.ToString());
-                    lvItem.SubItems.Add("1");
-                    lvBorrowBook.Items.Add(lvItem);
+                    XtraMessageBox.Show("Chỉ có thể mượn tối đa được 5 quyển sách cùng lúc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
-                BookID[count] = f.Id();
-                count++;
+                fScanner f = new fScanner();
+                f.GetId(-1);
+                f.ShowDialog();
+
+                if (f.Id() >= 0)
+                {
+                    List<BookListCard> listBook = BookListCardDAO.Instance.GetBookByID(f.Id());
+                    foreach (BookListCard item in listBook)
+                    {
+                        ListViewItem lvItem = new ListViewItem(item.Title.ToString());
+                        lvItem.SubItems.Add(item.Author.ToString());
+                        lvItem.SubItems.Add("1");
+                        lvBorrowBook.Items.Add(lvItem);
+                    }
+                    BookID[count] = f.Id();
+                    count++;
+                }
             }
         }
 
@@ -180,7 +201,21 @@ namespace DoAnQuanLyThuVien
         //Du an sau khi co thoi gian tim hieu hon
         private void btnSubmit_ButtonClick(object sender, ButtonPressedEventArgs e)
         {
-            
+
+            if (XtraMessageBox.Show("Bạn có chắc muốn hủy xác nhận không ?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                string query = "UPDATE dbo.REQUEST_FORM SET STATUS = N'Đang được mượn' WHERE REQUEST_ID = " + (gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID;
+                DataProvider.Instance.ExecuteNonQuery(query);
+                fCreateCardLendBook_Load(sender, e);
+                List<ReqCardInfo> list = ReqCardInfoDAO.Instance.TakeIDBook(gridView1.FocusedRowHandle.ToString());
+                foreach (ReqCardInfo item in list)
+                {
+                    ReqCardInfoDAO.Instance.UpdateBookRemain(item.Books_ID);
+                }
+            }
+        }
+        private void btnChecked_ButtonClick(object sender, ButtonPressedEventArgs e)
+        {
             if (XtraMessageBox.Show("Bạn đã chắc chắn toàn bộ sách trong phiếu mượn đã được trả ?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 string query = "UPDATE dbo.REQUEST_FORM SET STATUS = N'Đã trả' WHERE REQUEST_ID = " + (gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID;
@@ -195,21 +230,6 @@ namespace DoAnQuanLyThuVien
                 }
             }
         }
-        private void btnChecked_ButtonClick(object sender, ButtonPressedEventArgs e)
-        {
-
-            if (XtraMessageBox.Show("Bạn có chắc muốn hủy xác nhận không ?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                string query = "UPDATE dbo.REQUEST_FORM SET STATUS = N'Đang được mượn' WHERE REQUEST_ID = " + (gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID;
-                DataProvider.Instance.ExecuteNonQuery(query);
-                fCreateCardLendBook_Load(sender, e);
-                List<ReqCardInfo> list = ReqCardInfoDAO.Instance.TakeIDBook(gridView1.FocusedRowHandle.ToString());
-                foreach (ReqCardInfo item in list)
-                {
-                    ReqCardInfoDAO.Instance.UpdateBookRemain(item.Books_ID);
-                }
-            }
-        }
 
         private void gridControl1_Click(object sender, EventArgs e)
         {
@@ -220,8 +240,31 @@ namespace DoAnQuanLyThuVien
         }
 
 
+
         #endregion
 
-
+        private void deToDate_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                DateTime getCurrentDate = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy"));
+                DateTime getDateReturnCard = Convert.ToDateTime(deToDate.Text);
+                TimeSpan subtr = getDateReturnCard - getCurrentDate;
+                if (subtr.TotalDays > 30)
+                {
+                    XtraMessageBox.Show("Không thể chọn thời hạn trả phiếu quá 30 ngày!!!", "Thông báo", MessageBoxButtons.OK);
+                    deToDate.Text = DateTime.Now.AddDays(1).ToString("dd-MM-yyyy");
+                }
+                else if (subtr.TotalDays < 0)
+                {
+                    XtraMessageBox.Show("Vui lòng chọn lại ngày!!!", "Thông báo", MessageBoxButtons.OK);
+                    deToDate.Text = DateTime.Now.AddDays(1).ToString("dd-MM-yyyy");
+                }
+            }
+            catch
+            {
+                
+            }
+        }
     }
 }
