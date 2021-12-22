@@ -130,7 +130,6 @@ namespace DoAnQuanLyThuVien
         #region Button
         private void sbCreateLendCard_Click(object sender, EventArgs e)
         {
-            
             ReqCardDAO.Instance.InsertCard(CardID.ToString(),txbID.Text,DateTime.Parse(deToDate.Text));
             for(int i = 1; i < count; i++)
             {
@@ -212,11 +211,14 @@ namespace DoAnQuanLyThuVien
             }
         }
 
-        private void gridControl1_DoubleClick(object sender, EventArgs e)
+        private void gridControl1_Click(object sender, EventArgs e)
         {
             fReqCardInfo f = new fReqCardInfo();
+            f.GetUserName((gridView1.GetFocusedRow() as REQUEST_FORM).USERID);
+            f.GetRowCardID((gridView1.GetFocusedRow() as REQUEST_FORM).REQUEST_ID);
             f.ShowDialog();
         }
+
 
         #endregion
 

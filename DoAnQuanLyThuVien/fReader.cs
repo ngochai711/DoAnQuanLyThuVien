@@ -84,7 +84,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnAccountInfo_Click(object sender, EventArgs e)
         {
-            fInfo _formInfo = new fInfo();
+            fInfReader _formInfo = new fInfReader();
             openChildForm(_formInfo);
         }
 
