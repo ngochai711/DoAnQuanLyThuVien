@@ -289,7 +289,7 @@ namespace DoAnQuanLyThuVien
                 this.Close();
             }
 
-            Form1 f = new Form1();
+            var f = new fBookManager();
             f.ShowDialog();
         }
 
