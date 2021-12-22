@@ -38,7 +38,7 @@ namespace DoAnQuanLyThuVien
             //Load User Information
             READER_INF item = db.READER_INF.Find(username);
             peImage.EditValue = item.AVATAR;
-            lcName.Text = "Họ và tên:" + item.NAME;
+            lcName.Text = "Họ và tên: " + item.NAME;
             lcUserName.Text = "Tên đăng nhập: " + item.USERNAME;
             lcNumber.Text = "Số điện thoại: " + item.PHONE;
 
