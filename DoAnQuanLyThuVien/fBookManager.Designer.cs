@@ -132,6 +132,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcListBook)).BeginInit();
             this.pcListBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcLibBook)).BeginInit();
@@ -212,6 +213,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // pcListBook
@@ -1327,6 +1329,7 @@ namespace DoAnQuanLyThuVien
             this.Controls.Add(this.pcListBook);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "fBookManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý sách";
@@ -1412,6 +1415,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1520,5 +1524,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraEditors.SimpleButton btnRead;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }

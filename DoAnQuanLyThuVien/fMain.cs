@@ -77,17 +77,6 @@ namespace DoAnQuanLyThuVien
             set_Playlist_properties();
 
         }
-        private void fMain_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            windowsMediaPlayer.Dispose();
-        }
-        // minimize, maximize, close button
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            save_Personal_Setting();
-        }
 
         private void save_Personal_Setting()
         {
@@ -102,14 +91,27 @@ namespace DoAnQuanLyThuVien
             Properties.Settings.Default.BackImg = base64;
             Properties.Settings.Default.Save();
 
-            //playList changes saving
         }
+        private void fMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            windowsMediaPlayer.Dispose();
+        }
+        // minimize, maximize, close button
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            save_Personal_Setting();
+        }
+
+     
 
         private void button2_Click(object sender, EventArgs e)
         {
             if (!max_ed)
             {
                 WindowState = FormWindowState.Maximized;
+                
                 max_ed = true;
             }
             else
@@ -287,7 +289,7 @@ namespace DoAnQuanLyThuVien
                 this.Close();
             }
 
-            fBookManager f = new fBookManager();
+            Form1 f = new Form1();
             f.ShowDialog();
         }
 
@@ -311,16 +313,7 @@ namespace DoAnQuanLyThuVien
             save_Personal_Setting();
         }
 
-        private void panel5_MouseHover(object sender, EventArgs e)
-        {
-
-            panel5.BackColor = Color.FromArgb(120, 245, 245, 245);
-        }
-
-        private void panel5_MouseLeave(object sender, EventArgs e)
-        {
-            panel5.BackColor = Color.FromArgb(0, 245, 245, 245);
-        }
+     
 
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -382,25 +375,7 @@ namespace DoAnQuanLyThuVien
         }
         #endregion
 
-        #region openfChild region
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            settingPanel.Controls.Add(childForm);
-            settingPanel.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-
-        }
-        #endregion
+   
 
     }
 }

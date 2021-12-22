@@ -79,7 +79,7 @@ namespace DoAnQuanLyThuVien
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Location = new System.Drawing.Point(828, 0);
+            this.panel2.Location = new System.Drawing.Point(1518, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(241, 41);
@@ -217,7 +217,7 @@ namespace DoAnQuanLyThuVien
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.ImageKey = "exit_48px.png";
             this.btnExit.ImageList = this.menuIconList;
-            this.btnExit.Location = new System.Drawing.Point(0, 539);
+            this.btnExit.Location = new System.Drawing.Point(0, 1021);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(8);
@@ -247,7 +247,7 @@ namespace DoAnQuanLyThuVien
             this.SlidingPanel.Location = new System.Drawing.Point(0, 0);
             this.SlidingPanel.Margin = new System.Windows.Forms.Padding(2);
             this.SlidingPanel.Name = "SlidingPanel";
-            this.SlidingPanel.Size = new System.Drawing.Size(273, 596);
+            this.SlidingPanel.Size = new System.Drawing.Size(273, 1078);
             this.SlidingPanel.TabIndex = 11;
             this.SlidingPanel.Click += new System.EventHandler(this.btnShow_Click);
             // 
@@ -300,7 +300,7 @@ namespace DoAnQuanLyThuVien
             this.separatorControl5.BackColor = System.Drawing.Color.Transparent;
             this.separatorControl5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.separatorControl5.LineColor = System.Drawing.Color.Black;
-            this.separatorControl5.Location = new System.Drawing.Point(0, 516);
+            this.separatorControl5.Location = new System.Drawing.Point(0, 998);
             this.separatorControl5.Name = "separatorControl5";
             this.separatorControl5.Padding = new System.Windows.Forms.Padding(9, 2, 9, 2);
             this.separatorControl5.Size = new System.Drawing.Size(273, 23);
@@ -409,13 +409,12 @@ namespace DoAnQuanLyThuVien
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.btnPlay);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 549);
+            this.panel5.Location = new System.Drawing.Point(0, 78);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.MinimumSize = new System.Drawing.Size(1600, 1000);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(242, 47);
+            this.panel5.Size = new System.Drawing.Size(1600, 1000);
             this.panel5.TabIndex = 24;
-            this.panel5.MouseLeave += new System.EventHandler(this.panel5_MouseLeave);
-            this.panel5.MouseHover += new System.EventHandler(this.panel5_MouseHover);
             // 
             // label1
             // 
@@ -467,10 +466,10 @@ namespace DoAnQuanLyThuVien
             this.panel3.Controls.Add(this.settingPanel);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(828, 0);
+            this.panel3.Location = new System.Drawing.Point(1518, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(242, 596);
+            this.panel3.Size = new System.Drawing.Size(242, 1078);
             this.panel3.TabIndex = 25;
             // 
             // windowsMediaPlayer
@@ -528,12 +527,13 @@ namespace DoAnQuanLyThuVien
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAnQuanLyThuVien.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1070, 596);
+            this.ClientSize = new System.Drawing.Size(1760, 1078);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.SlidingPanel);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1600, 1000);
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thư Viện";

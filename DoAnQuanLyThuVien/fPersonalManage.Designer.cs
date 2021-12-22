@@ -261,9 +261,10 @@ namespace DoAnQuanLyThuVien
             this.tabControl_pplManage.Controls.Add(this.tabPage_Staff);
             this.tabControl_pplManage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_pplManage.Location = new System.Drawing.Point(0, 0);
+            this.tabControl_pplManage.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl_pplManage.Name = "tabControl_pplManage";
             this.tabControl_pplManage.SelectedIndex = 0;
-            this.tabControl_pplManage.Size = new System.Drawing.Size(1582, 953);
+            this.tabControl_pplManage.Size = new System.Drawing.Size(1186, 774);
             this.tabControl_pplManage.TabIndex = 1;
             // 
             // tabPage_Reader
@@ -271,10 +272,11 @@ namespace DoAnQuanLyThuVien
             this.tabPage_Reader.Controls.Add(this.panel3);
             this.tabPage_Reader.Controls.Add(this.panel2);
             this.tabPage_Reader.Controls.Add(this.panel1);
-            this.tabPage_Reader.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_Reader.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Reader.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_Reader.Name = "tabPage_Reader";
-            this.tabPage_Reader.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Reader.Size = new System.Drawing.Size(1574, 924);
+            this.tabPage_Reader.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage_Reader.Size = new System.Drawing.Size(1178, 748);
             this.tabPage_Reader.TabIndex = 0;
             this.tabPage_Reader.Text = "Người đọc";
             this.tabPage_Reader.UseVisualStyleBackColor = true;
@@ -285,9 +287,10 @@ namespace DoAnQuanLyThuVien
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel3.Controls.Add(this.dataLayoutControl_Reader);
-            this.panel3.Location = new System.Drawing.Point(1047, 109);
+            this.panel3.Location = new System.Drawing.Point(785, 89);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(524, 812);
+            this.panel3.Size = new System.Drawing.Size(393, 660);
             this.panel3.TabIndex = 2;
             // 
             // dataLayoutControl_Reader
@@ -307,10 +310,11 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl_Reader.DataSource = this.rEADERINFBindingSource;
             this.dataLayoutControl_Reader.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl_Reader.Location = new System.Drawing.Point(0, 0);
+            this.dataLayoutControl_Reader.Margin = new System.Windows.Forms.Padding(2);
             this.dataLayoutControl_Reader.Name = "dataLayoutControl_Reader";
             this.dataLayoutControl_Reader.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1108, 148, 812, 500);
             this.dataLayoutControl_Reader.Root = this.Root;
-            this.dataLayoutControl_Reader.Size = new System.Drawing.Size(524, 812);
+            this.dataLayoutControl_Reader.Size = new System.Drawing.Size(393, 660);
             this.dataLayoutControl_Reader.TabIndex = 0;
             this.dataLayoutControl_Reader.Text = "dataLayoutControl1";
             // 
@@ -318,11 +322,12 @@ namespace DoAnQuanLyThuVien
             // 
             this.READERAVATARPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "AVATAR", true));
             this.READERAVATARPictureEdit.Location = new System.Drawing.Point(12, 12);
+            this.READERAVATARPictureEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERAVATARPictureEdit.Name = "READERAVATARPictureEdit";
             this.READERAVATARPictureEdit.Properties.ShowEditMenuItem = DevExpress.Utils.DefaultBoolean.False;
             this.READERAVATARPictureEdit.Properties.ShowMenu = false;
             this.READERAVATARPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.READERAVATARPictureEdit.Size = new System.Drawing.Size(174, 262);
+            this.READERAVATARPictureEdit.Size = new System.Drawing.Size(128, 193);
             this.READERAVATARPictureEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERAVATARPictureEdit.TabIndex = 4;
             this.READERAVATARPictureEdit.Click += new System.EventHandler(this.pictureEdit_AVATARPictureEdit_Click);
@@ -334,28 +339,31 @@ namespace DoAnQuanLyThuVien
             // READERIDTextEdit
             // 
             this.READERIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "READERID", true));
-            this.READERIDTextEdit.Location = new System.Drawing.Point(293, 214);
+            this.READERIDTextEdit.Location = new System.Drawing.Point(228, 149);
+            this.READERIDTextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERIDTextEdit.Name = "READERIDTextEdit";
             this.READERIDTextEdit.Properties.ReadOnly = true;
-            this.READERIDTextEdit.Size = new System.Drawing.Size(207, 22);
+            this.READERIDTextEdit.Size = new System.Drawing.Size(141, 20);
             this.READERIDTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERIDTextEdit.TabIndex = 5;
             // 
             // READERPIDTextEdit
             // 
             this.READERPIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "PID", true));
-            this.READERPIDTextEdit.Location = new System.Drawing.Point(293, 240);
+            this.READERPIDTextEdit.Location = new System.Drawing.Point(228, 173);
+            this.READERPIDTextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERPIDTextEdit.Name = "READERPIDTextEdit";
             this.READERPIDTextEdit.Properties.ReadOnly = true;
             this.READERPIDTextEdit.Properties.UseReadOnlyAppearance = false;
-            this.READERPIDTextEdit.Size = new System.Drawing.Size(207, 22);
+            this.READERPIDTextEdit.Size = new System.Drawing.Size(141, 20);
             this.READERPIDTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERPIDTextEdit.TabIndex = 6;
             // 
             // READERSEXComboBoxEdit
             // 
             this.READERSEXComboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "SEX", true));
-            this.READERSEXComboBoxEdit.Location = new System.Drawing.Point(359, 337);
+            this.READERSEXComboBoxEdit.Location = new System.Drawing.Point(268, 259);
+            this.READERSEXComboBoxEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERSEXComboBoxEdit.Name = "READERSEXComboBoxEdit";
             this.READERSEXComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -366,7 +374,7 @@ namespace DoAnQuanLyThuVien
             "Khác"});
             this.READERSEXComboBoxEdit.Properties.ReadOnly = true;
             this.READERSEXComboBoxEdit.Properties.UseReadOnlyAppearance = false;
-            this.READERSEXComboBoxEdit.Size = new System.Drawing.Size(141, 22);
+            this.READERSEXComboBoxEdit.Size = new System.Drawing.Size(101, 20);
             this.READERSEXComboBoxEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERSEXComboBoxEdit.TabIndex = 8;
             // 
@@ -374,7 +382,8 @@ namespace DoAnQuanLyThuVien
             // 
             this.READERBIRTHDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "BIRTH", true));
             this.READERBIRTHDateEdit.EditValue = null;
-            this.READERBIRTHDateEdit.Location = new System.Drawing.Point(24, 336);
+            this.READERBIRTHDateEdit.Location = new System.Drawing.Point(24, 259);
+            this.READERBIRTHDateEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERBIRTHDateEdit.Name = "READERBIRTHDateEdit";
             this.READERBIRTHDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.READERBIRTHDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -383,7 +392,7 @@ namespace DoAnQuanLyThuVien
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.READERBIRTHDateEdit.Properties.ReadOnly = true;
             this.READERBIRTHDateEdit.Properties.UseReadOnlyAppearance = false;
-            this.READERBIRTHDateEdit.Size = new System.Drawing.Size(195, 22);
+            this.READERBIRTHDateEdit.Size = new System.Drawing.Size(141, 20);
             this.READERBIRTHDateEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERBIRTHDateEdit.TabIndex = 9;
             // 
@@ -391,7 +400,8 @@ namespace DoAnQuanLyThuVien
             // 
             this.READERAGETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "AGE", true));
             this.READERAGETextEdit.EditValue = "12";
-            this.READERAGETextEdit.Location = new System.Drawing.Point(223, 337);
+            this.READERAGETextEdit.Location = new System.Drawing.Point(169, 259);
+            this.READERAGETextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERAGETextEdit.Name = "READERAGETextEdit";
             this.READERAGETextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.READERAGETextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -401,75 +411,81 @@ namespace DoAnQuanLyThuVien
             this.READERAGETextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.READERAGETextEdit.Properties.ReadOnly = true;
             this.READERAGETextEdit.Properties.UseReadOnlyAppearance = false;
-            this.READERAGETextEdit.Size = new System.Drawing.Size(132, 22);
+            this.READERAGETextEdit.Size = new System.Drawing.Size(95, 20);
             this.READERAGETextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERAGETextEdit.TabIndex = 10;
             // 
             // READERADDRESSTextEdit
             // 
             this.READERADDRESSTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "ADDRESS", true));
-            this.READERADDRESSTextEdit.Location = new System.Drawing.Point(24, 383);
+            this.READERADDRESSTextEdit.Location = new System.Drawing.Point(24, 299);
+            this.READERADDRESSTextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERADDRESSTextEdit.Name = "READERADDRESSTextEdit";
             this.READERADDRESSTextEdit.Properties.ReadOnly = true;
             this.READERADDRESSTextEdit.Properties.UseReadOnlyAppearance = false;
-            this.READERADDRESSTextEdit.Size = new System.Drawing.Size(476, 22);
+            this.READERADDRESSTextEdit.Size = new System.Drawing.Size(345, 20);
             this.READERADDRESSTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERADDRESSTextEdit.TabIndex = 11;
             // 
             // READERPHONETextEdit
             // 
             this.READERPHONETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "PHONE", true));
-            this.READERPHONETextEdit.Location = new System.Drawing.Point(24, 428);
+            this.READERPHONETextEdit.Location = new System.Drawing.Point(24, 339);
+            this.READERPHONETextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERPHONETextEdit.Name = "READERPHONETextEdit";
             this.READERPHONETextEdit.Properties.ReadOnly = true;
             this.READERPHONETextEdit.Properties.UseReadOnlyAppearance = false;
-            this.READERPHONETextEdit.Size = new System.Drawing.Size(476, 22);
+            this.READERPHONETextEdit.Size = new System.Drawing.Size(345, 20);
             this.READERPHONETextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERPHONETextEdit.TabIndex = 12;
             // 
             // READEREMAILTextEdit
             // 
             this.READEREMAILTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "EMAIL", true));
-            this.READEREMAILTextEdit.Location = new System.Drawing.Point(24, 473);
+            this.READEREMAILTextEdit.Location = new System.Drawing.Point(24, 379);
+            this.READEREMAILTextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READEREMAILTextEdit.Name = "READEREMAILTextEdit";
             this.READEREMAILTextEdit.Properties.ReadOnly = true;
             this.READEREMAILTextEdit.Properties.UseReadOnlyAppearance = false;
-            this.READEREMAILTextEdit.Size = new System.Drawing.Size(476, 22);
+            this.READEREMAILTextEdit.Size = new System.Drawing.Size(345, 20);
             this.READEREMAILTextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READEREMAILTextEdit.TabIndex = 13;
             // 
             // READERNOTEMemoEdit
             // 
             this.READERNOTEMemoEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "NOTE", true));
-            this.READERNOTEMemoEdit.Location = new System.Drawing.Point(24, 550);
+            this.READERNOTEMemoEdit.Location = new System.Drawing.Point(24, 449);
+            this.READERNOTEMemoEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERNOTEMemoEdit.Name = "READERNOTEMemoEdit";
             this.READERNOTEMemoEdit.Properties.ReadOnly = true;
             this.READERNOTEMemoEdit.Properties.UseReadOnlyAppearance = false;
-            this.READERNOTEMemoEdit.Size = new System.Drawing.Size(476, 238);
+            this.READERNOTEMemoEdit.Size = new System.Drawing.Size(345, 187);
             this.READERNOTEMemoEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERNOTEMemoEdit.TabIndex = 14;
             // 
             // READERNAMETextEdit
             // 
             this.READERNAMETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.rEADERINFBindingSource, "NAME", true));
-            this.READERNAMETextEdit.Location = new System.Drawing.Point(202, 90);
+            this.READERNAMETextEdit.Location = new System.Drawing.Point(156, 60);
+            this.READERNAMETextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERNAMETextEdit.Name = "READERNAMETextEdit";
             this.READERNAMETextEdit.Properties.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.READERNAMETextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.READERNAMETextEdit.Properties.Appearance.Options.UseBackColor = true;
             this.READERNAMETextEdit.Properties.Appearance.Options.UseFont = true;
             this.READERNAMETextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.READERNAMETextEdit.Size = new System.Drawing.Size(298, 28);
+            this.READERNAMETextEdit.Size = new System.Drawing.Size(213, 24);
             this.READERNAMETextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERNAMETextEdit.TabIndex = 7;
             // 
             // READERTYPEtextEdit
             // 
             this.READERTYPEtextEdit.EditValue = "Người đọc";
-            this.READERTYPEtextEdit.Location = new System.Drawing.Point(293, 188);
+            this.READERTYPEtextEdit.Location = new System.Drawing.Point(228, 125);
+            this.READERTYPEtextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.READERTYPEtextEdit.Name = "READERTYPEtextEdit";
             this.READERTYPEtextEdit.Properties.ReadOnly = true;
-            this.READERTYPEtextEdit.Size = new System.Drawing.Size(207, 22);
+            this.READERTYPEtextEdit.Size = new System.Drawing.Size(141, 20);
             this.READERTYPEtextEdit.StyleController = this.dataLayoutControl_Reader;
             this.READERTYPEtextEdit.TabIndex = 15;
             // 
@@ -480,7 +496,7 @@ namespace DoAnQuanLyThuVien
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(524, 812);
+            this.Root.Size = new System.Drawing.Size(393, 660);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -497,15 +513,15 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup4});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(504, 792);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(373, 640);
             // 
             // ItemForAVATAR
             // 
             this.ItemForAVATAR.Control = this.READERAVATARPictureEdit;
             this.ItemForAVATAR.Location = new System.Drawing.Point(0, 0);
-            this.ItemForAVATAR.MinSize = new System.Drawing.Size(24, 24);
+            this.ItemForAVATAR.MinSize = new System.Drawing.Size(18, 19);
             this.ItemForAVATAR.Name = "ItemForAVATAR";
-            this.ItemForAVATAR.Size = new System.Drawing.Size(178, 266);
+            this.ItemForAVATAR.Size = new System.Drawing.Size(132, 197);
             this.ItemForAVATAR.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.ItemForAVATAR.StartNewLine = true;
             this.ItemForAVATAR.Text = "AVATAR";
@@ -515,23 +531,23 @@ namespace DoAnQuanLyThuVien
             // simpleSeparator1
             // 
             this.simpleSeparator1.AllowHotTrack = false;
-            this.simpleSeparator1.Location = new System.Drawing.Point(0, 499);
+            this.simpleSeparator1.Location = new System.Drawing.Point(0, 403);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(504, 1);
+            this.simpleSeparator1.Size = new System.Drawing.Size(373, 1);
             // 
             // simpleSeparator2
             // 
             this.simpleSeparator2.AllowHotTrack = false;
-            this.simpleSeparator2.Location = new System.Drawing.Point(0, 266);
+            this.simpleSeparator2.Location = new System.Drawing.Point(0, 197);
             this.simpleSeparator2.Name = "simpleSeparator2";
-            this.simpleSeparator2.Size = new System.Drawing.Size(178, 1);
+            this.simpleSeparator2.Size = new System.Drawing.Size(132, 1);
             // 
             // simpleSeparator3
             // 
             this.simpleSeparator3.AllowHotTrack = false;
-            this.simpleSeparator3.Location = new System.Drawing.Point(178, 266);
+            this.simpleSeparator3.Location = new System.Drawing.Point(132, 197);
             this.simpleSeparator3.Name = "simpleSeparator3";
-            this.simpleSeparator3.Size = new System.Drawing.Size(326, 1);
+            this.simpleSeparator3.Size = new System.Drawing.Size(241, 1);
             // 
             // layoutControlGroup2
             // 
@@ -542,9 +558,9 @@ namespace DoAnQuanLyThuVien
             this.ItemForEMAIL,
             this.ItemForAGE,
             this.ItemForSEX});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 267);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 198);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(504, 232);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(373, 205);
             this.layoutControlGroup2.Text = "Thông Tin Chi Tiết";
             // 
             // ItemForBIRTH
@@ -552,77 +568,77 @@ namespace DoAnQuanLyThuVien
             this.ItemForBIRTH.Control = this.READERBIRTHDateEdit;
             this.ItemForBIRTH.Location = new System.Drawing.Point(0, 0);
             this.ItemForBIRTH.Name = "ItemForBIRTH";
-            this.ItemForBIRTH.Size = new System.Drawing.Size(199, 46);
+            this.ItemForBIRTH.Size = new System.Drawing.Size(145, 40);
             this.ItemForBIRTH.Text = "Ngày Sinh";
             this.ItemForBIRTH.TextLocation = DevExpress.Utils.Locations.Top;
-            this.ItemForBIRTH.TextSize = new System.Drawing.Size(88, 16);
+            this.ItemForBIRTH.TextSize = new System.Drawing.Size(69, 13);
             // 
             // ItemForADDRESS
             // 
             this.ItemForADDRESS.Control = this.READERADDRESSTextEdit;
-            this.ItemForADDRESS.Location = new System.Drawing.Point(0, 46);
+            this.ItemForADDRESS.Location = new System.Drawing.Point(0, 40);
             this.ItemForADDRESS.Name = "ItemForADDRESS";
-            this.ItemForADDRESS.Size = new System.Drawing.Size(480, 46);
+            this.ItemForADDRESS.Size = new System.Drawing.Size(349, 40);
             this.ItemForADDRESS.Text = "Địa Chỉ";
             this.ItemForADDRESS.TextLocation = DevExpress.Utils.Locations.Top;
-            this.ItemForADDRESS.TextSize = new System.Drawing.Size(88, 17);
+            this.ItemForADDRESS.TextSize = new System.Drawing.Size(69, 13);
             // 
             // ItemForPHONE
             // 
             this.ItemForPHONE.Control = this.READERPHONETextEdit;
-            this.ItemForPHONE.Location = new System.Drawing.Point(0, 92);
+            this.ItemForPHONE.Location = new System.Drawing.Point(0, 80);
             this.ItemForPHONE.Name = "ItemForPHONE";
-            this.ItemForPHONE.Size = new System.Drawing.Size(480, 45);
+            this.ItemForPHONE.Size = new System.Drawing.Size(349, 40);
             this.ItemForPHONE.Text = "SĐT";
             this.ItemForPHONE.TextLocation = DevExpress.Utils.Locations.Top;
-            this.ItemForPHONE.TextSize = new System.Drawing.Size(88, 16);
+            this.ItemForPHONE.TextSize = new System.Drawing.Size(69, 13);
             // 
             // ItemForEMAIL
             // 
             this.ItemForEMAIL.Control = this.READEREMAILTextEdit;
-            this.ItemForEMAIL.Location = new System.Drawing.Point(0, 137);
+            this.ItemForEMAIL.Location = new System.Drawing.Point(0, 120);
             this.ItemForEMAIL.Name = "ItemForEMAIL";
-            this.ItemForEMAIL.Size = new System.Drawing.Size(480, 45);
+            this.ItemForEMAIL.Size = new System.Drawing.Size(349, 40);
             this.ItemForEMAIL.Text = "Email";
             this.ItemForEMAIL.TextLocation = DevExpress.Utils.Locations.Top;
-            this.ItemForEMAIL.TextSize = new System.Drawing.Size(88, 16);
+            this.ItemForEMAIL.TextSize = new System.Drawing.Size(69, 13);
             // 
             // ItemForAGE
             // 
             this.ItemForAGE.Control = this.READERAGETextEdit;
-            this.ItemForAGE.Location = new System.Drawing.Point(199, 0);
+            this.ItemForAGE.Location = new System.Drawing.Point(145, 0);
             this.ItemForAGE.Name = "ItemForAGE";
-            this.ItemForAGE.Size = new System.Drawing.Size(136, 46);
+            this.ItemForAGE.Size = new System.Drawing.Size(99, 40);
             this.ItemForAGE.Text = "Tuổi";
             this.ItemForAGE.TextLocation = DevExpress.Utils.Locations.Top;
-            this.ItemForAGE.TextSize = new System.Drawing.Size(88, 17);
+            this.ItemForAGE.TextSize = new System.Drawing.Size(69, 13);
             // 
             // ItemForSEX
             // 
             this.ItemForSEX.Control = this.READERSEXComboBoxEdit;
-            this.ItemForSEX.Location = new System.Drawing.Point(335, 0);
+            this.ItemForSEX.Location = new System.Drawing.Point(244, 0);
             this.ItemForSEX.Name = "ItemForSEX";
-            this.ItemForSEX.Size = new System.Drawing.Size(145, 46);
+            this.ItemForSEX.Size = new System.Drawing.Size(105, 40);
             this.ItemForSEX.Text = "Giới Tính";
             this.ItemForSEX.TextLocation = DevExpress.Utils.Locations.Top;
-            this.ItemForSEX.TextSize = new System.Drawing.Size(88, 17);
+            this.ItemForSEX.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlGroup3
             // 
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.ItemForNOTE});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 500);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 404);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(504, 292);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(373, 236);
             this.layoutControlGroup3.Text = "Ghi Chú";
             // 
             // ItemForNOTE
             // 
             this.ItemForNOTE.Control = this.READERNOTEMemoEdit;
             this.ItemForNOTE.Location = new System.Drawing.Point(0, 0);
-            this.ItemForNOTE.MinSize = new System.Drawing.Size(62, 45);
+            this.ItemForNOTE.MinSize = new System.Drawing.Size(46, 37);
             this.ItemForNOTE.Name = "ItemForNOTE";
-            this.ItemForNOTE.Size = new System.Drawing.Size(480, 242);
+            this.ItemForNOTE.Size = new System.Drawing.Size(349, 191);
             this.ItemForNOTE.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.ItemForNOTE.StartNewLine = true;
             this.ItemForNOTE.Text = "NOTE";
@@ -638,9 +654,9 @@ namespace DoAnQuanLyThuVien
             this.ItemForPID,
             this.ItemForREADERID,
             this.layoutControlItem11});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(178, 0);
+            this.layoutControlGroup4.Location = new System.Drawing.Point(132, 0);
             this.layoutControlGroup4.Name = "layoutControlGroup4";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(326, 266);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(241, 197);
             this.layoutControlGroup4.Text = " ";
             this.layoutControlGroup4.TextVisible = false;
             // 
@@ -654,9 +670,9 @@ namespace DoAnQuanLyThuVien
             this.ItemForNAME.Control = this.READERNAMETextEdit;
             this.ItemForNAME.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.ItemForNAME.Location = new System.Drawing.Point(0, 0);
-            this.ItemForNAME.MinSize = new System.Drawing.Size(50, 25);
+            this.ItemForNAME.MinSize = new System.Drawing.Size(37, 20);
             this.ItemForNAME.Name = "ItemForNAME";
-            this.ItemForNAME.Size = new System.Drawing.Size(302, 164);
+            this.ItemForNAME.Size = new System.Drawing.Size(217, 101);
             this.ItemForNAME.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.ItemForNAME.Text = "NAME";
             this.ItemForNAME.TextLocation = DevExpress.Utils.Locations.Left;
@@ -666,31 +682,31 @@ namespace DoAnQuanLyThuVien
             // ItemForPID
             // 
             this.ItemForPID.Control = this.READERPIDTextEdit;
-            this.ItemForPID.Location = new System.Drawing.Point(0, 216);
+            this.ItemForPID.Location = new System.Drawing.Point(0, 149);
             this.ItemForPID.Name = "ItemForPID";
-            this.ItemForPID.Size = new System.Drawing.Size(302, 26);
+            this.ItemForPID.Size = new System.Drawing.Size(217, 24);
             this.ItemForPID.Text = "CMND";
             this.ItemForPID.TextLocation = DevExpress.Utils.Locations.Left;
-            this.ItemForPID.TextSize = new System.Drawing.Size(88, 16);
+            this.ItemForPID.TextSize = new System.Drawing.Size(69, 13);
             // 
             // ItemForREADERID
             // 
             this.ItemForREADERID.ContentVertAlignment = DevExpress.Utils.VertAlignment.Top;
             this.ItemForREADERID.Control = this.READERIDTextEdit;
-            this.ItemForREADERID.Location = new System.Drawing.Point(0, 190);
+            this.ItemForREADERID.Location = new System.Drawing.Point(0, 125);
             this.ItemForREADERID.Name = "ItemForREADERID";
-            this.ItemForREADERID.Size = new System.Drawing.Size(302, 26);
+            this.ItemForREADERID.Size = new System.Drawing.Size(217, 24);
             this.ItemForREADERID.Text = "Mã Tài Khoản";
-            this.ItemForREADERID.TextSize = new System.Drawing.Size(88, 17);
+            this.ItemForREADERID.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem11
             // 
             this.layoutControlItem11.Control = this.READERTYPEtextEdit;
-            this.layoutControlItem11.Location = new System.Drawing.Point(0, 164);
+            this.layoutControlItem11.Location = new System.Drawing.Point(0, 101);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(302, 26);
+            this.layoutControlItem11.Size = new System.Drawing.Size(217, 24);
             this.layoutControlItem11.Text = "Loại Tài Khoản";
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(88, 17);
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(69, 13);
             // 
             // panel2
             // 
@@ -698,19 +714,22 @@ namespace DoAnQuanLyThuVien
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.gridControl_Reader);
-            this.panel2.Location = new System.Drawing.Point(0, 109);
+            this.panel2.Location = new System.Drawing.Point(0, 89);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1040, 812);
+            this.panel2.Size = new System.Drawing.Size(780, 660);
             this.panel2.TabIndex = 1;
             // 
             // gridControl_Reader
             // 
             this.gridControl_Reader.DataSource = this.rEADERINFBindingSource;
             this.gridControl_Reader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_Reader.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.gridControl_Reader.Location = new System.Drawing.Point(0, 0);
             this.gridControl_Reader.MainView = this.gridView_Reader;
+            this.gridControl_Reader.Margin = new System.Windows.Forms.Padding(2);
             this.gridControl_Reader.Name = "gridControl_Reader";
-            this.gridControl_Reader.Size = new System.Drawing.Size(1040, 812);
+            this.gridControl_Reader.Size = new System.Drawing.Size(780, 660);
             this.gridControl_Reader.TabIndex = 0;
             this.gridControl_Reader.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_Reader});
@@ -736,6 +755,7 @@ namespace DoAnQuanLyThuVien
             this.colEMAIL,
             this.colNOTE,
             this.colREQUEST_FORM});
+            this.gridView_Reader.DetailHeight = 284;
             this.gridView_Reader.GridControl = this.gridControl_Reader;
             this.gridView_Reader.Name = "gridView_Reader";
             this.gridView_Reader.OptionsBehavior.Editable = false;
@@ -752,124 +772,123 @@ namespace DoAnQuanLyThuVien
             // colUSERNAME
             // 
             this.colUSERNAME.FieldName = "USERNAME";
-            this.colUSERNAME.MinWidth = 25;
+            this.colUSERNAME.MinWidth = 19;
             this.colUSERNAME.Name = "colUSERNAME";
-            this.colUSERNAME.Width = 94;
+            this.colUSERNAME.Width = 70;
             // 
             // colPASSWORD
             // 
             this.colPASSWORD.FieldName = "PASSWORD";
-            this.colPASSWORD.MinWidth = 25;
+            this.colPASSWORD.MinWidth = 19;
             this.colPASSWORD.Name = "colPASSWORD";
-            this.colPASSWORD.Width = 94;
+            this.colPASSWORD.Width = 70;
             // 
             // colAVATAR
             // 
             this.colAVATAR.FieldName = "AVATAR";
-            this.colAVATAR.MinWidth = 25;
+            this.colAVATAR.MinWidth = 19;
             this.colAVATAR.Name = "colAVATAR";
-            this.colAVATAR.Width = 94;
+            this.colAVATAR.Width = 70;
             // 
             // colREADERID
             // 
             this.colREADERID.Caption = "ID";
             this.colREADERID.FieldName = "READERID";
-            this.colREADERID.MinWidth = 25;
+            this.colREADERID.MinWidth = 19;
             this.colREADERID.Name = "colREADERID";
             this.colREADERID.Visible = true;
             this.colREADERID.VisibleIndex = 0;
-            this.colREADERID.Width = 70;
+            this.colREADERID.Width = 52;
             // 
             // colPID
             // 
             this.colPID.Caption = "CMND";
             this.colPID.FieldName = "PID";
-            this.colPID.MinWidth = 25;
+            this.colPID.MinWidth = 19;
             this.colPID.Name = "colPID";
             this.colPID.Visible = true;
             this.colPID.VisibleIndex = 1;
-            this.colPID.Width = 120;
+            this.colPID.Width = 90;
             // 
             // colNAME
             // 
             this.colNAME.Caption = "Họ & Tên";
             this.colNAME.FieldName = "NAME";
-            this.colNAME.MinWidth = 25;
+            this.colNAME.MinWidth = 19;
             this.colNAME.Name = "colNAME";
             this.colNAME.Visible = true;
             this.colNAME.VisibleIndex = 2;
-            this.colNAME.Width = 200;
+            this.colNAME.Width = 150;
             // 
             // colSEX
             // 
             this.colSEX.Caption = "Giới Tính";
             this.colSEX.FieldName = "SEX";
-            this.colSEX.MinWidth = 25;
+            this.colSEX.MinWidth = 19;
             this.colSEX.Name = "colSEX";
             this.colSEX.Visible = true;
             this.colSEX.VisibleIndex = 3;
-            this.colSEX.Width = 70;
+            this.colSEX.Width = 52;
             // 
             // colBIRTH
             // 
             this.colBIRTH.Caption = "Ngày Sinh";
             this.colBIRTH.FieldName = "BIRTH";
-            this.colBIRTH.MinWidth = 25;
+            this.colBIRTH.MinWidth = 19;
             this.colBIRTH.Name = "colBIRTH";
             this.colBIRTH.Visible = true;
             this.colBIRTH.VisibleIndex = 4;
-            this.colBIRTH.Width = 100;
             // 
             // colAGE
             // 
             this.colAGE.Caption = "Tuổi";
             this.colAGE.FieldName = "AGE";
-            this.colAGE.MinWidth = 25;
+            this.colAGE.MinWidth = 19;
             this.colAGE.Name = "colAGE";
             this.colAGE.Visible = true;
             this.colAGE.VisibleIndex = 5;
-            this.colAGE.Width = 60;
+            this.colAGE.Width = 45;
             // 
             // colADDRESS
             // 
             this.colADDRESS.FieldName = "ADDRESS";
-            this.colADDRESS.MinWidth = 25;
+            this.colADDRESS.MinWidth = 19;
             this.colADDRESS.Name = "colADDRESS";
-            this.colADDRESS.Width = 94;
+            this.colADDRESS.Width = 70;
             // 
             // colPHONE
             // 
             this.colPHONE.Caption = "SĐT";
             this.colPHONE.FieldName = "PHONE";
-            this.colPHONE.MinWidth = 25;
+            this.colPHONE.MinWidth = 19;
             this.colPHONE.Name = "colPHONE";
             this.colPHONE.Visible = true;
             this.colPHONE.VisibleIndex = 6;
-            this.colPHONE.Width = 110;
+            this.colPHONE.Width = 82;
             // 
             // colEMAIL
             // 
             this.colEMAIL.Caption = "Email";
             this.colEMAIL.FieldName = "EMAIL";
-            this.colEMAIL.MinWidth = 25;
+            this.colEMAIL.MinWidth = 19;
             this.colEMAIL.Name = "colEMAIL";
             this.colEMAIL.Visible = true;
             this.colEMAIL.VisibleIndex = 7;
-            this.colEMAIL.Width = 235;
+            this.colEMAIL.Width = 176;
             // 
             // colNOTE
             // 
             this.colNOTE.FieldName = "NOTE";
-            this.colNOTE.MinWidth = 25;
+            this.colNOTE.MinWidth = 19;
             this.colNOTE.Name = "colNOTE";
-            this.colNOTE.Width = 94;
+            this.colNOTE.Width = 70;
             // 
             // colREQUEST_FORM
             // 
             this.colREQUEST_FORM.FieldName = "REQUEST_FORM";
-            this.colREQUEST_FORM.MinWidth = 25;
+            this.colREQUEST_FORM.MinWidth = 19;
             this.colREQUEST_FORM.Name = "colREQUEST_FORM";
-            this.colREQUEST_FORM.Width = 94;
+            this.colREQUEST_FORM.Width = 70;
             // 
             // panel1
             // 
@@ -888,19 +907,19 @@ namespace DoAnQuanLyThuVien
             this.panel1.Controls.Add(this.simpleButton_readerAdd);
             this.panel1.Controls.Add(this.simpleButton_Close1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1574, 106);
+            this.panel1.Size = new System.Drawing.Size(1180, 86);
             this.panel1.TabIndex = 0;
             // 
             // separatorControl3
             // 
             this.separatorControl3.LineAlignment = DevExpress.XtraEditors.Alignment.Center;
             this.separatorControl3.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl3.Location = new System.Drawing.Point(584, 4);
-            this.separatorControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.separatorControl3.Location = new System.Drawing.Point(438, 3);
             this.separatorControl3.Name = "separatorControl3";
-            this.separatorControl3.Padding = new System.Windows.Forms.Padding(11);
-            this.separatorControl3.Size = new System.Drawing.Size(34, 98);
+            this.separatorControl3.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.separatorControl3.Size = new System.Drawing.Size(26, 80);
             this.separatorControl3.TabIndex = 11;
             // 
             // panel4
@@ -908,9 +927,10 @@ namespace DoAnQuanLyThuVien
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel4.Location = new System.Drawing.Point(1457, 4);
+            this.panel4.Location = new System.Drawing.Point(1093, 3);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(98, 98);
+            this.panel4.Size = new System.Drawing.Size(74, 80);
             this.panel4.TabIndex = 10;
             // 
             // simpleButton_reader_resetPass
@@ -920,12 +940,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_reader_resetPass.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.simpleButton_reader_resetPass.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_reader_resetPass.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_reader_resetPass.ImageOptions.SvgImage")));
-            this.simpleButton_reader_resetPass.Location = new System.Drawing.Point(731, 4);
-            this.simpleButton_reader_resetPass.Margin = new System.Windows.Forms.Padding(15);
+            this.simpleButton_reader_resetPass.Location = new System.Drawing.Point(548, 3);
+            this.simpleButton_reader_resetPass.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.simpleButton_reader_resetPass.Name = "simpleButton_reader_resetPass";
             this.simpleButton_reader_resetPass.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_reader_resetPass.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_reader_resetPass.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_reader_resetPass.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_reader_resetPass.TabIndex = 9;
             this.simpleButton_reader_resetPass.Text = "Đặt lại mật khẩu";
             this.simpleButton_reader_resetPass.Click += new System.EventHandler(this.simpleButton_resetPass_Click);
@@ -935,12 +955,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerAccount.AllowFocus = false;
             this.simpleButton_readerAccount.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_readerAccount.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerAccount.ImageOptions.SvgImage")));
-            this.simpleButton_readerAccount.Location = new System.Drawing.Point(631, 4);
-            this.simpleButton_readerAccount.Margin = new System.Windows.Forms.Padding(12);
+            this.simpleButton_readerAccount.Location = new System.Drawing.Point(473, 3);
+            this.simpleButton_readerAccount.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.simpleButton_readerAccount.Name = "simpleButton_readerAccount";
             this.simpleButton_readerAccount.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_readerAccount.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_readerAccount.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerAccount.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_readerAccount.TabIndex = 8;
             this.simpleButton_readerAccount.Text = "Tài khoản";
             this.simpleButton_readerAccount.Click += new System.EventHandler(this.simpleButton_Account_Click);
@@ -950,12 +970,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerReload.AllowFocus = false;
             this.simpleButton_readerReload.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_readerReload.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerReload.ImageOptions.SvgImage")));
-            this.simpleButton_readerReload.Location = new System.Drawing.Point(485, 4);
-            this.simpleButton_readerReload.Margin = new System.Windows.Forms.Padding(10);
+            this.simpleButton_readerReload.Location = new System.Drawing.Point(364, 3);
+            this.simpleButton_readerReload.Margin = new System.Windows.Forms.Padding(8);
             this.simpleButton_readerReload.Name = "simpleButton_readerReload";
             this.simpleButton_readerReload.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_readerReload.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_readerReload.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerReload.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_readerReload.TabIndex = 6;
             this.simpleButton_readerReload.Text = "Làm mới";
             this.simpleButton_readerReload.Click += new System.EventHandler(this.simpleButton_Reload_Click);
@@ -963,11 +983,11 @@ namespace DoAnQuanLyThuVien
             // separatorControl2
             // 
             this.separatorControl2.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl2.Location = new System.Drawing.Point(446, 4);
-            this.separatorControl2.Margin = new System.Windows.Forms.Padding(5);
+            this.separatorControl2.Location = new System.Drawing.Point(334, 3);
+            this.separatorControl2.Margin = new System.Windows.Forms.Padding(4);
             this.separatorControl2.Name = "separatorControl2";
-            this.separatorControl2.Padding = new System.Windows.Forms.Padding(14);
-            this.separatorControl2.Size = new System.Drawing.Size(31, 98);
+            this.separatorControl2.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.separatorControl2.Size = new System.Drawing.Size(23, 80);
             this.separatorControl2.TabIndex = 5;
             // 
             // simpleButton_readerEdit
@@ -975,12 +995,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerEdit.AllowFocus = false;
             this.simpleButton_readerEdit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_readerEdit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerEdit.ImageOptions.SvgImage")));
-            this.simpleButton_readerEdit.Location = new System.Drawing.Point(348, 4);
-            this.simpleButton_readerEdit.Margin = new System.Windows.Forms.Padding(8);
+            this.simpleButton_readerEdit.Location = new System.Drawing.Point(261, 3);
+            this.simpleButton_readerEdit.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton_readerEdit.Name = "simpleButton_readerEdit";
             this.simpleButton_readerEdit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_readerEdit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_readerEdit.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerEdit.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_readerEdit.TabIndex = 4;
             this.simpleButton_readerEdit.Text = "Cập nhật";
             this.simpleButton_readerEdit.Click += new System.EventHandler(this.simpleButton_Edit_Click);
@@ -990,12 +1010,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerDel.AllowFocus = false;
             this.simpleButton_readerDel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_readerDel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerDel.ImageOptions.SvgImage")));
-            this.simpleButton_readerDel.Location = new System.Drawing.Point(244, 4);
-            this.simpleButton_readerDel.Margin = new System.Windows.Forms.Padding(6);
+            this.simpleButton_readerDel.Location = new System.Drawing.Point(183, 3);
+            this.simpleButton_readerDel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.simpleButton_readerDel.Name = "simpleButton_readerDel";
             this.simpleButton_readerDel.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_readerDel.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_readerDel.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerDel.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_readerDel.TabIndex = 3;
             this.simpleButton_readerDel.Text = "Xóa";
             this.simpleButton_readerDel.Click += new System.EventHandler(this.simpleButton_Del_Click);
@@ -1003,11 +1023,10 @@ namespace DoAnQuanLyThuVien
             // separatorControl1
             // 
             this.separatorControl1.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl1.Location = new System.Drawing.Point(106, 4);
-            this.separatorControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.separatorControl1.Location = new System.Drawing.Point(80, 3);
             this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Padding = new System.Windows.Forms.Padding(11);
-            this.separatorControl1.Size = new System.Drawing.Size(25, 98);
+            this.separatorControl1.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.separatorControl1.Size = new System.Drawing.Size(19, 80);
             this.separatorControl1.TabIndex = 2;
             // 
             // simpleButton_readerAdd
@@ -1015,12 +1034,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_readerAdd.AllowFocus = false;
             this.simpleButton_readerAdd.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_readerAdd.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_readerAdd.ImageOptions.SvgImage")));
-            this.simpleButton_readerAdd.Location = new System.Drawing.Point(139, 4);
-            this.simpleButton_readerAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton_readerAdd.Location = new System.Drawing.Point(104, 3);
+            this.simpleButton_readerAdd.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton_readerAdd.Name = "simpleButton_readerAdd";
             this.simpleButton_readerAdd.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_readerAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_readerAdd.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_readerAdd.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_readerAdd.TabIndex = 1;
             this.simpleButton_readerAdd.Text = "Thêm";
             this.simpleButton_readerAdd.Click += new System.EventHandler(this.simpleButton_Add_Click);
@@ -1032,12 +1051,11 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_Close1.Appearance.Options.UseBorderColor = true;
             this.simpleButton_Close1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_Close1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_Close1.ImageOptions.SvgImage")));
-            this.simpleButton_Close1.Location = new System.Drawing.Point(12, 4);
-            this.simpleButton_Close1.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton_Close1.Location = new System.Drawing.Point(9, 3);
             this.simpleButton_Close1.Name = "simpleButton_Close1";
             this.simpleButton_Close1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_Close1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_Close1.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_Close1.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_Close1.TabIndex = 0;
             this.simpleButton_Close1.Text = "Thoát";
             this.simpleButton_Close1.Click += new System.EventHandler(this.simpleButton_Close_Click);
@@ -1047,10 +1065,11 @@ namespace DoAnQuanLyThuVien
             this.tabPage_Staff.Controls.Add(this.panel6);
             this.tabPage_Staff.Controls.Add(this.panel5);
             this.tabPage_Staff.Controls.Add(this.panel7);
-            this.tabPage_Staff.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_Staff.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Staff.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_Staff.Name = "tabPage_Staff";
-            this.tabPage_Staff.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Staff.Size = new System.Drawing.Size(1574, 924);
+            this.tabPage_Staff.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage_Staff.Size = new System.Drawing.Size(1178, 748);
             this.tabPage_Staff.TabIndex = 1;
             this.tabPage_Staff.Text = "Nhân viên";
             this.tabPage_Staff.UseVisualStyleBackColor = true;
@@ -1061,9 +1080,10 @@ namespace DoAnQuanLyThuVien
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel6.Controls.Add(this.dataLayoutControl2);
-            this.panel6.Location = new System.Drawing.Point(1047, 109);
+            this.panel6.Location = new System.Drawing.Point(785, 89);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(525, 815);
+            this.panel6.Size = new System.Drawing.Size(394, 662);
             this.panel6.TabIndex = 5;
             // 
             // dataLayoutControl2
@@ -1083,10 +1103,11 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl2.DataSource = this.sTAFFINFBindingSource;
             this.dataLayoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl2.Location = new System.Drawing.Point(0, 0);
+            this.dataLayoutControl2.Margin = new System.Windows.Forms.Padding(2);
             this.dataLayoutControl2.Name = "dataLayoutControl2";
             this.dataLayoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1108, 156, 812, 500);
             this.dataLayoutControl2.Root = this.layoutControlGroup5;
-            this.dataLayoutControl2.Size = new System.Drawing.Size(525, 815);
+            this.dataLayoutControl2.Size = new System.Drawing.Size(394, 662);
             this.dataLayoutControl2.TabIndex = 0;
             this.dataLayoutControl2.Text = "dataLayoutControl2";
             // 
@@ -1094,9 +1115,10 @@ namespace DoAnQuanLyThuVien
             // 
             this.STAFFAVATARpictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "AVATAR", true));
             this.STAFFAVATARpictureEdit.Location = new System.Drawing.Point(12, 12);
+            this.STAFFAVATARpictureEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFAVATARpictureEdit.Name = "STAFFAVATARpictureEdit";
             this.STAFFAVATARpictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.STAFFAVATARpictureEdit.Size = new System.Drawing.Size(174, 262);
+            this.STAFFAVATARpictureEdit.Size = new System.Drawing.Size(128, 192);
             this.STAFFAVATARpictureEdit.StyleController = this.dataLayoutControl2;
             this.STAFFAVATARpictureEdit.TabIndex = 4;
             this.STAFFAVATARpictureEdit.Click += new System.EventHandler(this.pictureEdit_AVATARPictureEdit_Click);
@@ -1108,42 +1130,46 @@ namespace DoAnQuanLyThuVien
             // STAFFIDTextEdit
             // 
             this.STAFFIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "STAFFID", true));
-            this.STAFFIDTextEdit.Location = new System.Drawing.Point(293, 214);
+            this.STAFFIDTextEdit.Location = new System.Drawing.Point(228, 148);
+            this.STAFFIDTextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFIDTextEdit.Name = "STAFFIDTextEdit";
             this.STAFFIDTextEdit.Properties.ReadOnly = true;
-            this.STAFFIDTextEdit.Size = new System.Drawing.Size(208, 22);
+            this.STAFFIDTextEdit.Size = new System.Drawing.Size(142, 20);
             this.STAFFIDTextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFIDTextEdit.TabIndex = 5;
             // 
             // STAFFPIDTextEdit
             // 
             this.STAFFPIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PID", true));
-            this.STAFFPIDTextEdit.Location = new System.Drawing.Point(293, 240);
+            this.STAFFPIDTextEdit.Location = new System.Drawing.Point(228, 172);
+            this.STAFFPIDTextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFPIDTextEdit.Name = "STAFFPIDTextEdit";
             this.STAFFPIDTextEdit.Properties.ReadOnly = true;
             this.STAFFPIDTextEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFPIDTextEdit.Size = new System.Drawing.Size(208, 22);
+            this.STAFFPIDTextEdit.Size = new System.Drawing.Size(142, 20);
             this.STAFFPIDTextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFPIDTextEdit.TabIndex = 6;
             // 
             // STAFFNAMEtextEdit
             // 
             this.STAFFNAMEtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NAME", true));
-            this.STAFFNAMEtextEdit.Location = new System.Drawing.Point(202, 91);
+            this.STAFFNAMEtextEdit.Location = new System.Drawing.Point(156, 61);
+            this.STAFFNAMEtextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFNAMEtextEdit.Name = "STAFFNAMEtextEdit";
             this.STAFFNAMEtextEdit.Properties.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.STAFFNAMEtextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.STAFFNAMEtextEdit.Properties.Appearance.Options.UseBackColor = true;
             this.STAFFNAMEtextEdit.Properties.Appearance.Options.UseFont = true;
             this.STAFFNAMEtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.STAFFNAMEtextEdit.Size = new System.Drawing.Size(299, 28);
+            this.STAFFNAMEtextEdit.Size = new System.Drawing.Size(214, 24);
             this.STAFFNAMEtextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFNAMEtextEdit.TabIndex = 7;
             // 
             // STAFFSEXcomboBoxEdit
             // 
             this.STAFFSEXcomboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "SEX", true));
-            this.STAFFSEXcomboBoxEdit.Location = new System.Drawing.Point(356, 337);
+            this.STAFFSEXcomboBoxEdit.Location = new System.Drawing.Point(266, 258);
+            this.STAFFSEXcomboBoxEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFSEXcomboBoxEdit.Name = "STAFFSEXcomboBoxEdit";
             this.STAFFSEXcomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1153,7 +1179,7 @@ namespace DoAnQuanLyThuVien
             "Khác"});
             this.STAFFSEXcomboBoxEdit.Properties.ReadOnly = true;
             this.STAFFSEXcomboBoxEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFSEXcomboBoxEdit.Size = new System.Drawing.Size(145, 22);
+            this.STAFFSEXcomboBoxEdit.Size = new System.Drawing.Size(104, 20);
             this.STAFFSEXcomboBoxEdit.StyleController = this.dataLayoutControl2;
             this.STAFFSEXcomboBoxEdit.TabIndex = 8;
             // 
@@ -1161,7 +1187,8 @@ namespace DoAnQuanLyThuVien
             // 
             this.STAFFBIRTHdateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "BIRTH", true));
             this.STAFFBIRTHdateEdit.EditValue = null;
-            this.STAFFBIRTHdateEdit.Location = new System.Drawing.Point(24, 336);
+            this.STAFFBIRTHdateEdit.Location = new System.Drawing.Point(24, 258);
+            this.STAFFBIRTHdateEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFBIRTHdateEdit.Name = "STAFFBIRTHdateEdit";
             this.STAFFBIRTHdateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.STAFFBIRTHdateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1170,7 +1197,7 @@ namespace DoAnQuanLyThuVien
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.STAFFBIRTHdateEdit.Properties.ReadOnly = true;
             this.STAFFBIRTHdateEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFBIRTHdateEdit.Size = new System.Drawing.Size(194, 22);
+            this.STAFFBIRTHdateEdit.Size = new System.Drawing.Size(140, 20);
             this.STAFFBIRTHdateEdit.StyleController = this.dataLayoutControl2;
             this.STAFFBIRTHdateEdit.TabIndex = 9;
             // 
@@ -1178,7 +1205,8 @@ namespace DoAnQuanLyThuVien
             // 
             this.STAFFAGEtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "AGE", true));
             this.STAFFAGEtextEdit.EditValue = "12";
-            this.STAFFAGEtextEdit.Location = new System.Drawing.Point(222, 337);
+            this.STAFFAGEtextEdit.Location = new System.Drawing.Point(168, 258);
+            this.STAFFAGEtextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFAGEtextEdit.Name = "STAFFAGEtextEdit";
             this.STAFFAGEtextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.STAFFAGEtextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -1188,47 +1216,51 @@ namespace DoAnQuanLyThuVien
             this.STAFFAGEtextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.STAFFAGEtextEdit.Properties.ReadOnly = true;
             this.STAFFAGEtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFAGEtextEdit.Size = new System.Drawing.Size(130, 22);
+            this.STAFFAGEtextEdit.Size = new System.Drawing.Size(94, 20);
             this.STAFFAGEtextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFAGEtextEdit.TabIndex = 10;
             // 
             // STAFFADDRESStextEdit
             // 
             this.STAFFADDRESStextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "ADDRESS", true));
-            this.STAFFADDRESStextEdit.Location = new System.Drawing.Point(24, 383);
+            this.STAFFADDRESStextEdit.Location = new System.Drawing.Point(24, 298);
+            this.STAFFADDRESStextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFADDRESStextEdit.Name = "STAFFADDRESStextEdit";
             this.STAFFADDRESStextEdit.Properties.ReadOnly = true;
             this.STAFFADDRESStextEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFADDRESStextEdit.Size = new System.Drawing.Size(477, 22);
+            this.STAFFADDRESStextEdit.Size = new System.Drawing.Size(346, 20);
             this.STAFFADDRESStextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFADDRESStextEdit.TabIndex = 11;
             // 
             // STAFFPHONEtextEdit
             // 
             this.STAFFPHONEtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PHONE", true));
-            this.STAFFPHONEtextEdit.Location = new System.Drawing.Point(24, 428);
+            this.STAFFPHONEtextEdit.Location = new System.Drawing.Point(24, 338);
+            this.STAFFPHONEtextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFPHONEtextEdit.Name = "STAFFPHONEtextEdit";
             this.STAFFPHONEtextEdit.Properties.ReadOnly = true;
             this.STAFFPHONEtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFPHONEtextEdit.Size = new System.Drawing.Size(477, 22);
+            this.STAFFPHONEtextEdit.Size = new System.Drawing.Size(346, 20);
             this.STAFFPHONEtextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFPHONEtextEdit.TabIndex = 12;
             // 
             // STAFFEMAILtextEdit
             // 
             this.STAFFEMAILtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "EMAIL", true));
-            this.STAFFEMAILtextEdit.Location = new System.Drawing.Point(24, 473);
+            this.STAFFEMAILtextEdit.Location = new System.Drawing.Point(24, 378);
+            this.STAFFEMAILtextEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFEMAILtextEdit.Name = "STAFFEMAILtextEdit";
             this.STAFFEMAILtextEdit.Properties.ReadOnly = true;
             this.STAFFEMAILtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFEMAILtextEdit.Size = new System.Drawing.Size(477, 22);
+            this.STAFFEMAILtextEdit.Size = new System.Drawing.Size(346, 20);
             this.STAFFEMAILtextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFEMAILtextEdit.TabIndex = 13;
             // 
             // TYPEComboBoxEdit
             // 
             this.TYPEComboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "TYPE", true));
-            this.TYPEComboBoxEdit.Location = new System.Drawing.Point(293, 190);
+            this.TYPEComboBoxEdit.Location = new System.Drawing.Point(228, 126);
+            this.TYPEComboBoxEdit.Margin = new System.Windows.Forms.Padding(2);
             this.TYPEComboBoxEdit.Name = "TYPEComboBoxEdit";
             this.TYPEComboBoxEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.TYPEComboBoxEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -1239,18 +1271,19 @@ namespace DoAnQuanLyThuVien
             "True",
             "False"});
             this.TYPEComboBoxEdit.Properties.ReadOnly = true;
-            this.TYPEComboBoxEdit.Size = new System.Drawing.Size(208, 20);
+            this.TYPEComboBoxEdit.Size = new System.Drawing.Size(142, 18);
             this.TYPEComboBoxEdit.StyleController = this.dataLayoutControl2;
             this.TYPEComboBoxEdit.TabIndex = 14;
             // 
             // STAFFNOTEmemoEdit
             // 
             this.STAFFNOTEmemoEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NOTE", true));
-            this.STAFFNOTEmemoEdit.Location = new System.Drawing.Point(24, 549);
+            this.STAFFNOTEmemoEdit.Location = new System.Drawing.Point(24, 447);
+            this.STAFFNOTEmemoEdit.Margin = new System.Windows.Forms.Padding(2);
             this.STAFFNOTEmemoEdit.Name = "STAFFNOTEmemoEdit";
             this.STAFFNOTEmemoEdit.Properties.ReadOnly = true;
             this.STAFFNOTEmemoEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFNOTEmemoEdit.Size = new System.Drawing.Size(477, 242);
+            this.STAFFNOTEmemoEdit.Size = new System.Drawing.Size(346, 191);
             this.STAFFNOTEmemoEdit.StyleController = this.dataLayoutControl2;
             this.STAFFNOTEmemoEdit.TabIndex = 15;
             // 
@@ -1261,7 +1294,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup6});
             this.layoutControlGroup5.Name = "Root";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(525, 815);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(394, 662);
             this.layoutControlGroup5.TextVisible = false;
             // 
             // layoutControlGroup6
@@ -1277,15 +1310,15 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup9});
             this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup6.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup6.Size = new System.Drawing.Size(505, 795);
+            this.layoutControlGroup6.Size = new System.Drawing.Size(374, 642);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.STAFFAVATARpictureEdit;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.MinSize = new System.Drawing.Size(24, 24);
+            this.layoutControlItem1.MinSize = new System.Drawing.Size(18, 19);
             this.layoutControlItem1.Name = "ItemForAVATAR";
-            this.layoutControlItem1.Size = new System.Drawing.Size(178, 266);
+            this.layoutControlItem1.Size = new System.Drawing.Size(132, 196);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.StartNewLine = true;
             this.layoutControlItem1.Text = "AVATAR";
@@ -1296,18 +1329,18 @@ namespace DoAnQuanLyThuVien
             // 
             this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem10});
-            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 499);
+            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 402);
             this.layoutControlGroup7.Name = "layoutControlGroup7";
-            this.layoutControlGroup7.Size = new System.Drawing.Size(505, 296);
+            this.layoutControlGroup7.Size = new System.Drawing.Size(374, 240);
             this.layoutControlGroup7.Text = "Ghi Chú";
             // 
             // layoutControlItem10
             // 
             this.layoutControlItem10.Control = this.STAFFNOTEmemoEdit;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem10.MinSize = new System.Drawing.Size(74, 26);
+            this.layoutControlItem10.MinSize = new System.Drawing.Size(55, 21);
             this.layoutControlItem10.Name = "ItemForNOTE";
-            this.layoutControlItem10.Size = new System.Drawing.Size(481, 246);
+            this.layoutControlItem10.Size = new System.Drawing.Size(350, 195);
             this.layoutControlItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem10.StartNewLine = true;
             this.layoutControlItem10.Text = "NOTE";
@@ -1323,9 +1356,9 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem7,
             this.layoutControlItem8,
             this.layoutControlItem9});
-            this.layoutControlGroup8.Location = new System.Drawing.Point(0, 267);
+            this.layoutControlGroup8.Location = new System.Drawing.Point(0, 197);
             this.layoutControlGroup8.Name = "layoutControlGroup8";
-            this.layoutControlGroup8.Size = new System.Drawing.Size(505, 232);
+            this.layoutControlGroup8.Size = new System.Drawing.Size(374, 205);
             this.layoutControlGroup8.Text = "Thông Tin Chi Tiết";
             // 
             // layoutControlItem5
@@ -1333,74 +1366,74 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem5.Control = this.STAFFBIRTHdateEdit;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "ItemForBIRTH";
-            this.layoutControlItem5.Size = new System.Drawing.Size(198, 46);
+            this.layoutControlItem5.Size = new System.Drawing.Size(144, 40);
             this.layoutControlItem5.Text = "Ngày Sinh";
             this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.STAFFAGEtextEdit;
-            this.layoutControlItem6.Location = new System.Drawing.Point(198, 0);
+            this.layoutControlItem6.Location = new System.Drawing.Point(144, 0);
             this.layoutControlItem6.Name = "ItemForAGE";
-            this.layoutControlItem6.Size = new System.Drawing.Size(134, 46);
+            this.layoutControlItem6.Size = new System.Drawing.Size(98, 40);
             this.layoutControlItem6.Text = "Tuổi";
             this.layoutControlItem6.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(88, 17);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.STAFFSEXcomboBoxEdit;
-            this.layoutControlItem4.Location = new System.Drawing.Point(332, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(242, 0);
             this.layoutControlItem4.Name = "ItemForSEX";
-            this.layoutControlItem4.Size = new System.Drawing.Size(149, 46);
+            this.layoutControlItem4.Size = new System.Drawing.Size(108, 40);
             this.layoutControlItem4.Text = "Giới Tính";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(88, 17);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.STAFFADDRESStextEdit;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 46);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 40);
             this.layoutControlItem7.Name = "ItemForADDRESS";
-            this.layoutControlItem7.Size = new System.Drawing.Size(481, 46);
+            this.layoutControlItem7.Size = new System.Drawing.Size(350, 40);
             this.layoutControlItem7.Text = "Địa Chỉ";
             this.layoutControlItem7.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(88, 17);
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.STAFFPHONEtextEdit;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 92);
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 80);
             this.layoutControlItem8.Name = "ItemForPHONE";
-            this.layoutControlItem8.Size = new System.Drawing.Size(481, 45);
+            this.layoutControlItem8.Size = new System.Drawing.Size(350, 40);
             this.layoutControlItem8.Text = "SĐT";
             this.layoutControlItem8.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.STAFFEMAILtextEdit;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 137);
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItem9.Name = "ItemForEMAIL";
-            this.layoutControlItem9.Size = new System.Drawing.Size(481, 45);
+            this.layoutControlItem9.Size = new System.Drawing.Size(350, 40);
             this.layoutControlItem9.Text = "Email";
             this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(69, 13);
             // 
             // simpleSeparator4
             // 
             this.simpleSeparator4.AllowHotTrack = false;
-            this.simpleSeparator4.Location = new System.Drawing.Point(0, 266);
+            this.simpleSeparator4.Location = new System.Drawing.Point(0, 196);
             this.simpleSeparator4.Name = "simpleSeparator4";
-            this.simpleSeparator4.Size = new System.Drawing.Size(178, 1);
+            this.simpleSeparator4.Size = new System.Drawing.Size(132, 1);
             // 
             // simpleSeparator5
             // 
             this.simpleSeparator5.AllowHotTrack = false;
-            this.simpleSeparator5.Location = new System.Drawing.Point(178, 266);
+            this.simpleSeparator5.Location = new System.Drawing.Point(132, 196);
             this.simpleSeparator5.Name = "simpleSeparator5";
-            this.simpleSeparator5.Size = new System.Drawing.Size(327, 1);
+            this.simpleSeparator5.Size = new System.Drawing.Size(242, 1);
             // 
             // layoutControlGroup9
             // 
@@ -1410,9 +1443,9 @@ namespace DoAnQuanLyThuVien
             this.ItemForTYPE,
             this.ItemForSTAFFID,
             this.layoutControlItem2});
-            this.layoutControlGroup9.Location = new System.Drawing.Point(178, 0);
+            this.layoutControlGroup9.Location = new System.Drawing.Point(132, 0);
             this.layoutControlGroup9.Name = "layoutControlGroup9";
-            this.layoutControlGroup9.Size = new System.Drawing.Size(327, 266);
+            this.layoutControlGroup9.Size = new System.Drawing.Size(242, 196);
             this.layoutControlGroup9.TextVisible = false;
             // 
             // layoutControlItem3
@@ -1420,9 +1453,9 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem3.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
             this.layoutControlItem3.Control = this.STAFFNAMEtextEdit;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(124, 26);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(93, 21);
             this.layoutControlItem3.Name = "ItemForNAME";
-            this.layoutControlItem3.Size = new System.Drawing.Size(303, 166);
+            this.layoutControlItem3.Size = new System.Drawing.Size(218, 102);
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.Text = "NAME";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
@@ -1431,29 +1464,29 @@ namespace DoAnQuanLyThuVien
             // ItemForTYPE
             // 
             this.ItemForTYPE.Control = this.TYPEComboBoxEdit;
-            this.ItemForTYPE.Location = new System.Drawing.Point(0, 166);
+            this.ItemForTYPE.Location = new System.Drawing.Point(0, 102);
             this.ItemForTYPE.Name = "ItemForTYPE";
-            this.ItemForTYPE.Size = new System.Drawing.Size(303, 24);
+            this.ItemForTYPE.Size = new System.Drawing.Size(218, 22);
             this.ItemForTYPE.Text = "Loại Tài Khoản";
-            this.ItemForTYPE.TextSize = new System.Drawing.Size(88, 17);
+            this.ItemForTYPE.TextSize = new System.Drawing.Size(69, 13);
             // 
             // ItemForSTAFFID
             // 
             this.ItemForSTAFFID.Control = this.STAFFIDTextEdit;
-            this.ItemForSTAFFID.Location = new System.Drawing.Point(0, 190);
+            this.ItemForSTAFFID.Location = new System.Drawing.Point(0, 124);
             this.ItemForSTAFFID.Name = "ItemForSTAFFID";
-            this.ItemForSTAFFID.Size = new System.Drawing.Size(303, 26);
+            this.ItemForSTAFFID.Size = new System.Drawing.Size(218, 24);
             this.ItemForSTAFFID.Text = "Mã Tài Khoản";
-            this.ItemForSTAFFID.TextSize = new System.Drawing.Size(88, 17);
+            this.ItemForSTAFFID.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.STAFFPIDTextEdit;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 216);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 148);
             this.layoutControlItem2.Name = "ItemForPID";
-            this.layoutControlItem2.Size = new System.Drawing.Size(303, 26);
+            this.layoutControlItem2.Size = new System.Drawing.Size(218, 24);
             this.layoutControlItem2.Text = "CMND";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(69, 13);
             // 
             // panel5
             // 
@@ -1461,9 +1494,10 @@ namespace DoAnQuanLyThuVien
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.gridControl_Staff);
-            this.panel5.Location = new System.Drawing.Point(0, 109);
+            this.panel5.Location = new System.Drawing.Point(0, 89);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1040, 812);
+            this.panel5.Size = new System.Drawing.Size(780, 660);
             this.panel5.TabIndex = 4;
             // 
             // gridControl_Staff
@@ -1471,10 +1505,12 @@ namespace DoAnQuanLyThuVien
             this.gridControl_Staff.AllowRestoreSelectionAndFocusedRow = DevExpress.Utils.DefaultBoolean.False;
             this.gridControl_Staff.DataSource = this.sTAFFINFBindingSource;
             this.gridControl_Staff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_Staff.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.gridControl_Staff.Location = new System.Drawing.Point(0, 0);
             this.gridControl_Staff.MainView = this.gridView_Staff;
+            this.gridControl_Staff.Margin = new System.Windows.Forms.Padding(2);
             this.gridControl_Staff.Name = "gridControl_Staff";
-            this.gridControl_Staff.Size = new System.Drawing.Size(1040, 812);
+            this.gridControl_Staff.Size = new System.Drawing.Size(780, 660);
             this.gridControl_Staff.TabIndex = 0;
             this.gridControl_Staff.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_Staff});
@@ -1496,6 +1532,7 @@ namespace DoAnQuanLyThuVien
             this.colEMAIL1,
             this.colTYPE,
             this.colNOTE1});
+            this.gridView_Staff.DetailHeight = 284;
             this.gridView_Staff.GridControl = this.gridControl_Staff;
             this.gridView_Staff.Name = "gridView_Staff";
             this.gridView_Staff.OptionsBehavior.Editable = false;
@@ -1508,127 +1545,127 @@ namespace DoAnQuanLyThuVien
             // colUSERNAME1
             // 
             this.colUSERNAME1.FieldName = "USERNAME";
-            this.colUSERNAME1.MinWidth = 25;
+            this.colUSERNAME1.MinWidth = 19;
             this.colUSERNAME1.Name = "colUSERNAME1";
-            this.colUSERNAME1.Width = 94;
+            this.colUSERNAME1.Width = 70;
             // 
             // colPASSWORD1
             // 
             this.colPASSWORD1.FieldName = "PASSWORD";
-            this.colPASSWORD1.MinWidth = 25;
+            this.colPASSWORD1.MinWidth = 19;
             this.colPASSWORD1.Name = "colPASSWORD1";
-            this.colPASSWORD1.Width = 94;
+            this.colPASSWORD1.Width = 70;
             // 
             // colAVATAR1
             // 
             this.colAVATAR1.FieldName = "AVATAR";
-            this.colAVATAR1.MinWidth = 25;
+            this.colAVATAR1.MinWidth = 19;
             this.colAVATAR1.Name = "colAVATAR1";
-            this.colAVATAR1.Width = 94;
+            this.colAVATAR1.Width = 70;
             // 
             // colSTAFFID
             // 
             this.colSTAFFID.Caption = "ID";
             this.colSTAFFID.FieldName = "STAFFID";
-            this.colSTAFFID.MinWidth = 25;
+            this.colSTAFFID.MinWidth = 19;
             this.colSTAFFID.Name = "colSTAFFID";
             this.colSTAFFID.Visible = true;
             this.colSTAFFID.VisibleIndex = 0;
-            this.colSTAFFID.Width = 66;
+            this.colSTAFFID.Width = 49;
             // 
             // colPID1
             // 
             this.colPID1.Caption = "CMND";
             this.colPID1.FieldName = "PID";
-            this.colPID1.MinWidth = 25;
+            this.colPID1.MinWidth = 19;
             this.colPID1.Name = "colPID1";
             this.colPID1.Visible = true;
             this.colPID1.VisibleIndex = 2;
-            this.colPID1.Width = 120;
+            this.colPID1.Width = 90;
             // 
             // colNAME1
             // 
             this.colNAME1.Caption = "Họ & Tên";
             this.colNAME1.FieldName = "NAME";
-            this.colNAME1.MinWidth = 25;
+            this.colNAME1.MinWidth = 19;
             this.colNAME1.Name = "colNAME1";
             this.colNAME1.Visible = true;
             this.colNAME1.VisibleIndex = 3;
-            this.colNAME1.Width = 173;
+            this.colNAME1.Width = 130;
             // 
             // colSEX1
             // 
             this.colSEX1.Caption = "Giới Tính";
             this.colSEX1.FieldName = "SEX";
-            this.colSEX1.MinWidth = 25;
+            this.colSEX1.MinWidth = 19;
             this.colSEX1.Name = "colSEX1";
             this.colSEX1.Visible = true;
             this.colSEX1.VisibleIndex = 4;
-            this.colSEX1.Width = 68;
+            this.colSEX1.Width = 51;
             // 
             // colBIRTH1
             // 
             this.colBIRTH1.Caption = "Ngày Sinh";
             this.colBIRTH1.FieldName = "BIRTH";
-            this.colBIRTH1.MinWidth = 25;
+            this.colBIRTH1.MinWidth = 19;
             this.colBIRTH1.Name = "colBIRTH1";
             this.colBIRTH1.Visible = true;
             this.colBIRTH1.VisibleIndex = 5;
-            this.colBIRTH1.Width = 80;
+            this.colBIRTH1.Width = 60;
             // 
             // colAGE1
             // 
             this.colAGE1.Caption = "Tuổi";
             this.colAGE1.FieldName = "AGE";
-            this.colAGE1.MinWidth = 25;
+            this.colAGE1.MinWidth = 19;
             this.colAGE1.Name = "colAGE1";
             this.colAGE1.Visible = true;
             this.colAGE1.VisibleIndex = 6;
-            this.colAGE1.Width = 50;
+            this.colAGE1.Width = 37;
             // 
             // colADDRESS1
             // 
             this.colADDRESS1.FieldName = "ADDRESS";
-            this.colADDRESS1.MinWidth = 25;
+            this.colADDRESS1.MinWidth = 19;
             this.colADDRESS1.Name = "colADDRESS1";
-            this.colADDRESS1.Width = 94;
+            this.colADDRESS1.Width = 70;
             // 
             // colPHONE1
             // 
             this.colPHONE1.Caption = "SĐT";
             this.colPHONE1.FieldName = "PHONE";
-            this.colPHONE1.MinWidth = 25;
+            this.colPHONE1.MinWidth = 19;
             this.colPHONE1.Name = "colPHONE1";
             this.colPHONE1.Visible = true;
             this.colPHONE1.VisibleIndex = 7;
-            this.colPHONE1.Width = 116;
+            this.colPHONE1.Width = 87;
             // 
             // colEMAIL1
             // 
             this.colEMAIL1.Caption = "Email";
             this.colEMAIL1.FieldName = "EMAIL";
-            this.colEMAIL1.MinWidth = 25;
+            this.colEMAIL1.MinWidth = 19;
             this.colEMAIL1.Name = "colEMAIL1";
             this.colEMAIL1.Visible = true;
             this.colEMAIL1.VisibleIndex = 8;
-            this.colEMAIL1.Width = 267;
+            this.colEMAIL1.Width = 200;
             // 
             // colTYPE
             // 
             this.colTYPE.Caption = "Quản Lý";
             this.colTYPE.FieldName = "TYPE";
-            this.colTYPE.MinWidth = 25;
+            this.colTYPE.MinWidth = 19;
             this.colTYPE.Name = "colTYPE";
             this.colTYPE.Visible = true;
             this.colTYPE.VisibleIndex = 1;
-            this.colTYPE.Width = 70;
+            this.colTYPE.Width = 52;
             // 
             // colNOTE1
             // 
             this.colNOTE1.FieldName = "NOTE";
-            this.colNOTE1.MinWidth = 25;
+            this.colNOTE1.MinWidth = 19;
             this.colNOTE1.Name = "colNOTE1";
-            this.colNOTE1.Width = 94;
+            this.colNOTE1.Width = 70;
             // 
             // panel7
             // 
@@ -1647,19 +1684,19 @@ namespace DoAnQuanLyThuVien
             this.panel7.Controls.Add(this.simpleButton_staffAdd);
             this.panel7.Controls.Add(this.simpleButton_Close2);
             this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1574, 106);
+            this.panel7.Size = new System.Drawing.Size(1180, 86);
             this.panel7.TabIndex = 3;
             // 
             // separatorControl4
             // 
             this.separatorControl4.LineAlignment = DevExpress.XtraEditors.Alignment.Center;
             this.separatorControl4.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl4.Location = new System.Drawing.Point(584, 4);
-            this.separatorControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.separatorControl4.Location = new System.Drawing.Point(438, 3);
             this.separatorControl4.Name = "separatorControl4";
-            this.separatorControl4.Padding = new System.Windows.Forms.Padding(11);
-            this.separatorControl4.Size = new System.Drawing.Size(34, 98);
+            this.separatorControl4.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.separatorControl4.Size = new System.Drawing.Size(26, 80);
             this.separatorControl4.TabIndex = 11;
             // 
             // panel8
@@ -1667,9 +1704,10 @@ namespace DoAnQuanLyThuVien
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.Location = new System.Drawing.Point(1457, 4);
+            this.panel8.Location = new System.Drawing.Point(1093, 3);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(98, 98);
+            this.panel8.Size = new System.Drawing.Size(74, 80);
             this.panel8.TabIndex = 10;
             // 
             // simpleButton_staff_resetPass
@@ -1679,12 +1717,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staff_resetPass.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.simpleButton_staff_resetPass.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_staff_resetPass.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staff_resetPass.ImageOptions.SvgImage")));
-            this.simpleButton_staff_resetPass.Location = new System.Drawing.Point(731, 4);
-            this.simpleButton_staff_resetPass.Margin = new System.Windows.Forms.Padding(15);
+            this.simpleButton_staff_resetPass.Location = new System.Drawing.Point(548, 3);
+            this.simpleButton_staff_resetPass.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.simpleButton_staff_resetPass.Name = "simpleButton_staff_resetPass";
             this.simpleButton_staff_resetPass.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_staff_resetPass.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_staff_resetPass.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staff_resetPass.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_staff_resetPass.TabIndex = 9;
             this.simpleButton_staff_resetPass.Text = "Đặt lại mật khẩu";
             this.simpleButton_staff_resetPass.Click += new System.EventHandler(this.simpleButton_resetPass_Click);
@@ -1694,12 +1732,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffAccount.AllowFocus = false;
             this.simpleButton_staffAccount.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_staffAccount.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffAccount.ImageOptions.SvgImage")));
-            this.simpleButton_staffAccount.Location = new System.Drawing.Point(631, 4);
-            this.simpleButton_staffAccount.Margin = new System.Windows.Forms.Padding(12);
+            this.simpleButton_staffAccount.Location = new System.Drawing.Point(473, 3);
+            this.simpleButton_staffAccount.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.simpleButton_staffAccount.Name = "simpleButton_staffAccount";
             this.simpleButton_staffAccount.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_staffAccount.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_staffAccount.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffAccount.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_staffAccount.TabIndex = 8;
             this.simpleButton_staffAccount.Text = "Tài khoản";
             this.simpleButton_staffAccount.Click += new System.EventHandler(this.simpleButton_Account_Click);
@@ -1709,12 +1747,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffReload.AllowFocus = false;
             this.simpleButton_staffReload.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_staffReload.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffReload.ImageOptions.SvgImage")));
-            this.simpleButton_staffReload.Location = new System.Drawing.Point(485, 4);
-            this.simpleButton_staffReload.Margin = new System.Windows.Forms.Padding(10);
+            this.simpleButton_staffReload.Location = new System.Drawing.Point(364, 3);
+            this.simpleButton_staffReload.Margin = new System.Windows.Forms.Padding(8);
             this.simpleButton_staffReload.Name = "simpleButton_staffReload";
             this.simpleButton_staffReload.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_staffReload.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_staffReload.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffReload.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_staffReload.TabIndex = 6;
             this.simpleButton_staffReload.Text = "Làm mới";
             this.simpleButton_staffReload.Click += new System.EventHandler(this.simpleButton_Reload_Click);
@@ -1722,11 +1760,11 @@ namespace DoAnQuanLyThuVien
             // separatorControl5
             // 
             this.separatorControl5.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl5.Location = new System.Drawing.Point(446, 4);
-            this.separatorControl5.Margin = new System.Windows.Forms.Padding(5);
+            this.separatorControl5.Location = new System.Drawing.Point(334, 3);
+            this.separatorControl5.Margin = new System.Windows.Forms.Padding(4);
             this.separatorControl5.Name = "separatorControl5";
-            this.separatorControl5.Padding = new System.Windows.Forms.Padding(14);
-            this.separatorControl5.Size = new System.Drawing.Size(31, 98);
+            this.separatorControl5.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.separatorControl5.Size = new System.Drawing.Size(23, 80);
             this.separatorControl5.TabIndex = 5;
             // 
             // simpleButton_staffEdit
@@ -1734,12 +1772,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffEdit.AllowFocus = false;
             this.simpleButton_staffEdit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_staffEdit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffEdit.ImageOptions.SvgImage")));
-            this.simpleButton_staffEdit.Location = new System.Drawing.Point(348, 4);
-            this.simpleButton_staffEdit.Margin = new System.Windows.Forms.Padding(8);
+            this.simpleButton_staffEdit.Location = new System.Drawing.Point(261, 3);
+            this.simpleButton_staffEdit.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton_staffEdit.Name = "simpleButton_staffEdit";
             this.simpleButton_staffEdit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_staffEdit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_staffEdit.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffEdit.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_staffEdit.TabIndex = 4;
             this.simpleButton_staffEdit.Text = "Cập nhật";
             this.simpleButton_staffEdit.Click += new System.EventHandler(this.simpleButton_Edit_Click);
@@ -1749,12 +1787,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffDel.AllowFocus = false;
             this.simpleButton_staffDel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_staffDel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffDel.ImageOptions.SvgImage")));
-            this.simpleButton_staffDel.Location = new System.Drawing.Point(244, 4);
-            this.simpleButton_staffDel.Margin = new System.Windows.Forms.Padding(6);
+            this.simpleButton_staffDel.Location = new System.Drawing.Point(183, 3);
+            this.simpleButton_staffDel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.simpleButton_staffDel.Name = "simpleButton_staffDel";
             this.simpleButton_staffDel.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_staffDel.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_staffDel.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffDel.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_staffDel.TabIndex = 3;
             this.simpleButton_staffDel.Text = "Xóa";
             this.simpleButton_staffDel.Click += new System.EventHandler(this.simpleButton_Del_Click);
@@ -1762,11 +1800,10 @@ namespace DoAnQuanLyThuVien
             // separatorControl6
             // 
             this.separatorControl6.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl6.Location = new System.Drawing.Point(106, 4);
-            this.separatorControl6.Margin = new System.Windows.Forms.Padding(4);
+            this.separatorControl6.Location = new System.Drawing.Point(80, 3);
             this.separatorControl6.Name = "separatorControl6";
-            this.separatorControl6.Padding = new System.Windows.Forms.Padding(11);
-            this.separatorControl6.Size = new System.Drawing.Size(25, 98);
+            this.separatorControl6.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.separatorControl6.Size = new System.Drawing.Size(19, 80);
             this.separatorControl6.TabIndex = 2;
             // 
             // simpleButton_staffAdd
@@ -1774,12 +1811,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_staffAdd.AllowFocus = false;
             this.simpleButton_staffAdd.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_staffAdd.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_staffAdd.ImageOptions.SvgImage")));
-            this.simpleButton_staffAdd.Location = new System.Drawing.Point(139, 4);
-            this.simpleButton_staffAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton_staffAdd.Location = new System.Drawing.Point(104, 3);
+            this.simpleButton_staffAdd.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton_staffAdd.Name = "simpleButton_staffAdd";
             this.simpleButton_staffAdd.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_staffAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_staffAdd.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_staffAdd.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_staffAdd.TabIndex = 1;
             this.simpleButton_staffAdd.Text = "Thêm";
             this.simpleButton_staffAdd.Click += new System.EventHandler(this.simpleButton_Add_Click);
@@ -1791,12 +1828,11 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_Close2.Appearance.Options.UseBorderColor = true;
             this.simpleButton_Close2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton_Close2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton_Close2.ImageOptions.SvgImage")));
-            this.simpleButton_Close2.Location = new System.Drawing.Point(12, 4);
-            this.simpleButton_Close2.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton_Close2.Location = new System.Drawing.Point(9, 3);
             this.simpleButton_Close2.Name = "simpleButton_Close2";
             this.simpleButton_Close2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_Close2.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_Close2.Size = new System.Drawing.Size(94, 98);
+            this.simpleButton_Close2.Size = new System.Drawing.Size(70, 80);
             this.simpleButton_Close2.TabIndex = 0;
             this.simpleButton_Close2.Text = "Thoát";
             this.simpleButton_Close2.Click += new System.EventHandler(this.simpleButton_Close_Click);
@@ -1811,11 +1847,13 @@ namespace DoAnQuanLyThuVien
             // 
             // fPersonalManage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1582, 953);
+            this.ClientSize = new System.Drawing.Size(1186, 774);
             this.Controls.Add(this.tabControl_pplManage);
-            this.MaximumSize = new System.Drawing.Size(1600, 1000);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1204, 820);
             this.Name = "fPersonalManage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhân sự";

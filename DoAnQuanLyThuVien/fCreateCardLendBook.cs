@@ -18,6 +18,7 @@ using DoAnQuanLyThuVien.DTO;
 
 namespace DoAnQuanLyThuVien
 {
+    
 
     public partial class fCreateCardLendBook : DevExpress.XtraEditors.XtraForm
     {
@@ -25,6 +26,8 @@ namespace DoAnQuanLyThuVien
         static int[] BookID;
         int count = 1;
         int reLoad = 0;
+        int check = 0;
+
         SHARED_LIBRARY_ENTITY db8;
         public fCreateCardLendBook()
         {
@@ -136,7 +139,7 @@ namespace DoAnQuanLyThuVien
                 XtraMessageBox.Show("Vui lòng không bỏ trống các mục thông tin.");
                 return;
             }
-            else if (CardID == null)
+            else if (check == 0)
             {
                 XtraMessageBox.Show("Vui lòng thêm sách được mượn vào trong phiếu.");
                 return;
@@ -173,6 +176,7 @@ namespace DoAnQuanLyThuVien
 
                 if (f.Id() >= 0)
                 {
+                    check = 1;
                     List<BookListCard> listBook = BookListCardDAO.Instance.GetBookByID(f.Id());
                     foreach (BookListCard item in listBook)
                     {

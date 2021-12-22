@@ -188,7 +188,6 @@ namespace DoAnQuanLyThuVien
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.gridControl1.Load += new System.EventHandler(this.gridControl1_Load);
             this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
@@ -287,7 +286,6 @@ namespace DoAnQuanLyThuVien
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnSubmit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnSubmit_ButtonClick);
-            this.btnSubmit.Click += new System.EventHandler(this.repositoryItemButtonEdit1_Click);
             // 
             // btnChecked
             // 
@@ -732,6 +730,7 @@ namespace DoAnQuanLyThuVien
             this.Controls.Add(this.tabControl1);
             this.InactiveGlowColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "fCreateCardLendBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mượn sách";

@@ -80,10 +80,10 @@ namespace DoAnQuanLyThuVien
             this.columnHeader3});
             this.lvCardInfo.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCardInfo.HideSelection = false;
-            this.lvCardInfo.Location = new System.Drawing.Point(11, 10);
+            this.lvCardInfo.Location = new System.Drawing.Point(12, 12);
             this.lvCardInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lvCardInfo.Name = "lvCardInfo";
-            this.lvCardInfo.Size = new System.Drawing.Size(509, 229);
+            this.lvCardInfo.Size = new System.Drawing.Size(507, 225);
             this.lvCardInfo.TabIndex = 4;
             this.lvCardInfo.UseCompatibleStateImageBehavior = false;
             this.lvCardInfo.View = System.Windows.Forms.View.Details;
@@ -115,7 +115,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem4.Control = this.lvCardInfo;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(513, 233);
+            this.layoutControlItem4.Size = new System.Drawing.Size(511, 229);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -139,10 +139,10 @@ namespace DoAnQuanLyThuVien
             // 
             this.lcNumber.Appearance.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lcNumber.Appearance.Options.UseFont = true;
-            this.lcNumber.Location = new System.Drawing.Point(124, 108);
+            this.lcNumber.Location = new System.Drawing.Point(125, 109);
             this.lcNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lcNumber.Name = "lcNumber";
-            this.lcNumber.Size = new System.Drawing.Size(396, 40);
+            this.lcNumber.Size = new System.Drawing.Size(377, 40);
             this.lcNumber.StyleController = this.layoutControl2;
             this.lcNumber.TabIndex = 7;
             this.lcNumber.Text = "labelControl2";
@@ -151,10 +151,10 @@ namespace DoAnQuanLyThuVien
             // 
             this.lcUserName.Appearance.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lcUserName.Appearance.Options.UseFont = true;
-            this.lcUserName.Location = new System.Drawing.Point(124, 62);
+            this.lcUserName.Location = new System.Drawing.Point(125, 64);
             this.lcUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lcUserName.Name = "lcUserName";
-            this.lcUserName.Size = new System.Drawing.Size(396, 42);
+            this.lcUserName.Size = new System.Drawing.Size(377, 41);
             this.lcUserName.StyleController = this.layoutControl2;
             this.lcUserName.TabIndex = 6;
             this.lcUserName.Text = "labelControl1";
@@ -163,17 +163,17 @@ namespace DoAnQuanLyThuVien
             // 
             this.lcName.Appearance.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lcName.Appearance.Options.UseFont = true;
-            this.lcName.Location = new System.Drawing.Point(124, 10);
+            this.lcName.Location = new System.Drawing.Point(125, 12);
             this.lcName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lcName.Name = "lcName";
-            this.lcName.Size = new System.Drawing.Size(396, 48);
+            this.lcName.Size = new System.Drawing.Size(377, 48);
             this.lcName.StyleController = this.layoutControl2;
             this.lcName.TabIndex = 5;
             this.lcName.Text = "labelControl1";
             // 
             // peImage
             // 
-            this.peImage.Location = new System.Drawing.Point(11, 10);
+            this.peImage.Location = new System.Drawing.Point(12, 12);
             this.peImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.peImage.Name = "peImage";
             this.peImage.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -192,7 +192,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem3,
             this.lcNumber1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(531, 158);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(514, 161);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -202,7 +202,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem1.MaxSize = new System.Drawing.Size(113, 141);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(113, 141);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(113, 142);
+            this.layoutControlItem1.Size = new System.Drawing.Size(113, 141);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -213,7 +213,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem2.Location = new System.Drawing.Point(113, 0);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(68, 16);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(400, 52);
+            this.layoutControlItem2.Size = new System.Drawing.Size(381, 52);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -224,7 +224,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem3.Location = new System.Drawing.Point(113, 52);
             this.layoutControlItem3.MinSize = new System.Drawing.Size(67, 17);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(400, 46);
+            this.layoutControlItem3.Size = new System.Drawing.Size(381, 45);
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
@@ -232,10 +232,10 @@ namespace DoAnQuanLyThuVien
             // lcNumber1
             // 
             this.lcNumber1.Control = this.lcNumber;
-            this.lcNumber1.Location = new System.Drawing.Point(113, 98);
+            this.lcNumber1.Location = new System.Drawing.Point(113, 97);
             this.lcNumber1.MinSize = new System.Drawing.Size(67, 17);
             this.lcNumber1.Name = "lcNumber1";
-            this.lcNumber1.Size = new System.Drawing.Size(400, 44);
+            this.lcNumber1.Size = new System.Drawing.Size(381, 44);
             this.lcNumber1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.lcNumber1.TextSize = new System.Drawing.Size(0, 0);
             this.lcNumber1.TextVisible = false;
@@ -249,6 +249,7 @@ namespace DoAnQuanLyThuVien
             this.Controls.Add(this.layoutControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fReqCardInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fReqCardInfo";
             this.Load += new System.EventHandler(this.fReqCardInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
