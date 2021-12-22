@@ -15,8 +15,8 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fReader : Form
     {
-        private activeAccountDTO activeAccount;
-        public fReader(activeAccountDTO acc)
+        private READER_INF activeAccount;
+        public fReader(READER_INF acc)
         {
             activeAccount = acc;
 
@@ -84,8 +84,8 @@ namespace DoAnQuanLyThuVien
 
         private void btnAccountInfo_Click(object sender, EventArgs e)
         {
-            //fInfReader _formInfo = new fInfReader();
-            //openChildForm(_formInfo);
+            fReaderInfo _formInfo = new fReaderInfo(activeAccount);
+            openChildForm(_formInfo);
         }
 
         private void btnSupport_Click(object sender, EventArgs e)

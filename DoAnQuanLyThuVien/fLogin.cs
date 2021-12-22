@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
@@ -14,12 +15,17 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fLogin : Form
     {
-        private SHARED_LIBRARY_ENTITY dataBase = null;
+        private SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
+        private bool isStaff = Properties.Settings.Default.isStaff;
         
         public fLogin()
         {
             InitializeComponent();
         }
+
+
+        //---Region_Controls_Events---
+        #region ===============Controls_Events===============
 
         private void simpleButton_Login_Click(object sender, EventArgs e)
         {
@@ -28,10 +34,55 @@ namespace DoAnQuanLyThuVien
             Check_loginInfo(USERNAMEtextEdit.Text, encryptedPassword);
         }
 
+        private void simpleButton_ModeSettingClick(object sender, EventArgs e)
+        {
+            panel_Selection.Visible = !panel_Selection.Visible;
+
+            if (isStaff)
+            {
+                simpleButton_StaffLoginMode.Appearance.BackColor = SystemColors.ActiveCaption;
+                simpleButton_ReaderLoginMode.Appearance.BackColor = SystemColors.ButtonHighlight;
+            }
+            else
+            {
+                simpleButton_ReaderLoginMode.Appearance.BackColor = SystemColors.ActiveCaption;
+                simpleButton_StaffLoginMode.Appearance.BackColor = SystemColors.ButtonHighlight;
+            }
+        }
+
+        private void simpleButton_LoginModeClick(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.SimpleButton EventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
+
+            if (EventCalled_Button.Name == "simpleButton_StaffLoginMode")
+            {
+                isStaff = true;
+                simpleButton_StaffLoginMode.Appearance.BackColor = SystemColors.ActiveCaption;
+                simpleButton_ReaderLoginMode.Appearance.BackColor = SystemColors.ButtonHighlight;
+            }
+            else
+            {
+                isStaff = false;
+                simpleButton_ReaderLoginMode.Appearance.BackColor = SystemColors.ActiveCaption;
+                simpleButton_StaffLoginMode.Appearance.BackColor = SystemColors.ButtonHighlight;
+            }
+
+            panel_Selection.Visible = !panel_Selection.Visible;
+
+            Properties.Settings.Default.isStaff = isStaff;
+            Properties.Settings.Default.Save();
+        }
+
+        #endregion ==========================================
+
+
+        //---Region_Funcs_&_Procs---
+        #region ===============Funcs_&_Procs===============
+
         private string Encrypt_Password()
         {
             byte[] password_byteArray = ASCIIEncoding.ASCII.GetBytes(PASSWORDtextEdit.Text);
-            
+
             byte[] byte_hashedPassword = new MD5CryptoServiceProvider().ComputeHash(password_byteArray);
 
             string str_hashedPassword = "";
@@ -46,40 +97,69 @@ namespace DoAnQuanLyThuVien
 
         private void Check_loginInfo(string _Username, string _encryptedPassword)
         {
-            dataBase = new SHARED_LIBRARY_ENTITY();
-
-            if (ISTAFFcheckEdit.Checked)
+            if (isStaff)
             {
-                var Account = dataBase.STAFF_INF.Find(_Username);
+                dataBase.STAFF_INF.Load();
 
-                if (Account == null)
+                var Account_Gotten_By_Username = dataBase.STAFF_INF.Find(_Username);
+
+                if (is_Invalid_StaffAccount(Account_Gotten_By_Username))
                 { MessageBox.Show("Sai tên đăng nhập!"); return; }
 
-                if (Account.PASSWORD != _encryptedPassword)
+                if (is_Invalid_Password(Account_Gotten_By_Username.PASSWORD, _encryptedPassword))
                 { MessageBox.Show("Sai mật khẩu!"); return; }
 
-                fMain f = new fMain(Account as STAFF_INF);
-
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
+                Attempt_Open_StaffForm_With_Account(Account_Gotten_By_Username);
             }
             else
             {
-                var Account = dataBase.READER_INF.Find(_Username);
+                dataBase.READER_INF.Load();
 
-                if (Account == null)
+                var Account_Gotten_By_Username = dataBase.READER_INF.Find(_Username);
+
+                if (is_Invalid_ReaderAccount(Account_Gotten_By_Username))
                 { MessageBox.Show("Sai tên đăng nhập!"); return; }
 
-                if (Account.PASSWORD != _encryptedPassword)
+                if (is_Invalid_Password(Account_Gotten_By_Username.PASSWORD, _encryptedPassword))
                 { MessageBox.Show("Sai mật khẩu!"); return; }
 
-                fReader f = new fReader(Account as READER_INF);
-
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
+                Attempt_Open_ReaderForm_With_Account(Account_Gotten_By_Username);
             }
         }
+
+        private bool is_Invalid_StaffAccount(STAFF_INF account)
+        {
+            return account == null;
+        }
+
+        private bool is_Invalid_ReaderAccount(READER_INF account)
+        {
+            return account == null;
+        }
+
+        private bool is_Invalid_Password(string _Password, string _encryptedPassword)
+        {
+            return _Password != _encryptedPassword;
+        }
+
+        private void Attempt_Open_ReaderForm_With_Account(READER_INF _ActiveAccount)
+        {
+            fReader f = new fReader(_ActiveAccount);
+
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void Attempt_Open_StaffForm_With_Account(STAFF_INF _ActiveAccount)
+        {
+            fMain f = new fMain(_ActiveAccount);
+
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        #endregion ========================================
     }
 }

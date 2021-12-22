@@ -28,24 +28,33 @@ namespace DoAnQuanLyThuVien
 
 
 
-        //---Region_1---
+        //---Controls_Events---
         #region ===============Controls_Events===============
+
         private void button_signIn_Click(object sender, EventArgs e)
         {
             newAccount_signIn();
         }
-        #endregion
 
-        //---Region_2---
+        #endregion ==========================================
+
+        //---Funcs_&_Procs---
         #region ================Funcs_&_Procs================
+
         private void set_formIcon(bool _isStaff)
         {
             Bitmap formIcon;
 
             if (_isStaff)
+            {
                 formIcon = new Bitmap(global::DoAnQuanLyThuVien.Properties.Resources.librarian_2);
+                Text = "Nhân viên mới";
+            }
             else
+            {
                 formIcon = new Bitmap(global::DoAnQuanLyThuVien.Properties.Resources.reader);
+                Text = "Người đọc mới";
+            }
 
             panel_Icon.BackgroundImage = formIcon;
         }
@@ -126,6 +135,7 @@ namespace DoAnQuanLyThuVien
 
             this.Close();
         }
-        #endregion
+
+        #endregion ==========================================
     }
 }

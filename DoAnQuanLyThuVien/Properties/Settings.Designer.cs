@@ -57,5 +57,17 @@ namespace DoAnQuanLyThuVien.Properties {
                 this["songPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool isStaff {
+            get {
+                return ((bool)(this["isStaff"]));
+            }
+            set {
+                this["isStaff"] = value;
+            }
+        }
     }
 }

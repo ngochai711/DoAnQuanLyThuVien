@@ -12,16 +12,15 @@ using DoAnQuanLyThuVien.DTO;
 using DoAnQuanLyThuVien.DAO;
 using System.Data.Entity.Migrations;
 using DevExpress.XtraEditors;
+using System.Data.Entity;
 
 namespace DoAnQuanLyThuVien
 {
     public partial class fPersonalManage : Form
     {
-        private STAFF_INF currentAccount = null;
-
-        private SHARED_LIBRARY_ENTITY dataBase;
-
         private bool is_edittingMode = false;
+        private STAFF_INF currentAccount = null;
+        private SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
 
         public fPersonalManage(STAFF_INF _currentAccount)
         {
@@ -31,10 +30,10 @@ namespace DoAnQuanLyThuVien
 
             currentAccount = _currentAccount;
         }
- 
+        
 
 
-        //---Region_1---
+        //---Region_Controls_Events---
         #region ===============Controls_Events===============
 
         private void simpleButton_Close_Click(object sender, EventArgs e)
@@ -50,7 +49,7 @@ namespace DoAnQuanLyThuVien
             if (is_edittingMode)
             { MessageBox.Show("Các thay đổi chưa được lưu!"); return; }
 
-            DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
+            SimpleButton eventCalled_Button = sender as SimpleButton;
             
             bool isStaff = eventCalled_Button.Name == "simpleButton_staffAdd";
 
@@ -124,7 +123,7 @@ namespace DoAnQuanLyThuVien
             {
                 var current_readerAccount = rEADERINFBindingSource.Current as READER_INF;
 
-                accountForm = new fReaderAccount(current_readerAccount.USERNAME, current_readerAccount.PASSWORD);
+                accountForm = new fReaderAccount(current_readerAccount.USERNAME);
             }
 
             accountForm.ShowDialog();
@@ -140,9 +139,6 @@ namespace DoAnQuanLyThuVien
             DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
 
             bool isStaff = eventCalled_Button.Name == "simpleButton_staff_resetPass";
-
-            if (isStaff && currentAccount.TYPE == false)
-            { MessageBox.Show("Bản phải là quản lý để có thể thực hiện chức năng này"); return; }
 
             reset_Pass(isStaff);
 
@@ -182,12 +178,13 @@ namespace DoAnQuanLyThuVien
 
 
 
-        //---Region_2---
+        //---Region_Funcs_&_Procs---
         #region ================Funcs_&_Procs================
 
         private void data_Load()
         {
-            dataBase = new SHARED_LIBRARY_ENTITY();
+            dataBase.READER_INF.Load();
+            dataBase.STAFF_INF.Load();
 
             rEADERINFBindingSource.DataSource = dataBase.READER_INF.ToList();
             sTAFFINFBindingSource.DataSource = dataBase.STAFF_INF.ToList();
@@ -287,7 +284,16 @@ namespace DoAnQuanLyThuVien
 
             if (_isStaff)
             {
-                var item = sTAFFINFBindingSource.Current as STAFF_INF;
+                STAFF_INF item;
+
+                if (currentAccount.TYPE == false)
+                {
+                    item = currentAccount;
+
+                    focus_currentAccount();
+                }
+                else
+                    item = sTAFFINFBindingSource.Current as STAFF_INF;
 
                 item.PASSWORD = defaultPassword;
 
