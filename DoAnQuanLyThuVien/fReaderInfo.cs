@@ -27,35 +27,8 @@ namespace DoAnQuanLyThuVien
             InitializeComponent();
         }
 
-        private void Enable_Disable_ReadOnly()
-        {
-            AVATARpictureEdit.ReadOnly = !isEditting;
-            NAMEtextEdit.ReadOnly = !isEditting;
-            PIDtextEdit.ReadOnly = !isEditting;
-            BIRTHdateEdit.ReadOnly = !isEditting;
-            AGEtextEdit.ReadOnly = !isEditting;
-            SEXcomboboxEdit.ReadOnly = !isEditting;
-            ADDRESStextEdit.ReadOnly = !isEditting;
-            PHONEtextEdit.ReadOnly = !isEditting;
-            EMAILtextEdit.ReadOnly = !isEditting;
-            NOTEmemoEdit.ReadOnly = !isEditting;
-        }
-
-        private void Get_ActiveAccount_Data()
-        {
-            AVATARpictureEdit.EditValue = activeAccount.AVATAR;
-            USERNAMEtextEdit.Text = activeAccount.USERNAME;
-            READERIDtextEdit.Text = activeAccount.READERID;
-            NAMEtextEdit.Text = activeAccount.NAME;
-            PIDtextEdit.Text = activeAccount.PID;
-            BIRTHdateEdit.EditValue = activeAccount.BIRTH;
-            AGEtextEdit.Text = activeAccount.AGE.ToString();
-            SEXcomboboxEdit.EditValue = activeAccount.SEX;
-            ADDRESStextEdit.Text = activeAccount.ADDRESS;
-            PHONEtextEdit.Text = activeAccount.PHONE;
-            EMAILtextEdit.Text = activeAccount.EMAIL;
-            NOTEmemoEdit.Text = activeAccount.NOTE;
-        }
+        //---Region_Controls_Events---
+        #region ===============Controls_Events===============
 
         private void fReaderInfo_Load(object sender, EventArgs e)
         {
@@ -72,16 +45,6 @@ namespace DoAnQuanLyThuVien
 
             if (isEditting)
                 Update_ActiveAccount();
-        }
-
-        void Update_ActiveAccount()
-        {
-            SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
-
-            dataBase.READER_INF.AddOrUpdate(activeAccount);
-
-            if (dataBase.SaveChanges() == 1)
-            { MessageBox.Show("Cập nhật tài khoản thành công!"); }    
         }
 
         private void AVATARpictureEdit_Click(object sender, EventArgs e)
@@ -106,16 +69,6 @@ namespace DoAnQuanLyThuVien
             }
         }
 
-
-        private byte[] get_binaryImage_from_Path(string _fileName)
-        {
-            FileStream fileStream = new FileStream(_fileName, FileMode.Open, FileAccess.Read);
-            BinaryReader binaryReader = new BinaryReader(fileStream);
-            byte[] binaryImage = binaryReader.ReadBytes((int)fileStream.Length);
-
-            return binaryImage;
-        }
-
         private void simpleButton_changePassword_Click(object sender, EventArgs e)
         {
             if (isEditting)
@@ -124,17 +77,12 @@ namespace DoAnQuanLyThuVien
             Show_PasswordChange_GUI();
         }
 
-        private void Show_PasswordChange_GUI()
+        private void ALLPASSWORDtextEdit_EditValueChanged(object sender, EventArgs e)
         {
-            PASSWORDtextEdit.Text = "";
-
-            simpleButton_SAVE.Visible = true;
-            PASSWORDtextEdit.ReadOnly = false;
-            simpleButton_changePassword.Visible = false;
-
-            layoutControlGroup_NEWPASS.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
-
-            PASSWORDtextEdit.Focus();
+            if (All_PasswordTextBox_isFilled())
+                simpleButton_SAVE.Text = "Lưu";
+            else
+                simpleButton_SAVE.Text = "Hủy";
         }
 
         private void simpleButton_SAVE_Click(object sender, EventArgs e)
@@ -151,7 +99,74 @@ namespace DoAnQuanLyThuVien
             }
 
             Hide_PasswordChange_GUI();
+        }
 
+        #endregion ==========================================
+
+
+        //---Region_Funcs_&_Procs---
+        #region ================Funcs_&_Procs================
+
+        private void Get_ActiveAccount_Data()
+        {
+            AVATARpictureEdit.EditValue = activeAccount.AVATAR;
+            USERNAMEtextEdit.Text = activeAccount.USERNAME;
+            READERIDtextEdit.Text = activeAccount.READERID;
+            NAMEtextEdit.Text = activeAccount.NAME;
+            PIDtextEdit.Text = activeAccount.PID;
+            BIRTHdateEdit.EditValue = activeAccount.BIRTH;
+            AGEtextEdit.Text = activeAccount.AGE.ToString();
+            SEXcomboboxEdit.EditValue = activeAccount.SEX;
+            ADDRESStextEdit.Text = activeAccount.ADDRESS;
+            PHONEtextEdit.Text = activeAccount.PHONE;
+            EMAILtextEdit.Text = activeAccount.EMAIL;
+            NOTEmemoEdit.Text = activeAccount.NOTE;
+        }
+
+        private void Enable_Disable_ReadOnly()
+        {
+            AVATARpictureEdit.ReadOnly = !isEditting;
+            NAMEtextEdit.ReadOnly = !isEditting;
+            PIDtextEdit.ReadOnly = !isEditting;
+            BIRTHdateEdit.ReadOnly = !isEditting;
+            AGEtextEdit.ReadOnly = !isEditting;
+            SEXcomboboxEdit.ReadOnly = !isEditting;
+            ADDRESStextEdit.ReadOnly = !isEditting;
+            PHONEtextEdit.ReadOnly = !isEditting;
+            EMAILtextEdit.ReadOnly = !isEditting;
+            NOTEmemoEdit.ReadOnly = !isEditting;
+        }
+
+        private byte[] get_binaryImage_from_Path(string _fileName)
+        {
+            FileStream fileStream = new FileStream(_fileName, FileMode.Open, FileAccess.Read);
+            BinaryReader binaryReader = new BinaryReader(fileStream);
+            byte[] binaryImage = binaryReader.ReadBytes((int)fileStream.Length);
+
+            return binaryImage;
+        }
+
+        void Update_ActiveAccount()
+        {
+            SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
+
+            dataBase.READER_INF.AddOrUpdate(activeAccount);
+
+            if (dataBase.SaveChanges() == 1)
+            { MessageBox.Show("Cập nhật tài khoản thành công!"); }
+        }
+
+        private void Show_PasswordChange_GUI()
+        {
+            PASSWORDtextEdit.Text = "";
+
+            simpleButton_SAVE.Visible = true;
+            PASSWORDtextEdit.ReadOnly = false;
+            simpleButton_changePassword.Visible = false;
+
+            layoutControlGroup_NEWPASS.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
+
+            PASSWORDtextEdit.Focus();
         }
 
         private void Hide_PasswordChange_GUI()
@@ -165,20 +180,6 @@ namespace DoAnQuanLyThuVien
             simpleButton_changePassword.Visible = true;
 
             layoutControlGroup_NEWPASS.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-        }
-
-        private void Update_ActiveAccount_NewPassword()
-        {
-            string Encrypted_NewPassword = Encrypt_Password(NEWPASStextEdit.Text);
-
-            activeAccount.PASSWORD = Encrypted_NewPassword;
-
-            Update_ActiveAccount();
-        }
-
-        private bool Unmatched_NewPassword()
-        {
-            return NEWPASStextEdit.Text != CONFIRMPASStextEdit.Text;
         }
 
         private string Encrypt_Password(string NeedEncrypt_Password)
@@ -197,6 +198,13 @@ namespace DoAnQuanLyThuVien
             return str_hashedPassword;
         }
 
+        private bool All_PasswordTextBox_isFilled()
+        {
+            return PASSWORDtextEdit.Text != "" &&
+                   NEWPASStextEdit.Text != "" &&
+                   CONFIRMPASStextEdit.Text != "";
+        }
+
         private bool Unmatched_OldPassword()
         {
             string Encrypted_OldPassword = Encrypt_Password(PASSWORDtextEdit.Text);
@@ -204,19 +212,20 @@ namespace DoAnQuanLyThuVien
             return Encrypted_OldPassword != activeAccount.PASSWORD;
         }
 
-        private void ALLPASSWORDtextEdit_EditValueChanged(object sender, EventArgs e)
+        private bool Unmatched_NewPassword()
         {
-            if (All_PasswordTextBox_isFilled())
-                simpleButton_SAVE.Text = "Lưu";
-            else
-                simpleButton_SAVE.Text = "Hủy";
+            return NEWPASStextEdit.Text != CONFIRMPASStextEdit.Text;
         }
 
-        private bool All_PasswordTextBox_isFilled()
+        private void Update_ActiveAccount_NewPassword()
         {
-            return PASSWORDtextEdit.Text != "" &&
-                   NEWPASStextEdit.Text != "" &&
-                   CONFIRMPASStextEdit.Text != "";
+            string Encrypted_NewPassword = Encrypt_Password(NEWPASStextEdit.Text);
+
+            activeAccount.PASSWORD = Encrypted_NewPassword;
+
+            Update_ActiveAccount();
         }
+
+        #endregion ==========================================
     }
 }

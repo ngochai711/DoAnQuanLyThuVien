@@ -52,7 +52,7 @@ namespace DoAnQuanLyThuVien
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = childForm.Name == "fReaderInfo" ? DockStyle.None : DockStyle.Fill;
+            childForm.Dock = DockStyle.Fill;
             panelChildForm.Controls.Add(childForm);
             panelChildForm.Tag = childForm; 
             childForm.BringToFront();

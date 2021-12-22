@@ -107,6 +107,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SharedModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="fEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmail.Designer.cs">
+      <DependentUpon>fEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="fnewAccount.cs">
       <SubType>Form</SubType>
     </Compile>

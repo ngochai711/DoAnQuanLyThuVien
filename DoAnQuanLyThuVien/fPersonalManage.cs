@@ -18,11 +18,9 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fPersonalManage : Form
     {
-        private STAFF_INF currentAccount = null;
-
-        private SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
-
         private bool is_edittingMode = false;
+        private STAFF_INF currentAccount = null;
+        private SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
 
         public fPersonalManage(STAFF_INF _currentAccount)
         {
@@ -32,7 +30,7 @@ namespace DoAnQuanLyThuVien
 
             currentAccount = _currentAccount;
         }
- 
+        
 
 
         //---Region_Controls_Events---
