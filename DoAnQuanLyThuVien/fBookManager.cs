@@ -144,7 +144,7 @@ namespace DoAnQuanLyThuVien
         {
             if (XtraMessageBox.Show("Bạn có muốn xóa sách này hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 bOOKSMANAGEMENTBindingSource.RemoveCurrent();
-            tendephanbiet1.SaveChanges();
+            db.SaveChanges();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -165,7 +165,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-            var changed = tendephanbiet1.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
+            var changed = db.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
             foreach (var obj in changed)
             {
                 switch (obj.State)

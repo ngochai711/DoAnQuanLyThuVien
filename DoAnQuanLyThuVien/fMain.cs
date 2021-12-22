@@ -317,6 +317,11 @@ namespace DoAnQuanLyThuVien
             panel5.BackColor = Color.FromArgb(120, 245, 245, 245);
         }
 
+        private void panel5_MouseLeave(object sender, EventArgs e)
+        {
+            panel5.BackColor = Color.FromArgb(0, 245, 245, 245);
+        }
+
         private void button4_Click_1(object sender, EventArgs e)
         {
             if (this.Name != "fMain")

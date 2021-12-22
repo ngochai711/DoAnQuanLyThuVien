@@ -65,5 +65,13 @@ namespace DoAnQuanLyThuVien.DAO
             return temp;
 
         }
+        public DataTable TakeReqFormTable(string id)
+        {
+            string temp = "";
+            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.REQUEST_FORM WHERE USERID = '" + id + "'");
+            
+            return table;
+
+        }
     }
 }

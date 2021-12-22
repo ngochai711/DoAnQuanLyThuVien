@@ -166,15 +166,6 @@ namespace DoAnQuanLyThuVien
             }
         }
 
-        private void repositoryItemButtonEdit1_Click(object sender, EventArgs e)
-        {
-        }
-
-
-        private void gridControl1_Load(object sender, EventArgs e)
-        {
-            
-        }
 
 
         //Du an sau khi co thoi gian tim hieu hon

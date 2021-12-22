@@ -1,4 +1,5 @@
-﻿using DoAnQuanLyThuVien.DTO;
+﻿using DoAnQuanLyThuVien.DAO;
+using DoAnQuanLyThuVien.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,11 +24,23 @@ namespace DoAnQuanLyThuVien
         SHARED_LIBRARY_ENTITY db4;
         private void fReaderBorrowedBook_Load(object sender, EventArgs e)
         {
-            db4 = new SHARED_LIBRARY_ENTITY();
+
             //db4.REQUEST_INFO.Load();
-            (gridView1.GetFocusedRow() as REQUEST_FORM).
-            rEQUESTFORMBindingSource.DataSource = db4.REQUEST_FORM.ToList();
+            DataTable dataTable = ReqCardDAO.Instance.TakeReqFormTable(_INF.USERNAME);
+            
+            gridControl1.DataSource = dataTable;
+           
+
+            
             gridView1.OptionsBehavior.Editable = false;
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+            fReqCardInfo f = new fReqCardInfo();
+            f.GetUserName(_INF.USERNAME);
+            f.GetRowCardID(gridView1.GetRowCellValue(gridView1.FocusedRowHandle,"REQUEST_ID").ToString());
+            f.ShowDialog();
         }
     }
 }
