@@ -64,7 +64,7 @@ namespace DoAnQuanLyThuVien
                 {
                     id = int.Parse(result.ToString());
                     XtraMessageBox.Show("Đã nhận được mã vạch!!!");
-
+                    videoCaptureDevice.Stop();
                 }
                 pictureBox1.Image = bitmap;
             }

@@ -77,8 +77,6 @@ namespace DoAnQuanLyThuVien
             lvBorrowBook.Items.Clear();
 
             LoadReqCard();
-            //if (reLoad < 1)
-            //{ CheckTypeButton();  reLoad++; }
         }
 
         private void LoadReqCard()
@@ -146,7 +144,7 @@ namespace DoAnQuanLyThuVien
             }
             else
             {
-                ReqCardDAO.Instance.InsertCard(CardID.ToString(), txbID.Text, DateTime.Parse(deToDate.Text));
+                ReqCardDAO.Instance.InsertCard(CardID.ToString(), txbID.Text, DateTime.ParseExact(deToDate.Text, "dd-MM-yyyy", null));
                 for (int i = 1; i < count; i++)
                 {
                     ReqCardInfoDAO.Instance.InsertCardInfo(CardID.ToString(), BookID[i].ToString());
