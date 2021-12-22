@@ -40,16 +40,16 @@ namespace DoAnQuanLyThuVien.DAO
             DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.BOOKS_MANAGEMENT SET REMAIN += 1 WHERE SERIAL_NUMBER = " + id);
         }
 
-        public List<ReqCardInfo> TakeIDBook(string id)
-        {
-            List<ReqCardInfo> list = new List<ReqCardInfo>();
-            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.REQUEST_INFO WHERE REQUEST_ID = " +id);
-            foreach(DataRow item in table.Rows)
-            {
-                ReqCardInfo reqCard = new ReqCardInfo(item);
-                list.Add(reqCard);
-            }
-            return list;
-        }
+        //public List<ReqCardInfo> TakeIDBook(string id)
+        //{
+        //    List<ReqCardInfo> list = new List<ReqCardInfo>();
+        //    DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.REQUEST_INFO WHERE REQUEST_ID = " +id);
+        //    foreach(DataRow item in table.Rows)
+        //    {
+        //        ReqCardInfo reqCard = new ReqCardInfo(item);
+        //        list.Add(reqCard);
+        //    }
+        //    return list;
+        //}
     }
 }

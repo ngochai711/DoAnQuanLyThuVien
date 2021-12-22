@@ -153,26 +153,6 @@
     <Compile Include="fBookList.Designer.cs">
       <DependentUpon>fBookList.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTO\ReqCard.cs" />
-    <Compile Include="DTO\ReqCardInfo.cs" />
-    <Compile Include="DTO\ReqDT.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReqDT.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\ReqDT.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReqDT.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\ReqDT.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReqDT.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\REQUEST_FORM.cs">
-      <DependentUpon>ReqDT.tt</DependentUpon>
-    </Compile>
     <Compile Include="fBookManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +194,12 @@
     </Compile>
     <Compile Include="fReaderAccount.designer.cs">
       <DependentUpon>fReaderAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReaderInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderInfo.Designer.cs">
+      <DependentUpon>fReaderInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="fStaffAccount.cs">
       <SubType>Form</SubType>
@@ -276,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fReaderAccount.resx">
       <DependentUpon>fReaderAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReaderInfo.resx">
+      <DependentUpon>fReaderInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fStaffAccount.resx">
       <DependentUpon>fStaffAccount.cs</DependentUpon>
@@ -373,16 +362,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SharedModel.edmx</DependentUpon>
       <LastGenOutput>SharedModel.cs</LastGenOutput>
-    </Content>
-    <Content Include="DTO\ReqDT.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ReqDT.edmx</DependentUpon>
-      <LastGenOutput>ReqDT.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DTO\ReqDT.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ReqDT.edmx</DependentUpon>
-      <LastGenOutput>ReqDT.cs</LastGenOutput>
     </Content>
     <None Include="Resources\Library_Icon.jpg" />
     <None Include="Resources\win11Background.jpg" />

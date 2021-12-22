@@ -107,7 +107,7 @@ namespace DoAnQuanLyThuVien
             USERNAMETextEdit.ReadOnly = true;
 
             ItemForPASSWORD.Text = !is_passChanging_Mode ? "Mật khẩu" : "Mật khẩu cũ";
-            PASSWORDTextEdit.Text = !is_passChanging_Mode ? currentAccount.PASSWORD : "";
+            PASSWORDTextEdit.Text = !is_passChanging_Mode ? "123456789" : "";
             PASSWORDTextEdit.ReadOnly = !is_passChanging_Mode;
             PASSWORDTextEdit.Focus();
         }

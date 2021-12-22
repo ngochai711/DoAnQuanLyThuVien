@@ -43,9 +43,15 @@ namespace DoAnQuanLyThuVien
             Bitmap formIcon;
 
             if (_isStaff)
+            {
                 formIcon = new Bitmap(global::DoAnQuanLyThuVien.Properties.Resources.librarian_2);
+                Text = "Nhân viên mới";
+            }
             else
+            {
                 formIcon = new Bitmap(global::DoAnQuanLyThuVien.Properties.Resources.reader);
+                Text = "Người đọc mới";
+            }
 
             panel_Icon.BackgroundImage = formIcon;
         }

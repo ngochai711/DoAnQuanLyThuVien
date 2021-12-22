@@ -15,8 +15,8 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fReader : Form
     {
-        private activeAccountDTO activeAccount;
-        public fReader(activeAccountDTO acc)
+        private READER_INF activeAccount;
+        public fReader(READER_INF acc)
         {
             activeAccount = acc;
 
@@ -52,7 +52,7 @@ namespace DoAnQuanLyThuVien
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
+            childForm.Dock = childForm.Name == "fReaderInfo" ? DockStyle.None : DockStyle.Fill;
             panelChildForm.Controls.Add(childForm);
             panelChildForm.Tag = childForm; 
             childForm.BringToFront();
@@ -84,7 +84,7 @@ namespace DoAnQuanLyThuVien
 
         private void btnAccountInfo_Click(object sender, EventArgs e)
         {
-            fInfo _formInfo = new fInfo();
+            fReaderInfo _formInfo = new fReaderInfo(activeAccount);
             openChildForm(_formInfo);
         }
 

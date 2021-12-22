@@ -14,12 +14,12 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fReaderAccount : Form
     {
-        public fReaderAccount(string _userName, string _passWord)
+        public fReaderAccount(string _userName)
         {
             InitializeComponent();
 
             USERNAMETextEdit.Text = _userName;
-            PASSWORDTextEdit.Text = _passWord;
+            PASSWORDTextEdit.Text = "123456789";
         }
     }
 }

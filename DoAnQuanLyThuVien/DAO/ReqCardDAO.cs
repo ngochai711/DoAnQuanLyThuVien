@@ -59,8 +59,8 @@ namespace DoAnQuanLyThuVien.DAO
             DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.REQUEST_FORM WHERE REQUEST_ID = '" + id + "'");
             foreach(DataRow item in table.Rows)
             {
-                ReqCard rq = new ReqCard(item);
-                temp = rq.Status;
+                //ReqCard rq = new ReqCard(item);
+                //temp = rq.Status;
             }
             return temp;
 

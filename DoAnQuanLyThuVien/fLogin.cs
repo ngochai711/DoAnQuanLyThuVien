@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
@@ -14,7 +15,7 @@ namespace DoAnQuanLyThuVien
 {
     public partial class fLogin : Form
     {
-        private SHARED_LIBRARY_ENTITY dataBase = null;
+        private SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
         
         public fLogin()
         {
@@ -46,10 +47,10 @@ namespace DoAnQuanLyThuVien
 
         private void Check_loginInfo(string _Username, string _encryptedPassword)
         {
-            dataBase = new SHARED_LIBRARY_ENTITY();
-
             if (ISTAFFcheckEdit.Checked)
             {
+                dataBase.STAFF_INF.Load();
+
                 var Account = dataBase.STAFF_INF.Find(_Username);
 
                 if (Account == null)
@@ -58,7 +59,7 @@ namespace DoAnQuanLyThuVien
                 if (Account.PASSWORD != _encryptedPassword)
                 { MessageBox.Show("Sai mật khẩu!"); return; }
 
-                fMain f = new fMain(Account as STAFF_INF);
+                fMain f = new fMain(Account);
 
                 this.Hide();
                 f.ShowDialog();
@@ -66,6 +67,8 @@ namespace DoAnQuanLyThuVien
             }
             else
             {
+                dataBase.READER_INF.Load();
+
                 var Account = dataBase.READER_INF.Find(_Username);
 
                 if (Account == null)
@@ -74,7 +77,7 @@ namespace DoAnQuanLyThuVien
                 if (Account.PASSWORD != _encryptedPassword)
                 { MessageBox.Show("Sai mật khẩu!"); return; }
 
-                fReader f = new fReader(Account as READER_INF);
+                fReader f = new fReader(Account);
 
                 this.Hide();
                 f.ShowDialog();
