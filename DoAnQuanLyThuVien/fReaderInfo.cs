@@ -1,21 +1,24 @@
 ﻿using DevExpress.XtraEditors;
-using DoAnQuanLyThuVien.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.Entity.Migrations;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnQuanLyThuVien.DTO;
+using System.Data.Entity.Migrations;
+using System.IO;
+using System.Security.Cryptography;
+using System.Resources;
+using System.Reflection;
+using DevExpress.Utils.Svg;
 
 namespace DoAnQuanLyThuVien
 {
-    public partial class fReaderInfo : Form
+    public partial class fReaderInfo : DevExpress.XtraEditors.XtraForm
     {
         private READER_INF activeAccount = null;
         private bool isEditting = false;
@@ -30,7 +33,7 @@ namespace DoAnQuanLyThuVien
         //---Region_Controls_Events---
         #region ===============Controls_Events===============
 
-        private void fReaderInfo_Load(object sender, EventArgs e)
+        private void xtrafReaderInfo_Load(object sender, EventArgs e)
         {
             Get_ActiveAccount_Data();
 
@@ -44,7 +47,19 @@ namespace DoAnQuanLyThuVien
             Enable_Disable_ReadOnly();
 
             if (isEditting)
+            {
+                var SvgImg = Properties.Resources.saveto_32x32;
+
+                simpleButton_EDIT.ImageOptions.Image = SvgImg;
+            }
+            else
+            {
+                var SvgImg = Properties.Resources.editcontact_32x32;
+
+                simpleButton_EDIT.ImageOptions.Image = SvgImg;
+
                 Update_ActiveAccount();
+            }
         }
 
         private void AVATARpictureEdit_Click(object sender, EventArgs e)
@@ -102,7 +117,6 @@ namespace DoAnQuanLyThuVien
         }
 
         #endregion ==========================================
-
 
         //---Region_Funcs_&_Procs---
         #region ================Funcs_&_Procs================
