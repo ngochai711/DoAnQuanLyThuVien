@@ -16,7 +16,7 @@ namespace DoAnQuanLyThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fCreateCardLendBook());
+            Application.Run(new fLogin());
         }
     }
 }

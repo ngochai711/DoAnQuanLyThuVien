@@ -92,6 +92,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\ReqCard.cs" />
+    <Compile Include="DTO\ReqCardInfo.cs" />
+    <Compile Include="DTO\ReqDT.Context.cs" />
+    <Compile Include="DTO\ReqDT.cs" />
+    <Compile Include="DTO\ReqDT.Designer.cs" />
     <Compile Include="DTO\SharedModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
