@@ -160,7 +160,7 @@ namespace DoAnQuanLyThuVien
             fld.SelectedPath = @"..\..\song";
 
             tsbClearPlaylist_Click();
-            if (Properties.Settings.Default.songPath != "")
+            if (Properties.Settings.Default.songPath != "" && Directory.Exists(Properties.Settings.Default.songPath))
                 fld.SelectedPath = Properties.Settings.Default.songPath;
             CreatePlayLis(fld, "*.mp3");
             btnPlay.ImageIndex = 1;
