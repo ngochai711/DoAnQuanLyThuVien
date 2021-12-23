@@ -87,6 +87,8 @@ namespace DoAnQuanLyThuVien
             if (isEditting)
             { MessageBox.Show("Có thay đổi chưa được lưu!"); return; }
 
+            layoutControlItem_PASSWORD.Text = "Xác nhận mật khẩu cũ";
+
             Show_PasswordChange_GUI();
         }
 
@@ -112,6 +114,13 @@ namespace DoAnQuanLyThuVien
             }
 
             Hide_PasswordChange_GUI();
+
+            layoutControlItem_PASSWORD.Text = "Mật khẩu";
+        }
+
+        private void BIRTHdateEdit_EditValueChanged(object sender, EventArgs e)
+        {
+            AGEtextEdit.EditValue = DateTime.Today.Year - Convert.ToDateTime(BIRTHdateEdit.EditValue).Year;
         }
 
         #endregion ==========================================
@@ -191,11 +200,9 @@ namespace DoAnQuanLyThuVien
 
             Get_ActiveAccount_NewValue();
 
-            dataBase.READER_INF.AddOrUpdate(activeAccount);
-
             try
             {
-                if (dataBase.SaveChanges() == 1)
+                dataBase.READER_INF.AddOrUpdate(activeAccount);
                 { MessageBox.Show("Cập nhật tài khoản thành công!"); }
             }
             catch

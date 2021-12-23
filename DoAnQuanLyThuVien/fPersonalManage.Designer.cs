@@ -2097,7 +2097,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraEditors.TextEdit READERPIDTextEdit;
         private DevExpress.XtraEditors.ComboBoxEdit READERSEXComboBoxEdit;
         private DevExpress.XtraEditors.DateEdit READERBIRTHDateEdit;
-        private DevExpress.XtraEditors.TextEdit READERAGETextEdit;
         private DevExpress.XtraEditors.TextEdit READERADDRESSTextEdit;
         private DevExpress.XtraEditors.TextEdit READERPHONETextEdit;
         private DevExpress.XtraEditors.TextEdit READEREMAILTextEdit;
@@ -2178,5 +2177,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraEditors.SeparatorControl separatorControl7;
         private DevExpress.XtraEditors.SimpleButton simpleButton_STAFFMAIL;
         private DevExpress.XtraEditors.SeparatorControl separatorControl8;
+        private DevExpress.XtraEditors.TextEdit READERAGETextEdit;
     }
 }

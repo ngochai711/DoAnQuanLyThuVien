@@ -207,6 +207,7 @@ namespace DoAnQuanLyThuVien
                 e.Allow = false;
         }
 
+
         #endregion ==========================================
 
 
@@ -231,8 +232,7 @@ namespace DoAnQuanLyThuVien
 
         private void data_Load()
         {
-            dataBase.READER_INF.Load();
-            dataBase.STAFF_INF.Load();
+            dataBase = new SHARED_LIBRARY_ENTITY();
 
             rEADERINFBindingSource.DataSource = dataBase.READER_INF.ToList();
             sTAFFINFBindingSource.DataSource = dataBase.STAFF_INF.ToList();

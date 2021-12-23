@@ -297,6 +297,7 @@ namespace DoAnQuanLyThuVien
             this.BIRTHdateEdit.Size = new System.Drawing.Size(264, 20);
             this.BIRTHdateEdit.StyleController = this.layoutControl3;
             this.BIRTHdateEdit.TabIndex = 8;
+            this.BIRTHdateEdit.EditValueChanged += new System.EventHandler(this.BIRTHdateEdit_EditValueChanged);
             // 
             // SEXcomboboxEdit
             // 
