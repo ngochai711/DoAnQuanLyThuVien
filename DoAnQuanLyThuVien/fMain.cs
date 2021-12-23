@@ -32,6 +32,9 @@ namespace DoAnQuanLyThuVien
 
             InitializeComponent();
             pre_loading();
+            WindowState = FormWindowState.Maximized;
+            this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
+                          (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
         }
 
 
@@ -305,6 +308,11 @@ namespace DoAnQuanLyThuVien
             var f = new fBookManager1();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
+        }
+
+        private void fMain_Load(object sender, EventArgs e)
+        {
+
         }
 
         FolderBrowserDialog songFolder = new FolderBrowserDialog();
