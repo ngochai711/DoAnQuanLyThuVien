@@ -117,6 +117,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SharedModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="fBookManager1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBookManager1.Designer.cs">
+      <DependentUpon>fBookManager1.cs</DependentUpon>
+    </Compile>
     <Compile Include="fEmail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,12 +174,6 @@
     </Compile>
     <Compile Include="fBookList.Designer.cs">
       <DependentUpon>fBookList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fBookManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fBookManager.Designer.cs">
-      <DependentUpon>fBookManager.cs</DependentUpon>
     </Compile>
     <Compile Include="fCreateCardLendBook.cs">
       <SubType>Form</SubType>
@@ -243,6 +243,9 @@
     <Compile Include="fReaderInfo.Designer.cs">
       <DependentUpon>fReaderInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fBookManager1.resx">
+      <DependentUpon>fBookManager1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fEmail.resx">
       <DependentUpon>fEmail.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,9 +260,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fCreateCardLendBook.resx">
       <DependentUpon>fCreateCardLendBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fBookManager.resx">
-      <DependentUpon>fBookManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>

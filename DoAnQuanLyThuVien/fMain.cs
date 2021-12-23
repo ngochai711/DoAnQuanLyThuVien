@@ -283,6 +283,7 @@ namespace DoAnQuanLyThuVien
         private void btnL_card_show_Click(object sender, EventArgs e)
         {
             fCreateCardLendBook f = new fCreateCardLendBook();
+            f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
         }
 
@@ -301,7 +302,8 @@ namespace DoAnQuanLyThuVien
                 this.Close();
             }
 
-            var f = new fBookManager();
+            var f = new fBookManager1();
+            f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
         }
 
@@ -325,6 +327,7 @@ namespace DoAnQuanLyThuVien
                 this.Close();
             }
             fEbookList f = new fEbookList();
+            f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
         }
 
@@ -334,6 +337,7 @@ namespace DoAnQuanLyThuVien
         private void btnAcountInfo_Click(object sender, EventArgs e)
         {
             fPersonalManage f = new fPersonalManage(activeAccount);
+            f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
         }
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using DoAnQuanLyThuVien.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,25 +11,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DoAnQuanLyThuVien.DTO;
-
 
 namespace DoAnQuanLyThuVien
 {
-    public partial class fBookManager : DevExpress.XtraEditors.XtraForm
+    public partial class fBookManager1 : Form
     {
-        public SHARED_LIBRARY_ENTITY db = new SHARED_LIBRARY_ENTITY();
-
-        public fBookManager()
+        public fBookManager1()
         {
             InitializeComponent();
         }
-
-       
-
-
-        private void fBookManager_Load(object sender, EventArgs e)
+        public SHARED_LIBRARY_ENTITY db = new SHARED_LIBRARY_ENTITY();
+        private void FBookManager1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'lIBRARY_DATABASEDataSet.EBOOKS_MANAGEMENT' table. You can move, or remove it, as needed.
             //tendephanbiet1 = fLogin.tendephanbiet;
@@ -48,7 +42,7 @@ namespace DoAnQuanLyThuVien
                 eBOOKSMANAGEMENTBindingSource.RemoveCurrent();
         }
 
-        
+
         private void btnAddf_Click(object sender, EventArgs e)
         {
             eBOOKSMANAGEMENTBindingSource.AddNew();
@@ -85,7 +79,7 @@ namespace DoAnQuanLyThuVien
             eBOOKSMANAGEMENTBindingSource.ResetBindings(false);
         }
 
-        private void btnBrowse_Click(object sender, EventArgs e)
+        private void btnBrowsef_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "Pdf Files|*.pdf";
@@ -94,12 +88,13 @@ namespace DoAnQuanLyThuVien
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 gridView2.SetFocusedRowCellValue("BOOK_URL", ofd.FileName);
-                BOOK_URLTextEdit.Text = ofd.FileName;
+                textEdit8.Text = ofd.FileName;
+
             }
         }
         private void BOOKIMAGEPictureEditf_Click(object sender, EventArgs e)
         {
-            
+
             OpenFileDialog o = new OpenFileDialog();
             o.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif";
             if (o.ShowDialog() == DialogResult.OK)
@@ -109,17 +104,17 @@ namespace DoAnQuanLyThuVien
                 BinaryReader br = new BinaryReader(fs);
                 img = br.ReadBytes((int)fs.Length);
                 gridView2.SetFocusedRowCellValue("IMAGES", img);
-                IMAGESPictureEdit.EditValue = img;
+                pictureEdit1.EditValue = img;
             }
         }
-        private void btnRead_Click(object sender, EventArgs e)
+        private void btnReadf_Click(object sender, EventArgs e)
         {
             int[] selectedRows = gridView2.GetSelectedRows();
             string filename = "";
             try
             {
                 var temp = gridView2.GetRowCellValue(selectedRows[0], "BOOK_URL");
-               
+
                 filename = temp.ToString();
 
             }
@@ -134,15 +129,15 @@ namespace DoAnQuanLyThuVien
                 System.Diagnostics.Process.Start(filename);
                 filename = "";
             }
-            catch(Exception)
+            catch (Exception)
             {
-                MessageBox.Show("Sách chưa được cập nhật.","Lỗi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Sách chưa được cập nhật.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
 
         #region LibBook
-        private void btnAdd_Click_1(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             bOOKSMANAGEMENTBindingSource.AddNew();
         }
@@ -165,12 +160,12 @@ namespace DoAnQuanLyThuVien
             {
                 XtraMessageBox.Show("Vui lòng nhập tên sách!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-           
-          
-        }
- 
 
-        private void btnCancel_Click_1(object sender, EventArgs e)
+
+        }
+
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             var changed = db.ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged).ToList();
             foreach (var obj in changed)
@@ -194,6 +189,7 @@ namespace DoAnQuanLyThuVien
 
         private void BOOKIMAGEPictureEdit_Click(object sender, EventArgs e)
         {
+
             OpenFileDialog o = new OpenFileDialog();
             o.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif";
             if (o.ShowDialog() == DialogResult.OK)
@@ -209,7 +205,5 @@ namespace DoAnQuanLyThuVien
 
 
         #endregion
-
-       
     }
 }
