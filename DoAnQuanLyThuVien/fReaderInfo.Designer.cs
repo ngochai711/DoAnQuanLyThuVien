@@ -49,17 +49,9 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem_PHONE = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem_EMAIL = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem_NOTE = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleSeparator6 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleSeparator7 = new DevExpress.XtraLayout.SimpleSeparator();
             this.layoutControlItem_BIRTH = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem_AGE = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleSeparator9 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleSeparator10 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleSeparator11 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleSeparator12 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleSeparator13 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleSeparator8 = new DevExpress.XtraLayout.SimpleSeparator();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem_AGE = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.simpleButton_EDIT = new DevExpress.XtraEditors.SimpleButton();
@@ -90,6 +82,14 @@ namespace DoAnQuanLyThuVien
             this.simpleSeparator3 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator4 = new DevExpress.XtraLayout.SimpleSeparator();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.simpleSeparator2 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator6 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator7 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator8 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator9 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator10 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator11 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator12 = new DevExpress.XtraLayout.SimpleSeparator();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
@@ -112,17 +112,9 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_PHONE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_EMAIL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_NOTE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_BIRTH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_AGE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_AGE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -152,6 +144,14 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator12)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -163,7 +163,7 @@ namespace DoAnQuanLyThuVien
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1035, 593);
+            this.panel1.Size = new System.Drawing.Size(1207, 730);
             this.panel1.TabIndex = 0;
             // 
             // panel5
@@ -172,10 +172,10 @@ namespace DoAnQuanLyThuVien
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.layoutControl3);
-            this.panel5.Location = new System.Drawing.Point(526, 11);
+            this.panel5.Location = new System.Drawing.Point(614, 14);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(485, 571);
+            this.panel5.Size = new System.Drawing.Size(566, 703);
             this.panel5.TabIndex = 9;
             // 
             // layoutControl3
@@ -195,90 +195,90 @@ namespace DoAnQuanLyThuVien
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(852, 183, 812, 500);
             this.layoutControl3.Root = this.layoutControlGroup2;
-            this.layoutControl3.Size = new System.Drawing.Size(485, 571);
+            this.layoutControl3.Size = new System.Drawing.Size(566, 703);
             this.layoutControl3.TabIndex = 0;
             this.layoutControl3.Text = "layoutControl3";
             // 
             // NAMEtextEdit
             // 
-            this.NAMEtextEdit.Location = new System.Drawing.Point(11, 26);
+            this.NAMEtextEdit.Location = new System.Drawing.Point(14, 34);
             this.NAMEtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NAMEtextEdit.Name = "NAMEtextEdit";
             this.NAMEtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.NAMEtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.NAMEtextEdit.Size = new System.Drawing.Size(463, 18);
+            this.NAMEtextEdit.Size = new System.Drawing.Size(538, 20);
             this.NAMEtextEdit.StyleController = this.layoutControl3;
             this.NAMEtextEdit.TabIndex = 6;
             // 
             // PIDtextEdit
             // 
-            this.PIDtextEdit.Location = new System.Drawing.Point(11, 65);
+            this.PIDtextEdit.Location = new System.Drawing.Point(14, 78);
             this.PIDtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PIDtextEdit.Name = "PIDtextEdit";
             this.PIDtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.PIDtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.PIDtextEdit.Size = new System.Drawing.Size(463, 18);
+            this.PIDtextEdit.Size = new System.Drawing.Size(538, 20);
             this.PIDtextEdit.StyleController = this.layoutControl3;
             this.PIDtextEdit.TabIndex = 7;
             // 
             // AGEtextEdit
             // 
-            this.AGEtextEdit.Location = new System.Drawing.Point(268, 104);
+            this.AGEtextEdit.Location = new System.Drawing.Point(310, 123);
             this.AGEtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AGEtextEdit.Name = "AGEtextEdit";
             this.AGEtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.AGEtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.AGEtextEdit.Size = new System.Drawing.Size(75, 18);
+            this.AGEtextEdit.Size = new System.Drawing.Size(99, 20);
             this.AGEtextEdit.StyleController = this.layoutControl3;
             this.AGEtextEdit.TabIndex = 9;
             // 
             // ADDRESStextEdit
             // 
-            this.ADDRESStextEdit.Location = new System.Drawing.Point(11, 144);
+            this.ADDRESStextEdit.Location = new System.Drawing.Point(14, 168);
             this.ADDRESStextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ADDRESStextEdit.Name = "ADDRESStextEdit";
             this.ADDRESStextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.ADDRESStextEdit.Properties.UseReadOnlyAppearance = false;
-            this.ADDRESStextEdit.Size = new System.Drawing.Size(463, 18);
+            this.ADDRESStextEdit.Size = new System.Drawing.Size(538, 20);
             this.ADDRESStextEdit.StyleController = this.layoutControl3;
             this.ADDRESStextEdit.TabIndex = 11;
             // 
             // PHONEtextEdit
             // 
-            this.PHONEtextEdit.Location = new System.Drawing.Point(11, 183);
+            this.PHONEtextEdit.Location = new System.Drawing.Point(14, 212);
             this.PHONEtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PHONEtextEdit.Name = "PHONEtextEdit";
             this.PHONEtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.PHONEtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.PHONEtextEdit.Size = new System.Drawing.Size(463, 18);
+            this.PHONEtextEdit.Size = new System.Drawing.Size(538, 20);
             this.PHONEtextEdit.StyleController = this.layoutControl3;
             this.PHONEtextEdit.TabIndex = 12;
             // 
             // EMAILtextEdit
             // 
-            this.EMAILtextEdit.Location = new System.Drawing.Point(11, 222);
+            this.EMAILtextEdit.Location = new System.Drawing.Point(14, 256);
             this.EMAILtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EMAILtextEdit.Name = "EMAILtextEdit";
             this.EMAILtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.EMAILtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.EMAILtextEdit.Size = new System.Drawing.Size(463, 18);
+            this.EMAILtextEdit.Size = new System.Drawing.Size(538, 20);
             this.EMAILtextEdit.StyleController = this.layoutControl3;
             this.EMAILtextEdit.TabIndex = 13;
             // 
             // NOTEmemoEdit
             // 
-            this.NOTEmemoEdit.Location = new System.Drawing.Point(11, 261);
+            this.NOTEmemoEdit.Location = new System.Drawing.Point(14, 300);
             this.NOTEmemoEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NOTEmemoEdit.Name = "NOTEmemoEdit";
             this.NOTEmemoEdit.Properties.UseReadOnlyAppearance = false;
-            this.NOTEmemoEdit.Size = new System.Drawing.Size(463, 300);
+            this.NOTEmemoEdit.Size = new System.Drawing.Size(538, 389);
             this.NOTEmemoEdit.StyleController = this.layoutControl3;
             this.NOTEmemoEdit.TabIndex = 14;
             // 
             // BIRTHdateEdit
             // 
             this.BIRTHdateEdit.EditValue = null;
-            this.BIRTHdateEdit.Location = new System.Drawing.Point(11, 104);
+            this.BIRTHdateEdit.Location = new System.Drawing.Point(14, 122);
             this.BIRTHdateEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BIRTHdateEdit.Name = "BIRTHdateEdit";
             this.BIRTHdateEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -293,13 +293,13 @@ namespace DoAnQuanLyThuVien
             this.BIRTHdateEdit.Properties.Mask.EditMask = "";
             this.BIRTHdateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.BIRTHdateEdit.Properties.UseReadOnlyAppearance = false;
-            this.BIRTHdateEdit.Size = new System.Drawing.Size(228, 18);
+            this.BIRTHdateEdit.Size = new System.Drawing.Size(264, 20);
             this.BIRTHdateEdit.StyleController = this.layoutControl3;
             this.BIRTHdateEdit.TabIndex = 8;
             // 
             // SEXcomboboxEdit
             // 
-            this.SEXcomboboxEdit.Location = new System.Drawing.Point(376, 104);
+            this.SEXcomboboxEdit.Location = new System.Drawing.Point(440, 123);
             this.SEXcomboboxEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SEXcomboboxEdit.Name = "SEXcomboboxEdit";
             this.SEXcomboboxEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -311,7 +311,7 @@ namespace DoAnQuanLyThuVien
             "Nữ",
             "Khác"});
             this.SEXcomboboxEdit.Properties.UseReadOnlyAppearance = false;
-            this.SEXcomboboxEdit.Size = new System.Drawing.Size(98, 18);
+            this.SEXcomboboxEdit.Size = new System.Drawing.Size(112, 20);
             this.SEXcomboboxEdit.StyleController = this.layoutControl3;
             this.SEXcomboboxEdit.TabIndex = 10;
             // 
@@ -322,25 +322,25 @@ namespace DoAnQuanLyThuVien
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem_NAME,
             this.layoutControlItem_PID,
-            this.layoutControlItem_SEX,
             this.layoutControlItem_ADDRESS,
             this.layoutControlItem_PHONE,
             this.layoutControlItem_EMAIL,
             this.layoutControlItem_NOTE,
-            this.simpleSeparator6,
-            this.simpleSeparator7,
             this.layoutControlItem_BIRTH,
-            this.simpleSeparator10,
-            this.simpleSeparator11,
-            this.simpleSeparator12,
-            this.simpleSeparator13,
             this.emptySpaceItem3,
             this.layoutControlItem_AGE,
             this.emptySpaceItem4,
+            this.layoutControlItem_SEX,
+            this.simpleSeparator2,
+            this.simpleSeparator6,
+            this.simpleSeparator7,
+            this.simpleSeparator8,
             this.simpleSeparator9,
-            this.simpleSeparator8});
+            this.simpleSeparator10,
+            this.simpleSeparator11,
+            this.simpleSeparator12});
             this.layoutControlGroup2.Name = "Root";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(485, 571);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(566, 703);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem_NAME
@@ -348,161 +348,105 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem_NAME.Control = this.NAMEtextEdit;
             this.layoutControlItem_NAME.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem_NAME.Name = "layoutControlItem_NAME";
-            this.layoutControlItem_NAME.Size = new System.Drawing.Size(467, 38);
+            this.layoutControlItem_NAME.Size = new System.Drawing.Size(542, 44);
             this.layoutControlItem_NAME.Text = "Họ và Tên";
             this.layoutControlItem_NAME.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_NAME.TextSize = new System.Drawing.Size(61, 13);
+            this.layoutControlItem_NAME.TextSize = new System.Drawing.Size(71, 17);
             // 
             // layoutControlItem_PID
             // 
             this.layoutControlItem_PID.Control = this.PIDtextEdit;
-            this.layoutControlItem_PID.Location = new System.Drawing.Point(0, 39);
+            this.layoutControlItem_PID.Location = new System.Drawing.Point(0, 45);
             this.layoutControlItem_PID.Name = "layoutControlItem_PID";
-            this.layoutControlItem_PID.Size = new System.Drawing.Size(467, 38);
+            this.layoutControlItem_PID.Size = new System.Drawing.Size(542, 43);
             this.layoutControlItem_PID.Text = "CMND/CCCD";
             this.layoutControlItem_PID.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_PID.TextSize = new System.Drawing.Size(61, 13);
+            this.layoutControlItem_PID.TextSize = new System.Drawing.Size(71, 16);
             // 
             // layoutControlItem_SEX
             // 
             this.layoutControlItem_SEX.Control = this.SEXcomboboxEdit;
-            this.layoutControlItem_SEX.Location = new System.Drawing.Point(365, 78);
+            this.layoutControlItem_SEX.Location = new System.Drawing.Point(426, 89);
             this.layoutControlItem_SEX.Name = "layoutControlItem_SEX";
-            this.layoutControlItem_SEX.Size = new System.Drawing.Size(102, 38);
+            this.layoutControlItem_SEX.Size = new System.Drawing.Size(116, 44);
             this.layoutControlItem_SEX.Text = "Giới tính";
             this.layoutControlItem_SEX.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_SEX.TextSize = new System.Drawing.Size(61, 13);
+            this.layoutControlItem_SEX.TextSize = new System.Drawing.Size(71, 17);
             // 
             // layoutControlItem_ADDRESS
             // 
             this.layoutControlItem_ADDRESS.Control = this.ADDRESStextEdit;
-            this.layoutControlItem_ADDRESS.Location = new System.Drawing.Point(0, 118);
+            this.layoutControlItem_ADDRESS.Location = new System.Drawing.Point(0, 134);
             this.layoutControlItem_ADDRESS.Name = "layoutControlItem_ADDRESS";
-            this.layoutControlItem_ADDRESS.Size = new System.Drawing.Size(467, 38);
+            this.layoutControlItem_ADDRESS.Size = new System.Drawing.Size(542, 44);
             this.layoutControlItem_ADDRESS.Text = "Địa chỉ";
             this.layoutControlItem_ADDRESS.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_ADDRESS.TextSize = new System.Drawing.Size(61, 13);
+            this.layoutControlItem_ADDRESS.TextSize = new System.Drawing.Size(71, 17);
             // 
             // layoutControlItem_PHONE
             // 
             this.layoutControlItem_PHONE.Control = this.PHONEtextEdit;
-            this.layoutControlItem_PHONE.Location = new System.Drawing.Point(0, 157);
+            this.layoutControlItem_PHONE.Location = new System.Drawing.Point(0, 179);
             this.layoutControlItem_PHONE.Name = "layoutControlItem_PHONE";
-            this.layoutControlItem_PHONE.Size = new System.Drawing.Size(467, 38);
+            this.layoutControlItem_PHONE.Size = new System.Drawing.Size(542, 43);
             this.layoutControlItem_PHONE.Text = "SĐT";
             this.layoutControlItem_PHONE.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_PHONE.TextSize = new System.Drawing.Size(61, 13);
+            this.layoutControlItem_PHONE.TextSize = new System.Drawing.Size(71, 16);
             // 
             // layoutControlItem_EMAIL
             // 
             this.layoutControlItem_EMAIL.Control = this.EMAILtextEdit;
-            this.layoutControlItem_EMAIL.Location = new System.Drawing.Point(0, 196);
+            this.layoutControlItem_EMAIL.Location = new System.Drawing.Point(0, 223);
             this.layoutControlItem_EMAIL.Name = "layoutControlItem_EMAIL";
-            this.layoutControlItem_EMAIL.Size = new System.Drawing.Size(467, 38);
+            this.layoutControlItem_EMAIL.Size = new System.Drawing.Size(542, 43);
             this.layoutControlItem_EMAIL.Text = "Email";
             this.layoutControlItem_EMAIL.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_EMAIL.TextSize = new System.Drawing.Size(61, 13);
+            this.layoutControlItem_EMAIL.TextSize = new System.Drawing.Size(71, 16);
             // 
             // layoutControlItem_NOTE
             // 
             this.layoutControlItem_NOTE.Control = this.NOTEmemoEdit;
-            this.layoutControlItem_NOTE.Location = new System.Drawing.Point(0, 235);
+            this.layoutControlItem_NOTE.Location = new System.Drawing.Point(0, 267);
             this.layoutControlItem_NOTE.Name = "layoutControlItem_NOTE";
-            this.layoutControlItem_NOTE.Size = new System.Drawing.Size(467, 320);
+            this.layoutControlItem_NOTE.Size = new System.Drawing.Size(542, 412);
             this.layoutControlItem_NOTE.Text = "Ghi chú";
             this.layoutControlItem_NOTE.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_NOTE.TextSize = new System.Drawing.Size(61, 13);
-            // 
-            // simpleSeparator6
-            // 
-            this.simpleSeparator6.AllowHotTrack = false;
-            this.simpleSeparator6.Location = new System.Drawing.Point(0, 38);
-            this.simpleSeparator6.Name = "simpleSeparator6";
-            this.simpleSeparator6.Size = new System.Drawing.Size(467, 1);
-            // 
-            // simpleSeparator7
-            // 
-            this.simpleSeparator7.AllowHotTrack = false;
-            this.simpleSeparator7.Location = new System.Drawing.Point(0, 77);
-            this.simpleSeparator7.Name = "simpleSeparator7";
-            this.simpleSeparator7.Size = new System.Drawing.Size(467, 1);
+            this.layoutControlItem_NOTE.TextSize = new System.Drawing.Size(71, 16);
             // 
             // layoutControlItem_BIRTH
             // 
             this.layoutControlItem_BIRTH.Control = this.BIRTHdateEdit;
-            this.layoutControlItem_BIRTH.Location = new System.Drawing.Point(0, 78);
+            this.layoutControlItem_BIRTH.Location = new System.Drawing.Point(0, 89);
             this.layoutControlItem_BIRTH.Name = "layoutControlItem_BIRTH";
-            this.layoutControlItem_BIRTH.Size = new System.Drawing.Size(232, 38);
+            this.layoutControlItem_BIRTH.Size = new System.Drawing.Size(268, 43);
             this.layoutControlItem_BIRTH.Text = "Ngày sinh";
             this.layoutControlItem_BIRTH.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_BIRTH.TextSize = new System.Drawing.Size(61, 13);
-            // 
-            // layoutControlItem_AGE
-            // 
-            this.layoutControlItem_AGE.Control = this.AGEtextEdit;
-            this.layoutControlItem_AGE.Location = new System.Drawing.Point(257, 78);
-            this.layoutControlItem_AGE.Name = "layoutControlItem_AGE";
-            this.layoutControlItem_AGE.Size = new System.Drawing.Size(79, 38);
-            this.layoutControlItem_AGE.Text = "Tuổi";
-            this.layoutControlItem_AGE.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_AGE.TextSize = new System.Drawing.Size(61, 13);
-            // 
-            // simpleSeparator9
-            // 
-            this.simpleSeparator9.AllowHotTrack = false;
-            this.simpleSeparator9.Location = new System.Drawing.Point(256, 78);
-            this.simpleSeparator9.Name = "simpleSeparator9";
-            this.simpleSeparator9.Size = new System.Drawing.Size(1, 38);
-            // 
-            // simpleSeparator10
-            // 
-            this.simpleSeparator10.AllowHotTrack = false;
-            this.simpleSeparator10.Location = new System.Drawing.Point(0, 116);
-            this.simpleSeparator10.Name = "simpleSeparator10";
-            this.simpleSeparator10.Size = new System.Drawing.Size(467, 1);
-            // 
-            // simpleSeparator11
-            // 
-            this.simpleSeparator11.AllowHotTrack = false;
-            this.simpleSeparator11.Location = new System.Drawing.Point(0, 156);
-            this.simpleSeparator11.Name = "simpleSeparator11";
-            this.simpleSeparator11.Size = new System.Drawing.Size(467, 1);
-            // 
-            // simpleSeparator12
-            // 
-            this.simpleSeparator12.AllowHotTrack = false;
-            this.simpleSeparator12.Location = new System.Drawing.Point(0, 195);
-            this.simpleSeparator12.Name = "simpleSeparator12";
-            this.simpleSeparator12.Size = new System.Drawing.Size(467, 1);
-            // 
-            // simpleSeparator13
-            // 
-            this.simpleSeparator13.AllowHotTrack = false;
-            this.simpleSeparator13.Location = new System.Drawing.Point(0, 234);
-            this.simpleSeparator13.Name = "simpleSeparator13";
-            this.simpleSeparator13.Size = new System.Drawing.Size(467, 1);
-            // 
-            // simpleSeparator8
-            // 
-            this.simpleSeparator8.AllowHotTrack = false;
-            this.simpleSeparator8.Location = new System.Drawing.Point(0, 117);
-            this.simpleSeparator8.Name = "simpleSeparator8";
-            this.simpleSeparator8.Size = new System.Drawing.Size(467, 1);
+            this.layoutControlItem_BIRTH.TextSize = new System.Drawing.Size(71, 16);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(232, 78);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(268, 89);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(24, 38);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(28, 45);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem_AGE
+            // 
+            this.layoutControlItem_AGE.Control = this.AGEtextEdit;
+            this.layoutControlItem_AGE.Location = new System.Drawing.Point(296, 89);
+            this.layoutControlItem_AGE.Name = "layoutControlItem_AGE";
+            this.layoutControlItem_AGE.Size = new System.Drawing.Size(103, 44);
+            this.layoutControlItem_AGE.Text = "Tuổi";
+            this.layoutControlItem_AGE.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem_AGE.TextSize = new System.Drawing.Size(71, 17);
             // 
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(336, 78);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(399, 89);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(29, 38);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(27, 45);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // panel2
@@ -517,10 +461,10 @@ namespace DoAnQuanLyThuVien
             this.panel2.Controls.Add(this.simpleButton_changePassword);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel6);
-            this.panel2.Location = new System.Drawing.Point(29, 11);
+            this.panel2.Location = new System.Drawing.Point(34, 14);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(459, 571);
+            this.panel2.Size = new System.Drawing.Size(535, 703);
             this.panel2.TabIndex = 8;
             // 
             // simpleButton_EDIT
@@ -528,12 +472,12 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_EDIT.Appearance.Options.UseBackColor = true;
             this.simpleButton_EDIT.ImageOptions.Image = global::DoAnQuanLyThuVien.Properties.Resources.editcontact_32x321;
             this.simpleButton_EDIT.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton_EDIT.Location = new System.Drawing.Point(257, 113);
+            this.simpleButton_EDIT.Location = new System.Drawing.Point(300, 139);
             this.simpleButton_EDIT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton_EDIT.Name = "simpleButton_EDIT";
             this.simpleButton_EDIT.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton_EDIT.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_EDIT.Size = new System.Drawing.Size(34, 32);
+            this.simpleButton_EDIT.Size = new System.Drawing.Size(40, 39);
             this.simpleButton_EDIT.TabIndex = 1;
             this.simpleButton_EDIT.Click += new System.EventHandler(this.simpleButton_EDIT_Click);
             // 
@@ -541,10 +485,10 @@ namespace DoAnQuanLyThuVien
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel3.Controls.Add(this.AVATARpictureEdit);
-            this.panel3.Location = new System.Drawing.Point(141, 11);
+            this.panel3.Location = new System.Drawing.Point(164, 14);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(111, 134);
+            this.panel3.Size = new System.Drawing.Size(129, 165);
             this.panel3.TabIndex = 5;
             // 
             // AVATARpictureEdit
@@ -556,7 +500,7 @@ namespace DoAnQuanLyThuVien
             this.AVATARpictureEdit.Properties.ReadOnly = true;
             this.AVATARpictureEdit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.AVATARpictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.AVATARpictureEdit.Size = new System.Drawing.Size(111, 134);
+            this.AVATARpictureEdit.Size = new System.Drawing.Size(129, 165);
             this.AVATARpictureEdit.TabIndex = 0;
             this.AVATARpictureEdit.Click += new System.EventHandler(this.AVATARpictureEdit_Click);
             // 
@@ -566,11 +510,11 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_SAVE.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton_SAVE.Appearance.Options.UseBackColor = true;
             this.simpleButton_SAVE.Appearance.Options.UseFont = true;
-            this.simpleButton_SAVE.Location = new System.Drawing.Point(91, 414);
+            this.simpleButton_SAVE.Location = new System.Drawing.Point(106, 510);
             this.simpleButton_SAVE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton_SAVE.Name = "simpleButton_SAVE";
             this.simpleButton_SAVE.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_SAVE.Size = new System.Drawing.Size(209, 32);
+            this.simpleButton_SAVE.Size = new System.Drawing.Size(244, 39);
             this.simpleButton_SAVE.TabIndex = 2;
             this.simpleButton_SAVE.Text = "Lưu";
             this.simpleButton_SAVE.Visible = false;
@@ -582,11 +526,11 @@ namespace DoAnQuanLyThuVien
             this.simpleButton_changePassword.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton_changePassword.Appearance.Options.UseBackColor = true;
             this.simpleButton_changePassword.Appearance.Options.UseFont = true;
-            this.simpleButton_changePassword.Location = new System.Drawing.Point(91, 281);
+            this.simpleButton_changePassword.Location = new System.Drawing.Point(106, 346);
             this.simpleButton_changePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton_changePassword.Name = "simpleButton_changePassword";
             this.simpleButton_changePassword.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_changePassword.Size = new System.Drawing.Size(209, 32);
+            this.simpleButton_changePassword.Size = new System.Drawing.Size(244, 39);
             this.simpleButton_changePassword.TabIndex = 1;
             this.simpleButton_changePassword.Text = "Mật khẩu mới";
             this.simpleButton_changePassword.Click += new System.EventHandler(this.simpleButton_changePassword_Click);
@@ -594,10 +538,10 @@ namespace DoAnQuanLyThuVien
             // panel4
             // 
             this.panel4.Controls.Add(this.layoutControl1);
-            this.panel4.Location = new System.Drawing.Point(14, 150);
+            this.panel4.Location = new System.Drawing.Point(16, 185);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(380, 135);
+            this.panel4.Size = new System.Drawing.Size(443, 166);
             this.panel4.TabIndex = 0;
             // 
             // layoutControl1
@@ -612,46 +556,46 @@ namespace DoAnQuanLyThuVien
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(421, 214, 812, 500);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(380, 135);
+            this.layoutControl1.Size = new System.Drawing.Size(443, 166);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // USERNAMEtextEdit
             // 
-            this.USERNAMEtextEdit.Location = new System.Drawing.Point(11, 65);
+            this.USERNAMEtextEdit.Location = new System.Drawing.Point(14, 79);
             this.USERNAMEtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.USERNAMEtextEdit.Name = "USERNAMEtextEdit";
             this.USERNAMEtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.USERNAMEtextEdit.Properties.ReadOnly = true;
             this.USERNAMEtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.USERNAMEtextEdit.Size = new System.Drawing.Size(358, 18);
+            this.USERNAMEtextEdit.Size = new System.Drawing.Size(415, 20);
             this.USERNAMEtextEdit.StyleController = this.layoutControl1;
             this.USERNAMEtextEdit.TabIndex = 4;
             // 
             // PASSWORDtextEdit
             // 
             this.PASSWORDtextEdit.EditValue = "123456789";
-            this.PASSWORDtextEdit.Location = new System.Drawing.Point(11, 104);
+            this.PASSWORDtextEdit.Location = new System.Drawing.Point(14, 124);
             this.PASSWORDtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PASSWORDtextEdit.Name = "PASSWORDtextEdit";
             this.PASSWORDtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.PASSWORDtextEdit.Properties.ReadOnly = true;
             this.PASSWORDtextEdit.Properties.UseReadOnlyAppearance = false;
             this.PASSWORDtextEdit.Properties.UseSystemPasswordChar = true;
-            this.PASSWORDtextEdit.Size = new System.Drawing.Size(358, 18);
+            this.PASSWORDtextEdit.Size = new System.Drawing.Size(415, 20);
             this.PASSWORDtextEdit.StyleController = this.layoutControl1;
             this.PASSWORDtextEdit.TabIndex = 5;
             this.PASSWORDtextEdit.EditValueChanged += new System.EventHandler(this.ALLPASSWORDtextEdit_EditValueChanged);
             // 
             // READERIDtextEdit
             // 
-            this.READERIDtextEdit.Location = new System.Drawing.Point(11, 26);
+            this.READERIDtextEdit.Location = new System.Drawing.Point(14, 34);
             this.READERIDtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.READERIDtextEdit.Name = "READERIDtextEdit";
             this.READERIDtextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.READERIDtextEdit.Properties.ReadOnly = true;
             this.READERIDtextEdit.Properties.UseReadOnlyAppearance = false;
-            this.READERIDtextEdit.Size = new System.Drawing.Size(358, 18);
+            this.READERIDtextEdit.Size = new System.Drawing.Size(415, 20);
             this.READERIDtextEdit.StyleController = this.layoutControl1;
             this.READERIDtextEdit.TabIndex = 6;
             // 
@@ -668,76 +612,76 @@ namespace DoAnQuanLyThuVien
             this.emptySpaceItem1,
             this.simpleSeparator14});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(380, 143);
+            this.Root.Size = new System.Drawing.Size(443, 169);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem_USERNAME
             // 
             this.layoutControlItem_USERNAME.Control = this.USERNAMEtextEdit;
-            this.layoutControlItem_USERNAME.Location = new System.Drawing.Point(0, 39);
+            this.layoutControlItem_USERNAME.Location = new System.Drawing.Point(0, 45);
             this.layoutControlItem_USERNAME.Name = "layoutControlItem_USERNAME";
-            this.layoutControlItem_USERNAME.Size = new System.Drawing.Size(362, 38);
+            this.layoutControlItem_USERNAME.Size = new System.Drawing.Size(419, 44);
             this.layoutControlItem_USERNAME.Text = "Tên đăng nhập";
             this.layoutControlItem_USERNAME.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_USERNAME.TextSize = new System.Drawing.Size(72, 13);
+            this.layoutControlItem_USERNAME.TextSize = new System.Drawing.Size(93, 17);
             // 
             // layoutControlItem_PASSWORD
             // 
             this.layoutControlItem_PASSWORD.Control = this.PASSWORDtextEdit;
-            this.layoutControlItem_PASSWORD.Location = new System.Drawing.Point(0, 78);
+            this.layoutControlItem_PASSWORD.Location = new System.Drawing.Point(0, 90);
             this.layoutControlItem_PASSWORD.Name = "layoutControlItem_PASSWORD";
-            this.layoutControlItem_PASSWORD.Size = new System.Drawing.Size(362, 38);
+            this.layoutControlItem_PASSWORD.Size = new System.Drawing.Size(419, 44);
             this.layoutControlItem_PASSWORD.Text = "Mật khẩu";
             this.layoutControlItem_PASSWORD.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_PASSWORD.TextSize = new System.Drawing.Size(72, 13);
+            this.layoutControlItem_PASSWORD.TextSize = new System.Drawing.Size(93, 17);
             // 
             // simpleSeparator1
             // 
             this.simpleSeparator1.AllowHotTrack = false;
-            this.simpleSeparator1.Location = new System.Drawing.Point(0, 77);
+            this.simpleSeparator1.Location = new System.Drawing.Point(0, 89);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(362, 1);
+            this.simpleSeparator1.Size = new System.Drawing.Size(419, 1);
             // 
             // layoutControlItem_READERID
             // 
             this.layoutControlItem_READERID.Control = this.READERIDtextEdit;
             this.layoutControlItem_READERID.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem_READERID.Name = "layoutControlItem_READERID";
-            this.layoutControlItem_READERID.Size = new System.Drawing.Size(362, 38);
+            this.layoutControlItem_READERID.Size = new System.Drawing.Size(419, 44);
             this.layoutControlItem_READERID.Text = "Mã tài khoản";
             this.layoutControlItem_READERID.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_READERID.TextSize = new System.Drawing.Size(72, 13);
+            this.layoutControlItem_READERID.TextSize = new System.Drawing.Size(93, 17);
             // 
             // simpleSeparator5
             // 
             this.simpleSeparator5.AllowHotTrack = false;
-            this.simpleSeparator5.Location = new System.Drawing.Point(0, 38);
+            this.simpleSeparator5.Location = new System.Drawing.Point(0, 44);
             this.simpleSeparator5.Name = "simpleSeparator5";
-            this.simpleSeparator5.Size = new System.Drawing.Size(362, 1);
+            this.simpleSeparator5.Size = new System.Drawing.Size(419, 1);
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 117);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 135);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(362, 10);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(419, 10);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // simpleSeparator14
             // 
             this.simpleSeparator14.AllowHotTrack = false;
-            this.simpleSeparator14.Location = new System.Drawing.Point(0, 116);
+            this.simpleSeparator14.Location = new System.Drawing.Point(0, 134);
             this.simpleSeparator14.Name = "simpleSeparator14";
-            this.simpleSeparator14.Size = new System.Drawing.Size(362, 1);
+            this.simpleSeparator14.Size = new System.Drawing.Size(419, 1);
             this.simpleSeparator14.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.layoutControl2);
-            this.panel6.Location = new System.Drawing.Point(14, 301);
+            this.panel6.Location = new System.Drawing.Point(16, 370);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(380, 109);
+            this.panel6.Size = new System.Drawing.Size(443, 134);
             this.panel6.TabIndex = 1;
             // 
             // layoutControl2
@@ -751,18 +695,18 @@ namespace DoAnQuanLyThuVien
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(421, 214, 812, 500);
             this.layoutControl2.Root = this.layoutControlGroup_NEWPASS;
-            this.layoutControl2.Size = new System.Drawing.Size(380, 109);
+            this.layoutControl2.Size = new System.Drawing.Size(443, 134);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
             // NEWPASStextEdit
             // 
-            this.NEWPASStextEdit.Location = new System.Drawing.Point(11, 26);
+            this.NEWPASStextEdit.Location = new System.Drawing.Point(14, 34);
             this.NEWPASStextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NEWPASStextEdit.Name = "NEWPASStextEdit";
             this.NEWPASStextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.NEWPASStextEdit.Properties.UseSystemPasswordChar = true;
-            this.NEWPASStextEdit.Size = new System.Drawing.Size(358, 18);
+            this.NEWPASStextEdit.Size = new System.Drawing.Size(415, 20);
             this.NEWPASStextEdit.StyleController = this.layoutControl2;
             this.NEWPASStextEdit.TabIndex = 6;
             this.NEWPASStextEdit.EditValueChanged += new System.EventHandler(this.ALLPASSWORDtextEdit_EditValueChanged);
@@ -770,12 +714,12 @@ namespace DoAnQuanLyThuVien
             // CONFIRMPASStextEdit
             // 
             this.CONFIRMPASStextEdit.EditValue = "";
-            this.CONFIRMPASStextEdit.Location = new System.Drawing.Point(11, 65);
+            this.CONFIRMPASStextEdit.Location = new System.Drawing.Point(14, 79);
             this.CONFIRMPASStextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CONFIRMPASStextEdit.Name = "CONFIRMPASStextEdit";
             this.CONFIRMPASStextEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.CONFIRMPASStextEdit.Properties.UseSystemPasswordChar = true;
-            this.CONFIRMPASStextEdit.Size = new System.Drawing.Size(358, 18);
+            this.CONFIRMPASStextEdit.Size = new System.Drawing.Size(415, 20);
             this.CONFIRMPASStextEdit.StyleController = this.layoutControl2;
             this.CONFIRMPASStextEdit.TabIndex = 7;
             this.CONFIRMPASStextEdit.EditValueChanged += new System.EventHandler(this.ALLPASSWORDtextEdit_EditValueChanged);
@@ -791,7 +735,7 @@ namespace DoAnQuanLyThuVien
             this.simpleSeparator4,
             this.emptySpaceItem2});
             this.layoutControlGroup_NEWPASS.Name = "Root";
-            this.layoutControlGroup_NEWPASS.Size = new System.Drawing.Size(380, 113);
+            this.layoutControlGroup_NEWPASS.Size = new System.Drawing.Size(443, 137);
             this.layoutControlGroup_NEWPASS.TextVisible = false;
             this.layoutControlGroup_NEWPASS.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
@@ -800,53 +744,109 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem_NEWPASS.Control = this.NEWPASStextEdit;
             this.layoutControlItem_NEWPASS.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem_NEWPASS.Name = "layoutControlItem_NEWPASS";
-            this.layoutControlItem_NEWPASS.Size = new System.Drawing.Size(362, 38);
+            this.layoutControlItem_NEWPASS.Size = new System.Drawing.Size(419, 44);
             this.layoutControlItem_NEWPASS.Text = "Mật khẩu mới";
             this.layoutControlItem_NEWPASS.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_NEWPASS.TextSize = new System.Drawing.Size(91, 13);
+            this.layoutControlItem_NEWPASS.TextSize = new System.Drawing.Size(119, 17);
             // 
             // layoutControlItem_CONFIRMPASS
             // 
             this.layoutControlItem_CONFIRMPASS.Control = this.CONFIRMPASStextEdit;
-            this.layoutControlItem_CONFIRMPASS.Location = new System.Drawing.Point(0, 39);
+            this.layoutControlItem_CONFIRMPASS.Location = new System.Drawing.Point(0, 45);
             this.layoutControlItem_CONFIRMPASS.Name = "layoutControlItem_CONFIRMPASS";
-            this.layoutControlItem_CONFIRMPASS.Size = new System.Drawing.Size(362, 38);
+            this.layoutControlItem_CONFIRMPASS.Size = new System.Drawing.Size(419, 44);
             this.layoutControlItem_CONFIRMPASS.Text = "Xác nhận mật khẩu";
             this.layoutControlItem_CONFIRMPASS.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem_CONFIRMPASS.TextSize = new System.Drawing.Size(91, 13);
+            this.layoutControlItem_CONFIRMPASS.TextSize = new System.Drawing.Size(119, 17);
             // 
             // simpleSeparator3
             // 
             this.simpleSeparator3.AllowHotTrack = false;
-            this.simpleSeparator3.Location = new System.Drawing.Point(0, 38);
+            this.simpleSeparator3.Location = new System.Drawing.Point(0, 44);
             this.simpleSeparator3.Name = "simpleSeparator1";
-            this.simpleSeparator3.Size = new System.Drawing.Size(362, 1);
+            this.simpleSeparator3.Size = new System.Drawing.Size(419, 1);
             // 
             // simpleSeparator4
             // 
             this.simpleSeparator4.AllowHotTrack = false;
-            this.simpleSeparator4.Location = new System.Drawing.Point(0, 77);
+            this.simpleSeparator4.Location = new System.Drawing.Point(0, 89);
             this.simpleSeparator4.Name = "simpleSeparator2";
-            this.simpleSeparator4.Size = new System.Drawing.Size(362, 1);
+            this.simpleSeparator4.Size = new System.Drawing.Size(419, 1);
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 78);
-            this.emptySpaceItem2.MinSize = new System.Drawing.Size(89, 19);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 90);
+            this.emptySpaceItem2.MinSize = new System.Drawing.Size(104, 23);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(362, 19);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(419, 23);
             this.emptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // simpleSeparator2
+            // 
+            this.simpleSeparator2.AllowHotTrack = false;
+            this.simpleSeparator2.Location = new System.Drawing.Point(0, 44);
+            this.simpleSeparator2.Name = "simpleSeparator2";
+            this.simpleSeparator2.Size = new System.Drawing.Size(542, 1);
+            // 
+            // simpleSeparator6
+            // 
+            this.simpleSeparator6.AllowHotTrack = false;
+            this.simpleSeparator6.Location = new System.Drawing.Point(0, 88);
+            this.simpleSeparator6.Name = "simpleSeparator6";
+            this.simpleSeparator6.Size = new System.Drawing.Size(542, 1);
+            // 
+            // simpleSeparator7
+            // 
+            this.simpleSeparator7.AllowHotTrack = false;
+            this.simpleSeparator7.Location = new System.Drawing.Point(0, 132);
+            this.simpleSeparator7.Name = "simpleSeparator7";
+            this.simpleSeparator7.Size = new System.Drawing.Size(268, 2);
+            // 
+            // simpleSeparator8
+            // 
+            this.simpleSeparator8.AllowHotTrack = false;
+            this.simpleSeparator8.Location = new System.Drawing.Point(296, 133);
+            this.simpleSeparator8.Name = "simpleSeparator8";
+            this.simpleSeparator8.Size = new System.Drawing.Size(103, 1);
+            // 
+            // simpleSeparator9
+            // 
+            this.simpleSeparator9.AllowHotTrack = false;
+            this.simpleSeparator9.Location = new System.Drawing.Point(426, 133);
+            this.simpleSeparator9.Name = "simpleSeparator9";
+            this.simpleSeparator9.Size = new System.Drawing.Size(116, 1);
+            // 
+            // simpleSeparator10
+            // 
+            this.simpleSeparator10.AllowHotTrack = false;
+            this.simpleSeparator10.Location = new System.Drawing.Point(0, 178);
+            this.simpleSeparator10.Name = "simpleSeparator10";
+            this.simpleSeparator10.Size = new System.Drawing.Size(542, 1);
+            // 
+            // simpleSeparator11
+            // 
+            this.simpleSeparator11.AllowHotTrack = false;
+            this.simpleSeparator11.Location = new System.Drawing.Point(0, 222);
+            this.simpleSeparator11.Name = "simpleSeparator11";
+            this.simpleSeparator11.Size = new System.Drawing.Size(542, 1);
+            // 
+            // simpleSeparator12
+            // 
+            this.simpleSeparator12.AllowHotTrack = false;
+            this.simpleSeparator12.Location = new System.Drawing.Point(0, 266);
+            this.simpleSeparator12.Name = "simpleSeparator12";
+            this.simpleSeparator12.Size = new System.Drawing.Size(542, 1);
             // 
             // fReaderInfo
             // 
             this.AcceptButton = this.simpleButton_SAVE;
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(238)))), ((int)(((byte)(220)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 593);
+            this.ClientSize = new System.Drawing.Size(1207, 730);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fReaderInfo";
@@ -874,17 +874,9 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_PHONE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_EMAIL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_NOTE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_BIRTH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_AGE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_AGE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -914,6 +906,14 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -941,16 +941,8 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_PHONE;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_EMAIL;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_NOTE;
-        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator6;
-        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_BIRTH;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_AGE;
-        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator9;
-        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator10;
-        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator11;
-        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator12;
-        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator13;
-        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator8;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private System.Windows.Forms.Panel panel2;
@@ -982,5 +974,13 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator3;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator4;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator2;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator6;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator7;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator8;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator9;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator10;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator11;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator12;
     }
 }
