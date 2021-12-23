@@ -187,6 +187,12 @@ namespace DoAnQuanLyThuVien
             }
         }
 
+        private void gridView_Staff_BeforeLeaveRow(object sender, DevExpress.XtraGrid.Views.Base.RowAllowEventArgs e)
+        {
+            if (is_edittingMode && currentAccount.TYPE == false)
+                e.Allow = false;
+        }
+
         #endregion ==========================================
 
 
