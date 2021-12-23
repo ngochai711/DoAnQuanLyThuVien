@@ -323,7 +323,7 @@ namespace DoAnQuanLyThuVien
             this.btnL_card_show.Padding = new System.Windows.Forms.Padding(8);
             this.btnL_card_show.Size = new System.Drawing.Size(273, 59);
             this.btnL_card_show.TabIndex = 4;
-            this.btnL_card_show.Text = "Mượn Trả Sách";
+            this.btnL_card_show.Text = "    Quản Lý Mượn Trả Sách";
             this.btnL_card_show.UseVisualStyleBackColor = false;
             this.btnL_card_show.Click += new System.EventHandler(this.btnL_card_show_Click);
             // 
@@ -355,7 +355,7 @@ namespace DoAnQuanLyThuVien
             this.btnAcountInfo.Padding = new System.Windows.Forms.Padding(8);
             this.btnAcountInfo.Size = new System.Drawing.Size(273, 59);
             this.btnAcountInfo.TabIndex = 3;
-            this.btnAcountInfo.Text = "Thông Tin Tài Khoản";
+            this.btnAcountInfo.Text = "Quản Lý Nhân Sự";
             this.btnAcountInfo.UseVisualStyleBackColor = false;
             this.btnAcountInfo.Click += new System.EventHandler(this.btnAcountInfo_Click);
             // 

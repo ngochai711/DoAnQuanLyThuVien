@@ -305,7 +305,7 @@ namespace DoAnQuanLyThuVien
                 this.Close();
             }
 
-            var f = new fBookManager1();
+            var f = new fBookManager();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
         }

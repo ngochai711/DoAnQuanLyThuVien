@@ -1,7 +1,7 @@
 ﻿
 namespace DoAnQuanLyThuVien
 {
-    partial class fBookManager1
+    partial class fBookManager
     {
         /// <summary>
         /// Required designer variable.

@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace DoAnQuanLyThuVien
 {
-    public partial class fBookManager1 : Form
+    public partial class fBookManager : Form
     {
-        public fBookManager1()
+        public fBookManager()
         {
             InitializeComponent();
         }

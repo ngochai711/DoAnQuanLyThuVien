@@ -53,7 +53,7 @@ namespace DoAnQuanLyThuVien
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fScanner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fScanner";
+            this.Text = "Quét barcode";
             this.Load += new System.EventHandler(this.fScanner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

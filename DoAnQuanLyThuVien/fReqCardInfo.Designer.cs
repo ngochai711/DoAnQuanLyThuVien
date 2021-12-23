@@ -250,7 +250,7 @@ namespace DoAnQuanLyThuVien
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fReqCardInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fReqCardInfo";
+            this.Text = "Thông tin phiếu mượn";
             this.Load += new System.EventHandler(this.fReqCardInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
