@@ -97,10 +97,10 @@ namespace DoAnQuanLyThuVien
 
         private void Check_loginInfo(string _Username, string _encryptedPassword)
         {
+            dataBase = new SHARED_LIBRARY_ENTITY();
+
             if (isStaff)
             {
-                dataBase.STAFF_INF.Load();
-
                 var Account_Gotten_By_Username = dataBase.STAFF_INF.Find(_Username);
 
                 if (is_Invalid_StaffAccount(Account_Gotten_By_Username))
@@ -113,8 +113,6 @@ namespace DoAnQuanLyThuVien
             }
             else
             {
-                dataBase.READER_INF.Load();
-
                 var Account_Gotten_By_Username = dataBase.READER_INF.Find(_Username);
 
                 if (is_Invalid_ReaderAccount(Account_Gotten_By_Username))

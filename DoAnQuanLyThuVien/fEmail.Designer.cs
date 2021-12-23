@@ -251,7 +251,7 @@ namespace DoAnQuanLyThuVien
             this.Controls.Add(this.panel1);
             this.Name = "fEmail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fEmail";
+            this.Text = "Mail mới";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
