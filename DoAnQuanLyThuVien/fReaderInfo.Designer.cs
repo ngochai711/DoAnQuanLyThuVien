@@ -62,6 +62,7 @@ namespace DoAnQuanLyThuVien
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.simpleButton_EDIT = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.AVATARpictureEdit = new DevExpress.XtraEditors.PictureEdit();
             this.simpleButton_SAVE = new DevExpress.XtraEditors.SimpleButton();
@@ -89,7 +90,6 @@ namespace DoAnQuanLyThuVien
             this.simpleSeparator3 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator4 = new DevExpress.XtraLayout.SimpleSeparator();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.simpleButton_EDIT = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
@@ -199,7 +199,7 @@ namespace DoAnQuanLyThuVien
             this.NAMEtextEdit.Properties.UseReadOnlyAppearance = false;
             this.NAMEtextEdit.Size = new System.Drawing.Size(477, 20);
             this.NAMEtextEdit.StyleController = this.layoutControl3;
-            this.NAMEtextEdit.TabIndex = 4;
+            this.NAMEtextEdit.TabIndex = 6;
             // 
             // PIDtextEdit
             // 
@@ -209,7 +209,7 @@ namespace DoAnQuanLyThuVien
             this.PIDtextEdit.Properties.UseReadOnlyAppearance = false;
             this.PIDtextEdit.Size = new System.Drawing.Size(477, 20);
             this.PIDtextEdit.StyleController = this.layoutControl3;
-            this.PIDtextEdit.TabIndex = 5;
+            this.PIDtextEdit.TabIndex = 7;
             // 
             // AGEtextEdit
             // 
@@ -219,7 +219,7 @@ namespace DoAnQuanLyThuVien
             this.AGEtextEdit.Properties.UseReadOnlyAppearance = false;
             this.AGEtextEdit.Size = new System.Drawing.Size(124, 20);
             this.AGEtextEdit.StyleController = this.layoutControl3;
-            this.AGEtextEdit.TabIndex = 8;
+            this.AGEtextEdit.TabIndex = 9;
             // 
             // ADDRESStextEdit
             // 
@@ -229,7 +229,7 @@ namespace DoAnQuanLyThuVien
             this.ADDRESStextEdit.Properties.UseReadOnlyAppearance = false;
             this.ADDRESStextEdit.Size = new System.Drawing.Size(477, 20);
             this.ADDRESStextEdit.StyleController = this.layoutControl3;
-            this.ADDRESStextEdit.TabIndex = 9;
+            this.ADDRESStextEdit.TabIndex = 11;
             // 
             // PHONEtextEdit
             // 
@@ -239,7 +239,7 @@ namespace DoAnQuanLyThuVien
             this.PHONEtextEdit.Properties.UseReadOnlyAppearance = false;
             this.PHONEtextEdit.Size = new System.Drawing.Size(477, 20);
             this.PHONEtextEdit.StyleController = this.layoutControl3;
-            this.PHONEtextEdit.TabIndex = 10;
+            this.PHONEtextEdit.TabIndex = 12;
             // 
             // EMAILtextEdit
             // 
@@ -249,7 +249,7 @@ namespace DoAnQuanLyThuVien
             this.EMAILtextEdit.Properties.UseReadOnlyAppearance = false;
             this.EMAILtextEdit.Size = new System.Drawing.Size(477, 20);
             this.EMAILtextEdit.StyleController = this.layoutControl3;
-            this.EMAILtextEdit.TabIndex = 11;
+            this.EMAILtextEdit.TabIndex = 13;
             // 
             // NOTEmemoEdit
             // 
@@ -258,7 +258,7 @@ namespace DoAnQuanLyThuVien
             this.NOTEmemoEdit.Properties.UseReadOnlyAppearance = false;
             this.NOTEmemoEdit.Size = new System.Drawing.Size(477, 307);
             this.NOTEmemoEdit.StyleController = this.layoutControl3;
-            this.NOTEmemoEdit.TabIndex = 12;
+            this.NOTEmemoEdit.TabIndex = 14;
             // 
             // BIRTHdateEdit
             // 
@@ -275,11 +275,11 @@ namespace DoAnQuanLyThuVien
             this.BIRTHdateEdit.Properties.EditFormat.FormatString = "";
             this.BIRTHdateEdit.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.BIRTHdateEdit.Properties.Mask.EditMask = "";
-            this.BIRTHdateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.BIRTHdateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.BIRTHdateEdit.Properties.UseReadOnlyAppearance = false;
             this.BIRTHdateEdit.Size = new System.Drawing.Size(209, 20);
             this.BIRTHdateEdit.StyleController = this.layoutControl3;
-            this.BIRTHdateEdit.TabIndex = 7;
+            this.BIRTHdateEdit.TabIndex = 8;
             // 
             // SEXcomboboxEdit
             // 
@@ -296,7 +296,7 @@ namespace DoAnQuanLyThuVien
             this.SEXcomboboxEdit.Properties.UseReadOnlyAppearance = false;
             this.SEXcomboboxEdit.Size = new System.Drawing.Size(112, 20);
             this.SEXcomboboxEdit.StyleController = this.layoutControl3;
-            this.SEXcomboboxEdit.TabIndex = 6;
+            this.SEXcomboboxEdit.TabIndex = 10;
             // 
             // layoutControlGroup2
             // 
@@ -501,6 +501,19 @@ namespace DoAnQuanLyThuVien
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(477, 608);
             this.panel2.TabIndex = 8;
+            // 
+            // simpleButton_EDIT
+            // 
+            this.simpleButton_EDIT.Appearance.Options.UseBackColor = true;
+            this.simpleButton_EDIT.ImageOptions.Image = global::DoAnQuanLyThuVien.Properties.Resources.editcontact_32x321;
+            this.simpleButton_EDIT.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton_EDIT.Location = new System.Drawing.Point(300, 139);
+            this.simpleButton_EDIT.Name = "simpleButton_EDIT";
+            this.simpleButton_EDIT.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_EDIT.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_EDIT.Size = new System.Drawing.Size(40, 40);
+            this.simpleButton_EDIT.TabIndex = 1;
+            this.simpleButton_EDIT.Click += new System.EventHandler(this.simpleButton_EDIT_Click);
             // 
             // panel3
             // 
@@ -717,7 +730,7 @@ namespace DoAnQuanLyThuVien
             this.NEWPASStextEdit.Properties.UseSystemPasswordChar = true;
             this.NEWPASStextEdit.Size = new System.Drawing.Size(419, 20);
             this.NEWPASStextEdit.StyleController = this.layoutControl2;
-            this.NEWPASStextEdit.TabIndex = 4;
+            this.NEWPASStextEdit.TabIndex = 6;
             this.NEWPASStextEdit.EditValueChanged += new System.EventHandler(this.ALLPASSWORDtextEdit_EditValueChanged);
             // 
             // CONFIRMPASStextEdit
@@ -729,7 +742,7 @@ namespace DoAnQuanLyThuVien
             this.CONFIRMPASStextEdit.Properties.UseSystemPasswordChar = true;
             this.CONFIRMPASStextEdit.Size = new System.Drawing.Size(419, 20);
             this.CONFIRMPASStextEdit.StyleController = this.layoutControl2;
-            this.CONFIRMPASStextEdit.TabIndex = 5;
+            this.CONFIRMPASStextEdit.TabIndex = 7;
             this.CONFIRMPASStextEdit.EditValueChanged += new System.EventHandler(this.ALLPASSWORDtextEdit_EditValueChanged);
             // 
             // layoutControlGroup_NEWPASS
@@ -791,27 +804,14 @@ namespace DoAnQuanLyThuVien
             this.emptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // simpleButton_EDIT
-            // 
-            this.simpleButton_EDIT.Appearance.Options.UseBackColor = true;
-            this.simpleButton_EDIT.ImageOptions.Image = global::DoAnQuanLyThuVien.Properties.Resources.editcontact_32x321;
-            this.simpleButton_EDIT.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton_EDIT.Location = new System.Drawing.Point(300, 139);
-            this.simpleButton_EDIT.Name = "simpleButton_EDIT";
-            this.simpleButton_EDIT.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton_EDIT.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton_EDIT.Size = new System.Drawing.Size(40, 40);
-            this.simpleButton_EDIT.TabIndex = 1;
-            this.simpleButton_EDIT.Click += new System.EventHandler(this.simpleButton_EDIT_Click);
-            // 
-            // xtrafReaderInfo
+            // fReaderInfo
             // 
             this.AcceptButton = this.simpleButton_SAVE;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1048, 660);
             this.Controls.Add(this.panel1);
-            this.Name = "xtrafReaderInfo";
+            this.Name = "fReaderInfo";
             this.Text = "xtrafReaderInfo";
             this.Load += new System.EventHandler(this.xtrafReaderInfo_Load);
             this.panel1.ResumeLayout(false);

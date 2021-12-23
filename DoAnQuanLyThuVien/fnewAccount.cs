@@ -17,13 +17,13 @@ namespace DoAnQuanLyThuVien
         private SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
         private bool isStaff;
 
-        public fnewAccount(bool _isStaff)
+        public fnewAccount(bool _isStaff) 
         {
             InitializeComponent();
 
             set_formIcon(_isStaff);
 
-            isStaff = _isStaff;   
+            isStaff = _isStaff;
         }
 
 
@@ -98,6 +98,7 @@ namespace DoAnQuanLyThuVien
             string reEnter_Password = REPASStextEdit.Text;
             string userName = USERNAMETextEdit.Text;
             string passWord = PASSWORDTextEdit.Text;
+            string pid = PIDtextEdit.Text;
 
             if (is_dataErrors(userName, passWord, reEnter_Password))
                 return;
@@ -106,25 +107,35 @@ namespace DoAnQuanLyThuVien
             {
                 string encryptedPassword = Encrypt_Password();
 
-                newAccount_signIn(userName, encryptedPassword, name);
+                newAccount_signIn(userName, encryptedPassword, name, pid);
             }
             catch
             {
-                DialogResult duplicated_Username = MessageBox.Show("Tài khoản đã tồn tại!");
+                DialogResult duplicated_username = MessageBox.Show("tài khoản đã tồn tại!");
             }
         }
 
-        private void newAccount_signIn(string _userName, string _encryptedPassword, string _name)
+        private void newAccount_signIn(string _userName, string _encryptedPassword, string _name, string _pid)
         {
             if (isStaff)
             {
-                var item = new STAFF_INF(_userName, _encryptedPassword, _name);
+                var item = new STAFF_INF();
+
+                item.PASSWORD = _encryptedPassword;
+                item.USERNAME = _userName;
+                item.NAME = _name;
+                item.PID = _pid;
 
                 dataBase.STAFF_INF.Add(item);
             }
             else
             {
-                var item = new READER_INF(_userName, _encryptedPassword, _name);
+                var item = new READER_INF();
+
+                item.PASSWORD = _encryptedPassword;
+                item.USERNAME = _userName;
+                item.NAME = _name;
+                item.PID = _pid;
 
                 dataBase.READER_INF.Add(item);
             }

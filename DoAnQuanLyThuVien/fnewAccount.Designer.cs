@@ -45,6 +45,10 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForNAME = new DevExpress.XtraLayout.LayoutControlItem();
             this.panel_Icon = new System.Windows.Forms.Panel();
+            this.PIDtextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem_PID = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
@@ -59,6 +63,10 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNAME)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PIDtextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_PID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // label_formName
@@ -76,7 +84,7 @@ namespace DoAnQuanLyThuVien
             this.panel1.Controls.Add(this.dataLayoutControl1);
             this.panel1.Location = new System.Drawing.Point(31, 115);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(325, 322);
+            this.panel1.Size = new System.Drawing.Size(325, 343);
             this.panel1.TabIndex = 1;
             // 
             // dataLayoutControl1
@@ -86,11 +94,12 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl1.Controls.Add(this.REPASStextEdit);
             this.dataLayoutControl1.Controls.Add(this.button_signIn);
             this.dataLayoutControl1.Controls.Add(this.NAMEtextEdit);
+            this.dataLayoutControl1.Controls.Add(this.PIDtextEdit);
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 0);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.Root;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(325, 322);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(325, 343);
             this.dataLayoutControl1.TabIndex = 0;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
@@ -104,7 +113,7 @@ namespace DoAnQuanLyThuVien
             // 
             // PASSWORDTextEdit
             // 
-            this.PASSWORDTextEdit.Location = new System.Drawing.Point(12, 165);
+            this.PASSWORDTextEdit.Location = new System.Drawing.Point(12, 175);
             this.PASSWORDTextEdit.Name = "PASSWORDTextEdit";
             this.PASSWORDTextEdit.Properties.UseSystemPasswordChar = true;
             this.PASSWORDTextEdit.Size = new System.Drawing.Size(301, 22);
@@ -113,7 +122,7 @@ namespace DoAnQuanLyThuVien
             // 
             // REPASStextEdit
             // 
-            this.REPASStextEdit.Location = new System.Drawing.Point(12, 216);
+            this.REPASStextEdit.Location = new System.Drawing.Point(12, 229);
             this.REPASStextEdit.Name = "REPASStextEdit";
             this.REPASStextEdit.Properties.UseSystemPasswordChar = true;
             this.REPASStextEdit.Size = new System.Drawing.Size(301, 22);
@@ -128,7 +137,7 @@ namespace DoAnQuanLyThuVien
             this.button_signIn.Appearance.Options.UseBackColor = true;
             this.button_signIn.Appearance.Options.UseBorderColor = true;
             this.button_signIn.Appearance.Options.UseFont = true;
-            this.button_signIn.Location = new System.Drawing.Point(12, 265);
+            this.button_signIn.Location = new System.Drawing.Point(12, 269);
             this.button_signIn.Name = "button_signIn";
             this.button_signIn.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.button_signIn.Size = new System.Drawing.Size(301, 45);
@@ -139,7 +148,7 @@ namespace DoAnQuanLyThuVien
             // 
             // NAMEtextEdit
             // 
-            this.NAMEtextEdit.Location = new System.Drawing.Point(12, 83);
+            this.NAMEtextEdit.Location = new System.Drawing.Point(12, 81);
             this.NAMEtextEdit.Name = "NAMEtextEdit";
             this.NAMEtextEdit.Size = new System.Drawing.Size(301, 22);
             this.NAMEtextEdit.StyleController = this.dataLayoutControl1;
@@ -152,7 +161,7 @@ namespace DoAnQuanLyThuVien
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(325, 322);
+            this.Root.Size = new System.Drawing.Size(325, 343);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -164,10 +173,13 @@ namespace DoAnQuanLyThuVien
             this.ItemForPASSWORD,
             this.layoutControlItem1,
             this.layoutControlItem2,
-            this.ItemForNAME});
+            this.ItemForNAME,
+            this.layoutControlItem_PID,
+            this.emptySpaceItem1,
+            this.emptySpaceItem2});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(305, 302);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(305, 323);
             // 
             // ItemForUSERNAME
             // 
@@ -175,7 +187,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForUSERNAME.Location = new System.Drawing.Point(0, 0);
             this.ItemForUSERNAME.MinSize = new System.Drawing.Size(146, 26);
             this.ItemForUSERNAME.Name = "ItemForUSERNAME";
-            this.ItemForUSERNAME.Size = new System.Drawing.Size(305, 51);
+            this.ItemForUSERNAME.Size = new System.Drawing.Size(305, 49);
             this.ItemForUSERNAME.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.ItemForUSERNAME.Text = "Tên đăng nhập";
             this.ItemForUSERNAME.TextLocation = DevExpress.Utils.Locations.Top;
@@ -184,10 +196,10 @@ namespace DoAnQuanLyThuVien
             // ItemForPASSWORD
             // 
             this.ItemForPASSWORD.Control = this.PASSWORDTextEdit;
-            this.ItemForPASSWORD.Location = new System.Drawing.Point(0, 133);
+            this.ItemForPASSWORD.Location = new System.Drawing.Point(0, 143);
             this.ItemForPASSWORD.MinSize = new System.Drawing.Size(146, 26);
             this.ItemForPASSWORD.Name = "ItemForPASSWORD";
-            this.ItemForPASSWORD.Size = new System.Drawing.Size(305, 51);
+            this.ItemForPASSWORD.Size = new System.Drawing.Size(305, 54);
             this.ItemForPASSWORD.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.ItemForPASSWORD.Text = "Mật Khẩu";
             this.ItemForPASSWORD.TextLocation = DevExpress.Utils.Locations.Top;
@@ -196,10 +208,10 @@ namespace DoAnQuanLyThuVien
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.REPASStextEdit;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 184);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 197);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(186, 26);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(305, 69);
+            this.layoutControlItem1.Size = new System.Drawing.Size(305, 37);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.Text = "Nhập lại mật khẩu";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
@@ -208,7 +220,7 @@ namespace DoAnQuanLyThuVien
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.button_signIn;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 253);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 257);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(91, 31);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(305, 49);
@@ -219,10 +231,10 @@ namespace DoAnQuanLyThuVien
             // ItemForNAME
             // 
             this.ItemForNAME.Control = this.NAMEtextEdit;
-            this.ItemForNAME.Location = new System.Drawing.Point(0, 51);
+            this.ItemForNAME.Location = new System.Drawing.Point(0, 49);
             this.ItemForNAME.MinSize = new System.Drawing.Size(178, 26);
             this.ItemForNAME.Name = "ItemForNAME";
-            this.ItemForNAME.Size = new System.Drawing.Size(305, 82);
+            this.ItemForNAME.Size = new System.Drawing.Size(305, 49);
             this.ItemForNAME.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.ItemForNAME.Text = "Họ và Tên";
             this.ItemForNAME.TextLocation = DevExpress.Utils.Locations.Top;
@@ -236,6 +248,40 @@ namespace DoAnQuanLyThuVien
             this.panel_Icon.Name = "panel_Icon";
             this.panel_Icon.Size = new System.Drawing.Size(80, 80);
             this.panel_Icon.TabIndex = 2;
+            // 
+            // PIDtextEdit
+            // 
+            this.PIDtextEdit.Location = new System.Drawing.Point(12, 129);
+            this.PIDtextEdit.Name = "PIDtextEdit";
+            this.PIDtextEdit.Size = new System.Drawing.Size(301, 22);
+            this.PIDtextEdit.StyleController = this.dataLayoutControl1;
+            this.PIDtextEdit.TabIndex = 9;
+            // 
+            // layoutControlItem_PID
+            // 
+            this.layoutControlItem_PID.Control = this.PIDtextEdit;
+            this.layoutControlItem_PID.Location = new System.Drawing.Point(0, 98);
+            this.layoutControlItem_PID.Name = "layoutControlItem_PID";
+            this.layoutControlItem_PID.Size = new System.Drawing.Size(305, 45);
+            this.layoutControlItem_PID.Text = "CMND/CCCD";
+            this.layoutControlItem_PID.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem_PID.TextSize = new System.Drawing.Size(109, 16);
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 234);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(305, 23);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 306);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(305, 17);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // fnewAccount
             // 
@@ -265,6 +311,10 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNAME)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PIDtextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem_PID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,5 +338,9 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraEditors.TextEdit NAMEtextEdit;
         private DevExpress.XtraLayout.LayoutControlItem ItemForNAME;
         private System.Windows.Forms.Panel panel_Icon;
+        private DevExpress.XtraEditors.TextEdit PIDtextEdit;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem_PID;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
     }
 }

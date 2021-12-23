@@ -42,8 +42,6 @@ namespace DoAnQuanLyThuVien.DTO
 
         public STAFF_INF(DataRow source)
         {
-            bool _TYPE = Convert.ToBoolean(source[12]);
-
             USERNAME = source[0].ToString();
             PASSWORD = source[1].ToString();
             AVATAR = (byte[])source[2];
@@ -57,7 +55,7 @@ namespace DoAnQuanLyThuVien.DTO
             PHONE = source[10].ToString();
             EMAIL = source[11].ToString();
             EMAIL = source[11].ToString();
-            TYPE = _TYPE != null ? _TYPE : false;
+            TYPE = Convert.ToBoolean(source[12]);
             NOTE = source[13].ToString();
         }
     }

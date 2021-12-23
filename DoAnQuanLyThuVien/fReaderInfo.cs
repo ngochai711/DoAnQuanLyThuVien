@@ -28,6 +28,8 @@ namespace DoAnQuanLyThuVien
             activeAccount = account;
 
             InitializeComponent();
+
+            Set_DateFormat();
         }
 
         //---Region_Controls_Events---
@@ -48,15 +50,11 @@ namespace DoAnQuanLyThuVien
 
             if (isEditting)
             {
-                var SvgImg = Properties.Resources.saveto_32x32;
-
-                simpleButton_EDIT.ImageOptions.Image = SvgImg;
+                Set_EditButton_Icon(Properties.Resources.saveto_32x32);
             }
             else
             {
-                var SvgImg = Properties.Resources.editcontact_32x32;
-
-                simpleButton_EDIT.ImageOptions.Image = SvgImg;
+                Set_EditButton_Icon(Properties.Resources.editcontact_32x32);
 
                 Update_ActiveAccount();
             }
@@ -121,6 +119,20 @@ namespace DoAnQuanLyThuVien
         //---Region_Funcs_&_Procs---
         #region ================Funcs_&_Procs================
 
+        private void Set_DateFormat()
+        {
+            this.BIRTHdateEdit.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.BIRTHdateEdit.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.BIRTHdateEdit.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.BIRTHdateEdit.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.BIRTHdateEdit.Properties.Mask.EditMask = "dd/MM/yyyy";
+        }
+
+        private void Set_EditButton_Icon(Bitmap Icon)
+        {
+            simpleButton_EDIT.ImageOptions.Image = Icon;
+        }
+
         private void Get_ActiveAccount_Data()
         {
             AVATARpictureEdit.EditValue = activeAccount.AVATAR;
@@ -137,13 +149,26 @@ namespace DoAnQuanLyThuVien
             NOTEmemoEdit.Text = activeAccount.NOTE;
         }
 
+        private void Get_ActiveAccount_NewValue()
+        {
+            activeAccount.AVATAR = (byte[])AVATARpictureEdit.EditValue;
+            activeAccount.NAME = NAMEtextEdit.Text;
+            activeAccount.PID = PIDtextEdit.Text;
+            activeAccount.BIRTH = (DateTime)BIRTHdateEdit.EditValue;
+            activeAccount.AGE = Convert.ToByte(AGEtextEdit.Text);
+            activeAccount.SEX = SEXcomboboxEdit.EditValue.ToString();
+            activeAccount.ADDRESS = ADDRESStextEdit.Text;
+            activeAccount.PHONE = PHONEtextEdit.Text;
+            activeAccount.EMAIL = EMAILtextEdit.Text;
+            activeAccount.NOTE = NOTEmemoEdit.Text;
+        }
+
         private void Enable_Disable_ReadOnly()
         {
             AVATARpictureEdit.ReadOnly = !isEditting;
             NAMEtextEdit.ReadOnly = !isEditting;
             PIDtextEdit.ReadOnly = !isEditting;
             BIRTHdateEdit.ReadOnly = !isEditting;
-            AGEtextEdit.ReadOnly = !isEditting;
             SEXcomboboxEdit.ReadOnly = !isEditting;
             ADDRESStextEdit.ReadOnly = !isEditting;
             PHONEtextEdit.ReadOnly = !isEditting;
@@ -160,14 +185,24 @@ namespace DoAnQuanLyThuVien
             return binaryImage;
         }
 
-        void Update_ActiveAccount()
+        private void Update_ActiveAccount()
         {
             SHARED_LIBRARY_ENTITY dataBase = new SHARED_LIBRARY_ENTITY();
 
+            Get_ActiveAccount_NewValue();
+
             dataBase.READER_INF.AddOrUpdate(activeAccount);
 
-            if (dataBase.SaveChanges() == 1)
-            { MessageBox.Show("Cập nhật tài khoản thành công!"); }
+            try
+            {
+                if (dataBase.SaveChanges() == 1)
+                { MessageBox.Show("Cập nhật tài khoản thành công!"); }
+            }
+            catch
+            {
+                MessageBox.Show("Cập nhật tài khoản thất bại! Vui lòng kiểm tra lại thông tin vừa nhập!");
+            }
+
         }
 
         private void Show_PasswordChange_GUI()

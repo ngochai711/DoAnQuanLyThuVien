@@ -29,8 +29,10 @@ namespace DoAnQuanLyThuVien
             data_Load();
 
             currentAccount = _currentAccount;
+
+            Set_DateFormat();
         }
-        
+
 
 
         //---Region_Controls_Events---
@@ -181,6 +183,21 @@ namespace DoAnQuanLyThuVien
         //---Region_Funcs_&_Procs---
         #region ================Funcs_&_Procs================
 
+        private void Set_DateFormat()
+        {
+            this.STAFFBIRTHdateEdit.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.STAFFBIRTHdateEdit.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.STAFFBIRTHdateEdit.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.STAFFBIRTHdateEdit.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.STAFFBIRTHdateEdit.Properties.Mask.EditMask = "dd/MM/yyyy";
+
+            this.READERBIRTHDateEdit.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.READERBIRTHDateEdit.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.READERBIRTHDateEdit.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.READERBIRTHDateEdit.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.READERBIRTHDateEdit.Properties.Mask.EditMask = "dd/MM/yyyy";
+        }
+
         private void data_Load()
         {
             dataBase.READER_INF.Load();
@@ -192,7 +209,7 @@ namespace DoAnQuanLyThuVien
 
         private void dataChange_Save()
         {
-            if (dataBase.SaveChanges() == 1)
+            if (dataBase.SaveChanges() >= 1)
             {
                 MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK);
 
@@ -237,6 +254,10 @@ namespace DoAnQuanLyThuVien
         {
             if (eventCalled_buttonName == "simpleButton_staffEdit")
             {
+                STAFFNAMEtextEdit.ReadOnly = !is_edittingMode;
+                STAFFNAMEtextEdit.BorderStyle = is_edittingMode ? 
+                                                DevExpress.XtraEditors.Controls.BorderStyles.Flat : 
+                                                DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
                 TYPEComboBoxEdit.ReadOnly = !is_edittingMode || !(bool)currentAccount.TYPE;
                 STAFFPIDTextEdit.ReadOnly = !is_edittingMode;
                 STAFFBIRTHdateEdit.ReadOnly = !is_edittingMode;
@@ -249,6 +270,10 @@ namespace DoAnQuanLyThuVien
             }
             else
             {
+                READERNAMETextEdit.ReadOnly = !is_edittingMode;
+                READERNAMETextEdit.BorderStyle = is_edittingMode ? 
+                                                DevExpress.XtraEditors.Controls.BorderStyles.Flat : 
+                                                DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
                 READERPIDTextEdit.ReadOnly = !is_edittingMode;
                 READERBIRTHDateEdit.ReadOnly = !is_edittingMode;
                 READERSEXComboBoxEdit.ReadOnly = !is_edittingMode;
