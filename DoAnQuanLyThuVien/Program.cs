@@ -16,7 +16,7 @@ namespace DoAnQuanLyThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fReader(new READER_INF()));
+            Application.Run(new fLogin());
         }
     }
 }
