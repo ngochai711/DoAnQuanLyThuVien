@@ -173,9 +173,9 @@ namespace DoAnQuanLyThuVien
             this.lbTeamName.Location = new System.Drawing.Point(73, 9);
             this.lbTeamName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTeamName.Name = "lbTeamName";
-            this.lbTeamName.Size = new System.Drawing.Size(180, 42);
+            this.lbTeamName.Size = new System.Drawing.Size(194, 42);
             this.lbTeamName.TabIndex = 11;
-            this.lbTeamName.Text = "Pear Book";
+            this.lbTeamName.Text = "Pear Books";
             // 
             // btnShow
             // 
@@ -536,8 +536,8 @@ namespace DoAnQuanLyThuVien
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thư Viện";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fMain_FormClosed);
+            this.Load += new System.EventHandler(this.fMain_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.fMain_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
