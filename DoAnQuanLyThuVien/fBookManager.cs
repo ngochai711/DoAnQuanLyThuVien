@@ -114,14 +114,13 @@ namespace DoAnQuanLyThuVien
         }
         private void btnRead_Click(object sender, EventArgs e)
         {
-            int[] selectedRows = gridView1.GetSelectedRows();
+            int[] selectedRows = gridView2.GetSelectedRows();
             string filename = "";
             try
             {
-                var temp = gridView1.GetRowCellValue(selectedRows[0], "BOOK_URL");
-                if (temp == null)
-                    throw new Exception("Sách chưa được cập nhật.");
-                else filename = temp.ToString();
+                var temp = gridView2.GetRowCellValue(selectedRows[0], "BOOK_URL");
+               
+                filename = temp.ToString();
 
             }
             catch (Exception a)
@@ -130,7 +129,15 @@ namespace DoAnQuanLyThuVien
 
                 return;
             }
-            System.Diagnostics.Process.Start(filename);
+            try
+            {
+                System.Diagnostics.Process.Start(filename);
+                filename = "";
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Sách chưa được cập nhật.","Lỗi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
         #endregion
 

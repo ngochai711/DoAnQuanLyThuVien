@@ -163,7 +163,8 @@ namespace DoAnQuanLyThuVien
             if (Properties.Settings.Default.songPath != "")
                 fld.SelectedPath = Properties.Settings.Default.songPath;
             CreatePlayLis(fld, "*.mp3");
-
+            btnPlay.ImageIndex = 1;
+            windowsMediaPlayer.Ctlcontrols.pause();
             windowsMediaPlayer.Visible = false;
         }
         private void btnPlay_Click(object sender, EventArgs e)
@@ -238,6 +239,35 @@ namespace DoAnQuanLyThuVien
         #endregion
 
         #region application's function button
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+
+            if (!isSetting)
+            {
+                settingPanel.BackColor = Color.FromArgb(50, 255, 255, 255);
+                btnBackgroundChanging.Visible = true;
+                btnPlayListChanging.Visible = true;
+                isSetting = true;
+            }
+            else
+            {
+                settingPanel.BackColor = Color.FromArgb(0, 255, 255, 255);
+                btnBackgroundChanging.Visible = !true;
+                btnPlayListChanging.Visible = !true;
+                isSetting = !true;
+
+            }
+        }
+        private void btnPlayListChanging_Click(object sender, EventArgs e)
+        {
+            //openFileDialog.Filter = "All Media Files|*.wav;*.aac;*.wma;*.wmv;*.avi;*.mpg;*.mpeg;*.m1v;*.mp2;*.mp3;*.mpa;*.mpe;*.m3u;*.mp4;*.mov;*.3g2;*.3gp2;*.3gp;*.3gpp;*.m4a;*.cda;*.aif;*.aifc;*.aiff;*.mid;*.midi;*.rmi;*.mkv;*.WAV;*.AAC;*.WMA;*.WMV;*.AVI;*.MPG;*.MPEG;*.M1V;*.MP2;*.MP3;*.MPA;*.MPE;*.M3U;*.MP4;*.MOV;*.3G2;*.3GP2;*.3GP;*.3GPP;*.M4A;*.CDA;*.AIF;*.AIFC;*.AIFF;*.MID;*.MIDI;*.RMI;*.MKV";
+            //openFileDialog.Multiselect = true;
+            if (songFolder.ShowDialog() == DialogResult.OK)
+            {
+                Properties.Settings.Default.songPath = songFolder.SelectedPath;
+                set_Playlist_properties();
+            }
+        }
         private void btnBackgroundChanging_Click(object sender, EventArgs e)
         {
             OpenFileDialog _openFileDialog = new OpenFileDialog();
@@ -256,25 +286,7 @@ namespace DoAnQuanLyThuVien
             f.ShowDialog();
         }
 
-        private void btnSetting_Click(object sender, EventArgs e)
-        {
-           
-            if (!isSetting)
-            {
-                settingPanel.BackColor = Color.FromArgb(50, 255, 255, 255);
-                btnBackgroundChanging.Visible = true;
-                btnPlayListChanging.Visible = true;
-                isSetting = true;
-            }
-            else
-            {
-                settingPanel.BackColor = Color.FromArgb(0, 255, 255, 255);
-                btnBackgroundChanging.Visible = !true;
-                btnPlayListChanging.Visible = !true;
-                isSetting = !true;
-
-            }
-        }
+   
 
         private void btnAssist_Click_1(object sender, EventArgs e)
         {
@@ -295,16 +307,7 @@ namespace DoAnQuanLyThuVien
 
         FolderBrowserDialog songFolder = new FolderBrowserDialog();
 
-        private void btnPlayListChanging_Click(object sender, EventArgs e)
-        {
-            //openFileDialog.Filter = "All Media Files|*.wav;*.aac;*.wma;*.wmv;*.avi;*.mpg;*.mpeg;*.m1v;*.mp2;*.mp3;*.mpa;*.mpe;*.m3u;*.mp4;*.mov;*.3g2;*.3gp2;*.3gp;*.3gpp;*.m4a;*.cda;*.aif;*.aifc;*.aiff;*.mid;*.midi;*.rmi;*.mkv;*.WAV;*.AAC;*.WMA;*.WMV;*.AVI;*.MPG;*.MPEG;*.M1V;*.MP2;*.MP3;*.MPA;*.MPE;*.M3U;*.MP4;*.MOV;*.3G2;*.3GP2;*.3GP;*.3GPP;*.M4A;*.CDA;*.AIF;*.AIFC;*.AIFF;*.MID;*.MIDI;*.RMI;*.MKV";
-            //openFileDialog.Multiselect = true;
-            if (songFolder.ShowDialog() == DialogResult.OK)
-            {
-                Properties.Settings.Default.songPath = songFolder.SelectedPath;
-                set_Playlist_properties();
-            }
-        }
+      
 
         private void btnExit_Click(object sender, EventArgs e)
         {
