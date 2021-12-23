@@ -69,5 +69,17 @@ namespace DoAnQuanLyThuVien.Properties {
                 this["isStaff"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20520682@gm.uit.edu.vn")]
+        public string hostAddress {
+            get {
+                return ((string)(this["hostAddress"]));
+            }
+            set {
+                this["hostAddress"] = value;
+            }
+        }
     }
 }

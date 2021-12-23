@@ -86,6 +86,8 @@ namespace DoAnQuanLyThuVien
             this.colNOTE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colREQUEST_FORM = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.simpleButton_READERMAIL = new DevExpress.XtraEditors.SimpleButton();
+            this.separatorControl7 = new DevExpress.XtraEditors.SeparatorControl();
             this.separatorControl3 = new DevExpress.XtraEditors.SeparatorControl();
             this.panel4 = new System.Windows.Forms.Panel();
             this.simpleButton_reader_resetPass = new DevExpress.XtraEditors.SimpleButton();
@@ -151,6 +153,8 @@ namespace DoAnQuanLyThuVien
             this.colTYPE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNOTE1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.simpleButton_STAFFMAIL = new DevExpress.XtraEditors.SimpleButton();
+            this.separatorControl8 = new DevExpress.XtraEditors.SeparatorControl();
             this.separatorControl4 = new DevExpress.XtraEditors.SeparatorControl();
             this.panel8 = new System.Windows.Forms.Panel();
             this.simpleButton_staff_resetPass = new DevExpress.XtraEditors.SimpleButton();
@@ -206,6 +210,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Reader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Reader)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
@@ -251,6 +256,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Staff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Staff)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
@@ -897,6 +903,8 @@ namespace DoAnQuanLyThuVien
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.simpleButton_READERMAIL);
+            this.panel1.Controls.Add(this.separatorControl7);
             this.panel1.Controls.Add(this.separatorControl3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.simpleButton_reader_resetPass);
@@ -913,6 +921,34 @@ namespace DoAnQuanLyThuVien
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1524, 106);
             this.panel1.TabIndex = 0;
+            // 
+            // simpleButton_READERMAIL
+            // 
+            this.simpleButton_READERMAIL.AllowFocus = false;
+            this.simpleButton_READERMAIL.Appearance.Options.UseTextOptions = true;
+            this.simpleButton_READERMAIL.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.simpleButton_READERMAIL.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_READERMAIL.ImageOptions.SvgImage = global::DoAnQuanLyThuVien.Properties.Resources.forward;
+            this.simpleButton_READERMAIL.Location = new System.Drawing.Point(870, 4);
+            this.simpleButton_READERMAIL.Margin = new System.Windows.Forms.Padding(15);
+            this.simpleButton_READERMAIL.Name = "simpleButton_READERMAIL";
+            this.simpleButton_READERMAIL.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_READERMAIL.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_READERMAIL.Size = new System.Drawing.Size(93, 98);
+            this.simpleButton_READERMAIL.TabIndex = 13;
+            this.simpleButton_READERMAIL.Text = "Email";
+            this.simpleButton_READERMAIL.Click += new System.EventHandler(this.simpleButton_Email_Click);
+            // 
+            // separatorControl7
+            // 
+            this.separatorControl7.LineAlignment = DevExpress.XtraEditors.Alignment.Center;
+            this.separatorControl7.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.separatorControl7.Location = new System.Drawing.Point(829, 4);
+            this.separatorControl7.Margin = new System.Windows.Forms.Padding(4);
+            this.separatorControl7.Name = "separatorControl7";
+            this.separatorControl7.Padding = new System.Windows.Forms.Padding(11);
+            this.separatorControl7.Size = new System.Drawing.Size(35, 98);
+            this.separatorControl7.TabIndex = 12;
             // 
             // separatorControl3
             // 
@@ -1284,6 +1320,8 @@ namespace DoAnQuanLyThuVien
             this.TYPECheckEdit.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TYPECheckEdit.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.TYPECheckEdit.Properties.AppearanceReadOnly.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.TYPECheckEdit.Properties.AppearanceReadOnly.Options.UseBackColor = true;
+            this.TYPECheckEdit.Properties.AppearanceReadOnly.Options.UseBorderColor = true;
             this.TYPECheckEdit.Properties.Caption = "Quản lý";
             this.TYPECheckEdit.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.CheckBox;
             this.TYPECheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
@@ -1687,6 +1725,8 @@ namespace DoAnQuanLyThuVien
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel7.Controls.Add(this.simpleButton_STAFFMAIL);
+            this.panel7.Controls.Add(this.separatorControl8);
             this.panel7.Controls.Add(this.separatorControl4);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.simpleButton_staff_resetPass);
@@ -1703,6 +1743,34 @@ namespace DoAnQuanLyThuVien
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1524, 106);
             this.panel7.TabIndex = 3;
+            // 
+            // simpleButton_STAFFMAIL
+            // 
+            this.simpleButton_STAFFMAIL.AllowFocus = false;
+            this.simpleButton_STAFFMAIL.Appearance.Options.UseTextOptions = true;
+            this.simpleButton_STAFFMAIL.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.simpleButton_STAFFMAIL.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton_STAFFMAIL.ImageOptions.SvgImage = global::DoAnQuanLyThuVien.Properties.Resources.forward;
+            this.simpleButton_STAFFMAIL.Location = new System.Drawing.Point(870, 4);
+            this.simpleButton_STAFFMAIL.Margin = new System.Windows.Forms.Padding(15);
+            this.simpleButton_STAFFMAIL.Name = "simpleButton_STAFFMAIL";
+            this.simpleButton_STAFFMAIL.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton_STAFFMAIL.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton_STAFFMAIL.Size = new System.Drawing.Size(93, 98);
+            this.simpleButton_STAFFMAIL.TabIndex = 15;
+            this.simpleButton_STAFFMAIL.Text = "Email";
+            this.simpleButton_STAFFMAIL.Click += new System.EventHandler(this.simpleButton_Email_Click);
+            // 
+            // separatorControl8
+            // 
+            this.separatorControl8.LineAlignment = DevExpress.XtraEditors.Alignment.Center;
+            this.separatorControl8.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.separatorControl8.Location = new System.Drawing.Point(829, 4);
+            this.separatorControl8.Margin = new System.Windows.Forms.Padding(4);
+            this.separatorControl8.Name = "separatorControl8";
+            this.separatorControl8.Padding = new System.Windows.Forms.Padding(11);
+            this.separatorControl8.Size = new System.Drawing.Size(35, 98);
+            this.separatorControl8.TabIndex = 14;
             // 
             // separatorControl4
             // 
@@ -1918,6 +1986,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Reader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Reader)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
@@ -1963,6 +2032,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Staff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Staff)).EndInit();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
@@ -2104,5 +2174,9 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup9;
         private DevExpress.XtraEditors.CheckEdit TYPECheckEdit;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_READERMAIL;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_STAFFMAIL;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl8;
     }
 }

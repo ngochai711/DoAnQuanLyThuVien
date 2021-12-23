@@ -19,5 +19,8 @@
     <Setting Name="isStaff" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="hostAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20520682@gm.uit.edu.vn</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -158,6 +158,20 @@ namespace DoAnQuanLyThuVien
             data_Load();
         }
 
+        private void simpleButton_Email_Click(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.SimpleButton eventCalled_Button = sender as DevExpress.XtraEditors.SimpleButton;
+
+            bool isReader = eventCalled_Button.Name == "simpleButton_READERMAIL";
+
+            string fromAddress = Properties.Settings.Default.hostAddress;
+            string toAddress = Get_CurrentAccount_EmailAddress(isReader);
+
+            fEmail EmailForm = new fEmail(toAddress, fromAddress);
+
+            EmailForm.ShowDialog();
+        }
+
         private void pictureEdit_AVATARPictureEdit_Click(object sender, EventArgs e)
         {
             if (!is_edittingMode) { return; }
@@ -363,7 +377,7 @@ namespace DoAnQuanLyThuVien
                 dataBase.READER_INF.AddOrUpdate(item);
             }    
 
-            if (dataBase.SaveChanges() == 1)
+            if (dataBase.SaveChanges() >= 1)
                 MessageBox.Show("Đặt lại mật khẩu thành công!");
         }
 
@@ -396,6 +410,14 @@ namespace DoAnQuanLyThuVien
 
                 dataBase.READER_INF.AddOrUpdate(item);
             }
+        }
+
+        private string Get_CurrentAccount_EmailAddress(bool _isReader)
+        {
+            if (_isReader)
+                return (rEADERINFBindingSource.Current as READER_INF).EMAIL;
+
+            return (sTAFFINFBindingSource.Current as STAFF_INF).EMAIL;
         }
 
         #endregion==========================================

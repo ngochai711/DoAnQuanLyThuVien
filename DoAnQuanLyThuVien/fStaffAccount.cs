@@ -153,7 +153,7 @@ namespace DoAnQuanLyThuVien
             currentAccount.PASSWORD = encryptedPassword;
             dataBase.STAFF_INF.AddOrUpdate(currentAccount);
 
-            if (dataBase.SaveChanges() == 1)
+            if (dataBase.SaveChanges() >= 1)
                 MessageBox.Show("Đổi mật khẩu thành công!"); ;
         }
 
