@@ -89,7 +89,18 @@ namespace DoAnQuanLyThuVien
 
             if (is_edittingMode)
             {
-                save_editedInfo(eventCalled_Button.Name);
+                try
+                {
+                    save_editedInfo(eventCalled_Button.Name);
+                }
+                catch
+                {
+                    MessageBox.Show("Dữ liệu không hợp lệ!");
+                    
+                    Reload_DataView();
+                    
+                    return;
+                }
 
                 eventCalled_Button.Text = "Cập nhật";
             }
@@ -103,7 +114,7 @@ namespace DoAnQuanLyThuVien
 
         private void simpleButton_Reload_Click(object sender, EventArgs e)
         {
-            data_Load();
+            Reload_DataView();    
         }
 
         private void simpleButton_Account_Click(object sender, EventArgs e)
@@ -301,6 +312,19 @@ namespace DoAnQuanLyThuVien
             }
 
             dataChange_Save();
+        }
+
+        private void Reload_DataView()
+        {
+            var Modified_Accounts = dataBase.ChangeTracker.Entries().Where(t => t.State == EntityState.Modified).ToList();
+
+            foreach (var Account in Modified_Accounts)
+            {
+                Account.CurrentValues.SetValues(Account.OriginalValues);
+                Account.State = EntityState.Unchanged;
+            }
+
+            data_Load();
         }
 
         private void reset_Pass(bool _isStaff)
