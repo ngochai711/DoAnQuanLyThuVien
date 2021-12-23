@@ -275,7 +275,7 @@ namespace DoAnQuanLyThuVien
                 STAFFNAMEtextEdit.BorderStyle = is_edittingMode ? 
                                                 DevExpress.XtraEditors.Controls.BorderStyles.Flat : 
                                                 DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-                TYPEComboBoxEdit.ReadOnly = !is_edittingMode || !(bool)currentAccount.TYPE;
+                TYPECheckEdit.ReadOnly = !is_edittingMode || !(bool)currentAccount.TYPE;
                 STAFFPIDTextEdit.ReadOnly = !is_edittingMode;
                 STAFFBIRTHdateEdit.ReadOnly = !is_edittingMode;
                 STAFFSEXcomboBoxEdit.ReadOnly = !is_edittingMode;

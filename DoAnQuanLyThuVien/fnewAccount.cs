@@ -123,6 +123,7 @@ namespace DoAnQuanLyThuVien
 
                 item.PASSWORD = _encryptedPassword;
                 item.USERNAME = _userName;
+                item.TYPE = false;
                 item.NAME = _name;
                 item.PID = _pid;
 

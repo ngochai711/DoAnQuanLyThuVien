@@ -111,8 +111,8 @@ namespace DoAnQuanLyThuVien
             this.STAFFADDRESStextEdit = new DevExpress.XtraEditors.TextEdit();
             this.STAFFPHONEtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.STAFFEMAILtextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.TYPEComboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.STAFFNOTEmemoEdit = new DevExpress.XtraEditors.MemoEdit();
+            this.TYPECheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -132,6 +132,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForTYPE = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForSTAFFID = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.panel5 = new System.Windows.Forms.Panel();
             this.gridControl_Staff = new DevExpress.XtraGrid.GridControl();
             this.gridView_Staff = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -224,8 +225,8 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.STAFFADDRESStextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STAFFPHONEtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STAFFEMAILtextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TYPEComboBoxEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STAFFNOTEmemoEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TYPECheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
@@ -245,6 +246,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.ItemForTYPE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSTAFFID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Staff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Staff)).BeginInit();
@@ -1101,8 +1103,8 @@ namespace DoAnQuanLyThuVien
             this.dataLayoutControl2.Controls.Add(this.STAFFADDRESStextEdit);
             this.dataLayoutControl2.Controls.Add(this.STAFFPHONEtextEdit);
             this.dataLayoutControl2.Controls.Add(this.STAFFEMAILtextEdit);
-            this.dataLayoutControl2.Controls.Add(this.TYPEComboBoxEdit);
             this.dataLayoutControl2.Controls.Add(this.STAFFNOTEmemoEdit);
+            this.dataLayoutControl2.Controls.Add(this.TYPECheckEdit);
             this.dataLayoutControl2.DataSource = this.sTAFFINFBindingSource;
             this.dataLayoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl2.Location = new System.Drawing.Point(0, 0);
@@ -1133,30 +1135,30 @@ namespace DoAnQuanLyThuVien
             // STAFFIDTextEdit
             // 
             this.STAFFIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "STAFFID", true));
-            this.STAFFIDTextEdit.Location = new System.Drawing.Point(293, 213);
+            this.STAFFIDTextEdit.Location = new System.Drawing.Point(286, 213);
             this.STAFFIDTextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.STAFFIDTextEdit.Name = "STAFFIDTextEdit";
             this.STAFFIDTextEdit.Properties.ReadOnly = true;
-            this.STAFFIDTextEdit.Size = new System.Drawing.Size(207, 22);
+            this.STAFFIDTextEdit.Size = new System.Drawing.Size(214, 22);
             this.STAFFIDTextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFIDTextEdit.TabIndex = 5;
             // 
             // STAFFPIDTextEdit
             // 
             this.STAFFPIDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "PID", true));
-            this.STAFFPIDTextEdit.Location = new System.Drawing.Point(293, 239);
+            this.STAFFPIDTextEdit.Location = new System.Drawing.Point(286, 239);
             this.STAFFPIDTextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.STAFFPIDTextEdit.Name = "STAFFPIDTextEdit";
             this.STAFFPIDTextEdit.Properties.ReadOnly = true;
             this.STAFFPIDTextEdit.Properties.UseReadOnlyAppearance = false;
-            this.STAFFPIDTextEdit.Size = new System.Drawing.Size(207, 22);
+            this.STAFFPIDTextEdit.Size = new System.Drawing.Size(214, 22);
             this.STAFFPIDTextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFPIDTextEdit.TabIndex = 6;
             // 
             // STAFFNAMEtextEdit
             // 
             this.STAFFNAMEtextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NAME", true));
-            this.STAFFNAMEtextEdit.Location = new System.Drawing.Point(202, 90);
+            this.STAFFNAMEtextEdit.Location = new System.Drawing.Point(202, 88);
             this.STAFFNAMEtextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.STAFFNAMEtextEdit.Name = "STAFFNAMEtextEdit";
             this.STAFFNAMEtextEdit.Properties.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -1259,25 +1261,6 @@ namespace DoAnQuanLyThuVien
             this.STAFFEMAILtextEdit.StyleController = this.dataLayoutControl2;
             this.STAFFEMAILtextEdit.TabIndex = 13;
             // 
-            // TYPEComboBoxEdit
-            // 
-            this.TYPEComboBoxEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "TYPE", true));
-            this.TYPEComboBoxEdit.Location = new System.Drawing.Point(293, 189);
-            this.TYPEComboBoxEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TYPEComboBoxEdit.Name = "TYPEComboBoxEdit";
-            this.TYPEComboBoxEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.TYPEComboBoxEdit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TYPEComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.TYPEComboBoxEdit.Properties.DropDownRows = 2;
-            this.TYPEComboBoxEdit.Properties.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.TYPEComboBoxEdit.Properties.ReadOnly = true;
-            this.TYPEComboBoxEdit.Size = new System.Drawing.Size(207, 20);
-            this.TYPEComboBoxEdit.StyleController = this.dataLayoutControl2;
-            this.TYPEComboBoxEdit.TabIndex = 14;
-            // 
             // STAFFNOTEmemoEdit
             // 
             this.STAFFNOTEmemoEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "NOTE", true));
@@ -1289,6 +1272,25 @@ namespace DoAnQuanLyThuVien
             this.STAFFNOTEmemoEdit.Size = new System.Drawing.Size(476, 238);
             this.STAFFNOTEmemoEdit.StyleController = this.dataLayoutControl2;
             this.STAFFNOTEmemoEdit.TabIndex = 15;
+            // 
+            // TYPECheckEdit
+            // 
+            this.TYPECheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sTAFFINFBindingSource, "TYPE", true));
+            this.TYPECheckEdit.EditValue = null;
+            this.TYPECheckEdit.Location = new System.Drawing.Point(202, 185);
+            this.TYPECheckEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TYPECheckEdit.Name = "TYPECheckEdit";
+            this.TYPECheckEdit.Properties.AllowFocused = false;
+            this.TYPECheckEdit.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TYPECheckEdit.Properties.AppearanceReadOnly.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.TYPECheckEdit.Properties.AppearanceReadOnly.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.TYPECheckEdit.Properties.Caption = "Quản lý";
+            this.TYPECheckEdit.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.CheckBox;
+            this.TYPECheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.TYPECheckEdit.Properties.ReadOnly = true;
+            this.TYPECheckEdit.Size = new System.Drawing.Size(121, 24);
+            this.TYPECheckEdit.StyleController = this.dataLayoutControl2;
+            this.TYPECheckEdit.TabIndex = 14;
             // 
             // layoutControlGroup5
             // 
@@ -1372,7 +1374,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem5.Size = new System.Drawing.Size(198, 46);
             this.layoutControlItem5.Text = "Ngày Sinh";
             this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(81, 16);
             // 
             // layoutControlItem6
             // 
@@ -1382,7 +1384,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem6.Size = new System.Drawing.Size(135, 46);
             this.layoutControlItem6.Text = "Tuổi";
             this.layoutControlItem6.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(88, 17);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(81, 17);
             // 
             // layoutControlItem4
             // 
@@ -1392,7 +1394,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem4.Size = new System.Drawing.Size(147, 46);
             this.layoutControlItem4.Text = "Giới Tính";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(88, 17);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(81, 17);
             // 
             // layoutControlItem7
             // 
@@ -1402,7 +1404,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem7.Size = new System.Drawing.Size(480, 46);
             this.layoutControlItem7.Text = "Địa Chỉ";
             this.layoutControlItem7.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(88, 17);
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(81, 17);
             // 
             // layoutControlItem8
             // 
@@ -1412,7 +1414,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem8.Size = new System.Drawing.Size(480, 45);
             this.layoutControlItem8.Text = "SĐT";
             this.layoutControlItem8.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(81, 16);
             // 
             // layoutControlItem9
             // 
@@ -1422,7 +1424,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem9.Size = new System.Drawing.Size(480, 45);
             this.layoutControlItem9.Text = "Email";
             this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(81, 16);
             // 
             // simpleSeparator4
             // 
@@ -1445,7 +1447,8 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem3,
             this.ItemForTYPE,
             this.ItemForSTAFFID,
-            this.layoutControlItem2});
+            this.layoutControlItem2,
+            this.emptySpaceItem1});
             this.layoutControlGroup9.Location = new System.Drawing.Point(178, 0);
             this.layoutControlGroup9.Name = "layoutControlGroup9";
             this.layoutControlGroup9.Size = new System.Drawing.Size(326, 265);
@@ -1458,7 +1461,7 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.MinSize = new System.Drawing.Size(124, 26);
             this.layoutControlItem3.Name = "ItemForNAME";
-            this.layoutControlItem3.Size = new System.Drawing.Size(302, 165);
+            this.layoutControlItem3.Size = new System.Drawing.Size(302, 161);
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.Text = "NAME";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
@@ -1466,12 +1469,13 @@ namespace DoAnQuanLyThuVien
             // 
             // ItemForTYPE
             // 
-            this.ItemForTYPE.Control = this.TYPEComboBoxEdit;
-            this.ItemForTYPE.Location = new System.Drawing.Point(0, 165);
+            this.ItemForTYPE.Control = this.TYPECheckEdit;
+            this.ItemForTYPE.Location = new System.Drawing.Point(0, 161);
             this.ItemForTYPE.Name = "ItemForTYPE";
-            this.ItemForTYPE.Size = new System.Drawing.Size(302, 24);
+            this.ItemForTYPE.Size = new System.Drawing.Size(125, 28);
             this.ItemForTYPE.Text = "Loại Tài Khoản";
-            this.ItemForTYPE.TextSize = new System.Drawing.Size(88, 17);
+            this.ItemForTYPE.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForTYPE.TextVisible = false;
             // 
             // ItemForSTAFFID
             // 
@@ -1480,7 +1484,7 @@ namespace DoAnQuanLyThuVien
             this.ItemForSTAFFID.Name = "ItemForSTAFFID";
             this.ItemForSTAFFID.Size = new System.Drawing.Size(302, 26);
             this.ItemForSTAFFID.Text = "Mã Tài Khoản";
-            this.ItemForSTAFFID.TextSize = new System.Drawing.Size(88, 17);
+            this.ItemForSTAFFID.TextSize = new System.Drawing.Size(81, 17);
             // 
             // layoutControlItem2
             // 
@@ -1489,7 +1493,15 @@ namespace DoAnQuanLyThuVien
             this.layoutControlItem2.Name = "ItemForPID";
             this.layoutControlItem2.Size = new System.Drawing.Size(302, 26);
             this.layoutControlItem2.Text = "CMND";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(81, 16);
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(125, 161);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(177, 28);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // panel5
             // 
@@ -1925,8 +1937,8 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.STAFFADDRESStextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STAFFPHONEtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STAFFEMAILtextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TYPEComboBoxEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STAFFNOTEmemoEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TYPECheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
@@ -1946,6 +1958,7 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.ItemForTYPE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSTAFFID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Staff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Staff)).EndInit();
@@ -2069,7 +2082,6 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraEditors.TextEdit STAFFADDRESStextEdit;
         private DevExpress.XtraEditors.TextEdit STAFFPHONEtextEdit;
         private DevExpress.XtraEditors.TextEdit STAFFEMAILtextEdit;
-        private DevExpress.XtraEditors.ComboBoxEdit TYPEComboBoxEdit;
         private DevExpress.XtraEditors.MemoEdit STAFFNOTEmemoEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup6;
@@ -2090,5 +2102,7 @@ namespace DoAnQuanLyThuVien
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator4;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator5;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup9;
+        private DevExpress.XtraEditors.CheckEdit TYPECheckEdit;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
     }
 }
