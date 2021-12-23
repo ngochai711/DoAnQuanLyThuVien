@@ -45,16 +45,16 @@ namespace DoAnQuanLyThuVien
             this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnBookManagement = new System.Windows.Forms.Button();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.playandPauseIcon = new System.Windows.Forms.ImageList(this.components);
+            this.formControlIcon = new DevExpress.Utils.ImageCollection(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnPlay = new System.Windows.Forms.Button();
             this.windowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.settingPanel = new System.Windows.Forms.Panel();
             this.btnPlayListChanging = new System.Windows.Forms.Button();
             this.btnBackgroundChanging = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnPlay = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SlidingPanel.SuspendLayout();
@@ -64,11 +64,11 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formControlIcon)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).BeginInit();
             this.settingPanel.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -168,14 +168,14 @@ namespace DoAnQuanLyThuVien
             // 
             this.lbTeamName.AutoSize = true;
             this.lbTeamName.BackColor = System.Drawing.Color.Transparent;
-            this.lbTeamName.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lbTeamName.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTeamName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbTeamName.Location = new System.Drawing.Point(62, 11);
+            this.lbTeamName.Location = new System.Drawing.Point(73, 9);
             this.lbTeamName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTeamName.Name = "lbTeamName";
-            this.lbTeamName.Size = new System.Drawing.Size(209, 30);
+            this.lbTeamName.Size = new System.Drawing.Size(180, 42);
             this.lbTeamName.TabIndex = 11;
-            this.lbTeamName.Text = "Library";
+            this.lbTeamName.Text = "Pear Book";
             // 
             // btnShow
             // 
@@ -374,7 +374,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.btnBookManagement.BackColor = System.Drawing.Color.Transparent;
             this.btnBookManagement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBookManagement.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBookManagement.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnBookManagement.FlatAppearance.BorderSize = 0;
             this.btnBookManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookManagement.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -403,18 +403,18 @@ namespace DoAnQuanLyThuVien
             this.separatorControl1.Size = new System.Drawing.Size(273, 23);
             this.separatorControl1.TabIndex = 9;
             // 
-            // imageList1
+            // playandPauseIcon
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "icons8_pause.ico");
-            this.imageList1.Images.SetKeyName(1, "icons8_play.ico");
-            this.imageList1.Images.SetKeyName(2, "pause_64px.png");
-            this.imageList1.Images.SetKeyName(3, "pause_100px.png");
+            this.playandPauseIcon.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("playandPauseIcon.ImageStream")));
+            this.playandPauseIcon.TransparentColor = System.Drawing.Color.Transparent;
+            this.playandPauseIcon.Images.SetKeyName(0, "icons8_pause.ico");
+            this.playandPauseIcon.Images.SetKeyName(1, "icons8_play.ico");
+            this.playandPauseIcon.Images.SetKeyName(2, "pause_64px.png");
+            this.playandPauseIcon.Images.SetKeyName(3, "pause_100px.png");
             // 
-            // imageCollection1
+            // formControlIcon
             // 
-            this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
+            this.formControlIcon.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("formControlIcon.ImageStream")));
             // 
             // panel3
             // 
@@ -429,6 +429,48 @@ namespace DoAnQuanLyThuVien
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(242, 1000);
             this.panel3.TabIndex = 25;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.btnPlay);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 956);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(242, 44);
+            this.panel5.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(58, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 22);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "label1";
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPlay.FlatAppearance.BorderSize = 0;
+            this.btnPlay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.ForeColor = System.Drawing.Color.Black;
+            this.btnPlay.ImageIndex = 1;
+            this.btnPlay.ImageList = this.playandPauseIcon;
+            this.btnPlay.Location = new System.Drawing.Point(2, 0);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(48, 38);
+            this.btnPlay.TabIndex = 11;
+            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // windowsMediaPlayer
             // 
@@ -453,7 +495,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.btnPlayListChanging.Font = new System.Drawing.Font("Open Sans SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayListChanging.ImageKey = "icons8_audio_file_32.png";
-            this.btnPlayListChanging.ImageList = this.imageList1;
+            this.btnPlayListChanging.ImageList = this.playandPauseIcon;
             this.btnPlayListChanging.Location = new System.Drawing.Point(23, 89);
             this.btnPlayListChanging.Name = "btnPlayListChanging";
             this.btnPlayListChanging.Size = new System.Drawing.Size(192, 49);
@@ -468,7 +510,7 @@ namespace DoAnQuanLyThuVien
             // 
             this.btnBackgroundChanging.Font = new System.Drawing.Font("Open Sans SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackgroundChanging.ImageKey = "icons8_laptop_settings_32.png";
-            this.btnBackgroundChanging.ImageList = this.imageList1;
+            this.btnBackgroundChanging.ImageList = this.playandPauseIcon;
             this.btnBackgroundChanging.Location = new System.Drawing.Point(23, 25);
             this.btnBackgroundChanging.Name = "btnBackgroundChanging";
             this.btnBackgroundChanging.Size = new System.Drawing.Size(192, 49);
@@ -478,48 +520,6 @@ namespace DoAnQuanLyThuVien
             this.btnBackgroundChanging.UseVisualStyleBackColor = true;
             this.btnBackgroundChanging.Visible = false;
             this.btnBackgroundChanging.Click += new System.EventHandler(this.btnBackgroundChanging_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.btnPlay);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 956);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(242, 44);
-            this.panel5.TabIndex = 27;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(54, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 22);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "label1";
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.BackColor = System.Drawing.Color.Transparent;
-            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPlay.FlatAppearance.BorderSize = 0;
-            this.btnPlay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlay.ForeColor = System.Drawing.Color.Black;
-            this.btnPlay.ImageIndex = 1;
-            this.btnPlay.ImageList = this.imageList1;
-            this.btnPlay.Location = new System.Drawing.Point(2, 0);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(48, 38);
-            this.btnPlay.TabIndex = 11;
-            this.btnPlay.UseVisualStyleBackColor = false;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // fMain
             // 
@@ -551,12 +551,12 @@ namespace DoAnQuanLyThuVien
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formControlIcon)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
-            this.settingPanel.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.windowsMediaPlayer)).EndInit();
+            this.settingPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -573,8 +573,8 @@ namespace DoAnQuanLyThuVien
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ImageList menuIconList;
-        private System.Windows.Forms.ImageList imageList1;
-        private DevExpress.Utils.ImageCollection imageCollection1;
+        private System.Windows.Forms.ImageList playandPauseIcon;
+        private DevExpress.Utils.ImageCollection formControlIcon;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SeparatorControl separatorControl1;
         private System.Windows.Forms.Button btnL_card_show;
